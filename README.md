@@ -8,11 +8,11 @@ All modules can be found in `/components` directory. CSS is kept in `/components
 
 **To-do**
 
-- [ ] Typography
-- [ ] Forms and their validation
-- [ ] Buttons
-- [ ] Messaging and user feedback
-- [ ] Avatars
-- [ ] Modals and dialogs
-- [ ] Product and brand logos
-- [ ] Collection of stock product screenshots
+- Typography
+- Forms and their validation
+- Buttons
+- Messaging and user feedback
+- Avatars
+- Modals and dialogs
+- Product and brand logos
+- Collection of stock product screenshots
