@@ -1,6 +1,6 @@
 body {
   font: 1em/1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #444;
 }
 
 header {
@@ -37,10 +37,59 @@ h4 {
   margin: 0 auto;
 }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.colors {
+  font-size: .8em;
+}
+
+.colors p {
+  margin: 0;
+}
+
+.colors .color {
+  height: 60px;
+  width: 100%;
+}
+
+.colors .accentPrimary {
+  background: #ec008c;
+}
+
+.colors .accentSecondary {
+  background: #12acef;
+}
+
 @media screen and (min-width: 768px) {
 
   .container {
     width: 60%;
+  }
+
+  .colors li {
+    width: 20%;
+  }
+
+  .colors li:not(:first-child) {
+    margin-left: 30px;
   }
 
 }
@@ -49,6 +98,11 @@ h4 {
 
   .container {
     width: 90%;
+  }
+
+  .colors li {
+    width: 100%;
+    margin: 0 0 10px 0;
   }
 
 }
