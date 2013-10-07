@@ -1,0 +1,54 @@
+body {
+  font: 1em/1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+h1, h2 {
+  color: black;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.1em;
+}
+
+h3, h4 {
+  color: #555;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .container {
+    width: 90%;
+  }
+
+}
