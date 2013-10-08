@@ -1,6 +1,6 @@
 body {
   font: 1em/1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #444;
+  color: #555;
 }
 
 header {
@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 40px;
   font-size: 2.1em;
 }
 
@@ -57,8 +58,14 @@ ul li {
   list-style-type: none;
 }
 
+/* Colors */
+
 .colors {
-  font-size: .8em;
+  font-size: .7em;
+}
+
+.colors ul {
+  margin-bottom: 10px;
 }
 
 .colors p {
@@ -70,12 +77,52 @@ ul li {
   width: 100%;
 }
 
+.colors .blue5 {
+  background: #0B1316;
+}
+
+.colors .blue4 {
+  background: #0f2034;
+}
+
+.colors .blue3 {
+  background: #192a47;
+}
+
+.colors .blue2 {
+  background: #34465a;
+}
+
+.colors .blue1 {
+  background: #6c7f95;
+}
+
 .colors .accentPrimary {
   background: #ec008c;
 }
 
 .colors .accentSecondary {
   background: #12acef;
+}
+
+.colors .accentSecondaryLightened {
+  background: #F2FBFE;
+}
+
+.colors .grey1 {
+  background: #2d2d2d;
+}
+
+.colors .grey2 {
+  background: #565656;
+}
+
+.colors .grey3 {
+  background: #878787;
+}
+
+.colors .grey4 {
+  background: #eee;
 }
 
 @media screen and (min-width: 768px) {
@@ -85,11 +132,11 @@ ul li {
   }
 
   .colors li {
-    width: 20%;
+    width: 15%;
   }
 
   .colors li:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
 }
