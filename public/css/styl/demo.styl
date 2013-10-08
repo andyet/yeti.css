@@ -1,0 +1,159 @@
+@import 'colors'
+
+body
+  font: 1em/1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif
+  color: $gray
+
+header
+  padding: 30px 0
+  border-bottom: 1px solid $grayLighter
+
+a
+  color: $blue
+  text-decoration: none
+
+  &:hover 
+    color: darken($blue, 20%)
+
+h1, h2
+  color: black
+
+h1
+  font-size: 2.5em
+
+h2
+  margin-bottom: 40px
+  font-size: 2.1em
+  line-height: 1em
+
+h3, h4
+  color: $grayLight
+
+h3
+  font-size: 1.5em
+
+h4 
+  font-size: 1.1em
+  text-transform: uppercase
+
+h2 a
+  float: right
+  display: inline-block
+  margin: 0 5px
+  font-size: .6em
+  text-transform: none
+
+.container
+  margin: 0 auto 100px
+
+.cf:before,
+.cf:after
+  content: " "
+  display: table
+
+.cf:after
+  clear: both
+
+ul
+  margin: 0
+  padding: 0
+
+  li
+    display: inline-block
+    list-style-type: none
+
+/* Colors */
+
+.colors
+  font-size: .7em
+  color: $grayLight
+
+  ul 
+    text-transform: uppercase
+    margin-bottom: 10px
+
+  .color
+    height: 60px
+    width: 100%
+
+  .blue1
+    background: $blueSaturatedDarker
+
+  .blue2
+    background: $blueSaturatedDark
+
+  .blue3
+    background: $blueSaturated
+
+  .blue4
+    background: $blueSaturatedLight
+
+  .blue5
+    background: $blueSaturatedLighter
+
+  .blue6
+    background: $blue
+
+  .blue7
+    background: $blueLight
+
+  .blue8
+    background: $blueLighter
+
+  .red1
+    background: $red
+
+  .orange1
+    background: $orange
+
+  .pink1
+    background: $pink
+
+  .pink2
+    background: $pinkLight
+
+  .pink3
+    background: $pinkLighter
+
+  .green1
+    background: $green
+
+  .green2
+    background: $greenLight
+
+  .green3
+    background: $greenLighter
+
+  .gray1
+    background: $grayDark
+
+  .gray2
+    background: $gray
+
+  .gray3
+    background: $grayLight
+
+  .gray4
+    background: $grayLighter
+
+
+@media screen and (min-width: 768px)
+
+  .container
+    width: 60%
+
+  .colors 
+    li
+      width: 10%
+
+      &:not(:first-child)
+        margin-left: 20px
+
+@media screen and (max-width: 767px)
+
+  .container
+    width: 90%
+
+  .colors li
+    width: 100%
+    margin: 0 0 10px 0
