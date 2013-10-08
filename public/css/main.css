@@ -8,6 +8,15 @@ header {
   border-bottom: 1px solid #eee;
 }
 
+a {
+  color: #12acef;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c719d;
+}
+
 h1, h2 {
   color: black;
 }
@@ -19,6 +28,7 @@ h1 {
 h2 {
   margin-bottom: 40px;
   font-size: 2.1em;
+  line-height: 1em;
 }
 
 h3, h4 {
@@ -32,6 +42,14 @@ h3 {
 h4 {
   font-size: 1.1em;
   text-transform: uppercase;
+}
+
+h2 a {
+  float: right;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: .6em;
+  text-transform: none;
 }
 
 .container {
@@ -62,14 +80,12 @@ ul li {
 
 .colors {
   font-size: .7em;
+  color: #666;
 }
 
 .colors ul {
+  text-transform: uppercase;
   margin-bottom: 10px;
-}
-
-.colors p {
-  margin: 0;
 }
 
 .colors .color {
@@ -97,16 +113,24 @@ ul li {
   background: #6c7f95;
 }
 
-.colors .accentPrimary {
-  background: #ec008c;
-}
-
-.colors .accentSecondary {
+.colors .blue6 {
   background: #12acef;
 }
 
-.colors .accentSecondaryLightened {
+.colors .blue7 {
+  background: #b3eaff;
+}
+
+.colors .blue8 {
   background: #F2FBFE;
+}
+
+.colors .pink1 {
+  background: #ec008c;
+}
+
+.colors .pink2 {
+  background: #fce8f1;
 }
 
 .colors .grey1 {
