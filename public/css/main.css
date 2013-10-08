@@ -53,7 +53,7 @@ h2 a {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .cf:before,
@@ -125,11 +125,23 @@ ul li {
   background: #F2FBFE;
 }
 
+.colors .red1 {
+  background: #de0a32;
+}
+
+.colors .orange1 {
+  background: #f18902;
+}
+
 .colors .pink1 {
   background: #ec008c;
 }
 
 .colors .pink2 {
+  background: #f8bee0;
+}
+
+.colors .pink3 {
   background: #fce8f1;
 }
 
