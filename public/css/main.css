@@ -149,6 +149,18 @@ ul li {
   background: #eee;
 }
 
+.colors .green1 {
+  background: #43bb6e;
+}
+
+.colors .green2 {
+  background: #b0eac5;
+}
+
+.colors .green3 {
+  background: #effbf3;
+}
+
 @media screen and (min-width: 768px) {
 
   .container {
@@ -156,7 +168,7 @@ ul li {
   }
 
   .colors li {
-    width: 15%;
+    width: 10%;
   }
 
   .colors li:not(:first-child) {
