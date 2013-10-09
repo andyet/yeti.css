@@ -1,13 +1,14 @@
 @import 'colors'
+@import 'variables'
 
 body
-  font: 1em/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font: 1em/1.4em $font-family-helvetica
   color: $gray
   background: #f9f9f9
 
 header
   padding: 30px 0
-  border-bottom: 1px solid $grayLighter
+  border-bottom: 1px solid $gray-lighter
 
 a
   color: $blue
@@ -33,7 +34,7 @@ h3
 h4 
   font-size: 1.1em
   text-transform: uppercase
-  color: $grayLight
+  color: $gray-light
 
 h3 a
   float: right
@@ -63,7 +64,7 @@ ul
 
 .content section
   padding-bottom: 30px
-  border-bottom: 1px solid $grayLighter
+  border-bottom: 1px solid $gray-lighter
 
   &:last-of-type
     border: none
@@ -73,7 +74,7 @@ ul
 .colors
 
   ul 
-    color: $grayLight
+    color: $gray-light
     font-size: .7em
     text-transform: uppercase
     margin-bottom: 10px
@@ -83,28 +84,28 @@ ul
     width: 100%
 
   .blue1
-    background: $blueSaturatedDarker
+    background: $blue-saturated-darker
 
   .blue2
-    background: $blueSaturatedDark
+    background: $blue-saturated-dark
 
   .blue3
-    background: $blueSaturated
+    background: $blue-saturated
 
   .blue4
-    background: $blueSaturatedLight
+    background: $blue-saturated-light
 
   .blue5
-    background: $blueSaturatedLighter
+    background: $blue-saturated-lighter
 
   .blue6
     background: $blue
 
   .blue7
-    background: $blueLight
+    background: $blue-light
 
   .blue8
-    background: $blueLighter
+    background: $blue-lighter
 
   .red1
     background: $red
@@ -116,31 +117,31 @@ ul
     background: $pink
 
   .pink2
-    background: $pinkLight
+    background: $pink-light
 
   .pink3
-    background: $pinkLighter
+    background: $pink-lighter
 
   .green1
     background: $green
 
   .green2
-    background: $greenLight
+    background: $green-light
 
   .green3
-    background: $greenLighter
+    background: $green-lighter
 
   .gray1
-    background: $grayDark
+    background: $gray-dark
 
   .gray2
     background: $gray
 
   .gray3
-    background: $grayLight
+    background: $gray-light
 
   .gray4
-    background: $grayLighter
+    background: $gray-lighter
 
 /* Typography */
 
