@@ -1,6 +1,7 @@
 body {
-  font: 1em/1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 1em/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #565656;
+  background: #f9f9f9;
 }
 header {
   padding: 30px 0;
@@ -14,7 +15,8 @@ a:hover {
   color: #0d8ac1;
 }
 h1,
-h2 {
+h2,
+h3 {
   color: #000;
 }
 h1 {
@@ -25,18 +27,15 @@ h2 {
   font-size: 2.1em;
   line-height: 1em;
 }
-h3,
-h4 {
-  color: #878787;
-}
 h3 {
   font-size: 1.5em;
 }
 h4 {
   font-size: 1.1em;
   text-transform: uppercase;
+  color: #878787;
 }
-h2 a {
+h3 a {
   float: right;
   display: inline-block;
   margin: 0 5px;
@@ -62,12 +61,17 @@ ul li {
   display: inline-block;
   list-style-type: none;
 }
-/* Colors */
-.colors {
-  font-size: 0.7em;
-  color: #878787;
+.content section {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
 }
+.content section:last-of-type {
+  border: none;
+}
+/* Colors */
 .colors ul {
+  color: #878787;
+  font-size: 0.7em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -134,6 +138,23 @@ ul li {
 }
 .colors .gray4 {
   background: #eee;
+}
+/* Typography */
+.typography .samples {
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 3px;
+  padding: 30px;
+}
+.typography .samples h1,
+.typography .samples h2,
+.typography .samples h3,
+.typography .samples h4,
+.typography .samples p {
+  margin: 0 0 20px 0;
+}
+.typography .samples p.small {
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .container {

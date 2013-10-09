@@ -1,8 +1,9 @@
 @import 'colors'
 
 body
-  font: 1em/1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font: 1em/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif
   color: $gray
+  background: #f9f9f9
 
 header
   padding: 30px 0
@@ -15,7 +16,7 @@ a
   &:hover 
     color: darken($blue, 20%)
 
-h1, h2
+h1, h2, h3
   color: black
 
 h1
@@ -26,17 +27,15 @@ h2
   font-size: 2.1em
   line-height: 1em
 
-h3, h4
-  color: $grayLight
-
 h3
   font-size: 1.5em
 
 h4 
   font-size: 1.1em
   text-transform: uppercase
+  color: $grayLight
 
-h2 a
+h3 a
   float: right
   display: inline-block
   margin: 0 5px
@@ -62,13 +61,20 @@ ul
     display: inline-block
     list-style-type: none
 
+.content section
+  padding-bottom: 30px
+  border-bottom: 1px solid $grayLighter
+
+  &:last-of-type
+    border: none
+
 /* Colors */
 
 .colors
-  font-size: .7em
-  color: $grayLight
 
   ul 
+    color: $grayLight
+    font-size: .7em
     text-transform: uppercase
     margin-bottom: 10px
 
@@ -135,6 +141,22 @@ ul
 
   .gray4
     background: $grayLighter
+
+/* Typography */
+
+.typography
+
+  .samples
+    margin: 20px 0
+    background: white
+    border-radius: 3px
+    padding: 30px
+
+    h1, h2, h3, h4, p
+      margin: 0 0 20px 0
+
+    p.small
+      margin: 0
 
 
 @media screen and (min-width: 768px)
