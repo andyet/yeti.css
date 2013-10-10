@@ -1,5 +1,11 @@
 // Buttons
 
+button
+  border: none
+
+.button
+  line-height: 35px
+
 .button, button
   display: inline-block
   border-radius: 3px
@@ -8,15 +14,18 @@
   background: $gray-lighter
   font-size: $font-size-base
   font-weight: $font-weight-bold
-  line-height: 35px
   text-align: center
   color: $gray-light
   text-overflow: ellipsis
 
-  &:hover
+  &:hover:not(:disabled)
     color: $gray
     background: darken($gray-lighter, 10%)
     transition: all .3s ease-in 
+
+  &:disabled
+    cursor: not-allowed
+    color: lighten($gray-light, 40%)
 
   &.small
     height: 25px
@@ -29,3 +38,24 @@
     line-height: 50px
     padding: 0 30px
     font-size: $font-size-large
+
+  &.primary, &.secondary
+    color: white
+
+  &.primary
+    background: $pink
+
+    &:hover:not(:disabled)
+      background: darken($pink, 10%)
+
+    &:disabled
+      background: $pink-light
+
+  &.secondary
+    background: $blue
+
+    &:disabled
+      background: $blue-light
+
+    &:hover:not(:disabled)
+      background: darken($blue, 10%)
