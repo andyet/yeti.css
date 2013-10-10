@@ -2,7 +2,7 @@
 @import 'variables'
 
 body
-  font: 1em/1.4em $font-family-helvetica
+  font: $font-size-base/$line-height-base $font-family-helvetica
   color: $gray
   background: #f9f9f9
 
@@ -17,22 +17,27 @@ a
   &:hover 
     color: darken($blue, 20%)
 
+h1, h2
+  line-height: $line-height-headings
+
+h3, h4
+  line-height: $line-height-base
+
 h1, h2, h3
   color: black
 
 h1
-  font-size: 2.5em
+  font-size: $font-size-h1
 
 h2
   margin-bottom: 40px
-  font-size: 2.1em
-  line-height: 1em
+  font-size: $font-size-h2
 
 h3
-  font-size: 1.5em
+  font-size: $font-size-h3
 
 h4 
-  font-size: 1.1em
+  font-size: $font-size-h4
   text-transform: uppercase
   color: $gray-light
 
@@ -154,10 +159,11 @@ ul
     padding: 30px
 
     h1, h2, h3, h4, p
-      margin: 0 0 20px 0
+      margin: 0 0 10px 0
 
     p.small
       margin: 0
+      font-size: $font-size-small
 
 
 @media screen and (min-width: 768px)

@@ -1,5 +1,5 @@
 body {
-  font: 1em/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 14px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #565656;
   background: #f9f9f9;
 }
@@ -15,23 +15,30 @@ a:hover {
   color: #0d8ac1;
 }
 h1,
+h2 {
+  line-height: 26px;
+}
+h3,
+h4 {
+  line-height: 18px;
+}
+h1,
 h2,
 h3 {
   color: #000;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 30px;
 }
 h2 {
   margin-bottom: 40px;
-  font-size: 2.1em;
-  line-height: 1em;
+  font-size: 24px;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 18px;
 }
 h4 {
-  font-size: 1.1em;
+  font-size: 14px;
   text-transform: uppercase;
   color: #878787;
 }
@@ -151,10 +158,11 @@ ul li {
 .typography .samples h3,
 .typography .samples h4,
 .typography .samples p {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 .typography .samples p.small {
   margin: 0;
+  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
   .container {
