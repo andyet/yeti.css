@@ -1,0 +1,31 @@
+// Buttons
+
+.button, button
+  display: inline-block
+  border-radius: 3px
+  padding: 0 15px
+  height: 35px
+  background: $gray-lighter
+  font-size: $font-size-base
+  font-weight: $font-weight-bold
+  line-height: 35px
+  text-align: center
+  color: $gray-light
+  text-overflow: ellipsis
+
+  &:hover
+    color: $gray
+    background: darken($gray-lighter, 10%)
+    transition: all .3s ease-in 
+
+  &.small
+    height: 25px
+    padding: 0 8px
+    font-size: $font-size-small
+    line-height: 25px
+
+  &.large
+    height: 50px
+    line-height: 50px
+    padding: 0 30px
+    font-size: $font-size-large

@@ -74,6 +74,40 @@ ul.unstyled li {
 ol li {
   list-style-type: decimal;
 }
+.button,
+button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 15px;
+  height: 35px;
+  background: #eee;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 35px;
+  text-align: center;
+  color: #878787;
+  text-overflow: ellipsis;
+}
+.button:hover,
+button:hover {
+  color: #565656;
+  background: #d6d6d6;
+  transition: all 0.3s ease-in;
+}
+.button.small,
+button.small {
+  height: 25px;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 25px;
+}
+.button.large,
+button.large {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 16px;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
@@ -226,6 +260,10 @@ h3 a {
 .typography .samples p.small {
   margin: 0;
   font-size: 12px;
+}
+/* Buttons */
+.buttons .button {
+  margin-right: 10px;
 }
 @media screen and (min-width: 768px) {
   .container {
