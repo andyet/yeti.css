@@ -1,0 +1,47 @@
+body
+  font: $font-size-base/$line-height-base $font-family-helvetica
+  // font: $font-size-base/$line-height-base $font-family-gotham
+  color: $gray
+  background: white
+
+strong
+  font-weight: $font-weight-bold
+
+em
+  font-style: italic
+
+abbr
+  color: $gray-dark
+  border-bottom: 1px dotted $gray-light
+
+small
+  font-size: $font-size-small
+
+blockquote
+  margin: 20px 0
+  padding: 15px 20px
+  border-left: 5px solid $gray-light
+  background: $gray-lighter
+
+  p
+    margin: 0 0 10px 0
+    font-size: $font-size-base
+
+    &:last-child
+      margin-bottom: 0
+
+  small
+    font-size: $font-size-small
+    color: $gray-light
+
+    &:before
+      content: '\2014 \00A0'
+
+  &.blue
+    border-left: 5px solid $blue-light
+    background: $blue-lighter
+    color: $blue
+
+    small
+      color: $blue-light
+

@@ -1,7 +1,48 @@
 body {
   font: 14px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #565656;
-  background: #f9f9f9;
+  background: #fff;
+}
+strong {
+  font-weight: 800;
+}
+em {
+  font-style: italic;
+}
+abbr {
+  color: #2d2d2d;
+  border-bottom: 1px dotted #878787;
+}
+small {
+  font-size: 12px;
+}
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-left: 5px solid #878787;
+  background: #eee;
+}
+blockquote p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+blockquote small {
+  font-size: 12px;
+  color: #878787;
+}
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+blockquote.blue {
+  border-left: 5px solid #b3eaff;
+  background: #f2fbfe;
+  color: #12acef;
+}
+blockquote.blue small {
+  color: #b3eaff;
 }
 header {
   padding: 30px 0;
@@ -149,7 +190,7 @@ ul li {
 /* Typography */
 .typography .samples {
   margin: 20px 0;
-  background: #fff;
+  background: #eee;
   border-radius: 3px;
   padding: 30px;
 }
