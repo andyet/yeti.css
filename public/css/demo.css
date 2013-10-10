@@ -44,6 +44,36 @@ blockquote.blue {
 blockquote.blue small {
   color: #b3eaff;
 }
+ul,
+ol {
+  margin: 0 0 20px 20px;
+  padding: 0;
+}
+ul li ul,
+ol li ul,
+ul li ol,
+ol li ol {
+  margin-bottom: 0;
+}
+ul li ul li,
+ol li ul li,
+ul li ol li,
+ol li ol li {
+  list-style-type: circle;
+}
+ul li {
+  list-style-type: disc;
+}
+ul.unstyled {
+  margin: 0;
+}
+ul.unstyled li {
+  display: inline-block;
+  list-style-type: none;
+}
+ol li {
+  list-style-type: decimal;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
@@ -100,14 +130,6 @@ h3 a {
 }
 .cf:after {
   clear: both;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {
-  display: inline-block;
-  list-style-type: none;
 }
 .content section {
   padding-bottom: 30px;

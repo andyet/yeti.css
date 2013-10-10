@@ -45,3 +45,29 @@ blockquote
     small
       color: $blue-light
 
+ul, ol
+  margin: 0 0 20px 20px
+  padding: 0
+
+  li ul, li ol
+    margin-bottom: 0
+    li
+      list-style-type: circle
+
+ul
+  li
+    list-style-type: disc
+
+  &.unstyled
+    margin: 0
+
+    li
+      display: inline-block
+      list-style-type: none
+
+ol
+  li
+    list-style-type: decimal
+
+
+
