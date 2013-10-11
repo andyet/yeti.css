@@ -1,6 +1,10 @@
 // Forms
 
-input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], textarea
+input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
+  margin-bottom: 20px
+  width: 100%
+
+input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
   display: block
   border-radius: 3px
   border: 1px solid $gray-lighter
@@ -19,3 +23,9 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
 textarea
   padding: 10px
   resize: none
+
+input[type=file]
+  padding: 15px
+  background: lighten($gray-lighter, 70%)
+  font-size: $font-size-small
+  color: $gray-light

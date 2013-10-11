@@ -203,6 +203,18 @@ input[type=password],
 input[type=search],
 input[type=date],
 input[type=url],
+input[type=file],
+textarea {
+  margin-bottom: 20px;
+  width: 100%;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=date],
+input[type=url],
+input[type=file],
 textarea {
   display: block;
   border-radius: 3px;
@@ -214,6 +226,7 @@ input[type=password]:focus,
 input[type=search]:focus,
 input[type=date]:focus,
 input[type=url]:focus,
+input[type=file]:focus,
 textarea:focus {
   outline: none;
   border: 1px solid #b3eaff;
@@ -233,6 +246,12 @@ input[type=url] {
 textarea {
   padding: 10px;
   resize: none;
+}
+input[type=file] {
+  padding: 15px;
+  background: #fafafa;
+  font-size: 12px;
+  color: #878787;
 }
 header {
   padding: 30px 0;
