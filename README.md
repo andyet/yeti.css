@@ -38,10 +38,35 @@ Use the log in email: `karolina@andyet.net` and ping @adambrault / @karolinaszcz
 
 For more detailed information read [Typography.com User Guide](http://www.typography.com/cloud/user-guide/welcome).
 
+### Buttons
+Buttons come in variety of predefined sizes, colors and states. 
+
+Sizes:
+
+* large (`.button.large`)
+* regular (`.button`)
+* small (`.button.small`)
+
+Colors:
+
+* accent primary &ndash; pink (`.button.primary`)
+* accent secondary &ndash; blue (`.button.secondary`)
+
+States:
+
+* `disabled`
+
+Button group
+Works for any number of elements (even one if you are appending DOM them with JavaScript) and both with a class `.button` and button tag.
+
+* default (`.button-group`)
+* outlined, with borders (`.button-group.outlined`)
+* outlined primary (`.button-group.outlined.primary`)
+* outlined secondary (`.button-group.outlined.secondary`)
+
 ## To do
 
 - Forms and their validation
-- Buttons
 - Messaging and user feedback
 - Avatars
 - Modals and dialogs
