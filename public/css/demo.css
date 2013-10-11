@@ -262,6 +262,25 @@ label {
   font-weight: 800;
   font-size: 12px;
 }
+.radio label,
+.checkbox label {
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio label input[type=checkbox],
+.checkbox label input[type=checkbox],
+.radio label input[type=radio],
+.checkbox label input[type=radio] {
+  float: left;
+  margin: 3px 10px 0 0;
+}
+.radio label input[type=checkbox]:focus,
+.checkbox label input[type=checkbox]:focus,
+.radio label input[type=radio]:focus,
+.checkbox label input[type=radio]:focus {
+  outline: none;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
