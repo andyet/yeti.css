@@ -152,42 +152,50 @@ button.secondary:disabled {
 button.secondary:hover:not(:disabled) {
   background: #0f9bd9;
 }
-.button-group .button {
+.button-group .button,
+.button-group button {
   border-radius: 0;
+  margin-left: -1px;
 }
-.button-group .button:first-child:only-child {
+.button-group .button:first-child:only-child,
+.button-group button:first-child:only-child {
   border-radius: 3px;
 }
-.button-group .button:first-child {
+.button-group .button:first-child,
+.button-group button:first-child {
   border-radius: 3px 0 0 3px;
 }
-.button-group .button:last-child {
+.button-group .button:last-child,
+.button-group button:last-child {
   border-radius: 0 3px 3px 0;
 }
 .button-group.outlined {
   display: inline-block;
   border-radius: 3px;
-  border: 1px solid #c3c3c3;
 }
 .button-group.outlined button,
 .button-group.outlined .button {
-  border-left: 1px solid #c3c3c3;
-}
-.button-group.outlined button:first-child,
-.button-group.outlined .button:first-child,
-.button-group.outlined.primary button:first-child,
-.button-group.outlined.primary button:first-child,
-.button-group.outlined.secondary button:first-child,
-.button-group.outlined.secondary .button:first-child {
-  border: none;
-}
-.button-group.outlined.primary {
-  border: 1px solid #f8bee0;
+  border: 1px solid #c3c3c3;
 }
 .button-group.outlined.primary button,
 .button-group.outlined.primary .button {
   background: #fce8f1;
-  border-left: 1px solid #f8bee0;
+  border: 1px solid #f8bee0;
+  color: #ec008c;
+}
+.button-group.outlined.primary button:hover,
+.button-group.outlined.primary .button:hover {
+  background: #fbd8ec;
+}
+.button-group.outlined.secondary button,
+.button-group.outlined.secondary .button {
+  background: #f2fbfe;
+  border: 1px solid #b3eaff;
+  color: #12acef;
+}
+.button-group.outlined.secondary button:hover,
+.button-group.outlined.secondary .button:hover {
+  background: #d1f2ff;
 }
 header {
   padding: 30px 0;
@@ -352,7 +360,7 @@ h3 a {
 }
 .buttons .button-group .button,
 .buttons .button-group button {
-  margin: 0;
+  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .container {
