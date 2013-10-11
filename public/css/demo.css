@@ -121,7 +121,11 @@ button.large {
 .button.primary,
 button.primary,
 .button.secondary,
-button.secondary {
+button.secondary,
+.button.primary:hover,
+button.primary:hover,
+.button.secondary:hover,
+button.secondary:hover {
   color: #fff;
 }
 .button.primary,
@@ -147,6 +151,43 @@ button.secondary:disabled {
 .button.secondary:hover:not(:disabled),
 button.secondary:hover:not(:disabled) {
   background: #0f9bd9;
+}
+.button-group .button {
+  border-radius: 0;
+}
+.button-group .button:first-child:only-child {
+  border-radius: 3px;
+}
+.button-group .button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.button-group .button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.button-group.outlined {
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #c3c3c3;
+}
+.button-group.outlined button,
+.button-group.outlined .button {
+  border-left: 1px solid #c3c3c3;
+}
+.button-group.outlined button:first-child,
+.button-group.outlined .button:first-child,
+.button-group.outlined.primary button:first-child,
+.button-group.outlined.primary button:first-child,
+.button-group.outlined.secondary button:first-child,
+.button-group.outlined.secondary .button:first-child {
+  border: none;
+}
+.button-group.outlined.primary {
+  border: 1px solid #f8bee0;
+}
+.button-group.outlined.primary button,
+.button-group.outlined.primary .button {
+  background: #fce8f1;
+  border-left: 1px solid #f8bee0;
 }
 header {
   padding: 30px 0;
@@ -308,6 +349,10 @@ h3 a {
 .buttons .button,
 .buttons button {
   margin-right: 10px;
+}
+.buttons .button-group .button,
+.buttons .button-group button {
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .container {

@@ -39,7 +39,7 @@ button
     padding: 0 30px
     font-size: $font-size-large
 
-  &.primary, &.secondary
+  &.primary, &.secondary, &.primary:hover, &.secondary:hover
     color: white
 
   &.primary
@@ -59,3 +59,36 @@ button
 
     &:hover:not(:disabled)
       background: darken($blue, 10%)
+
+.button-group
+
+  .button
+    border-radius: 0
+
+    &:first-child:only-child
+      border-radius: 3px
+
+    &:first-child
+      border-radius: 3px 0 0 3px
+
+    &:last-child
+      border-radius: 0 3px 3px 0
+
+  &.outlined
+    display: inline-block
+    border-radius: 3px
+    border: 1px solid lighten($gray-light, 50%)
+
+    button, .button
+      border-left: 1px solid lighten($gray-light, 50%)
+
+    button, .button, &.primary button, &.primary button, &.secondary button, &.secondary .button
+      &:first-child
+        border: none
+
+    &.primary
+      border: 1px solid $pink-light
+
+      button, .button
+        background: $pink-lighter
+        border-left: 1px solid $pink-light
