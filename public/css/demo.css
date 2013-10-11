@@ -237,6 +237,17 @@ textarea:focus {
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
 }
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled,
+input[type=search]:disabled,
+input[type=date]:disabled,
+input[type=url]:disabled,
+input[type=file]:disabled,
+textarea:disabled {
+  background: #f8f8f8;
+  cursor: not-allowed;
+}
 input[type=text],
 input[type=email],
 input[type=password],

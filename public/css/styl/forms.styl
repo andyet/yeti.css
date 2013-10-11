@@ -17,6 +17,10 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
     transition: all .3s ease-in
     -webkit-transition: all .3s ease-in
 
+  &:disabled
+    background: lighten($gray-lighter, 60%)
+    cursor: not-allowed
+
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url]
   height: 30px
   padding: 5px 10px
