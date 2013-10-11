@@ -197,6 +197,43 @@ button.secondary:hover:not(:disabled) {
 .button-group.outlined.secondary .button:hover {
   background: #d1f2ff;
 }
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=date],
+input[type=url],
+textarea {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=date]:focus,
+input[type=url]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #b3eaff;
+  box-shadow: 0 0 5px #b3eaff;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=date],
+input[type=url] {
+  height: 20px;
+  padding: 5px 10px;
+}
+textarea {
+  padding: 10px;
+  resize: none;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;

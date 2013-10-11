@@ -1,0 +1,21 @@
+// Forms
+
+input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], textarea
+  display: block
+  border-radius: 3px
+  border: 1px solid $gray-lighter
+
+  &:focus
+    outline: none
+    border: 1px solid $blue-light
+    box-shadow: 0 0 5px $blue-light
+    transition: all .3s ease-in
+    -webkit-transition: all .3s ease-in
+
+input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url]
+  height: 20px
+  padding: 5px 10px
+
+textarea
+  padding: 10px
+  resize: none
