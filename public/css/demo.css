@@ -207,6 +207,9 @@ input[type=file],
 textarea {
   margin-bottom: 20px;
   width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 input[type=text],
 input[type=email],
@@ -240,7 +243,7 @@ input[type=password],
 input[type=search],
 input[type=date],
 input[type=url] {
-  height: 20px;
+  height: 30px;
   padding: 5px 10px;
 }
 textarea {
