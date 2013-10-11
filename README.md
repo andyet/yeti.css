@@ -41,22 +41,22 @@ For more detailed information read [Typography.com User Guide](http://www.typogr
 ### Buttons
 Buttons come in variety of predefined sizes, colors and states. 
 
-Sizes:
+#### Sizes
 
 * large (`.button.large`)
 * regular (`.button`)
 * small (`.button.small`)
 
-Colors:
+#### Colors
 
 * accent primary &ndash; pink (`.button.primary`)
 * accent secondary &ndash; blue (`.button.secondary`)
 
-States:
+#### States
 
 * `disabled`
 
-Button group
+#### Button group
 Works for any number of elements (even one if you are appending DOM them with JavaScript) and both with a class `.button` and button tag.
 
 * default (`.button-group`)
