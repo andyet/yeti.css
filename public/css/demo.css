@@ -234,6 +234,29 @@ textarea.invalid:focus {
   border: 1px solid #fbafbe;
   box-shadow: 0 0 5px #fbafbe;
 }
+input[type=text].valid,
+input[type=email].valid,
+input[type=password].valid,
+input[type=search].valid,
+input[type=date].valid,
+input[type=url].valid,
+input[type=file].valid,
+textarea.valid {
+  background: #effbf3;
+  border: 1px solid #b0eac5;
+  color: #b0eac5;
+}
+input[type=text].valid:focus,
+input[type=email].valid:focus,
+input[type=password].valid:focus,
+input[type=search].valid:focus,
+input[type=date].valid:focus,
+input[type=url].valid:focus,
+input[type=file].valid:focus,
+textarea.valid:focus {
+  border: 1px solid #b0eac5;
+  box-shadow: 0 0 5px #b0eac5;
+}
 input[type=text],
 input[type=email],
 input[type=password],
@@ -305,8 +328,11 @@ label {
   right: 10px;
   font-size: 12px;
 }
-.has-icon .ss-icon.ss-close {
+.has-icon .ss-icon.ss-delete {
   color: #fbafbe;
+}
+.has-icon .ss-icon.ss-check {
+  color: #b0eac5;
 }
 .radio label,
 .checkbox label {

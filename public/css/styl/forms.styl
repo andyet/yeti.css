@@ -14,6 +14,15 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
       border: 1px solid $red-light
       box-shadow: 0 0 5px $red-light
 
+  &.valid
+    background: $green-lighter
+    border: 1px solid $green-light
+    color: $green-light
+
+    &:focus
+      border: 1px solid $green-light
+      box-shadow: 0 0 5px $green-light
+
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
   display: block
   border-radius: 3px
@@ -59,8 +68,11 @@ label
     right: 10px
     font-size: $font-size-small
 
-    &.ss-close
+    &.ss-delete
       color: $red-light
+
+    &.ss-check
+      color: $green-light
 
 .radio, .checkbox
   

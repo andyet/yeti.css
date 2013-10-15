@@ -11,7 +11,11 @@ section.forms
   .input-wrapper.has-icon
     label(for="sample1") Invalid input with an icon
     input(type="text", name="sample1", class="invalid")
-    i.ss-icon.ss-standard.ss-close close
+    i.ss-icon.ss-standard.ss-delete 
+  .input-wrapper.has-icon
+    label(for="sample1") Valid input with an icon
+    input(type="text", name="sample1", class="valid")
+    i.ss-icon.ss-standard.ss-check
   input(type="file")
   label Write a comment
   textarea
