@@ -211,6 +211,29 @@ textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+input[type=text].invalid,
+input[type=email].invalid,
+input[type=password].invalid,
+input[type=search].invalid,
+input[type=date].invalid,
+input[type=url].invalid,
+input[type=file].invalid,
+textarea.invalid {
+  background: #fef2f4;
+  border: 1px solid #fbafbe;
+  color: #fbafbe;
+}
+input[type=text].invalid:focus,
+input[type=email].invalid:focus,
+input[type=password].invalid:focus,
+input[type=search].invalid:focus,
+input[type=date].invalid:focus,
+input[type=url].invalid:focus,
+input[type=file].invalid:focus,
+textarea.invalid:focus {
+  border: 1px solid #fbafbe;
+  box-shadow: 0 0 5px #fbafbe;
+}
 input[type=text],
 input[type=email],
 input[type=password],
@@ -393,6 +416,12 @@ h3 a {
 }
 .colors .red1 {
   background: #de0a32;
+}
+.colors .red2 {
+  background: #fbafbe;
+}
+.colors .red3 {
+  background: #fef2f4;
 }
 .colors .orange1 {
   background: #f18902;

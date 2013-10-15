@@ -5,6 +5,15 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
   width: 100%
   borderbox()
 
+  &.invalid
+    background: $red-lighter
+    border: 1px solid $red-light
+    color: $red-light
+
+    &:focus
+      border: 1px solid $red-light
+      box-shadow: 0 0 5px $red-light
+
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
   display: block
   border-radius: 3px
