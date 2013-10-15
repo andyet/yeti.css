@@ -296,6 +296,18 @@ label {
   font-weight: 800;
   font-size: 12px;
 }
+.has-icon {
+  position: relative;
+}
+.has-icon .ss-icon {
+  position: absolute;
+  top: 31px;
+  right: 10px;
+  font-size: 12px;
+}
+.has-icon .ss-icon.ss-close {
+  color: #fbafbe;
+}
 .radio label,
 .checkbox label {
   font-size: 14px;

@@ -6,8 +6,12 @@ section.forms
   input(type="text", name="sample1", placeholder="Insert your username")
   label(for="sample2") Password
   input(type="text", name="sample2", placeholder="••••••••••••••", disabled)
-  label(for="sample1") Username
-  input(type="text", name="sample1", placeholder="Your username is invalid", class="invalid")
+  label(for="sample1") Invalid input
+  input(type="text", name="sample1", class="invalid")
+  .input-wrapper.has-icon
+    label(for="sample1") Invalid input with an icon
+    input(type="text", name="sample1", class="invalid")
+    i.ss-icon.ss-standard.ss-close close
   input(type="file")
   label Write a comment
   textarea
