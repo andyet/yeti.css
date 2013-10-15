@@ -6,6 +6,10 @@ section.forms
   input(type="text", name="sample1", placeholder="Insert your username")
   label(for="sample2") Password
   input(type="text", name="sample2", placeholder="••••••••••••••", disabled)
+  .input-wrapper.has-icon
+    label(for="search") Search
+    input(type="search", name="search")
+    i.ss-icon.ss-standard.ss-search
   .input-wrapper.invalid
     label(for="sample1") Invalid input
     input(type="text", name="sample1", class="invalid")

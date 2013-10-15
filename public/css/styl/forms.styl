@@ -88,12 +88,21 @@ label
     top: 31px
     right: 10px
     font-size: $font-size-small
+    transition: all .3s ease-in
 
     &.ss-delete
       color: $red-light
 
     &.ss-check
       color: $green-light
+
+    &.ss-search
+      color: $gray-lighter
+
+  input[type=search]
+
+    &:focus ~ .ss-icon.ss-search
+      color: $gray-light
 
 .radio, .checkbox
   

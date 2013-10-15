@@ -359,12 +359,19 @@ label {
   top: 31px;
   right: 10px;
   font-size: 12px;
+  transition: all 0.3s ease-in;
 }
 .has-icon .ss-icon.ss-delete {
   color: #fdcad3;
 }
 .has-icon .ss-icon.ss-check {
   color: #c6ebd3;
+}
+.has-icon .ss-icon.ss-search {
+  color: #eee;
+}
+.has-icon input[type=search]:focus ~ .ss-icon.ss-search {
+  color: #878787;
 }
 .radio label,
 .checkbox label {
