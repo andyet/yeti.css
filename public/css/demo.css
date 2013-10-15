@@ -211,6 +211,19 @@ textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled,
+input[type=search]:disabled,
+input[type=date]:disabled,
+input[type=url]:disabled,
+input[type=file]:disabled,
+textarea:disabled,
+input[type=select]:disabled,
+input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+  cursor: not-allowed;
+}
 .invalid label {
   color: #de0a32;
 }
@@ -298,7 +311,6 @@ input[type=url]:disabled,
 input[type=file]:disabled,
 textarea:disabled {
   background: #f8f8f8;
-  cursor: not-allowed;
 }
 input[type=text],
 input[type=email],

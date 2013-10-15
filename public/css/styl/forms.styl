@@ -5,6 +5,12 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
   width: 100%
   borderbox()
 
+input[type=text], input[type=email], input[type=password], input[type=search], 
+input[type=date], input[type=url], input[type=file], textarea, input[type=select], input[type=checkbox], input[type=radio]
+
+  &:disabled
+    cursor: not-allowed
+
 .invalid
 
   label
@@ -47,7 +53,6 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
 
   &:disabled
     background: lighten($gray-lighter, 60%)
-    cursor: not-allowed
 
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url]
   height: 30px
