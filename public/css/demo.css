@@ -248,9 +248,9 @@ textarea {
 .valid input[type=url],
 .valid input[type=file],
 .valid textarea {
-  background: #effbf3;
-  border: 1px solid #b0eac5;
-  color: #b0eac5;
+  background: #f4fbf6;
+  border: 1px solid #c6ebd3;
+  color: #c6ebd3;
 }
 .valid input[type=text]:focus,
 .valid input[type=email]:focus,
@@ -260,8 +260,8 @@ textarea {
 .valid input[type=url]:focus,
 .valid input[type=file]:focus,
 .valid textarea:focus {
-  border: 1px solid #b0eac5;
-  box-shadow: 0 0 5px #b0eac5;
+  border: 1px solid #c6ebd3;
+  box-shadow: 0 0 5px #c6ebd3;
 }
 input[type=text],
 input[type=email],
@@ -338,7 +338,7 @@ label {
   color: #fdcad3;
 }
 .has-icon .ss-icon.ss-check {
-  color: #b0eac5;
+  color: #c6ebd3;
 }
 .radio label,
 .checkbox label {
@@ -483,10 +483,10 @@ h3 a {
   background: #43bb6e;
 }
 .colors .green2 {
-  background: #b0eac5;
+  background: #c6ebd3;
 }
 .colors .green3 {
-  background: #effbf3;
+  background: #f4fbf6;
 }
 .colors .gray1 {
   background: #2d2d2d;
