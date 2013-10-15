@@ -224,7 +224,7 @@ input[type=date]:disabled,
 input[type=url]:disabled,
 input[type=file]:disabled,
 textarea:disabled,
-input[type=select]:disabled,
+select:disabled,
 input[type=checkbox]:disabled,
 input[type=radio]:disabled {
   cursor: not-allowed;
@@ -288,7 +288,8 @@ input[type=search],
 input[type=date],
 input[type=url],
 input[type=file],
-textarea {
+textarea,
+select {
   display: block;
   border-radius: 3px;
   border: 1px solid #eee;
@@ -300,7 +301,8 @@ input[type=search]:focus,
 input[type=date]:focus,
 input[type=url]:focus,
 input[type=file]:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: none;
   border: 1px solid #b3eaff;
   box-shadow: 0 0 5px #b3eaff;
@@ -314,7 +316,8 @@ input[type=search]:disabled,
 input[type=date]:disabled,
 input[type=url]:disabled,
 input[type=file]:disabled,
-textarea:disabled {
+textarea:disabled,
+select:disabled {
   background: #f8f8f8;
 }
 input[type=text],
@@ -335,6 +338,12 @@ input[type=file] {
   background: #fafafa;
   font-size: 12px;
   color: #878787;
+}
+select {
+  border: 1px solid #eee;
+  height: 30px;
+  width: 100%;
+  margin: 20px 0;
 }
 label {
   display: block;

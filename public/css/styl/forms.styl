@@ -6,7 +6,7 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
   borderbox()
 
 input[type=text], input[type=email], input[type=password], input[type=search], 
-input[type=date], input[type=url], input[type=file], textarea, input[type=select], input[type=checkbox], input[type=radio]
+input[type=date], input[type=url], input[type=file], textarea, select, input[type=checkbox], input[type=radio]
 
   &:disabled
     cursor: not-allowed
@@ -39,7 +39,7 @@ input[type=date], input[type=url], input[type=file], textarea, input[type=select
       border: 1px solid $green-light
       box-shadow: 0 0 5px $green-light
 
-input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
+input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea, select
   display: block
   border-radius: 3px
   border: 1px solid $gray-lighter
@@ -67,6 +67,12 @@ input[type=file]
   background: lighten($gray-lighter, 70%)
   font-size: $font-size-small
   color: $gray-light
+
+select
+  border: 1px solid $gray-lighter
+  height: 30px
+  width: 100%
+  margin: 20px 0
 
 label
   display: block
