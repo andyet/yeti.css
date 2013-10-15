@@ -6,15 +6,16 @@ section.forms
   input(type="text", name="sample1", placeholder="Insert your username")
   label(for="sample2") Password
   input(type="text", name="sample2", placeholder="••••••••••••••", disabled)
-  label(for="sample1") Invalid input
-  input(type="text", name="sample1", class="invalid")
-  .input-wrapper.has-icon
-    label(for="sample1") Invalid input with an icon
+  .input-wrapper.invalid
+    label(for="sample1") Invalid input
     input(type="text", name="sample1", class="invalid")
+  .input-wrapper.has-icon.invalid
+    label(for="sample1") Invalid input with an icon
+    input(type="text", name="sample1")
     i.ss-icon.ss-standard.ss-delete 
-  .input-wrapper.has-icon
+  .input-wrapper.has-icon.valid
     label(for="sample1") Valid input with an icon
-    input(type="text", name="sample1", class="valid")
+    input(type="text", name="sample1")
     i.ss-icon.ss-standard.ss-check
   input(type="file")
   label Write a comment

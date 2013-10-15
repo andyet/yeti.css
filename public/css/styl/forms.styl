@@ -5,7 +5,12 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
   width: 100%
   borderbox()
 
-  &.invalid
+.invalid
+
+  label
+    color: $red
+
+  input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
     background: $red-lighter
     border: 1px solid $red-light
     color: $red-light
@@ -14,7 +19,12 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
       border: 1px solid $red-light
       box-shadow: 0 0 5px $red-light
 
-  &.valid
+.valid
+
+  label
+    color: $green
+
+  input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
     background: $green-lighter
     border: 1px solid $green-light
     color: $green-light
