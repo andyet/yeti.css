@@ -379,6 +379,11 @@ label {
   font-weight: normal;
   cursor: pointer;
 }
+.radio label.disabled,
+.checkbox label.disabled {
+  color: #878787;
+  cursor: not-allowed;
+}
 .radio label input[type=checkbox],
 .checkbox label input[type=checkbox],
 .radio label input[type=radio],
@@ -437,6 +442,12 @@ h3 a {
   margin: 0 5px;
   font-size: 0.6em;
   text-transform: none;
+}
+em {
+  font-family: monospace;
+  font-style: normal;
+  font-size: 12px;
+  color: #000;
 }
 .container {
   margin: 0 auto 100px;

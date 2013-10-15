@@ -64,9 +64,34 @@ Works for any number of elements (even one if you are appending DOM them with Ja
 * outlined primary (`.button-group.outlined.primary`)
 * outlined secondary (`.button-group.outlined.secondary`)
 
+### Forms
+Following elements have been defined:
+
+* all kinds of inputs (`text`, `search`, `email`, `password`, `date`, `url`, `password`)
+* selects
+* checkboxes
+* radio buttons
+* textareas
+
+#### States
+
+* `disabled` 
+* `valid`
+* `invalid`
+
+Validity classes should be added to parent wrapper element as they relate to labels, inputs and icons within.
+
+#### Icons
+When using icons for denotating validity or search do: `i.ss-icon.ss-standard` and add 
+
+* `.ss-check`
+* `.ss-delete`
+* `.ss-search`
+
+accordingly. Colors will be added by parent classes (`valid`, `invalid`). The wrapper needs to have `.has-icon` class for custom positioning.
+
 ## To do
 
-- Forms and their validation
 - Messaging and user feedback
 - Avatars
 - Modals and dialogs
