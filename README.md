@@ -6,7 +6,7 @@
 
 For quickly accessing the demo page fire up the server with [http-server](https://github.com/nodeapps/http-server) in root directory: 
 ```
-http-server /public
+http-server ./public
 ```
 
 ## CSS Components
