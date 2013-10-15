@@ -92,6 +92,11 @@ button {
   text-align: center;
   color: #878787;
   text-overflow: ellipsis;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .button:hover:not(:disabled),
 button:hover:not(:disabled) {
