@@ -397,6 +397,52 @@ label {
 .checkbox label input[type=radio]:focus {
   outline: none;
 }
+.message {
+  padding: 10px 15px;
+  position: relative;
+  background: #eee;
+  color: #565656;
+}
+.message p:last-of-type {
+  margin: 0;
+}
+.message .ss-icon.ss-delete {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -7px;
+  cursor: pointer;
+}
+.message.alert {
+  background: #fce8f1;
+  color: #ec008c;
+}
+.message.alert .ss-delete {
+  color: #f8bee0;
+}
+.message.alert .ss-delete:hover {
+  color: #ec008c;
+}
+.message.success {
+  background: #f4fbf6;
+  color: #43bb6e;
+}
+.message.success .ss-delete {
+  color: #c6ebd3;
+}
+.message.success .ss-delete:hover {
+  color: #43bb6e;
+}
+.message.has-icon {
+  padding: 10px 35px 10px 15px;
+}
+.message.full-width {
+  text-align: center;
+}
+.message.full-width.has-icon {
+  padding: 10px 35px;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
@@ -576,6 +622,10 @@ em {
 }
 .buttons .button-group.outlined {
   display: block;
+}
+/* Messages */
+.message {
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .container {

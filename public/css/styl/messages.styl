@@ -1,0 +1,48 @@
+// Messages
+
+.message
+  padding: 10px 15px
+  position: relative
+  background: $gray-lighter
+  color: $gray
+
+  p:last-of-type
+    margin: 0
+
+  .ss-icon.ss-delete
+    display: block
+    position: absolute
+    top: 50%
+    right: 15px
+    margin-top: -7px
+    cursor: pointer
+
+  &.alert
+    background: $pink-lighter
+    color: $pink
+
+    .ss-delete
+      color: $pink-light
+
+      &:hover
+        color: $pink
+
+  &.success
+    background: $green-lighter
+    color: $green
+
+    .ss-delete
+      color: $green-light
+
+      &:hover
+        color: $green
+
+  &.has-icon 
+    padding: 10px 35px 10px 15px
+
+  &.full-width
+    text-align: center
+
+    &.has-icon
+      padding: 10px 35px
+
