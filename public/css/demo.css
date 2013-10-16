@@ -497,6 +497,22 @@ label {
 .message.error .ss-delete:hover {
   color: #de0a32;
 }
+.message.alert {
+  background: #ffeed7;
+  color: #f18902;
+}
+.message.alert .ss-delete {
+  color: #ffeed7;
+}
+.message.alert .ss-delete:hover {
+  color: #f18902;
+}
+.message.alert a {
+  color: #c16e02;
+}
+.message.alert a:hover {
+  color: #915201;
+}
 .message.success {
   background: #f4fbf6;
   color: #43bb6e;
