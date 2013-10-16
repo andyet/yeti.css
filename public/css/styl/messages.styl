@@ -6,6 +6,13 @@
   background: $gray-lighter
   color: $gray
 
+  a
+    font-weight: $font-weight-bold
+    color: $gray-dark
+
+    &:hover
+      color: darken($gray-dark, 60%)
+
   p:last-of-type
     margin: 0
 
@@ -20,6 +27,12 @@
   &.alert
     background: $pink-lighter
     color: $pink
+
+    a
+      color: darken($pink, 20%)
+
+      &:hover
+        color: darken($pink, 40%)
 
     .ss-delete
       color: $pink-light
@@ -36,6 +49,12 @@
 
       &:hover
         color: $green
+
+    a
+      color: darken($green, 20%)
+
+      &:hover
+        color: darken($green, 40%)
 
   &.has-icon 
     padding: 10px 35px 10px 15px

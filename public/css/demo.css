@@ -403,6 +403,13 @@ label {
   background: #eee;
   color: #565656;
 }
+.message a {
+  font-weight: 800;
+  color: #2d2d2d;
+}
+.message a:hover {
+  color: #121212;
+}
 .message p:last-of-type {
   margin: 0;
 }
@@ -417,6 +424,12 @@ label {
 .message.alert {
   background: #fce8f1;
   color: #ec008c;
+}
+.message.alert a {
+  color: #bd0070;
+}
+.message.alert a:hover {
+  color: #8e0054;
 }
 .message.alert .ss-delete {
   color: #f8bee0;
@@ -433,6 +446,12 @@ label {
 }
 .message.success .ss-delete:hover {
   color: #43bb6e;
+}
+.message.success a {
+  color: #369658;
+}
+.message.success a:hover {
+  color: #287042;
 }
 .message.has-icon {
   padding: 10px 35px 10px 15px;
