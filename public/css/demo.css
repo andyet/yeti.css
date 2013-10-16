@@ -37,12 +37,12 @@ blockquote small:before {
   content: '\2014 \00A0';
 }
 blockquote.blue {
-  border-left: 5px solid #b3eaff;
-  background: #f2fbfe;
+  border-left: 5px solid #88d5f7;
+  background: #e7f7fd;
   color: #12acef;
 }
 blockquote.blue small {
-  color: #b3eaff;
+  color: #88d5f7;
 }
 ul,
 ol {
@@ -151,7 +151,7 @@ button.secondary {
 }
 .button.secondary:disabled,
 button.secondary:disabled {
-  background: #b3eaff;
+  background: #88d5f7;
 }
 .button.secondary:hover:not(:disabled),
 button.secondary:hover:not(:disabled) {
@@ -194,13 +194,13 @@ button.secondary:hover:not(:disabled) {
 }
 .button-group.outlined.secondary button,
 .button-group.outlined.secondary .button {
-  background: #f2fbfe;
-  border: 1px solid #b3eaff;
+  background: #e7f7fd;
+  border: 1px solid #88d5f7;
   color: #12acef;
 }
 .button-group.outlined.secondary button:hover,
 .button-group.outlined.secondary .button:hover {
-  background: #d1f2ff;
+  background: #b8e6fa;
 }
 input[type=text],
 input[type=email],
@@ -304,8 +304,8 @@ input[type=file]:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border: 1px solid #b3eaff;
-  box-shadow: 0 0 5px #b3eaff;
+  border: 1px solid #88d5f7;
+  box-shadow: 0 0 5px #88d5f7;
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
 }
@@ -497,10 +497,10 @@ em {
   background: #12acef;
 }
 .colors .blue7 {
-  background: #b3eaff;
+  background: #88d5f7;
 }
 .colors .blue8 {
-  background: #f2fbfe;
+  background: #e7f7fd;
 }
 .colors .red1 {
   background: #de0a32;
