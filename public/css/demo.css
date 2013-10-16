@@ -422,20 +422,20 @@ label {
   cursor: pointer;
 }
 .message.alert {
-  background: #fce8f1;
-  color: #ec008c;
+  background: #fff7f8;
+  color: #de0a32;
 }
 .message.alert a {
-  color: #bd0070;
+  color: #b20828;
 }
 .message.alert a:hover {
-  color: #8e0054;
+  color: #85061e;
 }
 .message.alert .ss-delete {
-  color: #f8bee0;
+  color: #fdcad3;
 }
 .message.alert .ss-delete:hover {
-  color: #ec008c;
+  color: #de0a32;
 }
 .message.success {
   background: #f4fbf6;
