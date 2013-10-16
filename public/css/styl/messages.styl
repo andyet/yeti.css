@@ -6,6 +6,52 @@
   background: $gray-lighter
   color: $gray
 
+  &:after
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+
+  &.above, &.below
+
+    &:after
+      border-color: rgba(136, 183, 213, 0)
+      border-width: 5px
+      left: 50%
+      margin-left: -5px
+
+  &.above
+
+    &:after
+      border-bottom-color: $gray-lighter
+      bottom: 100%
+
+    &.alert
+      &:after
+        border-bottom-color: $red-lighter
+
+    &.success
+      &:after
+        border-bottom-color: $green-lighter
+
+  &.below
+
+    &:after
+      border-top-color: $gray-lighter
+      top: 100%
+
+    &.alert
+      &:after
+        border-top-color: $red-lighter
+
+    &.success
+      &:after
+        border-top-color: $green-lighter
+
+
+
   a
     font-weight: $font-weight-bold
     color: $gray-dark

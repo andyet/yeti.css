@@ -403,6 +403,41 @@ label {
   background: #eee;
   color: #565656;
 }
+.message:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.message.above:after,
+.message.below:after {
+  border-color: rgba(136,183,213,0);
+  border-width: 5px;
+  left: 50%;
+  margin-left: -5px;
+}
+.message.above:after {
+  border-bottom-color: #eee;
+  bottom: 100%;
+}
+.message.above.alert:after {
+  border-bottom-color: #fff7f8;
+}
+.message.above.success:after {
+  border-bottom-color: #f4fbf6;
+}
+.message.below:after {
+  border-top-color: #eee;
+  top: 100%;
+}
+.message.below.alert:after {
+  border-top-color: #fff7f8;
+}
+.message.below.success:after {
+  border-top-color: #f4fbf6;
+}
 .message a {
   font-weight: 800;
   color: #2d2d2d;
