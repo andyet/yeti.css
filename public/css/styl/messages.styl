@@ -14,13 +14,13 @@
     position: absolute
     pointer-events: none
     border-color: rgba(136, 183, 213, 0)
-    border-width: 5px
+    border-width: 6px
 
   &.left, &.right
 
     &:after
       top: 50%
-      margin-top: -5px
+      margin-top: -6px
 
   &.left
 
@@ -36,6 +36,10 @@
       &:after
         border-left-color: $red-lighter
 
+    &.alert
+      &:after
+        border-left-color: $orange-lighter
+
   &.right
 
     &:after
@@ -50,11 +54,15 @@
       &:after
         border-right-color: $red-lighter
 
+    &.alert
+      &:after
+        border-right-color: $orange-lighter
+
   &.above, &.below
 
     &:after      
       left: 50%
-      margin-left: -5px
+      margin-left: -6px
 
   &.above
 
@@ -70,6 +78,10 @@
       &:after
         border-bottom-color: $green-lighter
 
+    &.alert
+      &:after
+        border-bottom-color: $orange-lighter
+
   &.below
 
     &:after
@@ -83,6 +95,10 @@
     &.success
       &:after
         border-top-color: $green-lighter
+
+    &.alert
+      &:after
+        border-top-color: $orange-lighter
 
   a
     font-weight: $font-weight-bold
@@ -123,7 +139,7 @@
     color: $orange
 
     .ss-delete
-      color: $orange-lighter
+      color: $orange-light
 
       &:hover
         color: $orange

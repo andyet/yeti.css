@@ -1,6 +1,14 @@
 section.messages
   h3 Messages
 
+  h4 Basic
+  p 
+    | There are four types of styles for messages: 
+    strong default, error, alert 
+    | and 
+    strong success. 
+    | All of them can contain links, which will have appropriate colors.
+
   .message
     p 
       | This is a message. 
@@ -11,23 +19,50 @@ section.messages
       | This is an error. 
       a(href="") This is a link.
 
-  .message.error.has-icon
-    p This is an error that can be dismissed.
-    a(class="ss-icon ss-standard ss-delete", title="Close")
+  .message.alert
+    p
+      | This is an alert. 
+      a(href="") This is a link.
 
   .message.success
     p 
       | This is a success message. 
       a(href="") This is a link.
 
-  .message.alert
-    p 
-      | This is an alert message. 
-      a(href="") This is a link.
+  h4 Dismissable
+  p 
+    | For messages that can be dismissed by the user add class 
+    em .has-icon 
+    | and appropriate markup for the icon itself &ndash; 
+    em a.ss-icon.ss-standard.ss-delete.
+
+  .message.error.has-icon
+    p This is an error that can be dismissed.
+    a(class="ss-icon ss-standard ss-delete", title="Close")
+
+  .message.alert.has-icon
+    p This is an alert that can be dismissed.
+    a(class="ss-icon ss-standard ss-delete", title="Close")
+
+  .message.success.has-icon
+    p This is a success message that can be dismissed.
+    a(class="ss-icon ss-standard ss-delete", title="Close")
+
+  h4 Full width
+  p 
+    | Messages spanning for full width (of the site, usually) should have 
+    em .full-width 
+    | class. The text will be centered.
 
   .message.success.full-width.has-icon
     p This is a full width success message that can be dismissed.
     a(class="ss-icon ss-standard ss-delete", title="Close")
+
+  h4 Positioning
+  p 
+    | Messages can be easily positioned accordingly to correlating fields using following classes: 
+    em above, below, left, right 
+    | &ndash; where those classes denotate position of the message relatively to the relevant element.
 
   .message.below
     p This is a message appearing below an element.
@@ -38,5 +73,5 @@ section.messages
   .message.error.left
     p This is a message appearing on the left hand side of the element.
 
-  .message.right
+  .message.alert.right
     p This is a message appearing on the right hand side of the element.

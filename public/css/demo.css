@@ -411,12 +411,12 @@ label {
   position: absolute;
   pointer-events: none;
   border-color: rgba(136,183,213,0);
-  border-width: 5px;
+  border-width: 6px;
 }
 .message.left:after,
 .message.right:after {
   top: 50%;
-  margin-top: -5px;
+  margin-top: -6px;
 }
 .message.left:after {
   left: 100%;
@@ -428,6 +428,9 @@ label {
 .message.left.error:after {
   border-left-color: #fff7f8;
 }
+.message.left.alert:after {
+  border-left-color: #ffeed7;
+}
 .message.right:after {
   right: 100%;
   border-right-color: #eee;
@@ -438,10 +441,13 @@ label {
 .message.right.error:after {
   border-right-color: #fff7f8;
 }
+.message.right.alert:after {
+  border-right-color: #ffeed7;
+}
 .message.above:after,
 .message.below:after {
   left: 50%;
-  margin-left: -5px;
+  margin-left: -6px;
 }
 .message.above:after {
   border-bottom-color: #eee;
@@ -453,6 +459,9 @@ label {
 .message.above.success:after {
   border-bottom-color: #f4fbf6;
 }
+.message.above.alert:after {
+  border-bottom-color: #ffeed7;
+}
 .message.below:after {
   border-top-color: #eee;
   top: 100%;
@@ -462,6 +471,9 @@ label {
 }
 .message.below.success:after {
   border-top-color: #f4fbf6;
+}
+.message.below.alert:after {
+  border-top-color: #ffeed7;
 }
 .message a {
   font-weight: 800;
@@ -502,7 +514,7 @@ label {
   color: #f18902;
 }
 .message.alert .ss-delete {
-  color: #ffeed7;
+  color: #fec57b;
 }
 .message.alert .ss-delete:hover {
   color: #f18902;
@@ -727,6 +739,12 @@ em {
 /* Messages */
 .message {
   margin-bottom: 10px;
+}
+.message.above,
+.message.below,
+.message.left,
+.message.right {
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .container {
