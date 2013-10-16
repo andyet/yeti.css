@@ -90,9 +90,29 @@ When using icons for denotating validity or search do: `i.ss-icon.ss-standard` a
 
 accordingly. Colors will be added by parent classes (`valid`, `invalid`). The wrapper needs to have `.has-icon` class for custom positioning.
 
+### Messages and user feedback
+Messages can have different styling according to the type of the message:
+
+* default (no additional class)
+* `error`
+* `alert`
+* `success`
+
+#### States
+
+* dismissable (`.has-icon`) &ndash; requires markup for closing icon (`a.ss-icon.ss-standard.ss-delete`)
+* `.full-width` &ndash; with centered text
+
+#### Positioning
+You can position messages accordingly to the element you're trying to refer to (they will have additional pointers):
+
+* `above`
+* `below`
+* `left`
+* `right`
+
 ## To do
 
-- Messaging and user feedback
 - Avatars
 - Modals and dialogs
 - Product and brand logos in different formats
