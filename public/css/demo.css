@@ -425,7 +425,7 @@ label {
 .message.left.success:after {
   border-left-color: #f4fbf6;
 }
-.message.left.alert:after {
+.message.left.error:after {
   border-left-color: #fff7f8;
 }
 .message.right:after {
@@ -435,7 +435,7 @@ label {
 .message.right.success:after {
   border-right-color: #f4fbf6;
 }
-.message.right.alert:after {
+.message.right.error:after {
   border-right-color: #fff7f8;
 }
 .message.above:after,
@@ -447,7 +447,7 @@ label {
   border-bottom-color: #eee;
   bottom: 100%;
 }
-.message.above.alert:after {
+.message.above.error:after {
   border-bottom-color: #fff7f8;
 }
 .message.above.success:after {
@@ -457,7 +457,7 @@ label {
   border-top-color: #eee;
   top: 100%;
 }
-.message.below.alert:after {
+.message.below.error:after {
   border-top-color: #fff7f8;
 }
 .message.below.success:after {
@@ -481,20 +481,20 @@ label {
   margin-top: -7px;
   cursor: pointer;
 }
-.message.alert {
+.message.error {
   background: #fff7f8;
   color: #de0a32;
 }
-.message.alert a {
+.message.error a {
   color: #b20828;
 }
-.message.alert a:hover {
+.message.error a:hover {
   color: #85061e;
 }
-.message.alert .ss-delete {
+.message.error .ss-delete {
   color: #fdcad3;
 }
-.message.alert .ss-delete:hover {
+.message.error .ss-delete:hover {
   color: #de0a32;
 }
 .message.success {
