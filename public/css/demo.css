@@ -410,11 +410,36 @@ label {
   width: 0;
   position: absolute;
   pointer-events: none;
+  border-color: rgba(136,183,213,0);
+  border-width: 5px;
+}
+.message.left:after,
+.message.right:after {
+  top: 50%;
+  margin-top: -5px;
+}
+.message.left:after {
+  left: 100%;
+  border-left-color: #eee;
+}
+.message.left.success:after {
+  border-left-color: #f4fbf6;
+}
+.message.left.alert:after {
+  border-left-color: #fff7f8;
+}
+.message.right:after {
+  right: 100%;
+  border-right-color: #eee;
+}
+.message.right.success:after {
+  border-right-color: #f4fbf6;
+}
+.message.right.alert:after {
+  border-right-color: #fff7f8;
 }
 .message.above:after,
 .message.below:after {
-  border-color: rgba(136,183,213,0);
-  border-width: 5px;
   left: 50%;
   margin-left: -5px;
 }

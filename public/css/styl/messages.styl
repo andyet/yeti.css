@@ -13,12 +13,46 @@
     width: 0
     position: absolute
     pointer-events: none
+    border-color: rgba(136, 183, 213, 0)
+    border-width: 5px
+
+  &.left, &.right
+
+    &:after
+      top: 50%
+      margin-top: -5px
+
+  &.left
+
+    &:after
+      left: 100%
+      border-left-color: $gray-lighter      
+
+    &.success
+      &:after
+        border-left-color: $green-lighter
+
+    &.alert
+      &:after
+        border-left-color: $red-lighter
+
+  &.right
+
+    &:after
+      right: 100%
+      border-right-color: $gray-lighter      
+
+    &.success
+      &:after
+        border-right-color: $green-lighter
+
+    &.alert
+      &:after
+        border-right-color: $red-lighter
 
   &.above, &.below
 
-    &:after
-      border-color: rgba(136, 183, 213, 0)
-      border-width: 5px
+    &:after      
       left: 50%
       margin-left: -5px
 
@@ -49,8 +83,6 @@
     &.success
       &:after
         border-top-color: $green-lighter
-
-
 
   a
     font-weight: $font-weight-bold
