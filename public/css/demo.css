@@ -561,22 +561,60 @@ label {
   border-radius: 3px;
   z-index: 20;
   width: 30%;
-  min-height: 200px;
   background: #fff;
 }
 .modal.no-head {
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  font-size: 16px;
 }
 .modal .ss-delete {
   display: block;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 23px;
+  right: 20px;
   font-size: 12px;
-  opacity: 0.3;
+  opacity: 0.2;
+  color: #565656;
 }
 .modal .ss-delete:hover {
   opacity: 1;
+}
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4 {
+  margin: 0;
+}
+.modal .head,
+.modal .body {
+  padding: 20px;
+}
+.modal .head {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.modal .body {
+  padding-top: 0;
+}
+.modal .body p:first-of-type {
+  margin-top: 0;
+}
+.modal .button-wrapper {
+  margin-top: 30px;
+  text-align: center;
+}
+.modal .button-wrapper button,
+.modal .button-wrapper .button {
+  width: 35%;
+}
+.modal .button-wrapper button:only-child,
+.modal .button-wrapper .button-only-child {
+  min-width: 60%;
+}
+.modal .button-wrapper button:not(:last-child),
+.modal .button-wrapper .button:not(:last-child) {
+  margin-right: 5px;
 }
 .overlay {
   position: fixed;

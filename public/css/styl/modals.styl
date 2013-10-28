@@ -9,22 +9,53 @@
   border-radius: 3px
   z-index: 20
   width: 30%
-  min-height: 200px
   background: white
 
   &.no-head
-    padding: 20px
+    padding: 40px 20px 20px 20px
+    text-align: center
+    font-size: $font-size-large
 
   .ss-delete
     display: block
     position: absolute
-    top: 15px
-    right: 15px
+    top: 23px
+    right: 20px
     font-size: $font-size-small
-    opacity: .3
+    opacity: .2
+    color: $gray
 
     &:hover
       opacity: 1
+
+  h1, h2, h3, h4
+    margin: 0
+
+  .head, .body
+    padding: 20px
+
+  .head
+    margin-bottom: 20px
+    border-bottom: 1px solid $gray-lighter
+
+  .body
+    padding-top: 0
+
+    p:first-of-type
+      margin-top: 0
+
+  .button-wrapper
+    margin-top: 30px
+    text-align: center
+
+    button, .button
+      width: 35%
+
+    button:only-child, .button-only-child
+      min-width: 60%
+
+    button:not(:last-child), .button:not(:last-child)
+      margin-right: 5px
 
 // Overlay
 
