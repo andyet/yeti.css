@@ -49,11 +49,17 @@ h3 a
   font-size: .6em
   text-transform: none
 
-em
+code
+  display: inline-block
   font-family: monospace
   font-style: normal
   font-size: $font-size-small
-  color: black
+  color: $gray-light
+  margin-right: 5px
+  border: 1px solid $gray-lighter
+  border-radius: 3px
+  padding: 0 5px
+  background: lighten($gray-lighter, 50%)
 
 .container
   margin: 0 auto 100px
