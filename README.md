@@ -111,7 +111,7 @@ You can position messages accordingly to the element you're trying to refer to (
 * `left`
 * `right`
 
-#### Modals
+### Modals
 
 All modals have:
 
@@ -119,11 +119,11 @@ All modals have:
 * content
 * optional one button or two that will be centered
 
-##### Regular modals
+#### Regular modals
 
 For regular modals use the following markup:
 
-```
+```html
   <div class="modal">
     <a href="" class="ss-icon ss-standard ss-delete"></a>
     <div class="head">
@@ -139,11 +139,11 @@ For regular modals use the following markup:
   </div>
 ```
 
-##### Modals without title
+#### Modals without title
 
 Should have `.no-head` class and the following markup:
 
-```
+```html
   <div class="modal">
     <a href="" class="ss-icon ss-standard ss-delete"></a>
     <p>Body of the modal.</p>
