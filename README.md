@@ -165,6 +165,5 @@ To overlay the content of the page use a div with `.overlay` class.
 - Tables
 - Images and Video
 - Avatars
-
 - Product and brand logos in different formats
 - Collection of stock product screenshots
