@@ -160,6 +160,11 @@ To overlay the content of the page use a div with `.overlay` class.
 
 ## To do
 
+- Navigation (top, side, tabs, breadcrumbs)
+- Progress bars
+- Tables
+- Images and Video
 - Avatars
+
 - Product and brand logos in different formats
 - Collection of stock product screenshots
