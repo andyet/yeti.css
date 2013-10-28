@@ -111,9 +111,55 @@ You can position messages accordingly to the element you're trying to refer to (
 * `left`
 * `right`
 
+#### Modals
+
+All modals have:
+
+* closing `x` link
+* content
+* optional one button or two that will be centered
+
+##### Regular modals
+
+For regular modals use the following markup:
+
+```
+  <div class="modal">
+    <a href="" class="ss-icon ss-standard ss-delete"></a>
+    <div class="head">
+      <h3>Title of the modal</h3>
+    </div>
+    <div class="body">
+      <p>Body of the modal.</p>
+      <div class="button-wrapper">
+        <button>Optional Button One</button>
+        <button>Optional Button Two</button>
+      </div>
+    </div>
+  </div>
+```
+
+##### Modals without title
+
+Should have `.no-head` class and the following markup:
+
+```
+  <div class="modal">
+    <a href="" class="ss-icon ss-standard ss-delete"></a>
+    <p>Body of the modal.</p>
+    <div class="button-wrapper">
+      <button>Optional Button One</button>
+      <button>Optional Button Two</button>
+    </div>
+  </div>
+```
+
+##### Overlay
+
+To overlay the content of the page use a div with `.overlay` class.
+
 ## To do
 
 - Avatars
-- Modals and dialogs
 - Product and brand logos in different formats
 - Collection of stock product screenshots
