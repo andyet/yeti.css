@@ -9,6 +9,8 @@ nav ul
   li, a
     display: inline-block
 
+// Top Nav
+
 .top-nav
   width: 100%
   height: 40px
@@ -80,3 +82,36 @@ nav ul
 
       .ss-icon
         color: $blue-saturated-lighter
+
+// Breadcrumbs
+
+.breadcrumbs
+  border: 1px solid $gray-lighter
+  borderbox()
+  padding: 8px 0
+  border-radius: 3px
+  box-shadow: inset 0 -1px 2px lighten($gray-lighter, 50%)
+
+  li:not(:first-child)
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      right: 100%
+      top: 0
+      height: 100%
+      width: 1px
+      background: $gray-lighter
+      -webkit-transform: rotate(15deg)
+
+  a
+    padding: 0 10px
+    font-size: $font-size-small
+
+    &.current
+      font-weight: $font-weight-bold
+      color: $gray
+
+    &.unavailable
+      color: $gray-light
