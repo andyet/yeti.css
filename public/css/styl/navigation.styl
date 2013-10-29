@@ -22,7 +22,6 @@ nav ul
 
   a
     padding: 0 15px
-    font-weight: $font-weight-bold
 
     &:hover, &.active
       background: lighten($blue-lighter, 60%)
@@ -45,7 +44,6 @@ nav ul
 
     .dropdown
       display: none
-      background: white
       position: absolute
       top: 100%
       left: 0
@@ -86,10 +84,7 @@ nav ul
 // Breadcrumbs
 
 .breadcrumbs
-  border: 1px solid $gray-lighter
-  borderbox()
   padding: 8px 0
-  border-radius: 3px
   box-shadow: inset 0 -1px 2px lighten($gray-lighter, 50%)
 
   li:not(:first-child)
@@ -102,19 +97,13 @@ nav ul
       top: 0
       height: 100%
       width: 1px
-      background: $gray-lighter
       -webkit-transform: rotate(15deg)
+      -ms-transform: rotate(15deg)
+      transform: rotate(15deg)
 
   a
-    padding: 0 10px
-    font-size: $font-size-small
-
     &.current
-      font-weight: $font-weight-bold
       color: $gray
-
-    &.unavailable
-      color: $gray-light
 
 // Pagination
 
@@ -122,19 +111,13 @@ nav ul
 
   a
     padding: 3px 8px
-    color: $gray-light
-    font-size: $font-size-small
 
     &:hover
-      background: $gray-lighter
       color: $gray
 
     &.active
       background: $blue-lighter
       color: $blue
-
-    &.active
-      font-weight: $font-weight-bold
 
     &.ss-icon
       font-size: 8px
@@ -150,24 +133,18 @@ nav ul
   a
     height: 35px
     line-height: 35px
-    padding: 0 10px
 
     &.active
       position: relative
       top: 1px
-      background: white
-      box-shadow: inset 0 1px 2px lighten($gray-lighter, 50%)
       border: 1px solid $gray-lighter
+      box-shadow: inset 0 1px 2px lighten($gray-lighter, 50%)
       border-bottom-color: transparent
       border-radius: 3px 3px 0 0
-      font-weight: $font-weight-bold
 
 // Side Navigation
 
 .side-nav
-  border: 1px solid $gray-lighter
-  borderbox()
-  border-radius: 3px
   box-shadow: inset 0 -1px 2px lighten($gray-lighter, 50%)
 
   li, a
@@ -180,12 +157,33 @@ nav ul
   a
     height: 30px
     line-height: 30px
-    padding: 0 10px
 
     &:hover, &.active
       background: lighten($blue-lighter, 60%)
 
-    &.active
-      font-weight: $font-weight-bold
+// Shared
 
+.breadcrumbs, .side-nav
+  borderbox()
+  border-radius: 3px
+  border: 1px solid $gray-lighter
+
+.breadcrumbs, .side-nav, .tabs
+  a
+    padding: 0 10px
+
+.dropdown, .tabs a.active
+  background: white
+
+.breadcrumbs li:not(:first-child):after, 
+.pagination a:not(.active):hover
+  background: $gray-lighter
+
+.tabs a.active, .top-nav a, .side-nav a.active, .breadcrumbs a.current, .pagination a.active
+  font-weight: $font-weight-bold
     
+.breadcrumbs a.unavailable, .pagination a
+  color: $gray-light
+
+.breadcrumbs a, .pagination a
+  font-size: $font-size-small
