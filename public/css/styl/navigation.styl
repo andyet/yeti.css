@@ -142,4 +142,22 @@ nav ul
     &.unavailable
       cursor: auto
 
+// Tabs
 
+.tabs
+  border-bottom: 1px solid $gray-lighter
+
+  a
+    height: 35px
+    line-height: 35px
+    padding: 0 10px
+
+    &.active
+      position: relative
+      top: 1px
+      background: white
+      box-shadow: inset 0 1px 2px lighten($gray-lighter, 50%)
+      border: 1px solid $gray-lighter
+      border-bottom-color: transparent
+      border-radius: 3px 3px 0 0
+      font-weight: $font-weight-bold

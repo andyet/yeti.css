@@ -534,6 +534,24 @@ nav ul a {
 .pagination a.unavailable {
   cursor: auto;
 }
+.tabs {
+  border-bottom: 1px solid #eee;
+}
+.tabs a {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+.tabs a.active {
+  position: relative;
+  top: 1px;
+  background: #fff;
+  box-shadow: inset 0 1px 2px #f7f7f7;
+  border: 1px solid #eee;
+  border-bottom-color: transparent;
+  border-radius: 3px 3px 0 0;
+  font-weight: 800;
+}
 .message {
   padding: 10px 15px;
   position: relative;
