@@ -467,6 +467,7 @@ nav ul a {
 .top-nav.dark a:hover,
 .top-nav.dark a.active {
   background: #34465a;
+  color: #a7b2bf;
 }
 .top-nav.dark .has-dropdown .dropdown {
   background: #192a47;
