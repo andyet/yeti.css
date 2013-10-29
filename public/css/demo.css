@@ -411,6 +411,7 @@ nav ul a {
   width: 100%;
   height: 40px;
   line-height: 40px;
+  margin-bottom: 30px;
 }
 .top-nav > li:not(:first-child) {
   border-left: 1px solid #eee;
@@ -423,35 +424,59 @@ nav ul a {
 .top-nav a.active {
   background: #f5fcfe;
 }
-.has-dropdown {
+.top-nav .has-dropdown {
   position: relative;
 }
-.has-dropdown a {
+.top-nav .has-dropdown a {
   padding-right: 35px;
 }
-.has-dropdown:hover .dropdown {
+.top-nav .has-dropdown:hover .dropdown {
   display: block;
 }
-.has-dropdown .ss-icon {
+.top-nav .has-dropdown .ss-icon {
   position: absolute;
   right: 15px;
   top: 2px;
   font-size: 10px;
   color: #88d5f7;
 }
-.has-dropdown .dropdown {
+.top-nav .has-dropdown .dropdown {
   display: none;
   background: #fff;
   position: absolute;
   top: 100%;
   left: 0;
   box-shadow: 0 3px 10px #f7f7f7;
+  z-index: 10;
 }
-.has-dropdown .dropdown li {
+.top-nav .has-dropdown .dropdown li {
   display: block;
 }
-.has-dropdown .dropdown li:not(:last-child) {
+.top-nav .has-dropdown .dropdown li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+.top-nav.dark {
+  background: #192a47;
+}
+.top-nav.dark li:not(:first-child) {
+  border-left: 1px solid #34465a;
+}
+.top-nav.dark a {
+  color: #6c7f95;
+}
+.top-nav.dark a:hover,
+.top-nav.dark a.active {
+  background: #34465a;
+}
+.top-nav.dark .has-dropdown .dropdown {
+  background: #192a47;
+  box-shadow: none;
+}
+.top-nav.dark .has-dropdown .dropdown li {
+  border-bottom: 1px solid #34465a;
+}
+.top-nav.dark .has-dropdown .ss-icon {
+  color: #6c7f95;
 }
 .message {
   padding: 10px 15px;

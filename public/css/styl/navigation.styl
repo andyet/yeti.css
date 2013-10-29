@@ -13,6 +13,7 @@ nav ul
   width: 100%
   height: 40px
   line-height: 40px
+  margin-bottom: 30px
 
   > li:not(:first-child)
     border-left: 1px solid $gray-lighter
@@ -24,33 +25,57 @@ nav ul
     &:hover, &.active
       background: lighten($blue-lighter, 60%)
 
-.has-dropdown
-  position: relative
-  
-  a
-    padding-right: 35px
+  .has-dropdown
+    position: relative
+    
+    a
+      padding-right: 35px
 
-  &:hover .dropdown
-    display: block
-
-  .ss-icon
-    position: absolute
-    right: 15px
-    top: 2px
-    font-size: $font-size-smaller
-    color: $blue-light
-
-  .dropdown
-    display: none
-    background: white
-    position: absolute
-    top: 100%
-    left: 0
-    box-shadow: 0 3px 10px lighten($gray-lighter, 50%)
-
-    li
+    &:hover .dropdown
       display: block
-      
-      &:not(:last-child)
-        border-bottom: 1px solid $gray-lighter
 
+    .ss-icon
+      position: absolute
+      right: 15px
+      top: 2px
+      font-size: $font-size-smaller
+      color: $blue-light
+
+    .dropdown
+      display: none
+      background: white
+      position: absolute
+      top: 100%
+      left: 0
+      box-shadow: 0 3px 10px lighten($gray-lighter, 50%)
+      z-index: 10
+
+      li
+        display: block
+        
+        &:not(:last-child)
+          border-bottom: 1px solid $gray-lighter
+
+  &.dark
+    background: $blue-saturated
+
+    li:not(:first-child)
+      border-left: 1px solid $blue-saturated-light
+
+    a
+      color: $blue-saturated-lighter
+
+      &:hover, &.active
+        background: $blue-saturated-light
+
+    .has-dropdown
+
+      .dropdown
+        background: $blue-saturated
+        box-shadow: none
+
+        li
+          border-bottom: 1px solid $blue-saturated-light
+
+      .ss-icon
+        color: $blue-saturated-lighter
