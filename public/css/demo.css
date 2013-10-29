@@ -512,6 +512,28 @@ nav ul a {
 .breadcrumbs a.unavailable {
   color: #878787;
 }
+.pagination a {
+  padding: 3px 8px;
+  color: #878787;
+  font-size: 12px;
+}
+.pagination a:hover {
+  background: #eee;
+  color: #565656;
+}
+.pagination a.active {
+  background: #e7f7fd;
+  color: #12acef;
+}
+.pagination a.active {
+  font-weight: 800;
+}
+.pagination a.ss-icon {
+  font-size: 8px;
+}
+.pagination a.unavailable {
+  cursor: auto;
+}
 .message {
   padding: 10px 15px;
   position: relative;
