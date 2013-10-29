@@ -160,7 +160,6 @@ To overlay the content of the page use a div with `.overlay` class.
 
 ## To do
 
-- Navigation (top, side, tabs, breadcrumbs)
 - Progress bars
 - Tables
 - Images and Video
