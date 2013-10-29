@@ -552,6 +552,33 @@ nav ul a {
   border-radius: 3px 3px 0 0;
   font-weight: 800;
 }
+.side-nav {
+  border: 1px solid #eee;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 2px #f7f7f7;
+}
+.side-nav li,
+.side-nav a {
+  display: block;
+}
+.side-nav li:not(:last-child) a {
+  border-bottom: 1px solid #eee;
+}
+.side-nav a {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.side-nav a:hover,
+.side-nav a.active {
+  background: #f5fcfe;
+}
+.side-nav a.active {
+  font-weight: 800;
+}
 .message {
   padding: 10px 15px;
   position: relative;
