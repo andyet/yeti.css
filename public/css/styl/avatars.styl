@@ -1,0 +1,32 @@
+// Avatars
+
+.avatar-wrapper 
+  display: inline-block
+  cursor: pointer
+  background: $blue
+  border-radius: 100px
+
+  .avatar  
+    &:hover
+      opacity: .5
+      transition: all .3s ease-in
+
+.avatar, .avatar-wrapper
+
+  &.radius
+    border-radius: 3px
+
+  &.rounded
+    border-radius: 100px
+  
+  &.small
+    height: 25px
+    width: 25px
+
+  &.medium
+    height: 50px
+    width: 50px
+
+  &.large
+    height: 100px
+    width: 100px
