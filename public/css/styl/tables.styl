@@ -1,0 +1,68 @@
+// Tables
+
+table 
+  width: 100%
+  margin-bottom: 20px
+  background: white
+
+  &.striped
+
+    tr:nth-child(even)
+      color: lighten($gray-light, 10%)
+
+  &.outlined
+    border: 1px solid $gray-lighter
+    border-radius: 3px
+
+  &.with-hover tr:hover,
+  &.striped tr:nth-child(even)
+    background: lighten($gray-lighter, 70%)
+
+  td, th
+    text-align: left
+    padding: 7px 10px
+
+  thead 
+    border-bottom: 2px solid $gray-lighter
+
+    th
+      font-weight: $font-weight-bold
+      color: $gray-dark
+
+  tbody
+
+    tr
+
+      &.error
+        background: $red-lighter
+        color: $red
+
+        a
+          color: darken($red, 20%)
+
+          &:hover
+            color: darken($red, 40%)
+
+      &.success
+        background: $green-lighter
+        color: $green
+
+        a
+          color: darken($green, 20%)
+
+          &:hover
+            color: darken($green, 40%)
+
+      &.alert
+        background: $orange-lighter
+        color: $orange
+
+        a
+          color: darken($orange, 20%)
+
+          &:hover
+            color: darken($orange, 40%)
+
+    td
+      border-bottom: 1px solid $gray-lighter
+      

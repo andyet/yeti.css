@@ -3,6 +3,14 @@ body {
   color: #565656;
   background: #fff;
 }
+a {
+  color: #12acef;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #0d8ac1;
+}
 strong {
   font-weight: 800;
 }
@@ -966,16 +974,70 @@ figure figcaption {
   color: #878787;
   font-size: 12px;
 }
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  background: #fff;
+}
+table.striped tr:nth-child(even) {
+  color: #939393;
+}
+table.outlined {
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+table.with-hover tr:hover,
+table.striped tr:nth-child(even) {
+  background: #fafafa;
+}
+table td,
+table th {
+  text-align: left;
+  padding: 7px 10px;
+}
+table thead {
+  border-bottom: 2px solid #eee;
+}
+table thead th {
+  font-weight: 800;
+  color: #2d2d2d;
+}
+table tbody tr.error {
+  background: #fff7f8;
+  color: #de0a32;
+}
+table tbody tr.error a {
+  color: #b20828;
+}
+table tbody tr.error a:hover {
+  color: #85061e;
+}
+table tbody tr.success {
+  background: #f4fbf6;
+  color: #43bb6e;
+}
+table tbody tr.success a {
+  color: #369658;
+}
+table tbody tr.success a:hover {
+  color: #287042;
+}
+table tbody tr.alert {
+  background: #ffeed7;
+  color: #f18902;
+}
+table tbody tr.alert a {
+  color: #c16e02;
+}
+table tbody tr.alert a:hover {
+  color: #915201;
+}
+table tbody td {
+  border-bottom: 1px solid #eee;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
-}
-a {
-  color: #12acef;
-  text-decoration: none;
-}
-a:hover {
-  color: #0d8ac1;
 }
 h1,
 h2 {
