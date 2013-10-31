@@ -29,7 +29,6 @@ For the sake of being easily accessible &ndash; all CSS sources are kept in `pub
 
 ## To do
 
-- Progress bars
 - Tables
 - Images and Video
 - Product and brand logos in different formats
