@@ -32,6 +32,5 @@ For the sake of being easily accessible &ndash; all CSS sources are kept in `pub
 - Progress bars
 - Tables
 - Images and Video
-- Avatars
 - Product and brand logos in different formats
 - Collection of stock product screenshots
