@@ -845,6 +845,95 @@ nav ul a {
   height: 100px;
   width: 100px;
 }
+.progress,
+.meter {
+  border-radius: 3px;
+}
+.progress.rounded,
+.rounded .meter {
+  border-radius: 50px;
+}
+.progress {
+  border: 1px solid #eee;
+  padding: 3px;
+}
+.progress.small {
+  height: 15px;
+}
+.progress.large {
+  height: 25px;
+}
+.progress.success .meter {
+  background: #43bb6e;
+}
+.progress.warning .meter {
+  background: #f18902;
+}
+.progress.error .meter {
+  background: #de0a32;
+}
+.progress .meter {
+  display: inline-block;
+  background: #878787;
+  width: 50%;
+  height: 100%;
+  -webkit-animation: progress 4s linear 1;
+  animation: progress 4s linear 1;
+}
+@-webkit-keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+@-moz-keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+@-webkit-keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+@-o-keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+@-ms-keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
@@ -1057,6 +1146,10 @@ code {
   .colors li:not(:first-child) {
     margin-left: 20px;
   }
+}
+/* Progress */
+.progress {
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .container {

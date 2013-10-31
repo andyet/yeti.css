@@ -1,1 +1,49 @@
 // Progress Bars
+
+.progress, .meter
+  border-radius: 3px
+
+.progress.rounded, .rounded .meter
+  border-radius: 50px
+
+.progress
+  border: 1px solid $gray-lighter
+  padding: 3px
+
+  &.small
+    height: 15px
+
+  &.large
+    height: 25px
+
+  &.success
+    .meter
+      background: $green
+
+  &.warning
+    .meter
+      background: $orange
+
+  &.error
+    .meter
+      background: $red
+
+  .meter
+    display: inline-block
+    background: $gray-light
+    width: 50%
+    height: 100%
+    -webkit-animation: progress 4s linear 1
+    animation: progress 4s linear 1
+
+@-webkit-keyframes progress
+  0%
+    width: 0
+  100%
+    width: 50%
+
+@keyframes progress
+  0%
+    width: 0
+  100%
+    width: 50%
