@@ -9,6 +9,7 @@
 @import 'modals'
 @import 'avatars'
 @import 'progress'
+@import 'media'
 
 header
   padding: 30px 0
@@ -210,6 +211,23 @@ code
   &.above, &.below, &.left, &.right
     margin-bottom: 20px
 
+/* Media */
+
+.media div
+  margin-bottom: 20px
+
+figure
+  float: left
+  margin-right: 10px
+
+.media-wrap figure
+  margin: 0
+
+/* Progress */
+
+.progress
+  margin-bottom: 10px
+
 @media screen and (min-width: 768px)
 
   .container
@@ -221,11 +239,6 @@ code
 
       &:not(:first-child)
         margin-left: 20px
-
-/* Progress */
-
-.progress
-  margin-bottom: 10px
 
 @media screen and (max-width: 767px)
 

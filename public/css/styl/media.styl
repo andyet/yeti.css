@@ -1,0 +1,35 @@
+// Media
+
+a.media-wrap, figure img
+  display: inline-block
+
+a.media-wrap, .outlined, figure img
+  border-radius: 3px
+
+a.media-wrap
+  background: $blue
+  cursor: pointer
+
+  &:hover
+    img
+      opacity: .5
+
+figure, .video
+  overflow: hidden
+  max-width: 100%
+
+figure
+
+  &.outlined
+    padding: 5px
+    border: 1px solid $gray-lighter
+
+  img
+    vertical-align: middle
+
+  figcaption
+    color: $gray-light
+    font-size: $font-size-small
+
+
+  

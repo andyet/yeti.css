@@ -934,6 +934,38 @@ nav ul a {
     width: 50%;
   }
 }
+a.media-wrap,
+figure img {
+  display: inline-block;
+}
+a.media-wrap,
+.outlined,
+figure img {
+  border-radius: 3px;
+}
+a.media-wrap {
+  background: #12acef;
+  cursor: pointer;
+}
+a.media-wrap:hover img {
+  opacity: 0.5;
+}
+figure,
+.video {
+  overflow: hidden;
+  max-width: 100%;
+}
+figure.outlined {
+  padding: 5px;
+  border: 1px solid #eee;
+}
+figure img {
+  vertical-align: middle;
+}
+figure figcaption {
+  color: #878787;
+  font-size: 12px;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #eee;
@@ -1136,6 +1168,21 @@ code {
 .message.right {
   margin-bottom: 20px;
 }
+/* Media */
+.media div {
+  margin-bottom: 20px;
+}
+figure {
+  float: left;
+  margin-right: 10px;
+}
+.media-wrap figure {
+  margin: 0;
+}
+/* Progress */
+.progress {
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 60%;
@@ -1146,10 +1193,6 @@ code {
   .colors li:not(:first-child) {
     margin-left: 20px;
   }
-}
-/* Progress */
-.progress {
-  margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .container {
