@@ -29,6 +29,5 @@ For the sake of being easily accessible &ndash; all CSS sources are kept in `pub
 
 ## To do
 
-- Tables
 - Product and brand logos in different formats
 - Collection of stock product screenshots
