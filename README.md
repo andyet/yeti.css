@@ -27,7 +27,17 @@ For the sake of being easily accessible &ndash; all CSS sources are kept in `pub
 * [Tables](https://github.com/andyet/style/wiki/Tables) 
 * [Avatars](https://github.com/andyet/style/wiki/Avatars) 
 
+
+## Logos
+
+All logos are saved in web-friendly and super optimized `SVG` format. 
+
+* &yet
+* &yet Labs
+* &!
+* OTalk
+* ^Lift
+
 ## To do
 
-- Product and brand logos in different formats
 - Collection of stock product screenshots
