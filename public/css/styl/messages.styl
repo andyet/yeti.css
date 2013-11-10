@@ -3,8 +3,8 @@
 .message
   padding: 10px 15px
   position: relative
-  background: $gray-lighter
-  color: $gray
+  background: $blue-lighter
+  color: $blue
 
   &:after
     border: solid transparent
@@ -26,7 +26,7 @@
 
     &:after
       left: 100%
-      border-left-color: $gray-lighter      
+      border-left-color: $blue-lighter      
 
     &.success
       &:after
@@ -34,7 +34,7 @@
 
     &.error
       &:after
-        border-left-color: $red-lighter
+        border-left-color: $pink-lighter
 
     &.alert
       &:after
@@ -44,7 +44,7 @@
 
     &:after
       right: 100%
-      border-right-color: $gray-lighter      
+      border-right-color: $blue-lighter      
 
     &.success
       &:after
@@ -52,7 +52,7 @@
 
     &.error
       &:after
-        border-right-color: $red-lighter
+        border-right-color: $pink-lighter
 
     &.alert
       &:after
@@ -67,12 +67,12 @@
   &.above
 
     &:after
-      border-bottom-color: $gray-lighter
+      border-bottom-color: $blue-lighter
       bottom: 100%
 
     &.error
       &:after
-        border-bottom-color: $red-lighter
+        border-bottom-color: $pink-lighter
 
     &.success
       &:after
@@ -85,12 +85,12 @@
   &.below
 
     &:after
-      border-top-color: $gray-lighter
+      border-top-color: $blue-lighter
       top: 100%
 
     &.error
       &:after
-        border-top-color: $red-lighter
+        border-top-color: $pink-lighter
 
     &.success
       &:after
@@ -102,10 +102,10 @@
 
   a
     font-weight: $font-weight-bold
-    color: $gray-dark
+    color: $blue-saturated
 
     &:hover
-      color: darken($gray-dark, 60%)
+      color: $blue-saturated-darker
 
   p:last-of-type
     margin: 0
@@ -119,7 +119,7 @@
     cursor: pointer
 
   &.error
-    background: $red-lighter
+    background: $pink-lighter
     color: $red
 
     a
