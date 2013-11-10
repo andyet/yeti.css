@@ -11,23 +11,23 @@ button
   border-radius: 3px
   padding: 0 15px
   height: 35px
-  background: $gray-lighter
+  background: lighten($blue-saturated-lighter, 85%)
   font-size: $font-size-base
   font-weight: $font-weight-bold
   text-align: center
-  color: $gray-light
+  color: $blue-saturated
   text-overflow: ellipsis
   vertical-align: middle
   user-select()
 
   &:hover:not(:disabled)
-    color: $gray
-    background: darken($gray-lighter, 10%)
+    color: $blue-saturated
+    background: lighten($blue-saturated-lighter, 65%)
     transition: all .3s ease-in 
 
   &:disabled
     cursor: not-allowed
-    color: lighten($gray-light, 40%)
+    color: lighten($blue-saturated-lighter, 40%)
 
   &.small
     height: 25px
@@ -82,7 +82,7 @@ button
     border-radius: 3px
 
     button, .button
-      border: 1px solid lighten($gray-light, 50%)
+      border: 1px solid lighten($blue-saturated-lighter, 65%)
 
     &.primary
 

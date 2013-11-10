@@ -94,11 +94,11 @@ button {
   border-radius: 3px;
   padding: 0 15px;
   height: 35px;
-  background: #eee;
+  background: #e9ecef;
   font-size: 14px;
   font-weight: 800;
   text-align: center;
-  color: #878787;
+  color: #192a47;
   text-overflow: ellipsis;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -108,14 +108,14 @@ button {
 }
 .button:hover:not(:disabled),
 button:hover:not(:disabled) {
-  color: #565656;
-  background: #d6d6d6;
+  color: #192a47;
+  background: #ccd2da;
   transition: all 0.3s ease-in;
 }
 .button:disabled,
 button:disabled {
   cursor: not-allowed;
-  color: #b7b7b7;
+  color: #a7b2bf;
 }
 .button.small,
 button.small {
@@ -188,7 +188,7 @@ button.secondary:hover:not(:disabled) {
 }
 .button-group.outlined button,
 .button-group.outlined .button {
-  border: 1px solid #c3c3c3;
+  border: 1px solid #ccd2da;
 }
 .button-group.outlined.primary button,
 .button-group.outlined.primary .button {
