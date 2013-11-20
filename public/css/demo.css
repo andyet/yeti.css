@@ -68,6 +68,7 @@ ol li ul li,
 ul li ol li,
 ol li ol li {
   list-style-type: circle;
+  padding: 5px 0;
 }
 ul li {
   list-style-type: disc;
@@ -334,7 +335,7 @@ input[type=password],
 input[type=search],
 input[type=date],
 input[type=url] {
-  height: 30px;
+  height: 35px;
   padding: 5px 10px;
 }
 textarea {
@@ -364,7 +365,7 @@ label {
 }
 .has-icon .ss-icon {
   position: absolute;
-  top: 31px;
+  top: 35px;
   right: 10px;
   font-size: 14px;
   transition: all 0.3s ease-in;
@@ -420,6 +421,10 @@ nav ul a {
   height: 40px;
   line-height: 40px;
   margin-bottom: 30px;
+}
+.top-nav li {
+  padding: 0;
+  float: left;
 }
 .top-nav > li:not(:first-child) {
   border-left: 1px solid #e6eaed;
@@ -486,7 +491,7 @@ nav ul a {
   color: #438193;
 }
 .breadcrumbs {
-  padding: 8px 0;
+  padding: 10px 0;
   box-shadow: inset 0 -1px 2px #f2f4f6;
 }
 .breadcrumbs li:not(:first-child) {
@@ -548,8 +553,8 @@ nav ul a {
   border-bottom: 1px solid #e6eaed;
 }
 .side-nav a {
-  height: 30px;
-  line-height: 30px;
+  height: 35px;
+  line-height: 35px;
 }
 .side-nav a:hover,
 .side-nav a.active {
