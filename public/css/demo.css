@@ -1,5 +1,5 @@
 body {
-  font: 14px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 16px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #4d5659;
   background: #fff;
 }
@@ -22,7 +22,7 @@ abbr {
   border-bottom: 1px dotted #b7c0c3;
 }
 small {
-  font-size: 12px;
+  font-size: 14px;
 }
 blockquote {
   margin: 20px 0;
@@ -32,13 +32,13 @@ blockquote {
 }
 blockquote p {
   margin: 0 0 10px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 blockquote p:last-child {
   margin-bottom: 0;
 }
 blockquote small {
-  font-size: 12px;
+  font-size: 14px;
   color: #b7c0c3;
 }
 blockquote small:before {
@@ -95,7 +95,7 @@ button {
   padding: 0 15px;
   height: 35px;
   background: #e1edf1;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   text-align: center;
   color: #003546;
@@ -121,7 +121,7 @@ button:disabled {
 button.small {
   height: 25px;
   padding: 0 8px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 25px;
 }
 .button.large,
@@ -129,7 +129,7 @@ button.large {
   height: 50px;
   line-height: 50px;
   padding: 0 30px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .button.primary,
 button.primary,
@@ -344,7 +344,7 @@ textarea {
 input[type=file] {
   padding: 15px;
   background: #f8f9fa;
-  font-size: 12px;
+  font-size: 14px;
   color: #b7c0c3;
 }
 select {
@@ -357,7 +357,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: 800;
-  font-size: 12px;
+  font-size: 14px;
 }
 .has-icon {
   position: relative;
@@ -366,7 +366,7 @@ label {
   position: absolute;
   top: 31px;
   right: 10px;
-  font-size: 12px;
+  font-size: 14px;
   transition: all 0.3s ease-in;
 }
 .has-icon .ss-icon.ss-delete {
@@ -383,7 +383,7 @@ label {
 }
 .radio label,
 .checkbox label {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   cursor: pointer;
 }
@@ -589,7 +589,7 @@ nav ul a {
 }
 .breadcrumbs a,
 .pagination a {
-  font-size: 12px;
+  font-size: 14px;
 }
 .message {
   padding: 10px 15px;
@@ -760,14 +760,14 @@ nav ul a {
 .modal.no-head {
   padding: 40px 20px 20px 20px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
 }
 .modal .ss-delete {
   display: block;
   position: absolute;
   top: 23px;
   right: 20px;
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0.2;
   color: #828c8f;
 }
@@ -972,7 +972,7 @@ figure img {
 }
 figure figcaption {
   color: #b7c0c3;
-  font-size: 12px;
+  font-size: 14px;
 }
 table {
   width: 100%;
@@ -1045,7 +1045,7 @@ h2 {
 }
 h3,
 h4 {
-  line-height: 18px;
+  line-height: 20px;
 }
 h1,
 h2,
@@ -1078,7 +1078,7 @@ code {
   display: inline-block;
   font-family: monospace;
   font-style: normal;
-  font-size: 12px;
+  font-size: 14px;
   color: #828c8f;
   margin-right: 5px;
   border: 1px solid #e6eaed;
@@ -1205,7 +1205,7 @@ code {
 }
 .typography .samples p.small {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 /* Buttons */
 .buttons .cf {

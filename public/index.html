@@ -1,23 +1,600 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>&yet's style guide</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link href="/css/normalize.css" rel="stylesheet" type="text/css"><link href="/css/fonts.css" rel="stylesheet" type="text/css"><link href="/css/demo.css" rel="stylesheet" type="text/css"></head><body><div class="container"><header><h1>&amp;yet's Style</h1><h3>Reusable components and brand assets. </h3></header><div class="content"><section class="colors"><h3> 
-Colors<a href="../swatches/andyet.aco">Download Photoshop .ACO swatch</a></h3><h4>Blues</h4><ul class="cf unstyled"><li><div class="color blue1"></div><span>#001620</span></li><li><div class="color blue2"></div><span>#002531</span></li><li><div class="color blue3"></div><span>#003546</span></li><li><div class="color blue4"></div><span>#1f4753</span></li><li><div class="color blue5"></div><span>#438193</span></li></ul><ul class="cf unstyled"><li><div class="color blue6"></div><span>#12ACEF</span></li><li><div class="color blue7"></div><span>#88d5f7</span></li><li><div class="color blue8"></div><span>#e7f7fd</span></li></ul><h4>Monochromatic</h4><ul class="cf unstyled"><li><div class="color gray1"></div><span>#272b2d</span></li><li><div class="color gray2"></div><span>#4d5659</span></li><li><div class="color gray3"></div><span>#828c8f</span></li><li><div class="color gray4"></div><span>#b7c0c3</span></li><li><div class="color gray5"></div><span>#e6eaed</span></li></ul><h4>Pinks</h4><ul class="cf unstyled"><li><div class="color pink1"></div><span>#EC008C</span></li><li><div class="color pink2"></div><span>#fec1d1</span></li><li><div class="color pink3"></div><span>#ffedf2</span></li></ul><h4>Greens</h4><ul class="cf unstyled"><li><div class="color green1"></div><span>#43bb6e</span></li><li><div class="color green2"></div><span>#c6ebd3</span></li><li><div class="color green3"></div><span>#e8f7ef</span></li></ul><h4>Reds</h4><ul class="cf unstyled"><li><div class="color red1"></div><span>#e80044</span></li><li><div class="color red2"></div><span>#fdcad3</span></li><li><div class="color red3"></div><span>#fff7f8</span></li></ul><h4>Oranges</h4><ul class="cf unstyled"><li><div class="color orange1"></div><span>#f18902</span></li><li><div class="color orange2"></div><span>#fec57b</span></li><li><div class="color orange3"></div><span>#ffeed7</span></li></ul></section><section class="typography"><h3>Typography</h3><p> 
-&yet's typefaces are  <strong>Helvetica Neue </strong>and <strong>Gotham</strong>. Gotham is a web font served through <a href="http://typography.com">Typography.com</a>.</p><h4>Headings and sizes</h4><div class="samples"><h1>Headline 1 is 30px</h1><h2>Headline 2 is 24px</h2><h3>Headline 3 is 18px</h3><h4>Headline 4 is 14px, uppercased</h4><p>Body copy is 14px</p><p class="small">Small body copy is 12px</p></div><h4>Basic text manipulations</h4><p> 
-You can make the text <strong>bold </strong>or <code>emphasized  </code>very easily too. Sometimes you might want to use <abbr>abbreviations.</abbr></p><h4>Blockquotes</h4><p>For quoting use blockquote tag with p elements in it. To add authors or notes below use small tag.</p><blockquote><p>Once now and then a smart quote would be nice.</p><small>Adam Brault</small></blockquote><blockquote class="blue"><p>Once now and then a smart quote would be nice.</p><small>Adam Brault</small></blockquote><h4>Lists</h4><ul><li>List element one</li><li>List element two<ul><li>List element that's nested</li></ul></li><li>List element three</li><li>List element four</li><li>List element five</li></ul><ol><li>List element one</li><li>List element two</li><li>List element three</li><li>List element four</li><li>List element five</li></ol></section><section class="buttons"><h3>Buttons</h3><p> 
-Buttons come in three sizes &ndash; <strong>large</strong>, <strong>regular </strong>and <strong>small</strong>. In neutral and brand colors.</p><h4>Button sizes and colors</h4><div class="cf"><a href="" class="button large">Large Button</a><a href="" class="button">Button</a><a href="" class="button small">Small Button</a></div><div class="cf"><a href="" class="button large primary">Large Button</a><a href="" class="button primary">Button</a><a href="" class="button small primary">Small Button</a></div><div class="cf"><a href="" class="button large secondary">Large Button</a><a href="" class="button secondary">Button</a><a href="" class="button small secondary">Small Button</a></div><h4>Disabled buttons</h4><p> 
-Being able to disable a button might come quite handy. Works only with button elements that have <code>disabled </code>attribute.</p><div class="cf"><button disabled>Button</button><button disabled class="primary">Button</button><button disabled class="secondary">Button</button></div><h4>Button groups</h4><p> 
-You can group buttons by using <code>.button-group </code>class. For outlined versions use <code>.outlined </code>class along with the color denotation &ndash; <code>.primary </code>or <code>.secondary </code>&ndash; if you would like to change the default appearance.</p><div class="cf button-group"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div><div class="cf button-group outlined"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div><div class="cf button-group outlined primary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div><div class="cf button-group outlined secondary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div></section><section class="forms"><h3>Forms</h3><h4>Inputs and textareas</h4><p> 
-All elements have predefined <code>:focus  </code>state and placeholders.</p><label for="sample1">Username</label><input type="text" name="sample1" placeholder="Insert your username"><label for="sample2">Password</label><input type="text" name="sample2" placeholder="••••••••••••••" disabled><div class="input-wrapper has-icon"><label for="search">Search</label><input type="search" name="search"><i class="ss-icon ss-standard ss-search"></i></div><label>Write a comment</label><textarea>This is a sample message</textarea><h4>Validity</h4><p> 
-You can keep inputs in <code>.input-wrapper </code>(recommended). And add validity classes of <code>valid </code>and <code>invalid </code>which will change the styles of labels, inputs and icons (if present) accordingly.</p><p> 
-If you are willing to use icons make sure the wrapper element also has a class <code>.has-icon.</code>Then add appropriate icons with this markup: <code>i.ss-icon.ss-standard.ss-nameoftheicon</code></p><div class="input-wrapper invalid"><label for="sample1">Invalid input</label><input type="text" name="sample1" class="invalid"></div><div class="input-wrapper has-icon invalid"><label for="sample1">Invalid input with an icon</label><input type="text" name="sample1"><i class="ss-icon ss-standard ss-delete"> </i></div><div class="input-wrapper has-icon valid"><label for="sample1">Valid input with an icon</label><input type="text" name="sample1"><i class="ss-icon ss-standard ss-check"></i></div><h4>Other form elements</h4><p> 
-All basic elements have been covered: file inputs, checkboxes, radio buttons and selects. Despite checkboxes and radios, where you should add a<code>.disabled </code>class to the label you can use the<code>:disabled </code>attribute.</p><input type="file"><div class="checkbox"><label class="disabled"><input type="checkbox" disabled>This is a disabled checkbox</label></div><div class="radio"><label><input type="radio">This is a radio input</label></div><select><option>Option One</option><option>Option Two</option><option>Option Three</option></select></section><section class="navigation"><h3>Navigation</h3><h4>Top bars</h4><p> 
-Use those for primary navigation by adding <code>.top-nav</code>class. Choose from two color variations. Both include dropdowns.</p><nav role="navigation"><ul class="top-nav"><li><a href="">Link one</a></li><li><a href="">Link two</a></li><li><a href="">Link three</a></li><li class="has-dropdown"><a href="" class="active">Link four</a><ul class="dropdown"><li><a href="">Link one</a></li><li><a href="">Link two</a></li></ul><i class="ss-icon ss-standard">dropdown</i></li><li><a href="">Link five</a></li></ul></nav><nav role="navigation"><ul class="top-nav dark"><li><a href="">Link one</a></li><li><a href="">Link two</a></li><li><a href="">Link three</a></li><li class="has-dropdown"><a href="" class="active">Link four</a><ul class="dropdown"><li><a href="">Link one</a></li><li><a href="">Link two</a></li></ul><i class="ss-icon ss-standard">dropdown</i></li><li><a href="">Link five</a></li></ul></nav><h4>Breadcrumbs</h4><p>For showing progress with more complex sites and apps use <code>.breadcrumbs</code>. They have <code>.current</code>and <code>.unavailable</code>states.</p><nav role="navigation"><ul class="breadcrumbs"><li><a href="">Home</a></li><li><a href="">Go Deeper</a></li><li><a href="" class="unavailable">Even More</a></li><li><a href="" class="current">Current Item</a></li></ul></nav><h4>Pagination</h4><p> 
-For pagination use class <code>.pagination</code></p><nav><ul class="pagination"><li><a href="" class="ss-icon ss-standard unavailable">directleft</a></li><li><a href="" class="unavailable">1</a></li><li><a href="" class="active">2</a></li><li><a href="">3</a></li><li><a href="">4</a></li><li><a href="">5</a></li><li><a href="" class="ss-icon ss-standard">directright</a></li></ul></nav><h4>Tabs</h4><p><code>.tabs </code>feature only menu section, not content switching!</p><nav><ul class="tabs"><li><a href="">Tab One</a></li><li><a href="" class="active">Tab Two</a></li><li><a href="">Tab Three</a></li></ul></nav><h4>Side Navigation</h4><p> 
-For side navigation use <code>.side-nav</code></p><nav role="navigation"><ul class="side-nav"><li><a href="">Option One</a></li><li><a href="" class="active">Option Two</a></li><li><a href="">Option Three</a></li></ul></nav></section><section class="messages"><h3>Messages</h3><h4>Basic</h4><p> 
-There are four types of styles for messages: <strong>default, error, alert </strong>and <strong>success. </strong>All of them can contain links, which will have appropriate colors.</p><div class="message"><p> 
-This is a message. <a href="">This is a link.</a></p></div><div class="message error"><p> 
-This is an error. <a href="">This is a link.</a></p></div><div class="message alert"><p>This is an alert. <a href="">This is a link.</a></p></div><div class="message success"><p> 
-This is a success message. <a href="">This is a link.</a></p></div><h4>Dismissable</h4><p> 
-For messages that can be dismissed by the user add class <code>.has-icon </code>and appropriate markup for the icon itself &ndash; <code>a.ss-icon.ss-standard.ss-delete.</code></p><div class="message error has-icon"><p>This is an error that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a></div><div class="message alert has-icon"><p>This is an alert that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a></div><div class="message success has-icon"><p>This is a success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a></div><h4>Full width</h4><p> 
-Messages spanning for full width (of the site, usually) should have <code>.full-width </code>class. The text will be centered.</p><div class="message success full-width has-icon"><p>This is a full width success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a></div><h4>Positioning</h4><p> 
-Messages can be easily positioned accordingly to correlating fields using following classes: <code>above, below, left, right </code>&ndash; where those classes denotate position of the message relatively to the relevant element.</p><div class="message below"><p>This is a message appearing below an element.</p></div><div class="message success above"><p>This is a message appearing above an element.</p></div><div class="message error left"><p>This is a message appearing on the left hand side of the element.</p></div><div class="message alert right"><p>This is a message appearing on the right hand side of the element.</p></div></section><section class="modals"><h3>Modals<h4>Regular Modals</h4><p> 
-All modals are triggered by having a div with a class <code>.modal</code>. Detailed markup for modal usage can be found in the readme.</p><h4>Modals with no header</h4><p>Sometimes you need a simple modal without header and just paragraph with buttons. Use the class <code>.no-head</code>. Paddings will be applied automatically.</p><h4>Overlay</h4><p> 
-If you need to cover the content of the page to display the overlay (probably most cases) &ndash; you will need an <code>.overlay </code>div appended to body of the page. It will create an semi-transparent black overlay.</p></h3></section><section class="progress-bars"><h3>Progress Bars</h3><h4>Large</h4><div class="progress large success"><span class="meter"></span></div><div class="progress large warning"><span class="meter"></span></div><div class="progress large error"><span class="meter"></span></div><div class="progress large"><span class="meter"></span></div><h4>Small</h4><div class="progress small success"><span class="meter"></span></div><div class="progress small warning"><span class="meter"></span></div><div class="progress small error"><span class="meter"></span></div><div class="progress small"><span class="meter"></span></div><h4>Rounded</h4><div class="progress large rounded error"><span class="meter"></span></div><div class="progress small rounded success"><span class="meter"></span></div></section><section class="avatars"><h3>Avatars</h3><h4>Rounded</h4><a class="avatar-wrapper large"><img src="img/dummy-av.png" class="avatar large rounded"></a><a class="avatar-wrapper medium"><img src="img/dummy-av.png" class="avatar medium rounded"></a><a class="avatar-wrapper small"><img src="img/dummy-av.png" class="avatar small rounded"></a><h4>Small radius</h4><img src="img/dummy-av.png" class="avatar large radius"><img src="img/dummy-av.png" class="avatar medium radius"><img src="img/dummy-av.png" class="avatar small radius"></section><section class="media"><h3>Media</h3><div class="cf"><a class="media-wrap"><figure><img src="img/dummy-av.png"></figure></a></div><div class="cf"><figure><img src="img/dummy-av.png"><figcaption>Image description</figcaption></figure><figure><img src="img/dummy-av.png"></figure></div><div class="cf"><figure class="outlined"><img src="img/dummy-av.png"><figcaption>Image description</figcaption></figure><figure class="outlined"><img src="img/dummy-av.png"></figure></div></section><section class="tables"><h3>Tables</h3><table><thead><tr><th>#</th><th>Name</th><th>Surname</th><th>Email</th></tr></thead><tbody><tr><td>1</td><td>Adam</td><td>Brault</td><td> <a>adam@andyet.net</a></td></tr><tr><td>2</td><td>Henrik </td><td>Joreteg</td><td> <a>henrik@andyet.net</a></td></tr><tr><td>3</td><td>Adam</td><td>Baldwin</td><td><a>baldwin@andyet.net</a></td></tr></tbody><table class="outlined with-hover"><thead><tr><th>#</th><th>Name</th><th>Surname</th><th>Email</th></tr></thead><tbody><tr><td>1</td><td>Adam</td><td>Brault</td><td> <a>adam@andyet.net</a></td></tr><tr><td>2</td><td>Henrik </td><td>Joreteg</td><td> <a>henrik@andyet.net</a></td></tr><tr><td>3</td><td>Adam</td><td>Baldwin</td><td><a>baldwin@andyet.net</a></td></tr></tbody></table><table class="striped"><thead><tr><th>#</th><th>Name</th><th>Surname</th><th>Email</th></tr></thead><tbody><tr><td>1</td><td>Adam</td><td>Brault</td><td> <a>adam@andyet.net</a></td></tr><tr><td>2</td><td>Henrik </td><td>Joreteg</td><td> <a>henrik@andyet.net</a></td></tr><tr><td>3</td><td>Adam</td><td>Baldwin</td><td><a>baldwin@andyet.net</a></td></tr><tr><td>4</td><td>Amy</td><td>Lynn Taylor</td><td><a>amy@andyet.net</a></td></tr></tbody></table><table><thead><tr><th>#</th><th>Name</th><th>Surname</th><th>Email</th></tr></thead><tbody><tr class="success"><td>1</td><td>Adam</td><td>Brault</td><td> <a>adam@andyet.net</a></td></tr><tr class="alert"><td>2</td><td>Henrik </td><td>Joreteg</td><td> <a>henrik@andyet.net</a></td></tr><tr class="error"><td>3</td><td>Adam</td><td>Baldwin</td><td><a>baldwin@andyet.net</a></td></tr><tr><td>4</td><td>Amy</td><td>Lynn Taylor</td><td><a>amy@andyet.net</a></td></tr></tbody></table></table></section></div></div></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&yet's style guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="/css/demo.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>&amp;yet's Style</h1>
+        <h3>Reusable components and brand assets. </h3>
+      </header>
+      <div class="content">
+        <section class="colors">
+          <h3>
+             
+            Colors<a href="../swatches/andyet.aco">Download Photoshop .ACO swatch</a>
+          </h3>
+          <h4>Blues</h4>
+          <ul class="cf unstyled">
+            <li>
+              <div class="color blue1"></div><span>#001620</span>
+            </li>
+            <li>
+              <div class="color blue2"></div><span>#002531</span>
+            </li>
+            <li>
+              <div class="color blue3"></div><span>#003546</span>
+            </li>
+            <li>
+              <div class="color blue4"></div><span>#1f4753</span>
+            </li>
+            <li>
+              <div class="color blue5"></div><span>#438193</span>
+            </li>
+          </ul>
+          <ul class="cf unstyled">
+            <li>
+              <div class="color blue6"></div><span>#12ACEF</span>
+            </li>
+            <li>
+              <div class="color blue7"></div><span>#88d5f7</span>
+            </li>
+            <li>
+              <div class="color blue8"></div><span>#e7f7fd</span>
+            </li>
+          </ul>
+          <h4>Monochromatic</h4>
+          <ul class="cf unstyled">
+            <li>
+              <div class="color gray1"></div><span>#272b2d</span>
+            </li>
+            <li>
+              <div class="color gray2"></div><span>#4d5659</span>
+            </li>
+            <li>
+              <div class="color gray3"></div><span>#828c8f</span>
+            </li>
+            <li>
+              <div class="color gray4"></div><span>#b7c0c3</span>
+            </li>
+            <li>
+              <div class="color gray5"></div><span>#e6eaed</span>
+            </li>
+          </ul>
+          <h4>Pinks</h4>
+          <ul class="cf unstyled">
+            <li>
+              <div class="color pink1"></div><span>#EC008C</span>
+            </li>
+            <li>
+              <div class="color pink2"></div><span>#fec1d1</span>
+            </li>
+            <li>
+              <div class="color pink3"></div><span>#ffedf2</span>
+            </li>
+          </ul>
+          <h4>Greens</h4>
+          <ul class="cf unstyled">
+            <li>
+              <div class="color green1"></div><span>#43bb6e</span>
+            </li>
+            <li>
+              <div class="color green2"></div><span>#c6ebd3</span>
+            </li>
+            <li>
+              <div class="color green3"></div><span>#e8f7ef</span>
+            </li>
+          </ul>
+          <h4>Reds</h4>
+          <ul class="cf unstyled">
+            <li>
+              <div class="color red1"></div><span>#e80044</span>
+            </li>
+            <li>
+              <div class="color red2"></div><span>#fdcad3</span>
+            </li>
+            <li>
+              <div class="color red3"></div><span>#fff7f8</span>
+            </li>
+          </ul>
+          <h4>Oranges</h4>
+          <ul class="cf unstyled">
+            <li>
+              <div class="color orange1"></div><span>#f18902</span>
+            </li>
+            <li>
+              <div class="color orange2"></div><span>#fec57b</span>
+            </li>
+            <li>
+              <div class="color orange3"></div><span>#ffeed7</span>
+            </li>
+          </ul>
+        </section>
+        <section class="typography">
+          <h3>Typography</h3>
+          <p>
+             
+            &yet's typefaces are  <strong>Helvetica Neue </strong>and <strong>Gotham</strong>. Gotham is a web font served through <a href="http://typography.com">Typography.com</a>.
+          </p>
+          <h4>Headings and sizes</h4>
+          <div class="samples">
+            <h1>Headline 1 is 30px</h1>
+            <h2>Headline 2 is 24px</h2>
+            <h3>Headline 3 is 18px</h3>
+            <h4>Headline 4 is 14px, uppercased</h4>
+            <p>Body copy is 16px</p>
+            <p class="small">Small body copy is 14px</p>
+          </div>
+          <h4>Basic text manipulations</h4>
+          <p>
+             
+            You can make the text <strong>bold </strong>or <code>emphasized  </code>very easily too. Sometimes you might want to use <abbr>abbreviations.</abbr>
+          </p>
+          <h4>Blockquotes</h4>
+          <p>For quoting use blockquote tag with p elements in it. To add authors or notes below use small tag.</p>
+          <blockquote>
+            <p>Once now and then a smart quote would be nice.</p><small>Adam Brault</small>
+          </blockquote>
+          <blockquote class="blue">
+            <p>Once now and then a smart quote would be nice.</p><small>Adam Brault</small>
+          </blockquote>
+          <h4>Lists</h4>
+          <ul>
+            <li>List element one</li>
+            <li>List element two
+              <ul>
+                <li>List element that's nested</li>
+              </ul>
+            </li>
+            <li>List element three</li>
+            <li>List element four</li>
+            <li>List element five</li>
+          </ul>
+          <ol>
+            <li>List element one</li>
+            <li>List element two</li>
+            <li>List element three</li>
+            <li>List element four</li>
+            <li>List element five</li>
+          </ol>
+        </section>
+        <section class="buttons">
+          <h3>Buttons</h3>
+          <p>
+             
+            Buttons come in three sizes &ndash; <strong>large</strong>, <strong>regular </strong>and <strong>small</strong>. In neutral and brand colors.
+          </p>
+          <h4>Button sizes and colors</h4>
+          <div class="cf"><a href="" class="button large">Large Button</a><a href="" class="button">Button</a><a href="" class="button small">Small Button</a></div>
+          <div class="cf"><a href="" class="button large primary">Large Button</a><a href="" class="button primary">Button</a><a href="" class="button small primary">Small Button</a></div>
+          <div class="cf"><a href="" class="button large secondary">Large Button</a><a href="" class="button secondary">Button</a><a href="" class="button small secondary">Small Button</a></div>
+          <h4>Disabled buttons</h4>
+          <p>
+             
+            Being able to disable a button might come quite handy. Works only with button elements that have <code>disabled </code>attribute.
+          </p>
+          <div class="cf">
+            <button disabled>Button</button>
+            <button disabled class="primary">Button</button>
+            <button disabled class="secondary">Button</button>
+          </div>
+          <h4>Button groups</h4>
+          <p>
+             
+            You can group buttons by using <code>.button-group </code>class. For outlined versions use <code>.outlined </code>class along with the color denotation &ndash; <code>.primary </code>or <code>.secondary </code>&ndash; if you would like to change the default appearance.
+          </p>
+          <div class="cf button-group"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
+          <div class="cf button-group outlined"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
+          <div class="cf button-group outlined primary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
+          <div class="cf button-group outlined secondary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
+        </section>
+        <section class="forms">
+          <h3>Forms</h3>
+          <h4>Inputs and textareas</h4>
+          <p>
+             
+            All elements have predefined <code>:focus  </code>state and placeholders.
+          </p>
+          <label for="sample1">Username</label>
+          <input type="text" name="sample1" placeholder="Insert your username">
+          <label for="sample2">Password</label>
+          <input type="text" name="sample2" placeholder="••••••••••••••" disabled>
+          <div class="input-wrapper has-icon">
+            <label for="search">Search</label>
+            <input type="search" name="search"><i class="ss-icon ss-standard ss-search"></i>
+          </div>
+          <label>Write a comment</label>
+          <textarea>This is a sample message</textarea>
+          <h4>Validity</h4>
+          <p>
+             
+            You can keep inputs in <code>.input-wrapper </code>(recommended). And add validity classes of <code>valid </code>and <code>invalid </code>which will change the styles of labels, inputs and icons (if present) accordingly.
+          </p>
+          <p>
+             
+            If you are willing to use icons make sure the wrapper element also has a class <code>.has-icon.</code>Then add appropriate icons with this markup: <code>i.ss-icon.ss-standard.ss-nameoftheicon</code>
+          </p>
+          <div class="input-wrapper invalid">
+            <label for="sample1">Invalid input</label>
+            <input type="text" name="sample1" class="invalid">
+          </div>
+          <div class="input-wrapper has-icon invalid">
+            <label for="sample1">Invalid input with an icon</label>
+            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-delete"> </i>
+          </div>
+          <div class="input-wrapper has-icon valid">
+            <label for="sample1">Valid input with an icon</label>
+            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-check"></i>
+          </div>
+          <h4>Other form elements</h4>
+          <p>
+             
+            All basic elements have been covered: file inputs, checkboxes, radio buttons and selects. Despite checkboxes and radios, where you should add a<code>.disabled </code>class to the label you can use the<code>:disabled </code>attribute.
+          </p>
+          <input type="file">
+          <div class="checkbox">
+            <label class="disabled">
+              <input type="checkbox" disabled>This is a disabled checkbox
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">This is a radio input
+            </label>
+          </div>
+          <select>
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+          </select>
+        </section>
+        <section class="navigation">
+          <h3>Navigation</h3>
+          <h4>Top bars</h4>
+          <p>
+             
+            Use those for primary navigation by adding <code>.top-nav</code>class. Choose from two color variations. Both include dropdowns.
+          </p>
+          <nav role="navigation">
+            <ul class="top-nav">
+              <li><a href="">Link one</a></li>
+              <li><a href="">Link two</a></li>
+              <li><a href="">Link three</a></li>
+              <li class="has-dropdown"><a href="" class="active">Link four</a>
+                <ul class="dropdown">
+                  <li><a href="">Link one</a></li>
+                  <li><a href="">Link two</a></li>
+                </ul><i class="ss-icon ss-standard">dropdown</i>
+              </li>
+              <li><a href="">Link five</a></li>
+            </ul>
+          </nav>
+          <nav role="navigation">
+            <ul class="top-nav dark">
+              <li><a href="">Link one</a></li>
+              <li><a href="">Link two</a></li>
+              <li><a href="">Link three</a></li>
+              <li class="has-dropdown"><a href="" class="active">Link four</a>
+                <ul class="dropdown">
+                  <li><a href="">Link one</a></li>
+                  <li><a href="">Link two</a></li>
+                </ul><i class="ss-icon ss-standard">dropdown</i>
+              </li>
+              <li><a href="">Link five</a></li>
+            </ul>
+          </nav>
+          <h4>Breadcrumbs</h4>
+          <p>For showing progress with more complex sites and apps use <code>.breadcrumbs</code>. They have <code>.current</code>and <code>.unavailable</code>states.</p>
+          <nav role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="">Home</a></li>
+              <li><a href="">Go Deeper</a></li>
+              <li><a href="" class="unavailable">Even More</a></li>
+              <li><a href="" class="current">Current Item</a></li>
+            </ul>
+          </nav>
+          <h4>Pagination</h4>
+          <p>
+             
+            For pagination use class <code>.pagination</code>
+          </p>
+          <nav>
+            <ul class="pagination">
+              <li><a href="" class="ss-icon ss-standard unavailable">directleft</a></li>
+              <li><a href="" class="unavailable">1</a></li>
+              <li><a href="" class="active">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">5</a></li>
+              <li><a href="" class="ss-icon ss-standard">directright</a></li>
+            </ul>
+          </nav>
+          <h4>Tabs</h4>
+          <p><code>.tabs </code>feature only menu section, not content switching!</p>
+          <nav>
+            <ul class="tabs">
+              <li><a href="">Tab One</a></li>
+              <li><a href="" class="active">Tab Two</a></li>
+              <li><a href="">Tab Three</a></li>
+            </ul>
+          </nav>
+          <h4>Side Navigation</h4>
+          <p>
+             
+            For side navigation use <code>.side-nav</code>
+          </p>
+          <nav role="navigation">
+            <ul class="side-nav">
+              <li><a href="">Option One</a></li>
+              <li><a href="" class="active">Option Two</a></li>
+              <li><a href="">Option Three</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="messages">
+          <h3>Messages</h3>
+          <h4>Basic</h4>
+          <p>
+             
+            There are four types of styles for messages: <strong>default, error, alert </strong>and <strong>success. </strong>All of them can contain links, which will have appropriate colors.
+          </p>
+          <div class="message">
+            <p>
+               
+              This is a message. <a href="">This is a link.</a>
+            </p>
+          </div>
+          <div class="message error">
+            <p>
+               
+              This is an error. <a href="">This is a link.</a>
+            </p>
+          </div>
+          <div class="message alert">
+            <p>This is an alert. <a href="">This is a link.</a></p>
+          </div>
+          <div class="message success">
+            <p>
+               
+              This is a success message. <a href="">This is a link.</a>
+            </p>
+          </div>
+          <h4>Dismissable</h4>
+          <p>
+             
+            For messages that can be dismissed by the user add class <code>.has-icon </code>and appropriate markup for the icon itself &ndash; <code>a.ss-icon.ss-standard.ss-delete.</code>
+          </p>
+          <div class="message error has-icon">
+            <p>This is an error that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <div class="message alert has-icon">
+            <p>This is an alert that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <div class="message success has-icon">
+            <p>This is a success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <h4>Full width</h4>
+          <p>
+             
+            Messages spanning for full width (of the site, usually) should have <code>.full-width </code>class. The text will be centered.
+          </p>
+          <div class="message success full-width has-icon">
+            <p>This is a full width success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <h4>Positioning</h4>
+          <p>
+             
+            Messages can be easily positioned accordingly to correlating fields using following classes: <code>above, below, left, right </code>&ndash; where those classes denotate position of the message relatively to the relevant element.
+          </p>
+          <div class="message below">
+            <p>This is a message appearing below an element.</p>
+          </div>
+          <div class="message success above">
+            <p>This is a message appearing above an element.</p>
+          </div>
+          <div class="message error left">
+            <p>This is a message appearing on the left hand side of the element.</p>
+          </div>
+          <div class="message alert right">
+            <p>This is a message appearing on the right hand side of the element.</p>
+          </div>
+        </section>
+        <section class="modals">
+          <h3>Modals
+            <h4>Regular Modals</h4>
+            <p>
+               
+              All modals are triggered by having a div with a class <code>.modal</code>. Detailed markup for modal usage can be found in the readme.
+            </p>
+            <h4>Modals with no header</h4>
+            <p>Sometimes you need a simple modal without header and just paragraph with buttons. Use the class <code>.no-head</code>. Paddings will be applied automatically.</p>
+            <h4>Overlay</h4>
+            <p>
+               
+              If you need to cover the content of the page to display the overlay (probably most cases) &ndash; you will need an <code>.overlay </code>div appended to body of the page. It will create an semi-transparent black overlay.
+            </p>
+          </h3>
+        </section>
+        <section class="progress-bars">
+          <h3>Progress Bars</h3>
+          <h4>Large</h4>
+          <div class="progress large success"><span class="meter"></span></div>
+          <div class="progress large warning"><span class="meter"></span></div>
+          <div class="progress large error"><span class="meter"></span></div>
+          <div class="progress large"><span class="meter"></span></div>
+          <h4>Small</h4>
+          <div class="progress small success"><span class="meter"></span></div>
+          <div class="progress small warning"><span class="meter"></span></div>
+          <div class="progress small error"><span class="meter"></span></div>
+          <div class="progress small"><span class="meter"></span></div>
+          <h4>Rounded</h4>
+          <div class="progress large rounded error"><span class="meter"></span></div>
+          <div class="progress small rounded success"><span class="meter"></span></div>
+        </section>
+        <section class="avatars">
+          <h3>Avatars</h3>
+          <h4>Rounded</h4><a class="avatar-wrapper large"><img src="img/dummy-av.png" class="avatar large rounded"></a><a class="avatar-wrapper medium"><img src="img/dummy-av.png" class="avatar medium rounded"></a><a class="avatar-wrapper small"><img src="img/dummy-av.png" class="avatar small rounded"></a>
+          <h4>Small radius</h4><img src="img/dummy-av.png" class="avatar large radius"><img src="img/dummy-av.png" class="avatar medium radius"><img src="img/dummy-av.png" class="avatar small radius">
+        </section>
+        <section class="media">
+          <h3>Media</h3>
+          <div class="cf"><a class="media-wrap">
+              <figure><img src="img/dummy-av.png"></figure></a></div>
+          <div class="cf">
+            <figure><img src="img/dummy-av.png">
+              <figcaption>Image description</figcaption>
+            </figure>
+            <figure><img src="img/dummy-av.png"></figure>
+          </div>
+          <div class="cf">
+            <figure class="outlined"><img src="img/dummy-av.png">
+              <figcaption>Image description</figcaption>
+            </figure>
+            <figure class="outlined"><img src="img/dummy-av.png"></figure>
+          </div>
+        </section>
+        <section class="tables">
+          <h3>Tables</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td> <a>adam@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Henrik </td>
+                <td>Joreteg</td>
+                <td> <a>henrik@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.net</a></td>
+              </tr>
+            </tbody>
+            <table class="outlined with-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Adam</td>
+                  <td>Brault</td>
+                  <td> <a>adam@andyet.net</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Henrik </td>
+                  <td>Joreteg</td>
+                  <td> <a>henrik@andyet.net</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Adam</td>
+                  <td>Baldwin</td>
+                  <td><a>baldwin@andyet.net</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Adam</td>
+                  <td>Brault</td>
+                  <td> <a>adam@andyet.net</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Henrik </td>
+                  <td>Joreteg</td>
+                  <td> <a>henrik@andyet.net</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Adam</td>
+                  <td>Baldwin</td>
+                  <td><a>baldwin@andyet.net</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Amy</td>
+                  <td>Lynn Taylor</td>
+                  <td><a>amy@andyet.net</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>1</td>
+                  <td>Adam</td>
+                  <td>Brault</td>
+                  <td> <a>adam@andyet.net</a></td>
+                </tr>
+                <tr class="alert">
+                  <td>2</td>
+                  <td>Henrik </td>
+                  <td>Joreteg</td>
+                  <td> <a>henrik@andyet.net</a></td>
+                </tr>
+                <tr class="error">
+                  <td>3</td>
+                  <td>Adam</td>
+                  <td>Baldwin</td>
+                  <td><a>baldwin@andyet.net</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Amy</td>
+                  <td>Lynn Taylor</td>
+                  <td><a>amy@andyet.net</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </table>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
