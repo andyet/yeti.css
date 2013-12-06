@@ -57,6 +57,32 @@
     button:not(:last-child), .button:not(:last-child)
       margin-right: 5px
 
+@media screen and (max-width: 600px) 
+  
+  .modal
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    margin: 0
+    border-radius: 0
+
+@media screen and (min-width: 601px) and (max-width: 800px)
+
+  .modal
+    top: 30%
+    left: 50%
+    margin-left: -40%
+    width: 80%
+
+@media screen and (min-width: 801px)
+
+  .modal
+    top: 50%
+    left: 50%
+    margin-left: -20%
+    width: 40%
+
 // Overlay
 
 .overlay
