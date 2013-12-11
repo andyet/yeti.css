@@ -47,7 +47,7 @@ Because this is an npm module, but isn't on npm, management of it is a little tr
         }
     ```
 
-You can see the list of available releases at: (https://github.com/andyet/style/releases)[https://github.com/andyet/style/releases].
+You can see the list of available releases at: [https://github.com/andyet/style/releases](https://github.com/andyet/style/releases).
 
 
 ## How to run?
