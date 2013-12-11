@@ -7,12 +7,23 @@ html
     link(href="/css/demo.css", rel="stylesheet", type="text/css")
 
   body
+    .overlay
     .container
       header
         h1 &amp;yet's Style
         h3 Reusable components and brand assets. 
 
       .content
+
+        .modal
+          .head
+            h3 Title of a modal
+            a(href="", class="ss-icon ss-standard ss-delete")
+          .body
+            p Body of the modal.
+            .button-wrapper
+              button Optional Button One
+              button Optional Button Two
 
         include colors
         include typography
