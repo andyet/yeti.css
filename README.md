@@ -27,6 +27,27 @@ The simplest way to include style in a moonboots app is to use [stylizer](https:
     @import 'style/_mixins'
     ```
 
+### Gotchas:
+
+Because this is an npm module, but isn't on npm, management of it is a little tricker.
+
+* **Deployment:** If you are deploying your app, Bear will also need to setup deploy keys for the andyet/style repo, so that npm can grab style from the private repo. This is why you should use "git+ssh://git@github.com/andyet/style" in your package.json to reference style.
+
+* **Version Pinning:** It's __**strongly**__ recommended that you pin to a specific version of style, so that updates to the styleguide don't break your site. To do that, reference a specific tag in your package.json by appending #<tagname> to the git url, e.g.:
+
+    ```js
+        //package.json
+
+        {
+            //...
+            "dependencies": {
+                "style": "git+ssh://git@github.com/andyet/style#0.1.0"
+            },
+            //...
+        }
+    ```
+
+
 ## How to run?
 
 For quickly accessing the demo page fire up the server with [http-server](https://github.com/nodeapps/http-server) in root directory:
@@ -75,6 +96,24 @@ To rebuild the demo files run:
 npm install #To install dependencies if you haven't already
 npm run build #compiles public/css/demo.css, and public/index.html
 ```
+
+### Tagging releases
+
+Releases should be tagged to allow for version management, npm makes this easy. Just run:
+
+```
+npm version <major|minor|patch>
+git push origin -tags
+```
+
+Which will update package.json, create a git tag, and push the tag to github.
+
+CSS isn't quite the same as code, but tags should be roughly analagous to [semver](http://semver.org/):
+
+* `major`: if the style change is likely to break existing sites, use a major, i.e. 1.0.0, tag.
+* `minor`: if the style change should not break existing sites, but adds new features/functionality, use a minor, i.e. 0.1.0, tag.
+* `patch`: if the style change is just a small bugfix that should work with existing sites, use a patch, i.e. 0.0.1, tag.
+
 
 
 ## To do
