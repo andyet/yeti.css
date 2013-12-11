@@ -33,7 +33,7 @@ Because this is an npm module, but isn't on npm, management of it is a little tr
 
 * **Deployment:** If you are deploying your app, Bear will also need to setup deploy keys for the andyet/style repo, so that npm can grab style from the private repo. This is why you should use "git+ssh://git@github.com/andyet/style" in your package.json to reference style.
 
-* **Version Pinning:** It's __**strongly**__ recommended that you pin to a specific version of style, so that updates to the styleguide don't break your site. To do that, reference a specific tag in your package.json by appending #<tagname> to the git url, e.g.:
+* **Version Pinning:** It's __**strongly**__ recommended that you pin to a specific version of style, so that updates to the styleguide don't break your site. To do that, reference a specific tagged release in your package.json by appending #<tagname> to the git url, e.g.:
 
     ```js
         //package.json
@@ -41,11 +41,13 @@ Because this is an npm module, but isn't on npm, management of it is a little tr
         {
             //...
             "dependencies": {
-                "style": "git+ssh://git@github.com/andyet/style#0.1.0"
+                "style": "git+ssh://git@github.com/andyet/style#v0.1.0"
             },
             //...
         }
     ```
+
+You can see the list of available releases at: (https://github.com/andyet/style/releases)[https://github.com/andyet/style/releases].
 
 
 ## How to run?
@@ -106,7 +108,7 @@ npm version <major|minor|patch>
 git push origin -tags
 ```
 
-Which will update package.json, create a git tag, and push the tag to github.
+Which will increment the version number, update package.json, create a git tag, and push the tag to github.
 
 CSS isn't quite the same as code, but tags should be roughly analagous to [semver](http://semver.org/):
 
