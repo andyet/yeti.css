@@ -1716,7 +1716,7 @@ nav ul a {
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   margin-left: -15%;
   -moz-box-sizing: border-box;
@@ -1801,7 +1801,7 @@ nav ul a {
 }
 @media screen and (min-width: 801px) {
   .modal {
-    top: 50%;
+    top: 30%;
     left: 50%;
     margin-left: -20%;
     width: 40%;
