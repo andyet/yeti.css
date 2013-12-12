@@ -1782,6 +1782,7 @@ nav ul a {
 }
 @media screen and (max-width: 600px) {
   .modal {
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
