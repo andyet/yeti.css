@@ -1,6 +1,6 @@
 {
   "name": "style",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "&yet visual style, branding assets, CSS components.",
   "main": "style.js",
   "scripts": {
