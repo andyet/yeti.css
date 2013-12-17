@@ -105,7 +105,7 @@ Releases should be tagged to allow for version management, npm makes this easy. 
 
 ```
 npm version <major|minor|patch>
-git push origin -tags
+git push origin --tags
 ```
 
 Which will increment the version number, update package.json, create a git tag, and push the tag to github.
