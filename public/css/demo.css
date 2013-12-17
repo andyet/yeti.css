@@ -1807,7 +1807,11 @@ nav ul a {
     width: 40%;
   }
 }
-.overlay {
+.has-modal:before {
+  content: '';
+}
+.overlay,
+.has-modal:before {
   position: fixed;
   top: 0;
   left: 0;
