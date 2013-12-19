@@ -2036,6 +2036,78 @@ table tbody tr.alert a:hover {
 table tbody td {
   border-bottom: 1px solid #e6eaed;
 }
+.andyet-comment,
+pre .comment,
+pre .title {
+  color: #828c8f;
+}
+.andyet-red,
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #e80044;
+}
+.andyet-orange,
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f18902;
+}
+.andyet-yellow,
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #fec57b;
+}
+.andyet-green,
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #43bb6e;
+}
+.andyet-lightblue,
+pre .css .hexcolor {
+  color: #e7f7fd;
+}
+.andyet-blue,
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #12acef;
+}
+.andyet-purple,
+pre .keyword,
+pre .javascript .function {
+  color: #ec008c;
+}
+pre code {
+  display: block;
+  background: #000;
+  color: #e6eaed;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+  padding: 10px;
+}
 header {
   padding: 30px 0;
   border-bottom: 1px solid #e6eaed;
