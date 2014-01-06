@@ -21,9 +21,6 @@ nav ul
     padding: 0
     float: left
 
-  > li:not(:first-child)
-    border-left: 1px solid $gray-lighter
-
   a
     padding: 0 15px
 
@@ -211,3 +208,32 @@ nav ul
 
     a
       padding: 5px 10px
+
+  .top-nav
+    height: auto
+
+    .dropdown, li, a
+      display: block
+      width: 100%
+
+    li
+      float: none
+      border-bottom: 1px solid $gray-lighter
+
+    > li
+      border-left: none
+
+    li, a
+      borderbox()
+
+    &.dark
+      
+      li
+        border-bottom: 1px solid $blue-saturated-light
+
+@media screen and (min-width: 501px)
+
+  .top-nav
+    
+    > li:not(:first-child)
+      border-left: 1px solid $gray-lighter
