@@ -191,3 +191,23 @@ nav ul
 
 .breadcrumbs a, .pagination a
   font-size: $font-size-small
+
+@media screen and (max-width: 500px)
+
+  .breadcrumbs
+    padding: 0
+
+    li, a
+      display: block
+
+    li
+      border-bottom: 1px solid $gray-lighter
+
+      &:last-of-type
+        border: none
+
+      &:after
+        display: none
+
+    a
+      padding: 5px 10px

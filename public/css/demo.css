@@ -854,6 +854,27 @@ nav ul a {
 .pagination a {
   font-size: 14px;
 }
+@media screen and (max-width: 500px) {
+  .breadcrumbs {
+    padding: 0;
+  }
+  .breadcrumbs li,
+  .breadcrumbs a {
+    display: block;
+  }
+  .breadcrumbs li {
+    border-bottom: 1px solid #e6eaed;
+  }
+  .breadcrumbs li:last-of-type {
+    border: none;
+  }
+  .breadcrumbs li:after {
+    display: none;
+  }
+  .breadcrumbs a {
+    padding: 5px 10px;
+  }
+}
 .message {
   padding: 10px 15px;
   position: relative;
