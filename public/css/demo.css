@@ -193,6 +193,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+::-moz-selection {
+  background: #88d5f7;
+  color: #fff;
+}
+::selection {
+  background: #88d5f7;
+  color: #fff;
+}
 h1,
 h2 {
   line-height: 26px;
