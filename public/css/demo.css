@@ -271,6 +271,14 @@ ul.unstyled li {
 ol li {
   list-style-type: decimal;
 }
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
 button {
   border: none;
 }
