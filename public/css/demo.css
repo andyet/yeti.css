@@ -190,6 +190,8 @@ body {
   font: 16px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #4d5659;
   background: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 h1,
 h2 {
