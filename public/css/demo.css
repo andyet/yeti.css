@@ -187,7 +187,7 @@ table {
   border-spacing: 0;
 }
 body {
-  font: 16px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 16px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #4d5659;
   background: #fff;
   text-rendering: optimizeLegibility;
@@ -207,7 +207,7 @@ h2 {
 }
 h3,
 h4 {
-  line-height: 20px;
+  line-height: 22px;
 }
 h1,
 h2,
@@ -1319,7 +1319,7 @@ h2 {
 }
 h3,
 h4 {
-  line-height: 20px;
+  line-height: 22px;
 }
 h1,
 h2,
