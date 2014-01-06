@@ -448,6 +448,26 @@ button.secondary:hover:not(:disabled) {
 .button-group.outlined.secondary .button:hover {
   background: #b8e6fa;
 }
+@media screen and (max-width: 500px) {
+  .button-group button,
+  .button-group .button {
+    border-radius: none;
+    display: block;
+    margin: 0;
+  }
+  .button-group button:first-of-type,
+  .button-group .button:first-of-type {
+    border-radius: 3px 3px 0 0;
+  }
+  .button-group button:last-of-type,
+  .button-group .button:last-of-type {
+    border-radius: 0 0 3px 3px;
+  }
+  .button-group.outlined .button:not(:last-of-type),
+  .button-group.outlined button:not(:last-of-type) {
+    border-bottom: none;
+  }
+}
 input[type=text],
 input[type=email],
 input[type=password],
