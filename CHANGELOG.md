@@ -1,5 +1,8 @@
 # Changelog
 
+#### v0.3.1
+* Remove stylus syntax error in fonts.styl
+
 #### v0.3.0
 * Forms improvements: `-webkit-appearance: none` and `outline: none` for buttons
 * Clearfix added
