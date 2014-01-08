@@ -1,5 +1,8 @@
 # Changelog
 
+#### v0.3.2
+* Fix a bug with improper negative margins for button groups
+
 #### v0.3.1
 * Remove stylus syntax error in fonts.styl
 
