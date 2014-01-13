@@ -90,6 +90,8 @@ All logos are saved in web-friendly and super optimized `SVG` format.
 * OTalk
 * Talky
 
+For Base64 Data URIs please read the [Logos Wiki](https://github.com/andyet/style/wiki/Logos).
+
 ## Contributing
 
 To rebuild the demo files run:
