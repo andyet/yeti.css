@@ -85,10 +85,10 @@ All logos are saved in web-friendly and super optimized `SVG` format.
 
 * &yet
 * &yet Labs
+* ^Lift
 * &!
 * OTalk
-* ^Lift
-
+* Talky
 
 ## Contributing
 
