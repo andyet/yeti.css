@@ -1,5 +1,11 @@
 # Changelog
 
+#### v.0.3.3
+* Buttons no longer dependable on height - fixes a bug with text overlapping
+* Replaces `background` with `background-color` for more flexibility
+* Adds `cursor: pointer` to buttons
+* Adds [Talky.io](https://talky.io/) logo
+
 #### v0.3.2
 * Fix a bug with improper negative margins for button groups
 
