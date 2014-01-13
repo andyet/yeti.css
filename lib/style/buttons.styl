@@ -3,28 +3,24 @@
 button
   border: none
 
-.button
-  line-height: 35px
-
 .button, button
   display: inline-block
   border-radius: 3px
-  padding: 0 15px
-  height: 35px
+  padding: 6px 15px
   background-color: lighten($blue-saturated-lighter, 85%)
   font-size: $font-size-base
   font-weight: $font-weight-bold
   text-align: center
   color: $blue-saturated
-  text-overflow: ellipsis
-  vertical-align: middle
   user-select()
   cursor: pointer
+  -webkit-appearance: none
+  transition: all .3s ease-in 
+  -webkit-transition: all .3s ease-in
 
   &:hover:not(:disabled)
     color: $blue-saturated
     background-color: lighten($blue-saturated-lighter, 65%)
-    transition: all .3s ease-in 
 
   &:disabled
     cursor: not-allowed
@@ -34,15 +30,11 @@ button
     outline: none
     
   &.small
-    height: 25px
-    padding: 0 8px
+    padding: 3px 8px
     font-size: $font-size-small
-    line-height: 25px
 
   &.large
-    height: 50px
-    line-height: 50px
-    padding: 0 30px
+    padding: 10px 20px
     font-size: $font-size-large
 
   &.primary, &.secondary, &.primary:hover, &.secondary:hover

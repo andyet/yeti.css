@@ -1093,33 +1093,29 @@ ol li {
 button {
   border: none;
 }
-.button {
-  line-height: 35px;
-}
 .button,
 button {
   display: inline-block;
   border-radius: 3px;
-  padding: 0 15px;
-  height: 35px;
+  padding: 6px 15px;
   background-color: #e1edf1;
   font-size: 16px;
   font-weight: 800;
   text-align: center;
   color: #003546;
-  text-overflow: ellipsis;
-  vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
 }
 .button:hover:not(:disabled),
 button:hover:not(:disabled) {
   color: #003546;
   background-color: #b8d6df;
-  transition: all 0.3s ease-in;
 }
 .button:disabled,
 button:disabled {
@@ -1132,16 +1128,12 @@ button:focus {
 }
 .button.small,
 button.small {
-  height: 25px;
-  padding: 0 8px;
+  padding: 3px 8px;
   font-size: 14px;
-  line-height: 25px;
 }
 .button.large,
 button.large {
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
+  padding: 10px 20px;
   font-size: 18px;
 }
 .button.primary,
