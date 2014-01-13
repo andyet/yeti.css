@@ -234,7 +234,7 @@ html:hover [class^="ss-"] {
 }
 .ss-search:before,
 .ss-search.right:after {
-  content: '🔎';
+  content: '�';
 }
 .ss-zoomin:before,
 .ss-zoomin.right:after {
@@ -246,15 +246,15 @@ html:hover [class^="ss-"] {
 }
 .ss-view:before,
 .ss-view.right:after {
-  content: '👀';
+  content: '�';
 }
 .ss-attach:before,
 .ss-attach.right:after {
-  content: '📎';
+  content: '�';
 }
 .ss-link:before,
 .ss-link.right:after {
-  content: '🔗';
+  content: '�';
 }
 .ss-move:before,
 .ss-move.right:after {
@@ -274,19 +274,19 @@ html:hover [class^="ss-"] {
 }
 .ss-compose:before,
 .ss-compose.right:after {
-  content: '📝';
+  content: '�';
 }
 .ss-lock:before,
 .ss-lock.right:after {
-  content: '🔒';
+  content: '�';
 }
 .ss-unlock:before,
 .ss-unlock.right:after {
-  content: '🔓';
+  content: '�';
 }
 .ss-key:before,
 .ss-key.right:after {
-  content: '🔑';
+  content: '�';
 }
 .ss-backspace:before,
 .ss-backspace.right:after {
@@ -294,7 +294,7 @@ html:hover [class^="ss-"] {
 }
 .ss-ban:before,
 .ss-ban.right:after {
-  content: '🚫';
+  content: '�';
 }
 .ss-trash:before,
 .ss-trash.right:after {
@@ -310,7 +310,7 @@ html:hover [class^="ss-"] {
 }
 .ss-bookmark:before,
 .ss-bookmark.right:after {
-  content: '🔖';
+  content: '�';
 }
 .ss-flag:before,
 .ss-flag.right:after {
@@ -318,11 +318,11 @@ html:hover [class^="ss-"] {
 }
 .ss-like:before,
 .ss-like.right:after {
-  content: '👍';
+  content: '�';
 }
 .ss-dislike:before,
 .ss-dislike.right:after {
-  content: '👎';
+  content: '�';
 }
 .ss-heart:before,
 .ss-heart.right:after {
@@ -362,7 +362,7 @@ html:hover [class^="ss-"] {
 }
 .ss-phone:before,
 .ss-phone.right:after {
-  content: '📞';
+  content: '�';
 }
 .ss-phonedisabled:before,
 .ss-phonedisabled.right:after {
@@ -390,11 +390,11 @@ html:hover [class^="ss-"] {
 }
 .ss-inbox:before,
 .ss-inbox.right:after {
-  content: '📥';
+  content: '�';
 }
 .ss-chat:before,
 .ss-chat.right:after {
-  content: '💬';
+  content: '�';
 }
 .ss-ellipsischat:before,
 .ss-ellipsischat.right:after {
@@ -406,15 +406,15 @@ html:hover [class^="ss-"] {
 }
 .ss-user:before,
 .ss-user.right:after {
-  content: '👤';
+  content: '�';
 }
 .ss-femaleuser:before,
 .ss-femaleuser.right:after {
-  content: '👧';
+  content: '�';
 }
 .ss-users:before,
 .ss-users.right:after {
-  content: '👥';
+  content: '�';
 }
 .ss-cart:before,
 .ss-cart.right:after {
@@ -422,15 +422,15 @@ html:hover [class^="ss-"] {
 }
 .ss-creditcard:before,
 .ss-creditcard.right:after {
-  content: '💳';
+  content: '�';
 }
 .ss-dollarsign:before,
 .ss-dollarsign.right:after {
-  content: '💲';
+  content: '�';
 }
 .ss-barchart:before,
 .ss-barchart.right:after {
-  content: '📊';
+  content: '�';
 }
 .ss-piechart:before,
 .ss-piechart.right:after {
@@ -438,7 +438,7 @@ html:hover [class^="ss-"] {
 }
 .ss-box:before,
 .ss-box.right:after {
-  content: '📦';
+  content: '�';
 }
 .ss-home:before,
 .ss-home.right:after {
@@ -446,7 +446,7 @@ html:hover [class^="ss-"] {
 }
 .ss-buildings:before,
 .ss-buildings.right:after {
-  content: '🏢';
+  content: '�';
 }
 .ss-warehouse:before,
 .ss-warehouse.right:after {
@@ -454,7 +454,7 @@ html:hover [class^="ss-"] {
 }
 .ss-globe:before,
 .ss-globe.right:after {
-  content: '🌎';
+  content: '�';
 }
 .ss-navigate:before,
 .ss-navigate.right:after {
@@ -478,7 +478,7 @@ html:hover [class^="ss-"] {
 }
 .ss-pin:before,
 .ss-pin.right:after {
-  content: '📍';
+  content: '�';
 }
 .ss-database:before,
 .ss-database.right:after {
@@ -494,19 +494,19 @@ html:hover [class^="ss-"] {
 }
 .ss-mic:before,
 .ss-mic.right:after {
-  content: '🎤';
+  content: '�';
 }
 .ss-volume:before,
 .ss-volume.right:after {
-  content: '🔈';
+  content: '�';
 }
 .ss-lowvolume:before,
 .ss-lowvolume.right:after {
-  content: '🔉';
+  content: '�';
 }
 .ss-highvolume:before,
 .ss-highvolume.right:after {
-  content: '🔊';
+  content: '�';
 }
 .ss-airplay:before,
 .ss-airplay.right:after {
@@ -514,15 +514,15 @@ html:hover [class^="ss-"] {
 }
 .ss-camera:before,
 .ss-camera.right:after {
-  content: '📷';
+  content: '�';
 }
 .ss-picture:before,
 .ss-picture.right:after {
-  content: '🌄';
+  content: '�';
 }
 .ss-video:before,
 .ss-video.right:after {
-  content: '📹';
+  content: '�';
 }
 .ss-play:before,
 .ss-play.right:after {
@@ -562,7 +562,7 @@ html:hover [class^="ss-"] {
 }
 .ss-repeat:before,
 .ss-repeat.right:after {
-  content: '🔁';
+  content: '�';
 }
 .ss-replay:before,
 .ss-replay.right:after {
@@ -570,23 +570,23 @@ html:hover [class^="ss-"] {
 }
 .ss-shuffle:before,
 .ss-shuffle.right:after {
-  content: '🔀';
+  content: '�';
 }
 .ss-book:before,
 .ss-book.right:after {
-  content: '📕';
+  content: '�';
 }
 .ss-openbook:before,
 .ss-openbook.right:after {
-  content: '📖';
+  content: '�';
 }
 .ss-notebook:before,
 .ss-notebook.right:after {
-  content: '📓';
+  content: '�';
 }
 .ss-newspaper:before,
 .ss-newspaper.right:after {
-  content: '📰';
+  content: '�';
 }
 .ss-grid:before,
 .ss-grid.right:after {
@@ -610,7 +610,7 @@ html:hover [class^="ss-"] {
 }
 .ss-desktop:before,
 .ss-desktop.right:after {
-  content: '💻';
+  content: '�';
 }
 .ss-laptop:before,
 .ss-laptop.right:after {
@@ -622,11 +622,11 @@ html:hover [class^="ss-"] {
 }
 .ss-cell:before,
 .ss-cell.right:after {
-  content: '📱';
+  content: '�';
 }
 .ss-battery:before,
 .ss-battery.right:after {
-  content: '🔋';
+  content: '�';
 }
 .ss-highbattery:before,
 .ss-highbattery.right:after {
@@ -646,7 +646,7 @@ html:hover [class^="ss-"] {
 }
 .ss-lightbulb:before,
 .ss-lightbulb.right:after {
-  content: '💡';
+  content: '�';
 }
 .ss-downloadcloud:before,
 .ss-downloadcloud.right:after {
@@ -698,11 +698,11 @@ html:hover [class^="ss-"] {
 }
 .ss-file:before,
 .ss-file.right:after {
-  content: '📄';
+  content: '�';
 }
 .ss-folder:before,
 .ss-folder.right:after {
-  content: '📁';
+  content: '�';
 }
 .ss-quote:before,
 .ss-quote.right:after {
@@ -722,7 +722,7 @@ html:hover [class^="ss-"] {
 }
 .ss-fax:before,
 .ss-fax.right:after {
-  content: '📠';
+  content: '�';
 }
 .ss-list:before,
 .ss-list.right:after {
@@ -794,11 +794,11 @@ html:hover [class^="ss-"] {
 }
 .ss-notifications:before,
 .ss-notifications.right:after {
-  content: '🔔';
+  content: '�';
 }
 .ss-notificationsdisabled:before,
 .ss-notificationsdisabled.right:after {
-  content: '🔕';
+  content: '�';
 }
 .ss-clock:before,
 .ss-clock.right:after {
@@ -810,7 +810,7 @@ html:hover [class^="ss-"] {
 }
 .ss-calendar:before,
 .ss-calendar.right:after {
-  content: '📅';
+  content: '�';
 }
 .ss-addcalendar:before,
 .ss-addcalendar.right:after {
@@ -830,7 +830,7 @@ html:hover [class^="ss-"] {
 }
 .ss-briefcase:before,
 .ss-briefcase.right:after {
-  content: '💼';
+  content: '�';
 }
 .ss-cloud:before,
 .ss-cloud.right:after {
@@ -838,7 +838,7 @@ html:hover [class^="ss-"] {
 }
 .ss-droplet:before,
 .ss-droplet.right:after {
-  content: '💧';
+  content: '�';
 }
 .ss-flask:before,
 .ss-flask.right:after {
@@ -914,11 +914,11 @@ html:hover [class^="ss-"] {
 }
 .ss-volumelow:before,
 .ss-volumelow.right:after {
-  content: '🔉';
+  content: '�';
 }
 .ss-volumehigh:before,
 .ss-volumehigh.right:after {
-  content: '🔊';
+  content: '�';
 }
 .ss-batteryhigh:before,
 .ss-batteryhigh.right:after {
@@ -1113,6 +1113,7 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 }
 .button:hover:not(:disabled),
 button:hover:not(:disabled) {
@@ -1924,7 +1925,7 @@ nav ul a {
     width: 40%;
   }
 }
-.has-modal:before {
+.has-modal&:before {
   content: '';
 }
 .overlay,
