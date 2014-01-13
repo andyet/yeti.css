@@ -11,7 +11,7 @@ button
   border-radius: 3px
   padding: 0 15px
   height: 35px
-  background: lighten($blue-saturated-lighter, 85%)
+  background-color: lighten($blue-saturated-lighter, 85%)
   font-size: $font-size-base
   font-weight: $font-weight-bold
   text-align: center
@@ -23,7 +23,7 @@ button
 
   &:hover:not(:disabled)
     color: $blue-saturated
-    background: lighten($blue-saturated-lighter, 65%)
+    background-color: lighten($blue-saturated-lighter, 65%)
     transition: all .3s ease-in 
 
   &:disabled
@@ -49,22 +49,22 @@ button
     color: white
 
   &.primary
-    background: $pink
+    background-color: $pink
 
     &:hover:not(:disabled)
-      background: darken($pink, 10%)
+      background-color: darken($pink, 10%)
 
     &:disabled
-      background: $pink-light
+      background-color: $pink-light
 
   &.secondary
-    background: $blue
+    background-color: $blue
 
     &:disabled
-      background: $blue-light
+      background-color: $blue-light
 
     &:hover:not(:disabled)
-      background: darken($blue, 10%)
+      background-color: darken($blue, 10%)
 
 .button-group
 
@@ -93,22 +93,22 @@ button
     &.primary
 
       button, .button
-        background: $pink-lighter
+        background-color: $pink-lighter
         border: 1px solid $pink-light
         color: $pink
 
         &:hover
-          background: lighten($pink-light, 40%)
+          background-color: lighten($pink-light, 40%)
 
     &.secondary
 
       button, .button
-        background: $blue-lighter
+        background-color: $blue-lighter
         border: 1px solid $blue-light
         color: $blue
 
         &:hover
-          background: lighten($blue-light, 40%)
+          background-color: lighten($blue-light, 40%)
 
 @media screen and (max-width: 500px)
 

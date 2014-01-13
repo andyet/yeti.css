@@ -25,7 +25,7 @@ nav ul
     padding: 0 15px
 
     &:hover, &.active
-      background: lighten($blue-lighter, 60%)
+      background-color: lighten($blue-lighter, 60%)
 
   .has-dropdown
     position: relative
@@ -58,7 +58,7 @@ nav ul
           border-bottom: 1px solid $gray-lighter
 
   &.dark
-    background: $blue-saturated
+    background-color: $blue-saturated
 
     li:not(:first-child)
       border-left: 1px solid $blue-saturated-light
@@ -67,13 +67,13 @@ nav ul
       color: $blue-saturated-lighter
 
       &:hover, &.active
-        background: $blue-saturated-light
+        background-color: $blue-saturated-light
         color: lighten($blue-saturated-lighter, 40%)
 
     .has-dropdown
 
       .dropdown
-        background: $blue-saturated
+        background-color: $blue-saturated
         box-shadow: none
 
         li
@@ -117,7 +117,7 @@ nav ul
       color: $gray
 
     &.active
-      background: $blue-lighter
+      background-color: $blue-lighter
       color: $blue
 
     &.ss-icon
@@ -160,7 +160,7 @@ nav ul
     line-height: 35px
 
     &:hover, &.active
-      background: lighten($blue-lighter, 60%)
+      background-color: lighten($blue-lighter, 60%)
 
 // Shared
 
@@ -174,11 +174,11 @@ nav ul
     padding: 0 10px
 
 .dropdown, .tabs a.active
-  background: white
+  background-color: white
 
 .breadcrumbs li:not(:first-child):after, 
 .pagination a:not(.active):hover
-  background: $gray-lighter
+  background-color: $gray-lighter
 
 .tabs a.active, .top-nav a, .side-nav a.active, .breadcrumbs a.current, .pagination a.active
   font-weight: $font-weight-bold

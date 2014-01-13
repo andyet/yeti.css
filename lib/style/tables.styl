@@ -3,7 +3,7 @@
 table 
   width: 100%
   margin-bottom: 20px
-  background: white
+  background-color: white
 
   &.striped
 
@@ -16,7 +16,7 @@ table
 
   &.with-hover tr:hover,
   &.striped tr:nth-child(even)
-    background: lighten($gray-lighter, 70%)
+    background-color: lighten($gray-lighter, 70%)
 
   td, th
     text-align: left
@@ -34,7 +34,7 @@ table
     tr
 
       &.error
-        background: $red-lighter
+        background-color: $red-lighter
         color: $red
 
         a
@@ -44,7 +44,7 @@ table
             color: darken($red, 40%)
 
       &.success
-        background: $green-lighter
+        background-color: $green-lighter
         color: $green
 
         a
@@ -54,7 +54,7 @@ table
             color: darken($green, 40%)
 
       &.alert
-        background: $orange-lighter
+        background-color: $orange-lighter
         color: $orange
 
         a
