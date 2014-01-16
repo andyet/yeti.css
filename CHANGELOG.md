@@ -1,5 +1,8 @@
 # Changelog
 
+#### v.0.3.4
+* Deprecates `border-box` as a mixin - makes it global for all elements
+
 #### v.0.3.3
 * Buttons no longer dependable on height - fixes a bug with text overlapping
 * Replaces `background` with `background-color` for more flexibility
