@@ -1,5 +1,8 @@
 # Changelog
 
+#### v.0.3.5
+* Adds `font-size` to form elements to ensure consistency of size
+
 #### v.0.3.4
 * Deprecates `border-box` as a mixin - makes it global for all elements
 
