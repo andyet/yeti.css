@@ -1964,6 +1964,7 @@ nav ul a {
 .progress,
 .meter {
   border-radius: 3px;
+  line-height: 0;
 }
 .progress.rounded,
 .rounded .meter {
