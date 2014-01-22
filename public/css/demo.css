@@ -1675,6 +1675,7 @@ nav ul a {
   position: relative;
   background-color: #e7f7fd;
   color: #12acef;
+  line-height: 1.2;
 }
 .message:after {
   border: solid transparent;
