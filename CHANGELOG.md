@@ -1,5 +1,8 @@
 # Changelog
 
+#### v.0.3.6
+* Ports font sizes from pixels to ems
+
 #### v.0.3.5
 * Adds `font-size` to form elements to ensure consistency of size
 
