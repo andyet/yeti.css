@@ -1020,12 +1020,6 @@ a {
 a:hover {
   color: #0d8ac1;
 }
-strong {
-  font-weight: 800;
-}
-em {
-  font-style: italic;
-}
 abbr {
   color: #4d5659;
   border-bottom: 1px dotted #b7c0c3;
@@ -1047,7 +1041,6 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 blockquote small {
-  font-size: 0.875em;
   color: #b7c0c3;
 }
 blockquote small:before {
@@ -2167,11 +2160,12 @@ h3 a {
   font-size: 0.6em;
   text-transform: none;
 }
-code {
+code.inline {
   font-family: Consolas, Courier, monospace;
   color: #000;
   padding: 0.1875em 0.4375em;
-  background: #f5f7f8;
+  border-radius: 3px;
+  background: #f0f2f4;
   white-space: nowrap;
 }
 .container {
@@ -2288,8 +2282,8 @@ code {
 .typography .sample p {
   margin: 0 0 1em 0;
 }
-.typography p.small {
-  font-size: 0.875em;
+.typography ul li {
+  padding: 0.325em 0;
 }
 /* Buttons */
 .buttons .cf {
