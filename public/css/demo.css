@@ -977,6 +977,14 @@ body {
   background-color: #88d5f7;
   color: #fff;
 }
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
 h1,
 h2 {
   line-height: 1.1;
@@ -1056,21 +1064,16 @@ blockquote.blue small {
 }
 ul,
 ol {
-  margin: 0 0 20px 20px;
+  margin: 15px 0 15px 20px;
   padding: 0;
 }
-ul li ul,
-ol li ul,
-ul li ol,
-ol li ol {
-  margin-bottom: 0;
-}
 ul li ul li,
-ol li ul li,
-ul li ol li,
-ol li ol li {
+ol li ul li {
   list-style-type: circle;
-  padding: 5px 0;
+}
+ul li li ul li,
+ol li li ul li {
+  list-style-type: square;
 }
 ul li {
   list-style-type: disc;
@@ -1085,13 +1088,11 @@ ul.unstyled li {
 ol li {
   list-style-type: decimal;
 }
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
+dl dt {
+  font-weight: 800;
 }
-.cf:after {
-  clear: both;
+dl dd {
+  margin: 0;
 }
 button {
   border: none;
@@ -2283,7 +2284,7 @@ code.inline {
 .typography .sample p {
   margin: 0 0 1em 0;
 }
-.typography ul li {
+.typography .text li {
   padding: 0.325em 0;
 }
 /* Buttons */
@@ -2336,6 +2337,13 @@ figure {
   .colors li:not(:first-child) {
     margin-left: 0.625em;
   }
+  .column {
+    float: left;
+    width: 33%;
+  }
+  .column:not(:last-of-type) {
+    padding-right: 1.875;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -2344,5 +2352,8 @@ figure {
   .colors li {
     width: 100%;
     margin: 0 0 10px 0;
+  }
+  .column {
+    float: none;
   }
 }

@@ -22,6 +22,15 @@ body
   background-color: $blue-light
   color: white
 
+.cf
+  &:before,
+  &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both
+
 h1, h2
   line-height: 1.1
 
@@ -94,14 +103,16 @@ blockquote
       color: $blue-light
 
 ul, ol
-  margin: 0 0 20px 20px
+  margin: 15px 0 15px 20px
   padding: 0
 
-  li ul, li ol
-    margin-bottom: 0
+  li ul
     li
-      list-style-type: circle
-      padding: 5px 0
+      list-style-type: circle 
+
+  li li ul
+    li
+      list-style-type: square
 
 ul
   li
@@ -118,12 +129,8 @@ ol
   li
     list-style-type: decimal
 
-.cf
-  &:before,
-  &:after
-    content: " "
-    display: table
-
-  &:after
-    clear: both
-
+dl
+  dt
+    font-weight: $font-weight-bold
+  dd
+    margin: 0

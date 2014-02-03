@@ -1,4 +1,4 @@
-section.typography
+section.typography.cf
   h2 Typography
 
   p 
@@ -28,7 +28,7 @@ section.typography
 
   h3 Text manipulations
 
-  ul
+  ul.text
     li 
       strong Bold  
       | text example
@@ -75,19 +75,37 @@ section.typography
 
   h3 Lists
 
-  ul
-    li List element one
-    li List element two
-      ul
-        li List element that's nested
-    li List element three
-    li List element four
-    li List element five
+  .column
+    h4 Unordered list
+    ul
+      li List element one
+      li List element two
+        ul
+          li List element one
+            ul
+              li List element one
+              li List element two
+          li List element two
+      li List element three
+      li List element four
+      li List element five
 
-  ol
-    li List element one
-    li List element two
-    li List element three
-    li List element four
-    li List element five
+  .column
+    h4 Ordered list
+    ol
+      li List element one
+      li List element two
+        ol
+          li List element one
+          li List element two
+      li List element three
+      li List element four
+      li List element five
+
+  .column
+    h4 Definition list
+
+    dl
+      dt Definition term
+      dd Definition description
   

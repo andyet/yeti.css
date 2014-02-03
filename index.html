@@ -11,7 +11,7 @@
         <p>Brand assets and modularized components.</p><a href="https://github.com/andyet/style" title="View on Github" class="large button secondary">View on Github</a>
       </header>
       <div class="content">
-        <section class="typography">
+        <section class="typography cf">
           <h2>Typography</h2>
           <p>
              
@@ -34,7 +34,7 @@
             <p class="small">Small body copy is 14px</p>
           </div>
           <h3>Text manipulations</h3>
-          <ul>
+          <ul class="text">
             <li> <strong>Bold  </strong>text example</li>
             <li><em>Emphasized </em>text example</li>
             <li><abbr>Abbreviated</abbr> text example</li>
@@ -61,24 +61,48 @@
             <p>Once now and then a smart quote would be nice.</p><small>Adam Brault</small>
           </blockquote>
           <h3>Lists</h3>
-          <ul>
-            <li>List element one</li>
-            <li>List element two
-              <ul>
-                <li>List element that's nested</li>
-              </ul>
-            </li>
-            <li>List element three</li>
-            <li>List element four</li>
-            <li>List element five</li>
-          </ul>
-          <ol>
-            <li>List element one</li>
-            <li>List element two</li>
-            <li>List element three</li>
-            <li>List element four</li>
-            <li>List element five</li>
-          </ol>
+          <div class="column">
+            <h4>Unordered list</h4>
+            <ul>
+              <li>List element one</li>
+              <li>List element two
+                <ul>
+                  <li>List element one
+                    <ul>
+                      <li>List element one</li>
+                      <li>List element two</li>
+                    </ul>
+                  </li>
+                  <li>List element two</li>
+                </ul>
+              </li>
+              <li>List element three</li>
+              <li>List element four</li>
+              <li>List element five</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Ordered list</h4>
+            <ol>
+              <li>List element one</li>
+              <li>List element two
+                <ol>
+                  <li>List element one</li>
+                  <li>List element two</li>
+                </ol>
+              </li>
+              <li>List element three</li>
+              <li>List element four</li>
+              <li>List element five</li>
+            </ol>
+          </div>
+          <div class="column">
+            <h4>Definition list</h4>
+            <dl>
+              <dt>Definition term</dt>
+              <dd>Definition description</dd>
+            </dl>
+          </div>
         </section>
         <section class="colors">
           <h3>
