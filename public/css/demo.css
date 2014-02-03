@@ -2174,14 +2174,6 @@ code {
 .container {
   margin: 0 auto 100px;
 }
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
 .content section {
   padding-bottom: 30px;
   border-bottom: 1px solid #e6eaed;
@@ -2191,9 +2183,17 @@ code {
 }
 /* Colors */
 .colors ul {
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
+  color: #828c8f;
+}
+.colors ul li {
+  border: 1px solid #e6eaed;
+}
+.colors ul li span {
+  display: block;
+  padding: 0.8em;
 }
 .colors .color {
   height: 60px;
@@ -2337,10 +2337,10 @@ figure {
     width: 60%;
   }
   .colors li {
-    width: 10%;
+    width: 15%;
   }
   .colors li:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 0.625em;
   }
 }
 @media screen and (max-width: 767px) {

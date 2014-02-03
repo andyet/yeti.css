@@ -38,14 +38,6 @@ code
 .container
   margin: 0 auto 100px
 
-.cf:before,
-.cf:after
-  content: " "
-  display: table
-
-.cf:after
-  clear: both
-
 .content section
   padding-bottom: 30px
   border-bottom: 1px solid $gray-lighter
@@ -58,9 +50,17 @@ code
 .colors
 
   ul 
-    font-size: .7em
+    font-size: .8em
     text-transform: uppercase
-    margin-bottom: 10px
+    margin-bottom: .625em
+    color: $gray
+
+    li
+      border: 1px solid $gray-lighter
+
+      span
+        display: block
+        padding: .8em
 
   .color
     height: 60px
@@ -207,10 +207,10 @@ figure
 
   .colors 
     li
-      width: 10%
+      width: 15%
 
       &:not(:first-child)
-        margin-left: 20px
+        margin-left: .625em
 
 @media screen and (max-width: 767px)
 
