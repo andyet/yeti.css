@@ -2143,6 +2143,95 @@ table tbody tr.alert a:hover {
 table tbody td {
   border-bottom: 1px solid #e6eaed;
 }
+pre {
+  max-width: 100%;
+  overflow: hidden;
+}
+pre code {
+  display: block;
+  padding: 20px;
+  border: none;
+  color: #b7c0c3;
+  background: #002531;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+pre code.inline {
+  color: #000;
+  padding: 0.1875em 0.4375em;
+  background: #f0f2f4;
+  white-space: nowrap;
+}
+.comment,
+.template_comment,
+.diff .header,
+.javadoc {
+  color: #67777c;
+}
+.keyword,
+.css .rule .keyword,
+.at_rule,
+.winutils,
+.javascript .title,
+.nginx .title,
+.subst,
+.request,
+.status {
+  color: #438193;
+}
+.string,
+.tag .value,
+.phpdoc,
+.tex .formula {
+  color: #d4007e;
+}
+.title,
+.coffeescript .params,
+.scss .preprocessor {
+  color: #71adbe;
+  font-weight: bold;
+}
+.class .title,
+.haskell .type,
+.vhdl .literal,
+.tex .command,
+.tag,
+.tag .title,
+.rules .property,
+.django .tag .keyword,
+.built_in,
+.lisp .title,
+.clojure .built_in {
+  color: #fff;
+}
+.attribute,
+.variable,
+.lisp .body,
+.preprocessor,
+.pragma,
+.pi,
+.doctype,
+.shebang,
+.cdata {
+  color: #bec6c9;
+}
+.regexp,
+.addition {
+  color: #43bb6e;
+}
+.symbol,
+.ruby .symbol .string,
+.lisp .keyword,
+.tex .special,
+.prompt,
+.deletion {
+  color: #a50062;
+}
+.diff .change {
+  background: #f18902;
+}
 header {
   padding: 3.125em 0;
   border-bottom: 1px solid #e6eaed;
@@ -2166,18 +2255,11 @@ h3 a {
   font-size: 0.6em;
   text-transform: none;
 }
-code.inline {
-  font-family: Consolas, Courier, monospace;
-  color: #000;
-  padding: 0.1875em 0.4375em;
-  background: #f0f2f4;
-  white-space: nowrap;
-}
 .container {
   margin: 0 auto;
 }
 .content section {
-  padding: 1.875em 0;
+  padding: 1.2em 0;
   border-bottom: 1px solid #e6eaed;
 }
 .content section:last-of-type {

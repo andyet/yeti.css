@@ -105,6 +105,37 @@
             </dl>
           </div>
         </section>
+        <section class="buttons">
+          <h3>Buttons</h3>
+          <p>
+             
+            Buttons come in three sizes &ndash; <strong>large</strong>, <strong>regular </strong>and <strong>small</strong>. In neutral and brand colors.
+          </p>
+          <h4>Button sizes and colors</h4>
+          <pre><code>&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;ble&lt;/a&gt;&lt;button class=&quot;button&quot;&gt;ble&lt;/button&gt;</code></pre>
+          <div class="cf"><a href="" class="button large">Large Button</a><a href="" class="button">Button</a><a href="" class="button small">Small Button</a></div>
+          <div class="cf"><a href="" class="button large primary">Large Button</a><a href="" class="button primary">Button</a><a href="" class="button small primary">Small Button</a></div>
+          <div class="cf"><a href="" class="button large secondary">Large Button</a><a href="" class="button secondary">Button</a><a href="" class="button small secondary">Small Button</a></div>
+          <h4>Disabled buttons</h4>
+          <p>
+             
+            Being able to disable a button might come quite handy. Works only with button elements that have <code>disabled </code>attribute.
+          </p>
+          <div class="cf">
+            <button disabled>Button</button>
+            <button disabled class="primary">Button</button>
+            <button disabled class="secondary">Button</button>
+          </div>
+          <h4>Button groups</h4>
+          <p>
+             
+            You can group buttons by using <code>.button-group </code>class. For outlined versions use <code>.outlined </code>class along with the color denotation &ndash; <code>.primary </code>or <code>.secondary </code>&ndash; if you would like to change the default appearance.
+          </p>
+          <div class="cf button-group"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
+          <div class="cf button-group outlined"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
+          <div class="cf button-group outlined primary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
+          <div class="cf button-group outlined secondary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
+        </section>
         <section class="colors">
           <h3>
              
@@ -205,36 +236,6 @@
               <div class="color orange3"></div><span>#ffeed7</span>
             </li>
           </ul>
-        </section>
-        <section class="buttons">
-          <h3>Buttons</h3>
-          <p>
-             
-            Buttons come in three sizes &ndash; <strong>large</strong>, <strong>regular </strong>and <strong>small</strong>. In neutral and brand colors.
-          </p>
-          <h4>Button sizes and colors</h4>
-          <div class="cf"><a href="" class="button large">Large Button</a><a href="" class="button">Button</a><a href="" class="button small">Small Button</a></div>
-          <div class="cf"><a href="" class="button large primary">Large Button</a><a href="" class="button primary">Button</a><a href="" class="button small primary">Small Button</a></div>
-          <div class="cf"><a href="" class="button large secondary">Large Button</a><a href="" class="button secondary">Button</a><a href="" class="button small secondary">Small Button</a></div>
-          <h4>Disabled buttons</h4>
-          <p>
-             
-            Being able to disable a button might come quite handy. Works only with button elements that have <code>disabled </code>attribute.
-          </p>
-          <div class="cf">
-            <button disabled>Button</button>
-            <button disabled class="primary">Button</button>
-            <button disabled class="secondary">Button</button>
-          </div>
-          <h4>Button groups</h4>
-          <p>
-             
-            You can group buttons by using <code>.button-group </code>class. For outlined versions use <code>.outlined </code>class along with the color denotation &ndash; <code>.primary </code>or <code>.secondary </code>&ndash; if you would like to change the default appearance.
-          </p>
-          <div class="cf button-group"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
-          <div class="cf button-group outlined"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
-          <div class="cf button-group outlined primary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
-          <div class="cf button-group outlined secondary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
         </section>
         <section class="forms">
           <h3>Forms</h3>
@@ -638,5 +639,13 @@
         </section>
       </div>
     </div>
+    <script src="public/js/highlight.pack.js"></script>
+    <script>
+      hljs.configure({
+          tabReplace: '  ',
+          classPrefix: ''
+      });
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
 </html>

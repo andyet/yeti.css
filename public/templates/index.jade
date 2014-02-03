@@ -17,8 +17,8 @@ html
       .content
 
         include typography
-        include colors
         include buttons
+        include colors
         include forms
         include navigation
         include messages
@@ -27,3 +27,11 @@ html
         include avatars
         include media
         include tables
+
+    script(src="public/js/highlight.pack.js")
+    script 
+        hljs.configure({
+            tabReplace: '  ',
+            classPrefix: ''
+        });
+        hljs.initHighlightingOnLoad();
