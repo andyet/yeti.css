@@ -1041,6 +1041,11 @@ blockquote {
   border-left: 5px solid #b7c0c3;
   background-color: #e6eaed;
 }
+blockquote.plain {
+  background-color: transparent;
+  font: italic 1.125em Georgia, sans-serif;
+  border-color: #e6eaed;
+}
 blockquote p {
   margin: 0 0 10px 0;
   font-size: 1em;
