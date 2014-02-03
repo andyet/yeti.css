@@ -2143,6 +2143,25 @@ table tbody tr.alert a:hover {
 table tbody td {
   border-bottom: 1px solid #e6eaed;
 }
+code {
+  font-family: Menlo, Monaco, Consolas, monospace;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+code.inline-light,
+code.inline-dark {
+  white-space: nowrap;
+  border: none;
+  padding: 0.1875em 0.4375em;
+}
+code.inline-light {
+  color: #000;
+  background: #f5f7f8;
+}
+code.inline-dark {
+  color: #b7c0c3;
+  background: #002531;
+}
 pre {
   max-width: 100%;
   overflow: hidden;
@@ -2150,19 +2169,12 @@ pre {
 pre code {
   display: block;
   padding: 20px;
-  border: none;
-  color: #b7c0c3;
-  background: #002531;
-  font-family: Menlo, Monaco, Consolas, monospace;
   line-height: 1.5;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
-pre code.inline {
-  color: #000;
-  padding: 0.1875em 0.4375em;
-  background: #f0f2f4;
-  white-space: nowrap;
+pre code {
+  color: #272b2d;
+  background: #fdfdfd;
+  border: 1px solid #e6eaed;
 }
 .comment,
 .template_comment,
@@ -2179,7 +2191,7 @@ pre code.inline {
 .subst,
 .request,
 .status {
-  color: #438193;
+  color: #12acef;
 }
 .string,
 .tag .value,
@@ -2204,7 +2216,7 @@ pre code.inline {
 .built_in,
 .lisp .title,
 .clojure .built_in {
-  color: #fff;
+  color: #828c8f;
 }
 .attribute,
 .variable,
@@ -2215,7 +2227,7 @@ pre code.inline {
 .doctype,
 .shebang,
 .cdata {
-  color: #bec6c9;
+  color: #8f989a;
 }
 .regexp,
 .addition {

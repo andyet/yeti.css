@@ -2,6 +2,24 @@
 
 @import colors
 
+code
+  font-family: Menlo, Monaco, Consolas, monospace
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+
+  &.inline-light, &.inline-dark
+    white-space: nowrap
+    border: none
+    padding: .1875em .4375em
+
+  &.inline-light
+    color: black
+    background: lighten($gray-lighter, 60%)
+
+  &.inline-dark
+    color: $gray-light
+    background: $blue-saturated-dark
+
 pre
   max-width: 100%
   overflow: hidden
@@ -9,21 +27,15 @@ pre
   code
     display: block
     padding: 20px
-    border: none
-    color: $gray-light
-    background: $blue-saturated-dark
-    font-family: Menlo, Monaco, Consolas, monospace
     line-height: 1.5
-    text-rendering: optimizeLegibility
-    -webkit-font-smoothing: antialiased
 
-    &.inline
-      color: black
-      padding: .1875em .4375em
-      background: lighten($gray-lighter, 40%)
-      white-space: nowrap
+// &yet light
 
-// &yet dark
+pre
+  code
+    color: $gray-darker
+    background: lighten($gray-lighter, 90%)
+    border: 1px solid $gray-lighter
 
 .comment,
 .template_comment,
@@ -33,7 +45,7 @@ pre
 
 .keyword, .css .rule .keyword, .at_rule, .winutils, .javascript .title,
 .nginx .title, .subst, .request, .status
-  color: $blue-saturated-lighter
+  color: $blue
 
 .string, .tag .value, .phpdoc, .tex .formula
   color: darken($pink, 10%)
@@ -45,10 +57,10 @@ pre
 .class .title, .haskell .type, .vhdl .literal, .tex .command,
 .tag, .tag .title, .rules .property, .django .tag .keyword,
 .built_in, .lisp .title, .clojure .built_in
-  color: white
+  color: $gray
 
 .attribute, .variable, .lisp .body, .preprocessor, .pragma, .pi, .doctype, .shebang, .cdata
-  color: lighten($gray-light, 10%)
+  color: lighten($gray, 10%)
 
 .regexp, .addition
   color: $green
@@ -58,3 +70,43 @@ pre
 
 .diff .change
   background: $orange
+
+// &yet dark
+
+// code
+//   color: $gray-light
+//   background: $blue-saturated-dark
+
+// .comment,
+// .template_comment,
+// .diff .header,
+// .javadoc
+//   color: darken($gray-light, 40%)
+
+// .keyword, .css .rule .keyword, .at_rule, .winutils, .javascript .title,
+// .nginx .title, .subst, .request, .status
+//   color: $blue-saturated-lighter
+
+// .string, .tag .value, .phpdoc, .tex .formula
+//   color: darken($pink, 10%)
+
+// .title, .coffeescript .params, .scss .preprocessor
+//   color: lighten($blue-saturated-lighter, 30%)
+//   font-weight: bold
+
+// .class .title, .haskell .type, .vhdl .literal, .tex .command,
+// .tag, .tag .title, .rules .property, .django .tag .keyword,
+// .built_in, .lisp .title, .clojure .built_in
+//   color: white
+
+// .attribute, .variable, .lisp .body, .preprocessor, .pragma, .pi, .doctype, .shebang, .cdata
+//   color: lighten($gray-light, 10%)
+
+// .regexp, .addition
+//   color: $green
+
+// .symbol, .ruby .symbol .string, .lisp .keyword, .tex .special, .prompt, .deletion
+//   color: darken($pink, 30%)
+
+// .diff .change
+//   background: $orange
