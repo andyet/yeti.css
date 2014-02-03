@@ -2137,8 +2137,20 @@ table tbody td {
   border-bottom: 1px solid #e6eaed;
 }
 header {
-  padding: 30px 0;
+  padding: 3.125em 0;
   border-bottom: 1px solid #e6eaed;
+  text-align: center;
+}
+header h1 {
+  font-size: 3.5em;
+  margin: 0;
+}
+header p {
+  margin: 0.5em 0 0 0;
+  font-size: 1.5em;
+}
+header .button {
+  margin-top: 3.125em;
 }
 h3 a {
   float: right;
