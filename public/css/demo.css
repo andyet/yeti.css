@@ -2164,7 +2164,6 @@ code.inline {
   font-family: Consolas, Courier, monospace;
   color: #000;
   padding: 0.1875em 0.4375em;
-  border-radius: 3px;
   background: #f0f2f4;
   white-space: nowrap;
 }
@@ -2327,7 +2326,7 @@ figure {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 60%;
+    width: 50%;
   }
   .colors li {
     width: 15%;
