@@ -2278,6 +2278,8 @@ code.inline {
 .typography .sample h2,
 .typography .sample h3,
 .typography .sample h4,
+.typography .sample h5,
+.typography .sample h6,
 .typography .sample p {
   margin: 0 0 1em 0;
 }
