@@ -1,8 +1,20 @@
 @import '../../lib/style/index.styl'
 
 header
-  padding: 30px 0
+  padding: 3.125em 0
   border-bottom: 1px solid $gray-lighter
+  text-align: center
+
+  h1
+    font-size: 3.5em
+    margin: 0
+
+  p
+    margin: .5em 0 0 0
+    font-size: 1.5em
+
+  .button
+    margin-top: 3.125em
 
 h3 a
   float: right
@@ -12,30 +24,17 @@ h3 a
   text-transform: none
 
 code
-  display: inline-block
-  font-family: monospace
-  font-style: normal
-  font-size: $font-size-small
-  color: $gray
-  margin-right: 5px
-  border: 1px solid $gray-lighter
-  border-radius: 3px
-  padding: 0 5px
-  background: lighten($gray-lighter, 50%)
+  font-family: Consolas, Courier, monospace
+  color: black
+  padding: .1875em .4375em
+  background: lighten($gray-lighter, 60%)
+  white-space: nowrap
 
 .container
-  margin: 0 auto 100px
-
-.cf:before,
-.cf:after
-  content: " "
-  display: table
-
-.cf:after
-  clear: both
+  margin: 0 auto
 
 .content section
-  padding-bottom: 30px
+  padding: 1.875em 0
   border-bottom: 1px solid $gray-lighter
 
   &:last-of-type
@@ -46,9 +45,17 @@ code
 .colors
 
   ul 
-    font-size: .7em
+    font-size: .8em
     text-transform: uppercase
-    margin-bottom: 10px
+    margin-bottom: .625em
+    color: $gray
+
+    li
+      border: 1px solid $gray-lighter
+
+      span
+        display: block
+        padding: .8em
 
   .color
     height: 60px
@@ -132,19 +139,15 @@ code
 /* Typography */
 
 .typography
-
-  .samples
-    margin: 20px 0
-    background: $gray-lighter
-    border-radius: 3px
-    padding: 30px
+  
+  .sample
+    margin: 3em 0
 
     h1, h2, h3, h4, p
-      margin: 0 0 10px 0
+      margin: 0 0 1em 0
 
-    p.small
-      margin: 0
-      font-size: $font-size-small
+  p.small
+    font-size: $font-size-small
 
 /* Buttons */
 
@@ -195,15 +198,15 @@ figure
 
   .colors 
     li
-      width: 10%
+      width: 15%
 
       &:not(:first-child)
-        margin-left: 20px
+        margin-left: .625em
 
 @media screen and (max-width: 767px)
 
   .container
-    width: 90%
+    padding: 0 2em
 
   .colors li
     width: 100%

@@ -2,20 +2,22 @@
 html
   head
     meta(charset="utf-8")
-    title &yet's style guide
+    title &amp;yet • Style Guide
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
-    link(href="/css/demo.css", rel="stylesheet", type="text/css")
+    link(href="public/css/demo.css", rel="stylesheet", type="text/css")
 
-  body
     .container
       header
-        h1 &amp;yet's Style
-        h3 Reusable components and brand assets. 
+        h1 &amp;yet Style Guide
+        p Brand assets and modularized components.
+
+        a(href="https://github.com/andyet/style", title="View on Github", class="large button secondary") View on Github
+
 
       .content
 
-        include colors
         include typography
+        include colors
         include buttons
         include forms
         include navigation
