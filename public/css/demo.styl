@@ -24,22 +24,17 @@ h3 a
   text-transform: none
 
 code
-  display: inline-block
-  font-family: monospace
-  font-style: normal
-  font-size: $font-size-small
-  color: $gray
-  margin-right: 5px
-  border: 1px solid $gray-lighter
-  border-radius: 3px
-  padding: 0 5px
-  background: lighten($gray-lighter, 50%)
+  font-family: Consolas, Courier, monospace
+  color: black
+  padding: .1875em .4375em
+  background: lighten($gray-lighter, 60%)
+  white-space: nowrap
 
 .container
   margin: 0 auto
 
 .content section
-  padding-bottom: 30px
+  padding: 1.875em 0
   border-bottom: 1px solid $gray-lighter
 
   &:last-of-type
@@ -144,19 +139,15 @@ code
 /* Typography */
 
 .typography
-
-  .samples
-    margin: 20px 0
-    background: $gray-lighter
-    border-radius: 3px
-    padding: 30px
+  
+  .sample
+    margin: 3em 0
 
     h1, h2, h3, h4, p
-      margin: 0 0 10px 0
+      margin: 0 0 1em 0
 
-    p.small
-      margin: 0
-      font-size: $font-size-small
+  p.small
+    font-size: $font-size-small
 
 /* Buttons */
 
@@ -203,7 +194,7 @@ figure
 @media screen and (min-width: 768px)
 
   .container
-    padding: 0 20em
+    width: 60%
 
   .colors 
     li

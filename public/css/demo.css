@@ -2160,22 +2160,17 @@ h3 a {
   text-transform: none;
 }
 code {
-  display: inline-block;
-  font-family: monospace;
-  font-style: normal;
-  font-size: 0.875em;
-  color: #828c8f;
-  margin-right: 5px;
-  border: 1px solid #e6eaed;
-  border-radius: 3px;
-  padding: 0 5px;
-  background: #f2f4f6;
+  font-family: Consolas, Courier, monospace;
+  color: #000;
+  padding: 0.1875em 0.4375em;
+  background: #f5f7f8;
+  white-space: nowrap;
 }
 .container {
   margin: 0 auto;
 }
 .content section {
-  padding-bottom: 30px;
+  padding: 1.875em 0;
   border-bottom: 1px solid #e6eaed;
 }
 .content section:last-of-type {
@@ -2275,21 +2270,17 @@ code {
   background: #e6eaed;
 }
 /* Typography */
-.typography .samples {
-  margin: 20px 0;
-  background: #e6eaed;
-  border-radius: 3px;
-  padding: 30px;
+.typography .sample {
+  margin: 3em 0;
 }
-.typography .samples h1,
-.typography .samples h2,
-.typography .samples h3,
-.typography .samples h4,
-.typography .samples p {
-  margin: 0 0 10px 0;
+.typography .sample h1,
+.typography .sample h2,
+.typography .sample h3,
+.typography .sample h4,
+.typography .sample p {
+  margin: 0 0 1em 0;
 }
-.typography .samples p.small {
-  margin: 0;
+.typography p.small {
   font-size: 0.875em;
 }
 /* Buttons */
@@ -2334,7 +2325,7 @@ figure {
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 20em;
+    width: 60%;
   }
   .colors li {
     width: 15%;
