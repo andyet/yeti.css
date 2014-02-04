@@ -109,33 +109,31 @@
           <h3>Buttons</h3>
           <p>
              
-            Buttons come in three sizes &ndash; <strong>large</strong>, <strong>regular </strong>and <strong>small</strong>. In neutral and brand colors.
+            To create a button add <code class="inline-light">button</code> class to  <code class="inline-light">&lt;a&gt;</code> or <code class="inline-light">&lt;button&gt;</code>
           </p>
-          <h4>Button sizes and colors</h4>
-          <pre><code>&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;ble&lt;/a&gt;&lt;button class=&quot;button&quot;&gt;ble&lt;/button&gt;</code></pre>
-          <pre><code>@media screen and (max-width: 5px) { font-size: 12px }</code></pre>
-          <div class="cf"><a href="" class="button large">Large Button</a><a href="" class="button">Button</a><a href="" class="button small">Small Button</a></div>
-          <div class="cf"><a href="" class="button large primary">Large Button</a><a href="" class="button primary">Button</a><a href="" class="button small primary">Small Button</a></div>
-          <div class="cf"><a href="" class="button large secondary">Large Button</a><a href="" class="button secondary">Button</a><a href="" class="button small secondary">Small Button</a></div>
+          <button class="button">Button</button><a href="" class="button">Button</a>
+          <pre><code>&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button&lt;/a&gt;<br>&lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;</code></pre>
           <h4>Disabled buttons</h4>
-          <p>
-             
-            Being able to disable a button might come quite handy. Works only with button elements that have <code>disabled </code>attribute.
-          </p>
+          <p>To disable buttons add <code class="inline-light">button-disabled</code> class or for <code class="inline-light">&lt;button&gt;</code> elements feel free to use the <code class="inline-light">disabled</code> attribute.</p>
           <div class="cf">
-            <button disabled>Button</button>
-            <button disabled class="primary">Button</button>
-            <button disabled class="secondary">Button</button>
+            <button disabled class="button">Button</button>
+            <button disabled class="button button-primary">Button</button>
+            <button disabled class="button button-secondary">Button</button>
           </div>
+          <h4>Buttons sizes</h4>
+          <p>Buttons come in three different sizes &mdash; large, regular (no class) and small.</p>
+          <div class="cf"><a href="" class="button button-large">Large Button</a><a href="" class="button">Button</a><a href="" class="button button-small">Small Button</a></div>
+          <pre><code>&lt;a href=&quot;&quot; class=&quot;button button-small&quot;&gt;Small Button&lt;/a&gt;<br>&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button&lt;/a&gt;<br>&lt;a href=&quot;&quot; class=&quot;button button-large&quot;&gt;Large Button&lt;/a&gt;</code></pre>
           <h4>Button groups</h4>
           <p>
              
-            You can group buttons by using <code>.button-group </code>class. For outlined versions use <code>.outlined </code>class along with the color denotation &ndash; <code>.primary </code>or <code>.secondary </code>&ndash; if you would like to change the default appearance.
+            Button grouping is available my adding <code class="inline-light">.button-group</code> class. For additional outline include <code class="inline-light">.button-group-outlined</code> class along with the color denotation &mdash; <code class="inline-light">.primary</code> or <code class="inline-light">.secondary</code>&mdash; if you would like to change the default appearance.
           </p>
           <div class="cf button-group"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
-          <div class="cf button-group outlined"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
-          <div class="cf button-group outlined primary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
-          <div class="cf button-group outlined secondary"><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a><a href="" class="button primary">Button</a></div>
+          <div class="cf button-group button-group-outlined"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
+          <div class="cf button-group button-group-outlined"><a href="" class="button button-primary">Button</a><a href="" class="button button-primary">Button</a><a href="" class="button button-primary">Button</a><a href="" class="button button-primary">Button</a></div>
+          <div class="cf button-group button-group-outlined"><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a></div>
+          <pre><code>&lt;div class=&quot;button-group&quot;&gt;<br>  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button 1&lt;/a&gt;<br>  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button 2&lt;/a&gt;<br>  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button 3&lt;/a&gt;<br>&lt;/div&gt;</code></pre>
         </section>
         <section class="colors">
           <h3>

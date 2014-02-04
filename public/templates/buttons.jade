@@ -1,64 +1,66 @@
 section.buttons
 
   h3 Buttons
-
   p 
-    | Buttons come in three sizes &ndash; 
-    strong large
-    | , 
-    strong regular 
-    | and 
-    strong small
-    | . In neutral and brand colors.
+    | To create a button add 
+    code.inline-light button
+    |  class to  
+    code.inline-light= '<a>'
+    |  or 
+    code.inline-light= '<button>'
 
-  h4 Button sizes and colors
-
-  pre
-    code
-      = '<a href="" class="button">ble</a>'
-      = '<button class="button">ble</button>'
+  button.button Button
+  a(href="", class="button") Button
 
   pre
     code
-      = '@media screen and (max-width: 5px) { font-size: 12px }'
-
-  .cf
-    a(href="", class="button large") Large Button
-    a(href="", class="button") Button
-    a(href="", class="button small") Small Button
-
-  .cf
-    a(href="", class="button large primary") Large Button
-    a(href="", class="button primary") Button
-    a(href="", class="button small primary") Small Button
-
-  .cf
-    a(href="", class="button large secondary") Large Button
-    a(href="", class="button secondary") Button
-    a(href="", class="button small secondary") Small Button
+      = '<a href="" class="button">Button</a>' 
+      br
+      = '<button class="button">Button</button>'
 
   h4 Disabled buttons
-  p 
-    | Being able to disable a button might come quite handy. Works only with button elements that have 
-    code disabled 
-    | attribute.
+  p
+    | To disable buttons add 
+    code.inline-light button-disabled
+    |  class or for 
+    code.inline-light= '<button>'
+    |  elements feel free to use the 
+    code.inline-light disabled
+    |  attribute.
 
   .cf
-    button(disabled) Button
-    button(class="primary", disabled) Button
-    button(class="secondary", disabled) Button
+    button(class="button", disabled) Button
+    button(class="button button-primary", disabled) Button
+    button(class="button button-secondary", disabled) Button
+
+  h4 Buttons sizes
+  p Buttons come in three different sizes &mdash; large, regular (no class) and small.
+
+  .cf
+    a(href="", class="button button-large") Large Button
+    a(href="", class="button") Button
+    a(href="", class="button button-small") Small Button
+
+  pre
+    code
+      = '<a href="" class="button button-small">Small Button</a>'
+      br
+      = '<a href="" class="button">Button</a>'
+      br
+      = '<a href="" class="button button-large">Large Button</a>'
+
 
   h4 Button groups
   p 
-    | You can group buttons by using 
-    code .button-group 
-    | class. For outlined versions use 
-    code .outlined 
-    | class along with the color denotation &ndash; 
-    code .primary 
-    | or 
-    code .secondary 
-    | &ndash; if you would like to change the default appearance.
+    | Button grouping is available my adding 
+    code.inline-light .button-group
+    |  class. For additional outline include 
+    code.inline-light .button-group-outlined
+    |  class along with the color denotation &mdash; 
+    code.inline-light .primary
+    |  or 
+    code.inline-light .secondary
+    | &mdash; if you would like to change the default appearance.
 
 
   .cf.button-group
@@ -66,19 +68,31 @@ section.buttons
     a(href="", class="button") Button
     a(href="", class="button") Button
 
-  .cf.button-group.outlined
+  .cf.button-group.button-group-outlined
     a(href="", class="button") Button
     a(href="", class="button") Button
     a(href="", class="button") Button
 
-  .cf.button-group.outlined.primary
-    a(href="", class="button primary") Button
-    a(href="", class="button primary") Button
-    a(href="", class="button primary") Button
-    a(href="", class="button primary") Button
+  .cf.button-group.button-group-outlined
+    a(href="", class="button button-primary") Button
+    a(href="", class="button button-primary") Button
+    a(href="", class="button button-primary") Button
+    a(href="", class="button button-primary") Button
 
-  .cf.button-group.outlined.secondary
-    a(href="", class="button primary") Button
-    a(href="", class="button primary") Button
-    a(href="", class="button primary") Button
-    a(href="", class="button primary") Button
+  .cf.button-group.button-group-outlined
+    a(href="", class="button button-secondary") Button
+    a(href="", class="button button-secondary") Button
+    a(href="", class="button button-secondary") Button
+    a(href="", class="button button-secondary") Button
+
+  pre
+    code
+      = '<div class="button-group">'
+      br
+      =  '  <a href="" class="button">Button 1</a>'
+      br
+      = '  <a href="" class="button">Button 2</a>'
+      br
+      = '  <a href="" class="button">Button 3</a>'
+      br
+      = '</div>'

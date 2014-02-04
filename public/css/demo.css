@@ -1102,8 +1102,7 @@ dl dd {
 button {
   border: none;
 }
-.button,
-button {
+.button {
   display: inline-block;
   border-radius: 3px;
   padding: 6px 15px;
@@ -1111,6 +1110,7 @@ button {
   font-size: 1em;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5;
   color: #003546;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1121,62 +1121,50 @@ button {
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
 }
-.button:hover:not(:disabled),
-button:hover:not(:disabled) {
+.button:hover:not(:disabled):not(.button-disabled) {
   color: #003546;
   background-color: #b8d6df;
 }
 .button:disabled,
-button:disabled {
+.button.button-disabled {
   cursor: not-allowed;
   color: #85b8c7;
 }
-.button:focus,
-button:focus {
+.button:focus {
   outline: none;
 }
-.button.small,
-button.small {
+.button.button-small {
   padding: 3px 8px;
   font-size: 0.875em;
 }
-.button.large,
-button.large {
+.button.button-large {
   padding: 10px 20px;
   font-size: 1.125em;
 }
-.button.primary,
-button.primary,
-.button.secondary,
-button.secondary,
-.button.primary:hover,
-button.primary:hover,
-.button.secondary:hover,
-button.secondary:hover {
+.button.button-primary,
+.button.button-secondary,
+.button.button-primary:hover,
+.button.button-secondary:hover {
   color: #fff;
 }
-.button.primary,
-button.primary {
+.button.button-primary {
   background-color: #ec008c;
 }
-.button.primary:hover:not(:disabled),
-button.primary:hover:not(:disabled) {
+.button.button-primary:hover:not(:disabled):not(.button-disabled) {
   background-color: #d4007e;
 }
-.button.primary:disabled,
-button.primary:disabled {
+.button.button-primary:disabled,
+.button.button-primary .button-disabled {
   background-color: #fec1d1;
 }
-.button.secondary,
-button.secondary {
+.button.button-secondary {
   background-color: #12acef;
 }
-.button.secondary:disabled,
-button.secondary:disabled {
+.button.button-secondary:disabled,
+.button.button-secondary .button-disabled {
   background-color: #88d5f7;
 }
-.button.secondary:hover:not(:disabled),
-button.secondary:hover:not(:disabled) {
+.button.button-secondary:hover:not(:disabled):not(.button-disabled) {
   background-color: #0f9bd9;
 }
 .button-group .button,
@@ -1198,32 +1186,32 @@ button.secondary:hover:not(:disabled) {
 .button-group button:last-child {
   border-radius: 0 3px 3px 0;
 }
-.button-group.outlined {
+.button-group.button-group-outlined {
   display: inline-block;
   border-radius: 3px;
 }
-.button-group.outlined button,
-.button-group.outlined .button {
+.button-group.button-group-outlined button,
+.button-group.button-group-outlined .button {
   border: 1px solid #b8d6df;
 }
-.button-group.outlined.primary button,
-.button-group.outlined.primary .button {
+.button-group.button-group-outlined button.button-primary,
+.button-group.button-group-outlined .button.button-primary {
   background-color: #ffedf2;
   border: 1px solid #fec1d1;
   color: #ec008c;
 }
-.button-group.outlined.primary button:hover,
-.button-group.outlined.primary .button:hover {
+.button-group.button-group-outlined button.button-primary:hover,
+.button-group.button-group-outlined .button.button-primary:hover {
   background-color: #fedae3;
 }
-.button-group.outlined.secondary button,
-.button-group.outlined.secondary .button {
+.button-group.button-group-outlined button.button-secondary,
+.button-group.button-group-outlined .button.button-secondary {
   background-color: #e7f7fd;
   border: 1px solid #88d5f7;
   color: #12acef;
 }
-.button-group.outlined.secondary button:hover,
-.button-group.outlined.secondary .button:hover {
+.button-group.button-group-outlined button.button-secondary:hover,
+.button-group.button-group-outlined .button.button-secondary:hover {
   background-color: #b8e6fa;
 }
 @media screen and (max-width: 500px) {
@@ -2398,7 +2386,7 @@ h3 a {
 .buttons .button-group button {
   margin-right: 0;
 }
-.buttons .button-group.outlined {
+.buttons .button-group.button-group-outlined {
   display: block;
 }
 /* Messages */

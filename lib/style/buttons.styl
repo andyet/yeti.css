@@ -3,7 +3,7 @@
 button
   border: none
 
-.button, button
+.button
   display: inline-block
   border-radius: 3px
   padding: 6px 15px
@@ -11,6 +11,7 @@ button
   font-size: $font-size-base
   font-weight: $font-weight-bold
   text-align: center
+  line-height: 1.5
   color: $blue-saturated
   user-select()
   cursor: pointer
@@ -18,44 +19,44 @@ button
   transition: all .3s ease-in 
   -webkit-transition: all .3s ease-in
 
-  &:hover:not(:disabled)
+  &:hover:not(:disabled):not(.button-disabled)
     color: $blue-saturated
     background-color: lighten($blue-saturated-lighter, 65%)
 
-  &:disabled
+  &:disabled, &.button-disabled
     cursor: not-allowed
     color: lighten($blue-saturated-lighter, 40%)
 
   &:focus
     outline: none
     
-  &.small
+  &.button-small
     padding: 3px 8px
     font-size: $font-size-small
 
-  &.large
+  &.button-large
     padding: 10px 20px
     font-size: $font-size-large
 
-  &.primary, &.secondary, &.primary:hover, &.secondary:hover
+  &.button-primary, &.button-secondary, &.button-primary:hover, &.button-secondary:hover
     color: white
 
-  &.primary
+  &.button-primary
     background-color: $pink
 
-    &:hover:not(:disabled)
+    &:hover:not(:disabled):not(.button-disabled)
       background-color: darken($pink, 10%)
 
-    &:disabled
+    &:disabled, .button-disabled
       background-color: $pink-light
 
-  &.secondary
+  &.button-secondary
     background-color: $blue
 
-    &:disabled
+    &:disabled, .button-disabled
       background-color: $blue-light
 
-    &:hover:not(:disabled)
+    &:hover:not(:disabled):not(.button-disabled)
       background-color: darken($blue, 10%)
 
 .button-group
@@ -75,16 +76,14 @@ button
     &:last-child
       border-radius: 0 3px 3px 0
 
-  &.outlined
+  &.button-group-outlined
     display: inline-block
     border-radius: 3px
 
     button, .button
       border: 1px solid lighten($blue-saturated-lighter, 65%)
 
-    &.primary
-
-      button, .button
+      &.button-primary
         background-color: $pink-lighter
         border: 1px solid $pink-light
         color: $pink
@@ -92,9 +91,7 @@ button
         &:hover
           background-color: lighten($pink-light, 40%)
 
-    &.secondary
-
-      button, .button
+      &.button-secondary
         background-color: $blue-lighter
         border: 1px solid $blue-light
         color: $blue
