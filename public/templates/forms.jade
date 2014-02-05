@@ -3,23 +3,24 @@ section.forms
   h3 Forms
 
   h4 Inputs and textareas
-  p 
-    | All elements have predefined 
-    code :focus  
-    | state and placeholders.
 
-  label(for="sample1") Username
-  input(type="text", name="sample1", placeholder="Insert your username")
-  label(for="sample2") Password
-  input(type="text", name="sample2", placeholder="••••••••••••••", disabled)
-  .input-wrapper.has-icon
-    label(for="search") Search
-    input(type="search", name="search")
-    i.ss-icon.ss-standard search
+  form
+    fieldset
+      legend Regular form
+      label(for="sample1") Username
+      input(type="text", name="sample1", placeholder="Insert your username")
+      label(for="sample2") Password
+      input(type="text", name="sample2", placeholder="••••••••••••••", disabled)
+      .input-wrapper.has-icon
+        label(for="search") Search
+        input(type="search", name="search")
+        i.ss-icon.ss-standard search
 
-  label Write a comment
-  textarea
-    | This is a sample message
+      label Write a comment
+      textarea
+        | This is a sample message
+
+      button(type="submit", class="button button-primary") Send
 
   h4 Validity
   p 

@@ -138,20 +138,22 @@
         <section class="forms">
           <h3>Forms</h3>
           <h4>Inputs and textareas</h4>
-          <p>
-             
-            All elements have predefined <code>:focus  </code>state and placeholders.
-          </p>
-          <label for="sample1">Username</label>
-          <input type="text" name="sample1" placeholder="Insert your username">
-          <label for="sample2">Password</label>
-          <input type="text" name="sample2" placeholder="••••••••••••••" disabled>
-          <div class="input-wrapper has-icon">
-            <label for="search">Search</label>
-            <input type="search" name="search"><i class="ss-icon ss-standard">search</i>
-          </div>
-          <label>Write a comment</label>
-          <textarea>This is a sample message</textarea>
+          <form>
+            <fieldset>
+              <legend>Regular form</legend>
+              <label for="sample1">Username</label>
+              <input type="text" name="sample1" placeholder="Insert your username">
+              <label for="sample2">Password</label>
+              <input type="text" name="sample2" placeholder="••••••••••••••" disabled>
+              <div class="input-wrapper has-icon">
+                <label for="search">Search</label>
+                <input type="search" name="search"><i class="ss-icon ss-standard">search</i>
+              </div>
+              <label>Write a comment</label>
+              <textarea>This is a sample message</textarea>
+              <button type="submit" class="button button-primary">Send</button>
+            </fieldset>
+          </form>
           <h4>Validity</h4>
           <p>
              

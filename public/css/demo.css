@@ -1234,6 +1234,19 @@ button {
     border-bottom: none;
   }
 }
+form legend {
+  display: block;
+  color: #000;
+  width: 100%;
+  margin-bottom: 1.25em;
+  font-size: 1.125em;
+  border-bottom: 1px solid #e6eaed;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 input[type=text],
 input[type=email],
 input[type=password],
@@ -1242,7 +1255,7 @@ input[type=date],
 input[type=url],
 input[type=file],
 textarea {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   width: 100%;
   -webkit-appearance: none;
   font-size: 1em;
