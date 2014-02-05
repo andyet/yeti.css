@@ -34,6 +34,7 @@ input[type=date], input[type=url], input[type=file], textarea, select, input[typ
     cursor: not-allowed
 
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
+
   &.input-invalid
     background-color: $red-lighter
     border: 2px solid $red-light
@@ -79,6 +80,7 @@ input[type=file]
   background-color: lighten($gray-lighter, 70%)
   font-size: $font-size-small
   color: $gray-light
+  line-height: 1
 
 select
   border: 1px solid $gray-lighter
@@ -86,20 +88,20 @@ select
   width: 100%
   margin: 20px 0
 
-.radio, .checkbox
   
-  label
-    font-size: $font-size-base
-    font-weight: normal
-    cursor: pointer
+label.radio, label.checkbox
+  margin: 5px 0
+  font-size: $font-size-base
+  font-weight: normal
+  cursor: pointer
 
-    &.disabled
-      color: $gray-light
-      cursor: not-allowed
+  &.disabled
+    color: $gray-light
+    cursor: not-allowed
 
-    input[type=checkbox], input[type=radio]
-      float: left
-      margin: 2px 10px 0 0
+  input[type=checkbox], input[type=radio]
+    display: inline-block
+    margin-right: 10px
 
-      &:focus
-        outline: none
+    &:focus
+      outline: none

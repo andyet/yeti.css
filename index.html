@@ -141,17 +141,14 @@
           <form>
             <fieldset>
               <legend>Regular form</legend>
-              <label for="sample1">Username</label>
-              <input type="text" name="sample1" placeholder="Insert your username">
-              <div class="input-wrapper has-icon">
-                <label for="search">Search</label>
-                <input type="search" name="search">
-              </div>
+              <label>Username</label>
+              <input type="text" placeholder="Insert your username">
               <label>Write a comment</label>
               <textarea>This is a sample message</textarea>
               <button type="submit" class="button button-primary">Send</button>
             </fieldset>
           </form>
+          <pre><code>&lt;form&gt;<br>  &lt;fieldset&gt;<br>    &lt;legend&gt;Regular Form&lt;/legend&gt;<br>    &lt;label&gt;Username&lt;/label&gt;<br>    &lt;input type=&quot;text&quot; placeholder=&quot;Insert your username&quot;&gt;<br>    &lt;label&gt;Write a comment&lt;/label&gt;<br>    &lt;textarea&gt;&lt;/textarea&gt;<br>    &lt;button type=&quot;submit&quot;&gt;Send&lt;/button&gt;<br>  &lt;/fieldset&gt;<br>&lt;/form&gt;</code></pre>
           <h4>Required inputs</h4>
           <input type="text" placeholder="This input is required" required>
           <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;This input is required&quot; required&gt;</code></pre>
@@ -169,27 +166,24 @@
           </p>
           <input type="text" value="@CNN" class="input-invalid">
           <input type="text" value="John Doe" class="input-valid">
+          <pre><code>&lt;input type=&quot;text&quot; class=&quot;input-invalid&quot;&gt;<br>&lt;input type=&quot;text&quot; class=&quot;input-valid&quot;&gt;</code></pre>
           <h4>Other form elements</h4>
-          <p>
-             
-            All basic elements have been covered: file inputs, checkboxes, radio buttons and selects. Despite checkboxes and radios, where you should add a<code>.disabled </code>class to the label you can use the<code>:disabled </code>attribute.
-          </p>
-          <input type="file">
-          <div class="checkbox">
-            <label class="disabled">
-              <input type="checkbox" disabled>This is a disabled checkbox
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio">This is a radio input
-            </label>
-          </div>
-          <select>
-            <option>Option One</option>
-            <option>Option Two</option>
-            <option>Option Three</option>
-          </select>
+          <p>For radio and checkbox usage make sure to add <code class="inline-light">checkbox</code> and <code class="inline-light">radio</code> class to the label wrapping the actual input.</p>
+          <form>
+            <fieldset>
+              <input type="file">
+              <label class="disabled checkbox">
+                <input type="checkbox" disabled>This is a disabled checkbox
+              </label>
+              <label class="radio">
+                <input type="radio">This is a radio button
+              </label>
+              <select>
+                <option>Option One</option>
+              </select>
+            </fieldset>
+          </form>
+          <pre><code>&lt;input type=&quot;file&quot;&gt;<br>&lt;label class=&quot;checkbox&quot; disabled&gt;<br>  &lt;input type=&quot;checkbox&quot; disabled&gt; This is a disabled checkbox<br>&lt;/label&gt;<br>&lt;label class=&quot;radio&quot;&gt;<br>  &lt;input type=&quot;radio&quot;&gt; This is a radio buttion<br>&lt;/label&gt;<br>&lt;select&gt;<br>  &lt;option&gt;Option One&lt;/option&gt;<br>&lt;/select&gt;</code></pre>
         </section>
         <section class="colors">
           <h3>

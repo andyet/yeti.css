@@ -7,11 +7,8 @@ section.forms
   form
     fieldset
       legend Regular form
-      label(for="sample1") Username
-      input(type="text", name="sample1", placeholder="Insert your username")
-      .input-wrapper.has-icon
-        label(for="search") Search
-        input(type="search", name="search")
+      label Username
+      input(type="text", placeholder="Insert your username")
 
       label Write a comment
       textarea
@@ -19,8 +16,29 @@ section.forms
 
       button(type="submit", class="button button-primary") Send
 
-  h4 Required inputs
+  pre
+    code
+      = '<form>'
+      br
+      = '  <fieldset>'
+      br
+      = '    <legend>Regular Form</legend>'
+      br
+      = '    <label>Username</label>'
+      br
+      = '    <input type="text" placeholder="Insert your username">'
+      br
+      = '    <label>Write a comment</label>'
+      br
+      = '    <textarea></textarea>'
+      br
+      = '    <button type="submit">Send</button>'
+      br
+      = '  </fieldset>'
+      br
+      = '</form>'
 
+  h4 Required inputs
   input(type="text", placeholder="This input is required", required)
 
   pre
@@ -50,27 +68,55 @@ section.forms
   input(type="text", value="@CNN", class="input-invalid")
   input(type="text", value="John Doe", class="input-valid")
 
+  pre
+    code
+      = '<input type="text" class="input-invalid">'
+      br
+      = '<input type="text" class="input-valid">'
+
   h4 Other form elements
-  p 
-    | All basic elements have been covered: file inputs, checkboxes, radio buttons and selects. Despite checkboxes and radios, where you should add a
-    code .disabled 
-    | class to the label you can use the
-    code :disabled 
-    | attribute.
+  p
+    | For radio and checkbox usage make sure to add 
+    code.inline-light checkbox
+    |  and 
+    code.inline-light radio
+    |  class to the label wrapping the actual input.
 
-  input(type="file")
+  form
+    fieldset
+      input(type="file")
 
-  .checkbox
-    label.disabled
-      input(type="checkbox", disabled)
-      | This is a disabled checkbox
+      label.disabled.checkbox
+        input(type="checkbox", disabled)
+        | This is a disabled checkbox
 
-  .radio
-    label
-      input(type="radio")
-      | This is a radio input
+      label.radio
+        input(type="radio")
+        | This is a radio button
 
-  select
-    option Option One
-    option Option Two
-    option Option Three
+      select
+        option Option One
+
+  pre
+    code
+      = '<input type="file">'
+      br
+      = '<label class="checkbox" disabled>'
+      br
+      = '  <input type="checkbox" disabled> This is a disabled checkbox'
+      br
+      = '</label>'
+      br
+      = '<label class="radio">'
+      br
+      = '  <input type="radio"> This is a radio buttion'
+      br
+      = '</label>'
+      br
+      = '<select>'
+      br
+      = '  <option>Option One</option>'
+      br
+      = '</select>'
+
+

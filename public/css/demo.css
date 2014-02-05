@@ -1408,6 +1408,7 @@ input[type=file] {
   background-color: #f8f9fa;
   font-size: 0.875em;
   color: #b7c0c3;
+  line-height: 1;
 }
 select {
   border: 1px solid #e6eaed;
@@ -1415,28 +1416,29 @@ select {
   width: 100%;
   margin: 20px 0;
 }
-.radio label,
-.checkbox label {
+label.radio,
+label.checkbox {
+  margin: 5px 0;
   font-size: 1em;
   font-weight: normal;
   cursor: pointer;
 }
-.radio label.disabled,
-.checkbox label.disabled {
+label.radio.disabled,
+label.checkbox.disabled {
   color: #b7c0c3;
   cursor: not-allowed;
 }
-.radio label input[type=checkbox],
-.checkbox label input[type=checkbox],
-.radio label input[type=radio],
-.checkbox label input[type=radio] {
-  float: left;
-  margin: 2px 10px 0 0;
+label.radio input[type=checkbox],
+label.checkbox input[type=checkbox],
+label.radio input[type=radio],
+label.checkbox input[type=radio] {
+  display: inline-block;
+  margin-right: 10px;
 }
-.radio label input[type=checkbox]:focus,
-.checkbox label input[type=checkbox]:focus,
-.radio label input[type=radio]:focus,
-.checkbox label input[type=radio]:focus {
+label.radio input[type=checkbox]:focus,
+label.checkbox input[type=checkbox]:focus,
+label.radio input[type=radio]:focus,
+label.checkbox input[type=radio]:focus {
   outline: none;
 }
 nav ul {
