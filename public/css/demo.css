@@ -1265,6 +1265,12 @@ form fieldset {
   padding: 0;
   margin: 0;
 }
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 0.875em;
+}
 input[type=text],
 input[type=email],
 input[type=password],
@@ -1277,6 +1283,7 @@ textarea {
   width: 100%;
   -webkit-appearance: none;
   font-size: 1em;
+  line-height: inherit;
 }
 input[type=text]:disabled,
 input[type=email]:disabled,
@@ -1390,8 +1397,7 @@ input[type=password],
 input[type=search],
 input[type=date],
 input[type=url] {
-  height: 45px;
-  padding: 5px 10px;
+  padding: 10px 12px;
 }
 textarea {
   padding: 10px;
@@ -1408,12 +1414,6 @@ select {
   height: 30px;
   width: 100%;
   margin: 20px 0;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 800;
-  font-size: 0.875em;
 }
 .radio label,
 .checkbox label {
