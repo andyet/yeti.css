@@ -15,7 +15,7 @@ form
     margin: 0
 
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
-  margin-bottom: 1.25em
+  margin-bottom: 10px
   width: 100%
   -webkit-appearance: none
   font-size: $font-size-base
@@ -26,29 +26,20 @@ input[type=date], input[type=url], input[type=file], textarea, select, input[typ
   &:disabled
     cursor: not-allowed
 
-.invalid
-
-  label
-    color: $red
-
-  input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
+input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
+  &.input-invalid
     background-color: $red-lighter
     border: 1px solid $red-light
-    color: $red-light
+    color: lighten($red, 50%)
 
     &:focus
       border: 1px solid $red-light
       box-shadow: 0 0 5px $red-light
 
-.valid
-
-  label
-    color: $green
-
-  input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
+  &.input-valid
     background-color: $green-lighter
     border: 1px solid $green-light
-    color: $green-light
+    color: lighten($green, 40%)
 
     &:focus
       border: 1px solid $green-light
@@ -94,30 +85,6 @@ label
   margin-bottom: 5px
   font-weight: $font-weight-bold
   font-size: $font-size-small
-
-.has-icon
-  position: relative
-
-  .ss-icon
-    position: absolute
-    top: 40px
-    right: 10px
-    font-size: $font-size-small
-    transition: all .3s ease-in
-
-    &.ss-delete
-      color: $red-light
-
-    &.ss-check
-      color: $green-light
-
-    &.ss-search
-      color: $gray-lighter
-
-  input[type=search]
-
-    &:focus ~ .ss-icon.ss-search
-      color: $gray-light
 
 .radio, .checkbox
   

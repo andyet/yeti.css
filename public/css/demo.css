@@ -1273,7 +1273,7 @@ input[type=date],
 input[type=url],
 input[type=file],
 textarea {
-  margin-bottom: 1.25em;
+  margin-bottom: 10px;
   width: 100%;
   -webkit-appearance: none;
   font-size: 1em;
@@ -1291,55 +1291,49 @@ input[type=checkbox]:disabled,
 input[type=radio]:disabled {
   cursor: not-allowed;
 }
-.invalid label {
-  color: #e80044;
-}
-.invalid input[type=text],
-.invalid input[type=email],
-.invalid input[type=password],
-.invalid input[type=search],
-.invalid input[type=date],
-.invalid input[type=url],
-.invalid input[type=file],
-.invalid textarea {
+input[type=text].input-invalid,
+input[type=email].input-invalid,
+input[type=password].input-invalid,
+input[type=search].input-invalid,
+input[type=date].input-invalid,
+input[type=url].input-invalid,
+input[type=file].input-invalid,
+textarea.input-invalid {
   background-color: #fff7f9;
   border: 1px solid #ffc7d8;
-  color: #ffc7d8;
+  color: #ff749d;
 }
-.invalid input[type=text]:focus,
-.invalid input[type=email]:focus,
-.invalid input[type=password]:focus,
-.invalid input[type=search]:focus,
-.invalid input[type=date]:focus,
-.invalid input[type=url]:focus,
-.invalid input[type=file]:focus,
-.invalid textarea:focus {
+input[type=text].input-invalid:focus,
+input[type=email].input-invalid:focus,
+input[type=password].input-invalid:focus,
+input[type=search].input-invalid:focus,
+input[type=date].input-invalid:focus,
+input[type=url].input-invalid:focus,
+input[type=file].input-invalid:focus,
+textarea.input-invalid:focus {
   border: 1px solid #ffc7d8;
   box-shadow: 0 0 5px #ffc7d8;
 }
-.valid label {
-  color: #43bb6e;
-}
-.valid input[type=text],
-.valid input[type=email],
-.valid input[type=password],
-.valid input[type=search],
-.valid input[type=date],
-.valid input[type=url],
-.valid input[type=file],
-.valid textarea {
+input[type=text].input-valid,
+input[type=email].input-valid,
+input[type=password].input-valid,
+input[type=search].input-valid,
+input[type=date].input-valid,
+input[type=url].input-valid,
+input[type=file].input-valid,
+textarea.input-valid {
   background-color: #e8f7ef;
   border: 1px solid #c6ebd3;
-  color: #c6ebd3;
+  color: #8ed6a8;
 }
-.valid input[type=text]:focus,
-.valid input[type=email]:focus,
-.valid input[type=password]:focus,
-.valid input[type=search]:focus,
-.valid input[type=date]:focus,
-.valid input[type=url]:focus,
-.valid input[type=file]:focus,
-.valid textarea:focus {
+input[type=text].input-valid:focus,
+input[type=email].input-valid:focus,
+input[type=password].input-valid:focus,
+input[type=search].input-valid:focus,
+input[type=date].input-valid:focus,
+input[type=url].input-valid:focus,
+input[type=file].input-valid:focus,
+textarea.input-valid:focus {
   border: 1px solid #c6ebd3;
   box-shadow: 0 0 5px #c6ebd3;
 }
@@ -1412,28 +1406,6 @@ label {
   margin-bottom: 5px;
   font-weight: 800;
   font-size: 0.875em;
-}
-.has-icon {
-  position: relative;
-}
-.has-icon .ss-icon {
-  position: absolute;
-  top: 40px;
-  right: 10px;
-  font-size: 0.875em;
-  transition: all 0.3s ease-in;
-}
-.has-icon .ss-icon.ss-delete {
-  color: #ffc7d8;
-}
-.has-icon .ss-icon.ss-check {
-  color: #c6ebd3;
-}
-.has-icon .ss-icon.ss-search {
-  color: #e6eaed;
-}
-.has-icon input[type=search]:focus ~ .ss-icon.ss-search {
-  color: #b7c0c3;
 }
 .radio label,
 .checkbox label {

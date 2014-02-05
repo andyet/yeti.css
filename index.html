@@ -137,7 +137,7 @@
         </section>
         <section class="forms">
           <h3>Forms</h3>
-          <h4>Inputs and textareas</h4>
+          <h4>Default form</h4>
           <form>
             <fieldset>
               <legend>Regular form</legend>
@@ -147,34 +147,20 @@
               <input type="text" name="sample2" placeholder="••••••••••••••" disabled>
               <div class="input-wrapper has-icon">
                 <label for="search">Search</label>
-                <input type="search" name="search"><i class="ss-icon ss-standard">search</i>
+                <input type="search" name="search">
               </div>
               <label>Write a comment</label>
               <textarea>This is a sample message</textarea>
               <button type="submit" class="button button-primary">Send</button>
             </fieldset>
           </form>
-          <h4>Validity</h4>
+          <h4>Input validity</h4>
           <p>
              
-            You can keep inputs in <code>.input-wrapper </code>(recommended). And add validity classes of <code>valid </code>and <code>invalid </code>which will change the styles of labels, inputs and icons (if present) accordingly.
+            Sometimes you need to validate your forms. To have meaningful styling for valid and invalid inputs add <code class="inline-light">input-valid</code> and <code class="inline-light">input-invalid</code> classes respectively.
           </p>
-          <p>
-             
-            If you are willing to use icons make sure the wrapper element also has a class <code>.has-icon.</code>Then add appropriate icons with this markup: <code>i.ss-icon.ss-standard.ss-nameoftheicon</code>
-          </p>
-          <div class="input-wrapper invalid">
-            <label for="sample1">Invalid input</label>
-            <input type="text" name="sample1" class="invalid">
-          </div>
-          <div class="input-wrapper has-icon invalid">
-            <label for="sample1">Invalid input with an icon</label>
-            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-delete"> </i>
-          </div>
-          <div class="input-wrapper has-icon valid">
-            <label for="sample1">Valid input with an icon</label>
-            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-check"></i>
-          </div>
+          <input type="text" value="@CNN" class="input-invalid">
+          <input type="text" value="John Doe" class="input-valid">
           <h4>Other form elements</h4>
           <p>
              

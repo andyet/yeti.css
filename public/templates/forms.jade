@@ -2,7 +2,7 @@ section.forms
 
   h3 Forms
 
-  h4 Inputs and textareas
+  h4 Default form
 
   form
     fieldset
@@ -14,7 +14,6 @@ section.forms
       .input-wrapper.has-icon
         label(for="search") Search
         input(type="search", name="search")
-        i.ss-icon.ss-standard search
 
       label Write a comment
       textarea
@@ -22,33 +21,16 @@ section.forms
 
       button(type="submit", class="button button-primary") Send
 
-  h4 Validity
+  h4 Input validity
   p 
-    | You can keep inputs in 
-    code .input-wrapper 
-    | (recommended). And add validity classes of 
-    code valid 
-    | and 
-    code invalid 
-    | which will change the styles of labels, inputs and icons (if present) accordingly.
+    | Sometimes you need to validate your forms. To have meaningful styling for valid and invalid inputs add 
+    code.inline-light input-valid
+    |  and 
+    code.inline-light input-invalid
+    |  classes respectively.
 
-  p 
-    | If you are willing to use icons make sure the wrapper element also has a class 
-    code .has-icon.
-    | Then add appropriate icons with this markup: 
-    code i.ss-icon.ss-standard.ss-nameoftheicon
-
-  .input-wrapper.invalid
-    label(for="sample1") Invalid input
-    input(type="text", name="sample1", class="invalid")
-  .input-wrapper.has-icon.invalid
-    label(for="sample1") Invalid input with an icon
-    input(type="text", name="sample1")
-    i.ss-icon.ss-standard.ss-delete 
-  .input-wrapper.has-icon.valid
-    label(for="sample1") Valid input with an icon
-    input(type="text", name="sample1")
-    i.ss-icon.ss-standard.ss-check
+  input(type="text", value="@CNN", class="input-invalid")
+  input(type="text", value="John Doe", class="input-valid")
 
   h4 Other form elements
   p 
