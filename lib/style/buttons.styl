@@ -3,24 +3,23 @@
 button
   border: none
 
-.button
+.button, a.button
   display: inline-block
   border-radius: 3px
   padding: 6px 15px
-  background-color: lighten($blue-saturated-lighter, 85%)
   font-size: $font-size-base
   font-weight: $font-weight-bold
   text-align: center
   line-height: 1.5
-  color: $blue-saturated
   user-select()
   cursor: pointer
   -webkit-appearance: none
   transition: all .3s ease-in 
   -webkit-transition: all .3s ease-in
+  background-color: lighten($blue-saturated-lighter, 85%)
+  color: $blue-saturated
 
   &:hover:not(:disabled):not(.button-disabled)
-    color: $blue-saturated
     background-color: lighten($blue-saturated-lighter, 65%)
 
   &:disabled, &.button-disabled

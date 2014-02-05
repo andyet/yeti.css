@@ -1102,16 +1102,15 @@ dl dd {
 button {
   border: none;
 }
-.button {
+.button,
+a.button {
   display: inline-block;
   border-radius: 3px;
   padding: 6px 15px;
-  background-color: #e1edf1;
   font-size: 1em;
   font-weight: 800;
   text-align: center;
   line-height: 1.5;
-  color: #003546;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1120,51 +1119,70 @@ button {
   -webkit-appearance: none;
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
-}
-.button:hover:not(:disabled):not(.button-disabled) {
+  background-color: #e1edf1;
   color: #003546;
+}
+.button:hover:not(:disabled):not(.button-disabled),
+a.button:hover:not(:disabled):not(.button-disabled) {
   background-color: #b8d6df;
 }
 .button:disabled,
-.button.button-disabled {
+a.button:disabled,
+.button.button-disabled,
+a.button.button-disabled {
   cursor: not-allowed;
   color: #85b8c7;
 }
-.button:focus {
+.button:focus,
+a.button:focus {
   outline: none;
 }
-.button.button-small {
+.button.button-small,
+a.button.button-small {
   padding: 3px 8px;
   font-size: 0.875em;
 }
-.button.button-large {
+.button.button-large,
+a.button.button-large {
   padding: 10px 20px;
   font-size: 1.125em;
 }
 .button.button-primary,
+a.button.button-primary,
 .button.button-secondary,
+a.button.button-secondary,
 .button.button-primary:hover,
-.button.button-secondary:hover {
+a.button.button-primary:hover,
+.button.button-secondary:hover,
+a.button.button-secondary:hover {
   color: #fff;
 }
-.button.button-primary {
+.button.button-primary,
+a.button.button-primary {
   background-color: #ec008c;
 }
-.button.button-primary:hover:not(:disabled):not(.button-disabled) {
+.button.button-primary:hover:not(:disabled):not(.button-disabled),
+a.button.button-primary:hover:not(:disabled):not(.button-disabled) {
   background-color: #d4007e;
 }
 .button.button-primary:disabled,
-.button.button-primary .button-disabled {
+a.button.button-primary:disabled,
+.button.button-primary .button-disabled,
+a.button.button-primary .button-disabled {
   background-color: #fec1d1;
 }
-.button.button-secondary {
+.button.button-secondary,
+a.button.button-secondary {
   background-color: #12acef;
 }
 .button.button-secondary:disabled,
-.button.button-secondary .button-disabled {
+a.button.button-secondary:disabled,
+.button.button-secondary .button-disabled,
+a.button.button-secondary .button-disabled {
   background-color: #88d5f7;
 }
-.button.button-secondary:hover:not(:disabled):not(.button-disabled) {
+.button.button-secondary:hover:not(:disabled):not(.button-disabled),
+a.button.button-secondary:hover:not(:disabled):not(.button-disabled) {
   background-color: #0f9bd9;
 }
 .button-group .button,
@@ -2429,7 +2447,7 @@ figure {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 50%;
+    width: 70%;
   }
   .colors li {
     width: 15%;
