@@ -1376,6 +1376,18 @@ textarea:disabled,
 select:disabled {
   background-color: #f5f7f8;
 }
+input[type=text]:required:focus,
+input[type=email]:required:focus,
+input[type=password]:required:focus,
+input[type=search]:required:focus,
+input[type=date]:required:focus,
+input[type=url]:required:focus,
+input[type=file]:required:focus,
+textarea:required:focus,
+select:required:focus {
+  border: 1px solid #fec57b;
+  box-shadow: 0 0 5px #fec57b;
+}
 input[type=text],
 input[type=email],
 input[type=password],

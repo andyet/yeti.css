@@ -60,6 +60,10 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
   &:disabled
     background-color: lighten($gray-lighter, 60%)
 
+  &:required:focus
+    border: 1px solid $orange-light
+    box-shadow: 0 0 5px $orange-light
+
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url]
   height: 45px
   padding: 5px 10px

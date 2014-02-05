@@ -143,8 +143,6 @@
               <legend>Regular form</legend>
               <label for="sample1">Username</label>
               <input type="text" name="sample1" placeholder="Insert your username">
-              <label for="sample2">Password</label>
-              <input type="text" name="sample2" placeholder="••••••••••••••" disabled>
               <div class="input-wrapper has-icon">
                 <label for="search">Search</label>
                 <input type="search" name="search">
@@ -154,6 +152,16 @@
               <button type="submit" class="button button-primary">Send</button>
             </fieldset>
           </form>
+          <h4>Required inputs</h4>
+          <input type="text" placeholder="This input is required" required>
+          <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;This input is required&quot; required&gt;</code></pre>
+          <h4>Disabled inputs</h4>
+          <p>
+             
+            To disable a form element add <code class="inline-light">disabled</code> attribute.
+          </p>
+          <input type="text" placeholder="This input is disabled" disabled>
+          <pre><code> &lt;input type=&quot;text&quot; placeholder=&quot;This input is disabled&quot; disabled&gt;</code></pre>
           <h4>Input validity</h4>
           <p>
              

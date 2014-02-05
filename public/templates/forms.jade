@@ -9,8 +9,6 @@ section.forms
       legend Regular form
       label(for="sample1") Username
       input(type="text", name="sample1", placeholder="Insert your username")
-      label(for="sample2") Password
-      input(type="text", name="sample2", placeholder="••••••••••••••", disabled)
       .input-wrapper.has-icon
         label(for="search") Search
         input(type="search", name="search")
@@ -20,6 +18,26 @@ section.forms
         | This is a sample message
 
       button(type="submit", class="button button-primary") Send
+
+  h4 Required inputs
+
+  input(type="text", placeholder="This input is required", required)
+
+  pre
+    code
+      = '<input type="text" placeholder="This input is required" required>'
+
+  h4 Disabled inputs
+  p  
+    | To disable a form element add 
+    code.inline-light disabled
+    |  attribute.
+
+  input(type="text", placeholder="This input is disabled", disabled)
+
+  pre
+    code 
+      = '<input type="text" placeholder="This input is disabled" disabled>'
 
   h4 Input validity
   p 
