@@ -8,7 +8,7 @@
     <div class="container">
       <header>
         <h1>&amp;yet Style Guide</h1>
-        <p>Brand assets and modularized components.</p><a href="https://github.com/andyet/style" title="View on Github" class="large button secondary">View on Github</a>
+        <p>Brand assets and modularized components.</p><a href="https://github.com/andyet/style" title="View on Github" class="button-large button button-secondary">View on Github</a>
       </header>
       <div class="content">
         <section class="typography cf">
@@ -135,6 +135,66 @@
           <div class="cf button-group button-group-outlined"><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a></div>
           <pre><code>&lt;div class=&quot;button-group&quot;&gt;<br>  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button 1&lt;/a&gt;<br>  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button 2&lt;/a&gt;<br>  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Button 3&lt;/a&gt;<br>&lt;/div&gt;</code></pre>
         </section>
+        <section class="forms">
+          <h3>Forms</h3>
+          <h4>Inputs and textareas</h4>
+          <p>
+             
+            All elements have predefined <code>:focus  </code>state and placeholders.
+          </p>
+          <label for="sample1">Username</label>
+          <input type="text" name="sample1" placeholder="Insert your username">
+          <label for="sample2">Password</label>
+          <input type="text" name="sample2" placeholder="••••••••••••••" disabled>
+          <div class="input-wrapper has-icon">
+            <label for="search">Search</label>
+            <input type="search" name="search"><i class="ss-icon ss-standard">search</i>
+          </div>
+          <label>Write a comment</label>
+          <textarea>This is a sample message</textarea>
+          <h4>Validity</h4>
+          <p>
+             
+            You can keep inputs in <code>.input-wrapper </code>(recommended). And add validity classes of <code>valid </code>and <code>invalid </code>which will change the styles of labels, inputs and icons (if present) accordingly.
+          </p>
+          <p>
+             
+            If you are willing to use icons make sure the wrapper element also has a class <code>.has-icon.</code>Then add appropriate icons with this markup: <code>i.ss-icon.ss-standard.ss-nameoftheicon</code>
+          </p>
+          <div class="input-wrapper invalid">
+            <label for="sample1">Invalid input</label>
+            <input type="text" name="sample1" class="invalid">
+          </div>
+          <div class="input-wrapper has-icon invalid">
+            <label for="sample1">Invalid input with an icon</label>
+            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-delete"> </i>
+          </div>
+          <div class="input-wrapper has-icon valid">
+            <label for="sample1">Valid input with an icon</label>
+            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-check"></i>
+          </div>
+          <h4>Other form elements</h4>
+          <p>
+             
+            All basic elements have been covered: file inputs, checkboxes, radio buttons and selects. Despite checkboxes and radios, where you should add a<code>.disabled </code>class to the label you can use the<code>:disabled </code>attribute.
+          </p>
+          <input type="file">
+          <div class="checkbox">
+            <label class="disabled">
+              <input type="checkbox" disabled>This is a disabled checkbox
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">This is a radio input
+            </label>
+          </div>
+          <select>
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+          </select>
+        </section>
         <section class="colors">
           <h3>
              
@@ -235,66 +295,6 @@
               <div class="color orange3"></div><span>#ffeed7</span>
             </li>
           </ul>
-        </section>
-        <section class="forms">
-          <h3>Forms</h3>
-          <h4>Inputs and textareas</h4>
-          <p>
-             
-            All elements have predefined <code>:focus  </code>state and placeholders.
-          </p>
-          <label for="sample1">Username</label>
-          <input type="text" name="sample1" placeholder="Insert your username">
-          <label for="sample2">Password</label>
-          <input type="text" name="sample2" placeholder="••••••••••••••" disabled>
-          <div class="input-wrapper has-icon">
-            <label for="search">Search</label>
-            <input type="search" name="search"><i class="ss-icon ss-standard">search</i>
-          </div>
-          <label>Write a comment</label>
-          <textarea>This is a sample message</textarea>
-          <h4>Validity</h4>
-          <p>
-             
-            You can keep inputs in <code>.input-wrapper </code>(recommended). And add validity classes of <code>valid </code>and <code>invalid </code>which will change the styles of labels, inputs and icons (if present) accordingly.
-          </p>
-          <p>
-             
-            If you are willing to use icons make sure the wrapper element also has a class <code>.has-icon.</code>Then add appropriate icons with this markup: <code>i.ss-icon.ss-standard.ss-nameoftheicon</code>
-          </p>
-          <div class="input-wrapper invalid">
-            <label for="sample1">Invalid input</label>
-            <input type="text" name="sample1" class="invalid">
-          </div>
-          <div class="input-wrapper has-icon invalid">
-            <label for="sample1">Invalid input with an icon</label>
-            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-delete"> </i>
-          </div>
-          <div class="input-wrapper has-icon valid">
-            <label for="sample1">Valid input with an icon</label>
-            <input type="text" name="sample1"><i class="ss-icon ss-standard ss-check"></i>
-          </div>
-          <h4>Other form elements</h4>
-          <p>
-             
-            All basic elements have been covered: file inputs, checkboxes, radio buttons and selects. Despite checkboxes and radios, where you should add a<code>.disabled </code>class to the label you can use the<code>:disabled </code>attribute.
-          </p>
-          <input type="file">
-          <div class="checkbox">
-            <label class="disabled">
-              <input type="checkbox" disabled>This is a disabled checkbox
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio">This is a radio input
-            </label>
-          </div>
-          <select>
-            <option>Option One</option>
-            <option>Option Two</option>
-            <option>Option Three</option>
-          </select>
         </section>
         <section class="navigation">
           <h3>Navigation</h3>
