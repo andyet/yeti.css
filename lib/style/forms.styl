@@ -29,31 +29,28 @@ input[type=date], input[type=url], input[type=file], textarea, select, input[typ
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
   &.input-invalid
     background-color: $red-lighter
-    border: 1px solid $red-light
+    border: 2px solid $red-light
     color: lighten($red, 50%)
 
     &:focus
-      border: 1px solid $red-light
-      box-shadow: 0 0 5px $red-light
+      border: 2px solid $red
 
   &.input-valid
     background-color: $green-lighter
-    border: 1px solid $green-light
+    border: 2px solid $green-light
     color: lighten($green, 40%)
 
     &:focus
-      border: 1px solid $green-light
-      box-shadow: 0 0 5px $green-light
+      border: 2px solid $green
 
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea, select
   display: block
   border-radius: 3px
-  border: 1px solid $gray-lighter
+  border: 2px solid $gray-lighter
 
   &:focus
     outline: none
-    border: 1px solid $blue-light
-    box-shadow: 0 0 5px $blue-light
+    border: 2px solid $blue-light
     transition: all .3s ease-in
     -webkit-transition: all .3s ease-in
 
@@ -61,8 +58,7 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
     background-color: lighten($gray-lighter, 60%)
 
   &:required:focus
-    border: 1px solid $orange-light
-    box-shadow: 0 0 5px $orange-light
+    border: 2px solid $orange-light
 
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url]
   height: 45px

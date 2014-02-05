@@ -1300,7 +1300,7 @@ input[type=url].input-invalid,
 input[type=file].input-invalid,
 textarea.input-invalid {
   background-color: #fff7f9;
-  border: 1px solid #ffc7d8;
+  border: 2px solid #ffc7d8;
   color: #ff749d;
 }
 input[type=text].input-invalid:focus,
@@ -1311,8 +1311,7 @@ input[type=date].input-invalid:focus,
 input[type=url].input-invalid:focus,
 input[type=file].input-invalid:focus,
 textarea.input-invalid:focus {
-  border: 1px solid #ffc7d8;
-  box-shadow: 0 0 5px #ffc7d8;
+  border: 2px solid #e80044;
 }
 input[type=text].input-valid,
 input[type=email].input-valid,
@@ -1323,7 +1322,7 @@ input[type=url].input-valid,
 input[type=file].input-valid,
 textarea.input-valid {
   background-color: #e8f7ef;
-  border: 1px solid #c6ebd3;
+  border: 2px solid #c6ebd3;
   color: #8ed6a8;
 }
 input[type=text].input-valid:focus,
@@ -1334,8 +1333,7 @@ input[type=date].input-valid:focus,
 input[type=url].input-valid:focus,
 input[type=file].input-valid:focus,
 textarea.input-valid:focus {
-  border: 1px solid #c6ebd3;
-  box-shadow: 0 0 5px #c6ebd3;
+  border: 2px solid #43bb6e;
 }
 input[type=text],
 input[type=email],
@@ -1348,7 +1346,7 @@ textarea,
 select {
   display: block;
   border-radius: 3px;
-  border: 1px solid #e6eaed;
+  border: 2px solid #e6eaed;
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -1360,8 +1358,7 @@ input[type=file]:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border: 1px solid #88d5f7;
-  box-shadow: 0 0 5px #88d5f7;
+  border: 2px solid #88d5f7;
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
 }
@@ -1385,8 +1382,7 @@ input[type=url]:required:focus,
 input[type=file]:required:focus,
 textarea:required:focus,
 select:required:focus {
-  border: 1px solid #fec57b;
-  box-shadow: 0 0 5px #fec57b;
+  border: 2px solid #fec57b;
 }
 input[type=text],
 input[type=email],
