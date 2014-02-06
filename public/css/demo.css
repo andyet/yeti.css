@@ -1939,26 +1939,26 @@ nav ul a {
   opacity: 0.5;
   transition: all 0.3s ease-in;
 }
-.avatar.radius,
-.avatar-wrapper.radius {
+.avatar.avatar-radius,
+.avatar-wrapper.avatar-radius {
   border-radius: 3px;
 }
-.avatar.rounded,
-.avatar-wrapper.rounded {
+.avatar.avatar-rounded,
+.avatar-wrapper.avatar-rounded {
   border-radius: 100px;
 }
-.avatar.small,
-.avatar-wrapper.small {
+.avatar.avatar-small,
+.avatar-wrapper.avatar-small {
   height: 25px;
   width: 25px;
 }
-.avatar.medium,
-.avatar-wrapper.medium {
+.avatar.avatar-medium,
+.avatar-wrapper.avatar-medium {
   height: 50px;
   width: 50px;
 }
-.avatar.large,
-.avatar-wrapper.large {
+.avatar.avatar-large,
+.avatar-wrapper.avatar-large {
   height: 100px;
   width: 100px;
 }

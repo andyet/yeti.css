@@ -1,19 +1,53 @@
 section.avatars
 
   h3 Avatars
+  p 
+    | Avatars come in three sizes &mdash; large (100&times;100) , medium (50&times;50) and small (25&times;25). 
 
-  h4 Rounded
+  h4 Avatars inside links
+  p 
+    | They can be wrapped with a link with a 
+    code.inline-light avatar-wrapper
+    |  class.
 
-  a.avatar-wrapper.large
-    img(src="public/img/dummy-av.png", class="avatar large rounded")
-  a.avatar-wrapper.medium
-    img(src="public/img/dummy-av.png", class="avatar medium rounded")
-  a.avatar-wrapper.small
-    img(src="public/img/dummy-av.png", class="avatar small rounded")
+  a.avatar-wrapper.avatar-large
+    img(src="public/img/dummy-av.png", class="avatar avatar-large avatar-rounded")
 
-  h4 Small radius
+  pre
+    code
+      = '<a href="" class="avatar-wrapper">'
+      br
+      = '  <img src="image.jpg" class="avatar avatar-large avatar-rounded" />'
+      br
+      = '</a>'
 
-  img(src="public/img/dummy-av.png", class="avatar large radius")
-  img(src="public/img/dummy-av.png", class="avatar medium radius")
-  img(src="public/img/dummy-av.png", class="avatar small radius")
+  h4 Rounded avatars
+
+  img(src="public/img/dummy-av.png", class="avatar avatar-large avatar-rounded")
+  img(src="public/img/dummy-av.png", class="avatar avatar-medium avatar-rounded")
+  img(src="public/img/dummy-av.png", class="avatar avatar-small avatar-rounded")
+
+  pre
+    code
+      = '<img src="image.jpg" class="avatar avatar-large avatar-rounded" />'
+      br
+      = '<img src="image.jpg" class="avatar avatar-medium avatar-rounded" />'
+      br
+      = '<img src="image.jpg" class="avatar avatar-small avatar-rounded" />'
+      br
+
+  h4 Avatars with radius
+
+  img(src="public/img/dummy-av.png", class="avatar avatar-large avatar-radius")
+  img(src="public/img/dummy-av.png", class="avatar avatar-medium avatar-radius")
+  img(src="public/img/dummy-av.png", class="avatar avatar-small avatar-radius")
+
+  pre
+    code
+      = '<img src="image.jpg" class="avatar avatar-large avatar-radius" />'
+      br
+      = '<img src="image.jpg" class="avatar avatar-medium avatar-radius" />'
+      br
+      = '<img src="image.jpg" class="avatar avatar-small avatar-radius" />'
+      br
   

@@ -624,8 +624,20 @@
         </section>
         <section class="avatars">
           <h3>Avatars</h3>
-          <h4>Rounded</h4><a class="avatar-wrapper large"><img src="public/img/dummy-av.png" class="avatar large rounded"></a><a class="avatar-wrapper medium"><img src="public/img/dummy-av.png" class="avatar medium rounded"></a><a class="avatar-wrapper small"><img src="public/img/dummy-av.png" class="avatar small rounded"></a>
-          <h4>Small radius</h4><img src="public/img/dummy-av.png" class="avatar large radius"><img src="public/img/dummy-av.png" class="avatar medium radius"><img src="public/img/dummy-av.png" class="avatar small radius">
+          <p>
+             
+            Avatars come in three sizes &mdash; large (100&times;100) , medium (50&times;50) and small (25&times;25). 
+          </p>
+          <h4>Avatars inside links</h4>
+          <p>
+             
+            They can be wrapped with a link with a <code class="inline-light">avatar-wrapper</code> class.
+          </p><a class="avatar-wrapper avatar-large"><img src="public/img/dummy-av.png" class="avatar avatar-large avatar-rounded"></a>
+          <pre><code>&lt;a href=&quot;&quot; class=&quot;avatar-wrapper&quot;&gt;<br>  &lt;img src=&quot;image.jpg&quot; class=&quot;avatar avatar-large avatar-rounded&quot; /&gt;<br>&lt;/a&gt;</code></pre>
+          <h4>Rounded avatars</h4><img src="public/img/dummy-av.png" class="avatar avatar-large avatar-rounded"><img src="public/img/dummy-av.png" class="avatar avatar-medium avatar-rounded"><img src="public/img/dummy-av.png" class="avatar avatar-small avatar-rounded">
+          <pre><code>&lt;img src=&quot;image.jpg&quot; class=&quot;avatar avatar-large avatar-rounded&quot; /&gt;<br>&lt;img src=&quot;image.jpg&quot; class=&quot;avatar avatar-medium avatar-rounded&quot; /&gt;<br>&lt;img src=&quot;image.jpg&quot; class=&quot;avatar avatar-small avatar-rounded&quot; /&gt;<br></code></pre>
+          <h4>Avatars with radius</h4><img src="public/img/dummy-av.png" class="avatar avatar-large avatar-radius"><img src="public/img/dummy-av.png" class="avatar avatar-medium avatar-radius"><img src="public/img/dummy-av.png" class="avatar avatar-small avatar-radius">
+          <pre><code>&lt;img src=&quot;image.jpg&quot; class=&quot;avatar avatar-large avatar-radius&quot; /&gt;<br>&lt;img src=&quot;image.jpg&quot; class=&quot;avatar avatar-medium avatar-radius&quot; /&gt;<br>&lt;img src=&quot;image.jpg&quot; class=&quot;avatar avatar-small avatar-radius&quot; /&gt;<br></code></pre>
         </section>
         <section class="media">
           <h3>Media</h3>
@@ -635,7 +647,7 @@
           </p>
           <div class="cf">
             <h4>Media inside links</h4>
-            <p>You can wrap <code class="inline-light">video</code> and <code class="inline-light">img</code> in a link.</p><a class="media-wrapper">
+            <p>You can wrap <code class="inline-light">video</code> and <code class="inline-light">img</code> in a link. </p><a class="media-wrapper">
               <figure><img src="public/img/dummy-av.png"></figure></a>
             <pre><code>&lt;a href=&quot;&quot; class=&quot;media-wrapper&quot;&gt;<br>  &lt;figure&gt;<br>    &lt;img src=&quot;image.jpg&quot; /&gt;<br>  &lt;/figure&gt;<br>&lt;/a&gt;</code></pre>
           </div>
