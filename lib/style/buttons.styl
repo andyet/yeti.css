@@ -19,12 +19,13 @@ button
   background-color: lighten($blue-saturated-lighter, 85%)
   color: $blue-saturated
 
-  &:hover:not(:disabled):not(.button-disabled)
+  &:hover
     background-color: lighten($blue-saturated-lighter, 65%)
 
   &:disabled, &.button-disabled
     cursor: not-allowed
     color: lighten($blue-saturated-lighter, 40%)
+    background-color: lighten($blue-saturated-lighter, 85%)
 
   &:focus
     outline: none
@@ -37,13 +38,14 @@ button
     padding: 10px 20px
     font-size: $font-size-large
 
-  &.button-primary, &.button-secondary, &.button-primary:hover, &.button-secondary:hover
+  &.button-primary, &.button-secondary, 
+  &.button-primary:hover, &.button-secondary:hover
     color: white
 
   &.button-primary
     background-color: $pink
 
-    &:hover:not(:disabled):not(.button-disabled)
+    &:hover
       background-color: darken($pink, 10%)
 
     &:disabled, .button-disabled
@@ -52,11 +54,11 @@ button
   &.button-secondary
     background-color: $blue
 
+    &:hover
+      background-color: darken($blue, 10%)
+
     &:disabled, .button-disabled
       background-color: $blue-light
-
-    &:hover:not(:disabled):not(.button-disabled)
-      background-color: darken($blue, 10%)
 
 .button-group
 

@@ -1122,8 +1122,8 @@ a.button {
   background-color: #e1edf1;
   color: #003546;
 }
-.button:hover:not(:disabled):not(.button-disabled),
-a.button:hover:not(:disabled):not(.button-disabled) {
+.button:hover,
+a.button:hover {
   background-color: #b8d6df;
 }
 .button:disabled,
@@ -1132,6 +1132,7 @@ a.button:disabled,
 a.button.button-disabled {
   cursor: not-allowed;
   color: #85b8c7;
+  background-color: #e1edf1;
 }
 .button:focus,
 a.button:focus {
@@ -1161,8 +1162,8 @@ a.button.button-secondary:hover {
 a.button.button-primary {
   background-color: #ec008c;
 }
-.button.button-primary:hover:not(:disabled):not(.button-disabled),
-a.button.button-primary:hover:not(:disabled):not(.button-disabled) {
+.button.button-primary:hover,
+a.button.button-primary:hover {
   background-color: #d4007e;
 }
 .button.button-primary:disabled,
@@ -1175,15 +1176,15 @@ a.button.button-primary .button-disabled {
 a.button.button-secondary {
   background-color: #12acef;
 }
+.button.button-secondary:hover,
+a.button.button-secondary:hover {
+  background-color: #0f9bd9;
+}
 .button.button-secondary:disabled,
 a.button.button-secondary:disabled,
 .button.button-secondary .button-disabled,
 a.button.button-secondary .button-disabled {
   background-color: #88d5f7;
-}
-.button.button-secondary:hover:not(:disabled):not(.button-disabled),
-a.button.button-secondary:hover:not(:disabled):not(.button-disabled) {
-  background-color: #0f9bd9;
 }
 .button-group .button,
 .button-group button {
