@@ -2088,15 +2088,15 @@ table {
   margin-bottom: 20px;
   background-color: #fff;
 }
-table.striped tr:nth-child(even) {
-  color: #bec6c9;
+table.table-striped tr:nth-child(even) {
+  color: #8e9ca1;
 }
-table.outlined {
+table.table-outlined {
   border: 1px solid #e6eaed;
   border-radius: 3px;
 }
-table.with-hover tr:hover,
-table.striped tr:nth-child(even) {
+table.table-with-hover tr:hover,
+table.table-striped tr:nth-child(even) {
   background-color: #f8f9fa;
 }
 table td,
@@ -2111,34 +2111,34 @@ table thead th {
   font-weight: 800;
   color: #4d5659;
 }
-table tbody tr.error {
+table tbody tr.table-cell-error {
   background-color: #fff7f9;
   color: #e80044;
 }
-table tbody tr.error a {
+table tbody tr.table-cell-error a {
   color: #ba0036;
 }
-table tbody tr.error a:hover {
+table tbody tr.table-cell-error a:hover {
   color: #8b0029;
 }
-table tbody tr.success {
+table tbody tr.table-cell-success {
   background-color: #e8f7ef;
   color: #43bb6e;
 }
-table tbody tr.success a {
+table tbody tr.table-cell-success a {
   color: #369658;
 }
-table tbody tr.success a:hover {
+table tbody tr.table-cell-success a:hover {
   color: #287042;
 }
-table tbody tr.alert {
+table tbody tr.table-cell-alert {
   background-color: #ffeed7;
   color: #f18902;
 }
-table tbody tr.alert a {
+table tbody tr.table-cell-alert a {
   color: #c16e02;
 }
-table tbody tr.alert a:hover {
+table tbody tr.table-cell-alert a:hover {
   color: #915201;
 }
 table tbody td {

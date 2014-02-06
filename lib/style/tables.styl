@@ -5,17 +5,17 @@ table
   margin-bottom: 20px
   background-color: white
 
-  &.striped
+  &.table-striped
 
     tr:nth-child(even)
-      color: lighten($gray-light, 10%)
+      color: darken($gray-light, 20%)
 
-  &.outlined
+  &.table-outlined
     border: 1px solid $gray-lighter
     border-radius: 3px
 
-  &.with-hover tr:hover,
-  &.striped tr:nth-child(even)
+  &.table-with-hover tr:hover,
+  &.table-striped tr:nth-child(even)
     background-color: lighten($gray-lighter, 70%)
 
   td, th
@@ -33,7 +33,7 @@ table
 
     tr
 
-      &.error
+      &.table-cell-error
         background-color: $red-lighter
         color: $red
 
@@ -43,7 +43,7 @@ table
           &:hover
             color: darken($red, 40%)
 
-      &.success
+      &.table-cell-success
         background-color: $green-lighter
         color: $green
 
@@ -53,7 +53,7 @@ table
           &:hover
             color: darken($green, 40%)
 
-      &.alert
+      &.table-cell-alert
         background-color: $orange-lighter
         color: $orange
 

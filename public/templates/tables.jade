@@ -29,7 +29,69 @@ section.tables
         td
           a baldwin@andyet.net
 
-    table.outlined.with-hover
+    pre
+      code
+        = '<table>'
+        br
+        = '  <thead>'
+        br
+        = '    <tr>'
+        br
+        = '     <th>#</th>'
+        br
+        = '     <th>Name</th>'
+        br
+        = '     <th>Surname</th>'
+        br
+        = '     <th>Email</th>'
+        br
+        = '    </tr>'
+        br
+        = '  </thead>'
+        br
+        = '  <tbody>'
+        br
+        = '   <tr>'
+        br
+        = '    <td>1</td>'
+        br
+        = '    <td>Adam</td>'
+        br
+        = '    <td>Brault</td>'
+        br
+        = '    <td>adam@andyet.net</td>'
+        br
+        = '   </tr>'
+        br
+        = '   <tr>'
+        br
+        = '    <td>2</td>'
+        br
+        = '    <td>Henrik</td>'
+        br
+        = '    <td>Joreteg</td>'
+        br
+        = '    <td>henrik@andyet.net</td>'
+        br
+        = '   </tr>'
+        br
+        = '   <tr>'
+        br
+        = '    <td>3</td>'
+        br
+        = '    <td>Adam</td>'
+        br
+        = '    <td>Baldwin</td>'
+        br
+        = '    <td>baldwin@andyet.net</td>'
+        br
+        = '   </tr>'
+        br
+        = '  </tbody>'
+        br 
+        = '</table>'
+
+    table.table-outlined.table-with-hover
       thead
         tr
           th #
@@ -56,7 +118,7 @@ section.tables
           td
             a baldwin@andyet.net
 
-    table.striped
+    table.table-striped
       thead
         tr
           th #
@@ -98,19 +160,19 @@ section.tables
           th Surname
           th Email
       tbody
-        tr.success
+        tr.table-cell-success
           td 1
           td Adam
           td Brault
           td 
             a adam@andyet.net
-        tr.alert
+        tr.table-cell-alert
           td 2
           td Henrik 
           td Joreteg
           td 
             a henrik@andyet.net
-        tr.error
+        tr.table-cell-error
           td 3
           td Adam
           td Baldwin
