@@ -2153,7 +2153,8 @@ code.inline-light,
 code.inline-dark {
   white-space: nowrap;
   border: none;
-  padding: 0.1875em 0.4375em;
+  padding: 0.154em 0.308em;
+  font-size: 0.8125em;
 }
 code.inline-light {
   color: #000;
