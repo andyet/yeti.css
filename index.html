@@ -629,20 +629,36 @@
         </section>
         <section class="media">
           <h3>Media</h3>
-          <div class="cf"><a class="media-wrap">
-              <figure><img src="public/img/dummy-av.png"></figure></a></div>
+          <p>
+             
+            Videos, figures and images have the maximum width of <code class="inline-light">100%</code> , so they never overflow the container (even on mobile).
+          </p>
+          <div class="cf">
+            <h4>Media inside links</h4>
+            <p>You can wrap <code class="inline-light">video</code> and <code class="inline-light">img</code> in a link.</p><a class="media-wrapper">
+              <figure><img src="public/img/dummy-av.png"></figure></a>
+            <pre><code>&lt;a href=&quot;&quot; class=&quot;media-wrapper&quot;&gt;<br>  &lt;figure&gt;<br>    &lt;img src=&quot;image.jpg&quot; /&gt;<br>  &lt;/figure&gt;<br>&lt;/a&gt;</code></pre>
+          </div>
+          <h4>Images with captions</h4>
+          <p>
+             
+            For semantic markup use the <code class="inline-light">figure</code> element with <code class="inline-light">figcaption</code>.
+          </p>
           <div class="cf">
             <figure><img src="public/img/dummy-av.png">
               <figcaption>Image description</figcaption>
             </figure>
-            <figure><img src="public/img/dummy-av.png"></figure>
           </div>
+          <pre><code>&lt;figure&gt;<br>  &lt;img src=&quot;image.jpg&quot; /&gt;<br>  &lt;figcaption&gt;Image description&lt;/figcaption&gt;<br>&lt;/figure&gt;</code></pre>
+          <h4>Media with an outline</h4>
+          <p>Having an outline around any type of media can be added by using <code class="inline-light">media-outlined</code> class.</p>
           <div class="cf">
-            <figure class="outlined"><img src="public/img/dummy-av.png">
+            <figure class="media-outlined"><img src="public/img/dummy-av.png">
               <figcaption>Image description</figcaption>
             </figure>
-            <figure class="outlined"><img src="public/img/dummy-av.png"></figure>
+            <figure class="media-outlined"><img src="public/img/dummy-av.png"></figure>
           </div>
+          <pre><code>&lt;figure class=&quot;media-outlined&quot;&gt;<br>  &lt;img src=&quot;image.jpg&quot; /&gt;<br>  &lt;figcaption&gt;Image description&lt;/figcaption&gt;<br>&lt;/figure&gt;<br><br>&lt;figure class=&quot;media-outlined&quot;&gt;<br>  &lt;img src=&quot;image.jpg&quot; /&gt;<br>&lt;/figure&gt;</code></pre>
         </section>
       </div>
     </div>

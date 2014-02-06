@@ -2052,30 +2052,28 @@ nav ul a {
     width: 50%;
   }
 }
-a.media-wrap,
+.media-wrapper,
 figure img {
   display: inline-block;
 }
-a.media-wrap,
-.outlined,
+.media-wrapper,
+.figure-outlined,
 figure img {
   border-radius: 3px;
 }
-a.media-wrap {
+a.media-wrapper {
   background-color: #12acef;
   cursor: pointer;
 }
-a.media-wrap:hover img {
+a.media-wrapper:hover img,
+a.media-wrapper:hover video {
   opacity: 0.5;
 }
 figure,
-.video {
+.video,
+img {
   overflow: hidden;
   max-width: 100%;
-}
-figure.outlined {
-  padding: 5px;
-  border: 1px solid #e6eaed;
 }
 figure img {
   vertical-align: middle;
@@ -2083,6 +2081,10 @@ figure img {
 figure figcaption {
   color: #b7c0c3;
   font-size: 0.875em;
+}
+.media-outlined {
+  padding: 5px;
+  border: 1px solid #e6eaed;
 }
 table {
   width: 100%;
@@ -2422,7 +2424,7 @@ figure {
   float: left;
   margin-right: 10px;
 }
-.media-wrap figure {
+.media-wrapper figure {
   margin: 0;
 }
 /* Progress */

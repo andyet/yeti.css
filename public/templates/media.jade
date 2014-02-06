@@ -1,27 +1,89 @@
 section.media
 
   h3 Media
+  p 
+    | Videos, figures and images have the maximum width of 
+    code.inline-light 100%
+    |  , so they never overflow the container (even on mobile).
 
   div.cf
 
-    a.media-wrap
+    h4 Media inside links
+    p
+      | You can wrap 
+      code.inline-light video
+      |  and 
+      code.inline-light img
+      |  in a link.
+
+    a.media-wrapper
       figure
         img(src="public/img/dummy-av.png")
 
-  div.cf
+    pre
+      code
+        = '<a href="" class="media-wrapper">'
+        br
+        = '  <figure>'
+        br
+        = '    <img src="image.jpg" />'
+        br
+        = '  </figure>'
+        br
+        = '</a>'
 
+  h4 Images with captions
+  p 
+    | For semantic markup use the 
+    code.inline-light figure
+    |  element with 
+    code.inline-light figcaption
+    | .
+
+  .cf
     figure
       img(src="public/img/dummy-av.png")
       figcaption Image description
 
-    figure
-      img(src="public/img/dummy-av.png")
+  pre
+    code
+      = '<figure>'
+      br
+      = '  <img src="image.jpg" />'
+      br
+      = '  <figcaption>Image description</figcaption>'
+      br
+      = '</figure>'
 
-  div.cf
 
-    figure.outlined
+  h4 Media with an outline
+  p
+    | Having an outline around any type of media can be added by using 
+    code.inline-light media-outlined
+    |  class.
+
+  .cf
+
+    figure.media-outlined
       img(src="public/img/dummy-av.png")
       figcaption Image description
 
-    figure.outlined
+    figure.media-outlined
       img(src="public/img/dummy-av.png")
+
+  pre
+    code
+      = '<figure class="media-outlined">'
+      br
+      = '  <img src="image.jpg" />'
+      br
+      = '  <figcaption>Image description</figcaption>'
+      br
+      = '</figure>'
+      br
+      br
+      = '<figure class="media-outlined">'
+      br
+      = '  <img src="image.jpg" />'
+      br
+      = '</figure>'

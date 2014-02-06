@@ -1,28 +1,24 @@
 // Media
 
-a.media-wrap, figure img
+.media-wrapper, figure img
   display: inline-block
 
-a.media-wrap, .outlined, figure img
+.media-wrapper, .figure-outlined, figure img
   border-radius: 3px
 
-a.media-wrap
+a.media-wrapper
   background-color: $blue
-  cursor: pointer
+  cursor: pointer 
 
   &:hover
-    img
+    img, video
       opacity: .5
 
-figure, .video
+figure, .video, img
   overflow: hidden
   max-width: 100%
 
 figure
-
-  &.outlined
-    padding: 5px
-    border: 1px solid $gray-lighter
 
   img
     vertical-align: middle
@@ -32,4 +28,6 @@ figure
     font-size: $font-size-small
 
 
-  
+.media-outlined
+  padding: 5px
+  border: 1px solid $gray-lighter 
