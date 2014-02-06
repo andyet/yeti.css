@@ -187,6 +187,11 @@
         </section>
         <section class="tables">
           <h3>Tables</h3>
+          <p>
+             
+            Tables come with helper styles for changing the default appearance. The default table markup can be found below &mdash; do remember about proper content grouping with <code class="inline-light">thead</code> and <code class="inline-light">tbody</code>.
+          </p>
+          <pre><code>&lt;table&gt;<br>  &lt;thead&gt;<br>    &lt;tr&gt;<br>     &lt;th&gt;#&lt;/th&gt;<br>     &lt;th&gt;Name&lt;/th&gt;<br>     &lt;th&gt;Surname&lt;/th&gt;<br>     &lt;th&gt;Email&lt;/th&gt;<br>    &lt;/tr&gt;<br>  &lt;/thead&gt;<br>  &lt;tbody&gt;<br>   &lt;tr&gt;<br>    &lt;td&gt;1&lt;/td&gt;<br>    &lt;td&gt;Adam&lt;/td&gt;<br>    &lt;td&gt;Brault&lt;/td&gt;<br>    &lt;td&gt;adam@andyet.net&lt;/td&gt;<br>   &lt;/tr&gt;<br>   &lt;tr&gt;<br>    &lt;td&gt;2&lt;/td&gt;<br>    &lt;td&gt;Henrik&lt;/td&gt;<br>    &lt;td&gt;Joreteg&lt;/td&gt;<br>    &lt;td&gt;henrik@andyet.net&lt;/td&gt;<br>   &lt;/tr&gt;<br>   &lt;tr&gt;<br>    &lt;td&gt;3&lt;/td&gt;<br>    &lt;td&gt;Adam&lt;/td&gt;<br>    &lt;td&gt;Baldwin&lt;/td&gt;<br>    &lt;td&gt;baldwin@andyet.net&lt;/td&gt;<br>   &lt;/tr&gt;<br>  &lt;/tbody&gt;<br>&lt;/table&gt;</code></pre>
           <table>
             <thead>
               <tr>
@@ -216,109 +221,117 @@
                 <td><a>baldwin@andyet.net</a></td>
               </tr>
             </tbody>
-            <pre><code>&lt;table&gt;<br>  &lt;thead&gt;<br>    &lt;tr&gt;<br>     &lt;th&gt;#&lt;/th&gt;<br>     &lt;th&gt;Name&lt;/th&gt;<br>     &lt;th&gt;Surname&lt;/th&gt;<br>     &lt;th&gt;Email&lt;/th&gt;<br>    &lt;/tr&gt;<br>  &lt;/thead&gt;<br>  &lt;tbody&gt;<br>   &lt;tr&gt;<br>    &lt;td&gt;1&lt;/td&gt;<br>    &lt;td&gt;Adam&lt;/td&gt;<br>    &lt;td&gt;Brault&lt;/td&gt;<br>    &lt;td&gt;adam@andyet.net&lt;/td&gt;<br>   &lt;/tr&gt;<br>   &lt;tr&gt;<br>    &lt;td&gt;2&lt;/td&gt;<br>    &lt;td&gt;Henrik&lt;/td&gt;<br>    &lt;td&gt;Joreteg&lt;/td&gt;<br>    &lt;td&gt;henrik@andyet.net&lt;/td&gt;<br>   &lt;/tr&gt;<br>   &lt;tr&gt;<br>    &lt;td&gt;3&lt;/td&gt;<br>    &lt;td&gt;Adam&lt;/td&gt;<br>    &lt;td&gt;Baldwin&lt;/td&gt;<br>    &lt;td&gt;baldwin@andyet.net&lt;/td&gt;<br>   &lt;/tr&gt;<br>  &lt;/tbody&gt;<br>&lt;/table&gt;</code></pre>
-            <table class="table-outlined table-with-hover">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Surname</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Adam</td>
-                  <td>Brault</td>
-                  <td> <a>adam@andyet.net</a></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Henrik </td>
-                  <td>Joreteg</td>
-                  <td> <a>henrik@andyet.net</a></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Adam</td>
-                  <td>Baldwin</td>
-                  <td><a>baldwin@andyet.net</a></td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Surname</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Adam</td>
-                  <td>Brault</td>
-                  <td> <a>adam@andyet.net</a></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Henrik </td>
-                  <td>Joreteg</td>
-                  <td> <a>henrik@andyet.net</a></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Adam</td>
-                  <td>Baldwin</td>
-                  <td><a>baldwin@andyet.net</a></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Amy</td>
-                  <td>Lynn Taylor</td>
-                  <td><a>amy@andyet.net</a></td>
-                </tr>
-              </tbody>
-            </table>
-            <table>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Surname</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-cell-success">
-                  <td>1</td>
-                  <td>Adam</td>
-                  <td>Brault</td>
-                  <td> <a>adam@andyet.net</a></td>
-                </tr>
-                <tr class="table-cell-alert">
-                  <td>2</td>
-                  <td>Henrik </td>
-                  <td>Joreteg</td>
-                  <td> <a>henrik@andyet.net</a></td>
-                </tr>
-                <tr class="table-cell-error">
-                  <td>3</td>
-                  <td>Adam</td>
-                  <td>Baldwin</td>
-                  <td><a>baldwin@andyet.net</a></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Amy</td>
-                  <td>Lynn Taylor</td>
-                  <td><a>amy@andyet.net</a></td>
-                </tr>
-              </tbody>
-            </table>
+          </table>
+          <h4>Outlined table with hover effect</h4>
+          <p>
+             
+            To separate the table visually add <code class="inline-light">table-outlined</code> class. For additional hover effect on rows use<code class="inline-light">table-with-hover</code> .
+          </p>
+          <table class="table-outlined table-with-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td> <a>adam@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Henrik </td>
+                <td>Joreteg</td>
+                <td> <a>henrik@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.net</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Striped table</h4>
+          <p>To differentiate the rows add <code class="inline-light">table-striped</code> class to the <code class="inline-light">table</code> tag.</p>
+          <table class="table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td> <a>adam@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Henrik </td>
+                <td>Joreteg</td>
+                <td> <a>henrik@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Amy</td>
+                <td>Lynn Taylor</td>
+                <td><a>amy@andyet.net</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Table with states</h4>
+          <p>If you're willing to add states to data inside the table use <code class="inline-light">table-cell-success</code>,<code class="inline-light">table-cell-alert</code> and <code class="inline-light">table-cell-error</code> respectively.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-cell-success">
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td> <a>adam@andyet.net</a></td>
+              </tr>
+              <tr class="table-cell-alert">
+                <td>2</td>
+                <td>Henrik </td>
+                <td>Joreteg</td>
+                <td> <a>henrik@andyet.net</a></td>
+              </tr>
+              <tr class="table-cell-error">
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.net</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Amy</td>
+                <td>Lynn Taylor</td>
+                <td><a>amy@andyet.net</a></td>
+              </tr>
+            </tbody>
           </table>
         </section>
         <section class="colors">
