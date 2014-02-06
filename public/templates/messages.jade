@@ -1,12 +1,17 @@
 section.messages
   h3 Messages
 
-  h4 Basic
+  h4 Basic messages
   p 
     | There are four types of styles for messages: 
-    strong default, error, alert 
-    | and 
-    strong success. 
+    code.inline-light default
+    |  ,
+    code.inline-light alert
+    |  ,
+    code.inline-light error
+    |  and 
+    code.inline-light success
+    |  . 
     | All of them can contain links, which will have appropriate colors.
 
   .message
@@ -14,64 +19,123 @@ section.messages
       | This is a message. 
       a(href="") This is a link.
 
-  .message.error
+  .message.message-error
     p 
       | This is an error. 
       a(href="") This is a link.
 
-  .message.alert
+  .message.message-alert
     p
       | This is an alert. 
       a(href="") This is a link.
 
-  .message.success
+  .message.message-success
     p 
       | This is a success message. 
       a(href="") This is a link.
 
-  h4 Dismissable
-  p 
-    | For messages that can be dismissed by the user add class 
-    code .has-icon 
-    | and appropriate markup for the icon itself &ndash; 
-    code a.ss-icon.ss-standard.ss-delete.
+  pre
+    code
+      = '<div class="message">'
+      br
+      = '  <p>This is a message</p>'
+      br
+      = '</div>'
+      br
+      br
+      = '<div class="message message-alert">'
+      br
+      = '  <p>This is an alert</p>'
+      br
+      = '</div>'
+      br
+      br
+      = '<div class="message message-error">'
+      br
+      = '  <p>This is an error</p>'
+      br
+      = '</div>'
+      br
+      br
+      = '<div class="message message-success">'
+      br
+      = '  <p>This is a success message</p>'
+      br
+      = '</div>'
 
-  .message.error.has-icon
+  h4 Dismissable messages
+  p 
+    | For messages that can be dismissed add class 
+    code.inline-light message-has-icon 
+    |  and appropriate classes for the icon itself &mdash; 
+    code.inline-light ss-icon.ss-standard.ss-delete
+    |  (or use a  different icon set, if you wish). Do remember to include the 
+    code.inline-light title
+    |  attribute as well.
+
+  .message.message-error.message-has-icon
     p This is an error that can be dismissed.
     a(class="ss-icon ss-standard ss-delete", title="Close")
 
-  .message.alert.has-icon
+  .message.message-alert.message-has-icon
     p This is an alert that can be dismissed.
     a(class="ss-icon ss-standard ss-delete", title="Close")
 
-  .message.success.has-icon
+  .message.message-success.message-has-icon
     p This is a success message that can be dismissed.
     a(class="ss-icon ss-standard ss-delete", title="Close")
 
-  h4 Full width
-  p 
-    | Messages spanning for full width (of the site, usually) should have 
-    code .full-width 
-    | class. The text will be centered.
+  pre
+    code
+      = '<div class="message message-success message-has-icon">'
+      br
+      = '  <p>This is a success message that can be dismissed</p>'
+      br
+      = '  <a href="" class="ss-icon ss-standard ss-delete", title="Close"></a>'
+      br
+      = '</div>'
 
-  .message.success.full-width.has-icon
+  h4 Full width dismissable messages
+  p 
+    | Messages spanning for full width of the container should have 
+    code.inline-light full-width
+    |  class.
+
+
+  .message.message-success.message-full-width.message-has-icon
     p This is a full width success message that can be dismissed.
     a(class="ss-icon ss-standard ss-delete", title="Close")
 
-  h4 Positioning
+  pre
+    code
+      = '<div class="message message-full-width">'
+      br
+      = '  <p>This is a success message that can be dismissed</p>'
+      br
+      = '  <a href="" class="ss-icon ss-standard ss-delete", title="Close"></a>'
+      br
+      = '</div>'
+
+  h4 Message positioning
   p 
     | Messages can be easily positioned accordingly to correlating fields using following classes: 
-    code above, below, left, right 
-    | &ndash; where those classes denotate position of the message relatively to the relevant element.
+    code.inline-light message-above
+    |  ,
+    code.inline-light message-below
+    |  ,
+    code.inline-light message-left
+    |  and 
+    code.inline-light message-right
+    | &mdash; where those classes denotate position of the message relatively to the element.
 
-  .message.below
+  .message.message-below
     p This is a message appearing below an element.
 
-  .message.success.above
+  .message.message-success.message-above
     p This is a message appearing above an element.
 
-  .message.error.left
+  .message.message-error.message-left
     p This is a message appearing on the left hand side of the element.
 
-  .message.alert.right
+  .message.message-alert.message-right
     p This is a message appearing on the right hand side of the element.

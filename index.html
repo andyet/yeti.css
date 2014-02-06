@@ -334,6 +334,78 @@
             </tbody>
           </table>
         </section>
+        <section class="messages">
+          <h3>Messages</h3>
+          <h4>Basic messages</h4>
+          <p>
+             
+            There are four types of styles for messages: <code class="inline-light">default</code> ,<code class="inline-light">alert</code> ,<code class="inline-light">error</code> and <code class="inline-light">success</code> . 
+            All of them can contain links, which will have appropriate colors.
+          </p>
+          <div class="message">
+            <p>
+               
+              This is a message. <a href="">This is a link.</a>
+            </p>
+          </div>
+          <div class="message message-error">
+            <p>
+               
+              This is an error. <a href="">This is a link.</a>
+            </p>
+          </div>
+          <div class="message message-alert">
+            <p>This is an alert. <a href="">This is a link.</a></p>
+          </div>
+          <div class="message message-success">
+            <p>
+               
+              This is a success message. <a href="">This is a link.</a>
+            </p>
+          </div>
+          <pre><code>&lt;div class=&quot;message&quot;&gt;<br>  &lt;p&gt;This is a message&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;message message-alert&quot;&gt;<br>  &lt;p&gt;This is an alert&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;message message-error&quot;&gt;<br>  &lt;p&gt;This is an error&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;message message-success&quot;&gt;<br>  &lt;p&gt;This is a success message&lt;/p&gt;<br>&lt;/div&gt;</code></pre>
+          <h4>Dismissable messages</h4>
+          <p>
+             
+            For messages that can be dismissed add class <code class="inline-light">message-has-icon </code> and appropriate classes for the icon itself &mdash; <code class="inline-light">ss-icon.ss-standard.ss-delete</code> (or use a  different icon set, if you wish). Do remember to include the <code class="inline-light">title</code> attribute as well.
+          </p>
+          <div class="message message-error message-has-icon">
+            <p>This is an error that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <div class="message message-alert message-has-icon">
+            <p>This is an alert that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <div class="message message-success message-has-icon">
+            <p>This is a success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <pre><code>&lt;div class=&quot;message message-success message-has-icon&quot;&gt;<br>  &lt;p&gt;This is a success message that can be dismissed&lt;/p&gt;<br>  &lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard ss-delete&quot;, title=&quot;Close&quot;&gt;&lt;/a&gt;<br>&lt;/div&gt;</code></pre>
+          <h4>Full width dismissable messages</h4>
+          <p>
+             
+            Messages spanning for full width of the container should have <code class="inline-light">full-width</code> class.
+          </p>
+          <div class="message message-success message-full-width message-has-icon">
+            <p>This is a full width success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
+          </div>
+          <pre><code>&lt;div class=&quot;message message-full-width&quot;&gt;<br>  &lt;p&gt;This is a success message that can be dismissed&lt;/p&gt;<br>  &lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard ss-delete&quot;, title=&quot;Close&quot;&gt;&lt;/a&gt;<br>&lt;/div&gt;</code></pre>
+          <h4>Message positioning</h4>
+          <p>
+             
+            Messages can be easily positioned accordingly to correlating fields using following classes: <code class="inline-light">message-above</code> ,<code class="inline-light">message-below</code> ,<code class="inline-light">message-left</code> and <code class="inline-light">message-right</code>&mdash; where those classes denotate position of the message relatively to the element.
+          </p>
+          <div class="message message-below">
+            <p>This is a message appearing below an element.</p>
+          </div>
+          <div class="message message-success message-above">
+            <p>This is a message appearing above an element.</p>
+          </div>
+          <div class="message message-error message-left">
+            <p>This is a message appearing on the left hand side of the element.</p>
+          </div>
+          <div class="message message-alert message-right">
+            <p>This is a message appearing on the right hand side of the element.</p>
+          </div>
+        </section>
         <section class="colors">
           <h3>
              
@@ -517,74 +589,6 @@
               <li><a href="">Option Three</a></li>
             </ul>
           </nav>
-        </section>
-        <section class="messages">
-          <h3>Messages</h3>
-          <h4>Basic</h4>
-          <p>
-             
-            There are four types of styles for messages: <strong>default, error, alert </strong>and <strong>success. </strong>All of them can contain links, which will have appropriate colors.
-          </p>
-          <div class="message">
-            <p>
-               
-              This is a message. <a href="">This is a link.</a>
-            </p>
-          </div>
-          <div class="message error">
-            <p>
-               
-              This is an error. <a href="">This is a link.</a>
-            </p>
-          </div>
-          <div class="message alert">
-            <p>This is an alert. <a href="">This is a link.</a></p>
-          </div>
-          <div class="message success">
-            <p>
-               
-              This is a success message. <a href="">This is a link.</a>
-            </p>
-          </div>
-          <h4>Dismissable</h4>
-          <p>
-             
-            For messages that can be dismissed by the user add class <code>.has-icon </code>and appropriate markup for the icon itself &ndash; <code>a.ss-icon.ss-standard.ss-delete.</code>
-          </p>
-          <div class="message error has-icon">
-            <p>This is an error that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
-          </div>
-          <div class="message alert has-icon">
-            <p>This is an alert that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
-          </div>
-          <div class="message success has-icon">
-            <p>This is a success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
-          </div>
-          <h4>Full width</h4>
-          <p>
-             
-            Messages spanning for full width (of the site, usually) should have <code>.full-width </code>class. The text will be centered.
-          </p>
-          <div class="message success full-width has-icon">
-            <p>This is a full width success message that can be dismissed.</p><a title="Close" class="ss-icon ss-standard ss-delete"></a>
-          </div>
-          <h4>Positioning</h4>
-          <p>
-             
-            Messages can be easily positioned accordingly to correlating fields using following classes: <code>above, below, left, right </code>&ndash; where those classes denotate position of the message relatively to the relevant element.
-          </p>
-          <div class="message below">
-            <p>This is a message appearing below an element.</p>
-          </div>
-          <div class="message success above">
-            <p>This is a message appearing above an element.</p>
-          </div>
-          <div class="message error left">
-            <p>This is a message appearing on the left hand side of the element.</p>
-          </div>
-          <div class="message alert right">
-            <p>This is a message appearing on the right hand side of the element.</p>
-          </div>
         </section>
         <section class="modals">
           <h3>Modals

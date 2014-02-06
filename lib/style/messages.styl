@@ -17,87 +17,87 @@
     border-color: rgba(136, 183, 213, 0)
     border-width: 6px
 
-  &.left, &.right
+  &.message-left, &.message-right
 
     &:after
       top: 50%
       margin-top: -6px
 
-  &.left
+  &.message-left
 
     &:after
       left: 100%
       border-left-color: $blue-lighter      
 
-    &.success
+    &.message-success
       &:after
         border-left-color: $green-lighter
 
-    &.error
+    &.message-error
       &:after
         border-left-color: $pink-lighter
 
-    &.alert
+    &.message-alert
       &:after
         border-left-color: $orange-lighter
 
-  &.right
+  &.message-right
 
     &:after
       right: 100%
       border-right-color: $blue-lighter      
 
-    &.success
+    &.message-success
       &:after
         border-right-color: $green-lighter
 
-    &.error
+    &.message-error
       &:after
         border-right-color: $pink-lighter
 
-    &.alert
+    &.message-alert
       &:after
         border-right-color: $orange-lighter
 
-  &.above, &.below
+  &.message-above, &.message-below
 
     &:after      
       left: 50%
       margin-left: -6px
 
-  &.above
+  &.message-below
 
     &:after
       border-bottom-color: $blue-lighter
       bottom: 100%
 
-    &.error
+    &.message-error
       &:after
         border-bottom-color: $pink-lighter
 
-    &.success
+    &.message-success
       &:after
         border-bottom-color: $green-lighter
 
-    &.alert
+    &.message-alert
       &:after
         border-bottom-color: $orange-lighter
 
-  &.below
+  &.message-above
 
     &:after
       border-top-color: $blue-lighter
       top: 100%
 
-    &.error
+    &.message-error
       &:after
         border-top-color: $pink-lighter
 
-    &.success
+    &.message-success
       &:after
         border-top-color: $green-lighter
 
-    &.alert
+    &.message-alert
       &:after
         border-top-color: $orange-lighter
 
@@ -119,7 +119,7 @@
     margin-top: -7px
     cursor: pointer
 
-  &.error
+  &.message-error
     background-color: $pink-lighter
     color: $red
 
@@ -135,7 +135,7 @@
       &:hover
         color: $red
 
-  &.alert
+  &.message-alert
     background-color: $orange-lighter
     color: $orange
 
@@ -151,7 +151,7 @@
       &:hover
         color: darken($orange, 40%)
 
-  &.success
+  &.message-success
     background-color: $green-lighter
     color: $green
 
@@ -167,12 +167,12 @@
       &:hover
         color: darken($green, 40%)
 
-  &.has-icon 
+  &.message-has-icon 
     padding: 10px 35px 10px 15px
 
-  &.full-width
+  &.message-full-width
     text-align: center
 
-    &.has-icon
+    &.message-has-icon
       padding: 10px 35px
 

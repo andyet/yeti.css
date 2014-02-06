@@ -1688,66 +1688,66 @@ nav ul a {
   border-color: rgba(136,183,213,0);
   border-width: 6px;
 }
-.message.left:after,
-.message.right:after {
+.message.message-left:after,
+.message.message-right:after {
   top: 50%;
   margin-top: -6px;
 }
-.message.left:after {
+.message.message-left:after {
   left: 100%;
   border-left-color: #e7f7fd;
 }
-.message.left.success:after {
+.message.message-left.message-success:after {
   border-left-color: #e8f7ef;
 }
-.message.left.error:after {
+.message.message-left.message-error:after {
   border-left-color: #ffedf2;
 }
-.message.left.alert:after {
+.message.message-left.message-alert:after {
   border-left-color: #ffeed7;
 }
-.message.right:after {
+.message.message-right:after {
   right: 100%;
   border-right-color: #e7f7fd;
 }
-.message.right.success:after {
+.message.message-right.message-success:after {
   border-right-color: #e8f7ef;
 }
-.message.right.error:after {
+.message.message-right.message-error:after {
   border-right-color: #ffedf2;
 }
-.message.right.alert:after {
+.message.message-right.message-alert:after {
   border-right-color: #ffeed7;
 }
-.message.above:after,
-.message.below:after {
+.message.message-above:after,
+.message.message-below:after {
   left: 50%;
   margin-left: -6px;
 }
-.message.above:after {
+.message.message-below:after {
   border-bottom-color: #e7f7fd;
   bottom: 100%;
 }
-.message.above.error:after {
+.message.message-below.message-error:after {
   border-bottom-color: #ffedf2;
 }
-.message.above.success:after {
+.message.message-below.message-success:after {
   border-bottom-color: #e8f7ef;
 }
-.message.above.alert:after {
+.message.message-below.message-alert:after {
   border-bottom-color: #ffeed7;
 }
-.message.below:after {
+.message.message-above:after {
   border-top-color: #e7f7fd;
   top: 100%;
 }
-.message.below.error:after {
+.message.message-above.message-error:after {
   border-top-color: #ffedf2;
 }
-.message.below.success:after {
+.message.message-above.message-success:after {
   border-top-color: #e8f7ef;
 }
-.message.below.alert:after {
+.message.message-above.message-alert:after {
   border-top-color: #ffeed7;
 }
 .message a {
@@ -1768,61 +1768,61 @@ nav ul a {
   margin-top: -7px;
   cursor: pointer;
 }
-.message.error {
+.message.message-error {
   background-color: #ffedf2;
   color: #e80044;
 }
-.message.error a {
+.message.message-error a {
   color: #ba0036;
 }
-.message.error a:hover {
+.message.message-error a:hover {
   color: #8b0029;
 }
-.message.error .ss-delete {
+.message.message-error .ss-delete {
   color: #ffc7d8;
 }
-.message.error .ss-delete:hover {
+.message.message-error .ss-delete:hover {
   color: #e80044;
 }
-.message.alert {
+.message.message-alert {
   background-color: #ffeed7;
   color: #f18902;
 }
-.message.alert .ss-delete {
+.message.message-alert .ss-delete {
   color: #fec57b;
 }
-.message.alert .ss-delete:hover {
+.message.message-alert .ss-delete:hover {
   color: #f18902;
 }
-.message.alert a {
+.message.message-alert a {
   color: #c16e02;
 }
-.message.alert a:hover {
+.message.message-alert a:hover {
   color: #915201;
 }
-.message.success {
+.message.message-success {
   background-color: #e8f7ef;
   color: #43bb6e;
 }
-.message.success .ss-delete {
+.message.message-success .ss-delete {
   color: #c6ebd3;
 }
-.message.success .ss-delete:hover {
+.message.message-success .ss-delete:hover {
   color: #43bb6e;
 }
-.message.success a {
+.message.message-success a {
   color: #369658;
 }
-.message.success a:hover {
+.message.message-success a:hover {
   color: #287042;
 }
-.message.has-icon {
+.message.message-has-icon {
   padding: 10px 35px 10px 15px;
 }
-.message.full-width {
+.message.message-full-width {
   text-align: center;
 }
-.message.full-width.has-icon {
+.message.message-full-width.message-has-icon {
   padding: 10px 35px;
 }
 .modal {
