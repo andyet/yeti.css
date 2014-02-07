@@ -116,18 +116,15 @@ section.navigation
       = '</nav>'
 
   h4 Pagination
-  p 
-    | For pagination use class 
-    code .pagination
 
   nav
     ul.pagination
       li
-        a(href="", class="ss-icon ss-standard unavailable") directleft
+        a(href="", class="ss-icon ss-standard page-unavailable") directleft
       li
-        a(href="", class="unavailable") 1
+        a(href="", class="page-unavailable") 1
       li
-        a(href="", class="active") 2
+        a(href="", class="page-current") 2
       li
         a(href="") 3
       li
@@ -136,6 +133,24 @@ section.navigation
         a(href="") 5
       li
         a(href="", class="ss-icon ss-standard") directright
+
+  pre
+    code
+      = '<nav>'
+      br
+      = '  <ul class="pagination">'
+      br
+      = '    <li><a href="" class="ss-icon ss-standard page-unavailable">directleft</a>'
+      br
+      = '    <li><a href="" class="page-unavailable">1</a></li>'
+      br
+      = '    <li><a href="" class="page-current">2</a></li>'
+      br
+      = '    <li><a href="" class="ss-icon ss-standard">directright</a>'
+      br
+      = '  </ul>'
+      br
+      = '</nav>'
 
   h4 Tabs
 

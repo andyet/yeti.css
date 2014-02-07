@@ -1546,14 +1546,13 @@ nav ul a {
 .pagination a:hover {
   color: #828c8f;
 }
-.pagination a.active {
-  background-color: #e7f7fd;
+.pagination a.page-current {
   color: #12acef;
 }
 .pagination a.ss-icon {
   font-size: 8px;
 }
-.pagination a.unavailable {
+.pagination a.page-unavailable {
   cursor: auto;
 }
 .tabs {
@@ -1603,8 +1602,7 @@ nav ul a {
 .tabs a.active {
   background-color: #fff;
 }
-.breadcrumbs li:not(:first-child):after,
-.pagination a:not(.active):hover {
+.breadcrumbs li:not(:first-child):after {
   background-color: #e6eaed;
 }
 .tabs a.active,

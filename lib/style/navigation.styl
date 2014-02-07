@@ -112,14 +112,13 @@ nav ul
     &:hover
       color: $gray
 
-    &.active
-      background-color: $blue-lighter
+    &.page-current
       color: $blue
 
     &.ss-icon
       font-size: 8px
 
-    &.unavailable
+    &.page-unavailable
       cursor: auto
 
 // Tabs
@@ -171,8 +170,7 @@ nav ul
 .dropdown, .tabs a.active
   background-color: white
 
-.breadcrumbs li:not(:first-child):after, 
-.pagination a:not(.active):hover
+.breadcrumbs li:not(:first-child):after
   background-color: $gray-lighter
 
 .tabs a.active, .top-nav a, .side-nav a.active, .breadcrumbs a.current, .pagination a.active
