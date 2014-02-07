@@ -2135,6 +2135,7 @@ code {
   font-family: Menlo, Monaco, Consolas, monospace;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: scroll;
 }
 code.inline-light,
 code.inline-dark {
@@ -2415,10 +2416,12 @@ figure {
 .progress {
   margin-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 950px) {
   .container {
     width: 70%;
   }
+}
+@media screen and (min-width: 768px) {
   .colors li {
     width: 15%;
   }
@@ -2443,5 +2446,10 @@ figure {
   }
   .column {
     float: none;
+  }
+}
+@media screen and (min-width: 950px) {
+  .container {
+    width: 50%;
   }
 }
