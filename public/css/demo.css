@@ -2267,8 +2267,8 @@ header .button {
 h3 a {
   float: right;
   display: inline-block;
-  margin: 0 5px;
-  font-size: 0.6em;
+  margin: 10px 0;
+  font-size: 0.5em;
   text-transform: none;
 }
 .container {
@@ -2289,7 +2289,7 @@ h3 a {
   color: #828c8f;
 }
 .colors ul li {
-  border: 1px solid #e6eaed;
+  border: 2px solid #e6eaed;
 }
 .colors ul li span {
   display: block;
