@@ -411,7 +411,7 @@
           <h4>Top bars</h4>
           <p>
              
-            Use those for primary navigation by adding <code>.top-nav</code>class. Choose from two color variations. Both include dropdowns.
+            To create a navigation bar pinned to top of the page use <code class="inline-light">top-nav</code> class. 
           </p>
           <nav role="navigation">
             <ul class="top-nav">
@@ -441,16 +441,18 @@
               <li><a href="">Link five</a></li>
             </ul>
           </nav>
+          <pre><code>&lt;nav role=&quot;navigation&quot;&gt;<br>  &lt;ul class=&quot;top-nav&quot;&gt;<br>   &lt;li&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item One&lt;/a&gt;<br>   &lt;/li&gt;<br>   &lt;li class=&quot;has-dropdown&quot;&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item Two&lt;/a&gt;<br>     &lt;ul class=&quot;dropdown&quot;&gt;<br>       &lt;li&gt;&lt;a href=&quot;&quot;&gt;Nested Menu Item&lt;/a&gt;&lt;/li&gt;<br>     &lt;/ul&gt;<br>     &lt;i class=&quot;ss-icon ss-standard ss-dropdown&quot;&gt;&lt;/i&gt;<br>   &lt;/li&gt;<br>   &lt;li&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item One&lt;/a&gt;<br>   &lt;/li&gt;<br><br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
           <h4>Breadcrumbs</h4>
-          <p>For showing progress with more complex sites and apps use <code>.breadcrumbs</code>. They have <code>.current</code>and <code>.unavailable</code>states.</p>
+          <p>For showing progress with more complex sites and apps use <code class="inline-light">breadcrumbs</code>. </p>
           <nav role="navigation">
             <ul class="breadcrumbs">
-              <li><a href="">Home</a></li>
-              <li><a href="">Go Deeper</a></li>
-              <li><a href="" class="unavailable">Even More</a></li>
-              <li><a href="" class="current">Current Item</a></li>
+              <li><a href="">Page One</a></li>
+              <li><a href="">Page Two</a></li>
+              <li><a href="" class="breadcrumb-unavailable">Unavailable Page</a></li>
+              <li><a href="" class="breadcrumb-current">Current Page</a></li>
             </ul>
           </nav>
+          <pre><code>&lt;nav role=&quot;navigation&quot;&gt;<br>  &lt;ul class=&quot;breadcrumbs&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Page One&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-unavailable&quot;&gt;Unavailable Page&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-current&quot;&gt;Current Page&lt;/a&gt;&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
           <h4>Pagination</h4>
           <p>
              

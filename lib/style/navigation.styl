@@ -25,7 +25,7 @@ nav ul
     padding: 0 15px
 
     &:hover, &.active
-      background-color: lighten($blue-lighter, 60%)
+      background-color: lighten($blue-lighter, 30%)
 
   .has-dropdown
     position: relative
@@ -48,20 +48,16 @@ nav ul
       position: absolute
       top: 100%
       left: 0
-      box-shadow: 0 3px 10px lighten($gray-lighter, 50%)
       z-index: 10
 
       li
         display: block
         
         &:not(:last-child)
-          border-bottom: 1px solid $gray-lighter
+          border-bottom: 1px solid lighten($gray-lighter, 30%)
 
   &.dark
     background-color: $blue-saturated
-
-    li:not(:first-child)
-      border-left: 1px solid $blue-saturated-light
 
     a
       color: $blue-saturated-lighter
@@ -85,8 +81,7 @@ nav ul
 // Breadcrumbs
 
 .breadcrumbs
-  padding: 10px 0
-  box-shadow: inset 0 -1px 2px lighten($gray-lighter, 50%)
+  padding: 10px 5px
 
   li:not(:first-child)
     position: relative
@@ -95,7 +90,7 @@ nav ul
       content: ''
       position: absolute
       right: 100%
-      top: 0
+      top: 1px
       height: 100%
       width: 1px
       -webkit-transform: rotate(15deg)
@@ -103,8 +98,9 @@ nav ul
       transform: rotate(15deg)
 
   a
-    &.current
+    &.breadcrumb-current
       color: $gray
+      font-weight: $font-weight-bold
 
 // Pagination
 
@@ -182,7 +178,7 @@ nav ul
 .tabs a.active, .top-nav a, .side-nav a.active, .breadcrumbs a.current, .pagination a.active
   font-weight: $font-weight-bold
     
-.breadcrumbs a.unavailable, .pagination a
+.breadcrumbs a.breadcrumb-unavailable, .pagination a
   color: $gray-light
 
 .breadcrumbs a, .pagination a
@@ -217,7 +213,7 @@ nav ul
 
     li
       float: none
-      border-bottom: 1px solid $gray-lighter
+      border-bottom: 1px solid lighten($gray-lighter, 30%)
 
     > li
       border-left: none
@@ -226,10 +222,3 @@ nav ul
       
       li
         border-bottom: 1px solid $blue-saturated-light
-
-@media screen and (min-width: 501px)
-
-  .top-nav
-    
-    > li:not(:first-child)
-      border-left: 1px solid $gray-lighter

@@ -3,9 +3,9 @@ section.navigation
 
   h4 Top bars
   p 
-    | Use those for primary navigation by adding 
-    code .top-nav
-    | class. Choose from two color variations. Both include dropdowns.
+   | To create a navigation bar pinned to top of the page use 
+   code.inline-light top-nav
+   |  class. 
 
   nav(role="navigation")
     ul.top-nav
@@ -45,26 +45,75 @@ section.navigation
       li
         a(href="") Link five
 
+  pre
+    code
+      = '<nav role="navigation">'
+      br
+      = '  <ul class="top-nav">'
+      br
+      = '   <li>'
+      br
+      = '     <a href="">Menu Item One</a>'
+      br
+      = '   </li>'
+      br
+      = '   <li class="has-dropdown">'
+      br
+      = '     <a href="">Menu Item Two</a>'
+      br
+      = '     <ul class="dropdown">'
+      br
+      = '       <li><a href="">Nested Menu Item</a></li>'
+      br
+      = '     </ul>'
+      br
+      = '     <i class="ss-icon ss-standard ss-dropdown"></i>'
+      br
+      = '   </li>'
+      br
+      = '   <li>'
+      br
+      = '     <a href="">Menu Item One</a>'
+      br
+      = '   </li>'
+      br
+      br
+      = '  </ul>'
+      br
+      = '</nav>'
+
   h4 Breadcrumbs
   p
     | For showing progress with more complex sites and apps use 
-    code .breadcrumbs
-    | . They have 
-    code .current
-    | and 
-    code .unavailable
-    | states.
+    code.inline-light breadcrumbs
+    | . 
 
   nav(role="navigation")
     ul.breadcrumbs
       li
-        a(href="") Home
+        a(href="") Page One
       li
-        a(href="") Go Deeper
+        a(href="") Page Two
       li
-        a(href="", class="unavailable") Even More
+        a(href="", class="breadcrumb-unavailable") Unavailable Page
       li
-        a(href="", class="current") Current Item
+        a(href="", class="breadcrumb-current") Current Page
+
+  pre
+    code
+      = '<nav role="navigation">'
+      br
+      = '  <ul class="breadcrumbs">'
+      br
+      = '    <li><a href="">Page One</a></li>'
+      br
+      = '    <li><a href="" class="breadcrumb-unavailable">Unavailable Page</a></li>'
+      br
+      = '    <li><a href="" class="breadcrumb-current">Current Page</a></li>'
+      br
+      = '  </ul>'
+      br
+      = '</nav>'
 
   h4 Pagination
   p 
