@@ -608,19 +608,28 @@
         </section>
         <section class="progress-bars">
           <h3>Progress Bars</h3>
-          <h4>Large</h4>
-          <div class="progress large success"><span class="meter"></span></div>
-          <div class="progress large warning"><span class="meter"></span></div>
-          <div class="progress large error"><span class="meter"></span></div>
-          <div class="progress large"><span class="meter"></span></div>
-          <h4>Small</h4>
-          <div class="progress small success"><span class="meter"></span></div>
-          <div class="progress small warning"><span class="meter"></span></div>
-          <div class="progress small error"><span class="meter"></span></div>
-          <div class="progress small"><span class="meter"></span></div>
-          <h4>Rounded</h4>
-          <div class="progress large rounded error"><span class="meter"></span></div>
-          <div class="progress small rounded success"><span class="meter"></span></div>
+          <p>
+             
+            All progress bars are built with a  <code class="inline-light">meter</code> with an animation attached to it. <strong>No calculations of state or value </strong>are perfomed (you need to figure this out by yourself).
+          </p>
+          <h4>Large progress bar</h4>
+          <div class="progress progress-large progress-success"><span class="meter"></span></div>
+          <div class="progress progress-large progress-warning"><span class="meter"></span></div>
+          <div class="progress progress-large progress-error"><span class="meter"></span></div>
+          <div class="progress progress-large"><span class="meter"></span></div>
+          <pre><code>&lt;div class=&quot;progress progress-large progress-success&quot;&gt;<br>  &lt;span class=&quot;meter&quot;&gt;&lt;/span&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress progress-large progress-warning&quot;&gt;<br>  &lt;span class=&quot;meter&quot;&gt;&lt;/span&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress progress-large progress-error&quot;&gt;<br>  &lt;span class=&quot;meter&quot;&gt;&lt;/span&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress progress-large&quot;&gt;<br>  &lt;span class=&quot;meter&quot;&gt;&lt;/span&gt;<br>&lt;/div&gt;</code></pre>
+          <h4>Small progress bar</h4>
+          <p>For small bars use <code class="inline-light">progress-small</code> class.</p>
+          <div class="progress progress-small progress-success"><span class="meter"></span></div>
+          <div class="progress progress-small progress-warning"><span class="meter"></span></div>
+          <div class="progress progress-small progress-error"><span class="meter"></span></div>
+          <div class="progress progress-small"><span class="meter"></span></div>
+          <h4>Rounded progress bar</h4>
+          <p>For rounded bars use <code class="inline-light">progress-rounded</code> class.</p>
+          <div class="progress progress-small progress-rounded progress-error"><span class="meter"></span></div>
+          <div class="progress progress-small progress-rounded progress-warning"><span class="meter"></span></div>
+          <div class="progress progress-small progress-rounded progress-success"><span class="meter"></span></div>
+          <div class="progress progress-small progress-rounded"><span class="meter"></span></div>
         </section>
         <section class="avatars">
           <h3>Avatars</h3>

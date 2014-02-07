@@ -1967,32 +1967,31 @@ nav ul a {
   border-radius: 3px;
   line-height: 0;
 }
-.progress.rounded,
-.rounded .meter {
+.progress.progress-rounded,
+.progress-rounded .meter {
   border-radius: 50px;
 }
 .progress {
-  border: 1px solid #e6eaed;
-  padding: 3px;
+  background: #f2f4f6;
 }
-.progress.small {
+.progress.progress-small {
   height: 15px;
 }
-.progress.large {
+.progress.progress-large {
   height: 25px;
 }
-.progress.success .meter {
-  background-color: #12acef;
+.progress.progress-success .meter {
+  background-color: #43bb6e;
 }
-.progress.warning .meter {
+.progress.progress-warning .meter {
   background-color: #f18902;
 }
-.progress.error .meter {
+.progress.progress-error .meter {
   background-color: #e80044;
 }
 .progress .meter {
   display: inline-block;
-  background-color: #b7c0c3;
+  background-color: #12acef;
   width: 50%;
   height: 100%;
   -webkit-animation: progress 4s linear 1;

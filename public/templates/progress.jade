@@ -1,40 +1,88 @@
 section.progress-bars
 
   h3 Progress Bars
+  p 
+    | All progress bars are built with a  
+    code.inline-light meter
+    |  with an animation attached to it. 
+    strong No calculations of state or value 
+    | are perfomed (you need to figure this out by yourself).
 
-  h4 Large
+  h4 Large progress bar
 
-  .progress.large.success
+  .progress.progress-large.progress-success
     span.meter
 
-  .progress.large.warning
+  .progress.progress-large.progress-warning
     span.meter
 
-  .progress.large.error
+  .progress.progress-large.progress-error
     span.meter
 
-  .progress.large
+  .progress.progress-large
     span.meter
 
-  h4 Small
+  pre
+    code
+      = '<div class="progress progress-large progress-success">'
+      br
+      = '  <span class="meter"></span>'
+      br
+      = '</div>'
+      br
+      br
+      = '<div class="progress progress-large progress-warning">'
+      br
+      = '  <span class="meter"></span>'
+      br
+      = '</div>'
+      br
+      br
+      = '<div class="progress progress-large progress-error">'
+      br
+      = '  <span class="meter"></span>'
+      br
+      = '</div>'
+      br
+      br
+      = '<div class="progress progress-large">'
+      br
+      = '  <span class="meter"></span>'
+      br
+      = '</div>'
 
-  .progress.small.success
+  h4 Small progress bar
+  p
+    | For small bars use 
+    code.inline-light progress-small
+    |  class.
+
+  .progress.progress-small.progress-success
     span.meter
 
-  .progress.small.warning
+  .progress.progress-small.progress-warning
     span.meter
 
-  .progress.small.error
+  .progress.progress-small.progress-error
     span.meter
 
-  .progress.small
+  .progress.progress-small
     span.meter
 
-  h4 Rounded
+  h4 Rounded progress bar
+  p
+    | For rounded bars use 
+    code.inline-light progress-rounded
+    |  class.
 
-  .progress.large.rounded.error
+  .progress.progress-small.progress-rounded.progress-error
     span.meter
 
-  .progress.small.rounded.success
+  .progress.progress-small.progress-rounded.progress-warning
     span.meter
 
+  .progress.progress-small.progress-rounded.progress-success
+    span.meter
+
+  .progress.progress-small.progress-rounded
+    span.meter

@@ -4,34 +4,33 @@
   border-radius: 3px
   line-height: 0
 
-.progress.rounded, .rounded .meter
+.progress.progress-rounded, .progress-rounded .meter
   border-radius: 50px
 
 .progress
-  border: 1px solid $gray-lighter
-  padding: 3px
+  background: lighten($gray-lighter, 50%)
 
-  &.small
+  &.progress-small
     height: 15px
 
-  &.large
+  &.progress-large
     height: 25px
 
-  &.success
+  &.progress-success
     .meter
-      background-color: $blue
+      background-color: $green
 
-  &.warning
+  &.progress-warning
     .meter
       background-color: $orange
 
-  &.error
+  &.progress-error
     .meter
       background-color: $red
 
   .meter
     display: inline-block
-    background-color: $gray-light
+    background-color: $blue
     width: 50%
     height: 100%
     -webkit-animation: progress 4s linear 1
