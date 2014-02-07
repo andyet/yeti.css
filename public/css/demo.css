@@ -2267,6 +2267,14 @@ h3 a {
 .content section:last-of-type {
   border: none;
 }
+footer {
+  padding: 1.2em 0;
+  border-top: 1px solid #e6eaed;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
 /* Colors */
 .colors ul {
   font-size: 0.8em;
