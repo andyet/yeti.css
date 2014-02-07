@@ -1,5 +1,13 @@
 # Changelog
 
+#### v.1.0.0
+* Numerous changes in class naming for better semantics
+* Inline and block code styling
+* Deprecate most of the icons
+* New input styling
+* Form improvements
+* Cleaner navigation styles
+
 #### v.0.3.6
 * Ports font sizes from pixels to ems
 
