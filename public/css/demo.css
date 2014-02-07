@@ -1248,8 +1248,8 @@ a.button.button-secondary .button-disabled {
   .button-group .button:last-of-type {
     border-radius: 0 0 3px 3px;
   }
-  .button-group.outlined .button:not(:last-of-type),
-  .button-group.outlined button:not(:last-of-type) {
+  .button-group.button-group-outlined .button:not(:last-of-type),
+  .button-group.button-group-outlined button:not(:last-of-type) {
     border-bottom: none;
   }
 }
