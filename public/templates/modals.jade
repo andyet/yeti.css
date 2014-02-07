@@ -3,19 +3,61 @@ section.modals
 
     h4 Regular Modals
     p 
-      | All modals are triggered by having a div with a class 
-      code .modal
-      | . Detailed markup for modal usage can be found in the readme.
+      | All modals are divs with class 
+      code.inline-light modal
+      |  and need to be triggered by Javascript.
+
+    pre
+      code
+        = '<div class="modal">'
+        br
+        = '  <div class="modal-head">'
+        br
+        = '    <h3>Modal Title</h3>'
+        br
+        = '    <a href="" class="modal-close"></a>'
+        br
+        = '  </div>'
+        br
+        = '  <div class="modal-body">'
+        br
+        = '    <p>Modal Content</p>'
+        br
+        = '    <div class="modal-button-wrapper">'
+        br
+        = '      <button>Button</button>'
+        br
+        = '    </div>'
+        br
+        = '  </div>'
+        br
+        = '</div>'
 
     h4 Modals with no header
     p
       | Sometimes you need a simple modal without header and just paragraph with buttons. Use the class 
-      code .no-head
-      | . Paddings will be applied automatically.
+      code.inline-light modal-no-head
+      |  and omit the 
+      code.inline-light modal-head
+      |  container.
         
 
     h4 Overlay
     p 
-      | If you need to cover the content of the page to display the overlay (probably most cases) &ndash; you will need an 
-      code .overlay 
-      | div appended to body of the page. It will create an semi-transparent black overlay.
+      | If you need to cover the content of the page to display the overlay (probably most cases) &mdash; you will need an 
+      code.inline-light overlay
+      |  div appended to body of the page or 
+      code.inline-light has-modal
+      |  class added to the 
+      code.inline-light body
+      |   element. Both will create an semi-transparent black overlay.
+
+    pre
+      code
+        = '<div class="overlay"></div>'
+
+    p or
+
+    pre
+      code
+        = '<body class="has-modal"></body>'

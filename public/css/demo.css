@@ -1835,12 +1835,12 @@ nav ul a {
   width: 30%;
   background-color: #fff;
 }
-.modal.no-head {
+.modal.modal-no-head {
   padding: 40px 20px 20px 20px;
   text-align: center;
   font-size: 1.125em;
 }
-.modal .ss-delete {
+.modal .modal-close {
   display: block;
   position: absolute;
   top: 23px;
@@ -1849,7 +1849,7 @@ nav ul a {
   opacity: 0.2;
   color: #828c8f;
 }
-.modal .ss-delete:hover {
+.modal .modal-close:hover {
   opacity: 1;
 }
 .modal h1,
@@ -1858,34 +1858,34 @@ nav ul a {
 .modal h4 {
   margin: 0;
 }
-.modal .head,
-.modal .body {
+.modal .modal-head,
+.modal .modal-body {
   padding: 20px;
 }
-.modal .head {
+.modal .modal-head {
   margin-bottom: 20px;
   border-bottom: 1px solid #e6eaed;
 }
-.modal .body {
+.modal .modal-body {
   padding-top: 0;
 }
-.modal .body p:first-of-type {
+.modal .modal-body p:first-of-type {
   margin-top: 0;
 }
-.modal .button-wrapper {
+.modal .modal-button-wrapper {
   margin-top: 30px;
   text-align: center;
 }
-.modal .button-wrapper button,
-.modal .button-wrapper .button {
+.modal .modal-button-wrapper button,
+.modal .modal-button-wrapper .button {
   width: 35%;
 }
-.modal .button-wrapper button:only-child,
-.modal .button-wrapper .button-only-child {
+.modal .modal-button-wrapper button:only-child,
+.modal .modal-button-wrapper .button-only-child {
   min-width: 60%;
 }
-.modal .button-wrapper button:not(:last-child),
-.modal .button-wrapper .button:not(:last-child) {
+.modal .modal-button-wrapper button:not(:last-child),
+.modal .modal-button-wrapper .button:not(:last-child) {
   margin-right: 5px;
 }
 @media screen and (max-width: 600px) {

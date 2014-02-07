@@ -595,15 +595,19 @@
             <h4>Regular Modals</h4>
             <p>
                
-              All modals are triggered by having a div with a class <code>.modal</code>. Detailed markup for modal usage can be found in the readme.
+              All modals are divs with class <code class="inline-light">modal</code> and need to be triggered by Javascript.
             </p>
+            <pre><code>&lt;div class=&quot;modal&quot;&gt;<br>  &lt;div class=&quot;modal-head&quot;&gt;<br>    &lt;h3&gt;Modal Title&lt;/h3&gt;<br>    &lt;a href=&quot;&quot; class=&quot;modal-close&quot;&gt;&lt;/a&gt;<br>  &lt;/div&gt;<br>  &lt;div class=&quot;modal-body&quot;&gt;<br>    &lt;p&gt;Modal Content&lt;/p&gt;<br>    &lt;div class=&quot;modal-button-wrapper&quot;&gt;<br>      &lt;button&gt;Button&lt;/button&gt;<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
             <h4>Modals with no header</h4>
-            <p>Sometimes you need a simple modal without header and just paragraph with buttons. Use the class <code>.no-head</code>. Paddings will be applied automatically.</p>
+            <p>Sometimes you need a simple modal without header and just paragraph with buttons. Use the class <code class="inline-light">modal-no-head</code> and omit the <code class="inline-light">modal-head</code> container.</p>
             <h4>Overlay</h4>
             <p>
                
-              If you need to cover the content of the page to display the overlay (probably most cases) &ndash; you will need an <code>.overlay </code>div appended to body of the page. It will create an semi-transparent black overlay.
+              If you need to cover the content of the page to display the overlay (probably most cases) &mdash; you will need an <code class="inline-light">overlay</code> div appended to body of the page or <code class="inline-light">has-modal</code> class added to the <code class="inline-light">body</code>  element. Both will create an semi-transparent black overlay.
             </p>
+            <pre><code>&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;</code></pre>
+            <p>or</p>
+            <pre><code>&lt;body class=&quot;has-modal&quot;&gt;&lt;/body&gt;</code></pre>
           </h3>
         </section>
         <section class="progress-bars">
