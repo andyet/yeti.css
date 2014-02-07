@@ -454,6 +454,10 @@
           </nav>
           <pre><code>&lt;nav role=&quot;navigation&quot;&gt;<br>  &lt;ul class=&quot;breadcrumbs&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Page One&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-unavailable&quot;&gt;Unavailable Page&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-current&quot;&gt;Current Page&lt;/a&gt;&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
           <h4>Pagination</h4>
+          <p>
+             
+            Pagination <code class="inline-light">page-current</code> class assignment should be handled in JavaScript.
+          </p>
           <nav>
             <ul class="pagination">
               <li><a href="" class="ss-icon ss-standard page-unavailable">directleft</a></li>
@@ -467,7 +471,10 @@
           </nav>
           <pre><code>&lt;nav&gt;<br>  &lt;ul class=&quot;pagination&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard page-unavailable&quot;&gt;directleft&lt;/a&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;page-unavailable&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;page-current&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard&quot;&gt;directright&lt;/a&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
           <h4>Tabs</h4>
-          <p><code>.tabs </code>feature only menu section, not content switching!</p>
+          <p>
+             
+            Tabs state, content switch and <code class="inline-light">active</code>  class assignment need to be handled in JavaScript.
+          </p>
           <nav>
             <ul class="tabs">
               <li><a href="">Tab One</a></li>
@@ -475,10 +482,11 @@
               <li><a href="">Tab Three</a></li>
             </ul>
           </nav>
+          <pre><code>&lt;nav&gt;<br>  &lt;ul class=&quot;tabs&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;Tab&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Active Tab&lt;/a&gt;&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
           <h4>Side Navigation</h4>
           <p>
              
-            For side navigation use <code>.side-nav</code>
+            For side navigation use <code class="inline-light">side-nav</code>.
           </p>
           <nav role="navigation">
             <ul class="side-nav">
@@ -487,6 +495,7 @@
               <li><a href="">Option Three</a></li>
             </ul>
           </nav>
+          <pre><code>&lt;nav&gt;<br>  &lt;ul class=&quot;side-nav&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
         </section>
         <section class="modals">
           <h3>Modals

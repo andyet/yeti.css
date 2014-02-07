@@ -117,6 +117,11 @@ section.navigation
 
   h4 Pagination
 
+  p 
+    | Pagination 
+    code.inline-light page-current
+    |  class assignment should be handled in JavaScript.
+
   nav
     ul.pagination
       li
@@ -153,10 +158,10 @@ section.navigation
       = '</nav>'
 
   h4 Tabs
-
-  p
-    code .tabs 
-    | feature only menu section, not content switching!
+  p 
+    | Tabs state, content switch and 
+    code.inline-light active
+    |   class assignment need to be handled in JavaScript.
 
   nav
     ul.tabs
@@ -167,11 +172,25 @@ section.navigation
       li
         a(href="") Tab Three
 
-  h4 Side Navigation
+  pre
+    code
+      = '<nav>'
+      br
+      = '  <ul class="tabs">'
+      br
+      = '    <li><a href=""></a>Tab</li>'
+      br
+      = '    <li><a href="" class="active">Active Tab</a></li>'
+      br
+      = '  </ul>'
+      br 
+      = '</nav>'
 
+  h4 Side Navigation
   p 
     | For side navigation use 
-    code .side-nav
+    code.inline-light side-nav
+    | .
 
   nav(role="navigation")
     ul.side-nav
@@ -181,3 +200,15 @@ section.navigation
         a(href="", class="active") Option Two
       li
         a(href="") Option Three
+
+  pre
+    code
+      = '<nav>'
+      br
+      = '  <ul class="side-nav">'
+      br
+      = '    <li><a href=""></a><li>'
+      br 
+      = '  </ul>'  
+      br
+      = '</nav>'
