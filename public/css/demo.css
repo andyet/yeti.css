@@ -178,6 +178,153 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font: 1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4d5659;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+::-moz-selection {
+  background-color: #88d5f7;
+  color: #fff;
+}
+::selection {
+  background-color: #88d5f7;
+  color: #fff;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+h1,
+h2 {
+  line-height: 1.1;
+}
+h3,
+h4 {
+  line-height: 1.3;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  color: #000;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2.125em;
+}
+h3 {
+  font-size: 1.75em;
+}
+h4 {
+  font-size: 1.375em;
+}
+h5 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #828c8f;
+}
+h6 {
+  font-size: 0.875em;
+}
+a {
+  color: #12acef;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #0d8ac1;
+}
+abbr {
+  color: #4d5659;
+  border-bottom: 1px dotted #b7c0c3;
+}
+small {
+  font-size: 0.875em;
+}
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-left: 5px solid #b7c0c3;
+  background-color: #e6eaed;
+}
+blockquote.plain {
+  background-color: transparent;
+  font: italic 1.125em Georgia, sans-serif;
+  border-color: #e6eaed;
+}
+blockquote p {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+blockquote small {
+  color: #b7c0c3;
+}
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+blockquote.blue {
+  border-left: 5px solid #88d5f7;
+  background-color: #e7f7fd;
+  color: #12acef;
+}
+blockquote.blue small {
+  color: #88d5f7;
+}
+ul,
+ol {
+  margin: 15px 0 15px 20px;
+  padding: 0;
+}
+ul li ul li,
+ol li ul li {
+  list-style-type: circle;
+}
+ul li li ul li,
+ol li li ul li {
+  list-style-type: square;
+}
+ul li {
+  list-style-type: disc;
+}
+ul.unstyled {
+  margin: 0;
+}
+ul.unstyled li {
+  display: inline-block;
+  list-style-type: none;
+}
+ol li {
+  list-style-type: decimal;
+}
+dl dt {
+  font-weight: 800;
+}
+dl dd {
+  margin: 0;
+}
 @font-face {
   font-family: "SSStandard";
   src: url("https://s3.amazonaws.com/static.andyet.com/fonts/ss-standard.eot");
@@ -951,153 +1098,6 @@ html:hover [class^="ss-"] {
 .ss-calendardelete:before,
 .ss-calendardelete.right:after {
   content: '';
-}
-*,
-*:after,
-*:before {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  font-size: 100%;
-}
-body {
-  font: 1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #4d5659;
-  background-color: #fff;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-::-moz-selection {
-  background-color: #88d5f7;
-  color: #fff;
-}
-::selection {
-  background-color: #88d5f7;
-  color: #fff;
-}
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-h1,
-h2 {
-  line-height: 1.1;
-}
-h3,
-h4 {
-  line-height: 1.3;
-}
-h1,
-h2,
-h3,
-h5,
-h6 {
-  color: #000;
-}
-h1 {
-  font-size: 2.5em;
-}
-h2 {
-  font-size: 2.125em;
-}
-h3 {
-  font-size: 1.75em;
-}
-h4 {
-  font-size: 1.375em;
-}
-h5 {
-  font-size: 1em;
-  text-transform: uppercase;
-  color: #828c8f;
-}
-h6 {
-  font-size: 0.875em;
-}
-a {
-  color: #12acef;
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover {
-  color: #0d8ac1;
-}
-abbr {
-  color: #4d5659;
-  border-bottom: 1px dotted #b7c0c3;
-}
-small {
-  font-size: 0.875em;
-}
-blockquote {
-  margin: 20px 0;
-  padding: 15px 20px;
-  border-left: 5px solid #b7c0c3;
-  background-color: #e6eaed;
-}
-blockquote.plain {
-  background-color: transparent;
-  font: italic 1.125em Georgia, sans-serif;
-  border-color: #e6eaed;
-}
-blockquote p {
-  margin: 0 0 10px 0;
-  font-size: 1em;
-}
-blockquote p:last-child {
-  margin-bottom: 0;
-}
-blockquote small {
-  color: #b7c0c3;
-}
-blockquote small:before {
-  content: '\2014 \00A0';
-}
-blockquote.blue {
-  border-left: 5px solid #88d5f7;
-  background-color: #e7f7fd;
-  color: #12acef;
-}
-blockquote.blue small {
-  color: #88d5f7;
-}
-ul,
-ol {
-  margin: 15px 0 15px 20px;
-  padding: 0;
-}
-ul li ul li,
-ol li ul li {
-  list-style-type: circle;
-}
-ul li li ul li,
-ol li li ul li {
-  list-style-type: square;
-}
-ul li {
-  list-style-type: disc;
-}
-ul.unstyled {
-  margin: 0;
-}
-ul.unstyled li {
-  display: inline-block;
-  list-style-type: none;
-}
-ol li {
-  list-style-type: decimal;
-}
-dl dt {
-  font-weight: 800;
-}
-dl dd {
-  margin: 0;
 }
 button {
   border: none;
