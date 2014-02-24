@@ -227,24 +227,24 @@ h6 {
   color: #000;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 h2 {
-  font-size: 2.125em;
+  font-size: 2.125rem;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
 }
 h4 {
-  font-size: 1.375em;
+  font-size: 1.375rem;
 }
 h5 {
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #828c8f;
 }
 h6 {
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 a {
   color: #12acef;
@@ -259,7 +259,7 @@ abbr {
   border-bottom: 1px dotted #b7c0c3;
 }
 small {
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 blockquote {
   margin: 20px 0;
@@ -269,7 +269,7 @@ blockquote {
 }
 blockquote.plain {
   background-color: transparent;
-  font: italic 1.125em Georgia, Times, serif;
+  font: italic 1.125rem Georgia, Times, serif;
   border-color: #e6eaed;
 }
 blockquote p {
@@ -1141,12 +1141,12 @@ a.button:focus {
 .button.button-small,
 a.button.button-small {
   padding: 3px 8px;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 .button.button-large,
 a.button.button-large {
   padding: 10px 20px;
-  font-size: 1.125em;
+  font-size: 1.125rem;
 }
 .button.button-primary,
 a.button.button-primary,
@@ -1258,7 +1258,7 @@ form legend {
   color: #000;
   width: 100%;
   margin-bottom: 1.25em;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   border-bottom: 1px solid #e6eaed;
 }
 form fieldset {
@@ -1270,7 +1270,7 @@ form label {
   display: block;
   margin-bottom: 5px;
   font-weight: 800;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 input[type=text],
 input[type=email],
@@ -1407,7 +1407,7 @@ textarea {
 input[type=file] {
   padding: 15px;
   background-color: #f8f9fa;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   color: #b7c0c3;
   line-height: 1;
 }
@@ -1482,7 +1482,7 @@ nav ul a {
   position: absolute;
   right: 15px;
   top: 2px;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   color: #88d5f7;
 }
 .top-nav .has-dropdown .dropdown {
@@ -1614,7 +1614,7 @@ nav ul a {
 }
 .breadcrumbs a,
 .pagination a {
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 @media screen and (max-width: 500px) {
   .breadcrumbs {
@@ -1823,14 +1823,14 @@ nav ul a {
 .modal.modal-no-head {
   padding: 40px 20px 20px 20px;
   text-align: center;
-  font-size: 1.125em;
+  font-size: 1.125rem;
 }
 .modal .modal-close {
   display: block;
   position: absolute;
   top: 23px;
   right: 20px;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   opacity: 0.2;
   color: #828c8f;
 }
@@ -2064,7 +2064,7 @@ figure img {
 }
 figure figcaption {
   color: #b7c0c3;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 .media-outlined {
   padding: 5px;
@@ -2142,7 +2142,7 @@ code.inline-dark {
   white-space: nowrap;
   border: none;
   padding: 0.154em 0.308em;
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
 }
 code.inline-light {
   color: #000;
@@ -2249,6 +2249,10 @@ header p {
 }
 header .button {
   margin-top: 3.125em;
+}
+header .intro {
+  font-size: 0px;
+  font-size: 0rem;
 }
 h3 a {
   float: right;
