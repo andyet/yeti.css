@@ -7,8 +7,8 @@ html
   font-size: 100%
 
 body
-  font: $font-size-base/$line-height-base $font-family-helvetica
-  //font: $font-size-base/$line-height-base $font-family-gotham
+  font: $font-base/$line-height-base $font-sans-serif
+  //font: $font-base/$line-height-base $font-gotham
   color: $gray-dark
   background-color: white
   text-rendering: optimizeLegibility
@@ -73,7 +73,7 @@ abbr
   border-bottom: 1px dotted $gray-light
 
 small
-  font-size: $font-size-small
+  font-size: $font-small
 
 blockquote
   margin: 20px 0
@@ -83,12 +83,12 @@ blockquote
 
   &.plain
     background-color: transparent
-    font: italic 1.125em Georgia, sans-serif
+    font: italic 1.125em $font-serif
     border-color: $gray-lighter
 
   p
     margin: 0 0 10px 0
-    font-size: $font-size-base
+    font-size: $font-base
 
     &:last-child
       margin-bottom: 0
