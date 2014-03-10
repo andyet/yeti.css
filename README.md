@@ -105,6 +105,9 @@ CSS isn't quite the same as code, but tags should be roughly analagous to [semve
 * `minor`: if the style change should not break existing sites, but adds new features/functionality, use a minor, i.e. 0.1.0, tag.
 * `patch`: if the style change is just a small bugfix that should work with existing sites, use a patch, i.e. 0.0.1, tag.
 
+## Style recipes
+Style is intentionally built small. For more interface elements see [style recipes](https://github.com/andyet/style-recipes).
+
 ## To do
 
 - Collection of stock product screenshots
