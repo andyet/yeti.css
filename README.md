@@ -63,22 +63,6 @@ For the sake of being easily accessible &ndash; all CSS sources are kept in `lib
 Other assets like logos are available in `assets`. Note that you should not need to worry about the included font files, as they are being served from S3 already.
 
 
-## Documentation and Usage
-
-* [Basic](https://github.com/andyet/style/wiki/Basic)
-* [Typography](https://github.com/andyet/style/wiki/Typography)
-* [Colors](https://github.com/andyet/style/wiki/Colors)
-* [Forms](https://github.com/andyet/style/wiki/Forms)
-* [Buttons](https://github.com/andyet/style/wiki/Buttons)
-* [Navigation](https://github.com/andyet/style/wiki/Navigation)
-* [Modals](https://github.com/andyet/style/wiki/Modals)
-* [Media](https://github.com/andyet/style/wiki/Media)
-* [Messages and Notifications](https://github.com/andyet/style/wiki/Messages-and-Notifications)
-* [Progress Bars](https://github.com/andyet/style/wiki/Progress-bars)
-* [Tables](https://github.com/andyet/style/wiki/Tables)
-* [Avatars](https://github.com/andyet/style/wiki/Avatars)
-
-
 ## Logos
 
 All logos are saved in web-friendly and super optimized `SVG` format.
