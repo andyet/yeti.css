@@ -62,7 +62,6 @@ For the sake of being easily accessible &ndash; all CSS sources are kept in `lib
 
 Other assets like logos are available in `assets`. Note that you should not need to worry about the included font files, as they are being served from S3 already.
 
-
 ## Logos
 
 All logos are saved in web-friendly and super optimized `SVG` format.
@@ -75,6 +74,10 @@ All logos are saved in web-friendly and super optimized `SVG` format.
 * Talky
 
 For Base64 Data URIs please read the [Logos Wiki](https://github.com/andyet/style/wiki/Logos).
+
+## Documentation
+
+Documentation and examples of usage can be found on [Github Pages](http://andyet.github.io/style/).
 
 ## Contributing
 
