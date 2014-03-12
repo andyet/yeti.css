@@ -5,7 +5,7 @@ section.navigation
   p 
    | To create a navigation bar pinned to top of the page use 
    code.inline-light top-nav
-   |  class. 
+   |  class. Navigation is mobile friendly and features a hamburger icon for mobile screens.
 
   nav(class="top-nav cf", role="navigation")
 
@@ -73,9 +73,17 @@ section.navigation
 
   pre
     code
-      = '<nav role="navigation">'
+      = '<nav role="navigation" class="top-nav cf">'
       br
-      = '  <ul class="top-nav">'
+      = '  <input id="hamburger" class="toggle" type="checkbox" />'
+      br
+      = '  <label for="hamburger">'
+      br
+      = '    <span></span>'
+      br
+      = '  </label>'
+      br
+      = '  <ul class="cf">'
       br
       = '   <li>'
       br
