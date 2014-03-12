@@ -7,8 +7,12 @@ section.navigation
    code.inline-light top-nav
    |  class. 
 
-  nav(role="navigation")
-    ul.top-nav
+  nav(class="top-nav", role="navigation")
+    .toggle-container
+      input(id="hamburger", class="toggle", type="checkbox")
+      label(for="hamburger")
+
+    ul
       li
         a(href="") Link one
       li
@@ -26,8 +30,8 @@ section.navigation
       li
         a(href="") Link five
 
-  nav(role="navigation")
-    ul.top-nav.dark
+  nav(class="top-nav dark", role="navigation")
+    ul
       li
         a(href="") Link one
       li
