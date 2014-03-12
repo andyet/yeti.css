@@ -7,36 +7,37 @@ section.navigation
    code.inline-light top-nav
    |  class. 
 
-  //- nav(class="top-nav cf", role="navigation")
+  nav(class="top-nav cf", role="navigation")
 
-  //-   input(id="hamburger", class="toggle", type="checkbox")
-  //-   label(for="hamburger")
-  //-     span
+    input(id="hamburger", class="toggle", type="checkbox")
+    label(for="hamburger")
+      span
 
-  //-   ul.cf
-  //-     li
-  //-       a(href="") Link one
-  //-     li
-  //-       a(href="") Link two
-  //-     li
-  //-       a(href="") Link three
-  //-     li.has-dropdown
-  //-       a(href="", class="active") Link four
-  //-       ul.dropdown.cf
-  //-         li
-  //-           a(href="") Sublink one
-  //-         li
-  //-           a(href="") Sublink two
-  //-         li
-  //-           a(href="") Sublink three
-  //-         li
-  //-           a(href="") Sublink four
-  //-         li
-  //-           a(href="") Sublink five
-  //-         li
-  //-           a(href="") Sublink six
-  //-     li
-  //-       a(href="") Link five
+    ul.cf
+      li
+        a(href="") Link one
+      li
+        a(href="") Link two
+      li
+        a(href="") Link three
+      li.has-dropdown
+        a(href="", class="active") Link four
+        i.ss-icon.ss-standard dropdown
+        ul.dropdown.cf
+          li
+            a(href="") Sublink one
+          li
+            a(href="") Sublink two
+          li
+            a(href="") Sublink three
+          li
+            a(href="") Sublink four
+          li
+            a(href="") Sublink five
+          li
+            a(href="") Sublink six
+      li
+        a(href="") Link five
 
   nav(class="top-nav dark cf", role="navigation")
 
@@ -53,6 +54,7 @@ section.navigation
         a(href="") Link three
       li.has-dropdown
         a(href="", class="active") Link four
+        i.ss-icon.ss-standard dropdown
         ul.dropdown.cf
           li
             a(href="") Sublink one

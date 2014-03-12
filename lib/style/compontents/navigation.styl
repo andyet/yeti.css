@@ -32,32 +32,29 @@ nav ul
     float: left
 
   a
+    display: block
     padding: 0 15px
+    background-color: white
 
     &:hover, &.active
       background-color: lighten($blue-lighter, 30%)
 
-  .has-dropdown
-    position: relative
+  .dropdown
+    background-color: white
 
   &.dark
     background-color: $blue-saturated
 
     a
       color: $blue-saturated-lighter
+      background-color: $blue-saturated
 
       &:hover, &.active
         background-color: $blue-saturated-light
         color: lighten($blue-saturated-lighter, 40%)
 
-    .has-dropdown
-
-      .dropdown
-        background-color: $blue-saturated
-        box-shadow: none
-
-        li
-          border-bottom: 1px solid $blue-saturated-light
+    .dropdown
+      background-color: $blue-saturated
 
 // Breadcrumbs
 
@@ -146,7 +143,7 @@ nav ul
   a
     padding: 0 10px
 
-.dropdown, .tabs a.active
+.tabs a.active
   background-color: white
 
 .breadcrumbs li:not(:first-child):after
@@ -185,7 +182,7 @@ nav ul
 
   .top-nav
     
-    > ul
+    > ul, .ss-icon
       display: none
 
     label, span
@@ -228,9 +225,6 @@ nav ul
         display: block
         width: 100%
 
-      a
-        background: white
-
       > li
         float: none
         border-top: 1px solid $gray-lighter
@@ -238,9 +232,10 @@ nav ul
         &:last-child
           border-bottom: 1px solid $gray-lighter
 
-
-      .has-dropdown .dropdown
-        padding-bottom: 15px
+      .has-dropdown 
+        .dropdown
+          display: block
+          padding-bottom: 15px
 
         li
           float: left
@@ -258,11 +253,49 @@ nav ul
         background: $blue-saturated-lighter
 
       .toggle:checked ~ ul
-        a
-          background: $blue-saturated
 
         > li
           border-top: 1px solid $blue-saturated-light
 
           &:last-child
             border-bottom: 1px solid $blue-saturated-lighter
+
+@media $desktop
+  
+  .top-nav
+    
+    .has-dropdown
+      position: relative
+
+      > a
+        padding-right: 35px
+
+      .ss-icon
+        position: absolute
+        right: 15px
+        top: 2px
+        font-size: $font-smaller
+        color: $blue-light
+
+      .dropdown
+        display: none
+
+      &:hover
+        .dropdown
+          display: block
+          position: absolute
+          top: 100%
+          left: 0
+          min-width: 120%
+
+          li
+            display: block
+            border-bottom: 1px solid $gray-lighter
+
+    &.dark
+
+      .has-dropdown
+
+        .dropdown
+          li
+            border-bottom: 1px solid $blue-saturated-light
