@@ -7,10 +7,41 @@ section.navigation
    code.inline-light top-nav
    |  class. 
 
-  nav(class="top-nav cf", role="navigation")
+  //- nav(class="top-nav cf", role="navigation")
 
-    input(id="hamburger", class="toggle", type="checkbox")
-    label(for="hamburger")
+  //-   input(id="hamburger", class="toggle", type="checkbox")
+  //-   label(for="hamburger")
+  //-     span
+
+  //-   ul.cf
+  //-     li
+  //-       a(href="") Link one
+  //-     li
+  //-       a(href="") Link two
+  //-     li
+  //-       a(href="") Link three
+  //-     li.has-dropdown
+  //-       a(href="", class="active") Link four
+  //-       ul.dropdown.cf
+  //-         li
+  //-           a(href="") Sublink one
+  //-         li
+  //-           a(href="") Sublink two
+  //-         li
+  //-           a(href="") Sublink three
+  //-         li
+  //-           a(href="") Sublink four
+  //-         li
+  //-           a(href="") Sublink five
+  //-         li
+  //-           a(href="") Sublink six
+  //-     li
+  //-       a(href="") Link five
+
+  nav(class="top-nav dark cf", role="navigation")
+
+    input(id="hamburger-1", class="toggle", type="checkbox")
+    label(for="hamburger-1")
       span
 
     ul.cf
@@ -35,24 +66,6 @@ section.navigation
             a(href="") Sublink five
           li
             a(href="") Sublink six
-      li
-        a(href="") Link five
-
-  nav(class="top-nav dark cf", role="navigation")
-    ul.cf
-      li
-        a(href="") Link one
-      li
-        a(href="") Link two
-      li
-        a(href="") Link three
-      li.has-dropdown
-        a(href="", class="active") Link four
-        ul.dropdown
-          li
-            a(href="") Link one
-          li
-            a(href="") Link two
       li
         a(href="") Link five
 

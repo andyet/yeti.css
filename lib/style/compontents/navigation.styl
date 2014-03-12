@@ -24,60 +24,8 @@ nav ul
     position: absolute
     left: -100%
 
-  label, span
-    display: block
-
-  label
-    float: right
-    height: 100%
-    width: 35px
-    cursor: pointer
-    user-select: none
-
-    span
-      position: relative
-      top: 50%
-
-      &:after, &:before
-        content: ''
-        position: absolute
-        left: 0
-
-      &:after
-        top: 400%
-
-      &:before
-        top: -400%
-
-  label span, label span:before, label span:after
-    height: 2px
-    width: 32px
-    background: $blue
-
-  .toggle:checked ~ ul
-    display: block
-    margin-top: 50px
-
-    > li, > li a
-      display: block
-      width: 100%
-
-    a
-      padding: 0
-      background: white
-
-    > li
-      float: none
-      border-top: 1px solid $gray-lighter
-
-      &:last-child
-        border-bottom: 1px solid $gray-lighter
-
   .logo
     float: left
-
-  > ul
-    display: none
 
   li
     padding: 0
@@ -91,18 +39,6 @@ nav ul
 
   .has-dropdown
     position: relative
-
-    .dropdown
-      padding-bottom: 15px
-
-    li
-      float: left
-      padding-right: 20px
-      line-height: 2
-
-    li a 
-      font-size: $font-small
-      font-weight: normal
 
   &.dark
     background-color: $blue-saturated
@@ -122,9 +58,6 @@ nav ul
 
         li
           border-bottom: 1px solid $blue-saturated-light
-
-      .ss-icon
-        color: $blue-saturated-lighter
 
 // Breadcrumbs
 
@@ -228,7 +161,7 @@ nav ul
 .breadcrumbs a, .pagination a
   font-size: $font-small
 
-@media screen and (max-width: 500px)
+@media $smartphone
 
   .breadcrumbs
     padding: 0
@@ -247,3 +180,89 @@ nav ul
 
     a
       padding: 5px 10px
+
+@media $mobile-devices
+
+  .top-nav
+    
+    > ul
+      display: none
+
+    label, span
+      display: block
+
+    label
+      float: right
+      height: 100%
+      margin-right: 15px
+      width: 35px
+      cursor: pointer
+      user-select: none
+
+      span
+        position: relative
+        top: 50%
+        margin-top: -1px
+
+        &:after, &:before
+          content: ''
+          position: absolute
+          left: 0
+
+        &:after
+          top: 400%
+
+        &:before
+          top: -400%
+
+    label span, label span:before, label span:after
+      height: 2px
+      width: 32px
+      background: $blue
+
+    .toggle:checked ~ ul
+      display: block
+      margin-top: 40px
+
+      > li, > li a
+        display: block
+        width: 100%
+
+      a
+        background: white
+
+      > li
+        float: none
+        border-top: 1px solid $gray-lighter
+
+        &:last-child
+          border-bottom: 1px solid $gray-lighter
+
+
+      .has-dropdown .dropdown
+        padding-bottom: 15px
+
+        li
+          float: left
+          padding-right: 20px
+          line-height: 2
+          border: 0
+
+        li a 
+          font-size: $font-small
+          font-weight: normal
+
+    &.dark
+      
+      label span, label span:before, label span:after
+        background: $blue-saturated-lighter
+
+      .toggle:checked ~ ul
+        a
+          background: $blue-saturated
+
+        > li
+          border-top: 1px solid $blue-saturated-light
+
+          &:last-child
+            border-bottom: 1px solid $blue-saturated-lighter
