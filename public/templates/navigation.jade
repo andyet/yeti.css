@@ -8,7 +8,7 @@ section.navigation
    |  class. 
 
   nav(class="top-nav cf", role="navigation")
-    
+
     input(id="hamburger", class="toggle", type="checkbox")
     label(for="hamburger")
       span
@@ -22,12 +22,19 @@ section.navigation
         a(href="") Link three
       li.has-dropdown
         a(href="", class="active") Link four
-        ul.dropdown
+        ul.dropdown.cf
           li
-            a(href="") Link one
+            a(href="") Sublink one
           li
-            a(href="") Link two
-        i.ss-icon.ss-standard dropdown
+            a(href="") Sublink two
+          li
+            a(href="") Sublink three
+          li
+            a(href="") Sublink four
+          li
+            a(href="") Sublink five
+          li
+            a(href="") Sublink six
       li
         a(href="") Link five
 
@@ -46,7 +53,6 @@ section.navigation
             a(href="") Link one
           li
             a(href="") Link two
-        i.ss-icon.ss-standard dropdown
       li
         a(href="") Link five
 

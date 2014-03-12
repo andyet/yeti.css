@@ -16,6 +16,8 @@ nav ul
   height: 40px
   line-height: 40px
   margin-bottom: 30px 
+  z-index: 10
+  position: relative
 
   .toggle
     visibility: hidden
@@ -30,6 +32,7 @@ nav ul
     height: 100%
     width: 35px
     cursor: pointer
+    user-select: none
 
     span
       position: relative
@@ -48,16 +51,32 @@ nav ul
 
   label span, label span:before, label span:after
     height: 2px
-    width: 35px
+    width: 32px
     background: $blue
 
   .toggle:checked ~ ul
     display: block
+    margin-top: 50px
+
+    > li, > li a
+      display: block
+      width: 100%
+
+    a
+      padding: 0
+      background: white
+
+    > li
+      float: none
+      border-top: 1px solid $gray-lighter
+
+      &:last-child
+        border-bottom: 1px solid $gray-lighter
 
   .logo
     float: left
 
-  ul
+  > ul
     display: none
 
   li
@@ -72,32 +91,18 @@ nav ul
 
   .has-dropdown
     position: relative
-    
-    a
-      padding-right: 35px
-
-    &:hover .dropdown
-      display: block
-
-    .ss-icon
-      position: absolute
-      right: 15px
-      top: 2px
-      font-size: $font-smaller
-      color: $blue-light
 
     .dropdown
-      display: none
-      position: absolute
-      top: 100%
-      left: 0
-      z-index: 10
+      padding-bottom: 15px
 
-      li
-        display: block
-        
-        &:not(:last-child)
-          border-bottom: 1px solid lighten($gray-lighter, 30%)
+    li
+      float: left
+      padding-right: 20px
+      line-height: 2
+
+    li a 
+      font-size: $font-small
+      font-weight: normal
 
   &.dark
     background-color: $blue-saturated
@@ -242,22 +247,3 @@ nav ul
 
     a
       padding: 5px 10px
-
-  .top-nav
-    height: auto
-
-    .dropdown, li, a
-      display: block
-      width: 100%
-
-    li
-      float: none
-      border-bottom: 1px solid lighten($gray-lighter, 30%)
-
-    > li
-      border-left: none
-
-    &.dark
-      
-      li
-        border-bottom: 1px solid $blue-saturated-light
