@@ -17,17 +17,23 @@ nav ul
   line-height: 40px
   margin-bottom: 30px 
 
-  .toggle-container
+  .toggle
+    visibility: hidden
+    position: absolute
+    left: -100%
+
+  label, span
+    display: block
+
+  label
     float: right
+    height: 100%
+    width: 35px
+    cursor: pointer
 
-    .toggle
-      visibility: hidden
-      position: absolute
-      left: -100%
-
-    label
-      display: block
+    span
       position: relative
+      top: 50%
 
       &:after, &:before
         content: ''
@@ -40,13 +46,19 @@ nav ul
       &:before
         top: -400%
 
-    label, label:before, label:after
-      height: 2px
-      width: 35px
-      background: $blue
+  label span, label span:before, label span:after
+    height: 2px
+    width: 35px
+    background: $blue
+
+  .toggle:checked ~ ul
+    display: block
 
   .logo
     float: left
+
+  ul
+    display: none
 
   li
     padding: 0
