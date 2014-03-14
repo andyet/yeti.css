@@ -36,28 +36,28 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
 
   &.input-invalid
     background-color: $red-lighter
-    border: 2px solid $red-light
+    border: 1px solid $red-light
     color: lighten($red, 50%)
 
     &:focus
-      border: 2px solid $red
+      border: 1px solid $red
 
   &.input-valid
     background-color: $green-lighter
-    border: 2px solid $green-light
+    border: 1px solid $green-light
     color: lighten($green, 40%)
 
     &:focus
-      border: 2px solid $green
+      border: 1px solid $green
 
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea, select
   display: block
   border-radius: 3px
-  border: 2px solid $gray-lighter
+  border: 1px solid $gray-lighter
 
   &:focus
     outline: none
-    border: 2px solid $blue-light
+    border: 1px solid $blue-light
     transition: all .3s ease-in
     -webkit-transition: all .3s ease-in
 
@@ -65,7 +65,7 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
     background-color: lighten($gray-lighter, 60%)
 
   &:required:focus
-    border: 2px solid $orange-light
+    border: 1px solid $orange-light
 
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url]
   padding: 10px 12px
