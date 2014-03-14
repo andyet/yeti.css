@@ -1255,10 +1255,12 @@ a.button.button-secondary .button-disabled {
 }
 form legend {
   display: block;
-  color: #000;
+  border: 0;
   width: 100%;
   margin-bottom: 1.25em;
   font-size: 1.125rem;
+  font-weight: bold;
+  color: #000;
 }
 form fieldset {
   border: none;
