@@ -1,0 +1,70 @@
+// Arrows
+// Generate arrows with optional borders
+
+// @param pos: top, right, bottom, left
+// @param size: px
+// @param bg: RGB, HSL, HEX or variable
+// @param offset: size, %
+// @param border-width: px
+// @param border-color: RGB, HSL, HEX or variable
+
+// Usage: arrow(pos, size, bg, offset, border-width, border-color)
+
+generate-arrow(pos, size, bg, offset, border-width, border-color)
+
+  // Variables
+  $align = left if pos in (top bottom)
+  $align = top if pos in (left right)
+  $opposite-position = opposite-position(pos)
+
+  // Shared Styles
+  shared-arrow-styles()
+    position: absolute
+    content: ''
+    border: solid transparent
+    border-width: size
+    {$align}: offset
+    {$opposite-position}: 100%
+  
+  // Base CSS
+  position: relative
+  background-color: bg
+
+  // Arrow
+  &:after
+    shared-arrow-styles()
+    border-{$opposite-position}-color: bg
+
+    if (offset != 0) && (offset != 100%)
+      if $align in (top bottom)
+        margin-{$align}: -(size)
+      else
+        margin-{$align}: -(size/2)
+
+    else if offset == 100%
+      margin-{$align}: -(size*2)
+
+    else if offset == 0
+      margin-{$align}: 0
+
+  // Arrow Outline
+  if border-width
+
+    border: border-width solid border-color
+
+    &:before
+      shared-arrow-styles()
+      border-{$opposite-position}-color: border-color
+      border-width: size + border-width
+
+      if (offset != 0) && (offset != 100%)
+        if $align in (top bottom)
+          margin-{$align}: -(size) - border-width
+        else
+          margin-{$align}: -(size/2) - border-width
+
+      else if offset == 100%
+        margin-{$align}: -(size*2) - border-width
+        
+      else if offset == 0
+        margin-{$align}: 0 - border-width
