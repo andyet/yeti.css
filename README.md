@@ -62,6 +62,12 @@ For the sake of being easily accessible &ndash; all CSS sources are kept in `lib
 
 Other assets like logos are available in `assets`. Note that you should not need to worry about the included font files, as they are being served from S3 already.
 
+## Custom fonts
+For custom font usage you have Typekit and Cloud Typography at your disposal. Request passwords from Karolina Szczur or Adam Brault and save in password manager of your choice.
+
+* [Cloud Typography User Guide](http://www.typography.com/cloud/user-guide/)
+* [How to use Typekit](http://help.typekit.com/customer/portal/topics/2076-Design-Development) and [desktop font syncing](http://help.typekit.com/customer/portal/topics/514077)
+
 ## Logos
 
 All logos are saved in web-friendly and super optimized `SVG` format.
