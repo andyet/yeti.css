@@ -1,5 +1,31 @@
 # Changelog
 
+#### v.2.1.1
+* Fix modal positioning with `translate` property.
+
+#### v.2.1.0
+* Adds `_arrows.styl` for generating CSS-based arrows.
+
+#### v.2.0.2
+* Fixes style for `legend` element
+
+#### v.2.0.1
+* Removes border from inputs
+* Removes underline from form `legend`
+
+#### v.2.0.0
+* New, responsive navigation styles
+* Minor cleanup
+* Added responsive breakpoint variables
+
+#### v.1.0.0
+* Numerous changes in class naming for better semantics
+* Inline and block code styling
+* Deprecate most of the icons
+* New input styling
+* Form improvements
+* Cleaner navigation styles
+
 #### v.0.3.6
 * Ports font sizes from pixels to ems
 
