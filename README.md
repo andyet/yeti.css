@@ -70,7 +70,13 @@ For custom font usage you have Typekit and Cloud Typography at your disposal. Re
 
 ## Logos
 
-All logos are saved in web-friendly and super optimized `SVG` format.
+Logos are available either in vector `SVG` format or as optimized `PNGs`, in full color and black and white, in three dimensions:
+
+* small (`100px` in height)
+* medium (`300px` in height)
+* large  (`600px` in height)
+
+List of logos:
 
 * &yet
 * &yet Labs
@@ -79,7 +85,7 @@ All logos are saved in web-friendly and super optimized `SVG` format.
 * OTalk
 * Talky
 
-For Base64 Data URIs please read the [Logos Wiki](https://github.com/andyet/style/wiki/Logos).
+For Base64 Data URIs please refer to the [demo page](http://andyet.github.io/style).
 
 ## Documentation
 
