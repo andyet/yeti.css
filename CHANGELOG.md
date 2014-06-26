@@ -1,5 +1,9 @@
 # Changelog
 
+#### v.3.0.0
+* Logos in SVG and PNG with various sizes and color options
+* New, simplified navigation markup and styling
+
 #### v.2.1.1
 * Fix modal positioning with `translate` property.
 
