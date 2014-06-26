@@ -1,6 +1,6 @@
 # &yet's Style
 
-&amp;yet visual style, branding assets, CSS components.
+&amp;yet visual style, branding assets, CSS components. For reset use [normalize.css](https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css).
 
 ## How to include in your app
 
@@ -120,9 +120,6 @@ CSS isn't quite the same as code, but tags should be roughly analagous to [semve
 ## Style recipes
 Style is intentionally built small. For more interface elements see [style recipes](https://github.com/andyet/style-recipes).
 
-## To do
-
-- Collection of stock product screenshots
 
 ## License
 MIT
