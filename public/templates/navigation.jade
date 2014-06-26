@@ -73,15 +73,11 @@ section.navigation
     code
       = '<nav role="navigation" class="top-nav cf">'
       br
-      = '  <input id="hamburger" class="toggle" type="checkbox" />'
+      = '  <input id="menu-toggle" class="menu-toggle" type="checkbox" />'
       br
-      = '  <label for="hamburger">'
+      = '  <label for="menu-toggle">Menu</label>'
       br
-      = '    <span></span>'
-      br
-      = '  </label>'
-      br
-      = '  <ul class="cf">'
+      = '  <ul class="unstyled">'
       br
       = '   <li>'
       br
@@ -121,7 +117,7 @@ section.navigation
     | . 
 
   nav(role="navigation")
-    ul.breadcrumbs
+    ul.unstyled.breadcrumbs
       li
         a(href="") Page One
       li
@@ -135,7 +131,7 @@ section.navigation
     code
       = '<nav role="navigation">'
       br
-      = '  <ul class="breadcrumbs">'
+      = '  <ul class="breadcrumbs unstyled">'
       br
       = '    <li><a href="">Page One</a></li>'
       br
@@ -155,7 +151,7 @@ section.navigation
     |  class assignment should be handled in JavaScript.
 
   nav
-    ul.pagination
+    ul.unstyled.pagination
       li
         a(href="", class="ss-icon ss-standard page-unavailable") directleft
       li
@@ -175,7 +171,7 @@ section.navigation
     code
       = '<nav>'
       br
-      = '  <ul class="pagination">'
+      = '  <ul class="pagination unstyled">'
       br
       = '    <li><a href="" class="ss-icon ss-standard page-unavailable">directleft</a>'
       br
@@ -196,7 +192,7 @@ section.navigation
     |   class assignment need to be handled in JavaScript.
 
   nav
-    ul.tabs
+    ul.tabs.unstyled
       li
         a(href="") Tab One
       li
@@ -208,7 +204,7 @@ section.navigation
     code
       = '<nav>'
       br
-      = '  <ul class="tabs">'
+      = '  <ul class="tabs unstyled">'
       br
       = '    <li><a href=""></a>Tab</li>'
       br

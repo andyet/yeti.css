@@ -532,22 +532,22 @@
             <li><a href="">Link five</a></li>
           </ul>
         </nav>
-        <pre><code>&lt;nav role=&quot;navigation&quot; class=&quot;top-nav cf&quot;&gt;<br>  &lt;input id=&quot;hamburger&quot; class=&quot;toggle&quot; type=&quot;checkbox&quot; /&gt;<br>  &lt;label for=&quot;hamburger&quot;&gt;<br>    &lt;span&gt;&lt;/span&gt;<br>  &lt;/label&gt;<br>  &lt;ul class=&quot;cf&quot;&gt;<br>   &lt;li&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item One&lt;/a&gt;<br>   &lt;/li&gt;<br>   &lt;li class=&quot;has-dropdown&quot;&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item Two&lt;/a&gt;<br>     &lt;ul class=&quot;dropdown&quot;&gt;<br>       &lt;li&gt;&lt;a href=&quot;&quot;&gt;Nested Menu Item&lt;/a&gt;&lt;/li&gt;<br>     &lt;/ul&gt;<br>     &lt;i class=&quot;ss-icon ss-standard ss-dropdown&quot;&gt;&lt;/i&gt;<br>   &lt;/li&gt;<br>   &lt;li&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item One&lt;/a&gt;<br>   &lt;/li&gt;<br><br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
+        <pre><code>&lt;nav role=&quot;navigation&quot; class=&quot;top-nav cf&quot;&gt;<br>  &lt;input id=&quot;menu-toggle&quot; class=&quot;menu-toggle&quot; type=&quot;checkbox&quot; /&gt;<br>  &lt;label for=&quot;menu-toggle&quot;&gt;Menu&lt;/label&gt;<br>  &lt;ul class=&quot;unstyled&quot;&gt;<br>   &lt;li&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item One&lt;/a&gt;<br>   &lt;/li&gt;<br>   &lt;li class=&quot;has-dropdown&quot;&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item Two&lt;/a&gt;<br>     &lt;ul class=&quot;dropdown&quot;&gt;<br>       &lt;li&gt;&lt;a href=&quot;&quot;&gt;Nested Menu Item&lt;/a&gt;&lt;/li&gt;<br>     &lt;/ul&gt;<br>     &lt;i class=&quot;ss-icon ss-standard ss-dropdown&quot;&gt;&lt;/i&gt;<br>   &lt;/li&gt;<br>   &lt;li&gt;<br>     &lt;a href=&quot;&quot;&gt;Menu Item One&lt;/a&gt;<br>   &lt;/li&gt;<br><br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
         <h4>Breadcrumbs</h4>
         <p>For showing progress with more complex sites and apps use <code class="inline-light">breadcrumbs</code>. </p>
         <nav role="navigation">
-          <ul class="breadcrumbs">
+          <ul class="unstyled breadcrumbs">
             <li><a href="">Page One</a></li>
             <li><a href="">Page Two</a></li>
             <li><a href="" class="breadcrumb-unavailable">Unavailable Page</a></li>
             <li><a href="" class="breadcrumb-current">Current Page</a></li>
           </ul>
         </nav>
-        <pre><code>&lt;nav role=&quot;navigation&quot;&gt;<br>  &lt;ul class=&quot;breadcrumbs&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Page One&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-unavailable&quot;&gt;Unavailable Page&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-current&quot;&gt;Current Page&lt;/a&gt;&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
+        <pre><code>&lt;nav role=&quot;navigation&quot;&gt;<br>  &lt;ul class=&quot;breadcrumbs unstyled&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Page One&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-unavailable&quot;&gt;Unavailable Page&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;breadcrumb-current&quot;&gt;Current Page&lt;/a&gt;&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
         <h4>Pagination</h4>
         <p>Pagination <code class="inline-light">page-current</code> class assignment should be handled in JavaScript.</p>
         <nav>
-          <ul class="pagination">
+          <ul class="unstyled pagination">
             <li><a href="" class="ss-icon ss-standard page-unavailable">directleft</a></li>
             <li><a href="" class="page-unavailable">1</a></li>
             <li><a href="" class="page-current">2</a></li>
@@ -557,17 +557,17 @@
             <li><a href="" class="ss-icon ss-standard">directright</a></li>
           </ul>
         </nav>
-        <pre><code>&lt;nav&gt;<br>  &lt;ul class=&quot;pagination&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard page-unavailable&quot;&gt;directleft&lt;/a&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;page-unavailable&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;page-current&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard&quot;&gt;directright&lt;/a&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
+        <pre><code>&lt;nav&gt;<br>  &lt;ul class=&quot;pagination unstyled&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard page-unavailable&quot;&gt;directleft&lt;/a&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;page-unavailable&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;page-current&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;ss-icon ss-standard&quot;&gt;directright&lt;/a&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
         <h4>Tabs</h4>
         <p>Tabs state, content switch and <code class="inline-light">active</code>  class assignment need to be handled in JavaScript.</p>
         <nav>
-          <ul class="tabs">
+          <ul class="tabs unstyled">
             <li><a href="">Tab One</a></li>
             <li><a href="" class="active">Tab Two</a></li>
             <li><a href="">Tab Three</a></li>
           </ul>
         </nav>
-        <pre><code>&lt;nav&gt;<br>  &lt;ul class=&quot;tabs&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;Tab&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Active Tab&lt;/a&gt;&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
+        <pre><code>&lt;nav&gt;<br>  &lt;ul class=&quot;tabs unstyled&quot;&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;Tab&lt;/li&gt;<br>    &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Active Tab&lt;/a&gt;&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/nav&gt;</code></pre>
         <h4>Side Navigation</h4>
         <p>For side navigation use <code class="inline-light">side-nav</code>.</p>
         <nav role="navigation">
