@@ -1,14 +1,3 @@
-// Navigation
-
-nav ul
-  margin: 0
-
-  li
-    list-style-type: none
-
-  li, a
-    display: inline-block
-
 // Top Nav
 
 .top-nav
@@ -27,12 +16,8 @@ nav ul
   .logo
     float: left
 
-  li
-    padding: 0
-    float: left
-
   a
-    display: block
+    display: inline-block
     padding: 0 15px
     background-color: white
 
@@ -40,6 +25,7 @@ nav ul
       background-color: lighten($blue-lighter, 30%)
 
   .dropdown
+    margin: 0
     background-color: white
 
   &.dark
@@ -235,7 +221,7 @@ nav ul
       .has-dropdown 
         .dropdown
           display: block
-          padding-bottom: 15px
+          padding: 15px 10px
 
         li
           float: left
@@ -263,6 +249,9 @@ nav ul
 @media $desktop
   
   .top-nav
+    
+    .unstyled > li
+      float: left
     
     .has-dropdown
       position: relative
