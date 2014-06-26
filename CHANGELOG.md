@@ -1,5 +1,10 @@
 # Changelog
 
+#### v.3.1.0
+* Adds more structured comments to files
+* Removes normalize.css
+* Adds helper classes to `base.styl`
+
 #### v.3.0.0
 * Logos in SVG and PNG with various sizes and color options
 * New, simplified navigation markup and styling
