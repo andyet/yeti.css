@@ -71,6 +71,9 @@ a
   text-decoration: none
   cursor: pointer
 
+  &:focus
+    outline: none
+
   &:hover 
     color: darken($blue, 20%)
 
@@ -113,6 +116,12 @@ blockquote
     small
       color: $blue-light
 
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
 ul, ol
   margin: 15px 0 15px 20px
   padding: 0
@@ -145,3 +154,18 @@ dl
     font-weight: $font-weight-bold
   dd
     margin: 0
+
+@media $mobile-devices
+
+  .wrapper
+    width: 90%
+
+@media $desktop
+
+  .wrapper
+    width: 75%
+
+@media $desktop-wide
+
+  .wrapper
+    width: 65%
