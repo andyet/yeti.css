@@ -1,5 +1,8 @@
 # Changelog
 
+#### v.3.1.1
+* Fixes a typo in importing components.
+
 #### v.3.1.0
 * Adds more structured comments to files
 * Removes normalize.css
