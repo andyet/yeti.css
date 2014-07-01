@@ -1,5 +1,9 @@
 # Changelog
 
+#### v.3.1.2
+* Fixes background bug in navigation
+* Fixes bug with `border-collapse` in tables
+
 #### v.3.1.1
 * Fixes a typo in importing components.
 
