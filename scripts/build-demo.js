@@ -14,10 +14,9 @@ stylizer(inStyl, outCss, function (err) {
     console.log('Built ', inStyl, '->', outCss);
 });
 
-
 // Build HTML
 var inJade = path.join(demoDir, 'templates', 'index.jade');
-var outHtml = path.join(demoDir, 'index.html');
+var outHtml = path.join(__dirname, 'index.html');
 
 jade.renderFile(inJade, { pretty: true }, function (err, html) {
     fs.writeFileSync(outHtml, html);
