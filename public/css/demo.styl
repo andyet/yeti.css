@@ -46,7 +46,7 @@ footer
 .colors
 
   ul 
-    font-size: .8rem
+    font-size: $font-smaller
     text-transform: uppercase
     margin-bottom: .625em
     color: $gray
@@ -201,10 +201,11 @@ figure
 
   .colors 
     li
-      width: 15%
+      width: 220px
 
-      &:not(:first-child)
-        margin-left: .625em
+      &:not(:last-child)
+        margin-bottom: .625em
+        margin-right: .625em
 
   .column
     float: left
