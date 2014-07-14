@@ -10,14 +10,6 @@
 .media-wrapper, .figure-outlined, figure img
   border-radius: 3px
 
-a.media-wrapper
-  background-color: $blue
-  cursor: pointer 
-
-  &:hover
-    img, video
-      opacity: .5
-
 figure, .video, img
   overflow: hidden
   max-width: 100%
@@ -30,6 +22,18 @@ figure
   figcaption
     color: $gray-light
     font-size: $font-small
+
+//- Container with background
+
+a.media-wrapper
+  background-color: $blue
+  cursor: pointer 
+
+  &:hover
+    img, video
+      opacity: .5
+
+//- Outlined container
 
 .media-outlined
   padding: 5px
