@@ -14,11 +14,11 @@ html
 
 body
   font: $font-base/$line-height-base $font-sans-serif
-  //font: $font-base/$line-height-base $font-gotham
   color: $gray-dark
-  background-color: white
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
+
+//- Selection highlight
 
 ::-moz-selection
   background-color: $blue-light
@@ -28,6 +28,8 @@ body
   background-color: $blue-light
   color: white
 
+//- Clearfix
+
 .cf
   &:before,
   &:after
@@ -36,6 +38,8 @@ body
 
   &:after
     clear: both
+
+//- Headings
 
 h1, h2
   line-height: 1.1
@@ -66,6 +70,8 @@ h5
 h6
   font-size: $font-size-h6
 
+//- Links
+
 a
   color: $blue
   text-decoration: none
@@ -76,6 +82,8 @@ a
 
   &:hover 
     color: darken($blue, 20%)
+
+//- Text manipulations
 
 abbr
   color: $gray-dark
@@ -116,11 +124,24 @@ blockquote
     small
       color: $blue-light
 
+//- Helper classes
+
 .pull-left
   float: left
 
 .pull-right
   float: right
+
+.hide
+  display: none
+
+//- Images and media
+
+img, iframe, video
+  max-width: 100%
+  height: auto
+
+//- Lists
 
 ul, ol
   margin: 15px 0 15px 20px
