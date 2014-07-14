@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------------
+*
+* LISTS
+*
+--------------------------------------------------------------------*/
+
+ul, ol
+  margin: 15px 0 15px 20px
+  padding: 0
+
+  li ul
+    li
+      list-style-type: circle 
+
+  li li ul
+    li
+      list-style-type: square
+
+ul
+  li
+    list-style-type: disc
+
+  &.unstyled
+    margin: 0
+
+    li
+      display: inline-block
+      list-style-type: none
+
+ol
+  li
+    list-style-type: decimal
+
+dl
+  dt
+    font-weight: $font-weight-bold
+  dd
+    margin: 0
