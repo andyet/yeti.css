@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------------
+*
+* TYPE
+*
+--------------------------------------------------------------------*/
+
+//- Headings
+
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 $space 0
+  color: black
+  font-family: $font-gotham
+  line-height: $line-height-heading
+
+h1
+  font-size: $font-h1
+
+h2
+  font-size: $font-h2
+
+h3
+  font-size: $font-h3
+
+h4 
+  font-size: $font-h4
+
+h5
+  font-size: $font-h5
+
+h6
+  font-size: $font-h6
+  text-transform: uppercase
+  color: $gray
+
+//- Text manipulations
+
+abbr
+  color: $gray-dark
+  border-bottom: 1px dotted $gray-light
+
+small
+  font-size: $font-small
+
+blockquote
+  margin: 20px 0
+  padding: 0 20px
+  color: $gray
+  font: italic $font-large $font-sentinel
+
+  p
+    margin: 0
+
+    &:last-child
+      margin-bottom: 0
+
+  small
+    color: lighten($gray, 40%)
+
+    &:before
+      content: '\2014 \00A0'
+
+@media screen and (max-width: $breakpoint-desktop - 1)
+
+  h1
+    font-size: $mobile-font-h1
+
+  h2
+    font-size: $mobile-font-h2
+
+  h3
+    font-size: $mobile-font-h3
+
+  h4 
+    font-size: $mobile-font-h4
+
+  h5
+    font-size: $mobile-font-h5
+
+  h6
+    font-size: $mobile-font-h6
+
+  h5, h6
+    text-transform: uppercase
