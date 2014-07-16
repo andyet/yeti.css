@@ -141,17 +141,17 @@ img, iframe, video
   max-width: 100%
   height: auto
 
-@media $mobile-devices
+@media screen and (max-width: $breakpoint-desktop-1)
 
   .wrapper
     width: 90%
 
-@media $desktop
+@media screen and (min-width: $breakpoint-desktop)
 
   .wrapper
     width: 75%
 
-@media $desktop-wide
+@media screen and (min-width: $breakpoint-desktop-wide)
 
   .wrapper
     width: 65%

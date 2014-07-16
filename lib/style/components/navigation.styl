@@ -161,7 +161,7 @@
 .breadcrumbs a, .pagination a
   font-size: $font-small
 
-@media $smartphone
+@media screen and (max-width: $breakpoint-smartphone)
 
   .breadcrumbs
     padding: 0
@@ -181,7 +181,7 @@
     a
       padding: 5px 10px
 
-@media $mobile-devices
+@media screen and (max-width: $breakpoint-tablet)
 
   .top-nav:not(.dark)
     
@@ -238,7 +238,7 @@
           &:last-child
             border-bottom: 1px solid $blue-saturated-lighter
 
-@media $desktop
+@media screen and (min-width: $breakpoint-desktop)
   
   .top-nav
     
