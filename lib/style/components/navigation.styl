@@ -19,7 +19,7 @@
     background-color: white
 
   &:not(.dark)
-    border-bottom: 1px solid $gray-lighter
+    border-bottom: $ui-border
 
   .menu-toggle
     visibility: hidden
@@ -103,7 +103,7 @@
 //- Tabs
 
 .tabs
-  border-bottom: 1px solid $gray-lighter
+  border-bottom: $ui-border
 
   a
     height: 2em
@@ -113,7 +113,7 @@
     &.active
       position: relative
       top: 2px
-      border: 1px solid $gray-lighter
+      border: $ui-border
       border-bottom-color: transparent
       border-radius: 3px 3px 0 0
 
@@ -127,7 +127,7 @@
 
   li:not(:last-child)
     a
-      border-bottom: 1px solid $gray-lighter
+      border-bottom: $ui-border
 
   a
     height: 35px
@@ -140,7 +140,7 @@
 
 .breadcrumbs, .side-nav
   border-radius: 3px
-  border: 1px solid $gray-lighter
+  border: $ui-border
 
 .breadcrumbs, .side-nav, .tabs
   a
@@ -170,7 +170,7 @@
       display: block
 
     li
-      border-bottom: 1px solid $gray-lighter
+      border-bottom: $ui-border
 
       &:last-of-type
         border: none
@@ -187,7 +187,7 @@
     
     .menu-toggle:checked ~ ul
       > li
-        border-bottom: 1px solid $gray-lighter
+        border-bottom: $ui-border
 
   .top-nav
     
@@ -274,7 +274,7 @@
 
           li
             display: block
-            border-bottom: 1px solid $gray-lighter
+            border-bottom: $ui-border
 
     &.dark
 
