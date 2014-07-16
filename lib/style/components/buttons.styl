@@ -9,7 +9,7 @@ button
 
 .button, a.button
   display: inline-block
-  border-radius: 3px
+  border-radius: $default-border-radius
   padding: 6px 15px
   font: $font-weight-bold $font-base $font-gotham
   text-align: center
@@ -72,11 +72,11 @@ button
     margin-left: -1px
 
     &:first-child:only-child
-      border-radius: 3px
+      border-radius: $default-border-radius
       margin: 0
 
     &:first-child
-      border-radius: 3px 0 0 3px
+      border-radius: $default-border-radius 0 0 3px
       margin: 0
 
     &:last-child
@@ -84,7 +84,7 @@ button
 
   &.button-group-outlined
     display: inline-block
-    border-radius: 3px
+    border-radius: $default-border-radius
 
     button, .button
       border: 1px solid lighten($blue-saturated-lighter, 65%)
@@ -115,7 +115,7 @@ button
       margin: 0
 
       &:first-of-type
-        border-radius: 3px 3px 0 0
+        border-radius: $default-border-radius 3px 0 0
 
       &:last-of-type
         border-radius: 0 0 3px 3px
