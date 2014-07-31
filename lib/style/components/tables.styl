@@ -22,6 +22,11 @@ table
 
   tbody
 
+    td
+      border-bottom: $ui-border
+
+    //- Variations
+
     tr
 
       &.table-cell-error
@@ -53,14 +58,15 @@ table
 
           &:hover
             color: darken($orange, 40%)
+     
+  //- Table Striped
 
-    td
-      border-bottom: $ui-border
-      
   &.table-striped
 
     tr:nth-child(even)
       color: darken($gray-light, 20%)
+
+  //- Table Outlined
 
   &.table-outlined
     border: $ui-border
@@ -68,6 +74,8 @@ table
 
     tr:last-of-type td
       border: none
+
+  //- Table Hovers
 
   &.table-with-hover tr:hover,
   &.table-striped tr:nth-child(even)
