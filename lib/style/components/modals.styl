@@ -14,59 +14,49 @@
   -webkit-transform: translate(-50%, -50%)
   -ms-transform: translate(-50%, -50%)
   background-color: white
+  -webkit-overflow-scrolling: touch
 
   &.modal-no-head
-    padding: 40px 20px 20px 20px
-    text-align: center
-    font-size: $font-large
+    padding: $ui-padding
 
-  .modal-close
-    display: block
-    position: absolute
-    top: 23px
-    right: 20px
-    font-size: $font-small
-    opacity: .2
-    color: $gray
-
-    &:hover
-      opacity: 1
-
-  h1, h2, h3, h4
+  .modal-title
     margin: 0
 
   .modal-head, .modal-body
-    padding: 20px
+    padding: $ui-padding
 
   .modal-head
-    margin-bottom: 20px
     border-bottom: $ui-border
 
-  .modal-body
-    padding-top: 0
-
-    p:first-of-type
-      margin-top: 0
-
-  .modal-button-wrapper
-    margin-top: 30px
+  .modal-footer
+    padding: $ui-padding 0
     text-align: center
+    border-top: $ui-border
 
     button, .button
-      width: 35%
+      min-width: 120px
 
-    button:only-child, .button-only-child
-      min-width: 60%
+    button + button,
+    .button + .button
+      margin-left: 5px
 
-    button:not(:last-child), .button:not(:last-child)
-      margin-right: 5px
+  .modal-close
+    float: right
+    color: $gray-light
+    line-height: 1
+    font-weight: bold
+    font-size: $font-large
+
+    &:hover
+      color: $gray
 
 //- Overlay
 
 .has-modal&:before
   content: ''
 
-.overlay, .has-modal:before
+.overlay, 
+.has-modal:before
   position: fixed
   top: 0
   left: 0
@@ -83,14 +73,20 @@
     width: 100%
     top: 0
     left: 0
-    margin: 0
     border-radius: 0
     transform: none
     -webkit-transform: none
     -ms-transform: none
 
-@media screen and (min-width: $breakpoint-tablet)
+@media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-tablet)
 
   .modal
-    height: 50%
+    width: 80%
+
+@media screen and (min-width: $breakpoint-tablet+1)
+
+  .modal
     width: 50%
+
+  .modal-close
+    margin-top: 5px
