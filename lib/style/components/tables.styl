@@ -1,34 +1,17 @@
 /*--------------------------------------------------------------------
 *
-* TABLES
+* $TABLES
 *
 --------------------------------------------------------------------*/
 
 table 
   width: 100%
-  margin-bottom: 20px
-  background-color: white
-  border-collapse: inherit
-
-  &.table-striped
-
-    tr:nth-child(even)
-      color: darken($gray-light, 20%)
-
-  &.table-outlined
-    border: $ui-border
-    border-radius: $default-border-radius
-
-    tr:last-of-type td
-      border: none
-
-  &.table-with-hover tr:hover,
-  &.table-striped tr:nth-child(even)
-    background-color: lighten($gray-lighter, 70%)
+  max-width: 100%
+  margin-bottom: $space
 
   td, th
     text-align: left
-    padding: 7px 10px
+    padding: ceil($ui-padding*.5)
 
   thead 
 
@@ -74,3 +57,18 @@ table
     td
       border-bottom: $ui-border
       
+  &.table-striped
+
+    tr:nth-child(even)
+      color: darken($gray-light, 20%)
+
+  &.table-outlined
+    border: $ui-border
+    border-radius: $default-border-radius
+
+    tr:last-of-type td
+      border: none
+
+  &.table-with-hover tr:hover,
+  &.table-striped tr:nth-child(even)
+    background-color: lighten($gray-lighter, 70%)
