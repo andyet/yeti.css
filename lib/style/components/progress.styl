@@ -4,21 +4,33 @@
 *
 --------------------------------------------------------------------*/
 
-.progress, .meter
+.progress, 
+.meter
   border-radius: $default-border-radius
   line-height: 0
 
-.progress.progress-rounded, .progress-rounded .meter
+.progress.progress-rounded, 
+.progress-rounded .meter
   border-radius: 50px
 
 .progress
   background: lighten($gray-lighter, 50%)
+
+  .meter
+    display: inline-block
+    background-color: $blue
+    min-width: 50% // dummy value
+    height: 100%
+
+  //- Sizes
 
   &.progress-small
     height: 15px
 
   &.progress-large
     height: 25px
+
+  //- Variations
 
   &.progress-success
     .meter
@@ -31,23 +43,3 @@
   &.progress-error
     .meter
       background-color: $red
-
-  .meter
-    display: inline-block
-    background-color: $blue
-    width: 50%
-    height: 100%
-    -webkit-animation: progress 4s linear 1
-    animation: progress 4s linear 1
-
-@-webkit-keyframes progress
-  0%
-    width: 0
-  100%
-    width: 50%
-
-@keyframes progress
-  0%
-    width: 0
-  100%
-    width: 50%
