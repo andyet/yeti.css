@@ -72,3 +72,10 @@ table
   &.table-with-hover tr:hover,
   &.table-striped tr:nth-child(even)
     background-color: lighten($gray-lighter, 70%)
+
+@media screen and (max-width: $breakpoint-tablet - 1)
+
+  table
+    
+    td, th
+      padding: ceil($ui-padding*.25) ceil($ui-padding*.5)
