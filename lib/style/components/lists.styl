@@ -5,31 +5,34 @@
 --------------------------------------------------------------------*/
 
 ul, ol
-  margin: 15px 0 15px 20px
-  padding: 0
+  margin: 0 0 $space 0
+  padding-left: $ui-padding*2
+
+  li > ul,
+  li > ol
+    margin-top: $space
 
   li ul
     li
-      list-style-type: circle 
+      list-style: circle 
 
   li li ul
     li
-      list-style-type: square
+      list-style: square
 
 ul
   li
-    list-style-type: disc
+    list-style: disc
 
-  &.unstyled
-    margin: 0
+  &.list-unstyled
+    padding-left: 0
+    
+    li
+      list-style: none
 
+  &.list-inline
     li
       display: inline-block
-      list-style-type: none
-
-ol
-  li
-    list-style-type: decimal
 
 dl
   dt
