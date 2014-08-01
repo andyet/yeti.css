@@ -5,20 +5,19 @@
 --------------------------------------------------------------------*/
 
 .message
-  padding: 10px 15px
+  padding: $ui-padding
   position: relative
   background-color: $blue-lighter
   color: $blue
-  line-height: 1.2
 
   &:after
     border: solid transparent
-    content: " "
+    content: ''
     height: 0
     width: 0
     position: absolute
     pointer-events: none
-    border-color: rgba(136, 183, 213, 0)
+    border-color: rgba(255, 255, 255, 0)
     border-width: 6px
 
   &.message-left, &.message-right
@@ -120,13 +119,15 @@
     margin: 0
 
   //- Message iconography
-  .ss-icon.ss-delete
+  .close
     display: block
     position: absolute
     top: 50%
     right: 15px
-    margin-top: -7px
+    margin-top: -15px
     cursor: pointer
+    font-size: large
+    font-weight: bold
 
   //- Validation coloring
   &.message-error
@@ -139,7 +140,7 @@
       &:hover
         color: darken($red, 40%)
 
-    .ss-delete
+    .close
       color: $red-light
 
       &:hover
@@ -149,7 +150,7 @@
     background-color: $orange-lighter
     color: $orange
 
-    .ss-delete
+    .close
       color: $orange-light
 
       &:hover
@@ -165,7 +166,7 @@
     background-color: $green-lighter
     color: $green
 
-    .ss-delete
+    .close
       color: $green-light
 
       &:hover
@@ -178,11 +179,8 @@
         color: darken($green, 40%)
 
   &.message-has-icon 
-    padding: 10px 35px 10px 15px
+    padding-right: $ui-padding*2
 
   &.message-full-width
     text-align: center
-
-    &.message-has-icon
-      padding: 10px 35px
 
