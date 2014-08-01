@@ -250,38 +250,38 @@
           <fieldset>
             <legend>Regular form</legend>
             <label>Username</label>
-            <input type="text" placeholder="Insert your username">
+            <input type="text" placeholder="Insert your username" class="input">
             <label>Write a comment</label>
-            <textarea>This is a sample message</textarea>
+            <textarea class="input">This is a sample message</textarea>
             <button type="submit" class="button button-primary">Send</button>
           </fieldset>
         </form>
         <pre><code>&lt;form&gt;<br>  &lt;fieldset&gt;<br>    &lt;legend&gt;Regular Form&lt;/legend&gt;<br>    &lt;label&gt;Username&lt;/label&gt;<br>    &lt;input type=&quot;text&quot; placeholder=&quot;Insert your username&quot;&gt;<br>    &lt;label&gt;Write a comment&lt;/label&gt;<br>    &lt;textarea&gt;&lt;/textarea&gt;<br>    &lt;button type=&quot;submit&quot;&gt;Send&lt;/button&gt;<br>  &lt;/fieldset&gt;<br>&lt;/form&gt;</code></pre>
         <h4>Required inputs</h4>
-        <input type="text" placeholder="This input is required" required>
+        <input type="text" placeholder="This input is required" required class="input">
         <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;This input is required&quot; required&gt;</code></pre>
         <h4>Disabled inputs</h4>
         <p>
            
           To disable a form element add <code class="inline-light">disabled</code> attribute.
         </p>
-        <input type="text" placeholder="This input is disabled" disabled>
+        <input type="text" placeholder="This input is disabled" disabled class="input">
         <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;This input is disabled&quot; disabled&gt;</code></pre>
         <h4>Input validity</h4>
         <p>Sometimes you need to validate your forms. To have meaningful styling for valid and invalid inputs add <code class="inline-light">input-valid</code> and <code class="inline-light">input-invalid</code> classes respectively.</p>
-        <input type="text" value="@CNN" class="input-invalid">
-        <input type="text" value="John Doe" class="input-valid">
+        <input type="text" value="@CNN" class="input-invalid input">
+        <input type="text" value="John Doe" class="input-valid input">
         <pre><code>&lt;input type=&quot;text&quot; class=&quot;input-invalid&quot;&gt;<br>&lt;input type=&quot;text&quot; class=&quot;input-valid&quot;&gt;</code></pre>
         <h4>Other form elements</h4>
         <p>For radio and checkbox usage make sure to add <code class="inline-light">checkbox</code> and <code class="inline-light">radio</code> class to the label wrapping the actual input.</p>
         <form>
           <fieldset>
-            <input type="file">
+            <input type="file" class="input">
             <label class="disabled checkbox">
-              <input type="checkbox" disabled>This is a disabled checkbox
+              <input type="checkbox" disabled class="input">This is a disabled checkbox
             </label>
             <label class="radio">
-              <input type="radio">This is a radio button
+              <input type="radio" class="input">This is a radio button
             </label>
             <select>
               <option>Option One</option>

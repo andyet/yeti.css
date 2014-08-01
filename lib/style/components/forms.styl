@@ -5,13 +5,15 @@
 --------------------------------------------------------------------*/
 
 form
+  
+  legend, .input
+    margin-bottom: $space*.5
+
+  legend, label
+    font-weight: $font-weight-bold
+
   legend
-    display: block
-    border: 0
-    width: 100%
-    margin-bottom: 1.25em
     font-size: $font-large
-    font-weight: bold
     color: black
 
   fieldset
@@ -22,20 +24,22 @@ form
   label
     display: block
     margin-bottom: 5px
-    font-weight: $font-weight-bold
     font-size: $font-small
 
-input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
-  margin-bottom: 10px
-  width: 100%
-  -webkit-appearance: none
-  font-size: $font-base
-  line-height: inherit
+  label, .input
+    font-family: $font-gotham
+
+  .input
+    padding: ceil($ui-padding*.75)
+    width: 100%
+    -webkit-appearance: none
+    line-height: inherit
 
 //- Validation classes
 
-input[type=text], input[type=email], input[type=password], input[type=search], 
-input[type=date], input[type=url], input[type=file], textarea, select, input[type=checkbox], input[type=radio]
+input, 
+textarea, 
+select
 
   &:disabled
     cursor: not-allowed
@@ -77,11 +81,7 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
   &:required:focus
     border: 1px solid $orange-light
 
-input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url]
-  padding: 10px 12px
-
 textarea
-  padding: 10px
   resize: none
 
 //- Files

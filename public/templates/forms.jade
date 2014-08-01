@@ -8,11 +8,10 @@ section.forms
     fieldset
       legend Regular form
       label Username
-      input(type="text", placeholder="Insert your username")
+      input(type="text", placeholder="Insert your username", class='input')
 
       label Write a comment
-      textarea
-        | This is a sample message
+      textarea.input This is a sample message
 
       button(type="submit", class="button button-primary") Send
 
@@ -39,7 +38,7 @@ section.forms
       = '</form>'
 
   h4 Required inputs
-  input(type="text", placeholder="This input is required", required)
+  input(type="text", placeholder="This input is required", required, class='input')
 
   pre
     code
@@ -51,7 +50,7 @@ section.forms
     code.inline-light disabled
     |  attribute.
 
-  input(type="text", placeholder="This input is disabled", disabled)
+  input(type="text", placeholder="This input is disabled", disabled, class='input')
 
   pre
     code 
@@ -65,8 +64,8 @@ section.forms
     code.inline-light input-invalid
     |  classes respectively.
 
-  input(type="text", value="@CNN", class="input-invalid")
-  input(type="text", value="John Doe", class="input-valid")
+  input(type="text", value="@CNN", class="input-invalid", class='input')
+  input(type="text", value="John Doe", class="input-valid", class='input')
 
   pre
     code
@@ -84,14 +83,14 @@ section.forms
 
   form
     fieldset
-      input(type="file")
+      input(type="file", class='input')
 
       label.disabled.checkbox
-        input(type="checkbox", disabled)
+        input(type="checkbox", disabled, class='input')
         | This is a disabled checkbox
 
       label.radio
-        input(type="radio")
+        input(type="radio", class='input')
         | This is a radio button
 
       select
