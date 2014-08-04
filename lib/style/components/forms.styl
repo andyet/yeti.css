@@ -28,21 +28,13 @@ label
 label, .form-input, .form-radio, .form-checkbox
   font-family: $font-gotham
 
-//- Validation classes
-
-input, 
-textarea, 
-select
-
-  &:disabled
-    cursor: not-allowed
-
 //- General inputs
 
 .form-input
   display: block
   padding: ceil($ui-padding*.75)
   width: 100%
+  border: 0
   border-radius: $default-border-radius
   box-shadow: 0 0 0 2px $gray-lighter
   -webkit-appearance: none
@@ -55,6 +47,7 @@ select
 
   &:disabled
     background-color: lighten($gray-lighter, 60%)
+    cursor: not-allowed
 
   &:required:focus
     box-shadow: 0 0 0 2px $orange-light
