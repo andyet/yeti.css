@@ -4,7 +4,7 @@
 *
 --------------------------------------------------------------------*/
   
-legend, input, .input
+legend, input, .input, select
   margin-bottom: $space*.5
 
 legend, label
@@ -59,7 +59,10 @@ select
 
 //- General inputs
 
-input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea, select
+input[type=text], input[type=email], 
+input[type=password], input[type=search], 
+input[type=date], input[type=url], 
+input[type=file], textarea, select
   display: block
   border-radius: $default-border-radius
   border: $ui-border
@@ -79,6 +82,12 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
 textarea
   resize: none
 
+input[type=file],
+label.radio,
+label.checkbox,
+select
+  cursor: pointer
+
 //- Files
 
 input[type=file]
@@ -86,7 +95,6 @@ input[type=file]
   background-color: lighten($gray-lighter, 70%)
   font-size: $font-small
   color: $gray-light
-  line-height: 1
 
 //- Selects
 
@@ -94,16 +102,15 @@ select
   border: $ui-border
   height: 30px
   width: 100%
-  margin: 20px 0
-
+  outline: 0
   
 //- Labels
 
-label.radio, label.checkbox
+label.radio, 
+label.checkbox
   margin: 5px 0
   font-size: $font-base
   font-weight: normal
-  cursor: pointer
 
   &.disabled
     color: $gray-light
