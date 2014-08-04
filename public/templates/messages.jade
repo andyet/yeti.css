@@ -17,51 +17,22 @@ section.messages
   .message
     p 
       | This is a message. 
-      a(href="") This is a link.
+      a(href='') This is a link.
 
   .message.message-error
     p 
       | This is an error. 
-      a(href="") This is a link.
+      a(href='') This is a link.
 
   .message.message-alert
     p
       | This is an alert. 
-      a(href="") This is a link.
+      a(href='') This is a link.
 
   .message.message-success
     p 
       | This is a success message. 
-      a(href="") This is a link.
-
-  pre
-    code
-      = '<div class="message">'
-      br
-      = '  <p>This is a message</p>'
-      br
-      = '</div>'
-      br
-      br
-      = '<div class="message message-alert">'
-      br
-      = '  <p>This is an alert</p>'
-      br
-      = '</div>'
-      br
-      br
-      = '<div class="message message-error">'
-      br
-      = '  <p>This is an error</p>'
-      br
-      = '</div>'
-      br
-      br
-      = '<div class="message message-success">'
-      br
-      = '  <p>This is a success message</p>'
-      br
-      = '</div>'
+      a(href='') This is a link.
 
   h4 Dismissable messages
   p 
@@ -75,25 +46,15 @@ section.messages
 
   .message.message-error.message-has-icon
     p This is an error that can be dismissed.
-    a(class="close", title="Close") &times;
+    a(class='close', title='Close') &times;
 
   .message.message-alert.message-has-icon
     p This is an alert that can be dismissed.
-    a(class="close", title="Close") &times;
+    a(class='close', title='Close') &times;
 
   .message.message-success.message-has-icon
     p This is a success message that can be dismissed.
-    a(class="close", title="Close") &times;
-
-  pre
-    code
-      = '<div class="message message-success message-has-icon">'
-      br
-      = '  <p>This is a success message that can be dismissed</p>'
-      br
-      = '  <a href="" class="ss-icon ss-standard ss-delete", title="Close"></a>'
-      br
-      = '</div>'
+    a(class='close', title='Close') &times;
 
   h4 Full width dismissable messages
   p 
@@ -104,17 +65,7 @@ section.messages
 
   .message.message-success.message-full-width.message-has-icon
     p This is a full width success message that can be dismissed.
-    a(class="close", title="Close") &times;
-
-  pre
-    code
-      = '<div class="message message-full-width">'
-      br
-      = '  <p>This is a success message that can be dismissed</p>'
-      br
-      = '  <a href="" class="ss-icon ss-standard ss-delete", title="Close"></a>'
-      br
-      = '</div>'
+    a(class='close', title='Close') &times;
 
   h4 Message positioning
   p 

@@ -7,108 +7,67 @@ section.navigation
    code.inline-light top-nav
    |  class. Navigation is mobile friendly and features a hamburger icon for mobile screens.
 
-  nav(class="top-nav cf", role="navigation")
+  nav(class='top-nav cf', role='navigation')
 
-    input(id="menu-toggle", class="menu-toggle", type="checkbox")
-    label(for="menu-toggle") Menu
-
-    ul.list-unstyled.list-inline.cf
-      li
-        a(href="") Link one
-      li
-        a(href="") Link two
-      li
-        a(href="") Link three
-      li.has-dropdown
-        a(href="", class="active") Link four
-        i.ss-icon.ss-standard dropdown
-        ul.dropdown.cf
-          li
-            a(href="") Sublink one
-          li
-            a(href="") Sublink two
-          li
-            a(href="") Sublink three
-          li
-            a(href="") Sublink four
-          li
-            a(href="") Sublink five
-          li
-            a(href="") Sublink six
-      li
-        a(href="") Link five
-
-  nav(class="top-nav dark cf", role="navigation")
-
-    input(id="menu-toggle-1", class="menu-toggle", type="checkbox")
-    label(for="menu-toggle-1") Menu
+    input(id='menu-toggle', class='menu-toggle', type='checkbox')
+    label(for='menu-toggle') Menu
 
     ul.list-unstyled.list-inline.cf
       li
-        a(href="") Link one
+        a(href='') Link one
       li
-        a(href="") Link two
+        a(href='') Link two
       li
-        a(href="") Link three
+        a(href='') Link three
       li.has-dropdown
-        a(href="", class="active") Link four
+        a(href='', class='active') Link four
         i.ss-icon.ss-standard dropdown
         ul.dropdown.cf
           li
-            a(href="") Sublink one
+            a(href='') Sublink one
           li
-            a(href="") Sublink two
+            a(href='') Sublink two
           li
-            a(href="") Sublink three
+            a(href='') Sublink three
           li
-            a(href="") Sublink four
+            a(href='') Sublink four
           li
-            a(href="") Sublink five
+            a(href='') Sublink five
           li
-            a(href="") Sublink six
+            a(href='') Sublink six
       li
-        a(href="") Link five
+        a(href='') Link five
 
-  pre
-    code
-      = '<nav role="navigation" class="top-nav cf">'
-      br
-      = '  <input id="menu-toggle" class="menu-toggle" type="checkbox" />'
-      br
-      = '  <label for="menu-toggle">Menu</label>'
-      br
-      = '  <ul class="unstyled">'
-      br
-      = '   <li>'
-      br
-      = '     <a href="">Menu Item One</a>'
-      br
-      = '   </li>'
-      br
-      = '   <li class="has-dropdown">'
-      br
-      = '     <a href="">Menu Item Two</a>'
-      br
-      = '     <ul class="dropdown">'
-      br
-      = '       <li><a href="">Nested Menu Item</a></li>'
-      br
-      = '     </ul>'
-      br
-      = '     <i class="ss-icon ss-standard ss-dropdown"></i>'
-      br
-      = '   </li>'
-      br
-      = '   <li>'
-      br
-      = '     <a href="">Menu Item One</a>'
-      br
-      = '   </li>'
-      br
-      br
-      = '  </ul>'
-      br
-      = '</nav>'
+  nav(class='top-nav dark cf', role='navigation')
+
+    input(id='menu-toggle-1', class='menu-toggle', type='checkbox')
+    label(for='menu-toggle-1') Menu
+
+    ul.list-unstyled.list-inline.cf
+      li
+        a(href='') Link one
+      li
+        a(href='') Link two
+      li
+        a(href='') Link three
+      li.has-dropdown
+        a(href='', class='active') Link four
+        i.ss-icon.ss-standard dropdown
+        ul.dropdown.cf
+          li
+            a(href='') Sublink one
+          li
+            a(href='') Sublink two
+          li
+            a(href='') Sublink three
+          li
+            a(href='') Sublink four
+          li
+            a(href='') Sublink five
+          li
+            a(href='') Sublink six
+      li
+        a(href='') Link five
 
   h4 Breadcrumbs
   p
@@ -116,32 +75,16 @@ section.navigation
     code.inline-light breadcrumbs
     | . 
 
-  nav(role="navigation")
+  nav(role='navigation')
     ul.list-unstyled.list-inline.breadcrumbs
       li
-        a(href="") Page One
+        a(href='') Page One
       li
-        a(href="") Page Two
+        a(href='') Page Two
       li
-        a(href="", class="breadcrumb-unavailable") Unavailable Page
+        a(href='', class='breadcrumb-unavailable') Unavailable Page
       li
-        a(href="", class="breadcrumb-current") Current Page
-
-  pre
-    code
-      = '<nav role="navigation">'
-      br
-      = '  <ul class="breadcrumbs unstyled">'
-      br
-      = '    <li><a href="">Page One</a></li>'
-      br
-      = '    <li><a href="" class="breadcrumb-unavailable">Unavailable Page</a></li>'
-      br
-      = '    <li><a href="" class="breadcrumb-current">Current Page</a></li>'
-      br
-      = '  </ul>'
-      br
-      = '</nav>'
+        a(href='', class='breadcrumb-current') Current Page
 
   h4 Pagination
 
@@ -153,37 +96,19 @@ section.navigation
   nav
     ul.list-unstyled.list-inline.pagination
       li
-        a(href="", class="ss-icon ss-standard page-unavailable") directleft
+        a(href='', class='ss-icon ss-standard page-unavailable') directleft
       li
-        a(href="", class="page-unavailable") 1
+        a(href='', class='page-unavailable') 1
       li
-        a(href="", class="page-current") 2
+        a(href='', class='page-current') 2
       li
-        a(href="") 3
+        a(href='') 3
       li
-        a(href="") 4
+        a(href='') 4
       li
-        a(href="") 5
+        a(href='') 5
       li
-        a(href="", class="ss-icon ss-standard") directright
-
-  pre
-    code
-      = '<nav>'
-      br
-      = '  <ul class="pagination unstyled">'
-      br
-      = '    <li><a href="" class="ss-icon ss-standard page-unavailable">directleft</a>'
-      br
-      = '    <li><a href="" class="page-unavailable">1</a></li>'
-      br
-      = '    <li><a href="" class="page-current">2</a></li>'
-      br
-      = '    <li><a href="" class="ss-icon ss-standard">directright</a>'
-      br
-      = '  </ul>'
-      br
-      = '</nav>'
+        a(href='', class='ss-icon ss-standard') directright
 
   h4 Tabs
   p 
@@ -194,25 +119,11 @@ section.navigation
   nav
     ul.tabs.list-unstyled.list-inline
       li
-        a(href="") Tab One
+        a(href='') Tab One
       li
-        a(href="", class="active") Tab Two
+        a(href='', class='active') Tab Two
       li
-        a(href="") Tab Three
-
-  pre
-    code
-      = '<nav>'
-      br
-      = '  <ul class="tabs unstyled">'
-      br
-      = '    <li><a href=""></a>Tab</li>'
-      br
-      = '    <li><a href="" class="active">Active Tab</a></li>'
-      br
-      = '  </ul>'
-      br 
-      = '</nav>'
+        a(href='') Tab Three
 
   h4 Side Navigation
   p 
@@ -220,23 +131,11 @@ section.navigation
     code.inline-light side-nav
     | .
 
-  nav(role="navigation")
+  nav(role='navigation')
     ul.side-nav
       li
-        a(href="") Option One
+        a(href='') Option One
       li
-        a(href="", class="active") Option Two
+        a(href='', class='active') Option Two
       li
-        a(href="") Option Three
-
-  pre
-    code
-      = '<nav>'
-      br
-      = '  <ul class="side-nav">'
-      br
-      = '    <li><a href=""></a><li>'
-      br 
-      = '  </ul>'  
-      br
-      = '</nav>'
+        a(href='') Option Three

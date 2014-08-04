@@ -4,7 +4,8 @@
 *
 --------------------------------------------------------------------*/
   
-legend, input, .input, select
+legend, select, 
+.form-input, .form-checkbox, .form-radio
   margin-bottom: $space*.5
 
 legend, label
@@ -24,10 +25,10 @@ label
   margin-bottom: 5px
   font-size: $font-small
 
-label, .input, input
+label, .form-input, .form-radio, .form-checkbox
   font-family: $font-gotham
 
-.input
+.form-input
   padding: ceil($ui-padding*.75)
   width: 100%
   -webkit-appearance: none

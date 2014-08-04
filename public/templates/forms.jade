@@ -8,41 +8,15 @@ section.forms
     fieldset
       legend Regular form
       label Username
-      input(type="text", placeholder="Insert your username", class='input')
+      input(type='text', placeholder='Insert your username', class='form-input')
 
       label Write a comment
       textarea.input This is a sample message
 
-      button(type="submit", class="button button-primary") Send
-
-  pre
-    code
-      = '<form>'
-      br
-      = '  <fieldset>'
-      br
-      = '    <legend>Regular Form</legend>'
-      br
-      = '    <label>Username</label>'
-      br
-      = '    <input type="text" placeholder="Insert your username">'
-      br
-      = '    <label>Write a comment</label>'
-      br
-      = '    <textarea></textarea>'
-      br
-      = '    <button type="submit">Send</button>'
-      br
-      = '  </fieldset>'
-      br
-      = '</form>'
+      button(type='submit', class='button button-primary') Send
 
   h4 Required inputs
-  input(type="text", placeholder="This input is required", required, class='input')
-
-  pre
-    code
-      = '<input type="text" placeholder="This input is required" required>'
+  input(type='text', placeholder='This input is required', required, class='form-input')
 
   h4 Disabled inputs
   p  
@@ -50,11 +24,7 @@ section.forms
     code.inline-light disabled
     |  attribute.
 
-  input(type="text", placeholder="This input is disabled", disabled, class='input')
-
-  pre
-    code 
-      = '<input type="text" placeholder="This input is disabled" disabled>'
+  input(type='text', placeholder='This input is disabled', disabled, class='form-input')
 
   h4 Input validity
   p 
@@ -64,14 +34,8 @@ section.forms
     code.inline-light input-invalid
     |  classes respectively.
 
-  input(type="text", value="@CNN", class="input-invalid", class='input')
-  input(type="text", value="John Doe", class="input-valid", class='input')
-
-  pre
-    code
-      = '<input type="text" class="input-invalid">'
-      br
-      = '<input type="text" class="input-valid">'
+  input(type='text', value='@CNN', class='input-invalid', class='form-input')
+  input(type='text', value='John Doe', class='input-valid', class='form-input')
 
   h4 Other form elements
   p
@@ -83,39 +47,16 @@ section.forms
 
   form
     fieldset
-      input(type="file", class='input')
+      input(type='file', class='form-input')
 
       label.disabled.checkbox
-        input(type="checkbox", disabled)
+        input(type='checkbox', disabled)
         | This is a disabled checkbox
 
       label.radio
-        input(type="radio")
+        input(type='radio')
         | This is a radio button
 
       select
         option Option One
-
-  pre
-    code
-      = '<input type="file">'
-      br
-      = '<label class="checkbox" disabled>'
-      br
-      = '  <input type="checkbox" disabled> This is a disabled checkbox'
-      br
-      = '</label>'
-      br
-      = '<label class="radio">'
-      br
-      = '  <input type="radio"> This is a radio buttion'
-      br
-      = '</label>'
-      br
-      = '<select>'
-      br
-      = '  <option>Option One</option>'
-      br
-      = '</select>'
-
 
