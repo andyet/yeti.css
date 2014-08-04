@@ -3,37 +3,34 @@
 * $FORMS
 *
 --------------------------------------------------------------------*/
-
-form
   
-  legend, .input
-    margin-bottom: $space*.5
+legend, input, .input
+  margin-bottom: $space*.5
 
-  legend, label
-    font-weight: $font-weight-bold
+legend, label
+  font-weight: $font-weight-bold
 
-  legend
-    font-size: $font-large
-    color: black
+legend
+  font-size: $font-large
+  color: black
 
-  fieldset
-    border: none
-    padding: 0
-    margin: 0
+fieldset
+  border: none
+  padding: 0
+  margin: 0
 
-  label
-    display: block
-    margin-bottom: 5px
-    font-size: $font-small
+label
+  display: block
+  margin-bottom: 5px
+  font-size: $font-small
 
-  label, .input
-    font-family: $font-gotham
+label, .input, input
+  font-family: $font-gotham
 
-  .input
-    padding: ceil($ui-padding*.75)
-    width: 100%
-    -webkit-appearance: none
-    line-height: inherit
+.input
+  padding: ceil($ui-padding*.75)
+  width: 100%
+  -webkit-appearance: none
 
 //- Validation classes
 
@@ -44,23 +41,21 @@ select
   &:disabled
     cursor: not-allowed
 
-input[type=text], input[type=email], input[type=password], input[type=search], input[type=date], input[type=url], input[type=file], textarea
+.input-invalid
+  background-color: $red-lighter
+  border: 1px solid $red-light
+  color: lighten($red, 50%)
 
-  &.input-invalid
-    background-color: $red-lighter
-    border: 1px solid $red-light
-    color: lighten($red, 50%)
+  &:focus
+    border: 1px solid $red
 
-    &:focus
-      border: 1px solid $red
+.input-valid
+  background-color: $green-lighter
+  border: 1px solid $green-light
+  color: lighten($green, 40%)
 
-  &.input-valid
-    background-color: $green-lighter
-    border: 1px solid $green-light
-    color: lighten($green, 40%)
-
-    &:focus
-      border: 1px solid $green
+  &:focus
+    border: 1px solid $green
 
 //- General inputs
 
