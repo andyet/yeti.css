@@ -28,8 +28,15 @@ label
 label, select, .form-input
   font-family: $font-gotham
 
-.form-input, select
+select,
+.form-input
   border: 0
+
+select,
+.form-input,
+.form-radio,
+.form-checkbox
+  outline: 0
 
 //- General inputs
 
@@ -44,7 +51,6 @@ label, select, .form-input
   appearance: none
 
   &:focus
-    outline: 0
     transition: all .2s ease-in
     -webkit-transition: all .2s ease-in
     box-shadow: 0 0 0 2px $blue-light
@@ -96,7 +102,6 @@ select
   height: 40px
   padding: ceil($ui-padding*.75)
   width: 100%
-  outline: 0
   background-color: white
 
   &:focus
@@ -106,10 +111,10 @@ select
     color: transparent
     text-shadow: 0 0 0 #000
   
-//- Labels
+//- Radio and Checkbox
 
-label.radio, 
-label.checkbox
+.input-radio, 
+.input-checkbox
   margin: 5px 0
   font-size: $font-base
   font-weight: normal
@@ -121,6 +126,3 @@ label.checkbox
   input[type=checkbox], input[type=radio]
     display: inline-block
     margin-right: 10px
-
-    &:focus
-      outline: 0
