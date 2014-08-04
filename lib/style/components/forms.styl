@@ -25,8 +25,11 @@ label
   margin-bottom: 5px
   font-size: $font-small
 
-label, .form-input, .form-radio, .form-checkbox
+label, select, .form-input
   font-family: $font-gotham
+
+.form-input, select
+  border: 0
 
 //- General inputs
 
@@ -34,13 +37,14 @@ label, .form-input, .form-radio, .form-checkbox
   display: block
   padding: ceil($ui-padding*.75)
   width: 100%
-  border: 0
   border-radius: $default-border-radius
   box-shadow: 0 0 0 2px $gray-lighter
   -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
 
   &:focus
-    outline: none
+    outline: 0
     transition: all .2s ease-in
     -webkit-transition: all .2s ease-in
     box-shadow: 0 0 0 2px $blue-light
@@ -88,13 +92,19 @@ input[type=file]
 //- Selects
 
 select
-  border: $ui-border
-  height: 30px
+  box-shadow: 0 0 0 2px $gray-lighter
+  height: 40px
+  padding: ceil($ui-padding*.75)
   width: 100%
   outline: 0
+  background-color: white
 
   &:focus
     box-shadow: 0 0 0 2px $blue-light
+
+  &:focus:-moz-focusring
+    color: transparent
+    text-shadow: 0 0 0 #000
   
 //- Labels
 
