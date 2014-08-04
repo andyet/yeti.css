@@ -28,11 +28,6 @@ label
 label, .form-input, .form-radio, .form-checkbox
   font-family: $font-gotham
 
-.form-input
-  padding: ceil($ui-padding*.75)
-  width: 100%
-  -webkit-appearance: none
-
 //- Validation classes
 
 input, 
@@ -42,43 +37,43 @@ select
   &:disabled
     cursor: not-allowed
 
-.input-invalid
-  background-color: $red-lighter
-  border: 1px solid $red-light
-  color: lighten($red, 50%)
-
-  &:focus
-    border: 1px solid $red
-
-.input-valid
-  background-color: $green-lighter
-  border: 1px solid $green-light
-  color: lighten($green, 40%)
-
-  &:focus
-    border: 1px solid $green
-
 //- General inputs
 
-input[type=text], input[type=email], 
-input[type=password], input[type=search], 
-input[type=date], input[type=url], 
-input[type=file], textarea, select
+.form-input
   display: block
+  padding: ceil($ui-padding*.75)
+  width: 100%
   border-radius: $default-border-radius
-  border: $ui-border
+  box-shadow: 0 0 0 2px $gray-lighter
+  -webkit-appearance: none
 
   &:focus
     outline: none
-    border: 1px solid $blue-light
-    transition: all .3s ease-in
-    -webkit-transition: all .3s ease-in
+    transition: all .2s ease-in
+    -webkit-transition: all .2s ease-in
+    box-shadow: 0 0 0 2px $blue-light
 
   &:disabled
     background-color: lighten($gray-lighter, 60%)
 
   &:required:focus
-    border: 1px solid $orange-light
+    box-shadow: 0 0 0 2px $orange-light
+
+  &.input-invalid
+    background-color: $red-lighter
+    box-shadow: 0 0 0 2px $red-light
+    color: lighten($red, 50%)
+
+    &:focus
+      box-shadow: 0 0 0 2px $red
+
+  &.input-valid
+    background-color: $green-lighter
+    box-shadow: 0 0 0 2px $green-light
+    color: lighten($green, 40%)
+
+    &:focus
+      box-shadow: 0 0 0 2px $green
 
 textarea
   resize: none
@@ -92,7 +87,7 @@ select
 //- Files
 
 input[type=file]
-  padding: 15px
+  padding: $ui-padding
   background-color: lighten($gray-lighter, 70%)
   font-size: $font-small
   color: $gray-light
@@ -104,6 +99,9 @@ select
   height: 30px
   width: 100%
   outline: 0
+
+  &:focus
+    box-shadow: 0 0 0 2px $blue-light
   
 //- Labels
 
@@ -122,4 +120,4 @@ label.checkbox
     margin-right: 10px
 
     &:focus
-      outline: none
+      outline: 0
