@@ -4,11 +4,25 @@
 *
 ------------------------------------------------------------------*/
 
-//- No select
-//- Disable selecting of an element.
+//- Prevent text or element selection
+//- Values: none | text | toggle | element | elements | all | inherit
 
-user-select()
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
+user-select(arg)
+  -webkit-user-select: arg
+  -moz-user-select:    arg
+  -ms-user-select:     arg
+  user-select:         arg
+
+//- Controlling native element styling
+
+default-appearance(arg)
+  -webkit-appearance: arg
+  -moz-appearance:    arg
+  appearance:         arg
+
+//- Prevent text overflow
+
+no-text-overflow()
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap

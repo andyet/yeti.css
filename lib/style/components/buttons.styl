@@ -4,23 +4,22 @@
 *
 --------------------------------------------------------------------*/
 
-button
-  border: none
-
-.button, a.button
+.button
   display: inline-block
+  border: none
   border-radius: $default-border-radius
   padding: 6px 15px
   font: $font-weight-bold $font-base $font-gotham
   text-align: center
   line-height: 1.5
-  user-select()
   cursor: pointer
   -webkit-appearance: none
+  -moz-apperance: none
   transition: all .3s ease-in 
   -webkit-transition: all .3s ease-in
   background-color: lighten($blue-saturated-lighter, 85%)
   color: $blue-saturated
+  user-select(none)
 
   &:hover
     background-color: lighten($blue-saturated-lighter, 65%)
