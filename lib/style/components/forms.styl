@@ -25,7 +25,8 @@ label
   margin-bottom: 5px
   font-size: $font-small
 
-label, select, .form-input
+label, select, 
+.form-input
   font-family: $font-gotham
 
 select,
@@ -39,6 +40,11 @@ select,
   outline: 0
 
 //- General inputs
+
+.form-inline 
+  .form-input
+    display: inline-block
+    padding-left: $ui-padding
 
 .form-input
   display: block
