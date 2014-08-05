@@ -4,24 +4,26 @@
 *
 --------------------------------------------------------------------*/
 
-.media-wrapper, figure img
-  display: inline-block
-
-.media-wrapper, .figure-outlined, figure img, .media-outlined
+.media-wrapper,
+.media-outlined,
+img
   border-radius: $default-border-radius
 
 figure
+  margin: 0
 
   img
     vertical-align: middle
 
   figcaption
     color: $gray-light
+    font-family: $font-gotham
     font-size: $font-small
 
 //- Container with background
 
-a.media-wrapper
+.media-wrapper
+  display: inline-block
   background-color: $blue
   cursor: pointer 
 
