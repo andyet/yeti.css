@@ -7,59 +7,61 @@
 .button
   display: inline-block
   border: none
+  background-color: transparent
   border-radius: $default-border-radius
   padding: ceil($ui-padding*.3) $ui-padding
-  font: $font-weight-bold $font-base $font-gotham
+  font-weight: $font-weight-bold
+  font-family: $font-gotham
   line-height: 1.5
   text-align: center
   cursor: pointer
   transition: all .3s ease-in 
   -webkit-transition: all .3s ease-in
-  background-color: lighten($blue-saturated-lighter, 85%)
-  color: $blue-saturated
+  color: $gray-dark
+  background-color: $gray-lighter
   user-select(none)
   default-appearance(none)
 
   &:hover
-    background-color: lighten($blue-saturated-lighter, 65%)
+    background-color: darken($gray-lighter, 10%)
 
   &:disabled, &.button-disabled
     cursor: not-allowed
-    color: lighten($blue-saturated-lighter, 40%)
+    color: white
     background-color: lighten($blue-saturated-lighter, 85%)
 
   &:focus
     outline: none
     
-  &.button-small
-    padding: ceil($ui-padding*.15) ceil($ui-padding*.5)
-    font-size: $font-small
+.button-small
+  padding: ceil($ui-padding*.15) ceil($ui-padding*.5)
+  font-size: $font-small
 
-  &.button-large
-    padding: $ui-padding*.6 $ui-padding*2
-    font-size: $font-large
+.button-large
+  padding: $ui-padding*.6 $ui-padding*2
+  font-size: $font-large
 
-  &.button-primary, &.button-secondary, 
-  &.button-primary:hover, &.button-secondary:hover
-    color: white
+.button-primary,
+.button-secondary
+  color: white
 
-  &.button-primary
-    background-color: $pink
+.button-primary
+  background-color: $pink
 
-    &:hover
-      background-color: darken($pink, 10%)
+  &:hover
+    background-color: darken($pink, 10%)
 
-    &:disabled, .button-disabled
-      background-color: $pink-light
+  &:disabled, .button-disabled
+    background-color: $pink-light
 
-  &.button-secondary
-    background-color: $blue
+.button-secondary
+  background-color: $blue
 
-    &:hover
-      background-color: darken($blue, 10%)
+  &:hover
+    background-color: darken($blue, 10%)
 
-    &:disabled, .button-disabled
-      background-color: $blue-light
+  &:disabled, .button-disabled
+    background-color: $blue-light
 
 //- Button Group
 
@@ -85,11 +87,11 @@
     border-radius: $default-border-radius
 
     .button
-      border: 1px solid lighten($blue-saturated-lighter, 65%)
+      border: 2px solid $gray-light
 
       &.button-primary
         background-color: $pink-lighter
-        border: 1px solid $pink-light
+        border: 2px solid $pink-light
         color: $pink
 
         &:hover
@@ -97,7 +99,7 @@
 
       &.button-secondary
         background-color: $blue-lighter
-        border: 1px solid $blue-light
+        border: 2px solid $blue-light
         color: $blue
 
         &:hover
