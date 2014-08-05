@@ -4,33 +4,23 @@
 *
 --------------------------------------------------------------------*/
 
-.avatar-wrapper 
-  display: inline-block
-  cursor: pointer
-  background-color: $blue
+.avatar-wrapper.media-wrapper
   border-radius: 100%
 
-  .avatar  
-    &:hover
-      opacity: .5
-      transition: all .3s ease-in
+.avatar-radius
+  border-radius: $default-border-radius
 
-.avatar, .avatar-wrapper
+.avatar-rounded
+  border-radius: 100%
 
-  &.avatar-radius
-    border-radius: $default-border-radius
+.avatar-small
+  height: 25px
+  width: 25px
 
-  &.avatar-rounded
-    border-radius: 100%
-  
-  &.avatar-small
-    height: 25px
-    width: 25px
+.avatar-medium
+  height: 50px
+  width: 50px
 
-  &.avatar-medium
-    height: 50px
-    width: 50px
-
-  &.avatar-large
-    height: 100px
-    width: 100px
+.avatar-large
+  height: 100px
+  width: 100px
