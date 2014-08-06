@@ -8,40 +8,36 @@
 
 code
   font-family: $font-monospaced
+  font-size: $font-small
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
-  overflow-x: scroll
-
-  &.inline-light, &.inline-dark
-    white-space: nowrap
-    border: none
-    padding: .154em .308em
-    font-size: .8125rem
-
-  &.inline-light
-    color: black
-    background: lighten($gray-lighter, 60%)
-
-  &.inline-dark
-    color: $gray-light
-    background: $blue-saturated-dark
+  padding: ceil($ui-padding*.2) ceil($ui-padding*.4)
 
 pre
+  display: block
+  padding: $ui-padding
+  margin: 0 0 $space 0
   max-width: 100%
-  overflow: hidden
+  line-height: $line-height-base
+  word-break: break-all
+  word-wrap: break-word
 
   code
-    display: block
-    padding: 20px
-    line-height: 1.5
+    padding: 0
+    white-space: pre-wrap
+
+code, pre
+  border-radius: $default-border-radius
+
+.code-light
+  color: black
+  background: lighten($gray-lighter, 60%)
+
+.code-dark
+  color: lighten($blue-saturated-lighter, 20%)
+  background: $blue-saturated
 
 // &yet light
-
-pre
-  code
-    color: $gray-darker
-    background: lighten($gray-lighter, 90%)
-    border: $ui-border
 
 .comment,
 .template_comment,
