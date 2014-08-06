@@ -9,77 +9,77 @@ table
   max-width: 100%
   margin-bottom: $space
 
-  td, th
-    text-align: left
-    padding: ceil($ui-padding*.5)
+td, th
+  text-align: left
+  padding: ceil($ui-padding*.5)
 
-  thead 
+thead 
 
-    th
-      font-weight: $font-weight-bold
-      color: $gray-dark
-      border-bottom: 2px solid $gray-lighter
+  th
+    font-weight: $font-weight-bold
+    color: $gray-dark
+    border-bottom: 2px solid $gray-lighter
 
-  tbody
+tbody
 
-    td
-      border-bottom: $ui-border
+  td
+    border-bottom: $ui-border
 
-    //- Variations
+//- Variations
 
-    tr
+tr
 
-      &.table-cell-error
-        background-color: $red-lighter
-        color: $red
+  &.table-cell-error
+    background-color: $red-lighter
+    color: $red
 
-        a
-          color: darken($red, 20%)
+    a
+      color: darken($red, 20%)
 
-          &:hover
-            color: darken($red, 40%)
+      &:hover
+        color: darken($red, 40%)
 
-      &.table-cell-success
-        background-color: $green-lighter
-        color: $green
+  &.table-cell-success
+    background-color: $green-lighter
+    color: $green
 
-        a
-          color: darken($green, 20%)
+    a
+      color: darken($green, 20%)
 
-          &:hover
-            color: darken($green, 40%)
+      &:hover
+        color: darken($green, 40%)
 
-      &.table-cell-alert
-        background-color: $orange-lighter
-        color: $orange
+  &.table-cell-alert
+    background-color: $orange-lighter
+    color: $orange
 
-        a
-          color: darken($orange, 20%)
+    a
+      color: darken($orange, 20%)
 
-          &:hover
-            color: darken($orange, 40%)
+      &:hover
+        color: darken($orange, 40%)
      
-  //- Table Striped
+//- Table Striped
 
-  &.table-striped
+.table-striped
 
-    tr:nth-child(even)
-      color: darken($gray-light, 20%)
+  tr:nth-child(even)
+    color: darken($gray-light, 20%)
 
-  //- Table Outlined
+//- Table Outlined
 
-  &.table-outlined
-    border: $ui-border
-    border-radius: $default-border-radius
+.table-outlined
+  border: $ui-border
+  border-radius: $default-border-radius
 
-    tr:last-of-type td
-      border: none
+  tr:last-of-type td
+    border: none
 
-  //- Table Hovers
+//- Table Hovers
 
-  &.table-with-hover tr:hover,
-  &.table-striped tr:nth-child(even)
-    background-color: lighten($gray-lighter, 70%)
+.table-with-hover tr:hover,
+.table-striped tr:nth-child(even)
+  background-color: lighten($gray-lighter, 70%)
 
 @media screen and (max-width: $breakpoint-tablet - 1)
 
