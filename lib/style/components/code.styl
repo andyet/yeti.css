@@ -21,7 +21,7 @@ pre
   line-height: $line-height-base
   word-break: break-all
   word-wrap: break-word
-
+  
   code
     padding: 0
     white-space: pre-wrap
@@ -36,39 +36,3 @@ code, pre
 .code-dark
   color: lighten($blue-saturated-lighter, 20%)
   background: $blue-saturated
-
-// &yet light
-
-.comment,
-.template_comment,
-.diff .header,
-.javadoc
-  color: darken($gray-light, 40%)
-
-.keyword, .css .rule .keyword, .at_rule, .winutils, .javascript .title,
-.nginx .title, .subst, .request, .status
-  color: $blue
-
-.string, .tag .value, .phpdoc, .tex .formula
-  color: darken($pink, 10%)
-
-.title, .coffeescript .params, .scss .preprocessor
-  color: lighten($blue-saturated-lighter, 30%)
-  font-weight: bold
-
-.class .title, .haskell .type, .vhdl .literal, .tex .command,
-.tag, .tag .title, .rules .property, .django .tag .keyword,
-.built_in, .lisp .title, .clojure .built_in
-  color: $gray
-
-.attribute, .variable, .lisp .body, .preprocessor, .pragma, .pi, .doctype, .shebang, .cdata
-  color: lighten($gray, 10%)
-
-.regexp, .addition
-  color: $green
-
-.symbol, .ruby .symbol .string, .lisp .keyword, .tex .special, .prompt, .deletion
-  color: darken($pink, 30%)
-
-.diff .change
-  background: $orange
