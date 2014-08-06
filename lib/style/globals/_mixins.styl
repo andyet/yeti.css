@@ -26,3 +26,15 @@ no-text-overflow()
   overflow: hidden
   text-overflow: ellipsis
   white-space: nowrap
+
+//- Alert variants
+
+alert-variant(alert-background, alert-text)
+  background-color: alert-background
+  color: alert-text
+
+  a
+    color: darken(alert-text, 20%)
+
+    &:hover
+      color: darken(alert-text, 40%)
