@@ -60,7 +60,7 @@
 //- Breadcrumbs
 
 .breadcrumbs
-  padding: 10px 5px
+  padding: ceil($ui-padding*.5) $ui-padding
 
   li:not(:first-child)
     position: relative
@@ -76,10 +76,9 @@
       -ms-transform: rotate(15deg)
       transform: rotate(15deg)
 
-  a
-    &.breadcrumb-current
-      color: $gray
-      font-weight: $font-weight-bold
+a.breadcrumb-current
+  color: $gray
+  font-weight: $font-weight-bold
 
 //- Pagination
 
