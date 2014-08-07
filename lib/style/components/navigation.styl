@@ -4,6 +4,13 @@
 *
 --------------------------------------------------------------------*/
 
+.top-nav,
+.breadcrumbs,
+.pagination,
+.tabs,
+.side-nav
+  font-family: $font-gotham
+
 //- Top Nav
 
 .top-nav
@@ -106,37 +113,34 @@ a.breadcrumb-current
   border-bottom: $ui-border
 
   a
-    height: 2em
-    line-height: 2
-    display: block
 
     &.active
       position: relative
       top: 2px
       border: $ui-border
       border-bottom-color: transparent
-      border-radius: $default-border-radius 3px 0 0
+      border-radius: $default-border-radius $default-border-radius 0 0
 
 //- Side Navigation
 
 .side-nav
-  margin: 0
-
-  li, a
-    display: block
 
   li:not(:last-child)
     a
       border-bottom: $ui-border
 
   a
-    height: 35px
-    line-height: 35px
-
     &:hover, &.active
-      background-color: lighten($blue-lighter, 60%)
+      background-color: lighten($gray-lighter, 90%)
 
 //- Shared
+
+.tabs, .side-nav
+  a, li
+    display: block
+
+.tabs a, .side-nav a
+  line-height: 2.5
 
 .breadcrumbs, .side-nav
   border-radius: $default-border-radius
