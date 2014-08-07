@@ -201,19 +201,23 @@
     > ul, .icon-arrow-down
       display: none
 
-    label
+    label, 
+    .menu-toggle:checked ~ ul,
+    .menu-toggle:checked ~ ul > li,
+    .menu-toggle:checked ~ ul > li a,
+    .dropdown
       display: block
+
+    label
       float: right
       height: 100%
       margin-right: $space*.5
       cursor: pointer
 
     .menu-toggle:checked ~ ul
-      display: block
       margin-top: 40px
 
       > li, > li a
-        display: block
         width: 100%
 
       > li
@@ -221,7 +225,6 @@
 
       .has-dropdown 
         .dropdown
-          display: block
           padding: 0 $ui-padding $ui-padding $ui-padding
 
         li
@@ -252,25 +255,22 @@
   
   .top-nav
     
-    label
+    label, .dropdown
       display: none
+
+    .has-dropdown:hover .dropdown,
+    .dropdown li
+      display: block
     
     .has-dropdown
       position: relative
 
-      .dropdown
-        display: none
-
       &:hover
         .dropdown
-          display: block
           position: absolute
           top: 100%
           left: 0
           min-width: 120%
-
-          li
-            display: block
 
   .top-nav-light
     .dropdown li
