@@ -10,32 +10,6 @@
 .tabs,
 .side-nav
   font-family: $font-gotham
-    
-//- Top Nav Light Variation
-
-.top-nav-light
-  border-bottom: $ui-border
-  
-  a
-    background-color: white
-
-//- Top Nav Dark Variation
-
-.top-nav-dark
-
-  label
-    color: $blue-saturated-lighter
-
-  a
-    color: $blue-saturated-lighter
-
-    &:hover, &.active
-      color: lighten($blue-saturated-lighter, 40%)
-
-.top-nav-dark,
-.top-nav-dark a
-.top-nav-dark .dropdown,
-  background-color: $blue-saturated
 
 //- Top Nav
 
@@ -52,18 +26,56 @@
     position: absolute
     left: -100%
 
-  .logo
-    float: left
+  a
+    display: inline-block
+    padding: 0 $ui-padding
+
+  .dropdown
+    margin: 0
+
+  label
+    font-weight: normal
+    font-size: $font-base
+      
+  .icon-arrow-down
+    display: inline-block
+      
+//- Top Nav Light Variation
+
+.top-nav-light
+  border-bottom: $ui-border
 
   label
     color: $blue
 
-  a
-    display: inline-block
-    padding: 0 15px
+.top-nav-light,
+.top-nav-light a,
+.top-nav-light .dropdown
+  background-color: white
 
-  .dropdown
-    margin: 0
+.top-nav-light .icon-arrow-down
+  border-top-color: $blue
+
+//- Top Nav Dark Variation
+
+.top-nav-dark
+
+  label
+    color: $blue-saturated-lighter
+
+  a
+    color: $blue-saturated-lighter
+
+  a:hover, a.active, label
+    color: lighten($blue-saturated-lighter, 40%)
+
+.top-nav-dark,
+.top-nav-dark a
+.top-nav-dark .dropdown,
+  background-color: $blue-saturated
+
+.top-nav-dark .icon-arrow-down
+  border-top-color: $blue-saturated-lighter
 
 //- Breadcrumbs
 
@@ -181,7 +193,7 @@
 
 @media screen and (max-width: $breakpoint-tablet)
 
-  .top-nav:not(.dark)
+  .top-nav-light
     
     .menu-toggle:checked ~ ul
       > li
@@ -226,7 +238,7 @@
           font-size: $font-small
           font-weight: normal
 
-    &.dark
+    &.top-nav-dark
 
       .menu-toggle:checked ~ ul
 
@@ -236,15 +248,12 @@
           &:last-child
             border-bottom: 1px solid $blue-saturated-lighter
 
-@media screen and (min-width: $breakpoint-desktop)
+@media screen and (min-width: $breakpoint-tablet+1)
   
   .top-nav
     
     label
       display: none
-    
-    .unstyled > li
-      float: left
     
     .has-dropdown
       position: relative
@@ -267,10 +276,7 @@
             display: block
             border-bottom: $ui-border
 
-    &.dark
-
-      .has-dropdown
-
-        .dropdown
-          li
-            border-bottom: 1px solid $blue-saturated-light
+  .top-nav-dark  
+    .dropdown
+      li
+        border-bottom: 1px solid $blue-saturated-light
