@@ -82,6 +82,7 @@
       -webkit-transform: rotate(15deg)
       -ms-transform: rotate(15deg)
       transform: rotate(15deg)
+      background-color: $gray-lighter
 
 //- Pagination
 
@@ -93,13 +94,12 @@
   a[class^='icon']
     top: 1px
     position: relative
-    opacity: .5
 
-    &:hover
-      opacity: 1
+  .icon-arrow-right
+    border-left: 5px solid $blue
 
-.page-unavailable
-  cursor: not-allowed
+  .icon-arrow-left
+    border-right: 5px solid $blue
 
 //- Tabs
 
@@ -122,10 +122,14 @@
     a
       border-bottom: $ui-border
 
-  a:hover
+  a:hover, 
+  .current-item
     background-color: lighten($gray-lighter, 90%)
 
 //- Shared
+
+.unavailable-item
+  color: $gray-light
 
 .current-item
   color: $gray-dark
@@ -135,30 +139,23 @@
   a, li
     display: block
 
-.tabs a, .side-nav a
+.tabs a, 
+.side-nav a
   line-height: 2.5
 
-.breadcrumbs, .side-nav
+.breadcrumbs, 
+.side-nav
   border-radius: $default-border-radius
   border: $ui-border
 
-.breadcrumbs, .side-nav, .tabs
+.breadcrumbs, 
+.side-nav, 
+.tabs
   a
-    padding: 0 10px
+    padding: 0 $ui-padding
 
-.tabs a.active
-  background-color: white
-
-.breadcrumbs li:not(:first-child):after
-  background-color: $gray-lighter
-
-.tabs a.active, .top-nav a, .side-nav a.active, .breadcrumbs a.current, .pagination a.active
-  font-weight: $font-weight-bold
-    
-.breadcrumbs a.breadcrumb-unavailable
-  color: $gray-light
-
-.breadcrumbs a, .pagination a
+.breadcrumbs a, 
+.pagination a
   font-size: $font-small
 
 @media screen and (max-width: $breakpoint-smartphone)
