@@ -38,7 +38,9 @@
     font-size: $font-base
       
   .icon-arrow-down
-    display: inline-block
+    position: relative
+    top: -2px
+    left: -5px
       
 //- Top Nav Light Variation
 
@@ -148,7 +150,8 @@
   color: $gray-dark
   font-weight: $font-weight-bold
 
-.tabs, .side-nav
+.tabs, 
+.side-nav
   a, li
     display: block
 
@@ -193,24 +196,17 @@
 
 @media screen and (max-width: $breakpoint-tablet)
 
-  .top-nav-light
-    
-    .menu-toggle:checked ~ ul
-      > li
-        border-bottom: $ui-border
-
   .top-nav
     
-    > ul
+    > ul, .icon-arrow-down
       display: none
 
     label
       display: block
       float: right
       height: 100%
-      margin-right: 15px
+      margin-right: $space*.5
       cursor: pointer
-      user-select: none
 
     .menu-toggle:checked ~ ul
       display: block
@@ -226,11 +222,10 @@
       .has-dropdown 
         .dropdown
           display: block
-          padding: 15px 10px
+          padding: 0 $ui-padding $ui-padding $ui-padding
 
         li
           float: left
-          padding-right: 20px
           line-height: 2
           border: 0
 
@@ -238,15 +233,20 @@
           font-size: $font-small
           font-weight: normal
 
-    &.top-nav-dark
+  .top-nav-light
+    
+    .menu-toggle:checked ~ ul
+      > li
+        border-bottom: $ui-border
 
-      .menu-toggle:checked ~ ul
+  .top-nav-dark
 
-        > li
-          border-top: 1px solid $blue-saturated-light
+    .menu-toggle:checked ~ ul
+      > li
+        border-bottom: 1px solid $blue-saturated-light
 
-          &:last-child
-            border-bottom: 1px solid $blue-saturated-lighter
+        &:last-child
+          border-bottom: 1px solid $blue-saturated-lighter
 
 @media screen and (min-width: $breakpoint-tablet+1)
   
@@ -257,9 +257,6 @@
     
     .has-dropdown
       position: relative
-
-      > a
-        padding-right: 35px
 
       .dropdown
         display: none
@@ -274,7 +271,10 @@
 
           li
             display: block
-            border-bottom: $ui-border
+
+  .top-nav-light
+    .dropdown li
+      border-bottom: $ui-border
 
   .top-nav-dark  
     .dropdown
