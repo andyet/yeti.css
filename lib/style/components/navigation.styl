@@ -10,6 +10,32 @@
 .tabs,
 .side-nav
   font-family: $font-gotham
+    
+//- Top Nav Light Variation
+
+.top-nav-light
+  border-bottom: $ui-border
+  
+  a
+    background-color: white
+
+//- Top Nav Dark Variation
+
+.top-nav-dark
+
+  label
+    color: $blue-saturated-lighter
+
+  a
+    color: $blue-saturated-lighter
+
+    &:hover, &.active
+      color: lighten($blue-saturated-lighter, 40%)
+
+.top-nav-dark,
+.top-nav-dark a
+.top-nav-dark .dropdown,
+  background-color: $blue-saturated
 
 //- Top Nav
 
@@ -20,13 +46,6 @@
   margin-bottom: 30px 
   z-index: 10
   position: relative
-
-  &:not(.dark),
-  .dropdown, &:not(.dark) a
-    background-color: white
-
-  &:not(.dark)
-    border-bottom: $ui-border
 
   .menu-toggle
     visibility: hidden
@@ -43,26 +62,8 @@
     display: inline-block
     padding: 0 15px
 
-    &:hover, &.active
-      color: $blue-saturated
-
   .dropdown
     margin: 0
-
-  &.dark
-
-    label
-      color: $blue-saturated-lighter
-
-    a
-      color: $blue-saturated-lighter
-
-      &:hover, &.active
-        color: lighten($blue-saturated-lighter, 40%)
-
-  &.dark, 
-  &.dark .dropdown, &.dark a
-    background-color: $blue-saturated
 
 //- Breadcrumbs
 
@@ -188,7 +189,7 @@
 
   .top-nav
     
-    > ul, .ss-icon
+    > ul
       display: none
 
     label
@@ -250,13 +251,6 @@
 
       > a
         padding-right: 35px
-
-      .ss-icon
-        position: absolute
-        right: 15px
-        top: 2px
-        font-size: $font-smaller
-        color: $blue-light
 
       .dropdown
         display: none
