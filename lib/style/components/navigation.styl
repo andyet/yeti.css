@@ -106,14 +106,13 @@
 .tabs
   border-bottom: $ui-border
 
-  a
-
-    &.active
-      position: relative
-      top: 2px
-      border: $ui-border
-      border-bottom-color: transparent
-      border-radius: $default-border-radius $default-border-radius 0 0
+  .current-item
+    position: relative
+    top: 2px
+    border: $ui-border
+    border-bottom-color: transparent
+    border-radius: $default-border-radius $default-border-radius 0 0
+    background-color: white
 
 //- Side Navigation
 
@@ -123,14 +122,12 @@
     a
       border-bottom: $ui-border
 
-  a
-    &:hover, &.active
-      background-color: lighten($gray-lighter, 90%)
+  a:hover
+    background-color: lighten($gray-lighter, 90%)
 
 //- Shared
 
-a.breadcrumb-current,
-.pagination a.page-current
+.current-item
   color: $gray-dark
   font-weight: $font-weight-bold
 
@@ -158,7 +155,7 @@ a.breadcrumb-current,
 .tabs a.active, .top-nav a, .side-nav a.active, .breadcrumbs a.current, .pagination a.active
   font-weight: $font-weight-bold
     
-.breadcrumbs a.breadcrumb-unavailable, .pagination a
+.breadcrumbs a.breadcrumb-unavailable
   color: $gray-light
 
 .breadcrumbs a, .pagination a
