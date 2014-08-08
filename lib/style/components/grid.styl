@@ -3,3 +3,32 @@
 * $GRID
 *
 --------------------------------------------------------------------*/
+
+.container
+  width: $grid-max-width
+  margin: 0 auto
+  overflow: hidden
+
+[class^='column']
+  padding-left: $grid-gutter
+  padding-right: $grid-gutter
+  background: red
+
+@media screen and (max-width: $breakpoint-smartphone)
+
+  [class^='column']
+    width: 100%
+
+@media screen and (min-width: $breakpoint-smartphone+1)
+
+  [class^='column']
+    float: left
+
+  .column-two
+    width: 50%
+
+  .column-three
+    width: ceil($grid-max-width/3)
+
+  .column-four
+    width: ceil($grid-max-width/4)
