@@ -51,7 +51,7 @@ select,
   padding: ceil($ui-padding*.75)
   width: 100%
   border-radius: $default-border-radius
-  box-shadow: 0 0 0 2px $gray-lighter
+  box-shadow: 0 0 0 1px $gray-lighter
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
@@ -59,30 +59,30 @@ select,
   &:focus
     transition: all .2s ease-in
     -webkit-transition: all .2s ease-in
-    box-shadow: 0 0 0 2px $blue-light
+    box-shadow: 0 0 0 1px $blue-light
 
   &:disabled
     background-color: lighten($gray-lighter, 60%)
     cursor: not-allowed
 
   &:required:focus
-    box-shadow: 0 0 0 2px $orange-light
+    box-shadow: 0 0 0 1px $orange-light
 
   &.input-invalid
     background-color: $red-lighter
-    box-shadow: 0 0 0 2px $red-light
+    box-shadow: 0 0 0 1px $red-light
     color: lighten($red, 50%)
 
     &:focus
-      box-shadow: 0 0 0 2px $red
+      box-shadow: 0 0 0 1px $red
 
   &.input-valid
     background-color: $green-lighter
-    box-shadow: 0 0 0 2px $green-light
+    box-shadow: 0 0 0 1px $green-light
     color: lighten($green, 40%)
 
     &:focus
-      box-shadow: 0 0 0 2px $green
+      box-shadow: 0 0 0 1px $green
 
 textarea
   resize: none
@@ -104,14 +104,14 @@ input[type=file]
 //- Selects
 
 select
-  box-shadow: 0 0 0 2px $gray-lighter
+  box-shadow: 0 0 0 1px $gray-lighter
   height: 40px
   padding: ceil($ui-padding*.75)
   width: 100%
   background-color: white
 
   &:focus
-    box-shadow: 0 0 0 2px $blue-light
+    box-shadow: 0 0 0 1px $blue-light
 
   &:focus:-moz-focusring
     color: transparent
