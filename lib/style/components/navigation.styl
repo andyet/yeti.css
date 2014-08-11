@@ -30,16 +30,11 @@
     display: inline-block
     padding: 0 $ui-padding
 
-  .dropdown
-    margin: 0
-
   label
     font-weight: normal
     font-size: $font-base
       
   .icon-arrow-down
-    position: relative
-    top: -2px
     left: -5px
       
 //- Top Nav Light Variation
@@ -51,8 +46,7 @@
     color: $blue
 
 .top-nav-light,
-.top-nav-light a,
-.top-nav-light .dropdown
+.top-nav-light a
   background-color: white
 
 .top-nav-light .icon-arrow-down
@@ -73,7 +67,6 @@
 
 .top-nav-dark,
 .top-nav-dark a
-.top-nav-dark .dropdown,
   background-color: $blue-saturated
 
 .top-nav-dark .icon-arrow-down
@@ -204,8 +197,7 @@
     label, 
     .menu-toggle:checked ~ ul,
     .menu-toggle:checked ~ ul > li,
-    .menu-toggle:checked ~ ul > li a,
-    .dropdown
+    .menu-toggle:checked ~ ul > li a
       display: block
 
     label
@@ -224,8 +216,6 @@
         float: none
 
       .has-dropdown 
-        .dropdown
-          padding: 0 $ui-padding $ui-padding $ui-padding
 
         li
           float: left
@@ -255,22 +245,8 @@
   
   .top-nav
     
-    label, .dropdown
+    label
       display: none
-
-    .has-dropdown:hover .dropdown,
-    .dropdown li
-      display: block
-    
-    .has-dropdown
-      position: relative
-
-      &:hover
-        .dropdown
-          position: absolute
-          top: 100%
-          left: 0
-          min-width: 120%
 
   .top-nav-light
     .dropdown li
