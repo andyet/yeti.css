@@ -14,12 +14,12 @@
 //- Top Nav
 
 .top-nav
-  width: 100%
-  height: 40px
-  line-height: 39px
   margin-bottom: 30px 
   z-index: 10
   position: relative
+
+  ul
+    margin: 0
 
   .menu-toggle
     visibility: hidden
@@ -28,7 +28,7 @@
 
   a
     display: inline-block
-    padding: 0 $ui-padding
+    padding: $ui-padding
 
   label
     font-weight: normal
@@ -196,31 +196,21 @@
 
     label, 
     .menu-toggle:checked ~ ul,
-    .menu-toggle:checked ~ ul > li,
-    .menu-toggle:checked ~ ul > li a
-      display: block
+    .menu-toggle:checked ~ ul > li
 
     label
-      float: right
-      height: 100%
-      margin-right: $space*.5
+      padding: $ui-padding 0
+      text-align: right
       cursor: pointer
 
     .menu-toggle:checked ~ ul
-      margin-top: 40px
-
-      > li, > li a
-        width: 100%
-
-      > li
-        float: none
 
       .has-dropdown 
 
         li
           float: left
-          line-height: 2
           border: 0
+          width: auto
 
         li a 
           font-size: $font-small
@@ -248,11 +238,13 @@
     label
       display: none
 
+    .dropdown a
+      display: block
+
   .top-nav-light
     .dropdown li
       border-bottom: $ui-border
 
   .top-nav-dark  
-    .dropdown
-      li
+    .dropdown li
         border-bottom: 1px solid $blue-saturated-light
