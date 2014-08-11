@@ -14,12 +14,12 @@
 //- Top Nav
 
 .top-nav
-  width: 100%
-  height: 40px
-  line-height: 39px
   margin-bottom: 30px 
   z-index: 10
   position: relative
+
+  ul
+    margin: 0
 
   .menu-toggle
     visibility: hidden
@@ -28,18 +28,13 @@
 
   a
     display: inline-block
-    padding: 0 $ui-padding
-
-  .dropdown
-    margin: 0
+    padding: $ui-padding
 
   label
     font-weight: normal
     font-size: $font-base
       
   .icon-arrow-down
-    position: relative
-    top: -2px
     left: -5px
       
 //- Top Nav Light Variation
@@ -51,8 +46,7 @@
     color: $blue
 
 .top-nav-light,
-.top-nav-light a,
-.top-nav-light .dropdown
+.top-nav-light a
   background-color: white
 
 .top-nav-light .icon-arrow-down
@@ -73,7 +67,6 @@
 
 .top-nav-dark,
 .top-nav-dark a
-.top-nav-dark .dropdown,
   background-color: $blue-saturated
 
 .top-nav-dark .icon-arrow-down
@@ -203,34 +196,21 @@
 
     label, 
     .menu-toggle:checked ~ ul,
-    .menu-toggle:checked ~ ul > li,
-    .menu-toggle:checked ~ ul > li a,
-    .dropdown
-      display: block
+    .menu-toggle:checked ~ ul > li
 
     label
-      float: right
-      height: 100%
-      margin-right: $space*.5
+      padding: $ui-padding 0
+      text-align: right
       cursor: pointer
 
     .menu-toggle:checked ~ ul
-      margin-top: 40px
-
-      > li, > li a
-        width: 100%
-
-      > li
-        float: none
 
       .has-dropdown 
-        .dropdown
-          padding: 0 $ui-padding $ui-padding $ui-padding
 
         li
           float: left
-          line-height: 2
           border: 0
+          width: auto
 
         li a 
           font-size: $font-small
@@ -255,28 +235,16 @@
   
   .top-nav
     
-    label, .dropdown
+    label
       display: none
 
-    .has-dropdown:hover .dropdown,
-    .dropdown li
+    .dropdown a
       display: block
-    
-    .has-dropdown
-      position: relative
-
-      &:hover
-        .dropdown
-          position: absolute
-          top: 100%
-          left: 0
-          min-width: 120%
 
   .top-nav-light
     .dropdown li
       border-bottom: $ui-border
 
   .top-nav-dark  
-    .dropdown
-      li
+    .dropdown li
         border-bottom: 1px solid $blue-saturated-light
