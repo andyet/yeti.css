@@ -5,7 +5,6 @@
 --------------------------------------------------------------------*/
 
 .container
-  width: $grid-max-width
   margin: 0 auto
   overflow: hidden
 
@@ -14,6 +13,9 @@
   padding-right: $grid-gutter
 
 @media screen and (max-width: $breakpoint-smartphone)
+
+  .container
+    width: $grid-width-mobile
 
   [class^='column']
     width: 100%
@@ -26,8 +28,24 @@
   .column-two
     width: 50%
 
+@media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-desktop)
+
+  .container
+    width: $grid-width-tablet
+
   .column-three
-    width: ceil($grid-max-width/3)
+    width: ceil($grid-width-tablet/3)
 
   .column-four
-    width: ceil($grid-max-width/4)
+    width: ceil($grid-width-tablet/4)
+
+@media screen and (min-width: $breakpoint-desktop+1)
+
+  .container
+    width: $grid-width-desktop
+
+  .column-three
+    width: ceil($grid-width-desktop/3)
+
+  .column-four
+    width: ceil($grid-width-desktop/4)
