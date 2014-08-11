@@ -191,12 +191,16 @@
 
   .top-nav
     
+    .dropdown a
+      padding: ceil($ui-padding*.5) $ui-padding
+    
     > ul, .icon-arrow-down
       display: none
 
     label, 
     .menu-toggle:checked ~ ul,
     .menu-toggle:checked ~ ul > li
+      display: block
 
     label
       padding: $ui-padding $ui-padding $ui-padding 0
