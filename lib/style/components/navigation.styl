@@ -4,13 +4,6 @@
 *
 --------------------------------------------------------------------*/
 
-.top-nav,
-.breadcrumbs,
-.pagination,
-.tabs,
-.side-nav
-  font-family: $font-gotham
-
 //- Top Nav
 
 .top-nav
@@ -21,11 +14,6 @@
   ul
     margin: 0
 
-  .menu-toggle
-    visibility: hidden
-    position: absolute
-    left: -100%
-
   a
     display: inline-block
     padding: $ui-padding
@@ -33,10 +21,16 @@
   label
     font-weight: normal
     font-size: $font-base
-      
+
+  .menu-toggle
+    visibility: hidden
+    position: absolute
+    left: -100%
+
   .icon-arrow-down
-    left: -5px
-      
+    position: relative
+    top: -2px
+
 //- Top Nav Light Variation
 
 .top-nav-light
@@ -46,7 +40,7 @@
     color: $blue
 
 .top-nav-light,
-.top-nav-light a
+.top-nav-light li
   background-color: white
 
 .top-nav-light .icon-arrow-down
@@ -66,7 +60,7 @@
     color: lighten($blue-saturated-lighter, 40%)
 
 .top-nav-dark,
-.top-nav-dark a
+.top-nav-dark li
   background-color: $blue-saturated
 
 .top-nav-dark .icon-arrow-down
@@ -75,7 +69,7 @@
 //- Breadcrumbs
 
 .breadcrumbs
-  padding: ceil($ui-padding*.5) $ui-padding
+  padding: ceil($ui-padding*.5) 0
 
   li:not(:first-child)
     position: relative
@@ -95,11 +89,11 @@
 //- Pagination
 
 .pagination
+  
+  li:not(:last-child)
+    border-right: $ui-border
 
-  a:not([class^='icon'])
-    padding: $ui-padding*.2 $ui-padding*.4
-
-  a[class^='icon']
+  em[class^='icon']
     top: 1px
     position: relative
 
@@ -116,7 +110,7 @@
 
   .current-item
     position: relative
-    top: 2px
+    top: 1px
     border: $ui-border
     border-bottom-color: transparent
     border-radius: $default-border-radius $default-border-radius 0 0
@@ -130,10 +124,6 @@
     a
       border-bottom: $ui-border
 
-  a:hover, 
-  .current-item
-    background-color: lighten($gray-lighter, 90%)
-
 //- Shared
 
 .unavailable-item
@@ -144,22 +134,41 @@
   font-weight: $font-weight-bold
 
 .tabs, 
-.side-nav
+.side-nav,
+.pagination
   a, li
     display: block
 
+.side-nav,
+.pagination
+
+  a:hover, 
+  .current-item
+    background-color: lighten($gray-lighter, 80%)
+
 .tabs a, 
-.side-nav a
+.side-nav a,
+.pagination a
   line-height: 2.5
 
+.pagination,
+.breadcrumbs
+  display: inline-block
+
+.pagination li,
+.breadcrumbs li
+  float: left
+
 .breadcrumbs, 
-.side-nav
+.side-nav,
+.pagination
   border-radius: $default-border-radius
   border: $ui-border
 
 .breadcrumbs, 
 .side-nav, 
-.tabs
+.tabs,
+.pagination
   a
     padding: 0 $ui-padding
 
@@ -191,59 +200,80 @@
 
   .top-nav
     
-    > ul, .icon-arrow-down
+    ul
+      display: none
+    
+    .icon-arrow-down
       display: none
 
     label, 
     .menu-toggle:checked ~ ul,
     .menu-toggle:checked ~ ul > li
+      display: block
 
     label
-      padding: $ui-padding 0
+      padding: $ui-padding $ui-padding $ui-padding 0
       text-align: right
       cursor: pointer
 
     .menu-toggle:checked ~ ul
 
-      .has-dropdown 
+      .dropdown
+        display: block
 
         li
           float: left
           border: 0
-          width: auto
 
-        li a 
+        a 
           font-size: $font-small
           font-weight: normal
 
+  //- Top Nav Light Variation
   .top-nav-light
     
     .menu-toggle:checked ~ ul
-      > li
+      > li:not(:last-child)
         border-bottom: $ui-border
+  
+  //- Top Nav Dark Variation
 
   .top-nav-dark
 
     .menu-toggle:checked ~ ul
-      > li
+      > li:not(:last-child)
         border-bottom: 1px solid $blue-saturated-light
-
-        &:last-child
-          border-bottom: 1px solid $blue-saturated-lighter
 
 @media screen and (min-width: $breakpoint-tablet+1)
   
-  .top-nav
-    
+  .top-nav 
     label
       display: none
 
-    .dropdown a
-      display: block
+    .has-dropdown
+      position: relative
 
-  .top-nav-light
-    .dropdown li
-      border-bottom: $ui-border
+      &:hover .dropdown
+        display: block
+
+    .dropdown
+      display: none
+      position: absolute
+      top: 100%
+      left: 0
+      min-width: 100%
+
+  //- Top Nav Light Variation
+
+  .top-nav-light  
+    .dropdown 
+      border-left: $ui-border
+      border-right: $ui-border
+
+      li
+        border-bottom: $ui-border
+
+  //- Top Nav Dark Variation
 
   .top-nav-dark  
     .dropdown li

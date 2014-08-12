@@ -6,29 +6,29 @@
 
 .button
   display: inline-block
-  border: none
+  border: 1px solid $gray-light
   background-color: transparent
   border-radius: $default-border-radius
   padding: ceil($ui-padding*.3) $ui-padding
   font-weight: $font-weight-bold
-  font-family: $font-gotham
   line-height: 1.5
   text-align: center
   cursor: pointer
   transition: all .3s ease-in 
   -webkit-transition: all .3s ease-in
   color: $gray-dark
-  background-color: $gray-lighter
   user-select(none)
   default-appearance(none)
 
   &:hover
-    background-color: darken($gray-lighter, 10%)
+    background-color: $gray-lighter
 
   &:disabled, &.button-disabled
     cursor: not-allowed
-    color: white
-    background-color: lighten($blue-saturated-lighter, 85%)
+
+    &:not(.button-primary):not(.button-secondary)
+      color: $gray-light
+      background-color: transparent
 
   &:focus
     outline: none
@@ -48,6 +48,7 @@
 .button-primary,
 .button-secondary
   color: white
+  border: none
 
 .button-primary
   background-color: $pink
@@ -91,14 +92,11 @@
   &.button-group-outlined
     border-radius: $default-border-radius
 
-    .button
-      border: 2px solid $gray-light
-
     .button-primary
-      border: 2px solid darken($pink, 20%)
+      border: 1px solid darken($pink, 20%)
 
     .button-secondary
-      border: 2px solid darken($blue, 20%)
+      border: 1px solid darken($blue, 20%)
 
 @media screen and (max-width: $breakpoint-smartphone)
 

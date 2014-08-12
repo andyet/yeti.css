@@ -4,43 +4,36 @@
 *
 --------------------------------------------------------------------*/
 
-.has-dropdown
+.dropdown-standalone
   position: relative
+  display: inline-block
+  padding: 10px
+  border: $ui-border
+  border-radius: $default-border-radius
 
-  *
-    display: inline-block
+  &:hover
+    .dropdown
+      display: block
+      position: absolute
+      top: 105%
+      left: 0
+      min-width: 100%
+      border: $ui-border
+      border-radius: $default-border-radius
+      background-color: white
 
-  .icon-arrow-down
-    position: relative
-    top: -2px
-    margin-left: 5px
+      li:not(:last-child)
+        border-bottom: inherit
 
-.dropdown
-  padding: 0
-  margin: 0
-  background-color: inherit
-
-  li
-    width: 100%
-
-@media screen and (max-width: $breakpoint-tablet)
-
-  .dropdown
-    display: block
-    padding: 0 $ui-padding $ui-padding $ui-padding
-
-@media screen and (min-width: $breakpoint-tablet+1)
+      a
+        padding: 10px
+        display: block
 
   .dropdown
     display: none
 
-  .has-dropdown:hover .dropdown
-    display: block
-
-  .has-dropdown:hover
-    
-    .dropdown
-      position: absolute
-      top: 100%
-      left: 0
-      min-width: 100%
+  .icon-arrow-down
+    border-top-color: $blue
+    position: relative
+    top: -2px
+    margin-left: 5px

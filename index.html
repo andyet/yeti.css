@@ -14,13 +14,6 @@
       <p>Brand assets and modularized components.</p><a href="https://github.com/andyet/style" title="View on Github" class="button-large button button-secondary">View on Github</a>
     </header>
     <div class="content">
-      <div class="button has-dropdown button-large">I has dropdown
-        <div class="icon-arrow-down"></div>
-        <ul class="dropdown">
-          <li>I am a drop</li>
-          <li>Me too</li>
-        </ul>
-      </div>
       <section class="typography cf">
         <h2>Typography</h2>
         <p>For custom font usage you have <a href='http://typekit.com'>Typekit</a> and <a href='http://typography.com'>Cloud Typography</a> at your disposal. Request passwords from Karolina Szczur or Adam Brault and save in password manager of your choice. </p>
@@ -236,7 +229,9 @@
            
           To create a button add <code class="inline-light">button</code> class to  <code class="inline-light">&lt;a&gt;</code> or <code class="inline-light">&lt;button&gt;</code>
         </p>
-        <button class="button">Button</button><a href="" class="button">Button</a>
+        <button class="button">Button</button>
+        <button class="button button-primary">Button</button>
+        <button class="button button-secondary">Button</button>
         <h4>Disabled buttons</h4>
         <p>To disable buttons add <code class="inline-light">button-disabled</code> class or for <code class="inline-light">&lt;button&gt;</code> elements feel free to use the <code class="inline-light">disabled</code> attribute.</p>
         <div class="cf">
@@ -252,7 +247,6 @@
            
           Button grouping is available my adding <code class="inline-light">.button-group</code> class. For additional outline include <code class="inline-light">.button-group-outlined</code> class. For color variations of the buttons use &mdash; <code class="inline-light">.button-primary</code> or <code class="inline-light">.button-secondary</code> on the button element itself.
         </p>
-        <div class="cf button-group"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
         <div class="cf button-group button-group-outlined"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
         <div class="cf button-group button-group-outlined"><a href="" class="button button-primary">Button</a><a href="" class="button button-primary">Button</a><a href="" class="button button-primary">Button</a><a href="" class="button button-primary">Button</a></div>
         <div class="cf button-group button-group-outlined"><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a></div>
@@ -283,8 +277,8 @@
            
           Sometimes you need to validate your forms. To have meaningful styling for valid and invalid inputs add <code class="inline-light">input-valid</code> and <code class="inline-light">input-invalid</code> classes respectively.
         </p>
-        <input type="text" value="@CNN" class="form-input">
-        <input type="text" value="John Doe" class="form-input">
+        <input type="text" value="@CNN" class="input-invalid form-input">
+        <input type="text" value="John Doe" class="input-valid form-input">
         <h4>Other form elements</h4>
         <p>For radio and checkbox usage make sure to add <code class="inline-light">checkbox</code> and <code class="inline-light">radio</code> class to the label wrapping the actual input.</p>
         <form>
@@ -586,13 +580,13 @@
         </p>
         <nav>
           <ul class="list-unstyled list-inline pagination">
-            <li><a href="" class="icon-arrow-left"></a></li>
+            <li><a href=""><em class="icon-arrow-left"></em></a></li>
             <li><a href="" class="unavailable-item">1</a></li>
             <li><a href="" class="current-item">2</a></li>
             <li><a href="">3</a></li>
             <li><a href="">4</a></li>
             <li><a href="">5</a></li>
-            <li><a href="" class="icon-arrow-right"></a></li>
+            <li><a href=""><em class="icon-arrow-right"></em></a></li>
           </ul>
         </nav>
         <h4>Tabs</h4>
