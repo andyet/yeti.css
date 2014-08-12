@@ -52,10 +52,14 @@ You can see the list of available releases at: [https://github.com/andyet/style/
 
 ## How to run?
 
-For quickly accessing the demo page fire up the server with [http-server](https://github.com/nodeapps/http-server) in root directory:
+For development mode:
+
 ```
-http-server ./public
+npm install
+npm start
 ```
+
+The demo site will be available at http://localhost:8080. You can use the [livereload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) and files will automatically rebuild and reload in the browser when you change them.
 
 ## Folder structure
 For the sake of being easily accessible &ndash; all CSS sources are kept in `lib/style`, while example `jade` templates live in `public/templates/name-of-the-module.jade`.

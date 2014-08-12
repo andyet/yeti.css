@@ -4,7 +4,8 @@
   "description": "&yet visual style, branding assets and basic CSS components",
   "main": "style.js",
   "scripts": {
-    "build": "node scripts/build-demo.js"
+    "build": "make build",
+    "start": "building-static-server -p 8080 -s 'npm run build'"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
     "stylus": "~0.41.2"
   },
   "devDependencies": {
-    "jade": "~0.35.0",
-    "stylizer": "~0.2.1"
+    "building-static-server": "^1.0.0",
+    "cssmin": "^0.4.1",
+    "jade": "^1.5.0",
+    "stylizer": "^1.0.0"
   }
 }
