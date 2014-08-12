@@ -69,7 +69,7 @@
 //- Breadcrumbs
 
 .breadcrumbs
-  padding: ceil($ui-padding*.5) $ui-padding
+  padding: ceil($ui-padding*.5) 0
 
   li:not(:first-child)
     position: relative
@@ -93,7 +93,7 @@
   li:not(:last-child)
     border-right: $ui-border
 
-  a[class^='icon']
+  em[class^='icon']
     top: 1px
     position: relative
 
@@ -124,10 +124,6 @@
     a
       border-bottom: $ui-border
 
-  a:hover, 
-  .current-item
-    background-color: lighten($gray-lighter, 90%)
-
 //- Shared
 
 .unavailable-item
@@ -138,9 +134,17 @@
   font-weight: $font-weight-bold
 
 .tabs, 
-.side-nav
+.side-nav,
+.pagination
   a, li
     display: block
+
+.side-nav,
+.pagination
+
+  a:hover, 
+  .current-item
+    background-color: lighten($gray-lighter, 80%)
 
 .tabs a, 
 .side-nav a,
@@ -150,6 +154,10 @@
 .pagination,
 .breadcrumbs
   display: inline-block
+
+.pagination li,
+.breadcrumbs li
+  float: left
 
 .breadcrumbs, 
 .side-nav,
