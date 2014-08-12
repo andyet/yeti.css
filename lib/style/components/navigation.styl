@@ -33,10 +33,13 @@
   label
     font-weight: normal
     font-size: $font-base
-      
+
   .icon-arrow-down
-    left: -5px
-      
+    margin: 0
+
+  .dropdown li
+    padding: 0
+
 //- Top Nav Light Variation
 
 .top-nav-light
@@ -46,7 +49,7 @@
     color: $blue
 
 .top-nav-light,
-.top-nav-light a
+.top-nav-light li
   background-color: white
 
 .top-nav-light .icon-arrow-down
@@ -66,7 +69,7 @@
     color: lighten($blue-saturated-lighter, 40%)
 
 .top-nav-dark,
-.top-nav-dark a
+.top-nav-dark li
   background-color: $blue-saturated
 
 .top-nav-dark .icon-arrow-down
@@ -191,8 +194,11 @@
 
   .top-nav
     
-    .dropdown a
-      padding: ceil($ui-padding*.5) $ui-padding
+    .dropdown 
+      display: block
+
+      a
+        padding: ceil($ui-padding*.5) $ui-padding
     
     > ul, .icon-arrow-down
       display: none
@@ -220,34 +226,17 @@
           font-size: $font-small
           font-weight: normal
 
-  .top-nav-light
-    
-    .menu-toggle:checked ~ ul
-      > li
-        border-bottom: $ui-border
-
   .top-nav-dark
 
-    .menu-toggle:checked ~ ul
+    .menu-toggle:checked ~ .dropdown
       > li
         border-bottom: 1px solid $blue-saturated-light
-
-        &:last-child
-          border-bottom: 1px solid $blue-saturated-lighter
 
 @media screen and (min-width: $breakpoint-tablet+1)
   
   .top-nav
-    
     label
       display: none
-
-    .dropdown a
-      display: block
-
-  .top-nav-light
-    .dropdown li
-      border-bottom: $ui-border
 
   .top-nav-dark  
     .dropdown li
