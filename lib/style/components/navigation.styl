@@ -4,13 +4,6 @@
 *
 --------------------------------------------------------------------*/
 
-.top-nav,
-.breadcrumbs,
-.pagination,
-.tabs,
-.side-nav
-  font-family: $font-gotham
-
 //- Top Nav
 
 .top-nav
@@ -96,9 +89,9 @@
 //- Pagination
 
 .pagination
-
-  a:not([class^='icon'])
-    padding: $ui-padding*.2 $ui-padding*.4
+  
+  li:not(:last-child)
+    border-right: $ui-border
 
   a[class^='icon']
     top: 1px
@@ -150,17 +143,24 @@
     display: block
 
 .tabs a, 
-.side-nav a
+.side-nav a,
+.pagination a
   line-height: 2.5
 
+.pagination,
+.breadcrumbs
+  display: inline-block
+
 .breadcrumbs, 
-.side-nav
+.side-nav,
+.pagination
   border-radius: $default-border-radius
   border: $ui-border
 
 .breadcrumbs, 
 .side-nav, 
-.tabs
+.tabs,
+.pagination
   a
     padding: 0 $ui-padding
 
