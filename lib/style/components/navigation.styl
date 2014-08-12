@@ -21,11 +21,6 @@
   ul
     margin: 0
 
-  .menu-toggle
-    visibility: hidden
-    position: absolute
-    left: -100%
-
   a
     display: inline-block
     padding: $ui-padding
@@ -34,11 +29,14 @@
     font-weight: normal
     font-size: $font-base
 
-  .icon-arrow-down
-    margin: 0
+  .menu-toggle
+    visibility: hidden
+    position: absolute
+    left: -100%
 
-  .dropdown li
-    padding: 0
+  .icon-arrow-down
+    position: relative
+    top: -2px
 
 //- Top Nav Light Variation
 
@@ -194,13 +192,10 @@
 
   .top-nav
     
-    .dropdown 
-      display: block
-
-      a
-        padding: ceil($ui-padding*.5) $ui-padding
+    ul
+      display: none
     
-    > ul, .icon-arrow-down
+    .icon-arrow-down
       display: none
 
     label, 
@@ -215,28 +210,62 @@
 
     .menu-toggle:checked ~ ul
 
-      .has-dropdown 
+      .dropdown
+        display: block
 
         li
           float: left
           border: 0
-          width: auto
 
-        li a 
+        a 
           font-size: $font-small
           font-weight: normal
 
+  //- Top Nav Light Variation
+  .top-nav-light
+    
+    .menu-toggle:checked ~ ul
+      > li:not(:last-child)
+        border-bottom: $ui-border
+  
+  //- Top Nav Dark Variation
+
   .top-nav-dark
 
-    .menu-toggle:checked ~ .dropdown
-      > li
+    .menu-toggle:checked ~ ul
+      > li:not(:last-child)
         border-bottom: 1px solid $blue-saturated-light
 
 @media screen and (min-width: $breakpoint-tablet+1)
   
-  .top-nav
+  .top-nav 
     label
       display: none
+
+    .has-dropdown
+      position: relative
+
+      &:hover .dropdown
+        display: block
+
+    .dropdown
+      display: none
+      position: absolute
+      top: 100%
+      left: 0
+      min-width: 100%
+
+  //- Top Nav Light Variation
+
+  .top-nav-light  
+    .dropdown 
+      border-left: $ui-border
+      border-right: $ui-border
+
+      li
+        border-bottom: $ui-border
+
+  //- Top Nav Dark Variation
 
   .top-nav-dark  
     .dropdown li

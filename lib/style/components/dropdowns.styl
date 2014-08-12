@@ -4,44 +4,20 @@
 *
 --------------------------------------------------------------------*/
 
-.has-dropdown
+.dropdown-standalone
   position: relative
   display: inline-block
-
-  &:hover     
-    .dropdown
-      display: block
-      position: absolute
-      top: 100%
-      left: 0
-      min-width: 100%
-
-  .icon-arrow-down
-    position: relative
-    top: -2px
-    margin-left: 5px
-
-.dropdown
-  display: none
-
-  li, a
-    width: 100%
-    display: block
-
-  li
-    padding: 10px
-
-    &:not(:last-child)
-      border-bottom: $ui-border
-
-.dropdown-standalone
   padding: 10px
   border: $ui-border
   border-radius: $default-border-radius
 
   &:hover
     .dropdown
-      top: 104%
+      display: block
+      position: absolute
+      top: 105%
+      left: 0
+      min-width: 100%
       border: $ui-border
       border-radius: $default-border-radius
       background-color: white
@@ -49,11 +25,15 @@
       li:not(:last-child)
         border-bottom: inherit
 
-  .icon-arrow-down
-    border-top-color: $blue
-
-@media screen and (max-width: $breakpoint-tablet)
+      a
+        padding: 10px
+        display: block
 
   .dropdown
-     *
-      display: inline-block
+    display: none
+
+  .icon-arrow-down
+    border-top-color: $blue
+    position: relative
+    top: -2px
+    margin-left: 5px
