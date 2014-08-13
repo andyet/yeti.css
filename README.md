@@ -1,6 +1,18 @@
-# &yet's style
+# Style
 
 Style is a pattern library consisting of lightweight, reusable modules. It has been built to reflect &yet's visual and branding guidelines. 
+
+## Table of Contents
+
+* [How To Run](https://github.com/andyet/style#how-to-run)
+* [Structure](https://github.com/andyet/style#structure)
+* [How To Include In Your App](https://github.com/andyet/style#how-to-include-in-your-app)
+* [Custom Fonts](https://github.com/andyet/style#custom-fonts)
+* [CSS Reset](https://github.com/andyet/style#css-reset)
+* [Documentation](https://github.com/andyet/style#documentation)
+* [Contributing](https://github.com/andyet/style#contributing)
+* [Extending Style](https://github.com/andyet/style#extending-style)
+* [License](https://github.com/andyet/style#license)
 
 ## How to run?
 
@@ -34,13 +46,6 @@ Note: installing Style **will not** include `assets` or `public`.
     ├── styl
     └── templates
 ```
-
-## Custom fonts
-Style defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/style/blob/gh-pages/lib/style/globals/_variables.styl#L13-L14).
-
-## CSS Reset
-
-By default, CSS reset is **not** included in *style*. Please add [normalize.css](https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css) separately.
 
 ## How to include in your app
 
@@ -88,6 +93,13 @@ Because this is an npm module, but isn't on npm, management of it is a little tr
     ```
 
 You can see the list of available releases at: [https://github.com/andyet/style/releases](https://github.com/andyet/style/releases).
+
+## Custom fonts
+Style defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/style/blob/gh-pages/lib/style/globals/_variables.styl#L13-L14).
+
+## CSS Reset
+
+By default, CSS reset is **not** included in *style*. Please add [normalize.css](https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css) separately.
 
 ## Documentation
 
