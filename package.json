@@ -23,6 +23,6 @@
     "building-static-server": "^1.0.0",
     "cssmin": "^0.4.1",
     "jade": "^1.5.0",
-    "stylizer": "^1.0.0"
+    "stylus": "^0.41.3"
   }
 }
