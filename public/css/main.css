@@ -2,7 +2,7 @@
   border-radius: 100%;
 }
 .avatar-radius {
-  border-radius: 3px;
+  border-radius: $default-border-radius;
 }
 .avatar-rounded {
   border-radius: 100%;
@@ -670,7 +670,7 @@ figure figcaption {
 .modal-close:hover {
   color: #828c8f;
 }
-.has-modal&:before {
+.has-modal:before {
   content: '';
 }
 .overlay,
