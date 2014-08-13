@@ -1,6 +1,46 @@
-# &yet's Style
+# &yet's style
 
-&amp;yet visual style, branding assets, CSS components. For reset use [normalize.css](https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css).
+Style is a pattern library consisting of lightweight, reusable modules. It has been built to reflect &yet's visual and branding guidelines. 
+
+## How to run?
+
+For development mode:
+
+```
+npm install
+npm start
+```
+
+The demo site will be available at http://localhost:8080. You can use the [livereload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) and files will automatically rebuild and reload in the browser when you change them.
+
+## Structure
+Style is located in `lib/style` and can be installed through [npm](https://www.npmjs.org/). Variables and mixins can be found in `style/globals` and components in `style/components`. Markup for each component lives in `public/templates`.
+
+Note: installing Style **will not** include `assets` or `public`.
+
+```
+├── assets
+│   ├── logos
+│   └── swatches
+├── lib
+│   └── style
+│       ├── components
+│       ├── globals
+│       └── index.styl
+└── public
+    ├── css
+    ├── images
+    ├── js
+    ├── styl
+    └── templates
+```
+
+## Custom fonts
+Style defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/style/blob/gh-pages/lib/style/globals/_variables.styl#L13-L14).
+
+## CSS Reset
+
+By default, CSS reset is **not** included in *style*. Please add [normalize.css](https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css) separately.
 
 ## How to include in your app
 
@@ -49,48 +89,6 @@ Because this is an npm module, but isn't on npm, management of it is a little tr
 
 You can see the list of available releases at: [https://github.com/andyet/style/releases](https://github.com/andyet/style/releases).
 
-
-## How to run?
-
-For development mode:
-
-```
-npm install
-npm start
-```
-
-The demo site will be available at http://localhost:8080. You can use the [livereload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) and files will automatically rebuild and reload in the browser when you change them.
-
-## Folder structure
-For the sake of being easily accessible &ndash; all CSS sources are kept in `lib/style`, while example `jade` templates live in `public/templates/name-of-the-module.jade`.
-
-Other assets like logos are available in `assets`. Note that you should not need to worry about the included font files, as they are being served from S3 already.
-
-## Custom fonts
-For custom font usage you have Typekit and Cloud Typography at your disposal. Request passwords from Karolina Szczur or Adam Brault and save in password manager of your choice.
-
-* [Cloud Typography User Guide](http://www.typography.com/cloud/user-guide/)
-* [How to use Typekit](http://help.typekit.com/customer/portal/topics/2076-Design-Development) and [desktop font syncing](http://help.typekit.com/customer/portal/topics/514077)
-
-## Logos
-
-Logos are available either in vector `SVG` format or as optimized `PNGs`, in full color and black and white, in three dimensions:
-
-* small (`100px` in height)
-* medium (`300px` in height)
-* large  (`600px` in height)
-
-List of logos:
-
-* &yet
-* &yet Labs
-* ^Lift
-* &!
-* OTalk
-* Talky
-
-For Base64 Data URIs please refer to the [demo page](http://andyet.github.io/style).
-
 ## Documentation
 
 Documentation and examples of usage can be found on [Github Pages](http://andyet.github.io/style/).
@@ -121,9 +119,8 @@ CSS isn't quite the same as code, but tags should be roughly analagous to [semve
 * `minor`: if the style change should not break existing sites, but adds new features/functionality, use a minor, i.e. 0.1.0, tag.
 * `patch`: if the style change is just a small bugfix that should work with existing sites, use a patch, i.e. 0.0.1, tag.
 
-## Style recipes
+## Extending style
 Style is intentionally built small. For more interface elements see [style recipes](https://github.com/andyet/style-recipes).
-
 
 ## License
 MIT
