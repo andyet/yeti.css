@@ -49,9 +49,27 @@ Note: installing Style **will not** include `assets` or `public`.
 
 ## How to include in your app
 
+Style is a stylus plugin, so you just need to ensure stylus knows to use the plugin, and then import it in your app.
+
+### Static sites
+
+If you are compiling your stylus with the stylus command line interface, maybe directly or via a Makefile or similar, it's as easy as:
+
+1. `npm install style --save-dev`
+2. Add "-u style" to the command: `stylus -u style ./path/to/app.styl`
+3. Now you can import style, or a subcomponent of style, in your app's .styl files:
+
+    ```stylus
+    @import 'style'
+    // or
+    @import 'style/_mixins'
+    ````
+
+### Single page apps using moonboots
+
 The simplest way to include style in a moonboots app is to use [stylizer](https://github.com/latentflip/stylizer);
 
-1. `npm install git+ssh://git@github.com/andyet/style --save`
+1. `npm install style --save`
 2. Add 'style' to the list of plugins in stylizer in your beforeCSS moonboots build step:
 
     ```javascript
@@ -59,7 +77,7 @@ The simplest way to include style in a moonboots app is to use [stylizer](https:
         var plugins = ['style'];
 
         if (config.isDev) {
-            stylizer(stylesheetsDir + '/app.styl', stylesheetsDir + '/app.css', plugins, don     e);
+            stylizer(stylesheetsDir + '/app.styl', stylesheetsDir + '/app.css', plugins, done);
         }
     },
     ```
