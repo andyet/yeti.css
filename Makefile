@@ -27,4 +27,5 @@ public/css/main.min.css: public/css/main.css
 	cssmin public/css/main.css > public/css/main.min.css
 
 public/css/main.css: public/styl/main.styl $(STYLUS_FILES)
-	stylizer -f public/styl/main.styl -o public/css/main.css
+	# Use the current module as it's own plugin, normally this would be -u style
+	stylus -u ./ public/styl/main.styl -o public/css
