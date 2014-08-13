@@ -172,7 +172,7 @@ video {
 .button-group.button-group-outlined .button-secondary {
   border: 1px solid #0d8ac1;
 }
-@media screen and (max-width: $breakpoint-smartphone) {
+@media screen and (max-width: 480px) {
   .button {
     display: block;
     width: 100%;
@@ -264,7 +264,7 @@ pre {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: $breakpoint-smartphone) {
+@media screen and (max-width: 480px) {
   .container {
     width: 90%;
   }
@@ -272,7 +272,7 @@ pre {
     width: 100%;
   }
 }
-@media screen and (min-width: $breakpoint-smartphone+1) {
+@media screen and (min-width: 481px) {
   [class^='column'] {
     float: left;
   }
@@ -280,7 +280,7 @@ pre {
     width: 50%;
   }
 }
-@media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-desktop) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .container {
     width: 85%;
   }
@@ -291,7 +291,7 @@ pre {
     width: 22%;
   }
 }
-@media screen and (min-width: $breakpoint-desktop+1) {
+@media screen and (min-width: 1025px) {
   .container {
     width: 70%;
   }
@@ -684,7 +684,7 @@ figure figcaption {
   box-shadow: inset 0 0 100px rgba(0,0,0,0.7);
   background-color: rgba(0,0,0,0.4);
 }
-@media screen and (max-width: $breakpoint-smartphone) {
+@media screen and (max-width: 480px) {
   .modal {
     height: 100%;
     width: 100%;
@@ -696,12 +696,12 @@ figure figcaption {
     -ms-transform: none;
   }
 }
-@media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-tablet) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .modal {
     width: 80%;
   }
 }
-@media screen and (min-width: $breakpoint-tablet+1) {
+@media screen and (min-width: 769px) {
   .modal {
     width: 50%;
   }
@@ -860,7 +860,7 @@ figure figcaption {
 .pagination a {
   font-size: 12px;
 }
-@media screen and (max-width: $breakpoint-smartphone) {
+@media screen and (max-width: 480px) {
   .breadcrumbs {
     padding: 0;
   }
@@ -881,7 +881,7 @@ figure figcaption {
     padding: 5px 10px;
   }
 }
-@media screen and (max-width: $breakpoint-tablet) {
+@media screen and (max-width: 768px) {
   .top-nav ul {
     display: none;
   }
@@ -916,7 +916,7 @@ figure figcaption {
     border-bottom: 1px solid #1f4753;
   }
 }
-@media screen and (min-width: $breakpoint-tablet+1) {
+@media screen and (min-width: 769px) {
   .top-nav label {
     display: none;
   }
@@ -1076,7 +1076,7 @@ tr.table-cell-alert a:hover {
 .table-striped tr:nth-child(even) {
   background-color: #f8f9fa;
 }
-@media screen and (max-width: $breakpoint-tablet - 1) {
+@media screen and (max-width: 767px) {
   table td,
   table th {
     padding: 4px 8px;
@@ -1134,7 +1134,7 @@ blockquote small {
 blockquote small:before {
   content: '\2014 \00A0';
 }
-@media screen and (max-width: $breakpoint-desktop - 1) {
+@media screen and (max-width: 1023px) {
   h1 {
     font-size: 36px;
   }
