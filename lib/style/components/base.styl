@@ -10,13 +10,14 @@
   box-sizing: border-box
 
 body
-  font: $font-base/$line-height-base $font-gotham
+  font-family: $font-gotham
+  font-size: $font-base
+  line-height: $line-height-base 
   color: $gray-dark
-  text-rendering: optimizeLegibility
-  -webkit-font-smoothing: antialiased
 
 p
-  margin: 0 0 $space 0
+  margin-top: 0
+  margin-bottom: $space
 
 //- Selection highlight
 
@@ -38,7 +39,7 @@ a
   &:focus
     outline: none
 
-  &:hover:not(.button)
+  &:hover
     color: darken($blue, 20%)
 
 //- Helper classes
