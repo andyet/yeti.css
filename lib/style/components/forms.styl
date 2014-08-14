@@ -4,8 +4,11 @@
 *
 --------------------------------------------------------------------*/
   
-legend, select, 
-.form-input, .form-checkbox, .form-radio
+legend, 
+select, 
+.form-input, 
+.form-checkbox, 
+.form-radio
   margin-bottom: $space*.5
 
 legend, label
@@ -26,10 +29,6 @@ label
   font-size: $font-small
 
 select,
-.form-input
-  border: 0
-
-select,
 .form-input,
 .form-radio,
 .form-checkbox
@@ -47,7 +46,7 @@ select,
   padding: $ui-padding-spaced
   width: 100%
   border-radius: 3px
-  box-shadow: 0 0 0 1px $gray-lighter
+  border: $ui-border
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
@@ -55,10 +54,10 @@ select,
   &:focus
     transition: all .2s ease-in
     -webkit-transition: all .2s ease-in
-    box-shadow: 0 0 0 1px $blue-light
+    border: 1px solid $blue-light
 
   &:disabled
-    background-color: lighten($gray-lighter, 60%)
+    background-color: lighten($gray-lighter, 80%)
     cursor: not-allowed
 
   &:required:focus
@@ -66,19 +65,19 @@ select,
 
   &.input-invalid
     background-color: $red-lighter
-    box-shadow: 0 0 0 1px $red-light
+    border: 1px solid $red-light
     color: lighten($red, 50%)
 
     &:focus
-      box-shadow: 0 0 0 1px $red
+      border: 1px solid $red
 
   &.input-valid
     background-color: $green-lighter
-    box-shadow: 0 0 0 1px $green-light
+    border: 1px solid $green-light
     color: lighten($green, 40%)
 
     &:focus
-      box-shadow: 0 0 0 1px $green
+      border: 1px solid $green
 
 textarea
   resize: none
@@ -100,14 +99,14 @@ input[type=file]
 //- Selects
 
 select
-  box-shadow: 0 0 0 1px $gray-lighter
+  border: $ui-border
   height: 40px
   padding: $ui-padding-spaced
   width: 100%
   background-color: white
 
   &:focus
-    box-shadow: 0 0 0 1px $blue-light
+    border: 1px solid $blue-light
 
   &:focus:-moz-focusring
     color: transparent
@@ -125,6 +124,7 @@ select
     color: $gray-light
     cursor: not-allowed
 
-  input[type=checkbox], input[type=radio]
+  input[type=checkbox], 
+  input[type=radio]
     display: inline-block
     margin-right: 10px

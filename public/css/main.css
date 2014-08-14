@@ -202,14 +202,12 @@ video {
 code {
   font-family: Menlo, Monaco, Consolas, monospace;
   font-size: 12px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   padding: 3px 5px;
 }
 pre {
   display: block;
   padding: 15px;
-  margin: 0 0 30px 0;
+  margin-bottom: 30px;
   max-width: 100%;
   line-height: 1.5;
   word-break: break-all;
@@ -335,10 +333,6 @@ label {
   font-size: 12px;
 }
 select,
-.form-input {
-  border: 0;
-}
-select,
 .form-input,
 .form-radio,
 .form-checkbox {
@@ -353,7 +347,7 @@ select,
   padding: 15px;
   width: 100%;
   border-radius: 3px;
-  box-shadow: 0 0 0 1px #e6eaed;
+  border: 1px solid #e6eaed;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -361,10 +355,10 @@ select,
 .form-input:focus {
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
-  box-shadow: 0 0 0 1px #88d5f7;
+  border: 1px solid #88d5f7;
 }
 .form-input:disabled {
-  background-color: #f5f7f8;
+  background-color: #fafbfb;
   cursor: not-allowed;
 }
 .form-input:required:focus {
@@ -372,19 +366,19 @@ select,
 }
 .form-input.input-invalid {
   background-color: #fff7f9;
-  box-shadow: 0 0 0 1px #ffc7d8;
+  border: 1px solid #ffc7d8;
   color: #ff749d;
 }
 .form-input.input-invalid:focus {
-  box-shadow: 0 0 0 1px #e80044;
+  border: 1px solid #e80044;
 }
 .form-input.input-valid {
   background-color: #e8f7ef;
-  box-shadow: 0 0 0 1px #c6ebd3;
+  border: 1px solid #c6ebd3;
   color: #8ed6a8;
 }
 .form-input.input-valid:focus {
-  box-shadow: 0 0 0 1px #43bb6e;
+  border: 1px solid #43bb6e;
 }
 textarea {
   resize: none;
@@ -402,14 +396,14 @@ input[type=file] {
   color: #b7c0c3;
 }
 select {
-  box-shadow: 0 0 0 1px #e6eaed;
+  border: 1px solid #e6eaed;
   height: 40px;
   padding: 15px;
   width: 100%;
   background-color: #fff;
 }
 select:focus {
-  box-shadow: 0 0 0 1px #88d5f7;
+  border: 1px solid #88d5f7;
 }
 select:focus:-moz-focusring {
   color: transparent;
