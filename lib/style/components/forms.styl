@@ -40,11 +40,11 @@ select,
 .form-inline 
   .form-input
     display: inline-block
-    padding-left: $ui-padding
+    padding-left: $ui-padding-spaced
 
 .form-input
   display: block
-  padding: ceil($ui-padding*.75)
+  padding: ceil($ui-padding-spaced*.75)
   width: 100%
   border-radius: 3px
   box-shadow: 0 0 0 1px $gray-lighter
@@ -92,7 +92,7 @@ select
 //- Files
 
 input[type=file]
-  padding: $ui-padding
+  padding: $ui-padding-spaced
   background-color: lighten($gray-lighter, 70%)
   font-size: $font-small
   color: $gray-light
@@ -102,7 +102,7 @@ input[type=file]
 select
   box-shadow: 0 0 0 1px $gray-lighter
   height: 40px
-  padding: ceil($ui-padding*.75)
+  padding: ceil($ui-padding-spaced*.75)
   width: 100%
   background-color: white
 
