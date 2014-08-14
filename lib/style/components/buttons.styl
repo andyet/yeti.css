@@ -14,17 +14,24 @@
   line-height: 1.5
   text-align: center
   cursor: pointer
+  color: $gray-dark
+
   transition: all .3s ease-in 
   -webkit-transition: all .3s ease-in
-  color: $gray-dark
-  user-select(none)
-  default-appearance(none)
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
 
   &:hover
     background-color: $gray-lighter
     color: inherit
 
-  &:disabled, &.button-disabled
+  &:disabled, 
+  &.button-disabled
     cursor: not-allowed
 
     &:not(.button-primary):not(.button-secondary)
@@ -41,15 +48,20 @@
   font-size: $font-small
 
 .button-large
-  padding: $ui-padding-spaced 2*$ui-padding-spaced
+  padding: $ui-padding-spaced $ui-padding-spaced*2
   font-size: $font-large
 
 //- Button Coloring
 
 .button-primary,
 .button-secondary
-  color: white
   border: none
+
+.button-primary,
+.button-secondary,
+.button-primary:hover,
+.button-secondary:hover
+  color: white
 
 .button-primary
   background-color: $pink
@@ -57,7 +69,8 @@
   &:hover
     background-color: darken($pink, 10%)
 
-  &:disabled, .button-disabled
+  &:disabled, 
+  .button-disabled
     background-color: $pink-light
 
 .button-secondary
@@ -66,7 +79,8 @@
   &:hover
     background-color: darken($blue, 10%)
 
-  &:disabled, .button-disabled
+  &:disabled, 
+  .button-disabled
     background-color: $blue-light
 
 //- Button Group
@@ -118,7 +132,7 @@
       &:last-of-type
         border-radius: 0 0 3px 3px
 
-  .button-group.button-group-outlined
+  .button-group-outlined
 
       .button:not(:last-of-type)
         border-bottom: none

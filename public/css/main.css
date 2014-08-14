@@ -85,9 +85,12 @@ video {
   line-height: 1.5;
   text-align: center;
   cursor: pointer;
+  color: #4d5659;
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
-  color: #4d5659;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -122,8 +125,13 @@ video {
 }
 .button-primary,
 .button-secondary {
-  color: #fff;
   border: none;
+}
+.button-primary,
+.button-secondary,
+.button-primary:hover,
+.button-secondary:hover {
+  color: #fff;
 }
 .button-primary {
   background-color: #ec008c;
@@ -187,7 +195,7 @@ video {
   .button-group .button:last-of-type {
     border-radius: 0 0 3px 3px;
   }
-  .button-group.button-group-outlined .button:not(:last-of-type) {
+  .button-group-outlined .button:not(:last-of-type) {
     border-bottom: none;
   }
 }
