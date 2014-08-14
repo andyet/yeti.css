@@ -990,7 +990,8 @@ dl dd {
   border-radius: 50px;
 }
 .progress {
-  background: #f2f4f6;
+  border: 1px solid #e6eaed;
+  background-color: #fdfdfd;
 }
 .progress .meter {
   display: inline-block;
@@ -1022,14 +1023,11 @@ td,
 th {
   text-align: left;
   padding: 10px;
+  border-bottom: 1px solid #e6eaed;
 }
 thead th {
   font-weight: 800;
   color: #4d5659;
-  border-bottom: 2px solid #e6eaed;
-}
-tbody td {
-  border-bottom: 1px solid #e6eaed;
 }
 tr.table-cell-error {
   background-color: #fff7f9;
@@ -1062,7 +1060,7 @@ tr.table-cell-alert a:hover {
   color: #915201;
 }
 .table-striped tr:nth-child(even) {
-  color: #8e9ca1;
+  color: #828c8f;
 }
 .table-outlined {
   border: 1px solid #e6eaed;
@@ -1073,9 +1071,9 @@ tr.table-cell-alert a:hover {
 }
 .table-with-hover tr:hover,
 .table-striped tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: #fafbfb;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-tablet-1) {
   table td,
   table th {
     padding: 5px 10px;
@@ -1134,7 +1132,7 @@ blockquote small {
 blockquote small:before {
   content: '\2014 \00A0';
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-desktop-1) {
   h1 {
     font-size: 36px;
   }

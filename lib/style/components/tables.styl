@@ -12,18 +12,13 @@ table
 td, th
   text-align: left
   padding: $ui-padding-default
+  border-bottom: $ui-border
 
 thead 
 
   th
     font-weight: $font-weight-bold
     color: $gray-dark
-    border-bottom: 2px solid $gray-lighter
-
-tbody
-
-  td
-    border-bottom: $ui-border
 
 //- Variations
 
@@ -64,7 +59,7 @@ tr
 .table-striped
 
   tr:nth-child(even)
-    color: darken($gray-light, 20%)
+    color: $gray
 
 //- Table Outlined
 
@@ -79,9 +74,9 @@ tr
 
 .table-with-hover tr:hover,
 .table-striped tr:nth-child(even)
-  background-color: lighten($gray-lighter, 70%)
+  background-color: lighten($gray-lighter, 80%)
 
-@media screen and (max-width: $breakpoint-tablet - 1)
+@media screen and (max-width: $breakpoint-tablet-1)
 
   table
     
