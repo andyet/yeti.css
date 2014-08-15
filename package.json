@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/andyet/style.git"
+    "url": "git://github.com/andyet/yeticss.git"
   },
   "author": "Karolina Szczur",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andyet/style/issues"
+    "url": "https://github.com/andyet/yeticss/issues"
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.2.0",
