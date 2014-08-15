@@ -1189,3 +1189,6 @@ blockquote small:before {
     page-break-after: avoid;
   }
 }
+body {
+  font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Helvetica Neue, Helvetica Arial, sans-serif;
+}
