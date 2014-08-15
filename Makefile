@@ -28,4 +28,4 @@ public/css/main.min.css: public/css/main.css
 
 public/css/main.css: public/styl/main.styl $(STYLUS_FILES)
 	# Use the current module as it's own plugin, normally this would be -u style
-	stylus -u ./ public/styl/main.styl -o public/css
+	stylus -u ./ public/styl/main.styl -u autoprefixer-stylus -o public/css

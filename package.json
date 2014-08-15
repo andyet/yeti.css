@@ -17,6 +17,7 @@
     "url": "https://github.com/andyet/style/issues"
   },
   "devDependencies": {
+    "autoprefixer-stylus": "^0.2.0",
     "building-static-server": "^1.0.0",
     "cssmin": "^0.4.1",
     "jade": "^1.5.0"
