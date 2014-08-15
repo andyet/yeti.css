@@ -23,8 +23,8 @@ exports.path = path.join(__dirname, 'lib');
  */
 
 function plugin() {
-  return function (yeticss) {
-    yeticss.include(exports.path);
+  return function (style) {
+    style.include(exports.path);
   };
 }
 

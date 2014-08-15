@@ -1,8 +1,8 @@
 {
-  "name": "style",
+  "name": "yeticss",
   "version": "3.1.2",
   "description": "&yet visual style, branding assets and basic CSS components",
-  "main": "style.js",
+  "main": "yeticss.js",
   "scripts": {
     "build": "make build",
     "start": "building-static-server -p 8080 -s 'npm run build'"
@@ -24,5 +24,8 @@
   },
   "dependencies": {
     "stylus": "^0.47.3"
+  },
+  "publishConfig": {
+    "registry": "https://nlfpm.andyet.net/_private"
   }
 }

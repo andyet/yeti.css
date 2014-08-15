@@ -1,6 +1,6 @@
 # yeticss
 
-Yeticss is a pattern library consisting of lightweight, reusable modules. It has been built to reflect &yet's visual and branding guidelines. 
+Yeticss is a pattern library consisting of lightweight, reusable modules. It has been built to reflect &yet's visual and branding guidelines.
 
 ## Table of Contents
 
@@ -56,8 +56,8 @@ Yeticss is a stylus plugin, so you just need to ensure stylus knows to use the p
 If you are compiling your stylus with the stylus command line interface, maybe directly or via a Makefile or similar, it's as easy as:
 
 1. `npm install yeticss --save-dev`
-2. Add "-u style" to the command: `stylus -u yeticss ./path/to/app.styl`
-3. Now you can import style, or a subcomponent of style, in your app's .styl files:
+2. Add "-u yeticss" to the command: `stylus -u yeticss ./path/to/app.styl`
+3. Now you can import yeticss, or a subcomponent of yeticss, in your app's .styl files:
 
     ```stylus
     @import 'yeticss'
