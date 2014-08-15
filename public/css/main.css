@@ -20,8 +20,7 @@
 *:after,
 *:before {
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+       box-sizing: border-box;
 }
 body {
   font-family: Gotham Rounded A, Gotham Rounded B, Helvetica, Arial, sans-serif;
@@ -86,14 +85,12 @@ video {
   text-align: center;
   cursor: pointer;
   color: #4d5659;
-  transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   appearance: none;
 }
 .button:hover {
@@ -344,13 +341,11 @@ select,
   width: 100%;
   border-radius: 3px;
   border: 1px solid #e6eaed;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 .form-input:focus {
-  transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in;
   border: 1px solid #88d5f7;
 }
 .form-input:disabled {
@@ -617,9 +612,9 @@ figure figcaption {
   left: 50%;
   border-radius: 3px;
   z-index: 20;
-  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
 }
@@ -680,9 +675,9 @@ figure figcaption {
     top: 0;
     left: 0;
     border-radius: 0;
-    transform: none;
     -webkit-transform: none;
-    -ms-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -765,8 +760,8 @@ figure figcaption {
   height: 100%;
   width: 1px;
   -webkit-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
   background-color: #e6eaed;
 }
 .pagination li:not(:last-child) {
