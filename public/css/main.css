@@ -91,9 +91,6 @@ video {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -257,7 +254,6 @@ pre {
   display: none;
 }
 .dropdown-standalone .icon-arrow-down {
-  border-top-color: #12acef;
   position: relative;
   top: -2px;
   margin-left: 5px;
@@ -448,16 +444,16 @@ select:focus:-moz-focusring {
   border-bottom: 5px solid transparent;
 }
 .icon-arrow-left {
-  border-right: 5px solid #828c8f;
+  border-right: 5px solid #12acef;
 }
 .icon-arrow-right {
-  border-left: 5px solid #828c8f;
+  border-left: 5px solid #12acef;
 }
 .icon-arrow-down {
-  border-top: 5px solid #828c8f;
+  border-top: 5px solid #12acef;
 }
 .icon-arrow-up {
-  border-bottom: 5px solid #828c8f;
+  border-bottom: 5px solid #12acef;
 }
 .media-wrapper,
 .media-outlined,
@@ -490,14 +486,6 @@ figure figcaption {
 .message {
   padding: 15px;
   position: relative;
-  background-color: #e7f7fd;
-  color: #12acef;
-}
-.message a {
-  color: #0d8ac1;
-}
-.message a:hover {
-  color: #0a6890;
 }
 .message a {
   font-weight: bold;
@@ -745,9 +733,6 @@ figure figcaption {
 .top-nav-light li {
   background-color: #fff;
 }
-.top-nav-light .icon-arrow-down {
-  border-top-color: #12acef;
-}
 .top-nav-dark label {
   color: #438193;
 }
@@ -967,13 +952,13 @@ ol li li ul li {
 ul li {
   list-style: disc;
 }
-ul.list-unstyled {
+.list-unstyled {
   padding-left: 0;
 }
-ul.list-unstyled li {
+.list-unstyled li {
   list-style: none;
 }
-ul.list-inline li {
+.list-inline li {
   display: inline-block;
 }
 dl dt {

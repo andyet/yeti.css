@@ -121,13 +121,34 @@
 
 //- Validation messages
 .message-error
-  alert-variant($red-light, $red)
+  background-color: $red-light
+  color: $red
+
+  a
+    color: darken($red, 20%)
+
+    &:hover
+      color: darken($red, 40%)
 
 .message-alert
-  alert-variant($orange-lighter, $orange)
+  background-color: $orange-lighter
+  color: $orange
+
+  a
+    color: darken($orange, 20%)
+
+    &:hover
+      color: darken($orange, 40%)
 
 .message-success
-  alert-variant($green-lighter, $green)
+  background-color: $green-lighter
+  color: $green
+
+  a
+    color: darken($green, 20%)
+
+    &:hover
+      color: darken($green, 40%)
 
 //- Message iconography
 .close
