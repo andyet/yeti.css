@@ -44,43 +44,43 @@ Yeti.css is built *for* people, thus feature requests are most welcome. Before s
 
 1. Clone the repository:
 
-```
-git clone git@github.com:andyet/yeticss.git
-cd yeticss
-```
+ ```bash
+ git clone git@github.com:andyet/yeticss.git
+ cd yeticss
+ ```
 
 2. Install dependencies (you might need to run this with `sudo`):
 
-```
-npm i
-```
+ ```bash
+ npm i
+ ```
 
 3. Create a topic branch off the main branch that will contain your feature, change or fix:
 
-```
-git checkout -b topic-branch-name
-```
+ ```bash
+ git checkout -b topic-branch-name
+ ```
 
 4. Run the server (Stylus and Jade will be compiled in the background):
 
-```
-npm start
-```
+ ```bash
+ npm start
+ ```
 
 5. Commit your changes in small, logical chunks with descriptive messages. For specific git commit message guidelines please refer and adhere to the [following](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) [guidelines](http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message).
 
-Additionaly, prefix your commit messages with:
+ Additionaly, prefix your commit messages with:
 
-* **[ux]** — anything that isn't a bug fix, mostly new features and code refactor
-* **[fix]** — bug fixes
-* **[docs]** — documentation updates (including `README.md` and `CONTRIBUTING.md`)
-* **[dist]** — changing and/or bumping dependencies versions in `package.json`
+ * **[ux]** — anything that isn't a bug fix, mostly new features and code refactor
+ * **[fix]** — bug fixes
+ * **[docs]** — documentation updates (including `README.md` and `CONTRIBUTING.md`)
+ * **[dist]** — changing and/or bumping dependencies versions in `package.json`
 
 6. Push changes to yeticss:
 
-```
-git push origin topic-branch-name
-```
+ ```bash
+ git push origin topic-branch-name
+ ```
 
 7. [Open a pull request](https://help.github.com/articles/using-pull-requests/) with a clear description against `gh-pages` branch.
 
