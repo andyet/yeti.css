@@ -123,32 +123,6 @@ By default, CSS reset is **not** included in yeticss. Please add [normalize.css]
 
 Documentation and examples of usage can be found on [Github Pages](http://andyet.github.io/yeticss/).
 
-## Contributing
-
-To rebuild the demo files run:
-
-```sh
-npm install #To install dependencies if you haven't already
-npm run build #compiles public/css/demo.css, and public/index.html
-```
-
-### Tagging releases
-
-Releases should be tagged to allow for version management, npm makes this easy. Just run:
-
-```
-npm version <major|minor|patch>
-git push origin --tags
-```
-
-Which will increment the version number, update package.json, create a git tag, and push the tag to github.
-
-CSS isn't quite the same as code, but tags should be roughly analagous to [semver](http://semver.org/):
-
-* `major`: if the style change is likely to break existing sites, use a major, i.e. 1.0.0, tag.
-* `minor`: if the style change should not break existing sites, but adds new features/functionality, use a minor, i.e. 0.1.0, tag.
-* `patch`: if the style change is just a small bugfix that should work with existing sites, use a patch, i.e. 0.0.1, tag.
-
 ## Extending yeticss
 Yeticss is intentionally built small. For more interface elements see [yeticss recipes](https://github.com/andyet/yeticss-recipes).
 
