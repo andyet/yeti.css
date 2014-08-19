@@ -70,7 +70,6 @@ Yeti.css is built *for* people, thus feature requests are most welcome. Before s
 5. Commit your changes in small, logical chunks with descriptive messages. For specific git commit message guidelines please refer and adhere to the [following](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) [guidelines](http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message).
 
  Additionaly, prefix your commit messages with:
-
  * **[ux]** — anything that isn't a bug fix, mostly new features and code refactor
  * **[fix]** — bug fixes
  * **[docs]** — documentation updates (including `README.md` and `CONTRIBUTING.md`)
