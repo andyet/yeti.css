@@ -43,26 +43,22 @@ Yeti.css is built *for* people, thus feature requests are most welcome. Before s
 ## Pull requests
 
 1. Clone the repository:
-
 ```
 git clone git@github.com:andyet/yeticss.git
 cd yeticss
 ```
 
 2. Install dependencies (you might need to run this with `sudo`):
-
 ```
 npm i
 ```
 
 3. Create a topic branch off the main branch that will contain your feature, change or fix:
-
 ```
 git checkout -b topic-branch-name
 ```
 
 4. Run the server (Stylus and Jade will be compiled in the background):
-
 ```
 npm start
 ```
@@ -114,7 +110,7 @@ After properly tagging and pushing new version of yeti.css to Github update the 
 * Changes should be listed under the following categories:
   * New Features
   * CSS
-    ** Module name (e.g. Typography)
+    - Module name (e.g. Typography)
   * Documentation
   * Bug fixes
 
