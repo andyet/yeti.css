@@ -123,6 +123,9 @@ By default, CSS reset is **not** included in yeticss. Please add [normalize.css]
 
 Documentation and examples of usage can be found on [Github Pages](http://andyet.github.io/yeticss/).
 
+## Contributing
+See the [CONTRIBUTING.md](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md) for information on how to contribute to yeti.css.
+
 ## Extending yeticss
 Yeticss is intentionally built small. For more interface elements see [yeticss recipes](https://github.com/andyet/yeticss-recipes).
 
