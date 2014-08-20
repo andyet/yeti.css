@@ -260,10 +260,6 @@ pre {
 .container {
   margin: 0 auto;
 }
-[class^='column'] {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media screen and (max-width: 480px) {
   .container {
     width: 90%;
@@ -278,6 +274,12 @@ pre {
   }
   .column-two {
     width: 50%;
+  }
+  [class^='column']:not(:first-of-type) {
+    padding-left: 30px;
+  }
+  [class^='column']:not(:last-of-type) {
+    padding-right: 30px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {

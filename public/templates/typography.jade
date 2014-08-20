@@ -1,73 +1,75 @@
 section.typography.cf
-  h2 Typography
 
-  p For custom font usage you have <a href='http://typekit.com'>Typekit</a> and <a href='http://typography.com'>Cloud Typography</a> at your disposal. Request passwords from Karolina Szczur or Adam Brault and save in password manager of your choice. 
+  .column-two
+    h2 Typography
 
-  p Both of those font services rely on project/kit architecture (read <a href='http://www.typography.com/cloud/user-guide/creating-projects'>how create a project on Cloud Typography</a>) to which fonts are added. Hoefler&Co introduces the concept of <a href='http://www.typography.com/cloud/user-guide/development-and-production'>development and production environment</a> &ndash; when a project is ready to be published remember about <a href='http://www.typography.com/cloud/user-guide/moving-to-production'>moving to production</a> and uploading font files to relevant <em>static.*</em> AWS buckets (ask Bear for access).
+    p For custom font usage you have <a href='http://typekit.com'>Typekit</a> and <a href='http://typography.com'>Cloud Typography</a> at your disposal. Request passwords from Karolina Szczur or Adam Brault and save in password manager of your choice. 
 
-  p Font families used in majority of &amp;yet's apps are Gotham and Helvetica Neue. When using Gotham be aware of the fact that it's web font served through <a href='http://typography.com'>Cloud Typography</a>. 
+    p Both of those font services rely on project/kit architecture (read <a href='http://www.typography.com/cloud/user-guide/creating-projects'>how create a project on Cloud Typography</a>) to which fonts are added. Hoefler&Co introduces the concept of <a href='http://www.typography.com/cloud/user-guide/development-and-production'>development and production environment</a> &ndash; when a project is ready to be published remember about <a href='http://www.typography.com/cloud/user-guide/moving-to-production'>moving to production</a> and uploading font files to relevant <em>static.*</em> AWS buckets (ask Bear for access).
 
-  h3 Headings
-  p Headings run from 1&mdash;6. Base font size is the equivalent of 16px with 
-    code.inline-light rem
-    |  as a primary unit.
+    p Font families used in majority of &amp;yet's apps are Gotham and Helvetica Neue. When using Gotham be aware of the fact that it's web font served through <a href='http://typography.com'>Cloud Typography</a>. 
 
-  .sample
-    h1 Headline 1 is 40px
-    h2 Headline 2 is 34px
-    h3 Headline 3 is 28px
-    h4 Headline 4 is 22px
-    h5 Headline 5 is 16px, uppercased
-    h6 Headline 6 is 14px
-    p Body copy is 16px
-    p.small Small body copy is 14px
+    h3 Headings
+    p Headings run from 1&mdash;6. Base font size is the equivalent of 16px with 
+      code.inline-light rem
+      |  as a primary unit.
 
-  h3 Text manipulations
+    .sample
+      h1 Headline 1 is 40px
+      h2 Headline 2 is 34px
+      h3 Headline 3 is 28px
+      h4 Headline 4 is 22px
+      h5 Headline 5 is 16px, uppercased
+      h6 Headline 6 is 14px
+      p Body copy is 16px
+      p.small Small body copy is 14px
 
-  ul.text
-    li 
-      strong Bold  
-      | text example
-    li
-      em Emphasized 
-      | text example
-    li
-      abbr Abbreviated
-      |  text example
-    li
-      u Underlined
-      |  text example
-    li
-      small Small 
-      | text example
-    li
-      s Strikethrough 
-      |  element example
-    li
-      sub The sub  
-      | element example
-    li
-      sup The sup 
-      | element example
-    li 
-      code.code-inline.code-dark Inline code
-      |  example
+  .column-two
+    h3 Text manipulations
 
-  h3 Blockquotes
-  p 
-    | For quoting use 
-    code.inline-light blockquote
-    |  with 
-    code.inline-light p
-    |  element in it. To add authors or notes below use small tag.
+    ul.text
+      li 
+        strong Bold  
+        | text example
+      li
+        em Emphasized 
+        | text example
+      li
+        abbr Abbreviated
+        |  text example
+      li
+        u Underlined
+        |  text example
+      li
+        small Small 
+        | text example
+      li
+        s Strikethrough 
+        |  element example
+      li
+        sub The sub  
+        | element example
+      li
+        sup The sup 
+        | element example
+      li 
+        code.code-inline.code-dark Inline code
+        |  example
 
-  blockquote
-    p Once now and then a smart quote would be nice.
-    small Adam Brault
+    h3 Blockquotes
+    p 
+      | For quoting use 
+      code.inline-light blockquote
+      |  with 
+      code.inline-light p
+      |  element in it. To add authors or notes below use small tag.
 
-  h3 Lists
+    blockquote
+      p Once now and then a smart quote would be nice.
+      small Adam Brault
 
-  .column
+    h3 Lists
+
     h4 Unordered list
     ul
       li List element one
@@ -82,7 +84,6 @@ section.typography.cf
       li List element four
       li List element five
 
-  .column
     h4 Ordered list
     ol
       li List element one
@@ -94,7 +95,6 @@ section.typography.cf
       li List element four
       li List element five
 
-  .column
     h4 Definition list
 
     dl

@@ -7,10 +7,6 @@
 .container
   margin: 0 auto
 
-[class^='column']
-  padding-left: $grid-gutter
-  padding-right: $grid-gutter
-
 @media screen and (max-width: $breakpoint-smartphone)
 
   .container
@@ -27,6 +23,12 @@
   .column-two
     width: 50%
 
+  [class^='column']:not(:first-of-type)
+    padding-left: $ui-padding-extra-spaced
+
+  [class^='column']:not(:last-of-type)
+    padding-right: $ui-padding-extra-spaced
+
 @media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-desktop)
 
   .container
@@ -37,6 +39,7 @@
 
   .column-four
     width: ceil($grid-width-tablet/4)
+
 
 @media screen and (min-width: $breakpoint-desktop+1)
 
