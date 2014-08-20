@@ -176,11 +176,6 @@ video {
   border: 1px solid #0d8ac1;
 }
 @media screen and (max-width: 480px) {
-  .button {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-  }
   .button-group .button {
     border-radius: none;
     margin: 0;
