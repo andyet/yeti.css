@@ -2,45 +2,47 @@ doctype html
 html
   head
     meta(charset='utf-8')
-    title &amp;yet • Style Guide
+    title yeti.css • &yet's visual style guide
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
     link(rel='stylesheet', href='//cloud.typography.com/7773252/674524/css/fonts.css')
     link(href='public/css/normalize.min.css', rel='stylesheet')
     link(href='public/css/main.min.css', rel='stylesheet')
 
-  .container
-    header(role='banner')
+  header(role='banner')
+    .container
       .cf
-        a(href='https://github.com/andyet/yeticss', title='See on Github', class='button button-secondary pull-right') See on Github
-      h2 yeti.css
+        a(href='https://github.com/andyet/yeticss', title='See on Github', class='button button-primary pull-right') See on Github
+      h1 yeti.css
+      p &yet's lightweight, modular pattern library written in Stylus.
 
-    .content
+  .container
 
-      //- include typography
-      //- include colors
-      //- include logos   
-      //- include buttons
-      //- include forms
-      //- include tables
-      //- include messages
-      //- include navigation    
-      //- include modals
-      //- include progress
-      //- include avatars
-      //- include media
+    //- include typography
+    //- include colors
+    //- include logos   
+    //- include buttons
+    //- include forms
+    //- include tables
+    //- include messages
+    //- include navigation    
+    //- include modals
+    //- include progress
+    //- include avatars
+    //- include media
 
-      footer(role='contentinfo')
-        
-        nav(role='navigation')
-          ul.list-unstyled.list-inline
-            li: a(href='https://github.com/andyet/yeticss') Github
-            li: a(href='https://github.com/andyet/yeticss/releases') Releases
-            li: a(href='https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md') Contributing
+  footer(role='contentinfo')
+    .container
+      
+      nav(role='navigation')
+        ul.list-unstyled.list-inline
+          li: a(href='https://github.com/andyet/yeticss') Github
+          li: a(href='https://github.com/andyet/yeticss/releases') Releases
+          li: a(href='https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md') Contributing
 
-        p Designed and built by <a href='https://twitter.com/fox'>@fox</a>.
-        p Maintained with invaluable help of <a href='https://github.com/andyet/yeticss/graphs/contributors'>contributors</a>.
+      p Designed and built by <a href='https://twitter.com/fox'>@fox</a>.
+      p Maintained with invaluable help of <a href='https://github.com/andyet/yeticss/graphs/contributors'>contributors</a>.
 
-        a(href='http://andyet.com/', class='logo')
+      a(href='http://andyet.com/', class='logo')
 
   script(src='public/js/highlight.pack.js')
   script.

@@ -2,18 +2,36 @@
 
 html,
 body
-  height: 100%
+  min-height: 100%
 
 body
   border-style: solid
-  border-color: $gray-lighter
+  border-color: lighten($gray-lighter, 50%)
+
+header
+  padding-bottom: $ui-padding-extra-spaced
+  border-bottom: 1px solid lighten($gray-lighter, 50%)
+  
+  h1
+    margin-bottom: 0
+
+  p
+    font-size: $font-large
+  
+  .button
+    margin: $space 0
 
 footer
   padding: $ui-padding-extra-spaced 0
-  border-top: $ui-border
+  border-top: 1px solid lighten($gray-lighter, 50%)
   color: $gray
   font-size: $font-medium
   text-align: center
+
+  li:not(:last-of-type)
+    &:after
+      content: '•'
+      margin: 0 5px 0 10px
 
   p
     margin-bottom: 0
@@ -25,12 +43,21 @@ footer
     height: 20px
     background: $logo-ampersand-gray no-repeat 0 0
 
+section
+  padding: $ui-padding-extra-spaced 0
+
 @media screen and (min-width: $breakpoint-tablet+1)
   
   body
-    border-width: 20px
+    border-width: 10px
 
 @media screen and (max-width: $breakpoint-tablet)
 
   body
     border-width: 5px
+
+@media screen and (max-width: $breakpoint-mobile)
+
+  .button
+    display: inline-block
+    width: auto
