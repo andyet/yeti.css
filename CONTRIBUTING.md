@@ -12,7 +12,7 @@
 ## Using the issue tracker
 The issue tracker is the preferred channel for [bug reports](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#bug-reporting), [features requests](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#features-requests) and submitting [pull requests](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#pull-requests), but please respect the following restrictions:
 
-* Please do not use the issue tracker for personal support requests (use [Andbang](andbang.com) or `#&yet` on Freenode).
+* Please do not use the issue tracker for personal support requests (use [Andbang](http://andbang.com) or `#&yet` on Freenode).
 * Tag issues accordingly with `bug`, `enhancement`, `feature`, `docs` or `js`.
 
 ## Bug reporting
