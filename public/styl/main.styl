@@ -1,4 +1,36 @@
 @import 'yeticss'
 
+html,
 body
-  font-family: $font-gotham-narrow
+  height: 100%
+
+body
+  border-style: solid
+  border-color: $gray-lighter
+
+footer
+  padding: $ui-padding-extra-spaced 0
+  border-top: $ui-border
+  color: $gray
+  font-size: $font-medium
+  text-align: center
+
+  p
+    margin-bottom: 0
+
+  .logo
+    margin-top: $space
+    display: inline-block
+    width: 17px
+    height: 20px
+    background: $logo-ampersand-gray no-repeat 0 0
+
+@media screen and (min-width: $breakpoint-tablet+1)
+  
+  body
+    border-width: 20px
+
+@media screen and (max-width: $breakpoint-tablet)
+
+  body
+    border-width: 5px

@@ -9,11 +9,10 @@ html
     link(href='public/css/main.min.css', rel='stylesheet')
 
   .container
-    header
-      h1 &amp;yet Style Guide
-      p Brand assets and modularized components.
-
-      a(href='https://github.com/andyet/style', title='View on Github', class='button-large button button-secondary') View on Github
+    header(role='banner')
+      .cf
+        a(href='https://github.com/andyet/yeticss', title='See on Github', class='button button-secondary pull-right') See on Github
+      h2 yeti.css
 
     .content
 
@@ -30,11 +29,18 @@ html
       //- include avatars
       //- include media
 
-      footer
-        p 
-          | &copy; 2014, 
-          a(href='http://andyet.com') &amp;yet
-        p: a(href='https://github.com/andyet/style') See on Github
+      footer(role='contentinfo')
+        
+        nav(role='navigation')
+          ul.list-unstyled.list-inline
+            li: a(href='https://github.com/andyet/yeticss') Github
+            li: a(href='https://github.com/andyet/yeticss/releases') Releases
+            li: a(href='https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md') Contributing
+
+        p Designed and built by <a href='https://twitter.com/fox'>@fox</a>.
+        p Maintained with invaluable help of <a href='https://github.com/andyet/yeticss/graphs/contributors'>contributors</a>.
+
+        a(href='http://andyet.com/', class='logo')
 
   script(src='public/js/highlight.pack.js')
   script.
