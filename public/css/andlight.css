@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------------
+* &yet Light Theme 
+* by Karolina Szczur (http://github.com/thefoxis)
+--------------------------------------------------------------------*/
+
+.comment,
+.template_comment,
+.diff .header,
+.javadoc {
+  color: #67777c;
+}
+
+.keyword,
+.css .rule .keyword,
+.at_rule,
+.winutils,
+.javascript .title,
+.nginx .title,
+.subst,
+.request,
+.status {
+  color: #12acef;
+}
+
+.string,
+.tag .value,
+.phpdoc,
+.tex .formula {
+  color: #d4007e;
+}
+
+.title,
+.coffeescript .params,
+.scss .preprocessor {
+  color: #71adbe;
+  font-weight: bold;
+}
+
+.class .title,
+.haskell .type,
+.vhdl .literal,
+.tex .command,
+.tag,
+.tag .title,
+.rules .property,
+.django .tag .keyword,
+.built_in,
+.lisp .title,
+.clojure .built_in {
+  color: #828c8f;
+}
+
+.attribute,
+.variable,
+.lisp .body,
+.preprocessor,
+.pragma,
+.pi,
+.doctype,
+.shebang,
+.cdata {
+  color: #8f989a;
+}
+
+.regexp,
+.addition {
+  color: #43bb6e;
+}
+
+.symbol,
+.ruby .symbol .string,
+.lisp .keyword,
+.tex .special,
+.prompt,
+.deletion {
+  color: #a50062;
+}
+
+.diff .change {
+  background: #f18902;
+}
