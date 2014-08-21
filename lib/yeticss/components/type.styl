@@ -53,11 +53,16 @@ blockquote
   p
     margin: 0
 
-  small
+  footer
+    margin-top: $space*.5
+    font-size: $font-medium
     color: lighten($gray, 40%)
 
     &:before
       content: '\2014 \00A0'
+
+.blockquote-centered
+  text-align: center
 
 @media screen and (max-width: $breakpoint-desktop-1)
 
