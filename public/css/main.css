@@ -927,7 +927,7 @@ figure figcaption {
 ul,
 ol {
   margin: 0 0 30px 0;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 ul li > ul,
 ol li > ul,
@@ -956,7 +956,8 @@ ul li {
   display: inline-block;
 }
 dl dt {
-  font-weight: 800;
+  font-weight: 500;
+  color: #000;
 }
 dl dd {
   margin: 0;
@@ -1068,8 +1069,17 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #000;
   line-height: 1.25;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: #000;
+  font-weight: 500;
 }
 h1 {
   font-size: 40px;
@@ -1094,9 +1104,16 @@ h6 {
 abbr {
   color: #828c8f;
   border-bottom: 1px dotted #b7c0c3;
+  cursor: help;
 }
-small {
+small,
+sup,
+sub {
   font-size: 12px;
+}
+mark {
+  padding: 3px 5px;
+  background: #ffffb3;
 }
 blockquote {
   margin: 30px 0;
@@ -1107,11 +1124,16 @@ blockquote {
 blockquote p {
   margin: 0;
 }
-blockquote small {
+blockquote footer {
+  margin-top: 15px;
+  font-size: 14px;
   color: #b4babc;
 }
-blockquote small:before {
+blockquote footer:before {
   content: '\2014 \00A0';
+}
+.blockquote-centered {
+  text-align: center;
 }
 @media screen and (max-width: $breakpoint-desktop-1) {
   h1 {
@@ -1191,6 +1213,14 @@ body {
   border-style: solid;
   border-color: #f2f4f6;
 }
+pre {
+  color: #000;
+  background: #f5f7f8;
+}
+code {
+  color: #000;
+  background: #f5f7f8;
+}
 header {
   padding-bottom: 30px;
   border-bottom: 1px solid #f2f4f6;
@@ -1204,21 +1234,21 @@ header p {
 header .button {
   margin: 30px 0;
 }
-footer {
+footer[role='contentinfo'] {
   padding: 30px 0;
   border-top: 1px solid #f2f4f6;
   color: #828c8f;
   font-size: 14px;
   text-align: center;
 }
-footer li:not(:last-of-type):after {
+footer[role='contentinfo'] li:not(:last-of-type):after {
   content: '•';
   margin: 0 5px 0 10px;
 }
-footer p {
+footer[role='contentinfo'] p {
   margin-bottom: 0;
 }
-footer .logo {
+footer[role='contentinfo'] .logo {
   margin-top: 30px;
   display: inline-block;
   width: 17px;
@@ -1227,6 +1257,23 @@ footer .logo {
 }
 section {
   padding: 30px 0;
+  border-bottom: 1px solid #f2f4f6;
+}
+.sample {
+  border: 1px solid #e6eaed;
+  padding: 30px;
+  border-radius: 3px;
+}
+.sample *:last-child {
+  margin-bottom: 0;
+}
+.sample h1,
+.sample h2,
+.sample h3,
+.sample h4,
+.sample h5,
+.sample h6 {
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 769px) {
   body {

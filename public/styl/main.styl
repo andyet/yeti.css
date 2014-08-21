@@ -8,6 +8,18 @@ body
   border-style: solid
   border-color: lighten($gray-lighter, 50%)
 
+//- Code Highlighting
+
+pre
+  color: black
+  background: lighten($gray-lighter, 60%)
+
+code
+  color: black
+  background: lighten($gray-lighter, 60%)
+
+//- Header
+
 header
   padding-bottom: $ui-padding-extra-spaced
   border-bottom: 1px solid lighten($gray-lighter, 50%)
@@ -21,7 +33,9 @@ header
   .button
     margin: $space 0
 
-footer
+//- Footer
+
+footer[role='contentinfo']
   padding: $ui-padding-extra-spaced 0
   border-top: 1px solid lighten($gray-lighter, 50%)
   color: $gray
@@ -43,8 +57,24 @@ footer
     height: 20px
     background: $logo-ampersand-gray no-repeat 0 0
 
+//- Sectioning
+
 section
   padding: $ui-padding-extra-spaced 0
+  border-bottom: 1px solid lighten($gray-lighter, 50%)
+
+//- Interface element samples
+
+.sample
+  border: $ui-border
+  padding: $ui-padding-extra-spaced
+  border-radius: 3px
+
+  *:last-child
+    margin-bottom: 0
+
+  h1, h2, h3, h4, h5, h6
+    margin-bottom: 10px
 
 @media screen and (min-width: $breakpoint-tablet+1)
   

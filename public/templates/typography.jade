@@ -1,103 +1,181 @@
-section.typography.cf
+section
 
-  .column-two
-    h2 Typography
+  h2 Typography
 
-    p For custom font usage you have <a href='http://typekit.com'>Typekit</a> and <a href='http://typography.com'>Cloud Typography</a> at your disposal. Request passwords from Karolina Szczur or Adam Brault and save in password manager of your choice. 
+  h4 Body copy
+  p The default <code>font-size</code> is <strong>16px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs get have a bottom margin of <code>30px</code> (the default spacing unit).
 
-    p Both of those font services rely on project/kit architecture (read <a href='http://www.typography.com/cloud/user-guide/creating-projects'>how create a project on Cloud Typography</a>) to which fonts are added. Hoefler&Co introduces the concept of <a href='http://www.typography.com/cloud/user-guide/development-and-production'>development and production environment</a> &ndash; when a project is ready to be published remember about <a href='http://www.typography.com/cloud/user-guide/moving-to-production'>moving to production</a> and uploading font files to relevant <em>static.*</em> AWS buckets (ask Bear for access).
+  :markdown
+    ```html
+      <p>...</p>
+    ```
 
-    p Font families used in majority of &amp;yet's apps are Gotham and Helvetica Neue. When using Gotham be aware of the fact that it's web font served through <a href='http://typography.com'>Cloud Typography</a>. 
+  h4 Headings
+  p All HTML headings are available&mdash;running from <code>h1</code> to <code>h6</code>.
 
-    h3 Headings
-    p Headings run from 1&mdash;6. Base font size is the equivalent of 16px with 
-      code.inline-light rem
-      |  as a primary unit.
+  .sample
+    h1 Headline 1 is 40px
+    h2 Headline 2 is 34px
+    h3 Headline 3 is 28px
+    h4 Headline 4 is 22px
+    h5 Headline 5 is 16px
+    h6 Headline 6 is 14px, uppercased
 
-    .sample
-      h1 Headline 1 is 40px
-      h2 Headline 2 is 34px
-      h3 Headline 3 is 28px
-      h4 Headline 4 is 22px
-      h5 Headline 5 is 16px, uppercased
-      h6 Headline 6 is 14px
-      p Body copy is 16px
-      p.small Small body copy is 14px
+  :markdown
+    ```html
+      <h1>Headline 1 is 40px</h1>
+      <h2>Headline 2 is 34px</h2>
+      <h3>Headline 2 is 28px</h3>
+      <h4>Headline 2 is 22px</h4>
+      <h5>Headline 2 is 16px</h5>
+      <h6>Headline 2 is 14px, uppercased</h6>
+    ```
 
-  .column-two
-    h3 Text manipulations
+  h4 Text manipulations
+  p Basic HTML inline text manipulations are supported.
 
-    ul.text
-      li 
-        strong Bold  
-        | text example
-      li
-        em Emphasized 
-        | text example
-      li
-        abbr Abbreviated
-        |  text example
-      li
-        u Underlined
-        |  text example
-      li
-        small Small 
-        | text example
-      li
-        s Strikethrough 
-        |  element example
-      li
-        sub The sub  
-        | element example
-      li
-        sup The sup 
-        | element example
-      li 
-        code.code-inline.code-dark Inline code
-        |  example
+  .sample
+    ul.list-unstyled
+      li This text snippet will be <strong>bold</strong>
+      li This text snippet will be <em>emphasized</em>
+      li This text snippet will be <u>underlined</u>
+      li This text snippet will be <s>strikedthrough</s>
+      li This text snippet will be <small>small</small>
+      li This text snippet will be <sub>subscripted</sub>
+      li This text snippet will be <sup>superscripted</sup>
+      li This text snippet will be <abbr title='abbreviation'>abbreviated</abbr>
+      li This text snippet will be <mark>highlighted</mark>
+      li This text snippet will be an <code>inline code sample</code>
 
-    h3 Blockquotes
-    p 
-      | For quoting use 
-      code.inline-light blockquote
-      |  with 
-      code.inline-light p
-      |  element in it. To add authors or notes below use small tag.
+  :markdown
+    ```html
+      This text snippet will be <strong>bold</strong>
+      This text snippet will be <em>emphasized</em>
+      This text snippet will be <u>underlined</u>
+      This text snippet will be <s>strikedthrough</s>
+      This text snippet will be <small>small</small>
+      This text snippet will be <sub>subscripted</sub>
+      This text snippet will be <sup>superscripted</sup>
+      This text snippet will be <abbr title='abrreviation'>abbreviated</abbr>
+      This text snippet will be <mark>highlighted</mark>
+      This text snippet will be an <code>inline code sample</code>
+    ```
 
-    blockquote
-      p Once now and then a smart quote would be nice.
-      small Adam Brault
+  h4 Blockquotes
+  p To quote an external source use a <code>blockquote</code> element. 
 
-    h3 Lists
+  blockquote
+    p You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged.
 
-    h4 Unordered list
-    ul
-      li List element one
-      li List element two
-        ul
-          li List element one
-            ul
-              li List element one
-              li List element two
-          li List element two
-      li List element three
-      li List element four
-      li List element five
+  :markdown
+    ```html
+      <blockquote>
+        <p>You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged.</p>
+      </blockquote>
+    ```
 
-    h4 Ordered list
-    ol
-      li List element one
-      li List element two
-        ol
-          li List element one
-          li List element two
-      li List element three
-      li List element four
-      li List element five
+  p To add a source of the quote use the <code>footer</code> element.
 
-    h4 Definition list
+  blockquote
+    p Failure isn’t a necessary evil. In fact, it isn’t evil at all. It is a necessary consequence of doing something new.
+    footer Ed Catmull in <cite>Creativity, Inc.</cite>
 
-    dl
-      dt Definition term
-      dd Definition description
-  
+  :markdown
+    ```html
+      <blockquote>
+        <p>Failure isn’t a necessary evil. In fact, it isn’t evil at all. It is a necessary consequence of doing something new.</p>
+        <footer>Ed Catmull in <cite>Creativity, Inc.</cite></footer>
+      </blockquote>
+    ```
+
+  p To center a <code>blockquote</code> add <code>blockquote-centered</code> class.
+
+  blockquote.blockquote-centered
+    p Getting the right people and the right chemistry is more important than getting the right idea.
+
+  :markdown
+    ```html
+      <blockquote class='blockquote-centered'>
+        <p>Getting the right people and the right chemistry is more important than getting the right idea.</p>
+      </blockquote>
+    ```
+
+  h4 Lists
+  p Both ordered and unordered lists can be customized with <code>list-ustyled</code> class, that will remove the <code>padding</code> as well as individual list item style and <code>list-inline</code> class, that will change the display of list items to <code>inline-block</code>.
+
+  h5 Unordered list
+  p An unordered list represents a collection of items that do not have any particular order.
+
+  ul
+    li List element one
+    li List element two
+      ul
+        li Nested list element one
+          ul
+            li Nested list element one
+            li Nested list element two
+        li List element two
+    li List element three
+    li List element four
+
+  :markdown
+    ```html
+      <ul>
+        <li>List element one</li>
+        <li>List element two
+          <ul>
+            <li>Nested list element one
+              <ul>
+                <li>Nested list element one</li>
+                <li>Nested list element two</li>
+              </ul>
+            </li>
+            <li>Nested list element two</li>
+          </ul>
+        </li>
+        <li>List element three</li>
+        <li>List element four</li>
+      </ul>
+    ```
+
+  h5 Ordered list
+  p An ordered list represents a collection of items that do have order and will be displayed with a preceding number.
+
+  ol
+    li List element one
+    li List element two
+      ol
+        li Nested list element one
+        li Nested list element two
+    li List element three
+    li List element four
+
+  :markdown
+    ```html
+      <ol>
+        <li>List element one</li>
+        <li>List element two
+          <ol>
+            <li>Nested list element one</li>
+            <li>Nested list element two</li>
+          </ol>
+        </li>
+        <li>List element three</li>
+        <li>List element four</li>
+      </ol>
+    ```
+
+  h5 Definition list
+  p A definition list consists of pairs of terms and their descriptions.
+
+  dl
+    dt Definition term
+    dd Definition description
+
+  :markdown
+    ```html
+      <dl>
+        <dt>Definition term</dt>
+        <dd>Definition description</dd>
+      </dl>
+    ```

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="//cloud.typography.com/7773252/674524/css/fonts.css">
     <link href="public/css/normalize.min.css" rel="stylesheet">
+    <link href="public/css/andlight.css" rel="stylesheet">
     <link href="public/css/main.min.css" rel="stylesheet">
   </head>
   <header role="banner">
@@ -16,6 +17,157 @@
     </div>
   </header>
   <div class="container">
+    <section>
+      <h2>Typography</h2>
+      <h4>Body copy</h4>
+      <p>The default <code>font-size</code> is <strong>16px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs get have a bottom margin of <code>30px</code> (the default spacing unit).</p><pre><code class="lang-html">  &lt;p&gt;...&lt;/p&gt;
+</code></pre>
+
+      <h4>Headings</h4>
+      <p>All HTML headings are available&mdash;running from <code>h1</code> to <code>h6</code>.</p>
+      <div class="sample">
+        <h1>Headline 1 is 40px</h1>
+        <h2>Headline 2 is 34px</h2>
+        <h3>Headline 3 is 28px</h3>
+        <h4>Headline 4 is 22px</h4>
+        <h5>Headline 5 is 16px</h5>
+        <h6>Headline 6 is 14px, uppercased</h6>
+      </div><pre><code class="lang-html">  &lt;h1&gt;Headline 1 is 40px&lt;/h1&gt;
+  &lt;h2&gt;Headline 2 is 34px&lt;/h2&gt;
+  &lt;h3&gt;Headline 2 is 28px&lt;/h3&gt;
+  &lt;h4&gt;Headline 2 is 22px&lt;/h4&gt;
+  &lt;h5&gt;Headline 2 is 16px&lt;/h5&gt;
+  &lt;h6&gt;Headline 2 is 14px, uppercased&lt;/h6&gt;
+</code></pre>
+
+      <h4>Text manipulations</h4>
+      <p>Basic HTML inline text manipulations are supported.</p>
+      <div class="sample">
+        <ul class="list-unstyled">
+          <li>This text snippet will be <strong>bold</strong></li>
+          <li>This text snippet will be <em>emphasized</em></li>
+          <li>This text snippet will be <u>underlined</u></li>
+          <li>This text snippet will be <s>strikedthrough</s></li>
+          <li>This text snippet will be <small>small</small></li>
+          <li>This text snippet will be <sub>subscripted</sub></li>
+          <li>This text snippet will be <sup>superscripted</sup></li>
+          <li>This text snippet will be <abbr title='abbreviation'>abbreviated</abbr></li>
+          <li>This text snippet will be <mark>highlighted</mark></li>
+          <li>This text snippet will be an <code>inline code sample</code></li>
+        </ul>
+      </div><pre><code class="lang-html">  This text snippet will be &lt;strong&gt;bold&lt;/strong&gt;
+  This text snippet will be &lt;em&gt;emphasized&lt;/em&gt;
+  This text snippet will be &lt;u&gt;underlined&lt;/u&gt;
+  This text snippet will be &lt;s&gt;strikedthrough&lt;/s&gt;
+  This text snippet will be &lt;small&gt;small&lt;/small&gt;
+  This text snippet will be &lt;sub&gt;subscripted&lt;/sub&gt;
+  This text snippet will be &lt;sup&gt;superscripted&lt;/sup&gt;
+  This text snippet will be &lt;abbr title=&#39;abrreviation&#39;&gt;abbreviated&lt;/abbr&gt;
+  This text snippet will be &lt;mark&gt;highlighted&lt;/mark&gt;
+  This text snippet will be an &lt;code&gt;inline code sample&lt;/code&gt;
+</code></pre>
+
+      <h4>Blockquotes</h4>
+      <p>To quote an external source use a <code>blockquote</code> element. </p>
+      <blockquote>
+        <p>You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged.</p>
+      </blockquote><pre><code class="lang-html">  &lt;blockquote&gt;
+    &lt;p&gt;You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged.&lt;/p&gt;
+  &lt;/blockquote&gt;
+</code></pre>
+
+      <p>To add a source of the quote use the <code>footer</code> element.</p>
+      <blockquote>
+        <p>Failure isn’t a necessary evil. In fact, it isn’t evil at all. It is a necessary consequence of doing something new.</p>
+        <footer>Ed Catmull in <cite>Creativity, Inc.</cite></footer>
+      </blockquote><pre><code class="lang-html">  &lt;blockquote&gt;
+    &lt;p&gt;Failure isn’t a necessary evil. In fact, it isn’t evil at all. It is a necessary consequence of doing something new.&lt;/p&gt;
+    &lt;footer&gt;Ed Catmull in &lt;cite&gt;Creativity, Inc.&lt;/cite&gt;&lt;/footer&gt;
+  &lt;/blockquote&gt;
+</code></pre>
+
+      <p>To center a <code>blockquote</code> add <code>blockquote-centered</code> class.</p>
+      <blockquote class="blockquote-centered">
+        <p>Getting the right people and the right chemistry is more important than getting the right idea.</p>
+      </blockquote><pre><code class="lang-html">  &lt;blockquote class=&#39;blockquote-centered&#39;&gt;
+    &lt;p&gt;Getting the right people and the right chemistry is more important than getting the right idea.&lt;/p&gt;
+  &lt;/blockquote&gt;
+</code></pre>
+
+      <h4>Lists</h4>
+      <p>Both ordered and unordered lists can be customized with <code>list-ustyled</code> class, that will remove the <code>padding</code> as well as individual list item style and <code>list-inline</code> class, that will change the display of list items to <code>inline-block</code>.</p>
+      <h5>Unordered list</h5>
+      <p>An unordered list represents a collection of items that do not have any particular order.</p>
+      <ul>
+        <li>List element one</li>
+        <li>List element two
+          <ul>
+            <li>Nested list element one
+              <ul>
+                <li>Nested list element one</li>
+                <li>Nested list element two</li>
+              </ul>
+            </li>
+            <li>List element two</li>
+          </ul>
+        </li>
+        <li>List element three</li>
+        <li>List element four</li>
+      </ul><pre><code class="lang-html">  &lt;ul&gt;
+    &lt;li&gt;List element one&lt;/li&gt;
+    &lt;li&gt;List element two
+      &lt;ul&gt;
+        &lt;li&gt;Nested list element one
+          &lt;ul&gt;
+            &lt;li&gt;Nested list element one&lt;/li&gt;
+            &lt;li&gt;Nested list element two&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Nested list element two&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;List element three&lt;/li&gt;
+    &lt;li&gt;List element four&lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+
+      <h5>Ordered list</h5>
+      <p>An ordered list represents a collection of items that do have order and will be displayed with a preceding number.</p>
+      <ol>
+        <li>List element one</li>
+        <li>List element two
+          <ol>
+            <li>Nested list element one</li>
+            <li>Nested list element two</li>
+          </ol>
+        </li>
+        <li>List element three</li>
+        <li>List element four</li>
+      </ol><pre><code class="lang-html">  &lt;ol&gt;
+    &lt;li&gt;List element one&lt;/li&gt;
+    &lt;li&gt;List element two
+      &lt;ol&gt;
+        &lt;li&gt;Nested list element one&lt;/li&gt;
+        &lt;li&gt;Nested list element two&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;List element three&lt;/li&gt;
+    &lt;li&gt;List element four&lt;/li&gt;
+  &lt;/ol&gt;
+</code></pre>
+
+      <h5>Definition list</h5>
+      <p>A definition list consists of pairs of terms and their descriptions.</p>
+      <dl>
+        <dt>Definition term</dt>
+        <dd>Definition description</dd>
+      </dl><pre><code class="lang-html">  &lt;dl&gt;
+    &lt;dt&gt;Definition term&lt;/dt&gt;
+    &lt;dd&gt;Definition description&lt;/dd&gt;
+  &lt;/dl&gt;
+</code></pre>
+
+    </section>
   </div>
   <footer role="contentinfo">
     <div class="container">
