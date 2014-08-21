@@ -61,7 +61,9 @@ footer[role='contentinfo']
 
 section
   padding: $ui-padding-extra-spaced 0
-  border-bottom: 1px solid lighten($gray-lighter, 50%)
+
+  &:not(:last-child)
+    border-bottom: 1px solid lighten($gray-lighter, 50%)
 
 //- Interface element samples
 
@@ -75,6 +77,11 @@ section
 
   h1, h2, h3, h4, h5, h6
     margin-bottom: 10px
+
+//- Avatars
+
+.avatar
+  margin: 0 $space $space 0
 
 @media screen and (min-width: $breakpoint-tablet+1)
   

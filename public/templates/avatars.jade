@@ -1,27 +1,32 @@
-section.avatars
+section
 
-  h3 Avatars
-  p 
-    | Avatars come in three sizes &mdash; large (100&times;100) , medium (50&times;50) and small (25&times;25). 
+  h4 Avatars
+  p Avatars come in three sizes&mdash;large (<code>100&times;100</code>) , medium (<code>50&times;50</code>) and small (<code>25&times;25</code>). Placeholders thanks to <a href='http://placekitten.com/'>Place Kitten</a>. Because we love kittens.
 
-  h4 Avatars inside links
-  p 
-    | They can be wrapped with a link with a 
-    code.inline-light avatar-wrapper
-    |  class.
+  h5 Rounded avatars
+  p For rounded avatars use <code>avatar-rounded</code> class.
 
-  a.avatar-wrapper.avatar-large.media-wrapper
-    img(src='public/img/dummy-av.png', class='avatar avatar-large avatar-rounded')
+  img(src='http://placekitten.com/g/200/200', class='avatar avatar-large avatar-rounded')
+  img(src='http://placekitten.com/g/200/200', class='avatar avatar-medium avatar-rounded')
+  img(src='http://placekitten.com/g/200/200', class='avatar avatar-small avatar-rounded')
 
-  h4 Rounded avatars
+  :markdown
+    ```html
+      <img src='http://placekitten.com/g/200/200' class='avatar avatar-large avatar-rounded' />
+      <img src='http://placekitten.com/g/200/200' class='avatar avatar-medium avatar-rounded' />
+      <img src='http://placekitten.com/g/200/200' class='avatar avatar-small avatar-rounded' />
+    ```
 
-  img(src='public/img/dummy-av.png', class='avatar avatar-large avatar-rounded')
-  img(src='public/img/dummy-av.png', class='avatar avatar-medium avatar-rounded')
-  img(src='public/img/dummy-av.png', class='avatar avatar-small avatar-rounded')
+  h5 Avatars with radius
+  p For avatars with <code>border radius</code> use <code>avatar-radius</code> class.
 
-  h4 Avatars with radius
+  img(src='http://placekitten.com/g/200/200', class='avatar avatar-large avatar-radius')
+  img(src='http://placekitten.com/g/200/200', class='avatar avatar-medium avatar-radius')
+  img(src='http://placekitten.com/g/200/200', class='avatar avatar-small avatar-radius')
 
-  img(src='public/img/dummy-av.png', class='avatar avatar-large avatar-radius')
-  img(src='public/img/dummy-av.png', class='avatar avatar-medium avatar-radius')
-  img(src='public/img/dummy-av.png', class='avatar avatar-small avatar-radius')
-
+  :markdown
+    ```html
+      <img src='http://placekitten.com/g/200/200' class='avatar avatar-large avatar-radius' />
+      <img src='http://placekitten.com/g/200/200' class='avatar avatar-medium avatar-radius' />
+      <img src='http://placekitten.com/g/200/200' class='avatar avatar-small avatar-radius' />
+    ```

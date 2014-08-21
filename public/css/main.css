@@ -1257,6 +1257,8 @@ footer[role='contentinfo'] .logo {
 }
 section {
   padding: 30px 0;
+}
+section:not(:last-child) {
   border-bottom: 1px solid #f2f4f6;
 }
 .sample {
@@ -1274,6 +1276,9 @@ section {
 .sample h5,
 .sample h6 {
   margin-bottom: 10px;
+}
+.avatar {
+  margin: 0 30px 30px 0;
 }
 @media screen and (min-width: 769px) {
   body {
