@@ -40,9 +40,14 @@ h6
 abbr
   color: $gray
   border-bottom: 1px dotted $gray-light
+  cursor: help
 
-small
+small, sup, sub
   font-size: $font-small
+
+mark
+  padding: ceil($ui-padding-narrow/2) $ui-padding-narrow
+  background: lighten(yellow, 70%)
 
 blockquote
   margin: $space 0
