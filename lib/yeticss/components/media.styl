@@ -4,34 +4,27 @@
 *
 --------------------------------------------------------------------*/
 
-.media-wrapper,
 .media-outlined,
 img
   border-radius: 3px
 
 figure
+  width: auto
   margin: 0
 
   img
     vertical-align: middle
 
+  img + img
+    margin-left: 5px
+
   figcaption
-    color: $gray-light
+    color: $gray
     font-size: $font-small
-
-//- Container with background
-
-.media-wrapper
-  display: inline-block
-  background-color: $blue
-  cursor: pointer 
-
-  &:hover
-    img, video
-      opacity: .5
 
 //- Outlined container
 
 .media-outlined
+  display: inline-block
   padding: 5px
   border: $ui-border 
