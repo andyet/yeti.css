@@ -449,31 +449,26 @@ select:focus:-moz-focusring {
 .icon-arrow-up {
   border-bottom: 5px solid #12acef;
 }
-.media-wrapper,
 .media-outlined,
 img {
   border-radius: 3px;
 }
 figure {
+  width: auto;
   margin: 0;
 }
 figure img {
   vertical-align: middle;
 }
+figure img + img {
+  margin-left: 5px;
+}
 figure figcaption {
-  color: #b7c0c3;
+  color: #828c8f;
   font-size: 12px;
 }
-.media-wrapper {
-  display: inline-block;
-  background-color: #12acef;
-  cursor: pointer;
-}
-.media-wrapper:hover img,
-.media-wrapper:hover video {
-  opacity: 0.5;
-}
 .media-outlined {
+  display: inline-block;
   padding: 5px;
   border: 1px solid #e6eaed;
 }

@@ -1,50 +1,49 @@
 section.media
 
-  h3 Media
-  p 
-    | Videos, figures and images have the maximum width of 
-    code.inline-light 100%
-    |  , so they never overflow the container (even on mobile).
+  h4 Media
+  p Media elements, such as pictures, videos or iframes have a maximum width of <code>100%</code> so they never overflow the parent container.
 
-  div.cf
+  h5 Images with captions
+  p For images with a caption use <code>figure</code> and <code>figcaption</code> element.
 
-    h4 Media inside links
-    p
-      | You can wrap 
-      code.inline-light video
-      |  and 
-      code.inline-light img
-      |  in a link. 
+  figure
+    img(src='http://placekitten.com/g/400/200')
+    figcaption Image description
 
-    a.media-wrapper
-      figure
-        img(src='public/img/dummy-av.png')
+  :markdown
+    ```html
+      <figure>
+        <img src='http://placekitten.com/g/400/200' />
+        <figcaption>Image description</figcaption>
+      </figure>
+    ```
 
-  h4 Images with captions
-  p 
-    | For semantic markup use the 
-    code.inline-light figure
-    |  element with 
-    code.inline-light figcaption
-    | .
+  h5 Media with an outline
+  p Having an outline around any type of media can be added by using <code>media-outlined</code> class.
 
-  .cf
-    figure
-      img(src='public/img/dummy-av.png')
-      figcaption Image description
+  figure.media-outlined
+    img(src='http://placekitten.com/g/400/200')
 
+  :markdown
+    ```html
+      <figure class='media-outlined'>
+        <img src='http://placekitten.com/g/400/200' />
+      </figure>
+    ```
 
-  h4 Media with an outline
-  p
-    | Having an outline around any type of media can be added by using 
-    code.inline-light media-outlined
-    |  class.
+  h5 Multiple images
+  p Multiple images should be placed in one <code>figure</code> element.
 
-  .cf
+  figure
+    img(src='http://placekitten.com/g/200/200')
+    img(src='http://placekitten.com/g/200/200')
+    img(src='http://placekitten.com/g/200/200')
 
-    figure.media-outlined
-      img(src='public/img/dummy-av.png')
-      figcaption Image description
-
-    figure.media-outlined
-      img(src='public/img/dummy-av.png')
+  :markdown
+    ```html
+      <figure>
+        <img src='http://placekitten.com/g/200/200' />
+        <img src='http://placekitten.com/g/200/200' />
+        <img src='http://placekitten.com/g/200/200' />
+      </figure>
+    ```

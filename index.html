@@ -184,6 +184,36 @@
 </code></pre>
 
     </section>
+    <section class="media">
+      <h4>Media</h4>
+      <p>Media elements, such as pictures, videos or iframes have a maximum width of <code>100%</code> so they never overflow the parent container.</p>
+      <h5>Images with captions</h5>
+      <p>For images with a caption use <code>figure</code> and <code>figcaption</code> element.</p>
+      <figure><img src="http://placekitten.com/g/400/200">
+        <figcaption>Image description</figcaption>
+      </figure><pre><code class="lang-html">  &lt;figure&gt;
+    &lt;img src=&#39;http://placekitten.com/g/400/200&#39; /&gt;
+    &lt;figcaption&gt;Image description&lt;/figcaption&gt;
+  &lt;/figure&gt;
+</code></pre>
+
+      <h5>Media with an outline</h5>
+      <p>Having an outline around any type of media can be added by using <code>media-outlined</code> class.</p>
+      <figure class="media-outlined"><img src="http://placekitten.com/g/400/200"></figure><pre><code class="lang-html">  &lt;figure class=&#39;media-outlined&#39;&gt;
+    &lt;img src=&#39;http://placekitten.com/g/400/200&#39; /&gt;
+  &lt;/figure&gt;
+</code></pre>
+
+      <h5>Multiple images</h5>
+      <p>Multiple images should be placed in one <code>figure</code> element.</p>
+      <figure><img src="http://placekitten.com/g/200/200"><img src="http://placekitten.com/g/200/200"><img src="http://placekitten.com/g/200/200"></figure><pre><code class="lang-html">  &lt;figure&gt;
+    &lt;img src=&#39;http://placekitten.com/g/200/200&#39; /&gt;
+    &lt;img src=&#39;http://placekitten.com/g/200/200&#39; /&gt;
+    &lt;img src=&#39;http://placekitten.com/g/200/200&#39; /&gt;
+  &lt;/figure&gt;
+</code></pre>
+
+    </section>
   </div>
   <footer role="contentinfo">
     <div class="container">
