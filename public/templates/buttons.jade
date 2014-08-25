@@ -1,66 +1,61 @@
 section.buttons
 
-  h3 Buttons
-  p 
-    | To create a button add 
-    code.inline-light button
-    |  class to  
-    code.inline-light= '<a>'
-    |  or 
-    code.inline-light= '<button>'
+  h4 Buttons
+  p Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants.
 
   button(class='button') Button
-  button(class='button button-primary') Button
-  button(class='button button-secondary') Button
+  button(class='button button-primary') Primary Button
+  button(class='button button-secondary') Secondary Button
 
-  h4 Disabled buttons
-  p
-    | To disable buttons add 
-    code.inline-light button-disabled
-    |  class or for 
-    code.inline-light= '<button>'
-    |  elements feel free to use the 
-    code.inline-light disabled
-    |  attribute.
+  :markdown
+    ```html
+      <a class='button'>Button</a>
+      <a href='button button-primary'>Primary Button</a>
+      <a href='button button-secondary'>Secondary Button</a>
+    ```
 
-  .cf
-    button(class='button', disabled) Button
-    button(class='button button-primary', disabled) Button
-    button(class='button button-secondary', disabled) Button
+  h5 Button sizes
+  p Buttons come in three different sizes&mdash;large, regular and small. Use <code>button-large</code>, no class and <code>button-small</code> classes respectively.
 
-  h4 Buttons sizes
-  p Buttons come in three different sizes &mdash; large, regular (no class) and small.
+  a(href='', class='button button-large') Large Button
+  a(href='', class='button') Regular Button
+  a(href='', class='button button-small') Small Button
 
-  .cf
-    a(href='', class='button button-large') Large Button
+  :markdown
+    ```html
+      <a class='button button-large'>Large Button</a>
+      <a href='button'>Regular Button</a>
+      <a href='button button-small'>Small Button</a>
+    ```
+
+  h5 Disabled buttons
+  p For disabled (unclickable) apperance use <code>disabled</code> attribute for <code>button</code> elements and <code>button-disabled</code> class for links.
+
+  button(class='button', disabled) Button
+  button(class='button button-primary', disabled) Primary Button 
+  a(class='button button-secondary button-disabled') Secondary Button
+
+  :markdown
+    ```html
+      <button class='button' disabled>Button</button>
+      <button class='button button-primary' disabled>Primary Button</button>
+      <a href='button button-secondary button-disabled'>Secondary Button</a>
+    ```
+
+  h5 Button groups
+  p To create a button group place any number of button elements in <code>button-group</code> container.
+
+  .button-group
     a(href='', class='button') Button
-    a(href='', class='button button-small') Small Button
-
-  h4 Button groups
-  p 
-    | Button grouping is available my adding 
-    code.inline-light .button-group
-    |  class. For additional outline include 
-    code.inline-light .button-group-outlined
-    |  class. For color variations of the buttons use &mdash; 
-    code.inline-light .button-primary
-    |  or 
-    code.inline-light .button-secondary
-    |  on the button element itself.
-
-  .cf.button-group.button-group-outlined
-    a(href='', class='button') Button
     a(href='', class='button') Button
     a(href='', class='button') Button
 
-  .cf.button-group.button-group-outlined
+  .button-group
     a(href='', class='button button-primary') Button
     a(href='', class='button button-primary') Button
     a(href='', class='button button-primary') Button
-    a(href='', class='button button-primary') Button
 
-  .cf.button-group.button-group-outlined
-    a(href='', class='button button-secondary') Button
+  .button-group
     a(href='', class='button button-secondary') Button
     a(href='', class='button button-secondary') Button
     a(href='', class='button button-secondary') Button

@@ -166,19 +166,17 @@ video {
 .button-group .button:last-child {
   border-radius: 0 3px 3px 0;
 }
-.button-group.button-group-outlined {
-  border-radius: 3px;
-}
-.button-group.button-group-outlined .button-primary {
+.button-group .button.button-primary {
   border: 1px solid #bd0070;
 }
-.button-group.button-group-outlined .button-secondary {
+.button-group .button.button-secondary {
   border: 1px solid #0d8ac1;
 }
 @media screen and (max-width: 480px) {
   .button-group .button {
     border-radius: none;
     margin: 0;
+    width: 100%;
   }
   .button-group .button:first-of-type {
     border-radius: 3px 3px 0 0;
@@ -186,7 +184,7 @@ video {
   .button-group .button:last-of-type {
     border-radius: 0 0 3px 3px;
   }
-  .button-group-outlined .button:not(:last-of-type) {
+  .button-group .button:not(:last-of-type) {
     border-bottom: none;
   }
 }
@@ -1274,6 +1272,15 @@ section:not(:last-child) {
 }
 .avatar {
   margin: 0 30px 30px 0;
+}
+.buttons .button-group {
+  margin-bottom: 10px;
+}
+.buttons .button-group .button {
+  margin-right: 0;
+}
+.buttons .button {
+  margin-right: 5px;
 }
 @media screen and (min-width: 769px) {
   body {
