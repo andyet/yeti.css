@@ -98,13 +98,10 @@
     &:last-child
       border-radius: 0 3px 3px 0
 
-  &.button-group-outlined
-    border-radius: 3px
-
-    .button-primary
+    &.button-primary
       border: 1px solid darken($pink, 20%)
 
-    .button-secondary
+    &.button-secondary
       border: 1px solid darken($blue, 20%)
 
 @media screen and (max-width: $breakpoint-smartphone)
@@ -114,6 +111,7 @@
     .button
       border-radius: none
       margin: 0
+      width: 100%
 
       &:first-of-type
         border-radius: 3px 3px 0 0
@@ -121,8 +119,6 @@
       &:last-of-type
         border-radius: 0 0 3px 3px
 
-  .button-group-outlined
-
-      .button:not(:last-of-type)
-        border-bottom: none
+    .button:not(:last-of-type)
+      border-bottom: none
 
