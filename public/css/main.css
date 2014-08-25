@@ -1285,9 +1285,20 @@ section:not(:last-child) {
     border-width: 5px;
   }
 }
-@media screen and (max-width: $breakpoint-mobile) {
+@media screen and (max-width: 480px) {
   .button {
     display: inline-block;
     width: auto;
+  }
+  .logo {
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) {
+  .logo {
+    margin: 20px;
+    display: inline-block;
   }
 }

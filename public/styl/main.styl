@@ -93,8 +93,19 @@ section
   body
     border-width: 5px
 
-@media screen and (max-width: $breakpoint-mobile)
+@media screen and (max-width: $breakpoint-smartphone)
 
   .button
     display: inline-block
     width: auto
+
+  .logo
+    margin: 30px auto
+    display: block
+    text-align: center
+
+@media screen and (min-width: $breakpoint-smartphone+1)
+
+  .logo
+    margin: 20px
+    display: inline-block
