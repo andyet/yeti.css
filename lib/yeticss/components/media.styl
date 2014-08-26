@@ -15,9 +15,6 @@ figure
   img
     vertical-align: middle
 
-  img + img
-    margin-left: 5px
-
   figcaption
     color: $gray
     font-size: $font-small
@@ -28,3 +25,21 @@ figure
   display: inline-block
   padding: 5px
   border: $ui-border 
+
+@media screen and (max-width: $breakpoint-smartphone)
+
+  figure
+    text-align: center
+
+    img + img
+      margin: 5px auto 0
+
+@media screen and (min-width: $breakpoint-smartphone+1)
+
+  figure
+
+    img
+      margin-bottom: 5px
+
+      &:not(:only-child)
+        margin-right: 5px
