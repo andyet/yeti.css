@@ -1,74 +1,7 @@
-section.tables
+section
 
-  h3 Tables
-  p 
-    | Tables come with helper styles for changing the default appearance. The default table markup can be found below &mdash; do remember about proper content grouping with 
-    code.inline-light thead
-    |  and 
-    code.inline-light tbody
-    | .
-
-  pre
-    code
-      = '<table>'
-      br
-      = '  <thead>'
-      br
-      = '    <tr>'
-      br
-      = '     <th>#</th>'
-      br
-      = '     <th>Name</th>'
-      br
-      = '     <th>Surname</th>'
-      br
-      = '     <th>Email</th>'
-      br
-      = '    </tr>'
-      br
-      = '  </thead>'
-      br
-      = '  <tbody>'
-      br
-      = '   <tr>'
-      br
-      = '    <td>1</td>'
-      br
-      = '    <td>Adam</td>'
-      br
-      = '    <td>Brault</td>'
-      br
-      = '    <td>adam@andyet.net</td>'
-      br
-      = '   </tr>'
-      br
-      = '   <tr>'
-      br
-      = '    <td>2</td>'
-      br
-      = '    <td>Henrik</td>'
-      br
-      = '    <td>Joreteg</td>'
-      br
-      = '    <td>henrik@andyet.net</td>'
-      br
-      = '   </tr>'
-      br
-      = '   <tr>'
-      br
-      = '    <td>3</td>'
-      br
-      = '    <td>Adam</td>'
-      br
-      = '    <td>Baldwin</td>'
-      br
-      = '    <td>baldwin@andyet.net</td>'
-      br
-      = '   </tr>'
-      br
-      = '  </tbody>'
-      br 
-      = '</table>'
+  h4 Tables
+  p When using tables remember about appropriate content grouping with <code>thead</code> and <code>tbody</code>. 
 
   table
     thead
@@ -97,13 +30,42 @@ section.tables
         td
           a baldwin@andyet.net
 
-  h4 Outlined table with hover effect
-  p 
-    | To separate the table visually add 
-    code.inline-light table-outlined
-    |  class. For additional hover effect on rows use 
-    code.inline-light table-with-hover
-    |  .
+  :markdown
+    ```html
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Adam</td>
+            <td>Brault</td>
+            <td>adam@andyet.net</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Henrik</td>
+            <td>Joreteg</td>
+            <td>henrik@andyet.net</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Adam</td>
+            <td>Baldwin</td>
+            <td>baldwin@andyet.net</td>
+          </tr>
+        </tbody>
+      </table>
+    ```
+
+  h5 Outlined tables
+  p Use <code>table-outlined</code> class for additional border around the <code>table</code>. For hover effects on rows add <code>table-with-hover</code>.
 
   table.table-outlined.table-with-hover
     thead
@@ -132,13 +94,8 @@ section.tables
         td
           a baldwin@andyet.net
 
-  h4 Striped table
-  p
-    | To differentiate the rows add 
-    code.inline-light table-striped
-    |  class to the 
-    code.inline-light table
-    |  tag.
+  h5 Striped table
+  p For odd striped rows add <code>table-striped</code> class.
 
   table.table-striped
     thead
@@ -173,15 +130,8 @@ section.tables
         td
           a amy@andyet.net
 
-  h4 Table with states
-  p
-    | If you're willing to add states to data inside the table use 
-    code.inline-light table-cell-success
-    | ,
-    code.inline-light table-cell-alert
-    |  and 
-    code.inline-light table-cell-error
-    |  respectively.
+  h5 Table with error states
+  p To add validation states to table rows use <code>table-cell-success</code>, <code>table-cell-alert</code> and <code>table-cell-success</code> respectively.
 
   table
     thead
