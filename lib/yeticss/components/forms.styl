@@ -14,7 +14,7 @@ legend, label
   font-weight: $font-weight-bold
 
 legend
-  padding: $ui-padding-spaced
+  padding: 0 $ui-padding-spaced
   font-size: $font-large
   color: black
 
@@ -37,14 +37,9 @@ select,
 
 //- General inputs
 
-.form-inline 
-  .form-input
-    display: inline-block
-    padding-left: $ui-padding-spaced
-
 .form-input
   display: block
-  padding: $ui-padding-spaced
+  padding: $ui-padding-default
   width: 100%
   border-radius: 3px
   border: $ui-border
@@ -59,7 +54,7 @@ select,
     cursor: not-allowed
 
   &:required:focus
-    box-shadow: 0 0 0 1px $orange-light
+    border: 1px solid $orange-light
 
   &.input-invalid
     background-color: $red-lighter
@@ -89,7 +84,7 @@ select
 //- Files
 
 input[type=file]
-  padding: $ui-padding-spaced
+  padding: $ui-padding-default
   background-color: lighten($gray-lighter, 70%)
   font-size: $font-small
   color: $gray-light
@@ -99,7 +94,7 @@ input[type=file]
 select
   border: $ui-border
   height: 40px
-  padding: $ui-padding-spaced
+  padding: $ui-padding-default
   width: 100%
   background-color: white
 
@@ -126,3 +121,21 @@ select
   input[type=radio]
     display: inline-block
     margin-right: 10px
+
+@media screen and (min-width: $breakpoint-tablet)
+
+  .form-inline 
+    
+    .form-element
+      display: inline-block
+      padding-left: $ui-padding-narrow
+      vertical-align: middle
+
+    .form-input,
+    .input-checkbox,
+    .input-radio, 
+    select
+      margin: 0
+
+    label
+      display: none
