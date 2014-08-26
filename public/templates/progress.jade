@@ -1,14 +1,9 @@
-section.progress-bars
+section
 
-  h3 Progress Bars
-  p 
-    | All progress bars are built with a  
-    code.inline-light meter
-    |  with an animation attached to it. 
-    strong No calculations of state or value 
-    | are perfomed (you need to figure this out by yourself).
+  h4 Progress Bars
+  p Currently progress bars are built as <code>div</code> elements due to still incomplete implementation of <code>progress</code> element. Take note that progress meter is a dummy value that should be adjusted.
 
-  h4 Large progress bar
+  h5 Large progress bar
 
   .progress.progress-large.progress-success
     span.meter
@@ -22,12 +17,24 @@ section.progress-bars
   .progress.progress-large
     span.meter
 
+  :markdown
+    ```html
+      <div class='progress progress-large progress-success'>
+        <span class='meter'></span>
+      </div>
+      <div class='progress progress-large progress-warning'>
+        <span class='meter'></span>
+      </div>
+      <div class='progress progress-large progress-error'>
+        <span class='meter'></span>
+      </div>
+      <div class='progress progress-large'>
+        <span class='meter'></span>
+      </div>
+    ```
 
-  h4 Small progress bar
-  p
-    | For small bars use 
-    code.inline-light progress-small
-    |  class.
+  h5 Small progress bar
+  p For small bars use <code>progress-small</code> class.
 
   .progress.progress-small.progress-success
     span.meter
@@ -41,11 +48,15 @@ section.progress-bars
   .progress.progress-small
     span.meter
 
-  h4 Rounded progress bar
-  p
-    | For rounded bars use 
-    code.inline-light progress-rounded
-    |  class.
+  :markdown
+    ```html
+      <div class='progress progress-small'>
+        <span class='meter'></span>
+      </div>
+    ```
+
+  h5 Rounded progress bar
+  p For rounded bars use <code>progress-rounded</code> class.
 
   .progress.progress-small.progress-rounded.progress-error
     span.meter
@@ -58,3 +69,10 @@ section.progress-bars
 
   .progress.progress-small.progress-rounded
     span.meter
+
+  :markdown
+    ```html
+      <div class='progress progress-small progress-rounded'>
+        <span class='meter'></span>
+      </div>
+    ```

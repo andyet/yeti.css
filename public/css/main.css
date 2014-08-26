@@ -458,9 +458,6 @@ figure {
 figure img {
   vertical-align: middle;
 }
-figure img + img {
-  margin-left: 5px;
-}
 figure figcaption {
   color: #828c8f;
   font-size: 12px;
@@ -469,6 +466,22 @@ figure figcaption {
   display: inline-block;
   padding: 5px;
   border: 1px solid #e6eaed;
+}
+@media screen and (max-width: 480px) {
+  figure {
+    text-align: center;
+  }
+  figure img + img {
+    margin: 5px auto 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  figure img {
+    margin-bottom: 5px;
+  }
+  figure img:not(:only-child) {
+    margin-right: 5px;
+  }
 }
 .message {
   padding: 15px;
@@ -971,7 +984,6 @@ dl dd {
 .progress .meter {
   display: inline-block;
   background-color: #12acef;
-  min-width: 50%;
   height: 100%;
 }
 .progress-small {
@@ -1281,6 +1293,12 @@ section:not(:last-child) {
 }
 .buttons .button {
   margin-right: 5px;
+}
+.progress {
+  margin-bottom: 10px;
+}
+.progress .meter {
+  min-width: 50%;
 }
 @media screen and (min-width: 769px) {
   body {

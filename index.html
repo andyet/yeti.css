@@ -199,6 +199,48 @@
       <div class="button-group"><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a></div>
     </section>
     <section>
+      <h4>Progress Bars</h4>
+      <p>Currently progress bars are built as <code>div</code> elements due to still incomplete implementation of <code>progress</code> element. Take note that progress meter is a dummy value that should be adjusted.</p>
+      <h5>Large progress bar</h5>
+      <div class="progress progress-large progress-success"><span class="meter"></span></div>
+      <div class="progress progress-large progress-warning"><span class="meter"></span></div>
+      <div class="progress progress-large progress-error"><span class="meter"></span></div>
+      <div class="progress progress-large"><span class="meter"></span></div><pre><code class="lang-html">  &lt;div class=&#39;progress progress-large progress-success&#39;&gt;
+    &lt;span class=&#39;meter&#39;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#39;progress progress-large progress-warning&#39;&gt;
+    &lt;span class=&#39;meter&#39;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#39;progress progress-large progress-error&#39;&gt;
+    &lt;span class=&#39;meter&#39;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#39;progress progress-large&#39;&gt;
+    &lt;span class=&#39;meter&#39;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      <h5>Small progress bar</h5>
+      <p>For small bars use <code>progress-small</code> class.</p>
+      <div class="progress progress-small progress-success"><span class="meter"></span></div>
+      <div class="progress progress-small progress-warning"><span class="meter"></span></div>
+      <div class="progress progress-small progress-error"><span class="meter"></span></div>
+      <div class="progress progress-small"><span class="meter"></span></div><pre><code class="lang-html">  &lt;div class=&#39;progress progress-small&#39;&gt;
+    &lt;span class=&#39;meter&#39;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      <h5>Rounded progress bar</h5>
+      <p>For rounded bars use <code>progress-rounded</code> class.</p>
+      <div class="progress progress-small progress-rounded progress-error"><span class="meter"></span></div>
+      <div class="progress progress-small progress-rounded progress-warning"><span class="meter"></span></div>
+      <div class="progress progress-small progress-rounded progress-success"><span class="meter"></span></div>
+      <div class="progress progress-small progress-rounded"><span class="meter"></span></div><pre><code class="lang-html">  &lt;div class=&#39;progress progress-small progress-rounded&#39;&gt;
+    &lt;span class=&#39;meter&#39;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+</code></pre>
+
+    </section>
+    <section>
       <h4>Tables</h4>
       <p>When using tables remember about appropriate content grouping with <code>thead</code> and <code>tbody</code>. </p>
       <table>
