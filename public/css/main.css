@@ -297,7 +297,6 @@ pre {
     width: 18%;
   }
 }
-legend,
 select,
 .form-input,
 .form-checkbox,
@@ -309,13 +308,15 @@ label {
   font-weight: 800;
 }
 legend {
+  padding: 15px;
   font-size: 22px;
   color: #000;
 }
 fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
+  border: 1px solid #e6eaed;
+  border-radius: 3px;
+  padding: 30px;
+  margin: 0 0 30px 0;
 }
 label {
   display: block;
@@ -338,7 +339,7 @@ select,
   width: 100%;
   border-radius: 3px;
   border: 1px solid #e6eaed;
-  appearance: none;
+  -webkit-appearance: none;
 }
 .form-input:focus {
   -webkit-transition: all 0.2s ease-in;

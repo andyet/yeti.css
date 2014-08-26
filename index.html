@@ -199,6 +199,65 @@
       <div class="button-group"><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a><a href="" class="button button-secondary">Button</a></div>
     </section>
     <section>
+      <h4>Forms</h4>
+      <form>
+        <fieldset>
+          <legend>Comment Form</legend>
+          <label for="username">Username</label>
+          <input type="text" name="username" placeholder="Your username" class="form-input">
+          <label for="comment">Write a comment</label>
+          <textarea name="comment" placeholder="This is a sample message" class="form-input"> </textarea>
+          <button type="submit" class="button button-primary">Send</button>
+        </fieldset>
+      </form><pre><code class="lang-html">  &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;Comment Form&lt;/legend&gt;
+
+      &lt;label for=&#39;username&#39;&gt;Username&lt;/label&gt;
+      &lt;input type=&#39;text&#39; name=&#39;username&#39; placeholder=&#39;Your username&#39; class=&#39;form-input&#39; /&gt;
+
+      &lt;label for=&#39;comment&#39;&gt;Write a comment&lt;/label&gt;
+      &lt;textarea name=&#39;comment&#39; class=&#39;form-input&#39; placeholder=&#39;This is a sample message&#39;&gt;&lt;/textarea&gt;
+
+      &lt;button type=&#39;submit&#39; class=&#39;button button-primary&#39;&gt;Send&lt;/button&gt;
+
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+</code></pre>
+
+      <h4>Required inputs</h4>
+      <input type="text" placeholder="This input is required" required class="form-input">
+      <h4>Disabled inputs</h4>
+      <p>
+         
+        To disable a form element add <code class="inline-light">disabled</code> attribute.
+      </p>
+      <input type="text" placeholder="This input is disabled" disabled class="form-input">
+      <h4>Input validity</h4>
+      <p>
+         
+        Sometimes you need to validate your forms. To have meaningful styling for valid and invalid inputs add <code class="inline-light">input-valid</code> and <code class="inline-light">input-invalid</code> classes respectively.
+      </p>
+      <input type="text" value="@CNN" class="form-input input-invalid">
+      <input type="text" value="John Doe" class="form-input input-valid ">
+      <h4>Other form elements</h4>
+      <p>For radio and checkbox usage make sure to add <code class="inline-light">checkbox</code> and <code class="inline-light">radio</code> class to the label wrapping the actual input.</p>
+      <form>
+        <fieldset>
+          <input type="file" class="form-input">
+          <label class="disabled input-checkbox">
+            <input type="checkbox" disabled>This is a disabled checkbox
+          </label>
+          <label class="input-radio">
+            <input type="radio">This is a radio button
+          </label>
+          <select>
+            <option>Option One</option>
+          </select>
+        </fieldset>
+      </form>
+    </section>
+    <section>
       <h4>Progress Bars</h4>
       <p>Currently progress bars are built as <code>div</code> elements due to still incomplete implementation of <code>progress</code> element. Take note that progress meter is a dummy value that should be adjusted.</p>
       <h5>Large progress bar</h5>

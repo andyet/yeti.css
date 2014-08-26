@@ -1,19 +1,35 @@
-section.forms
+section
 
-  h3 Forms
-
-  h4 Default form
+  h4 Forms
 
   form
     fieldset
-      legend Regular form
-      label Username
-      input(type='text', placeholder='Insert your username', class='form-input')
+      legend Comment Form
+      label(for='username') Username
+      input(type='text', name='username', placeholder='Your username', class='form-input')
 
-      label Write a comment
-      textarea(class='form-input') This is a sample message
+      label(for='comment') Write a comment
+      textarea(name='comment', class='form-input', placeholder='This is a sample message') 
 
       button(type='submit', class='button button-primary') Send
+
+  :markdown
+    ```html
+      <form>
+        <fieldset>
+          <legend>Comment Form</legend>
+
+          <label for='username'>Username</label>
+          <input type='text' name='username' placeholder='Your username' class='form-input' />
+
+          <label for='comment'>Write a comment</label>
+          <textarea name='comment' class='form-input' placeholder='This is a sample message'></textarea>
+
+          <button type='submit' class='button button-primary'>Send</button>
+
+        </fieldset>
+      </form>
+    ```
 
   h4 Required inputs
   input(type='text', placeholder='This input is required', required, class='form-input')
