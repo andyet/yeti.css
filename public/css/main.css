@@ -81,9 +81,9 @@ video {
   border: 1px solid #b7c0c3;
   background-color: transparent;
   border-radius: 3px;
-  padding: 5px 15px;
+  padding: 10px 15px;
   font-weight: 800;
-  line-height: 1.5;
+  line-height: 1.25;
   text-align: center;
   cursor: pointer;
   color: #4d5659;
@@ -308,7 +308,7 @@ label {
   font-weight: 800;
 }
 legend {
-  padding: 15px;
+  padding: 0 15px;
   font-size: 22px;
   color: #000;
 }
@@ -329,13 +329,9 @@ select,
 .form-checkbox {
   outline: 0;
 }
-.form-inline .form-input {
-  display: inline-block;
-  padding-left: 15px;
-}
 .form-input {
   display: block;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   border-radius: 3px;
   border: 1px solid #e6eaed;
@@ -351,7 +347,7 @@ select,
   cursor: not-allowed;
 }
 .form-input:required:focus {
-  box-shadow: 0 0 0 1px #fec57b;
+  border: 1px solid #fec57b;
 }
 .form-input.input-invalid {
   background-color: #fff7f9;
@@ -379,7 +375,7 @@ select {
   cursor: pointer;
 }
 input[type=file] {
-  padding: 15px;
+  padding: 10px;
   background-color: #f8f9fa;
   font-size: 12px;
   color: #b7c0c3;
@@ -387,7 +383,7 @@ input[type=file] {
 select {
   border: 1px solid #e6eaed;
   height: 40px;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   background-color: #fff;
 }
@@ -415,6 +411,22 @@ select:focus:-moz-focusring {
 .input-checkbox input[type=radio] {
   display: inline-block;
   margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .form-inline .form-element {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+  }
+  .form-inline .form-input,
+  .form-inline .input-checkbox,
+  .form-inline .input-radio,
+  .form-inline select {
+    margin: 0;
+  }
+  .form-inline label {
+    display: none;
+  }
 }
 .icon-arrow-left,
 .icon-arrow-right,

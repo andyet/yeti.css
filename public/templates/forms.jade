@@ -5,11 +5,14 @@ section
   form
     fieldset
       legend Comment Form
-      label(for='username') Username
-      input(type='text', name='username', placeholder='Your username', class='form-input')
 
-      label(for='comment') Write a comment
-      textarea(name='comment', class='form-input', placeholder='This is a sample message') 
+      .form-element
+        label(for='username') Username
+        input(type='text', name='username', placeholder='Your username', class='form-input')
+
+      .form-element
+        label(for='comment') Write a comment
+        textarea(name='comment', class='form-input', placeholder='This is a sample message')
 
       button(type='submit', class='button button-primary') Send
 
@@ -19,11 +22,15 @@ section
         <fieldset>
           <legend>Comment Form</legend>
 
-          <label for='username'>Username</label>
-          <input type='text' name='username' placeholder='Your username' class='form-input' />
+          <div class='form-element'>
+            <label for='username'>Username</label>
+            <input type='text' name='username' placeholder='Your username' class='form-input'>
+          </div>
 
-          <label for='comment'>Write a comment</label>
-          <textarea name='comment' class='form-input' placeholder='This is a sample message'></textarea>
+          <div class='form-element'>
+            <label for='comment'>Write a comment</label>
+            <textarea name='comment' class='form-input' placeholder='This is a sample message'></textarea>
+          </div>
 
           <button type='submit' class='button button-primary'>Send</button>
 
@@ -31,48 +38,110 @@ section
       </form>
     ```
 
-  h4 Required inputs
+  p Use <code>form-inline</code> class for inline form elements (works on desktop resolutions).
+
+  form.form-inline
+    fieldset
+
+      .form-element
+        label(for='username') Username
+        input(type='text', name='username', placeholder='Your username', class='form-input')
+
+      .form-element
+        label(for='password') Password
+        input(type='text', name='password', placeholder='Your password', class='form-input')
+
+      button(type='submit', class='button button-primary') Send
+
+  :markdown
+    ```html
+      <form class='form-inline'>
+        <fieldset>
+          <div class='form-element'>
+            <label for='username'>Username</label>
+            <input type='text' name='username' placeholder='Your username' class='form-input'>
+          </div>
+
+          <div class='form-element'>
+            <label for='password'>Password</label>
+            <input type='text' name='password' placeholder='Your password' class='form-input'>
+          </div>
+
+          <button type='submit' class='button button-primary'>Send</button>
+        </fieldset>
+      </form>
+    ```
+
+  h5 Required inputs
+  p To denotate that filling an input is mandatory add <code>required</code> attribute to an <code>input</code>, <code>textarea</code> or <code>select</code>.
+
   input(type='text', placeholder='This input is required', required, class='form-input')
 
-  h4 Disabled inputs
-  p  
-    | To disable a form element add 
-    code.inline-light disabled
-    |  attribute.
+  :markdown
+    ```html
+      <input type='text' class='form-input form-element' placeholder='This input is required' required>
+    ```
+
+  h5 Disabled inputs
+  p You can disable the following elements <code>input</code>, <code>select</code>, <code>textarea</code> and <code>button</code> by adding the <code>disabled</code> attribute.
 
   input(type='text', placeholder='This input is disabled', disabled, class='form-input')
 
-  h4 Input validity
-  p 
-    | Sometimes you need to validate your forms. To have meaningful styling for valid and invalid inputs add 
-    code.inline-light input-valid
-    |  and 
-    code.inline-light input-invalid
-    |  classes respectively.
+  :markdown
+    ```html
+      <input type='text' class='form-input' placeholder='This input is disabled' disabled>
+    ```
 
-  input(type='text', value='@CNN', class='form-input input-invalid')
-  input(type='text', value='John Doe', class='form-input input-valid ')
+  h5 Input validity
+  p Use <code>input-invalid</code> and <code>input-valid</code> classes for error and success states respectively.
 
-  h4 Other form elements
-  p
-    | For radio and checkbox usage make sure to add 
-    code.inline-light checkbox
-    |  and 
-    code.inline-light radio
-    |  class to the label wrapping the actual input.
+  input(type='text', value='@anyet', class='form-input input-invalid')
+  input(type='text', value='Philip Roberts', class='form-input input-valid ')
+
+  :markdown
+    ```html
+      <input type='text' value='@anyet' class='form-input form-element input-invalid'>
+      <input type='text' value='Philip Roberts' class='form-input form-element input-valid'>
+    ```
+
+  h5 Other form elements
+  p Remember about wrapping both checkboxes and radio buttons in labels with <code>input-radio</code> and <code>input-checkbox</code> class.
 
   form
     fieldset
-      input(type='file', class='form-input')
+      input(type='file', class='form-input form-element')
 
-      label.disabled.input-checkbox
-        input(type='checkbox', disabled)
+      label.disabled.input-checkbox.form-element
+        input(type='checkbox', name='checkbox', disabled)
         | This is a disabled checkbox
 
-      label.input-radio
-        input(type='radio')
+      label.input-radio.form-element
+        input(type='radio', name='radio')
         | This is a radio button
 
-      select
+      select.form-element
         option Option One
 
+  :markdown
+    ```html
+      <form>
+        <fieldset>
+          <input type='file' class='form-input form-element'>
+
+          <label for='checkbox' class='disabled input-checkbox form-element'>
+            <input name='checkbox' type='checkbox' disabled>
+            This is a disabled checkbox
+          </label>
+
+          <label for='radio' class='input-radio form-element'>
+            <input name='radio' type='radio'>
+            This is a radio button
+          </label>
+
+          <select class='form-element'>
+            <option>Option one</option>
+          </select>
+
+        </fieldset>
+      </form>
+    ```

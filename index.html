@@ -203,21 +203,29 @@
       <form>
         <fieldset>
           <legend>Comment Form</legend>
-          <label for="username">Username</label>
-          <input type="text" name="username" placeholder="Your username" class="form-input">
-          <label for="comment">Write a comment</label>
-          <textarea name="comment" placeholder="This is a sample message" class="form-input"> </textarea>
+          <div class="form-element">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Your username" class="form-input">
+          </div>
+          <div class="form-element">
+            <label for="comment">Write a comment</label>
+            <textarea name="comment" placeholder="This is a sample message" class="form-input"></textarea>
+          </div>
           <button type="submit" class="button button-primary">Send</button>
         </fieldset>
       </form><pre><code class="lang-html">  &lt;form&gt;
     &lt;fieldset&gt;
       &lt;legend&gt;Comment Form&lt;/legend&gt;
 
-      &lt;label for=&#39;username&#39;&gt;Username&lt;/label&gt;
-      &lt;input type=&#39;text&#39; name=&#39;username&#39; placeholder=&#39;Your username&#39; class=&#39;form-input&#39; /&gt;
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;username&#39;&gt;Username&lt;/label&gt;
+        &lt;input type=&#39;text&#39; name=&#39;username&#39; placeholder=&#39;Your username&#39; class=&#39;form-input&#39;&gt;
+      &lt;/div&gt;
 
-      &lt;label for=&#39;comment&#39;&gt;Write a comment&lt;/label&gt;
-      &lt;textarea name=&#39;comment&#39; class=&#39;form-input&#39; placeholder=&#39;This is a sample message&#39;&gt;&lt;/textarea&gt;
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;comment&#39;&gt;Write a comment&lt;/label&gt;
+        &lt;textarea name=&#39;comment&#39; class=&#39;form-input&#39; placeholder=&#39;This is a sample message&#39;&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
 
       &lt;button type=&#39;submit&#39; class=&#39;button button-primary&#39;&gt;Send&lt;/button&gt;
 
@@ -225,37 +233,90 @@
   &lt;/form&gt;
 </code></pre>
 
-      <h4>Required inputs</h4>
-      <input type="text" placeholder="This input is required" required class="form-input">
-      <h4>Disabled inputs</h4>
-      <p>
-         
-        To disable a form element add <code class="inline-light">disabled</code> attribute.
-      </p>
-      <input type="text" placeholder="This input is disabled" disabled class="form-input">
-      <h4>Input validity</h4>
-      <p>
-         
-        Sometimes you need to validate your forms. To have meaningful styling for valid and invalid inputs add <code class="inline-light">input-valid</code> and <code class="inline-light">input-invalid</code> classes respectively.
-      </p>
-      <input type="text" value="@CNN" class="form-input input-invalid">
-      <input type="text" value="John Doe" class="form-input input-valid ">
-      <h4>Other form elements</h4>
-      <p>For radio and checkbox usage make sure to add <code class="inline-light">checkbox</code> and <code class="inline-light">radio</code> class to the label wrapping the actual input.</p>
+      <p>Use <code>form-inline</code> class for inline form elements (works on desktop resolutions).</p>
+      <form class="form-inline">
+        <fieldset>
+          <div class="form-element">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Your username" class="form-input">
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input type="text" name="password" placeholder="Your password" class="form-input">
+          </div>
+          <button type="submit" class="button button-primary">Send</button>
+        </fieldset>
+      </form><pre><code class="lang-html">  &lt;form class=&#39;form-inline&#39;&gt;
+    &lt;fieldset&gt;
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;username&#39;&gt;Username&lt;/label&gt;
+        &lt;input type=&#39;text&#39; name=&#39;username&#39; placeholder=&#39;Your username&#39; class=&#39;form-input&#39;&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;password&#39;&gt;Password&lt;/label&gt;
+        &lt;input type=&#39;text&#39; name=&#39;password&#39; placeholder=&#39;Your password&#39; class=&#39;form-input&#39;&gt;
+      &lt;/div&gt;
+
+      &lt;button type=&#39;submit&#39; class=&#39;button button-primary&#39;&gt;Send&lt;/button&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+</code></pre>
+
+      <h5>Required inputs</h5>
+      <p>To denotate that filling an input is mandatory add <code>required</code> attribute to an <code>input</code>, <code>textarea</code> or <code>select</code>.</p>
+      <input type="text" placeholder="This input is required" required class="form-input"><pre><code class="lang-html">  &lt;input type=&#39;text&#39; class=&#39;form-input form-element&#39; placeholder=&#39;This input is required&#39; required&gt;
+</code></pre>
+
+      <h5>Disabled inputs</h5>
+      <p>You can disable the following elements <code>input</code>, <code>select</code>, <code>textarea</code> and <code>button</code> by adding the <code>disabled</code> attribute.</p>
+      <input type="text" placeholder="This input is disabled" disabled class="form-input"><pre><code class="lang-html">  &lt;input type=&#39;text&#39; class=&#39;form-input&#39; placeholder=&#39;This input is disabled&#39; disabled&gt;
+</code></pre>
+
+      <h5>Input validity</h5>
+      <p>Use <code>input-invalid</code> and <code>input-valid</code> classes for error and success states respectively.</p>
+      <input type="text" value="@anyet" class="form-input input-invalid">
+      <input type="text" value="Philip Roberts" class="form-input input-valid "><pre><code class="lang-html">  &lt;input type=&#39;text&#39; value=&#39;@anyet&#39; class=&#39;form-input form-element input-invalid&#39;&gt;
+  &lt;input type=&#39;text&#39; value=&#39;Philip Roberts&#39; class=&#39;form-input form-element input-valid&#39;&gt;
+</code></pre>
+
+      <h5>Other form elements</h5>
+      <p>Remember about wrapping both checkboxes and radio buttons in labels with <code>input-radio</code> and <code>input-checkbox</code> class.</p>
       <form>
         <fieldset>
-          <input type="file" class="form-input">
-          <label class="disabled input-checkbox">
-            <input type="checkbox" disabled>This is a disabled checkbox
+          <input type="file" class="form-input form-element">
+          <label class="disabled input-checkbox form-element">
+            <input type="checkbox" name="checkbox" disabled>This is a disabled checkbox
           </label>
-          <label class="input-radio">
-            <input type="radio">This is a radio button
+          <label class="input-radio form-element">
+            <input type="radio" name="radio">This is a radio button
           </label>
-          <select>
+          <select class="form-element">
             <option>Option One</option>
           </select>
         </fieldset>
-      </form>
+      </form><pre><code class="lang-html">  &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;input type=&#39;file&#39; class=&#39;form-input form-element&#39;&gt;
+
+      &lt;label for=&#39;checkbox&#39; class=&#39;disabled input-checkbox form-element&#39;&gt;
+        &lt;input name=&#39;checkbox&#39; type=&#39;checkbox&#39; disabled&gt;
+        This is a disabled checkbox
+      &lt;/label&gt;
+
+      &lt;label for=&#39;radio&#39; class=&#39;input-radio form-element&#39;&gt;
+        &lt;input name=&#39;radio&#39; type=&#39;radio&#39;&gt;
+        This is a radio button
+      &lt;/label&gt;
+
+      &lt;select class=&#39;form-element&#39;&gt;
+        &lt;option&gt;Option one&lt;/option&gt;
+      &lt;/select&gt;
+
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+</code></pre>
+
     </section>
     <section>
       <h4>Progress Bars</h4>
