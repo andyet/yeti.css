@@ -1,27 +1,50 @@
-section.modals
-  h3 Modals
+section
+  h4 Modals
+  p Create a basic modal by using <code>modal</code> class and trigger it in JavaScript. All modal types are responsive (not demonstrated in this demo).
 
-    h4 Regular Modals
-    p 
-      | All modals are divs with class 
-      code.inline-light modal
-      |  and need to be triggered by Javascript.
+  .modal-sample
 
+    .modal
+      .modal-head.cf
+        h4.modal-title This is a modal
+        a(href='', class='modal-close') ×
+      .modal-body
+        p This is its body.
+      .modal-footer
+        button.button Okay
 
-    h4 Modals with no header
-    p
-      | Sometimes you need a simple modal without header and just paragraph with buttons. Use the class 
-      code.inline-light modal-no-head
-      |  and omit the 
-      code.inline-light modal-head
-      |  container.
+  :markdown
+    ```html
+      <div class='modal'>
+        <div class='modal-head cf'>
+          <h4 class='modal-title'>This is a modal</h4>
+          <a href='' class='modal-close'>×</a>
+        </div>
+        <div class='modal-body'>
+          <p>This is its body</p>
+        </div>
+        <div class='modal-footer'>
+          <button class='button'>Okay</button>
+        </div>
+      </div>
+    ```
 
-    h4 Overlay
-    p 
-      | If you need to cover the content of the page to display the overlay (probably most cases) &mdash; you will need an 
-      code.inline-light overlay
-      |  div appended to body of the page or 
-      code.inline-light has-modal
-      |  class added to the 
-      code.inline-light body
-      |   element. Both will create an semi-transparent black overlay.
+  h5 Modals with no sectioning
+  p For plain modal with no sectioning use <code>modal-no-sections</code> class and simplified markup.
+
+  .modal-sample
+
+    .modal.modal-no-sections
+      p This is a simple modal.
+      button.button Okay
+
+  :markdown
+    ```html
+      <div class='modal modal-no-sections'>
+        <p>This is a simple modal.</p>
+        <button class='button'>Okay</button>
+      </div>
+    ```
+
+  h5 Overlay
+  p For semi-transparent overlay add <code>has-modal</code> class to the <code>body</code> element or a <code>div</code> with <code>overlay</code> class. Overlay appearance is pictured in modal examples above.

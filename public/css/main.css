@@ -636,11 +636,13 @@ figure figcaption {
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
 }
-.modal.modal-no-head {
-  padding: 15px;
+.modal.modal-no-sections {
+  padding: 30px;
+  text-align: center;
 }
 .modal-title {
   margin: 0;
+  float: left;
 }
 .modal-head,
 .modal-body {
@@ -665,7 +667,7 @@ figure figcaption {
 .modal-close {
   float: right;
   color: #b7c0c3;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: bold;
   font-size: 22px;
 }
@@ -706,9 +708,6 @@ figure figcaption {
 @media screen and (min-width: 769px) {
   .modal {
     width: 50%;
-  }
-  .modal-close {
-    margin-top: 5px;
   }
 }
 .top-nav {
@@ -1312,6 +1311,21 @@ section:not(:last-child) {
 }
 .progress .meter {
   min-width: 50%;
+}
+.modal-sample {
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-sample .modal {
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -25%;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 @media screen and (min-width: 769px) {
   body {

@@ -534,6 +534,51 @@
       </table>
     </section>
     <section>
+      <h4>Modals</h4>
+      <p>Create a basic modal by using <code>modal</code> class and trigger it in JavaScript. All modal types are responsive (not demonstrated in this demo).</p>
+      <div class="modal-sample">
+        <div class="modal">
+          <div class="modal-head cf">
+            <h4 class="modal-title">This is a modal</h4><a href="" class="modal-close">×</a>
+          </div>
+          <div class="modal-body">
+            <p>This is its body.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="button">Okay</button>
+          </div>
+        </div>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;modal&#39;&gt;
+    &lt;div class=&#39;modal-head cf&#39;&gt;
+      &lt;h4 class=&#39;modal-title&#39;&gt;This is a modal&lt;/h4&gt;
+      &lt;a href=&#39;&#39; class=&#39;modal-close&#39;&gt;×&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;modal-body&#39;&gt;
+      &lt;p&gt;This is its body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;modal-footer&#39;&gt;
+      &lt;button class=&#39;button&#39;&gt;Okay&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      <h5>Modals with no sectioning</h5>
+      <p>For plain modal with no sectioning use <code>modal-no-sections</code> class and simplified markup.</p>
+      <div class="modal-sample">
+        <div class="modal modal-no-sections">
+          <p>This is a simple modal.</p>
+          <button class="button">Okay</button>
+        </div>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;modal modal-no-sections&#39;&gt;
+    &lt;p&gt;This is a simple modal.&lt;/p&gt;
+    &lt;button class=&#39;button&#39;&gt;Okay&lt;/button&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      <h5>Overlay</h5>
+      <p>For semi-transparent overlay add <code>has-modal</code> class to the <code>body</code> element or a <code>div</code> with <code>overlay</code> class. Overlay appearance is pictured in modal examples above.</p>
+    </section>
+    <section>
       <h4>Avatars</h4>
       <p>Avatars come in three sizes&mdash;large (<code>100&times;100</code>) , medium (<code>50&times;50</code>) and small (<code>25&times;25</code>). Placeholders thanks to <a href='http://placekitten.com/'>Place Kitten</a>. Because we love kittens.</p>
       <h5>Rounded avatars</h5>
