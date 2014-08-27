@@ -124,6 +124,105 @@ section
 .message
   margin-bottom: 10px
 
+//- Colors
+
+.color
+  display: inline-block
+  padding: $ui-padding-spaced
+  color: white
+  text-align: center
+
+.blue1
+  background-color: $blue-saturated-darker
+
+.blue2
+  background-color: $blue-saturated-dark
+
+.blue3
+  background-color: $blue-saturated
+
+.blue4
+  background-color: $blue-saturated-light
+
+.blue5
+  background-color: $blue-saturated-lighter
+
+.blue6
+  background-color: $blue
+
+.blue7
+  background-color: $blue-light
+
+.blue8
+  background-color: $blue-lighter
+  color: $blue
+
+.gray1
+  background-color: $gray-darker
+
+.gray2
+  background-color: $gray-dark
+
+.gray3
+  background-color: $gray
+
+.gray4
+  background-color: $gray-light
+
+.gray5
+  background-color: $gray-lighter
+
+.gray4, .gray5
+  color: $gray-darker
+
+.pink1
+  background-color: $pink
+
+.pink2
+  background-color: $pink-light
+
+.pink3
+  background-color: $pink-lighter
+
+.pink2, .pink3
+  color: $pink
+
+.red1
+  background-color: $red
+
+.red2
+  background-color: $red-light
+
+.red3
+  background-color: $red-lighter
+
+.red2, .red3
+  color: $red
+
+.green1
+  background-color: $green
+
+.green2
+  background-color: $green-light
+
+.green3
+  background-color: $green-lighter
+
+.green2, .green3
+  color: $green
+
+.orange1
+  background-color: $orange
+
+.orange2
+  background-color: $orange-light
+
+.orange3
+  background-color: $orange-lighter
+
+.orange2, .orange3
+  color: $orange
+
 @media screen and (min-width: $breakpoint-tablet+1)
   
   body
@@ -145,8 +244,15 @@ section
     display: block
     text-align: center
 
+  .color
+    width: 100%
+
 @media screen and (min-width: $breakpoint-smartphone+1)
 
   .logo
     margin: 20px
     display: inline-block
+
+  .color
+    width: 250px
+    margin-bottom: 5px
