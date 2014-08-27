@@ -14,11 +14,13 @@
   background-color: white
   -webkit-overflow-scrolling: touch
 
-  &.modal-no-head
-    padding: $ui-padding-spaced
+  &.modal-no-sections
+    padding: $ui-padding-extra-spaced
+    text-align: center
 
 .modal-title
   margin: 0
+  float: left
 
 .modal-head, .modal-body
   padding: $ui-padding-spaced
@@ -41,7 +43,7 @@
 .modal-close
   float: right
   color: $gray-light
-  line-height: 1
+  line-height: 1.5
   font-weight: bold
   font-size: $font-large
 
@@ -83,6 +85,3 @@
 
   .modal
     width: 50%
-
-  .modal-close
-    margin-top: 5px
