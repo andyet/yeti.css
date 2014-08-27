@@ -534,6 +534,104 @@
       </table>
     </section>
     <section>
+      <h4>Messages</h4>
+      <p>There are four types of messages&mdash;default (no class), alert (<code>message-alert</code>), error (<code>message-error</code>) and success (<code>message-success</code>).</p>
+      <div class="message">
+        <p>This is a message. <a>This is a link.</a></p>
+      </div>
+      <div class="message message-error">
+        <p>This is an error. <a>This is a link.</a></p>
+      </div>
+      <div class="message message-alert">
+        <p>This is an alert. <a>This is a link.</a></p>
+      </div>
+      <div class="message message-success">
+        <p>This is a success message. <a>This is a link.</a></p>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;message&#39;&gt;
+    &lt;p&gt;This is a message. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-error&#39;&gt;
+    &lt;p&gt;This is an error. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-alert&#39;&gt;
+    &lt;p&gt;This is an alert. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-success&#39;&gt;
+    &lt;p&gt;This is a success message. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      <h5>Dismissable messages</h5>
+      <p>Messages that can be dismissed should have <code>message-dismissable</code> class and a link with <code>close</code> class.</p>
+      <div class="message message-error message-dismissable">
+        <p>This is an error that can be dismissed.</p><a title="Close" class="close">×</a>
+      </div>
+      <div class="message message-alert message-dismissable">
+        <p>This is an alert that can be dismissed.</p><a title="Close" class="close">×</a>
+      </div>
+      <div class="message message-success message-dismissable">
+        <p>This is a success message that can be dismissed.</p><a title="Close" class="close">×</a>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;message message-error message-dismissable&#39;&gt;
+    &lt;p&gt;This is an error that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-alert message-dismissable&#39;&gt;
+    &lt;p&gt;This is an alert that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-success message-dismissable&#39;&gt;
+    &lt;p&gt;This is a success message that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      <h5>Full width messages</h5>
+      <p>Add <code>message-full-width</code> class for message with centered text.</p>
+      <div class="message message-success message-full-width message-dismissable">
+        <p>This is a full width success message that can be dismissed.</p><a title="Close" class="close">×</a>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;message message-success message-dismissable message-full-width&#39;&gt;
+    &lt;p&gt;This is a full width success message that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      <h5>Message positioning</h5>
+      <p>Messages can be easily positioned using following classes: <code>message-below</code>, <code>message-above</code>, <code>message-left</code> and <code>message-right</code>&mdash;where these classes denotate position of the message relatively to the element.</p>
+      <div class="message message-below">
+        <p>This is a message appearing below an element.</p>
+      </div>
+      <div class="message message-success message-above">
+        <p>This is a message appearing above an element.</p>
+      </div>
+      <div class="message message-error message-left">
+        <p>This is a message appearing on the left hand side of the element.</p>
+      </div>
+      <div class="message message-alert message-right">
+        <p>This is a message appearing on the right hand side of the element.</p>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;message message-below&#39;&gt;
+    &lt;p&gt;This is a message appearing below an element.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-success message-above&#39;&gt;
+    &lt;p&gt;This is a message appearing above an element.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-error message-left&#39;&gt;
+    &lt;p&gt;This is a message appearing on the left hand side of the element.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;message message-alert message-right&#39;&gt;
+    &lt;p&gt;This is a message appearing on the right hand side of the element.&lt;/p&gt;
+  &lt;/div&gt;
+</code></pre>
+
+    </section>
+    <section>
       <h4>Modals</h4>
       <p>Create a basic modal by using <code>modal</code> class and trigger it in JavaScript. All modal types are responsive (not demonstrated in this demo).</p>
       <div class="modal-sample">

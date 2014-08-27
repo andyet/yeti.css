@@ -499,6 +499,8 @@ figure figcaption {
 .message {
   padding: 15px;
   position: relative;
+  background-color: #e7f7fd;
+  color: #12acef;
 }
 .message a {
   font-weight: bold;
@@ -1326,6 +1328,9 @@ section:not(:last-child) {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
+}
+.message {
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 769px) {
   body {

@@ -1,83 +1,88 @@
-section.messages
-  h3 Messages
-
-  h4 Basic messages
-  p 
-    | There are four types of styles for messages: 
-    code.inline-light default
-    |  ,
-    code.inline-light alert
-    |  ,
-    code.inline-light error
-    |  and 
-    code.inline-light success
-    |  . 
-    | All of them can contain links, which will have appropriate colors.
+section
+  h4 Messages
+  p There are four types of messages&mdash;default (no class), alert (<code>message-alert</code>), error (<code>message-error</code>) and success (<code>message-success</code>).
 
   .message
-    p 
-      | This is a message. 
-      a(href='') This is a link.
+    p This is a message. <a>This is a link.</a>
 
   .message.message-error
-    p 
-      | This is an error. 
-      a(href='') This is a link.
+    p This is an error. <a>This is a link.</a>
 
   .message.message-alert
-    p
-      | This is an alert. 
-      a(href='') This is a link.
+    p This is an alert. <a>This is a link.</a>
 
   .message.message-success
-    p 
-      | This is a success message. 
-      a(href='') This is a link.
+    p This is a success message. <a>This is a link.</a>
 
-  h4 Dismissable messages
-  p 
-    | For messages that can be dismissed add class 
-    code.inline-light message-has-icon 
-    |  and appropriate classes for the icon itself &mdash; 
-    code.inline-light ss-icon.ss-standard.ss-delete
-    |  (or use a  different icon set, if you wish). Do remember to include the 
-    code.inline-light title
-    |  attribute as well.
+  :markdown
+    ```html
+      <div class='message'>
+        <p>This is a message. <a>This is a link.</a></p>
+      </div>
 
-  .message.message-error.message-has-icon
+      <div class='message message-error'>
+        <p>This is an error. <a>This is a link.</a></p>
+      </div>
+
+      <div class='message message-alert'>
+        <p>This is an alert. <a>This is a link.</a></p>
+      </div>
+
+      <div class='message message-success'>
+        <p>This is a success message. <a>This is a link.</a></p>
+      </div>
+    ```
+
+  h5 Dismissable messages
+  p Messages that can be dismissed should have <code>message-dismissable</code> class and a link with <code>close</code> class.
+
+  .message.message-error.message-dismissable
     p This is an error that can be dismissed.
-    a(class='close', title='Close') &times;
+    a(class='close', title='Close') ×
 
-  .message.message-alert.message-has-icon
+  .message.message-alert.message-dismissable
     p This is an alert that can be dismissed.
-    a(class='close', title='Close') &times;
+    a(class='close', title='Close') ×
 
-  .message.message-success.message-has-icon
+  .message.message-success.message-dismissable
     p This is a success message that can be dismissed.
-    a(class='close', title='Close') &times;
+    a(class='close', title='Close') ×
 
-  h4 Full width dismissable messages
-  p 
-    | Messages spanning for full width of the container should have 
-    code.inline-light full-width
-    |  class.
+  :markdown
+    ```html
+      <div class='message message-error message-dismissable'>
+        <p>This is an error that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
 
+      <div class='message message-alert message-dismissable'>
+        <p>This is an alert that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
 
-  .message.message-success.message-full-width.message-has-icon
+      <div class='message message-success message-dismissable'>
+        <p>This is a success message that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
+    ```
+
+  h5 Full width messages
+  p Add <code>message-full-width</code> class for message with centered text.
+
+  .message.message-success.message-full-width.message-dismissable
     p This is a full width success message that can be dismissed.
-    a(class='close', title='Close') &times;
+    a(class='close', title='Close') ×
 
-  h4 Message positioning
-  p 
-    | Messages can be easily positioned accordingly to correlating fields using following classes: 
-    code.inline-light message-above
-    |  ,
-    code.inline-light message-below
-    |  ,
-    code.inline-light message-left
-    |  and 
-    code.inline-light message-right
-    | &mdash; where those classes denotate position of the message relatively to the element.
+  :markdown
+    ```html
+      <div class='message message-success message-dismissable message-full-width'>
+        <p>This is a full width success message that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
+    ```
+
+  h5 Message positioning
+  p Messages can be easily positioned using following classes: <code>message-below</code>, <code>message-above</code>, <code>message-left</code> and <code>message-right</code>&mdash;where these classes denotate position of the message relatively to the element.
 
   .message.message-below
     p This is a message appearing below an element.
@@ -90,3 +95,22 @@ section.messages
 
   .message.message-alert.message-right
     p This is a message appearing on the right hand side of the element.
+
+  :markdown
+    ```html
+      <div class='message message-below'>
+        <p>This is a message appearing below an element.</p>
+      </div>
+
+      <div class='message message-success message-above'>
+        <p>This is a message appearing above an element.</p>
+      </div>
+
+      <div class='message message-error message-left'>
+        <p>This is a message appearing on the left hand side of the element.</p>
+      </div>
+
+      <div class='message message-alert message-right'>
+        <p>This is a message appearing on the right hand side of the element.</p>
+      </div>
+    ```
