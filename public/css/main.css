@@ -1443,6 +1443,11 @@ section:not(:last-child) {
   body {
     border-width: 5px;
   }
+  .modal-sample .modal {
+    width: auto;
+    left: 0;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .button {
