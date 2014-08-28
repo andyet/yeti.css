@@ -727,6 +727,7 @@ figure figcaption {
 .top-nav label {
   font-weight: normal;
   font-size: 16px;
+  line-height: 1;
 }
 .top-nav .menu-toggle {
   visibility: hidden;
@@ -768,20 +769,11 @@ figure figcaption {
 .breadcrumbs {
   padding: 10px 0;
 }
-.breadcrumbs li:not(:first-child) {
-  position: relative;
+.breadcrumbs li {
+  color: #b7c0c3;
 }
-.breadcrumbs li:not(:first-child):after {
-  content: '';
-  position: absolute;
-  right: 100%;
-  top: 1px;
-  height: 100%;
-  width: 1px;
-  -webkit-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-          transform: rotate(15deg);
-  background-color: #e6eaed;
+.breadcrumbs a {
+  padding: 0 10px;
 }
 .pagination li:not(:last-child) {
   border-right: 1px solid #e6eaed;
@@ -850,7 +842,6 @@ figure figcaption {
   border-radius: 3px;
   border: 1px solid #e6eaed;
 }
-.breadcrumbs a,
 .side-nav a,
 .tabs a,
 .pagination a {
@@ -859,27 +850,6 @@ figure figcaption {
 .breadcrumbs a,
 .pagination a {
   font-size: 12px;
-}
-@media screen and (max-width: 480px) {
-  .breadcrumbs {
-    padding: 0;
-  }
-  .breadcrumbs li,
-  .breadcrumbs a {
-    display: block;
-  }
-  .breadcrumbs li {
-    border-bottom: 1px solid #e6eaed;
-  }
-  .breadcrumbs li:last-of-type {
-    border: none;
-  }
-  .breadcrumbs li:after {
-    display: none;
-  }
-  .breadcrumbs a {
-    padding: 5px 10px;
-  }
 }
 @media screen and (max-width: 768px) {
   .top-nav ul {
@@ -906,6 +876,7 @@ figure figcaption {
     border: 0;
   }
   .top-nav .menu-toggle:checked ~ ul .dropdown a {
+    padding: 10px 15px;
     font-size: 12px;
     font-weight: normal;
   }

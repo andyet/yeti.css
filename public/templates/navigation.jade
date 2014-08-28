@@ -1,11 +1,8 @@
-section.navigation
-  h3 Navigation
+section
+  h4 Navigation
 
-  h4 Top bars
-  p 
-   | To create a navigation bar pinned to top of the page use 
-   code.inline-light top-nav
-   |  class. Navigation is mobile friendly and features a hamburger icon for mobile screens.
+  h5 Top bars
+  p For navigation bars use <code>top-nav</code> class with desired color variation (<code>top-nav-light</code> or <code>top-nav-dark</code>).
 
   nav(class='top-nav top-nav-light cf', role='navigation')
 
@@ -69,31 +66,66 @@ section.navigation
       li
         a(href='') Link five
 
-  h4 Breadcrumbs
-  p
-    | For showing progress with more complex sites and apps use 
-    code.inline-light breadcrumbs
-    | . 
+  :markdown
+    ```html
+      <nav class='top-nav top-nav-light cf' role='navigation'>
+        <input id='menu-toggle' class='menu-toggle' type='checkbox'>
+        <label for='menu-toggle'>Menu</label>
+
+        <ul class='list-unstyled list-inline cf'>
+          <li><a>Link One</a></li>
+          <li><a>Link Two</a></li>
+          <li><a>Link Three</a></li>
+          <li class='has-dropdown'>
+            <a class='active'>Link Four</a>
+            <div class='icon-arrow-down'></div>
+            <ul class='list-unstyled dropdown cf'>
+              <li><a>Sublink One</a></li>
+              <li><a>Sublink Two</a></li>
+              <li><a>Sublink Three</a></li>
+              <li><a>Sublink Four</a></li>
+              <li><a>Sublink Five</a></li>
+              <li><a>Sublink Six</a></li>
+            </ul>
+          </li>
+          <li><a>Link Five</a></li>
+        </ul>
+      </nav>
+    ```
+
+  h5 Breadcrumbs
+  p For indicating users location in complex sites or applications use breadcrumbs.
 
   nav(role='navigation')
     ul.list-unstyled.list-inline.breadcrumbs
       li
         a(href='') Page One
+        | ›
       li
         a(href='') Page Two
+        | ›
       li
         a(href='', class='unavailable-item') Unavailable Page
+        | ›
       li
         a(href='', class='current-item') Current Page
 
-  h4 Pagination
+  :markdown
+    ```html
+      <nav role='navigation'>
+        <ul class='list-unstyled list-inline breadcrumbs'>
+          <li><a>Page One</a>›</li>
+          <li><a>Page Two</a>›</li>
+          <li><a class='unavailable-item'>Unavailable Page</a>›</li>
+          <li><a class='current-item'>Current Page</a>›</li>
+        </ul>
+      </nav>
+    ```
 
-  p 
-    | Pagination 
-    code.inline-light page-current
-    |  class assignment should be handled in JavaScript.
+  h5 Pagination
+  p To indicate content spanning over multiple pages use pagination element.
 
-  nav
+  nav(role='navigation')
     ul.list-unstyled.list-inline.pagination
       li
         a(href=''): em.icon-arrow-left
@@ -110,14 +142,26 @@ section.navigation
       li
         a(href=''): em.icon-arrow-right
 
-  h4 Tabs
-  p 
-    | Tabs state, content switch and 
-    code.inline-light active
-    |   class assignment need to be handled in JavaScript.
+  :markdown
+    ```html
+      <nav role='navigation'>
+        <ul class='list-unstyled list-inline pagination'>
+          <li><a><em class='icon-arrow-left'></em></a></li>
+          <li><a class='unavailable-item'>1</a></li>
+          <li><a class='current-item'>2</a></li>
+          <li><a>3</a></li>
+          <li><a>4</a></li>
+          <li><a>5</a></li>
+          <li><a><em class='icon-arrow-right'></em></a></li>
+        </ul>
+      </nav>
+    ```
 
-  nav
-    ul.tabs.list-unstyled.list-inline
+  h5 Tabs
+  p For tabbed content make sure to style the content as well.
+
+  nav(role='navigation')
+    ul.list-unstyled.list-inline.tabs
       li
         a(href='') Tab One
       li
@@ -125,17 +169,36 @@ section.navigation
       li
         a(href='') Tab Three
 
-  h4 Side Navigation
-  p 
-    | For side navigation use 
-    code.inline-light side-nav
-    | .
+  :markdown
+    ```html
+      <nav role='navigation'>
+        <ul class='list-unstyled list-inline tabs'>
+          <li><a>Tab One</a></li>
+          <li><a class='current-item'>Tab Two</a></li>
+          <li><a>Tab Three</a></li>
+        </ul>
+      </nav>
+    ```
+
+  h5 Side Navigation
+  p For simple navigation on the side use <code>side-nav</code> class.
 
   nav(role='navigation')
-    ul.side-nav.list-unstyled
+    ul.list-unstyled.side-nav
       li
         a(href='') Option One
       li
         a(href='', class='current-item') Option Two
       li
         a(href='') Option Three
+
+  :markdown
+    ```html
+      <nav role='navigation'>
+        <ul class='list-unstyled side-nav'>
+          <li><a>Option One</a></li>
+          <li><a class='current-item'>Option Two</a></li>
+          <li><a>Option Three</a></li>
+        <ul>
+      </nav>
+    ```

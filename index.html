@@ -632,6 +632,155 @@
 
     </section>
     <section>
+      <h4>Navigation</h4>
+      <h5>Top bars</h5>
+      <p>For navigation bars use <code>top-nav</code> class with desired color variation (<code>top-nav-light</code> or <code>top-nav-dark</code>).</p>
+      <nav role="navigation" class="top-nav top-nav-light cf">
+        <input id="menu-toggle" type="checkbox" class="menu-toggle">
+        <label for="menu-toggle">Menu</label>
+        <ul class="list-unstyled list-inline cf">
+          <li><a href="">Link one</a></li>
+          <li><a href="">Link two</a></li>
+          <li><a href="">Link three</a></li>
+          <li class="has-dropdown"><a href="" class="active">Link four</a>
+            <div class="icon-arrow-down"></div>
+            <ul class="list-unstyled dropdown cf">
+              <li><a href="">Sublink one</a></li>
+              <li><a href="">Sublink two</a></li>
+              <li><a href="">Sublink three</a></li>
+              <li><a href="">Sublink four</a></li>
+              <li><a href="">Sublink five</a></li>
+              <li><a href="">Sublink six</a></li>
+            </ul>
+          </li>
+          <li><a href="">Link five</a></li>
+        </ul>
+      </nav>
+      <nav role="navigation" class="top-nav top-nav-dark cf">
+        <input id="menu-toggle-1" type="checkbox" class="menu-toggle">
+        <label for="menu-toggle-1">Menu</label>
+        <ul class="list-unstyled list-inline cf">
+          <li><a href="">Link one</a></li>
+          <li><a href="">Link two</a></li>
+          <li><a href="">Link three</a></li>
+          <li class="has-dropdown"><a href="" class="active">Link four</a>
+            <div class="icon-arrow-down"></div>
+            <ul class="list-unstyled dropdown cf">
+              <li><a href="">Sublink one</a></li>
+              <li><a href="">Sublink two</a></li>
+              <li><a href="">Sublink three</a></li>
+              <li><a href="">Sublink four</a></li>
+              <li><a href="">Sublink five</a></li>
+              <li><a href="">Sublink six</a></li>
+            </ul>
+          </li>
+          <li><a href="">Link five</a></li>
+        </ul>
+      </nav><pre><code class="lang-html">  &lt;nav class=&#39;top-nav top-nav-light cf&#39; role=&#39;navigation&#39;&gt;
+    &lt;input id=&#39;menu-toggle&#39; class=&#39;menu-toggle&#39; type=&#39;checkbox&#39;&gt;
+    &lt;label for=&#39;menu-toggle&#39;&gt;Menu&lt;/label&gt;
+
+    &lt;ul class=&#39;list-unstyled list-inline cf&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Link One&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Link Two&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Link Three&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&#39;has-dropdown&#39;&gt;
+        &lt;a class=&#39;active&#39;&gt;Link Four&lt;/a&gt;
+        &lt;div class=&#39;icon-arrow-down&#39;&gt;&lt;/div&gt;
+        &lt;ul class=&#39;list-unstyled dropdown cf&#39;&gt;
+          &lt;li&gt;&lt;a&gt;Sublink One&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Two&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Three&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Four&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Five&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Six&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Link Five&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+      <h5>Breadcrumbs</h5>
+      <p>For indicating users location in complex sites or applications use breadcrumbs.</p>
+      <nav role="navigation">
+        <ul class="list-unstyled list-inline breadcrumbs">
+          <li><a href="">Page One</a>›</li>
+          <li><a href="">Page Two</a>›</li>
+          <li><a href="" class="unavailable-item">Unavailable Page</a>›</li>
+          <li><a href="" class="current-item">Current Page</a></li>
+        </ul>
+      </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled list-inline breadcrumbs&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Page One&lt;/a&gt;›&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Page Two&lt;/a&gt;›&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;unavailable-item&#39;&gt;Unavailable Page&lt;/a&gt;›&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;Current Page&lt;/a&gt;›&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+      <h5>Pagination</h5>
+      <p>To indicate content spanning over multiple pages use pagination element.</p>
+      <nav role="navigation">
+        <ul class="list-unstyled list-inline pagination">
+          <li><a href=""><em class="icon-arrow-left"></em></a></li>
+          <li><a href="" class="unavailable-item">1</a></li>
+          <li><a href="" class="current-item">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li><a href="">5</a></li>
+          <li><a href=""><em class="icon-arrow-right"></em></a></li>
+        </ul>
+      </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled list-inline pagination&#39;&gt;
+      &lt;li&gt;&lt;a&gt;&lt;em class=&#39;icon-arrow-left&#39;&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;unavailable-item&#39;&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;&lt;em class=&#39;icon-arrow-right&#39;&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+      <h5>Tabs</h5>
+      <p>For tabbed content make sure to style the content as well.</p>
+      <nav role="navigation">
+        <ul class="list-unstyled list-inline tabs">
+          <li><a href="">Tab One</a></li>
+          <li><a href="" class="current-item">Tab Two</a></li>
+          <li><a href="">Tab Three</a></li>
+        </ul>
+      </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled list-inline tabs&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Tab One&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;Tab Two&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Tab Three&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+      <h5>Side Navigation</h5>
+      <p>For simple navigation on the side use <code>side-nav</code> class.</p>
+      <nav role="navigation">
+        <ul class="list-unstyled side-nav">
+          <li><a href="">Option One</a></li>
+          <li><a href="" class="current-item">Option Two</a></li>
+          <li><a href="">Option Three</a></li>
+        </ul>
+      </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled side-nav&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Option One&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;Option Two&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Option Three&lt;/a&gt;&lt;/li&gt;
+    &lt;ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+    </section>
+    <section>
       <h4>Modals</h4>
       <p>Create a basic modal by using <code>modal</code> class and trigger it in JavaScript. All modal types are responsive (not demonstrated in this demo).</p>
       <div class="modal-sample">
