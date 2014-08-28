@@ -202,3 +202,38 @@ section
         <ul>
       </nav>
     ```
+
+  h5 Extras
+  p You can use dropdowns and arrow elements separately from navigation items too.
+
+  .dropdown-standalone
+    | Dropdown
+    span.icon-arrow-down
+    ul.list-unstyled.dropdown
+      li: a Item One
+      li: a Item Two
+
+  :markdown
+    ```html
+      <div class='dropdown-standalone'>
+        Dropdown
+        <span class='icon-arrow-down'></span>
+        <ul class='list-unstyled dropdown'>
+          <li>Item One</li>
+          <li>Item Two</li>
+        </ul>
+      </div>
+    ```
+
+  span.icon-arrow-down.icon-sample
+  span.icon-arrow-up.icon-sample
+  span.icon-arrow-left.icon-sample
+  span.icon-arrow-right.icon-sample
+
+  :markdown
+    ```html
+      <span class='icon-arrow-down'></span>
+      <span class='icon-arrow-up'></span>
+      <span class='icon-arrow-left'></span>
+      <span class='icon-arrow-right'></span>
+    ```

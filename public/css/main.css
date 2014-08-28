@@ -1405,6 +1405,9 @@ section:not(:last-child) {
 .orange3 {
   color: #f18902;
 }
+.icon-sample {
+  margin: 0 5px;
+}
 @media screen and (min-width: 769px) {
   body {
     border-width: 10px;
