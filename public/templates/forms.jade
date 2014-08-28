@@ -8,11 +8,11 @@ section
 
       .form-element
         label(for='username') Username
-        input(type='text', name='username', placeholder='Your username', class='form-input')
+        input(type='text', id='username', placeholder='Your username', class='form-input')
 
       .form-element
         label(for='comment') Write a comment
-        textarea(name='comment', class='form-input', placeholder='This is a sample message')
+        textarea(id='comment', class='form-input', placeholder='This is a sample message')
 
       button(type='submit', class='button button-primary') Send
 
@@ -24,12 +24,12 @@ section
 
           <div class='form-element'>
             <label for='username'>Username</label>
-            <input type='text' name='username' placeholder='Your username' class='form-input'>
+            <input type='text' id='username' placeholder='Your username' class='form-input'>
           </div>
 
           <div class='form-element'>
             <label for='comment'>Write a comment</label>
-            <textarea name='comment' class='form-input' placeholder='This is a sample message'></textarea>
+            <textarea id='comment' class='form-input' placeholder='This is a sample message'></textarea>
           </div>
 
           <button type='submit' class='button button-primary'>Send</button>
@@ -45,11 +45,11 @@ section
 
       .form-element
         label(for='username') Username
-        input(type='text', name='username', placeholder='Your username', class='form-input')
+        input(type='text', id='username', placeholder='Your username', class='form-input')
 
       .form-element
         label(for='password') Password
-        input(type='text', name='password', placeholder='Your password', class='form-input')
+        input(type='text', id='password', placeholder='Your password', class='form-input')
 
       button(type='submit', class='button button-primary') Send
 
@@ -59,12 +59,12 @@ section
         <fieldset>
           <div class='form-element'>
             <label for='username'>Username</label>
-            <input type='text' name='username' placeholder='Your username' class='form-input'>
+            <input type='text' id='username' placeholder='Your username' class='form-input'>
           </div>
 
           <div class='form-element'>
             <label for='password'>Password</label>
-            <input type='text' name='password' placeholder='Your password' class='form-input'>
+            <input type='text' id='password' placeholder='Your password' class='form-input'>
           </div>
 
           <button type='submit' class='button button-primary'>Send</button>
@@ -112,11 +112,11 @@ section
       input(type='file', class='form-input form-element')
 
       label.disabled.input-checkbox.form-element
-        input(type='checkbox', name='checkbox', disabled)
+        input(type='checkbox', disabled)
         | This is a disabled checkbox
 
       label.input-radio.form-element
-        input(type='radio', name='radio')
+        input(type='radio')
         | This is a radio button
 
       select.form-element
@@ -129,12 +129,12 @@ section
           <input type='file' class='form-input form-element'>
 
           <label for='checkbox' class='disabled input-checkbox form-element'>
-            <input name='checkbox' type='checkbox' disabled>
+            <input type='checkbox' disabled>
             This is a disabled checkbox
           </label>
 
           <label for='radio' class='input-radio form-element'>
-            <input name='radio' type='radio'>
+            <input type='radio'>
             This is a radio button
           </label>
 
