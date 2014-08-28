@@ -21,6 +21,7 @@
   label
     font-weight: normal
     font-size: $font-base
+    line-height: 1
 
   .menu-toggle
     visibility: hidden
@@ -68,18 +69,8 @@
 .breadcrumbs
   padding: $ui-padding-default 0
 
-  li:not(:first-child)
-    position: relative
-
-    &:after
-      content: ''
-      position: absolute
-      right: 100%
-      top: 1px
-      height: 100%
-      width: 1px
-      transform: rotate(15deg)
-      background-color: $gray-lighter
+  a
+    padding: 0 $ui-padding-default
 
 //- Pagination
 
@@ -160,7 +151,6 @@
   border-radius: 3px
   border: $ui-border
 
-.breadcrumbs, 
 .side-nav, 
 .tabs,
 .pagination
@@ -170,26 +160,6 @@
 .breadcrumbs a, 
 .pagination a
   font-size: $font-small
-
-@media screen and (max-width: $breakpoint-smartphone)
-
-  .breadcrumbs
-    padding: 0
-
-    li, a
-      display: block
-
-    li
-      border-bottom: $ui-border
-
-      &:last-of-type
-        border: none
-
-      &:after
-        display: none
-
-    a
-      padding: 5px 10px
 
 @media screen and (max-width: $breakpoint-tablet)
 
@@ -221,6 +191,7 @@
           border: 0
 
         a 
+          padding: $ui-padding-default $ui-padding-spaced
           font-size: $font-small
           font-weight: normal
 
