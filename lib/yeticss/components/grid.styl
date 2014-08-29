@@ -4,6 +4,16 @@
 *
 --------------------------------------------------------------------*/
 
+.grid-container-flex
+  padding: 0
+  list-style: none
+  display: flex
+  -webkit-flex-flow: row wrap
+
+  .grid-flex-cell
+    margin-bottom: $space
+    padding: $ui-padding-spaced
+
 .container
   margin: 0 auto
 
@@ -12,42 +22,24 @@
   .container
     width: $grid-width-mobile
 
-  [class^='column']
-    width: 100%
+  .grid-flex-cell
+    flex: 0 0 100%
 
 @media screen and (min-width: $breakpoint-smartphone+1)
 
-  [class^='column']
-    float: left
+  .grid-flex-cell
+    flex: 1
+    margin-left: $space
 
-  .column-two
-    width: 50%
-
-  [class^='column']:not(:first-of-type)
-    padding-left: $ui-padding-extra-spaced
-
-  [class^='column']:not(:last-of-type)
-    padding-right: $ui-padding-extra-spaced
+  .grid-container-flex
+    margin-left: -($space)
 
 @media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-desktop)
 
   .container
     width: $grid-width-tablet
 
-  .column-three
-    width: ceil($grid-width-tablet/3)
-
-  .column-four
-    width: ceil($grid-width-tablet/4)
-
-
 @media screen and (min-width: $breakpoint-desktop+1)
 
   .container
     width: $grid-width-desktop
-
-  .column-three
-    width: ceil($grid-width-desktop/3)
-
-  .column-four
-    width: ceil($grid-width-desktop/4)
