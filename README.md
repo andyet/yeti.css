@@ -11,7 +11,6 @@ Yeticss is a pattern library consisting of lightweight, reusable modules. It has
 * [CSS Reset](https://github.com/andyet/yeticss#css-reset)
 * [Documentation](https://github.com/andyet/yeticss#documentation)
 * [Contributing](https://github.com/andyet/yeticss#contributing)
-* [Extending Yeticss](https://github.com/andyet/yeticss#extending-yeticss)
 * [License](https://github.com/andyet/yeticss#license)
 
 ## How to run?
