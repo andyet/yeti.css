@@ -91,11 +91,21 @@ Apart from following general contributing guidelines, maintainers should make su
 * **Each release is tagged** &mdash; releases should be tagged for version management on npm (more on versioning [here](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#tagging-releases))
 
 ### Tagging releases
-Releases should be tagged to allow for version management, npm makes this easy. Just run:
+
+> **IMPORTANT** Currently yeticss is only publish to our internal npm repo "nlfpm". If you run the commands below without being setup on nlfpm, then it'll accidentally be published to the public npm registry. To check if you are using nlfpm, run `npm config get registry`. If it returns `"https://nlfpm.andyet.net"` then you are good to go. If not, speak to Nlf about getting configured **BEFORE** continuing to do a release.
+
+Releases should be tagged and published to npm to allow for version management, npm makes this easy.
+
+* Ensure you read the above **important** note before continuing.
+* Ensure you are on the master branch.
+* Ensure you have done a `git pull origin master` to update your local code with the latest code on github.
+* Then run:
 
 ```
-npm version <major|minor|patch>
-git push origin --tags
+npm version <major|minor|patch> # to create the release
+git push origin master          # to push the code to github
+git push origin --tags          # to push the version tag to github
+npm publish                     # to publish the code to nlpfm
 ```
 
 Which will increment the version number, update package.json, create a git tag, and push the tag to Github.
