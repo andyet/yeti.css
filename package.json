@@ -1,6 +1,6 @@
 {
   "name": "yeticss",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "&yet visual style, branding assets and basic CSS components",
   "main": "yeticss.js",
   "scripts": {
