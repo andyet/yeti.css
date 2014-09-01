@@ -205,7 +205,6 @@ dl dd {
 }
 .grid-container-flex .grid-flex-cell {
   margin-bottom: 30px;
-  padding: 15px;
 }
 .container {
   margin: 0 auto;
@@ -228,6 +227,7 @@ dl dd {
         -ms-flex: 1;
             flex: 1;
     margin-left: 30px;
+    padding: 15px;
   }
   .grid-container-flex {
     margin-left: -30px;
