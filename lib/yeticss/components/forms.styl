@@ -3,7 +3,7 @@
 * $FORMS
 *
 --------------------------------------------------------------------*/
-  
+
 select, 
 .form-input, 
 .form-checkbox, 
@@ -128,8 +128,10 @@ select
     
     .form-element
       display: inline-block
-      padding-left: $ui-padding-narrow
       vertical-align: middle
+
+    .form-element:not(:first-child)
+      padding-left: $ui-padding-narrow
 
     .form-input,
     .input-checkbox,

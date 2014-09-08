@@ -623,7 +623,6 @@ figure figcaption {
   position: relative;
   background-color: #e3f8ff;
   color: #00b0e9;
-  line-height: 1.25;
 }
 .message a {
   font-weight: bold;
@@ -744,7 +743,7 @@ figure figcaption {
   position: absolute;
   top: 50%;
   right: 15px;
-  margin-top: -12px;
+  margin-top: -15px;
   cursor: pointer;
   font-size: large;
   font-weight: bold;
