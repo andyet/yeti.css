@@ -84,17 +84,34 @@ section
   h5 Message positioning
   p Messages can be easily positioned using following classes: <code>message-below</code>, <code>message-above</code>, <code>message-left</code> and <code>message-right</code>&mdash;where these classes denotate position of the message relatively to the element.
 
-  .message.message-below
-    p This is a message appearing below an element.
 
-  .message.message-success.message-above
-    p This is a message appearing above an element.
+  form(role='form')
 
-  .message.message-error.message-left
-    p This is a message appearing on the left hand side of the element.
+    input(class='form-input', type='text', placeholder='Your Name')
+    .message.message-below
+      p This is a message appearing below an element.
 
-  .message.message-alert.message-right
-    p This is a message appearing on the right hand side of the element.
+    .message.message-success.message-above
+      p This is a message appearing above an element.
+    input(class='form-input', type='text', placeholder='Your Surname')
+
+  form(class='form-inline')
+
+    .form-element
+      input(class='form-input', type='text', placeholder='Your Name')
+
+    .form-element
+      .message.message-alert.message-right
+        p This is a message appearing on the right hand side of the element.
+
+  form(class='form-inline', role='form')
+
+    .form-element
+      .message.message-error.message-left
+        p This is a message appearing on the left hand side of the element.
+
+    .form-element
+      input(class='form-input', type='text', placeholder='Your Name')
 
   :markdown
     ```html

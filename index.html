@@ -681,18 +681,36 @@
 
       <h5>Message positioning</h5>
       <p>Messages can be easily positioned using following classes: <code>message-below</code>, <code>message-above</code>, <code>message-left</code> and <code>message-right</code>&mdash;where these classes denotate position of the message relatively to the element.</p>
-      <div class="message message-below">
-        <p>This is a message appearing below an element.</p>
-      </div>
-      <div class="message message-success message-above">
-        <p>This is a message appearing above an element.</p>
-      </div>
-      <div class="message message-error message-left">
-        <p>This is a message appearing on the left hand side of the element.</p>
-      </div>
-      <div class="message message-alert message-right">
-        <p>This is a message appearing on the right hand side of the element.</p>
-      </div><pre><code class="lang-html">  &lt;div class=&#39;message message-below&#39;&gt;
+      <form role="form">
+        <input type="text" placeholder="Your Name" class="form-input">
+        <div class="message message-below">
+          <p>This is a message appearing below an element.</p>
+        </div>
+        <div class="message message-success message-above">
+          <p>This is a message appearing above an element.</p>
+        </div>
+        <input type="text" placeholder="Your Surname" class="form-input">
+      </form>
+      <form class="form-inline">
+        <div class="form-element">
+          <input type="text" placeholder="Your Name" class="form-input">
+        </div>
+        <div class="form-element">
+          <div class="message message-alert message-right">
+            <p>This is a message appearing on the right hand side of the element.</p>
+          </div>
+        </div>
+      </form>
+      <form role="form" class="form-inline">
+        <div class="form-element">
+          <div class="message message-error message-left">
+            <p>This is a message appearing on the left hand side of the element.</p>
+          </div>
+        </div>
+        <div class="form-element">
+          <input type="text" placeholder="Your Name" class="form-input">
+        </div>
+      </form><pre><code class="lang-html">  &lt;div class=&#39;message message-below&#39;&gt;
     &lt;p&gt;This is a message appearing below an element.&lt;/p&gt;
   &lt;/div&gt;
 

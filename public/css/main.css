@@ -361,8 +361,10 @@ select:focus:-moz-focusring {
 @media screen and (min-width: 768px) {
   .form-inline .form-element {
     display: inline-block;
-    padding-left: 5px;
     vertical-align: middle;
+  }
+  .form-inline .form-element:not(:first-child) {
+    padding-left: 5px;
   }
   .form-inline .form-input,
   .form-inline .input-checkbox,
@@ -621,6 +623,7 @@ figure figcaption {
   position: relative;
   background-color: #e3f8ff;
   color: #00b0e9;
+  line-height: 1.25;
 }
 .message a {
   font-weight: bold;
@@ -741,10 +744,14 @@ figure figcaption {
   position: absolute;
   top: 50%;
   right: 15px;
-  margin-top: -15px;
+  margin-top: -12px;
   cursor: pointer;
   font-size: large;
   font-weight: bold;
+}
+form .message {
+  padding: 10px;
+  line-height: 1.25;
 }
 .modal {
   position: fixed;
@@ -1302,8 +1309,13 @@ section:not(:last-child) {
       -ms-transform: none;
           transform: none;
 }
-.message {
+.message,
+.form-inline {
   margin-bottom: 10px;
+}
+form .message-left,
+form .message-right {
+  margin-bottom: 0;
 }
 .color {
   display: inline-block;
