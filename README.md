@@ -50,6 +50,12 @@ Note: installing yeticss **will not** include `assets` or `public`.
 
 Yeticss is a stylus plugin, so you just need to ensure stylus knows to use the plugin, and then import it in your app.
 
+Make sure that you have `stylus` available from command line:
+
+```
+npm install -g stylus
+```
+
 ### Static sites
 
 If you are compiling your stylus with the stylus command line interface, maybe directly or via a Makefile or similar, it's as easy as:
