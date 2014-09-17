@@ -1203,11 +1203,11 @@ tr.table-cell-alert a:hover {
     page-break-after: avoid;
   }
 }
-html,
-body {
-  min-height: 100%;
+html {
+  height: 100%;
 }
 body {
+  min-height: 100%;
   border-style: solid;
   border-color: #f2f4f6;
 }
