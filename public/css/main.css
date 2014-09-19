@@ -4,7 +4,11 @@
   -moz-box-sizing: border-box;
        box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 body {
+  min-height: 100%;
   font-family: Gotham Rounded A, Gotham Rounded B, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1203,11 +1207,7 @@ tr.table-cell-alert a:hover {
     page-break-after: avoid;
   }
 }
-html {
-  height: 100%;
-}
 body {
-  min-height: 100%;
   border-style: solid;
   border-color: #f2f4f6;
 }
