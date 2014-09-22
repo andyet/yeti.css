@@ -14,9 +14,11 @@
   ul
     margin: 0
 
+  li
+    padding: $ui-padding-spaced
+
   a
     display: inline-block
-    padding: $ui-padding-spaced
 
   label
     font-weight: normal
@@ -31,6 +33,7 @@
   .icon-arrow-down
     position: relative
     top: -2px
+    margin-left: 5px
 
 //- Top Nav Light Variation
 
@@ -190,11 +193,14 @@
         display: block
 
         li
+          padding: $ui-padding-narrow $ui-padding-spaced
           float: left
           border: 0
 
+        li:first-child
+          padding-left: 0
+
         a 
-          padding: $ui-padding-default $ui-padding-spaced
           font-size: $font-small
           font-weight: normal
 
@@ -230,7 +236,9 @@
       position: absolute
       top: 100%
       left: 0
-      min-width: 100%
+
+    .dropdown li
+      display: block
 
   //- Top Nav Light Variation
 

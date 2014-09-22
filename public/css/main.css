@@ -850,9 +850,11 @@ form .message {
 .top-nav ul {
   margin: 0;
 }
+.top-nav li {
+  padding: 15px;
+}
 .top-nav a {
   display: inline-block;
-  padding: 15px;
 }
 .top-nav label {
   font-weight: normal;
@@ -867,6 +869,7 @@ form .message {
 .top-nav .icon-arrow-down {
   position: relative;
   top: -2px;
+  margin-left: 5px;
 }
 .top-nav-light {
   border-bottom: 1px solid #e6eaed;
@@ -1002,11 +1005,14 @@ form .message {
     display: block;
   }
   .top-nav .menu-toggle:checked ~ ul .dropdown li {
+    padding: 5px 15px;
     float: left;
     border: 0;
   }
+  .top-nav .menu-toggle:checked ~ ul .dropdown li:first-child {
+    padding-left: 0;
+  }
   .top-nav .menu-toggle:checked ~ ul .dropdown a {
-    padding: 10px 15px;
     font-size: 12px;
     font-weight: normal;
   }
@@ -1032,7 +1038,9 @@ form .message {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 100%;
+  }
+  .top-nav .dropdown li {
+    display: block;
   }
   .top-nav-light .dropdown {
     border-left: 1px solid #e6eaed;
