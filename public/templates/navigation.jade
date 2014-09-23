@@ -206,8 +206,22 @@ section
   h5 Extras
   p You can use dropdowns and arrow elements separately from navigation items too.
 
-  .dropdown-standalone
+  .dropdown-standalone.dropdown-outlined
     | Dropdown
+    span.icon-arrow-down
+    ul.list-unstyled.dropdown
+      li: a Item One
+      li: a Item Two
+
+  .dropdown-standalone.button.button-primary
+    a() Button Dropdown
+    span.icon-arrow-down
+    ul.list-unstyled.dropdown
+      li: a Item One
+      li: a Item Two
+
+  .dropdown-standalone.button.button-secondary
+    a() Button Dropdown
     span.icon-arrow-down
     ul.list-unstyled.dropdown
       li: a Item One
@@ -215,8 +229,26 @@ section
 
   :markdown
     ```html
-      <div class='dropdown-standalone'>
+      <div class='dropdown-standalone dropdown-outlined'>
         Dropdown
+        <span class='icon-arrow-down'></span>
+        <ul class='list-unstyled dropdown'>
+          <li>Item One</li>
+          <li>Item Two</li>
+        </ul>
+      </div>
+
+      <div class='dropdown-standalone button button-primary'>
+        <a href=''>Button Dropdown</a>
+        <span class='icon-arrow-down'></span>
+        <ul class='list-unstyled dropdown'>
+          <li>Item One</li>
+          <li>Item Two</li>
+        </ul>
+      </div>
+
+      <div class='dropdown-standalone button button-secondary'>
+        <a href=''>Button Dropdown</a>
         <span class='icon-arrow-down'></span>
         <ul class='list-unstyled dropdown'>
           <li>Item One</li>

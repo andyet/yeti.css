@@ -525,9 +525,7 @@ pre {
 .dropdown-standalone {
   position: relative;
   display: inline-block;
-  padding: 10px;
-  border: 1px solid #e6eaed;
-  border-radius: 3px;
+  cursor: pointer;
 }
 .dropdown-standalone:hover .dropdown {
   display: block;
@@ -535,9 +533,7 @@ pre {
   top: 105%;
   left: 0;
   min-width: 100%;
-  border: 1px solid #e6eaed;
   border-radius: 3px;
-  background-color: #fff;
 }
 .dropdown-standalone:hover .dropdown li:not(:last-child) {
   border-bottom: inherit;
@@ -553,6 +549,42 @@ pre {
   position: relative;
   top: -2px;
   margin-left: 5px;
+}
+.dropdown-outlined {
+  padding: 10px;
+  border: 1px solid #e6eaed;
+  border-radius: 3px;
+}
+.dropdown-outlined .dropdown {
+  background-color: #fff;
+  border: 1px solid #e6eaed;
+}
+.dropdown-standalone.button a {
+  color: #fff;
+}
+.dropdown-standalone.button .dropdown a {
+  font-weight: normal;
+}
+.dropdown-standalone.button .icon-arrow-down {
+  border-top-color: #fff;
+}
+.dropdown-standalone.button-primary .dropdown {
+  background-color: #ee0788;
+}
+.dropdown-standalone.button-primary .dropdown li:not(:last-child) {
+  border-bottom: 1px solid #d6067a;
+}
+.dropdown-standalone.button-primary .dropdown a:hover {
+  color: #be066d;
+}
+.dropdown-standalone.button-secondary .dropdown {
+  background-color: #00b0e9;
+}
+.dropdown-standalone.button-secondary .dropdown li:not(:last-child) {
+  border-bottom: 1px solid #009ed2;
+}
+.dropdown-standalone.button-secondary .dropdown a:hover {
+  color: #008dba;
 }
 .icon-arrow-left,
 .icon-arrow-right,

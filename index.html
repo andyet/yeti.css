@@ -878,13 +878,43 @@
 
       <h5>Extras</h5>
       <p>You can use dropdowns and arrow elements separately from navigation items too.</p>
-      <div class="dropdown-standalone">Dropdown<span class="icon-arrow-down"></span>
+      <div class="dropdown-standalone dropdown-outlined">Dropdown<span class="icon-arrow-down"></span>
         <ul class="list-unstyled dropdown">
           <li><a>Item One</a></li>
           <li><a>Item Two</a></li>
         </ul>
-      </div><pre><code class="lang-html">  &lt;div class=&#39;dropdown-standalone&#39;&gt;
+      </div>
+      <div class="dropdown-standalone button button-primary"><a>Button Dropdown</a><span class="icon-arrow-down"></span>
+        <ul class="list-unstyled dropdown">
+          <li><a>Item One</a></li>
+          <li><a>Item Two</a></li>
+        </ul>
+      </div>
+      <div class="dropdown-standalone button button-secondary"><a>Button Dropdown</a><span class="icon-arrow-down"></span>
+        <ul class="list-unstyled dropdown">
+          <li><a>Item One</a></li>
+          <li><a>Item Two</a></li>
+        </ul>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;dropdown-standalone dropdown-outlined&#39;&gt;
     Dropdown
+    &lt;span class=&#39;icon-arrow-down&#39;&gt;&lt;/span&gt;
+    &lt;ul class=&#39;list-unstyled dropdown&#39;&gt;
+      &lt;li&gt;Item One&lt;/li&gt;
+      &lt;li&gt;Item Two&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;dropdown-standalone button button-primary&#39;&gt;
+    &lt;a href=&#39;&#39;&gt;Button Dropdown&lt;/a&gt;
+    &lt;span class=&#39;icon-arrow-down&#39;&gt;&lt;/span&gt;
+    &lt;ul class=&#39;list-unstyled dropdown&#39;&gt;
+      &lt;li&gt;Item One&lt;/li&gt;
+      &lt;li&gt;Item Two&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;dropdown-standalone button button-secondary&#39;&gt;
+    &lt;a href=&#39;&#39;&gt;Button Dropdown&lt;/a&gt;
     &lt;span class=&#39;icon-arrow-down&#39;&gt;&lt;/span&gt;
     &lt;ul class=&#39;list-unstyled dropdown&#39;&gt;
       &lt;li&gt;Item One&lt;/li&gt;
