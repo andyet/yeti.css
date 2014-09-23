@@ -28,8 +28,10 @@
 
   .grid-flex-cell
     flex: 1
-    margin-left: $space
-    padding: $ui-padding-spaced
+    padding: $ui-padding-spaced 0
+
+    &:not(:first-of-type)
+      margin-left: $space
 
   .grid-flex-cell-1of2,
   .grid-flex-cell-1of3,

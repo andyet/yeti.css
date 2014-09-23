@@ -230,8 +230,10 @@ dl dd {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    padding: 15px 0;
+  }
+  .grid-flex-cell:not(:first-of-type) {
     margin-left: 30px;
-    padding: 15px;
   }
   .grid-flex-cell-1of2,
   .grid-flex-cell-1of3,
