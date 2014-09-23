@@ -198,7 +198,7 @@ dl dt {
 dl dd {
   margin: 0;
 }
-.grid-container-flex {
+.grid-flex-container {
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -207,7 +207,7 @@ dl dd {
   display: flex;
   -webkit-flex-flow: row wrap;
 }
-.grid-container-flex .grid-flex-cell {
+.grid-flex-container .grid-flex-cell {
   margin-bottom: 30px;
 }
 .container {
