@@ -956,6 +956,9 @@ form .message {
 .tabs {
   border-bottom: 1px solid #e6eaed;
 }
+.tabs a {
+  padding: 10px 15px;
+}
 .tabs .current-item {
   position: relative;
   top: 1px;
@@ -974,10 +977,8 @@ form .message {
   color: #4d5659;
   font-weight: 800;
 }
-.tabs a,
 .side-nav a,
 .pagination a,
-.tabs li,
 .side-nav li,
 .pagination li {
   display: block;
@@ -1008,7 +1009,6 @@ form .message {
   border: 1px solid #e6eaed;
 }
 .side-nav a,
-.tabs a,
 .pagination a {
   padding: 0 15px;
 }
