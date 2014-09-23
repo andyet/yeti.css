@@ -198,6 +198,9 @@ dl dt {
 dl dd {
   margin: 0;
 }
+.container {
+  margin: 0 auto;
+}
 .grid-flex-container {
   padding: 0;
   list-style: none;
@@ -207,11 +210,8 @@ dl dd {
   display: flex;
   -webkit-flex-flow: row wrap;
 }
-.grid-flex-container .grid-flex-cell {
+.grid-flex-cell {
   margin-bottom: 30px;
-}
-.container {
-  margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -232,6 +232,23 @@ dl dd {
             flex: 1;
     margin-left: 30px;
     padding: 15px;
+  }
+  .grid-flex-cell-1of2,
+  .grid-flex-cell-1of3,
+  .grid-flex-cell-1of4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+  }
+  .grid-flex-cell-1of2 {
+    width: 50%;
+  }
+  .grid-flex-cell-1of3 {
+    width: 34%;
+  }
+  .grid-flex-cell-1of4 {
+    width: 25%;
   }
   .grid-container-flex {
     margin-left: -30px;
@@ -1461,12 +1478,12 @@ form .message-right {
 .icon-sample {
   margin: 0 5px;
 }
-.grid-flex-cell {
+[class^="grid-flex-cell"] {
   border: 1px solid #e6eaed;
   border-radius: 3px;
   text-align: center;
 }
-.grid-flex-cell p {
+[class^="grid-flex-cell"] p {
   margin: 0;
 }
 @media screen and (min-width: 769px) {

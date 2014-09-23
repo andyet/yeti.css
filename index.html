@@ -172,6 +172,7 @@
     <section>
       <h4>Grid</h4>
       <p>Grid is built on top of <a href='http://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a>. Cells (<code>grid-flex-cell</code>) will have the width of <code>100%</code> below <code>481px</code> and automatically calculated width (depending on cell count) above that breakpoint. Grid must be placed within <code>div</code> with <code>container</code> class.</p>
+      <p>Instead of relying on calculation of widths depending on number of cells you can use helper fraction classes: <code>grid-flex-cell-1of4</code>, <code>grid-flex-cell-1of3</code>, <code>grid-flex-cell-1of2</code>. The width of other cells will be calculated automatically by the browser. </p>
       <div class="grid-flex-container">
         <div class="grid-flex-cell">
           <p>1/2</p>
@@ -204,7 +205,31 @@
         <div class="grid-flex-cell">
           <p>1/4</p>
         </div>
-      </div><pre><code class="lang-html">  &lt;div class=&#39;.grid-flex-container&#39;&gt;
+      </div>
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell">
+          <p>auto</p>
+        </div>
+        <div class="grid-flex-cell grid-flex-cell-1of4">
+          <p>1/4</p>
+        </div>
+      </div>
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell">
+          <p>auto</p>
+        </div>
+        <div class="grid-flex-cell grid-flex-cell-1of2">
+          <p>1/2</p>
+        </div>
+      </div>
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell">
+          <p>auto</p>
+        </div>
+        <div class="grid-flex-cell grid-flex-cell-1of3">
+          <p>1/3</p>
+        </div>
+      </div><pre><code class="lang-html">  &lt;div class=&#39;grid-flex-container&#39;&gt;
     &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/2&lt;/p&gt;
     &lt;/div&gt;
@@ -213,7 +238,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class=&#39;.grid-flex-container&#39;&gt;
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
     &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/3&lt;/p&gt;
     &lt;/div&gt;
@@ -225,7 +250,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class=&#39;.grid-flex-container&#39;&gt;
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
     &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/4&lt;/p&gt;
     &lt;/div&gt;
@@ -237,6 +262,33 @@
     &lt;/div&gt;
     &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
+      &lt;p&gt;auto&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;grid-flex-cell grid-flex-cell-1of4&#39;&gt;
+      &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
+      &lt;p&gt;auto&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;grid-flex-cell grid-flex-cell-1of2&#39;&gt;
+      &lt;p&gt;1/2&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
+      &lt;p&gt;auto&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;grid-flex-cell grid-flex-cell-1of3&#39;&gt;
+      &lt;p&gt;1/3&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 </code></pre>

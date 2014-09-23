@@ -3,6 +3,8 @@ section
   h4 Grid
   p Grid is built on top of <a href='http://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a>. Cells (<code>grid-flex-cell</code>) will have the width of <code>100%</code> below <code>481px</code> and automatically calculated width (depending on cell count) above that breakpoint. Grid must be placed within <code>div</code> with <code>container</code> class.
 
+  p Instead of relying on calculation of widths depending on number of cells you can use helper fraction classes: <code>grid-flex-cell-1of4</code>, <code>grid-flex-cell-1of3</code>, <code>grid-flex-cell-1of2</code>. The width of other cells will be calculated automatically by the browser. 
+
   .grid-flex-container
 
     .grid-flex-cell
@@ -29,10 +31,31 @@ section
       p 1/4
     .grid-flex-cell
       p 1/4
+
+  .grid-flex-container
+
+    .grid-flex-cell
+      p auto
+    .grid-flex-cell.grid-flex-cell-1of4
+      p 1/4
+
+  .grid-flex-container
+
+    .grid-flex-cell
+      p auto
+    .grid-flex-cell.grid-flex-cell-1of2
+      p 1/2
+
+  .grid-flex-container
+
+    .grid-flex-cell
+      p auto
+    .grid-flex-cell.grid-flex-cell-1of3
+      p 1/3
 
   :markdown
     ```html
-      <div class='.grid-flex-container'>
+      <div class='grid-flex-container'>
         <div class='grid-flex-cell'>
           <p>1/2</p>
         </div>
@@ -41,7 +64,7 @@ section
         </div>
       </div>
 
-      <div class='.grid-flex-container'>
+      <div class='grid-flex-container'>
         <div class='grid-flex-cell'>
           <p>1/3</p>
         </div>
@@ -53,7 +76,7 @@ section
         </div>
       </div>
 
-      <div class='.grid-flex-container'>
+      <div class='grid-flex-container'>
         <div class='grid-flex-cell'>
           <p>1/4</p>
         </div>
@@ -65,6 +88,33 @@ section
         </div>
         <div class='grid-flex-cell'>
           <p>1/4</p>
+        </div>
+      </div>
+
+      <div class='grid-flex-container'>
+        <div class='grid-flex-cell'>
+          <p>auto</p>
+        </div>
+        <div class='grid-flex-cell grid-flex-cell-1of4'>
+          <p>1/4</p>
+        </div>
+      </div>
+
+      <div class='grid-flex-container'>
+        <div class='grid-flex-cell'>
+          <p>auto</p>
+        </div>
+        <div class='grid-flex-cell grid-flex-cell-1of2'>
+          <p>1/2</p>
+        </div>
+      </div>
+
+      <div class='grid-flex-container'>
+        <div class='grid-flex-cell'>
+          <p>auto</p>
+        </div>
+        <div class='grid-flex-cell grid-flex-cell-1of3'>
+          <p>1/3</p>
         </div>
       </div>
     ```
