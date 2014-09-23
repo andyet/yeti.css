@@ -7,9 +7,7 @@
 .dropdown-standalone
   position: relative
   display: inline-block
-  padding: $ui-padding-default
-  border: $ui-border
-  border-radius: 3px
+  cursor: pointer
 
   &:hover
     
@@ -19,9 +17,7 @@
       top: 105%
       left: 0
       min-width: 100%
-      border: $ui-border
       border-radius: 3px
-      background-color: white
 
       li:not(:last-child)
         border-bottom: inherit
@@ -37,3 +33,45 @@
     position: relative
     top: -2px
     margin-left: 5px
+
+.dropdown-outlined
+  padding: $ui-padding-default
+  border: $ui-border
+  border-radius: 3px
+
+.dropdown-outlined .dropdown
+  background-color: white
+  border: $ui-border
+
+.dropdown-standalone.button
+
+  a
+    color: white
+
+  .dropdown a
+    font-weight: normal
+
+  .icon-arrow-down
+    border-top-color: white
+
+.dropdown-standalone.button-primary
+  
+  .dropdown
+    background-color: $pink
+  
+    li:not(:last-child)
+      border-bottom: 1px solid darken($pink, 10%)
+
+    a:hover
+      color: darken($pink, 20%)
+
+.dropdown-standalone.button-secondary
+  
+  .dropdown
+    background-color: $blue
+  
+    li:not(:last-child)
+      border-bottom: 1px solid darken($blue, 10%)
+
+    a:hover
+      color: darken($blue, 20%)
