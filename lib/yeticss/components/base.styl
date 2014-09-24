@@ -48,12 +48,6 @@ a
 
 //- Helper classes
 
-.pull-left
-  float: left
-
-.pull-right
-  float: right
-
 .hide
   display: none
 
@@ -71,3 +65,11 @@ a
 img, iframe, video
   max-width: 100%
   height: auto
+
+@media screen and (min-width: $breakpoint-smartphone+1)
+
+  .pull-left
+    float: left
+
+  .pull-right
+    float: right

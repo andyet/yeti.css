@@ -39,12 +39,6 @@ a:focus {
 a:hover {
   color: #008dba;
 }
-.pull-left {
-  float: left;
-}
-.pull-right {
-  float: right;
-}
 .hide {
   display: none;
 }
@@ -61,6 +55,14 @@ iframe,
 video {
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 481px) {
+  .pull-left {
+    float: left;
+  }
+  .pull-right {
+    float: right;
+  }
 }
 h1,
 h2,
