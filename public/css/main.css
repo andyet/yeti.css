@@ -215,7 +215,7 @@ dl dd {
 .grid-flex-cell {
   margin-bottom: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .container {
     width: 90%;
   }
@@ -226,7 +226,7 @@ dl dd {
             flex: 0 0 100%;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 601px) {
   .grid-flex-cell {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
