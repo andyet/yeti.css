@@ -976,17 +976,6 @@ form .message {
 .tabs {
   border-bottom: 1px solid #e6eaed;
 }
-.tabs a {
-  padding: 10px 15px;
-}
-.tabs .current-item {
-  position: relative;
-  top: 1px;
-  border: 1px solid #e6eaed;
-  border-bottom-color: transparent;
-  border-radius: 3px 3px 0 0;
-  background-color: #fff;
-}
 .side-nav li:not(:last-child) a {
   border-bottom: 1px solid #e6eaed;
 }
@@ -1035,6 +1024,25 @@ form .message {
 .breadcrumbs a,
 .pagination a {
   font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+  .tabs a {
+    position: relative;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .tabs a {
+    padding: 10px 15px;
+  }
+  .tabs .current-item {
+    position: relative;
+    top: 1px;
+    border: 1px solid #e6eaed;
+    border-bottom-color: transparent;
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+  }
 }
 @media screen and (max-width: 768px) {
   .top-nav ul {

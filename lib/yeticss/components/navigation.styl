@@ -100,17 +100,6 @@
 .tabs
   border-bottom: $ui-border
 
-  a
-    padding: $ui-padding-default $ui-padding-spaced
-
-  .current-item
-    position: relative
-    top: 1px
-    border: $ui-border
-    border-bottom-color: transparent
-    border-radius: 3px 3px 0 0
-    background-color: white
-
 //- Side Navigation
 
 .side-nav
@@ -167,6 +156,29 @@
 .breadcrumbs a, 
 .pagination a
   font-size: $font-small
+
+@media screen and (max-width: $breakpoint-smartphone)
+
+  .tabs
+    
+    a
+      position: relative
+      padding-right: $ui-padding-default
+
+@media screen and (min-width: $breakpoint-smartphone+1)
+
+  .tabs
+    
+    a
+      padding: $ui-padding-default $ui-padding-spaced
+
+    .current-item
+      position: relative
+      top: 1px
+      border: $ui-border
+      border-bottom-color: transparent
+      border-radius: 3px 3px 0 0
+      background-color: white
 
 @media screen and (max-width: $breakpoint-tablet)
 
