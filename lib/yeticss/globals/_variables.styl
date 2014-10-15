@@ -6,11 +6,11 @@
 
 //- Whitespace
 
-$space                   = 30px   
-$ui-padding-extra-spaced = $space       
-$ui-padding-spaced       = $space/2
-$ui-padding-default      = $space/3
-$ui-padding-narrow       = $space/6
+$space                   ?= 30px   
+$ui-padding-extra-spaced ?= $space       
+$ui-padding-spaced       ?= $space/2
+$ui-padding-default      ?= $space/3
+$ui-padding-narrow       ?= $space/6
 
 //- Font Families
 
@@ -21,55 +21,55 @@ $font-monospaced     = Menlo, Monaco, Consolas, monospace
 
 //- Font Sizes
 
-$font-base    = 16px           
-$font-large   = 22px     
-$font-medium  = 14px
-$font-small   = 12px
-$font-smaller = 10px
+$font-base    ?= 16px           
+$font-large   ?= 22px     
+$font-medium  ?= 14px
+$font-small   ?= 12px
+$font-smaller ?= 10px
 
 //- Heading Sizes
 
-$font-h1 = 40px
-$font-h2 = 36px
-$font-h3 = 32px
-$font-h4 = 28px
-$font-h5 = 16px
-$font-h6 = 14px
+$font-h1 ?= 40px
+$font-h2 ?= 36px
+$font-h3 ?= 32px
+$font-h4 ?= 28px
+$font-h5 ?= 16px
+$font-h6 ?= 14px
 
-$mobile-font-h1 = 36px
-$mobile-font-h2 = 30px
-$mobile-font-h3 = 24px
-$mobile-font-h4 = 18px
-$mobile-font-h5 = 14px
-$mobile-font-h6 = 14px
+$mobile-font-h1 ?= 36px
+$mobile-font-h2 ?= 30px
+$mobile-font-h3 ?= 24px
+$mobile-font-h4 ?= 18px
+$mobile-font-h5 ?= 14px
+$mobile-font-h6 ?= 14px
 
 //- Font Weights
 
-$font-weight-light   = 300
-$font-weight-regular = 400
-$font-weight-medium  = 500
-$font-weight-bold    = 800
+$font-weight-light   ?= 300
+$font-weight-regular ?= 400
+$font-weight-medium  ?= 500
+$font-weight-bold    ?= 800
 
 //- Line Heights
 
-$line-height-base    = 1.5
-$line-height-heading = 1.25
+$line-height-base    ?= 1.5
+$line-height-heading ?= 1.25
 
 //- Borders
 
-$ui-border = 1px solid $gray-lighter
+$ui-border ?= 1px solid $gray-lighter
 
 //- Grid
 
-$grid-width-full    = 100%
-$grid-width-desktop = 70%
-$grid-width-tablet  = 85%
-$grid-width-mobile  = 90%
+$grid-width-full    ?= 100%
+$grid-width-desktop ?= 70%
+$grid-width-tablet  ?= 85%
+$grid-width-mobile  ?= 90%
 
 //- Responsive breakpoints
 
-$breakpoint-smartphone   = 480px
-$breakpoint-mid-mobile   = 600px
-$breakpoint-tablet       = 768px
-$breakpoint-desktop      = 1024px
-$breakpoint-desktop-wide = 1200px
+$breakpoint-smartphone   ?= 480px
+$breakpoint-mid-mobile   ?= 600px
+$breakpoint-tablet       ?= 768px
+$breakpoint-desktop      ?= 1024px
+$breakpoint-desktop-wide ?= 1200px
