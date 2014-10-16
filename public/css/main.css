@@ -385,7 +385,7 @@ select:focus:-moz-focusring {
 @media screen and (min-width: 768px) {
   .form-inline .form-element {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
   }
   .form-inline .form-element:not(:first-child) {
     padding-left: 5px;
@@ -395,9 +395,6 @@ select:focus:-moz-focusring {
   .form-inline .input-radio,
   .form-inline select {
     margin: 0;
-  }
-  .form-inline label {
-    display: none;
   }
 }
 .button {
