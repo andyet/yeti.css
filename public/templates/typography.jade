@@ -2,7 +2,7 @@ section
 
   h2 Typography
 
-  h4 Body copy
+  h3 Body copy
   p The default <code>font-size</code> is <strong>16px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs get have a bottom margin of <code>30px</code> (the default spacing unit).
 
   :markdown
@@ -10,28 +10,46 @@ section
       <p>...</p>
     ```
 
-  h4 Headings
+  h3 Headings
   p All HTML headings are available&mdash;running from <code>h1</code> to <code>h6</code>.
 
   .sample
-    h1 Headline 1 is 40px
-    h2 Headline 2 is 34px
-    h3 Headline 3 is 28px
-    h4 Headline 4 is 22px
-    h5 Headline 5 is 16px
-    h6 Headline 6 is 14px, uppercased
+    h1 Headline 1 is 42px / 38px
+    h2 Headline 2 is 36px / 32px
+    h3 Headline 3 is 30px / 32px
+    h4 Headline 4 is 24px / 20px
+    h5 Headline 5 is 18px / 16px
+    h6 Headline 6 is 16px / 14px, uppercased
 
   :markdown
     ```html
-      <h1>Headline 1 is 40px</h1>
-      <h2>Headline 2 is 34px</h2>
-      <h3>Headline 2 is 28px</h3>
-      <h4>Headline 2 is 22px</h4>
-      <h5>Headline 2 is 16px</h5>
-      <h6>Headline 2 is 14px, uppercased</h6>
+      <h1>Headline 1 is 42px / 38px</h1>
+      <h2>Headline 2 is 36px / 32px</h2>
+      <h3>Headline 2 is 30px / 32px</h3>
+      <h4>Headline 2 is 24px / 20px</h4>
+      <h5>Headline 2 is 18px / 16px</h5>
+      <h6>Headline 2 is 16px / 14px, uppercased</h6>
     ```
 
-  h4 Text manipulations
+  h4 Headings Usage
+
+  dl 
+    dt Heading 1
+    dd <code>h1</code> is a top-level header that should appear only once per page, usually within <code>header</code> area. It can be used as a container for logotypes.
+
+  dl
+    dt Heading 2
+    dd <code>h2</code> can be alternatively used as a top-level page header, optionally outside of <code>header</code>.
+
+  dl
+    dt Heading 3
+    dd <code>h3</code> is used to denotate sections on a page.
+
+  dl
+    dt Heading 4, 5, 6
+    dd <code>h4</code>, <code>h5</code>, <code>h6</code> are used for sub-sections on a page.
+
+  h3 Text manipulations
   p Basic HTML inline text manipulations are supported.
 
   .sample
@@ -61,7 +79,7 @@ section
       This text snippet will be an <code>inline code sample</code>
     ```
 
-  h4 Blockquotes
+  h3 Blockquotes
   p To quote an external source use a <code>blockquote</code> element. 
 
   blockquote
@@ -100,10 +118,10 @@ section
       </blockquote>
     ```
 
-  h4 Lists
+  h3 Lists
   p Both ordered and unordered lists can be customized with <code>list-ustyled</code> class, that will remove the <code>padding</code> as well as individual list item style and <code>list-inline</code> class, that will change the display of list items to <code>inline-block</code>.
 
-  h5 Unordered list
+  h4 Unordered list
   p An unordered list represents a collection of items that do not have any particular order.
 
   ul
@@ -138,7 +156,7 @@ section
       </ul>
     ```
 
-  h5 Ordered list
+  h4 Ordered list
   p An ordered list represents a collection of items that do have order and will be displayed with a preceding number.
 
   ol
@@ -165,7 +183,7 @@ section
       </ol>
     ```
 
-  h5 Definition list
+  h4 Definition list
   p A definition list consists of pairs of terms and their descriptions.
 
   dl

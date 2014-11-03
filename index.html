@@ -19,28 +19,45 @@
   <div class="container">
     <section>
       <h2>Typography</h2>
-      <h4>Body copy</h4>
+      <h3>Body copy</h3>
       <p>The default <code>font-size</code> is <strong>16px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs get have a bottom margin of <code>30px</code> (the default spacing unit).</p><pre><code class="lang-html">  &lt;p&gt;...&lt;/p&gt;
 </code></pre>
 
-      <h4>Headings</h4>
+      <h3>Headings</h3>
       <p>All HTML headings are available&mdash;running from <code>h1</code> to <code>h6</code>.</p>
       <div class="sample">
-        <h1>Headline 1 is 40px</h1>
-        <h2>Headline 2 is 34px</h2>
-        <h3>Headline 3 is 28px</h3>
-        <h4>Headline 4 is 22px</h4>
-        <h5>Headline 5 is 16px</h5>
-        <h6>Headline 6 is 14px, uppercased</h6>
-      </div><pre><code class="lang-html">  &lt;h1&gt;Headline 1 is 40px&lt;/h1&gt;
-  &lt;h2&gt;Headline 2 is 34px&lt;/h2&gt;
-  &lt;h3&gt;Headline 2 is 28px&lt;/h3&gt;
-  &lt;h4&gt;Headline 2 is 22px&lt;/h4&gt;
-  &lt;h5&gt;Headline 2 is 16px&lt;/h5&gt;
-  &lt;h6&gt;Headline 2 is 14px, uppercased&lt;/h6&gt;
+        <h1>Headline 1 is 42px / 38px</h1>
+        <h2>Headline 2 is 36px / 32px</h2>
+        <h3>Headline 3 is 30px / 32px</h3>
+        <h4>Headline 4 is 24px / 20px</h4>
+        <h5>Headline 5 is 18px / 16px</h5>
+        <h6>Headline 6 is 16px / 14px, uppercased</h6>
+      </div><pre><code class="lang-html">  &lt;h1&gt;Headline 1 is 42px / 38px&lt;/h1&gt;
+  &lt;h2&gt;Headline 2 is 36px / 32px&lt;/h2&gt;
+  &lt;h3&gt;Headline 2 is 30px / 32px&lt;/h3&gt;
+  &lt;h4&gt;Headline 2 is 24px / 20px&lt;/h4&gt;
+  &lt;h5&gt;Headline 2 is 18px / 16px&lt;/h5&gt;
+  &lt;h6&gt;Headline 2 is 16px / 14px, uppercased&lt;/h6&gt;
 </code></pre>
 
-      <h4>Text manipulations</h4>
+      <h4>Headings Usage</h4>
+      <dl> 
+        <dt>Heading 1</dt>
+        <dd><code>h1</code> is a top-level header that should appear only once per page, usually within <code>header</code> area. It can be used as a container for logotypes.</dd>
+      </dl>
+      <dl>
+        <dt>Heading 2</dt>
+        <dd><code>h2</code> can be alternatively used as a top-level page header, optionally outside of <code>header</code>.</dd>
+      </dl>
+      <dl>
+        <dt>Heading 3</dt>
+        <dd><code>h3</code> is used to denotate sections on a page.</dd>
+      </dl>
+      <dl>
+        <dt>Heading 4, 5, 6</dt>
+        <dd><code>h4</code>, <code>h5</code>, <code>h6</code> are used for sub-sections on a page.</dd>
+      </dl>
+      <h3>Text manipulations</h3>
       <p>Basic HTML inline text manipulations are supported.</p>
       <div class="sample">
         <ul class="list-unstyled">
@@ -67,7 +84,7 @@
   This text snippet will be an &lt;code&gt;inline code sample&lt;/code&gt;
 </code></pre>
 
-      <h4>Blockquotes</h4>
+      <h3>Blockquotes</h3>
       <p>To quote an external source use a <code>blockquote</code> element. </p>
       <blockquote>
         <p>You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged.</p>
@@ -94,9 +111,9 @@
   &lt;/blockquote&gt;
 </code></pre>
 
-      <h4>Lists</h4>
+      <h3>Lists</h3>
       <p>Both ordered and unordered lists can be customized with <code>list-ustyled</code> class, that will remove the <code>padding</code> as well as individual list item style and <code>list-inline</code> class, that will change the display of list items to <code>inline-block</code>.</p>
-      <h5>Unordered list</h5>
+      <h4>Unordered list</h4>
       <p>An unordered list represents a collection of items that do not have any particular order.</p>
       <ul>
         <li>List element one</li>
@@ -131,7 +148,7 @@
   &lt;/ul&gt;
 </code></pre>
 
-      <h5>Ordered list</h5>
+      <h4>Ordered list</h4>
       <p>An ordered list represents a collection of items that do have order and will be displayed with a preceding number.</p>
       <ol>
         <li>List element one</li>
@@ -156,7 +173,7 @@
   &lt;/ol&gt;
 </code></pre>
 
-      <h5>Definition list</h5>
+      <h4>Definition list</h4>
       <p>A definition list consists of pairs of terms and their descriptions.</p>
       <dl>
         <dt>Definition term</dt>
@@ -169,7 +186,7 @@
 
     </section>
     <section>
-      <h4>Grid</h4>
+      <h2>Grid</h2>
       <p>The starting point to maintaining the document flow is by wrapping the content in a container element that adjusts its width according to resolution:</p><pre><code>  &lt;div class=&#39;container&#39;&gt;
     &lt;h1&gt;My Website&lt;/h1&gt;
     &lt;p&gt;My content.&lt;/p&gt;
@@ -315,7 +332,7 @@
 
     </section>
     <section class="buttons">
-      <h4>Buttons</h4>
+      <h2>Buttons</h2>
       <p>Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants.</p>
       <button class="button">Button</button>
       <button class="button button-approve">Approval Button</button>
@@ -328,13 +345,13 @@
   &lt;a href=&#39;button button-outlined&#39;&gt;Outlined Button&lt;/a&gt;
 </code></pre>
 
-      <h5>Button sizes</h5>
+      <h3>Button sizes</h3>
       <p>Buttons come in three different sizes&mdash;large, regular and small. Use <code>button-large</code>, no class and <code>button-small</code> classes respectively.</p><a href="" class="button button-large">Large Button</a><a href="" class="button">Regular Button</a><a href="" class="button button-small">Small Button</a><pre><code class="lang-html">  &lt;a class=&#39;button button-large&#39;&gt;Large Button&lt;/a&gt;
   &lt;a href=&#39;button&#39;&gt;Regular Button&lt;/a&gt;
   &lt;a href=&#39;button button-small&#39;&gt;Small Button&lt;/a&gt;
 </code></pre>
 
-      <h5>Disabled buttons</h5>
+      <h3>Disabled buttons</h3>
       <p>For disabled (unclickable) apperance use <code>disabled</code> attribute for <code>button</code> elements and <code>button-disabled</code> class for links.</p>
       <button disabled class="button">Button</button>
       <button disabled class="button button-approve">Approval Button </button><a class="button button-warn button-disabled">Warning Button</a>
@@ -346,14 +363,14 @@
   &lt;button class=&#39;button button-outlined&#39; disabled&gt;Outlined Button&lt;/button&gt;
 </code></pre>
 
-      <h5>Button groups</h5>
+      <h3>Button groups</h3>
       <p>To create a button group place any number of button elements in <code>button-group</code> container.</p>
       <div class="button-group"><a href="" class="button">Button</a><a href="" class="button">Button</a><a href="" class="button">Button</a></div>
       <div class="button-group"><a href="" class="button button-neutral">Button</a><a href="" class="button button-neutral">Button</a><a href="" class="button button-neutral">Button</a></div>
       <div class="button-group"><a href="" class="button button-outlined">Button</a><a href="" class="button button-outlined">Button</a><a href="" class="button button-outlined">Button</a></div>
     </section>
     <section>
-      <h4>Forms</h4>
+      <h2>Forms</h2>
       <form>
         <fieldset>
           <legend>Comment Form</legend>
@@ -417,24 +434,24 @@
   &lt;/form&gt;
 </code></pre>
 
-      <h5>Required inputs</h5>
+      <h3>Required inputs</h3>
       <p>To denotate that filling an input is mandatory add <code>required</code> attribute to an <code>input</code>, <code>textarea</code> or <code>select</code>.</p>
       <input type="text" placeholder="This input is required" required class="form-input"><pre><code class="lang-html">  &lt;input type=&#39;text&#39; class=&#39;form-input form-element&#39; placeholder=&#39;This input is required&#39; required&gt;
 </code></pre>
 
-      <h5>Disabled inputs</h5>
+      <h3>Disabled inputs</h3>
       <p>You can disable the following elements <code>input</code>, <code>select</code>, <code>textarea</code> and <code>button</code> by adding the <code>disabled</code> attribute.</p>
       <input type="text" placeholder="This input is disabled" disabled class="form-input"><pre><code class="lang-html">  &lt;input type=&#39;text&#39; class=&#39;form-input&#39; placeholder=&#39;This input is disabled&#39; disabled&gt;
 </code></pre>
 
-      <h5>Input validity</h5>
+      <h3>Input validity</h3>
       <p>Use <code>input-invalid</code> and <code>input-valid</code> classes for error and success states respectively.</p>
       <input type="text" value="@anyet" class="form-input input-invalid">
       <input type="text" value="Philip Roberts" class="form-input input-valid "><pre><code class="lang-html">  &lt;input type=&#39;text&#39; value=&#39;@anyet&#39; class=&#39;form-input form-element input-invalid&#39;&gt;
   &lt;input type=&#39;text&#39; value=&#39;Philip Roberts&#39; class=&#39;form-input form-element input-valid&#39;&gt;
 </code></pre>
 
-      <h5>Other form elements</h5>
+      <h3>Other form elements</h3>
       <p>Remember about wrapping both checkboxes and radio buttons in labels with <code>input-radio</code> and <code>input-checkbox</code> class.</p>
       <form>
         <fieldset>
@@ -473,9 +490,9 @@
 
     </section>
     <section>
-      <h4>Progress Bars</h4>
+      <h2>Progress Bars</h2>
       <p>Currently progress bars are built as <code>div</code> elements due to still incomplete implementation of <code>progress</code> element. Take note that progress meter is a dummy value that should be adjusted.</p>
-      <h5>Large progress bar</h5>
+      <h3>Large progress bar</h3>
       <div class="progress progress-large progress-success"><span class="meter"></span></div>
       <div class="progress progress-large progress-warning"><span class="meter"></span></div>
       <div class="progress progress-large progress-error"><span class="meter"></span></div>
@@ -493,7 +510,7 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h5>Small progress bar</h5>
+      <h3>Small progress bar</h3>
       <p>For small bars use <code>progress-small</code> class.</p>
       <div class="progress progress-small progress-success"><span class="meter"></span></div>
       <div class="progress progress-small progress-warning"><span class="meter"></span></div>
@@ -503,7 +520,7 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h5>Rounded progress bar</h5>
+      <h3>Rounded progress bar</h3>
       <p>For rounded bars use <code>progress-rounded</code> class.</p>
       <div class="progress progress-small progress-rounded progress-error"><span class="meter"></span></div>
       <div class="progress progress-small progress-rounded progress-warning"><span class="meter"></span></div>
@@ -515,7 +532,7 @@
 
     </section>
     <section>
-      <h4>Tables</h4>
+      <h2>Tables</h2>
       <p>When using tables remember about appropriate content grouping with <code>thead</code> and <code>tbody</code>. </p>
       <table>
         <thead>
@@ -578,7 +595,7 @@
   &lt;/table&gt;
 </code></pre>
 
-      <h5>Outlined tables</h5>
+      <h3>Outlined tables</h3>
       <p>Use <code>table-outlined</code> class for additional border around the <code>table</code>. For hover effects on rows add <code>table-with-hover</code>.</p>
       <table class="table-outlined table-with-hover">
         <thead>
@@ -610,7 +627,7 @@
           </tr>
         </tbody>
       </table>
-      <h5>Striped table</h5>
+      <h3>Striped table</h3>
       <p>For odd striped rows add <code>table-striped</code> class.</p>
       <table class="table-striped">
         <thead>
@@ -648,7 +665,7 @@
           </tr>
         </tbody>
       </table>
-      <h5>Table with error states</h5>
+      <h3>Table with error states</h3>
       <p>To add validation states to table rows use <code>table-cell-success</code>, <code>table-cell-alert</code> and <code>table-cell-error</code> respectively.</p>
       <table>
         <thead>
@@ -688,7 +705,7 @@
       </table>
     </section>
     <section>
-      <h4>Messages</h4>
+      <h2>Messages</h2>
       <p>There are four types of messages&mdash;default (no class), alert (<code>message-alert</code>), error (<code>message-error</code>) and success (<code>message-success</code>).</p>
       <div class="message">
         <p>This is a message. <a>This is a link.</a></p>
@@ -718,7 +735,7 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h5>Dismissable messages</h5>
+      <h3>Dismissable messages</h3>
       <p>Messages that can be dismissed should have <code>message-dismissable</code> class and a link with <code>close</code> class.</p>
       <div class="message message-error message-dismissable">
         <p>This is an error that can be dismissed.</p><a title="Close" class="close">×</a>
@@ -744,7 +761,7 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h5>Full width messages</h5>
+      <h3>Full width messages</h3>
       <p>Add <code>message-full-width</code> class for message with centered text.</p>
       <div class="message message-success message-full-width message-dismissable">
         <p>This is a full width success message that can be dismissed.</p><a title="Close" class="close">×</a>
@@ -754,7 +771,7 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h5>Message positioning</h5>
+      <h3>Message positioning</h3>
       <p>Messages can be easily positioned using following classes: <code>message-below</code>, <code>message-above</code>, <code>message-left</code> and <code>message-right</code>&mdash;where these classes denotate position of the message relatively to the element.</p>
       <form role="form">
         <input type="text" placeholder="Your Name" class="form-input">
@@ -804,8 +821,8 @@
 
     </section>
     <section>
-      <h4>Navigation</h4>
-      <h5>Top bars</h5>
+      <h2>Navigation</h2>
+      <h3>Top bars</h3>
       <p>For navigation bars use <code>top-nav</code> class with desired color variation (<code>top-nav-light</code> or <code>top-nav-dark</code>).</p>
       <nav role="navigation" class="top-nav top-nav-light cf">
         <input id="menu-toggle" type="checkbox" class="menu-toggle">
@@ -873,7 +890,7 @@
   &lt;/nav&gt;
 </code></pre>
 
-      <h5>Breadcrumbs</h5>
+      <h3>Breadcrumbs</h3>
       <p>For indicating users location in complex sites or applications use breadcrumbs.</p>
       <nav role="navigation">
         <ul class="list-unstyled list-inline breadcrumbs">
@@ -892,7 +909,7 @@
   &lt;/nav&gt;
 </code></pre>
 
-      <h5>Pagination</h5>
+      <h3>Pagination</h3>
       <p>To indicate content spanning over multiple pages use pagination element.</p>
       <nav role="navigation">
         <ul class="list-unstyled list-inline pagination">
@@ -917,7 +934,7 @@
   &lt;/nav&gt;
 </code></pre>
 
-      <h5>Tabs</h5>
+      <h3>Tabs</h3>
       <p>For tabbed content make sure to style the content as well.</p>
       <nav role="navigation">
         <ul class="list-unstyled list-inline tabs">
@@ -934,7 +951,7 @@
   &lt;/nav&gt;
 </code></pre>
 
-      <h5>Side Navigation</h5>
+      <h3>Side Navigation</h3>
       <p>For simple navigation on the side use <code>side-nav</code> class.</p>
       <nav role="navigation">
         <ul class="list-unstyled side-nav">
@@ -951,7 +968,7 @@
   &lt;/nav&gt;
 </code></pre>
 
-      <h5>Extras</h5>
+      <h3>Extras</h3>
       <p>You can use dropdowns and arrow elements separately from navigation items too.</p>
       <div class="dropdown-standalone dropdown-outlined">Dropdown<span class="icon-arrow-down"></span>
         <ul class="list-unstyled dropdown">
@@ -1005,12 +1022,12 @@
 
     </section>
     <section>
-      <h4>Modals</h4>
+      <h2>Modals</h2>
       <p>Create a basic modal by using <code>modal</code> class and trigger it in JavaScript. All modal types are responsive (not demonstrated in this demo).</p>
       <div class="modal-sample">
         <div class="modal">
           <div class="modal-head cf">
-            <h4 class="modal-title">This is a modal</h4><a href="" class="modal-close">×</a>
+            <h3 class="modal-title">This is a modal</h3><a href="" class="modal-close">×</a>
           </div>
           <div class="modal-body">
             <p>This is its body.</p>
@@ -1021,7 +1038,7 @@
         </div>
       </div><pre><code class="lang-html">  &lt;div class=&#39;modal&#39;&gt;
     &lt;div class=&#39;modal-head cf&#39;&gt;
-      &lt;h4 class=&#39;modal-title&#39;&gt;This is a modal&lt;/h4&gt;
+      &lt;h3 class=&#39;modal-title&#39;&gt;This is a modal&lt;/h3&gt;
       &lt;a href=&#39;&#39; class=&#39;modal-close&#39;&gt;×&lt;/a&gt;
     &lt;/div&gt;
     &lt;div class=&#39;modal-body&#39;&gt;
@@ -1033,7 +1050,7 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h5>Modals with no sectioning</h5>
+      <h3>Modals with no sectioning</h3>
       <p>For plain modal with no sectioning use <code>modal-no-sections</code> class and simplified markup.</p>
       <div class="modal-sample">
         <div class="modal modal-no-sections">
@@ -1046,19 +1063,19 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h5>Overlay</h5>
+      <h3>Overlay</h3>
       <p>For semi-transparent overlay add <code>has-modal</code> class to the <code>body</code> element or a <code>div</code> with <code>overlay</code> class. Overlay appearance is pictured in modal examples above.</p>
     </section>
     <section>
-      <h4>Avatars</h4>
+      <h2>Avatars</h2>
       <p>Avatars come in three sizes&mdash;large (<code>100&times;100</code>) , medium (<code>50&times;50</code>) and small (<code>25&times;25</code>). Placeholders thanks to <a href='http://placekitten.com/'>Place Kitten</a>. Because we love kittens.</p>
-      <h5>Rounded avatars</h5>
+      <h3>Rounded avatars</h3>
       <p>For rounded avatars use <code>avatar-rounded</code> class.</p><img src="http://placekitten.com/g/200/200" class="avatar avatar-large avatar-rounded"><img src="http://placekitten.com/g/200/200" class="avatar avatar-medium avatar-rounded"><img src="http://placekitten.com/g/200/200" class="avatar avatar-small avatar-rounded"><pre><code class="lang-html">  &lt;img src=&#39;http://placekitten.com/g/200/200&#39; class=&#39;avatar avatar-large avatar-rounded&#39; /&gt;
   &lt;img src=&#39;http://placekitten.com/g/200/200&#39; class=&#39;avatar avatar-medium avatar-rounded&#39; /&gt;
   &lt;img src=&#39;http://placekitten.com/g/200/200&#39; class=&#39;avatar avatar-small avatar-rounded&#39; /&gt;
 </code></pre>
 
-      <h5>Avatars with radius</h5>
+      <h3>Avatars with radius</h3>
       <p>For avatars with <code>border radius</code> use <code>avatar-radius</code> class.</p><img src="http://placekitten.com/g/200/200" class="avatar avatar-large avatar-radius"><img src="http://placekitten.com/g/200/200" class="avatar avatar-medium avatar-radius"><img src="http://placekitten.com/g/200/200" class="avatar avatar-small avatar-radius"><pre><code class="lang-html">  &lt;img src=&#39;http://placekitten.com/g/200/200&#39; class=&#39;avatar avatar-large avatar-radius&#39; /&gt;
   &lt;img src=&#39;http://placekitten.com/g/200/200&#39; class=&#39;avatar avatar-medium avatar-radius&#39; /&gt;
   &lt;img src=&#39;http://placekitten.com/g/200/200&#39; class=&#39;avatar avatar-small avatar-radius&#39; /&gt;
@@ -1066,9 +1083,9 @@
 
     </section>
     <section class="media">
-      <h4>Media</h4>
+      <h2>Media</h2>
       <p>Media elements, such as pictures, videos or iframes have a maximum width of <code>100%</code> so they never overflow the parent container.</p>
-      <h5>Images with captions</h5>
+      <h3>Images with captions</h3>
       <p>For images with a caption use <code>figure</code> and <code>figcaption</code> element.</p>
       <figure><img src="http://placekitten.com/g/400/200">
         <figcaption>Image description</figcaption>
@@ -1078,14 +1095,14 @@
   &lt;/figure&gt;
 </code></pre>
 
-      <h5>Media with an outline</h5>
+      <h3>Media with an outline</h3>
       <p>Having an outline around any type of media can be added by using <code>media-outlined</code> class.</p>
       <figure class="media-outlined"><img src="http://placekitten.com/g/400/200"></figure><pre><code class="lang-html">  &lt;figure class=&#39;media-outlined&#39;&gt;
     &lt;img src=&#39;http://placekitten.com/g/400/200&#39; /&gt;
   &lt;/figure&gt;
 </code></pre>
 
-      <h5>Multiple images</h5>
+      <h3>Multiple images</h3>
       <p>Multiple images should be placed in one <code>figure</code> element.</p>
       <figure><img src="http://placekitten.com/g/200/200"><img src="http://placekitten.com/g/200/200"><img src="http://placekitten.com/g/200/200"></figure><pre><code class="lang-html">  &lt;figure&gt;
     &lt;img src=&#39;http://placekitten.com/g/200/200&#39; /&gt;
@@ -1096,7 +1113,7 @@
 
     </section>
     <section>
-      <h4>Code</h4>
+      <h2>Code</h2>
       <p>Yeti.css includes basic styles for including code snippets in both inline and block manner.</p>
       <p>This is an <code class='code-light'>light inline code</code> example. This an <code class='code-dark'>dark inline code</code> example.</p><pre><code class="lang-html">  &lt;p&gt;This is an &lt;code class=&#39;code-light&#39;&gt;light inline code&lt;/code&gt; example. This an &lt;code class=&#39;code-dark&#39;&gt;dark inline code&lt;/code&gt; example.
 </code></pre>
@@ -1110,9 +1127,9 @@
       <p>For light and dark themes for syntax coloring refer to <a href='https://github.com/thefoxis/andlight'>&light</a> repository.</p>
     </section>
     <section>
-      <h4>Colors</h4>
+      <h2>Colors</h2>
       <p>Colors are available as variables and downloadable <a href='https://github.com/andyet/yeticss/blob/gh-pages/assets/swatches/andyet.aco'>Photoshop swatch</a>.</p>
-      <h5>Blues</h5>
+      <h3>Blues</h3>
       <ul class="cf list-unstyled list-inline">
         <li class="color blue1">$blue-saturated-darker</li>
         <li class="color blue2">$blue-saturated-dark</li>
@@ -1125,7 +1142,7 @@
         <li class="color blue7">$blue-light</li>
         <li class="color blue8">$blue-lighter</li>
       </ul>
-      <h5>Monochromatic</h5>
+      <h3>Monochromatic</h3>
       <ul class="cf list-unstyled list-inline">
         <li class="color gray1">$gray-darker</li>
         <li class="color gray2">$gray-dark</li>
@@ -1133,25 +1150,25 @@
         <li class="color gray4"><span>$gray-light</span></li>
         <li class="color gray5">$gray-lighter</li>
       </ul>
-      <h5>Pinks</h5>
+      <h3>Pinks</h3>
       <ul class="cf list-unstyled list-inline">
         <li class="color pink1">$pink</li>
         <li class="color pink2">$pink-light</li>
         <li class="color pink3">$pink-lighter</li>
       </ul>
-      <h5>Reds</h5>
+      <h3>Reds</h3>
       <ul class="cf list-unstyled list-inline">
         <li class="color red1">$red</li>
         <li class="color red2">$red-light</li>
         <li class="color red3">$red-lighter</li>
       </ul>
-      <h5>Oranges</h5>
+      <h3>Oranges</h3>
       <ul class="cf list-unstyled list-inline">
         <li class="color orange1">$orange</li>
         <li class="color orange2">$orange-light</li>
         <li class="color orange3">$orange-lighter</li>
       </ul>
-      <h5>Greens</h5>
+      <h3>Greens</h3>
       <ul class="cf list-unstyled list-inline">
         <li class="color green1">$green</li>
         <li class="color green2">$green-light</li>
@@ -1159,9 +1176,9 @@
       </ul>
     </section>
     <section>
-      <h4>Logotypes</h4>
+      <h2>Logotypes</h2>
       <p>For maximum flexibility and responsiveness usage of vector-based logos is advised.  All logos are available <a href='https://github.com/andyet/yeticss/tree/gh-pages/assets/logos'>here</a> in PNG and SVG format, colour and black and white versions.</p>
-      <h5>Base64</h5>
+      <h3>Base64</h3>
       <p>To avoid unnecessary HTTP requests use SVGs coverted to Data URI's. There are several ways of embedding:</p>
       <p>As a background image:</p><pre><code class="lang-css">  .logo-ampersand
     background-image: $logo-ampersand
