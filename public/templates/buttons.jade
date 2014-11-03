@@ -4,14 +4,18 @@ section.buttons
   p Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants.
 
   button(class='button') Button
-  button(class='button button-primary') Primary Button
-  button(class='button button-secondary') Secondary Button
+  button(class='button button-approve') Approval Button
+  button(class='button button-warn') Warning Button
+  button(class='button button-neutral') Neutral Button
+  button(class='button button-outlined') Outlined Button
 
   :markdown
     ```html
       <a class='button'>Button</a>
-      <a href='button button-primary'>Primary Button</a>
-      <a href='button button-secondary'>Secondary Button</a>
+      <a href='button button-approve'>Approval Button</a>
+      <a href='button button-warn'>Warning Button</a>
+      <a href='button button-neutral'>Neutral Button</a>
+      <a href='button button-outlined'>Outlined Button</a>
     ```
 
   h5 Button sizes
@@ -32,14 +36,18 @@ section.buttons
   p For disabled (unclickable) apperance use <code>disabled</code> attribute for <code>button</code> elements and <code>button-disabled</code> class for links.
 
   button(class='button', disabled) Button
-  button(class='button button-primary', disabled) Primary Button 
-  a(class='button button-secondary button-disabled') Secondary Button
+  button(class='button button-approve', disabled) Approval Button 
+  a(class='button button-warn button-disabled') Warning Button
+  button(class='button button-neutral', disabled) Neutral Button 
+  button(class='button button-outlined', disabled) Outlined Button
 
   :markdown
     ```html
       <button class='button' disabled>Button</button>
-      <button class='button button-primary' disabled>Primary Button</button>
-      <a href='button button-secondary button-disabled'>Secondary Button</a>
+      <button class='button button-approve' disabled>Approval Button</button>
+      <a href='button button-warn button-disabled'>Warning Button</a>
+      <button class='button button-neutral' disabled>Neutral Button</button>
+      <button class='button button-outlined' disabled>Outlined Button</button>
     ```
 
   h5 Button groups
@@ -51,11 +59,11 @@ section.buttons
     a(href='', class='button') Button
 
   .button-group
-    a(href='', class='button button-primary') Button
-    a(href='', class='button button-primary') Button
-    a(href='', class='button button-primary') Button
+    a(href='', class='button button-neutral') Button
+    a(href='', class='button button-neutral') Button
+    a(href='', class='button button-neutral') Button
 
   .button-group
-    a(href='', class='button button-secondary') Button
-    a(href='', class='button button-secondary') Button
-    a(href='', class='button button-secondary') Button
+    a(href='', class='button button-outlined') Button
+    a(href='', class='button button-outlined') Button
+    a(href='', class='button button-outlined') Button
