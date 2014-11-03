@@ -399,15 +399,13 @@ select:focus:-moz-focusring {
 }
 .button {
   display: inline-block;
-  border: 1px solid #b7c0c3;
-  background-color: transparent;
+  border: none;
   border-radius: 3px;
   padding: 10px 15px;
-  font-weight: 800;
   line-height: 1.25;
   text-align: center;
   cursor: pointer;
-  color: #4d5659;
+  background-color: #00b0e9;
   -webkit-transition: all 0.3s ease-in;
           transition: all 0.3s ease-in;
   -webkit-user-select: none;
@@ -417,20 +415,19 @@ select:focus:-moz-focusring {
   appearance: none;
 }
 .button:hover {
-  background-color: #e6eaed;
-  color: inherit;
+  background-color: #009ed2;
 }
 .button:disabled,
-.button.button-disabled {
+.button .button-disabled {
+  background-color: #74ddff;
   cursor: not-allowed;
-}
-.button:disabled:not(.button-primary):not(.button-secondary),
-.button.button-disabled:not(.button-primary):not(.button-secondary) {
-  color: #b7c0c3;
-  background-color: transparent;
 }
 .button:focus {
   outline: none;
+}
+.button,
+.button:hover {
+  color: #fff;
 }
 .button-small {
   padding: 3px 5px;
@@ -440,39 +437,73 @@ select:focus:-moz-focusring {
   padding: 15px 30px;
   font-size: 22px;
 }
-.button-primary,
-.button-secondary {
-  border: none;
+.button-neutral {
+  background-color: #e6eaed;
 }
-.button-primary,
-.button-secondary,
-.button-primary:hover,
-.button-secondary:hover {
-  color: #fff;
+.button-neutral:hover {
+  background-color: #b0bcc6;
 }
-.button-primary {
-  background-color: #ee0788;
+.button-neutral:disabled,
+.button-neutral .button-disabled {
+  background-color: #e6eaed;
+  color: #b7c0c3;
 }
-.button-primary:hover {
-  background-color: #d6067a;
+.button-neutral:disabled:hover,
+.button-neutral .button-disabled:hover {
+  color: #b7c0c3;
 }
-.button-primary:disabled,
-.button-primary .button-disabled {
-  background-color: #fec1d1;
+.button-neutral,
+.button-neutral:hover {
+  color: #272b2d;
 }
-.button-secondary {
-  background-color: #00b0e9;
+.button-approve {
+  background-color: #43bb6e;
 }
-.button-secondary:hover {
-  background-color: #009ed2;
+.button-approve:hover {
+  background-color: #369658;
 }
-.button-secondary:disabled,
-.button-secondary .button-disabled {
-  background-color: #74ddff;
+.button-approve:disabled,
+.button-approve .button-disabled {
+  background-color: #c6ebd3;
+}
+.button-warn {
+  background-color: #e80044;
+}
+.button-warn:hover {
+  background-color: #ba0036;
+}
+.button-warn:disabled,
+.button-warn.button-disabled {
+  background-color: #ffc7d8;
+}
+.button-outlined {
+  border: 1px solid #b7c0c3;
+}
+.button-outlined:hover {
+  background-color: #e6eaed;
+}
+.button-outlined:disabled,
+.button-outlined.button-disabled {
+  color: #c5cdcf;
+  border: 1px solid #e6eaed;
+}
+.button-outlined:disabled:hover,
+.button-outlined.button-disabled:hover {
+  color: #c5cdcf;
+}
+.button-outlined,
+.button-outlined:disabled,
+.button-outlined.button-disabled {
+  background-color: transparent;
+}
+.button-outlined,
+.button-outlined:hover {
+  color: #828c8f;
 }
 .button-group .button {
   border-radius: 0;
   margin-left: -1px;
+  border: 1px solid #008dba;
 }
 .button-group .button:first-child,
 .button-group .button:first-child:only-child {
@@ -487,11 +518,9 @@ select:focus:-moz-focusring {
 .button-group .button:last-child {
   border-radius: 0 3px 3px 0;
 }
-.button-group .button.button-primary {
-  border: 1px solid #be066d;
-}
-.button-group .button.button-secondary {
-  border: 1px solid #008dba;
+.button-group .button-neutral,
+.button-group .button-outlined {
+  border: 1px solid #b7c0c3;
 }
 @media screen and (max-width: 480px) {
   .button-group .button {

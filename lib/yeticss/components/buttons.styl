@@ -6,34 +6,32 @@
 
 .button
   display: inline-block
-  border: 1px solid $gray-light
-  background-color: transparent
+  border: none
   border-radius: 3px
   padding: $ui-padding-default $ui-padding-spaced
-  font-weight: $font-weight-bold
   line-height: 1.25
   text-align: center
   cursor: pointer
-  color: $gray-dark
+  background-color: $blue
 
   transition: all .3s ease-in 
   user-select: none
   appearance: none
 
   &:hover
-    background-color: $gray-lighter
-    color: inherit
+    background-color: darken($blue, 10%)
 
   &:disabled, 
-  &.button-disabled
+  .button-disabled
+    background-color: $blue-light
     cursor: not-allowed
-
-    &:not(.button-primary):not(.button-secondary)
-      color: $gray-light
-      background-color: transparent
 
   &:focus
     outline: none
+
+.button,
+.button:hover
+  color: white
 
 //- Button Sizing
     
@@ -47,35 +45,66 @@
 
 //- Button Coloring
 
-.button-primary,
-.button-secondary
-  border: none
-
-.button-primary,
-.button-secondary,
-.button-primary:hover,
-.button-secondary:hover
-  color: white
-
-.button-primary
-  background-color: $pink
-
+.button-neutral
+  background-color: $gray-lighter
+  
   &:hover
-    background-color: darken($pink, 10%)
+    background-color: darken($gray-lighter, 20%)
+    
+  &:disabled, 
+  .button-disabled
+    background-color: $gray-lighter
+    color: $gray-light
+    
+    &:hover
+      color: $gray-light
+  
+.button-neutral,
+.button-neutral:hover
+  color: $gray-darker
+
+.button-approve
+  background-color: $green
+  
+  &:hover
+    background-color: darken($green, 20%)
 
   &:disabled, 
   .button-disabled
-    background-color: $pink-light
-
-.button-secondary
-  background-color: $blue
-
+    background-color: $green-light
+  
+.button-warn
+  background-color: $red
+  
   &:hover
-    background-color: darken($blue, 10%)
-
+    background-color: darken($red, 20%)
+    
   &:disabled, 
-  .button-disabled
-    background-color: $blue-light
+  &.button-disabled
+    background-color: $red-light
+
+.button-outlined
+  border: 1px solid $gray-light
+  
+  &:hover
+    background-color: $gray-lighter
+    
+  &:disabled, 
+  &.button-disabled
+    color: lighten($gray-light, 20%)
+    border: 1px solid $gray-lighter
+    
+    &:hover
+      color: lighten($gray-light, 20%)
+
+.button-outlined,
+.button-outlined:disabled, 
+.button-outlined.button-disabled
+  background-color: transparent
+
+.button-outlined,
+.button-outlined:hover
+  color: $gray
 
 //- Button Group
 
@@ -84,6 +113,7 @@
   .button
     border-radius: 0
     margin-left: -1px
+    border: 1px solid darken($blue, 20%)
 
     &:first-child,
     &:first-child:only-child
@@ -97,12 +127,10 @@
 
     &:last-child
       border-radius: 0 3px 3px 0
-
-    &.button-primary
-      border: 1px solid darken($pink, 20%)
-
-    &.button-secondary
-      border: 1px solid darken($blue, 20%)
+      
+  .button-neutral,
+  .button-outlined
+    border: 1px solid $gray-light
 
 @media screen and (max-width: $breakpoint-smartphone)
 
@@ -121,4 +149,3 @@
 
     .button:not(:last-of-type)
       border-bottom: none
-
