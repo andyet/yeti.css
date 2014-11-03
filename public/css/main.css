@@ -256,12 +256,12 @@ dl dd {
     margin-left: -30px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 900px) {
   .container {
     width: 85%;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 901px) {
   .container {
     width: 70%;
   }
