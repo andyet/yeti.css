@@ -127,8 +127,8 @@ blockquote p {
 }
 blockquote footer {
   margin-top: 15px;
-  font-size: 14px;
-  color: #b4babc;
+  font-size: 16px;
+  color: #9ba3a5;
 }
 blockquote footer:before {
   content: '\2014 \00A0';
