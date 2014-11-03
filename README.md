@@ -67,7 +67,7 @@ If you are compiling your stylus with the stylus command line interface, maybe d
     ```stylus
     @import 'yeticss'
     // or
-    @import 'yeticss/_mixins'
+    @import 'yeticss/components/type'
     ````
 
 ### Single page apps using moonboots
@@ -92,7 +92,7 @@ The simplest way to include yeticss in a moonboots app is to use [stylizer](http
     ```stylus
     @import 'yeticss'
     //or
-    @import 'yeticss/_variables'
+    @import 'yeticss/components/type'
     ```
 
 ### Gotchas:
