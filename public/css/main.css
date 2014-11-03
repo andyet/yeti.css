@@ -260,25 +260,13 @@ h5,
 h6,
 strong {
   color: #000;
+  font-weight: 400;
+}
+h5,
+h6 {
   font-weight: 500;
 }
-h1 {
-  font-size: 40px;
-}
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 32px;
-}
-h4 {
-  font-size: 28px;
-}
-h5 {
-  font-size: 16px;
-}
 h6 {
-  font-size: 14px;
   text-transform: uppercase;
   color: #828c8f;
 }
@@ -316,21 +304,21 @@ blockquote footer:before {
 .blockquote-centered {
   text-align: center;
 }
-@media screen and (max-width: $breakpoint-desktop-1) {
+@media screen and (max-width: 899px) {
   h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 32px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
   h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
   h6 {
     font-size: 14px;
@@ -338,6 +326,26 @@ blockquote footer:before {
   h5,
   h6 {
     text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
   }
 }
 ul,
