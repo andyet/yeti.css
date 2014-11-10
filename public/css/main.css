@@ -508,7 +508,6 @@ select,
   border: 1px solid #fec57b;
 }
 .form-input.input-invalid {
-  background-color: #fff7f9;
   border: 1px solid #ffc7d8;
   color: #ff749d;
 }
@@ -516,7 +515,6 @@ select,
   border: 1px solid #e80044;
 }
 .form-input.input-valid {
-  background-color: #e8f7ef;
   border: 1px solid #c6ebd3;
   color: #8ed6a8;
 }
@@ -934,7 +932,7 @@ figure figcaption {
   border-left-color: #e8f7ef;
 }
 .message-left.message-error:after {
-  border-left-color: #ffc7d8;
+  border-left-color: #ffe3eb;
 }
 .message-left.message-alert:after {
   border-left-color: #ffeed7;
@@ -947,7 +945,7 @@ figure figcaption {
   border-right-color: #e8f7ef;
 }
 .message-right.message-error:after {
-  border-right-color: #ffc7d8;
+  border-right-color: #ffe3eb;
 }
 .message-right.message-alert:after {
   border-right-color: #ffeed7;
@@ -957,7 +955,7 @@ figure figcaption {
   bottom: 100%;
 }
 .message-below.message-error:after {
-  border-bottom-color: #ffc7d8;
+  border-bottom-color: #ffe3eb;
 }
 .message-below.message-success:after {
   border-bottom-color: #e8f7ef;
@@ -970,7 +968,7 @@ figure figcaption {
   top: 100%;
 }
 .message-above.message-error:after {
-  border-top-color: #ffc7d8;
+  border-top-color: #ffe3eb;
 }
 .message-above.message-success:after {
   border-top-color: #e8f7ef;
@@ -979,7 +977,7 @@ figure figcaption {
   border-top-color: #ffeed7;
 }
 .message-error {
-  background-color: #ffc7d8;
+  background-color: #ffe3eb;
   color: #e80044;
 }
 .message-error a {
@@ -1376,7 +1374,7 @@ thead th {
   color: #4d5659;
 }
 tr.table-cell-error {
-  background-color: #fff7f9;
+  background-color: #ffe3eb;
   color: #e80044;
 }
 tr.table-cell-error a {
@@ -1668,7 +1666,7 @@ form .message-right {
   background-color: #ffc7d8;
 }
 .red3 {
-  background-color: #fff7f9;
+  background-color: #ffe3eb;
 }
 .red2,
 .red3 {
