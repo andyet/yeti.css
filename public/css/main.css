@@ -1260,6 +1260,10 @@ form .message {
   .top-nav ul {
     display: none;
   }
+  .top-nav ul > li {
+    padding: 10px;
+    font-size: 14px;
+  }
   .top-nav .icon-arrow-down {
     display: none;
   }
@@ -1270,6 +1274,7 @@ form .message {
   }
   .top-nav label {
     padding: 15px 15px 15px 0;
+    margin-bottom: 0;
     text-align: right;
     cursor: pointer;
   }
@@ -1280,9 +1285,6 @@ form .message {
     padding: 5px 15px;
     float: left;
     border: 0;
-  }
-  .top-nav .menu-toggle:checked ~ ul .dropdown li:first-child {
-    padding-left: 0;
   }
   .top-nav .menu-toggle:checked ~ ul .dropdown a {
     font-size: 12px;

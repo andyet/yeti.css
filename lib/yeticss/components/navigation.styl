@@ -7,7 +7,7 @@
 //- Top Nav
 
 .top-nav
-  margin-bottom: 30px 
+  margin-bottom: $space
   z-index: 10
   position: relative
 
@@ -186,6 +186,10 @@
     
     ul
       display: none
+      
+      > li 
+        padding: $ui-padding-default
+        font-size: $font-medium
     
     .icon-arrow-down
       display: none
@@ -197,6 +201,7 @@
 
     label
       padding: $ui-padding-spaced $ui-padding-spaced $ui-padding-spaced 0
+      margin-bottom: 0
       text-align: right
       cursor: pointer
 
@@ -209,9 +214,6 @@
           padding: $ui-padding-narrow $ui-padding-spaced
           float: left
           border: 0
-
-        li:first-child
-          padding-left: 0
 
         a 
           font-size: $font-small
