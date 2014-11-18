@@ -323,10 +323,6 @@ blockquote footer:before {
   h6 {
     font-size: 14px;
   }
-  h5,
-  h6 {
-    text-transform: uppercase;
-  }
 }
 @media screen and (min-width: 900px) {
   h1 {
