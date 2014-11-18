@@ -1357,6 +1357,9 @@ form .message {
 .progress-error .meter {
   background-color: #e80044;
 }
+.table-responsive {
+  overflow-x: auto;
+}
 table {
   width: 100%;
   max-width: 100%;
