@@ -399,6 +399,8 @@ dl dd {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
 }
 .grid-flex-cell {
