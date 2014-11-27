@@ -596,6 +596,7 @@ select:focus:-moz-focusring {
   text-align: center;
   cursor: pointer;
   background-color: #00b0e9;
+  -webkit-font-smoothing: antialiased;
   -webkit-transition: all 0.3s ease-in;
           transition: all 0.3s ease-in;
   -webkit-user-select: none;
