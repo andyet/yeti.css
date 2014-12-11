@@ -259,6 +259,13 @@ h5,
 h6,
 strong {
   color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 h5,
@@ -321,10 +328,6 @@ blockquote footer:before {
   }
   h6 {
     font-size: 14px;
-  }
-  h5,
-  h6 {
-    text-transform: uppercase;
   }
 }
 @media screen and (min-width: 900px) {
@@ -395,6 +398,8 @@ dl dd {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
 }
 .grid-flex-cell {
@@ -592,6 +597,7 @@ select:focus:-moz-focusring {
   text-align: center;
   cursor: pointer;
   background-color: #00b0e9;
+  -webkit-font-smoothing: antialiased;
   -webkit-transition: all 0.3s ease-in;
           transition: all 0.3s ease-in;
   -webkit-user-select: none;
@@ -1359,6 +1365,9 @@ form .message {
 }
 .progress-error .meter {
   background-color: #e80044;
+}
+.table-responsive {
+  overflow-x: auto;
 }
 table {
   width: 100%;
