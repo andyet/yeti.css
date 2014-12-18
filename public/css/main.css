@@ -1194,6 +1194,9 @@ form .message {
 .tabs {
   border-bottom: 1px solid #e6eaed;
 }
+.tabs a {
+  display: block;
+}
 .side-nav li:not(:last-child) a {
   border-bottom: 1px solid #e6eaed;
 }
@@ -1216,11 +1219,6 @@ form .message {
 .pagination .current-item {
   background-color: #fafbfb;
 }
-.tabs a,
-.side-nav a,
-.pagination a {
-  line-height: 2.5;
-}
 .pagination,
 .breadcrumbs {
   display: inline-block;
@@ -1237,7 +1235,7 @@ form .message {
 }
 .side-nav a,
 .pagination a {
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 .breadcrumbs a,
 .pagination a {
@@ -1246,7 +1244,7 @@ form .message {
 @media screen and (max-width: 480px) {
   .tabs a {
     position: relative;
-    padding-right: 10px;
+    padding: 10px;
   }
 }
 @media screen and (min-width: 481px) {
