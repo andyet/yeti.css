@@ -578,7 +578,7 @@ select:focus:-moz-focusring {
     display: inline-block;
     vertical-align: bottom;
   }
-  .form-inline .form-element:not(:first-child) {
+  .form-inline .form-element:not(:first-of-type) {
     padding-left: 5px;
   }
   .form-inline .form-input,
