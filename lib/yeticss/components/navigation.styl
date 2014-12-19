@@ -99,6 +99,9 @@
 
 .tabs
   border-bottom: $ui-border
+  
+  a
+    display: block
 
 //- Side Navigation
 
@@ -129,11 +132,6 @@
   .current-item
     background-color: lighten($gray-lighter, 80%)
 
-.tabs a, 
-.side-nav a,
-.pagination a
-  line-height: 2.5
-
 .pagination,
 .breadcrumbs
   display: inline-block
@@ -151,7 +149,7 @@
 .side-nav, 
 .pagination
   a
-    padding: 0 $ui-padding-spaced
+    padding: $ui-padding-default $ui-padding-spaced
 
 .breadcrumbs a, 
 .pagination a
@@ -163,7 +161,7 @@
     
     a
       position: relative
-      padding-right: $ui-padding-default
+      padding: $ui-padding-default
 
 @media screen and (min-width: $breakpoint-smartphone+1)
 
