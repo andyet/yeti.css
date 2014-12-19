@@ -42,9 +42,10 @@ blockquote
   margin: $space 0
   padding: 0 $ui-padding-spaced
   color: $gray
-  font: italic $font-large $font-sentinel
+  font: italic $font-base/1.55 $font-sentinel
 
-  p
+  p:only-child,
+  p:last-child
     margin: 0
 
   footer
@@ -57,6 +58,13 @@ blockquote
 
 .blockquote-centered
   text-align: center
+  
+.blockquote-medium
+  font-size: $font-large
+  
+.blockquote-large
+  font-size: $font-h2
+  line-height: 1.3
 
 @media screen and (max-width: $breakpoint-desktop - 1)
 
@@ -77,6 +85,9 @@ blockquote
 
   h6
     font-size: $mobile-font-h6
+    
+  .blockquote-large
+    font-size: $mobile-font-h2
     
 @media screen and (min-width: $breakpoint-desktop)
 
