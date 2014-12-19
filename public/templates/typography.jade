@@ -118,6 +118,25 @@ section
       </blockquote>
     ```
 
+  p Blockquotes come with three different font sizes&mdash;<strong>base</strong>, <strong>medium</strong> and <strong>large</strong>. Use no class for base appearance.
+
+  blockquote.blockquote-medium
+    p “I like too many things and get all confused and hung-up running from one falling star to another till i drop. This is the night, what it does to you. I had nothing to offer anybody except my own confusion.” 
+
+  blockquote.blockquote-large
+    p “War is peace. Freedom is slavery. Ignorance is strength.”
+
+  :markdown
+    ```html
+      <blockquote class='blockquote-medium'>
+        <p>“I like too many things and get all confused and hung-up running from one falling star to another till i drop. This is the night, what it does to you. I had nothing to offer anybody except my own confusion.”</p>
+      </blockquote>
+
+      <blockquote class='blockquote-large'>
+        <p>“War is peace. Freedom is slavery. Ignorance is strength.”</p>
+      </blockquote>
+    ```
+
   h3 Lists
   p Both ordered and unordered lists can be customized with <code>list-ustyled</code> class, that will remove the <code>padding</code> as well as individual list item style and <code>list-inline</code> class, that will change the display of list items to <code>inline-block</code>.
 
