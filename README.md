@@ -4,14 +4,14 @@ Yeticss is a pattern library consisting of lightweight, reusable modules. It has
 
 ## Table of Contents
 
-* [How To Run](http://yeticss.com/#how-to-run)
-* [Structure](http://yeticss.com/#structure)
-* [How To Include In Your App](http://yeticss.com/#how-to-include-in-your-app)
-* [Custom Fonts](http://yeticss.com/#custom-fonts)
-* [CSS Reset](http://yeticss.com/#css-reset)
-* [Documentation](http://yeticss.com/#documentation)
-* [Contributing](http://yeticss.com/#contributing)
-* [License](http://yeticss.com/#license)
+* [How To Run](https://github.com/andyet/yeticss#how-to-run)
+* [Structure](https://github.com/andyet/yeticss#structure)
+* [How To Include In Your App](https://github.com/andyet/yeticss#how-to-include-in-your-app)
+* [Custom Fonts](https://github.com/andyet/yeticss/#custom-fonts)
+* [CSS Reset](https://github.com/andyet/yeticss#css-reset)
+* [Documentation](https://github.com/andyet/yeticss#documentation)
+* [Contributing](https://github.com/andyet/yeticss#contributing)
+* [License](https://github.com/andyet/yeticss#license)
 
 ## How to run?
 
