@@ -4,14 +4,14 @@ Yeticss is a pattern library consisting of lightweight, reusable modules. It has
 
 ## Table of Contents
 
-* [How To Run](https://github.com/andyet/yeticss#how-to-run)
-* [Structure](https://github.com/andyet/yeticss#structure)
-* [How To Include In Your App](https://github.com/andyet/yeticss#how-to-include-in-your-app)
-* [Custom Fonts](https://github.com/andyet/yeticss#custom-fonts)
-* [CSS Reset](https://github.com/andyet/yeticss#css-reset)
-* [Documentation](https://github.com/andyet/yeticss#documentation)
-* [Contributing](https://github.com/andyet/yeticss#contributing)
-* [License](https://github.com/andyet/yeticss#license)
+* [How To Run](http://yeticss.com/#how-to-run)
+* [Structure](http://yeticss.com/#structure)
+* [How To Include In Your App](http://yeticss.com/#how-to-include-in-your-app)
+* [Custom Fonts](http://yeticss.com/#custom-fonts)
+* [CSS Reset](http://yeticss.com/#css-reset)
+* [Documentation](http://yeticss.com/#documentation)
+* [Contributing](http://yeticss.com/#contributing)
+* [License](http://yeticss.com/#license)
 
 ## How to run?
 
@@ -115,10 +115,10 @@ Because this is an npm module, but isn't on npm, management of it is a little tr
         }
     ```
 
-You can see the list of available releases at: [https://github.com/andyet/yeticss/releases](https://github.com/andyet/yeticss/releases).
+You can see the list of available releases at: [https://github.com/andyet/yeticss/releases](https://github.com/andyet/yeti.css/releases).
 
 ## Custom fonts
-Yeticss defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L13-L14).
+Yeticss defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/yeticss/blob/gh-pages/lib/yeti.css/globals/_variables.styl#L13-L14).
 
 ## CSS Reset
 
@@ -126,10 +126,10 @@ By default, CSS reset is **not** included in yeticss. Please add [normalize.css]
 
 ## Documentation
 
-Documentation and examples of usage can be found on [Github Pages](http://andyet.github.io/yeticss/).
+Documentation and examples of usage can be found on [Github Pages](http://yeticss.com/).
 
 ## Contributing
-See the [CONTRIBUTING.md](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md) for information on how to contribute to yeti.css.
+See the [CONTRIBUTING.md](https://github.com/andyet/yeti.css/blob/gh-pages/CONTRIBUTING.md) for information on how to contribute to yeti.css.
 
 ## License
 MIT
