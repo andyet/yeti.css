@@ -7,7 +7,7 @@ yeti.css is a pattern library consisting of lightweight, reusable modules. It ha
 * [How To Run](https://github.com/andyet/yeticss#how-to-run)
 * [Structure](https://github.com/andyet/yeticss#structure)
 * [How To Include In Your App](https://github.com/andyet/yeticss#how-to-include-in-your-app)
-* [Custom Fonts](https://github.com/andyet/yeticss#custom-fonts)
+* [Custom Fonts](https://github.com/andyet/yeticss/#custom-fonts)
 * [CSS Reset](https://github.com/andyet/yeticss#css-reset)
 * [Documentation](https://github.com/andyet/yeticss#documentation)
 * [Contributing](https://github.com/andyet/yeticss#contributing)
@@ -118,15 +118,16 @@ Because this is an npm module, but isn't on npm, management of it is a little tr
 You can see the list of available releases at: [https://github.com/andyet/yeti.css/releases](https://github.com/andyet/yeti.css/releases).
 
 ## Custom fonts
-yeti.css defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L13-L14).
+yeti.css defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/yeti.css/blob/gh-pages/lib/yeticss/globals/_variables.styl#L13-L14).
+
 
 ## CSS Reset
 
 A CSS reset is **included** in yeti.css by default (namely [normalize.css](https://github.com/necolas/normalize.css)).
 
 ## Documentation
-
 Documentation and examples of usage can be found on [yeticss.com](http://yeticss.com).
+
 
 ## Contributing
 See the [CONTRIBUTING.md](https://github.com/andyet/yeti.css/blob/gh-pages/CONTRIBUTING.md) for information on how to contribute to yeti.css.
