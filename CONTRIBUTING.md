@@ -10,9 +10,9 @@
 6. [Credits](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#credits)
 
 ## Using the issue tracker
-The issue tracker is the preferred channel for [bug reports](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#bug-reporting), [features requests](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#features-requests) and submitting [pull requests](https://github.com/andyet/yeticss/blob/gh-pages/CONTRIBUTING.md#pull-requests), but please respect the following restrictions:
+The issue tracker is the preferred channel for [bug reports](https://github.com/andyet/yeti.css/blob/gh-pages/CONTRIBUTING.md#bug-reporting), [features requests](https://github.com/andyet/yeti.css/blob/gh-pages/CONTRIBUTING.md#features-requests) and submitting [pull requests](https://github.com/andyet/yeti.css/blob/gh-pages/CONTRIBUTING.md#pull-requests), but please respect the following restrictions:
 
-* Please do not use the issue tracker for personal support requests (use [Andbang](http://andbang.com) or `#&yet` on Freenode).
+* Please do not use the issue tracker for personal support requests (use Slack or`#&yet` on Freenode).
 * Tag issues accordingly with `bug`, `enhancement`, `feature`, `docs` or `js`.
 
 ## Bug reporting
@@ -92,11 +92,8 @@ Apart from following general contributing guidelines, maintainers should make su
 
 ### Tagging releases
 
-> **IMPORTANT** Currently yeticss is only publish to our internal npm repo "nlfpm". If you run the commands below without being setup on nlfpm, then it'll accidentally be published to the public npm registry. To check if you are using nlfpm, run `npm config get registry`. If it returns `"https://nlfpm.andyet.net"` then you are good to go. If not, speak to Nlf about getting configured **BEFORE** continuing to do a release.
-
 Releases should be tagged and published to npm to allow for version management, npm makes this easy.
 
-* Ensure you read the above **important** note before continuing.
 * Ensure you are on the master branch.
 * Ensure you have done a `git pull origin master` to update your local code with the latest code on github.
 * Then run:
@@ -117,7 +114,7 @@ CSS isn't quite the same as code, but tags should be roughly analagous to [semve
 * `patch`: if the style change is just a small bugfix that should work with existing sites, use a patch, i.e. 0.0.1, tag.
 
 ### Updating changelog
-After properly tagging and pushing new version of yeti.css to Github update the [release feed](https://github.com/andyet/yeticss/releases) according to the following guidelines:
+After properly tagging and pushing new version of yeti.css to Github update the [release feed](https://github.com/andyet/yeti.css/releases) according to the following guidelines:
 
 * Release title should be the tag version
 * Changes should be listed under the following categories:
