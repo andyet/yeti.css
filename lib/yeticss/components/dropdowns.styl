@@ -41,10 +41,11 @@
   padding: $ui-padding-default
   border: $ui-border
   border-radius: 3px
+  color: $blue
 
-.dropdown-outlined .dropdown
-  background-color: white
-  border: $ui-border
+  .dropdown
+    background-color: white
+    border: $ui-border
 
 .dropdown-standalone.button
 
@@ -56,25 +57,29 @@
 
   .icon-arrow-down
     border-top-color: white
+    
+  .dropdown
+    background-color: darken($blue, 10%)
+    
+    li:not(:last-child)
+      border-bottom: 1px solid darken($blue, 20%)
+      
+    a:hover
+      color: $blue-lighter
 
-.dropdown-standalone.button-primary
+.dropdown-standalone.button-neutral
+  
+  a
+    color: $gray-dark
+    
+  .icon-arrow-down
+    border-top-color: $gray-dark
   
   .dropdown
-    background-color: $pink
+    background-color: darken($gray-lighter, 20%)
   
     li:not(:last-child)
-      border-bottom: 1px solid darken($pink, 10%)
-
+      border-bottom: 1px solid darken($gray-light, 20%)
+      
     a:hover
-      color: darken($pink, 20%)
-
-.dropdown-standalone.button-secondary
-  
-  .dropdown
-    background-color: $blue
-  
-    li:not(:last-child)
-      border-bottom: 1px solid darken($blue, 10%)
-
-    a:hover
-      color: darken($blue, 20%)
+      color: $gray-darker
