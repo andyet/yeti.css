@@ -1551,8 +1551,12 @@ footer[role='contentinfo'] {
   padding: 30px 0;
   border-top: 1px solid #f2f4f6;
   color: #828c8f;
-  font-size: 18px;
   text-align: center;
+  font-size: 12px;
+}
+footer[role='contentinfo'] li,
+footer[role='contentinfo'] p {
+  font-family: 'jaf-facitweb', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 footer[role='contentinfo'] li:not(:last-of-type):after {
   content: '•';
