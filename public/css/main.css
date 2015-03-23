@@ -189,16 +189,11 @@ html {
 }
 body {
   min-height: 100%;
-  font-family: 'jaf-facitweb', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', helvetica neue, helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #4d5659;
   text-rendering: optimizeSpeed;
-}
-p,
-li,
-dd {
-  font-family: 'leitura-news', Georgia, Times, serif;
 }
 p {
   margin-top: 0;
@@ -254,7 +249,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 30px;
   line-height: 1.25;
-  font-family: 'jaf-facitweb', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'aktiv-grotesk-std', helvetica neue, helvetica, arial, sans-serif;
 }
 h1,
 h2,
@@ -271,11 +266,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
-}
-h5,
-h6 {
-  font-weight: 500;
+  font-weight: 300;
 }
 h6 {
   text-transform: uppercase;
@@ -299,7 +290,7 @@ blockquote {
   margin: 30px 0;
   padding: 0 15px;
   color: #828c8f;
-  font: italic 16px/1.55 'leitura-news', Georgia, Times, serif;
+  font: italic 16px/1.55 Georgia, Times, serif;
 }
 blockquote p:only-child,
 blockquote p:last-child {
@@ -775,7 +766,7 @@ pre {
   background: #003546;
 }
 .dropdown-standalone li {
-  font-family: 'jaf-facitweb', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: $font-facit;
 }
 .dropdown-standalone {
   position: relative;
@@ -923,7 +914,7 @@ figure figcaption {
   color: #00b0e9;
 }
 .message p {
-  font-family: 'jaf-facitweb', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: $font-facit;
 }
 .message a {
   font-weight: bold;
@@ -1231,7 +1222,7 @@ form .message {
 .side-nav li,
 .breadcrumbs li,
 .pagination li {
-  font-family: 'jaf-facitweb', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: $font-facit;
 }
 .unavailable-item {
   color: #b7c0c3;
@@ -1563,7 +1554,7 @@ footer[role='contentinfo'] {
 }
 footer[role='contentinfo'] li,
 footer[role='contentinfo'] p {
-  font-family: 'jaf-facitweb', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: $font-facit;
 }
 footer[role='contentinfo'] li:not(:last-of-type):after {
   content: '•';
