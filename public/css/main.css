@@ -765,9 +765,6 @@ pre {
   color: #5ca1b5;
   background: #003546;
 }
-.dropdown-standalone li {
-  font-family: $font-facit;
-}
 .dropdown-standalone {
   position: relative;
   display: inline-block;
@@ -912,9 +909,6 @@ figure figcaption {
   position: relative;
   background-color: #e3f8ff;
   color: #00b0e9;
-}
-.message p {
-  font-family: $font-facit;
 }
 .message a {
   font-weight: bold;
@@ -1216,13 +1210,6 @@ form .message {
 }
 .side-nav li:not(:last-child) a {
   border-bottom: 1px solid #e6eaed;
-}
-.top-nav li,
-.tabs li,
-.side-nav li,
-.breadcrumbs li,
-.pagination li {
-  font-family: $font-facit;
 }
 .unavailable-item {
   color: #b7c0c3;
@@ -1551,10 +1538,6 @@ footer[role='contentinfo'] {
   color: #828c8f;
   text-align: center;
   font-size: 12px;
-}
-footer[role='contentinfo'] li,
-footer[role='contentinfo'] p {
-  font-family: $font-facit;
 }
 footer[role='contentinfo'] li:not(:last-of-type):after {
   content: '•';
