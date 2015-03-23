@@ -634,6 +634,16 @@ select:focus:-moz-focusring {
   padding: 15px 30px;
   font-size: 22px;
 }
+.button-unstyled,
+.button-unstyled:hover {
+  background-color: transparent;
+}
+.button-unstyled {
+  color: #00b0e9;
+}
+.button-unstyled:hover {
+  color: #008dba;
+}
 .button-neutral {
   background-color: #e6eaed;
 }
@@ -1536,7 +1546,6 @@ footer[role='contentinfo'] {
   border-top: 1px solid #f2f4f6;
   color: #828c8f;
   text-align: center;
-  font-size: 12px;
 }
 footer[role='contentinfo'] li:not(:last-of-type):after {
   content: '•';

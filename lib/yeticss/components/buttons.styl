@@ -44,6 +44,16 @@
 
 //- Button Coloring
 
+.button-unstyled,
+.button-unstyled:hover
+  background-color: transparent
+
+.button-unstyled
+  color: $blue
+  
+  &:hover
+    color: darken($blue, 20%)
+
 .button-neutral
   background-color: $gray-lighter
   
