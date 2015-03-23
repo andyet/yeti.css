@@ -8,19 +8,19 @@
   position: relative
   display: inline-block
   cursor: pointer
-
+  padding: $ui-padding-default
+  border-radius: 3px
+  
   &:hover
+    border-radius: 3px 3px 0 0
     
     .dropdown
       display: block
       position: absolute
-      top: 105%
+      top: 100%
       left: 0
-      min-width: 100%
-      border-radius: 3px
-
-      li:not(:last-child)
-        border-bottom: inherit
+      width: 100%
+      border-radius: 0 0 3px 3px
 
       a
         padding: $ui-padding-default
@@ -34,49 +34,61 @@
     top: -2px
     margin-left: 5px
 
-.dropdown-outlined
-  padding: $ui-padding-default
+.dropdown-outlined,
+.dropdown-outlined .dropdown
   border: $ui-border
-  border-radius: 3px
-  color: $blue
 
+.dropdown-standalone.dropdown-outlined
+  .dropdown
+    width: 101%
+    left: -1px
+
+.dropdown-outlined
+  
   .dropdown
     background-color: white
-    border: $ui-border
+    
+    li:not(:last-child)
+      border-bottom: $ui-border
 
-.dropdown-standalone.button
-
-  a
-    color: white
-
+.dropdown-coloured,
+.dropdown-coloured .dropdown
+  background-color: $blue
+  
+.dropdown-coloured
+  
+  .button-unstyled,
   .dropdown a
-    font-weight: normal
+    color: white
 
   .icon-arrow-down
     border-top-color: white
     
   .dropdown
-    background-color: darken($blue, 10%)
     
     li:not(:last-child)
-      border-bottom: 1px solid darken($blue, 20%)
+      border-bottom: 1px solid darken($blue, 10%)
       
     a:hover
       color: $blue-lighter
 
-.dropdown-standalone.button-neutral
+.dropdown-neutral,
+.dropdown-neutral .dropdown
+  background-color: $gray-lighter
+
+.dropdown-neutral
   
   a
     color: $gray-dark
+    
+  a:hover,
+  .button-unstyled:hover
+    color: $gray-darker
     
   .icon-arrow-down
     border-top-color: $gray-dark
   
   .dropdown
-    background-color: darken($gray-lighter, 20%)
   
     li:not(:last-child)
-      border-bottom: 1px solid darken($gray-light, 20%)
-      
-    a:hover
-      color: $gray-darker
+      border-bottom: 1px solid $gray-light
