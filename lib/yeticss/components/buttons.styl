@@ -93,28 +93,66 @@
   &.button-disabled
     background-color: $red-light
 
+*[class*='button-outlined']
+  border-width: 2px
+  border-style: solid
+ 
+*[class*='button-outlined'],
+*[class*='button-outlined']:hover
+*[class*='button-outlined']:disabled
+  background-color: transparent  
+
 .button-outlined
-  border: 1px solid $gray-light
+  border-color: $blue
+  color: $blue
   
   &:hover
-    background-color: $gray-lighter
+    border-color: darken($blue, 20%)
+    color: darken($blue, 20%)
+    
+  &:disabled
+    border-color: $blue-light
+    color: $blue-light
+
+.button-outlined-neutral
+  border-color: $gray-light
+  color: $gray
+  
+  &:hover
+    border-color: $gray
+    color: $gray-dark
     
   &:disabled, 
   &.button-disabled
     color: lighten($gray-light, 20%)
-    border: 1px solid $gray-lighter
+    border-color: $gray-lighter
     
     &:hover
       color: lighten($gray-light, 20%)
+      
+.button-outlined-approve
+  border-color: $green
+  color: $green
+  
+  &:hover
+    border-color: darken($green, 20%)
+    color: darken($green, 20%)
+    
+  &:disabled
+    border-color: $green-light
+    color: $green-light
 
-.button-outlined,
-.button-outlined:disabled, 
-.button-outlined.button-disabled
-  background-color: transparent
-
-.button-outlined,
-.button-outlined:hover
-  color: $gray
+.button-outlined-warn
+  border-color: $red
+  color: $red
+  
+  &:hover
+    border-color: darken($red, 20%)
+    color: darken($red, 20%)   
+    
+  &:disabled
+    border-color: $red-light
+    color: $red-light
 
 //- Button Group
 
