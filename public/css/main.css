@@ -401,7 +401,6 @@ dl dd {
 .grid-flex-container {
   padding: 0;
   list-style: none;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +416,6 @@ dl dd {
     width: 90%;
   }
   .grid-flex-cell {
-    -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -425,7 +423,6 @@ dl dd {
 }
 @media screen and (min-width: 601px) {
   .grid-flex-cell {
-    -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -437,7 +434,6 @@ dl dd {
   .grid-flex-cell-1of2,
   .grid-flex-cell-1of3,
   .grid-flex-cell-1of4 {
-    -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
@@ -507,8 +503,7 @@ select,
   -webkit-appearance: none;
 }
 .form-input:focus {
-  -webkit-transition: all 0.2s ease-in;
-          transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   border: 1px solid #74ddff;
 }
 .form-input:disabled {
@@ -603,8 +598,7 @@ select:focus:-moz-focusring {
   text-align: center;
   cursor: pointer;
   background-color: #00b0e9;
-  -webkit-transition: all 0.3s ease-in;
-          transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1594,7 +1588,7 @@ footer[role='contentinfo'] {
   text-align: center;
 }
 footer[role='contentinfo'] li:not(:last-of-type):after {
-  content: '•';
+  content: '\2219';
   margin: 0 5px 0 10px;
 }
 footer[role='contentinfo'] p {
