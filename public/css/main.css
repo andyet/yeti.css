@@ -1594,7 +1594,7 @@ footer[role='contentinfo'] {
   text-align: center;
 }
 footer[role='contentinfo'] li:not(:last-of-type):after {
-  content: '•';
+  content: '\2219';
   margin: 0 5px 0 10px;
 }
 footer[role='contentinfo'] p {
