@@ -431,7 +431,7 @@ dl dd {
             flex: 1;
     padding: 15px 0;
   }
-  .grid-flex-cell:not(:first-of-type) {
+  .grid-flex-cell:not(:first-child) {
     margin-left: 30px;
   }
   .grid-flex-cell-1of2,
@@ -450,9 +450,6 @@ dl dd {
   }
   .grid-flex-cell-1of4 {
     width: 25%;
-  }
-  .grid-container-flex {
-    margin-left: -30px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {

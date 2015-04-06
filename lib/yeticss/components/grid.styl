@@ -31,7 +31,7 @@
     flex: 1
     padding: $ui-padding-spaced 0
 
-    &:not(:first-of-type)
+    &:not(:first-child)
       margin-left: $space
 
   .grid-flex-cell-1of2,
@@ -47,9 +47,6 @@
 
   .grid-flex-cell-1of4
     width: 25%
-
-  .grid-container-flex
-    margin-left: -($space)
 
 @media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-desktop)
 
