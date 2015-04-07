@@ -431,7 +431,7 @@ dl dd {
             flex: 1;
     padding: 15px 0;
   }
-  .grid-flex-cell:not(:first-child) {
+  [class^='grid-flex-cell']:not(:first-child) {
     margin-left: 30px;
   }
   .grid-flex-cell-1of2,
