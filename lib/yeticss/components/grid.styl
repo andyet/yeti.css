@@ -14,7 +14,7 @@
   flex-flow: row wrap
   -webkit-flex-flow: row wrap
 
-.grid-flex-cell
+[class^="grid-flex-cell"]
   margin-bottom: $space
 
 @media screen and (max-width: $breakpoint-mid-mobile)
@@ -22,12 +22,12 @@
   .container
     width: $grid-width-mobile
 
-  .grid-flex-cell
+  [class^="grid-flex-cell"]
     flex: 0 0 100%
 
 @media screen and (min-width: $breakpoint-mid-mobile+1)
 
-  .grid-flex-cell
+  [class^="grid-flex-cell"]
     flex: 1
     padding: $ui-padding-spaced 0
 
