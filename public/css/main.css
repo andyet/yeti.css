@@ -1188,8 +1188,6 @@ form .message {
 }
 .top-nav {
   margin-bottom: 30px;
-  z-index: 10;
-  position: relative;
 }
 .top-nav ul {
   margin: 0;
@@ -1357,6 +1355,7 @@ form .message {
   }
   .top-nav .menu-toggle:checked ~ ul .dropdown {
     display: block;
+    z-index: 1000;
   }
   .top-nav .menu-toggle:checked ~ ul .dropdown li {
     padding: 5px 15px;
@@ -1647,6 +1646,9 @@ section:not(:last-child) {
 }
 .buttons .button {
   margin: 5px;
+}
+.top-nav ul {
+  z-index: 10;
 }
 .progress {
   margin-bottom: 10px;
