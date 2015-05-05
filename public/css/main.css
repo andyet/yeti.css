@@ -599,7 +599,8 @@ select:focus:-moz-focusring {
   display: inline-block;
   border: none;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   cursor: pointer;
   background-color: #00b0e9;
@@ -610,6 +611,10 @@ select:focus:-moz-focusring {
       -ms-user-select: none;
           user-select: none;
   appearance: none;
+}
+.button:not([class*='button-outlined']) {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .button:hover {
   background-color: #009ed2;
@@ -687,6 +692,8 @@ select:focus:-moz-focusring {
 *[class*='button-outlined'] {
   border-width: 2px;
   border-style: solid;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 *[class*='button-outlined'],
 *[class*='button-outlined']:hover,

@@ -8,7 +8,8 @@
   display: inline-block
   border: none
   border-radius: 3px
-  padding: $ui-padding-default $ui-padding-spaced
+  padding-left: $ui-padding-spaced
+  padding-right: $ui-padding-spaced
   text-align: center
   cursor: pointer
   background-color: $blue
@@ -16,6 +17,10 @@
   transition: all .3s ease-in 
   user-select: none
   appearance: none
+  
+  &:not([class*='button-outlined'])
+    padding-top: $ui-padding-default
+    padding-bottom: $ui-padding-default
 
   &:hover
     background-color: darken($blue, 10%)
@@ -96,6 +101,8 @@
 *[class*='button-outlined']
   border-width: 2px
   border-style: solid
+  padding-top: $ui-padding-default - 2px
+  padding-bottom: $ui-padding-default - 2px
  
 *[class*='button-outlined'],
 *[class*='button-outlined']:hover
