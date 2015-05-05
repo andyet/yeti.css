@@ -778,7 +778,7 @@ select:focus:-moz-focusring {
 @media screen and (max-width: 480px) {
   .button-group .button {
     border-radius: none;
-    margin: 0;
+    margin: 0 0 0 -1px;
     width: 100%;
   }
   .button-group .button:first-of-type {
@@ -1643,10 +1643,10 @@ section:not(:last-child) {
   margin-bottom: 10px;
 }
 .buttons .button-group .button {
-  margin-right: 0;
+  margin: 0 0 0 -1px;
 }
 .buttons .button {
-  margin-right: 5px;
+  margin: 5px;
 }
 .progress {
   margin-bottom: 10px;
