@@ -114,7 +114,7 @@ CSS isn't quite the same as code, but tags should be roughly analagous to [semve
 * `patch`: if the style change is just a small bugfix that should work with existing sites, use a patch, i.e. 0.0.1, tag.
 
 ### Updating changelog
-After properly tagging and pushing new version of yeti.css to Github update the [release feed](https://github.com/andyet/yeti.css/releases) according to the following guidelines:
+After properly tagging and pushing a new version of yeti.css to Github update the [release feed](https://github.com/andyet/yeti.css/releases) according to the following guidelines:
 
 * Release title should be the tag version
 * Changes should be listed under the following categories:
