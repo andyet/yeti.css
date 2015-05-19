@@ -53,6 +53,17 @@ section
 
       button(type='submit', class='button button-primary') Send
 
+  p If not using labels in an inline form add <code>form-no-labels</code> to form element.
+
+  form.form-inline.form-no-labels
+    fieldset
+
+      .form-element
+        input(type='text', id='username', placeholder='Your username', class='form-input')
+
+      .form-element
+        button(type='submit', class='button button-outlined') Send
+
   :markdown
     ```html
       <form class='form-inline'>
