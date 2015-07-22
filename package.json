@@ -24,7 +24,6 @@
     "marked": "^0.3.3"
   },
   "dependencies": {
-    "marked": "^0.3.2",
     "stylus": "^0.47.3"
   }
 }
