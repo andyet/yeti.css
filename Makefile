@@ -21,11 +21,11 @@ clean:
 	rm public/css/main.min.css
 
 index.html: $(DOCS_TEMPLATES)
-	jade -o . -P public/templates/index.jade
+	./node_modules/.bin/jade -o . -P public/templates/index.jade
 
 public/css/main.min.css: public/css/main.css
 	cssmin public/css/main.css > public/css/main.min.css
 
 public/css/main.css: public/styl/main.styl $(STYLUS_FILES)
 	# Use the current module as it's own plugin, normally this would be -u yeticss
-	stylus -u ./ public/styl/main.styl -u autoprefixer-stylus -o public/css
+	./node_modules/.bin/stylus -u ./ public/styl/main.styl -u autoprefixer-stylus -o public/css
