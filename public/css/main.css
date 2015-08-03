@@ -957,10 +957,10 @@ figure figcaption {
   }
 }
 @media screen and (min-width: 481px) {
-  figure img {
+  figure img + figcaption {
     margin-bottom: 5px;
   }
-  figure img:not(:only-child) {
+  figure img + figcaption:not(:only-child) {
     margin-right: 5px;
   }
 }
