@@ -114,7 +114,7 @@ It's __**strongly**__ recommended that you pin to a specific version of yeticss,
 You can see the list of available releases at: [https://github.com/andyet/yeti.css/releases](https://github.com/andyet/yeti.css/releases).
 
 ## Custom fonts
-yeti.css defines [Gotham](http://www.typography.com/fonts/gotham/overview/) and [Sentinel](http://www.typography.com/fonts/sentinel/overview/) as its default typefaces. Use Typography.com to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/yeti.css/blob/gh-pages/lib/yeticss/globals/_variables.styl#L13-L14).
+yeti.css defines several custom fonts. Use Typography.com or Typekit to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/yeti.css/blob/gh-pages/lib/yeticss/globals/_variables.styl#L17-L22).
 
 
 ## CSS Reset

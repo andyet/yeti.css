@@ -114,6 +114,12 @@
 .unavailable-item
   color: $gray-light
 
+  &:not([href]),
+  &:not([href]):hover
+    color: $gray-light
+    cursor: default
+    pointer-events: none
+
 .current-item
   color: $gray-dark
   font-weight: $font-weight-bold
@@ -126,7 +132,7 @@
 .side-nav,
 .pagination
 
-  a:hover, 
+  a:hover:not(.unavailable-item),
   .current-item
     background-color: lighten($gray-lighter, 80%)
 
