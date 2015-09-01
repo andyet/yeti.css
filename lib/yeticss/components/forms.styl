@@ -49,6 +49,7 @@ select,
   &:focus
     transition: all .2s ease-in
     border: 1px solid $blue-light
+    background-color: lighten($blue-light, 95%)
 
   &:disabled
     background-color: lighten($gray-lighter, 80%)
@@ -56,6 +57,7 @@ select,
 
   &:required:focus
     border: 1px solid $orange-light
+    background-color: lighten($orange-light, 90%)
 
   &.input-invalid
     border: 1px solid $red-light
@@ -63,6 +65,7 @@ select,
 
     &:focus
       border: 1px solid $red
+      background-color: lighten($red-light, 80%)
 
   &.input-valid
     border: 1px solid $green-light
@@ -70,6 +73,7 @@ select,
 
     &:focus
       border: 1px solid $green
+      background-color: lighten($green-light, 80%)
 
 textarea
   resize: none
