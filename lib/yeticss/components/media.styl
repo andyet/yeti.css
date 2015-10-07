@@ -37,6 +37,12 @@ figure
 @media screen and (min-width: $breakpoint-smartphone+1)
 
   figure
+  
+    img:not(:last-child):not(:only-child)
+      margin-right: 5px
+      
+    img:not(:only-child)
+      margin-top: 5px
 
     img + figcaption
       margin-bottom: 5px
