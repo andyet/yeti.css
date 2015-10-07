@@ -495,6 +495,9 @@ select,
 .form-checkbox {
   outline: 0;
 }
+.form-inline {
+  overflow: hidden;
+}
 .form-input {
   display: block;
   padding: 10px;
@@ -1014,41 +1017,10 @@ figure figcaption {
 .message-full-width {
   text-align: center;
 }
-.message-left:after,
-.message-right:after {
-  top: 50%;
-  margin-top: -6px;
-}
 .message-above:after,
 .message-below:after {
   left: 50%;
   margin-left: -6px;
-}
-.message-left:after {
-  left: 100%;
-  border-left-color: #e3f8ff;
-}
-.message-left.message-success:after {
-  border-left-color: #e8f7ef;
-}
-.message-left.message-error:after {
-  border-left-color: #ffe3eb;
-}
-.message-left.message-alert:after {
-  border-left-color: #ffeed7;
-}
-.message-right:after {
-  right: 100%;
-  border-right-color: #e3f8ff;
-}
-.message-right.message-success:after {
-  border-right-color: #e8f7ef;
-}
-.message-right.message-error:after {
-  border-right-color: #ffe3eb;
-}
-.message-right.message-alert:after {
-  border-right-color: #ffeed7;
 }
 .message-below:after {
   border-bottom-color: #e3f8ff;
@@ -1699,10 +1671,6 @@ section:not(:last-child) {
 .message,
 .form-inline {
   margin-bottom: 10px;
-}
-form .message-left,
-form .message-right {
-  margin-bottom: 0;
 }
 .color {
   display: inline-block;

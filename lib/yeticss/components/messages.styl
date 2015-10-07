@@ -32,55 +32,11 @@
 .message-full-width
   text-align: center
 
-.message-left, .message-right
-
-  &:after
-    top: 50%
-    margin-top: -6px
-
 .message-above, .message-below
 
   &:after      
     left: 50%
     margin-left: -6px
-
-//- Message positioned on the left relatively to the parent
-.message-left
-
-  &:after
-    left: 100%
-    border-left-color: $blue-lighter      
-
-  &.message-success
-    &:after
-      border-left-color: $green-lighter
-
-  &.message-error
-    &:after
-      border-left-color: $red-lighter
-
-  &.message-alert
-    &:after
-      border-left-color: $orange-lighter
-
-//- Message positioned on the right relatively to the parent
-.message-right
-
-  &:after
-    right: 100%
-    border-right-color: $blue-lighter      
-
-  &.message-success
-    &:after
-      border-right-color: $green-lighter
-
-  &.message-error
-    &:after
-      border-right-color: $red-lighter
-
-  &.message-alert
-    &:after
-      border-right-color: $orange-lighter
 
 //- Message positioned below the parent
 .message-below

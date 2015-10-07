@@ -82,7 +82,7 @@ section
     ```
 
   h3 Message positioning
-  p Messages can be easily positioned using following classes: <code>message-below</code>, <code>message-above</code>, <code>message-left</code> and <code>message-right</code>&mdash;where these classes denotate position of the message relatively to the element.
+  p Messages can be easily positioned using following classes: <code>message-below</code> and <code>message-above</code>&mdash;where these classes denotate position of the message relatively to the element.
 
 
   form(role='form')
@@ -95,24 +95,6 @@ section
       p This is a message appearing above an element.
     input(class='form-input', type='text', placeholder='Your Surname')
 
-  form(class='form-inline')
-
-    .form-element
-      input(class='form-input', type='text', placeholder='Your Name')
-
-    .form-element
-      .message.message-alert.message-right
-        p This is a message appearing on the right hand side of the element.
-
-  form(class='form-inline', role='form')
-
-    .form-element
-      .message.message-error.message-left
-        p This is a message appearing on the left hand side of the element.
-
-    .form-element
-      input(class='form-input', type='text', placeholder='Your Name')
-
   :markdown
     ```html
       <div class='message message-below'>
@@ -121,13 +103,5 @@ section
 
       <div class='message message-success message-above'>
         <p>This is a message appearing above an element.</p>
-      </div>
-
-      <div class='message message-error message-left'>
-        <p>This is a message appearing on the left hand side of the element.</p>
-      </div>
-
-      <div class='message message-alert message-right'>
-        <p>This is a message appearing on the right hand side of the element.</p>
       </div>
     ```
