@@ -99,17 +99,17 @@ The simplest way to include yeticss in a moonboots app is to use [stylizer](http
 
 It's __**strongly**__ recommended that you pin to a specific version of yeticss, so that updates to the styleguide don't break your site. To do that, reference a specific tagged release in your package.json by appending #<tagname> to the git url, e.g.:
 
-    ```js
-        //package.json
+```javascript
+    //package.json
 
-        {
-            //...
-            "dependencies": {
-                "yeticss": "git+ssh://git@github.com/andyet/yeticss#v0.1.0"
-            },
-            //...
-        }
-    ```
+    {
+        //...
+        "dependencies": {
+            "yeticss": "git+ssh://git@github.com/andyet/yeticss#v0.1.0"
+        },
+        //...
+    }
+```
 
 You can see the list of available releases at: [https://github.com/andyet/yeti.css/releases](https://github.com/andyet/yeti.css/releases).
 
