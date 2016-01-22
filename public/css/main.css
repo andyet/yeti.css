@@ -399,7 +399,7 @@ dl dd {
   margin: 0 auto;
 }
 .grid-flex-container {
-  padding: 0;
+  margin: -30px 0 30px -30px;
   list-style: none;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -409,7 +409,7 @@ dl dd {
   -webkit-flex-flow: row wrap;
 }
 [class^="grid-flex-cell"] {
-  margin-bottom: 30px;
+  padding: 30px 0 0 30px;
 }
 @media screen and (max-width: 600px) {
   .container {
@@ -426,10 +426,6 @@ dl dd {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 15px 0;
-  }
-  [class^="grid-flex-cell"]:not(:first-child) {
-    margin-left: 30px;
   }
   .grid-flex-cell-1of2,
   .grid-flex-cell-1of3,
@@ -442,7 +438,7 @@ dl dd {
     width: 50%;
   }
   .grid-flex-cell-1of3 {
-    width: 34%;
+    width: 33.333333333333336%;
   }
   .grid-flex-cell-1of4 {
     width: 25%;
@@ -1102,7 +1098,6 @@ form .message {
   border-radius: 3px;
   z-index: 20;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
@@ -1167,7 +1162,6 @@ form .message {
     left: 0;
     border-radius: 0;
     -webkit-transform: none;
-        -ms-transform: none;
             transform: none;
   }
 }
@@ -1669,7 +1663,6 @@ section:not(:last-child) {
   left: 50%;
   margin-left: -25%;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
 }
 .message,
@@ -1781,12 +1774,11 @@ section:not(:last-child) {
 .icon-sample {
   margin: 0 5px;
 }
-[class^="grid-flex-cell"] {
+[class^="grid-flex-cell"] p {
   border: 1px solid #e6eaed;
   border-radius: 3px;
   text-align: center;
-}
-[class^="grid-flex-cell"] p {
+  padding: 1em;
   margin: 0;
 }
 @media screen and (min-width: 769px) {
