@@ -24,7 +24,7 @@
     <section>
       <h2>Typography</h2>
       <h3>Body copy</h3>
-      <p>The default <code>font-size</code> is <strong>16px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs get have a bottom margin of <code>30px</code> (the default spacing unit).</p><pre><code class="lang-html">  &lt;p&gt;...&lt;/p&gt;
+      <p>The default <code>font-size</code> is <strong>16px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs have a bottom margin of <code>30px</code> (the default spacing unit).</p><pre><code class="lang-html">  &lt;p&gt;...&lt;/p&gt;
 </code></pre>
 
       <h3>Headings</h3>
@@ -225,31 +225,35 @@
       <p>Grid is built on top of <a href='http://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a>. Cells (<code>grid-flex-cell</code>) will have the width of <code>100%</code> below <code>481px</code> and automatically calculated width (depending on cell count) above that breakpoint. Grid must be placed within <code>div</code> with <code>container</code> class as described above.</p>
       <p>Instead of relying on calculation of widths depending on number of cells you can use helper fraction classes: <code>grid-flex-cell-1of4</code>, <code>grid-flex-cell-1of3</code>, <code>grid-flex-cell-1of2</code>. The width of other cells will be calculated automatically by the browser. </p>
       <div class="grid-flex-container">
-        <div class="grid-flex-cell-1of2">
+        <div class="grid-flex-cell">
           <p>1/2</p>
         </div>
-        <div class="grid-flex-cell-1of2">
-          <p>1/2</p>
-        </div>
-        <div class="grid-flex-cell-1of3">
+        <aside class="grid-flex-cell-1of3">
+          <p>1/3</p>
+        </aside>
+      </div>
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell">
           <p>1/3</p>
         </div>
-        <div class="grid-flex-cell-1of3">
+        <div class="grid-flex-cell">
           <p>1/3</p>
         </div>
-        <div class="grid-flex-cell-1of3">
+        <div class="grid-flex-cell">
           <p>1/3</p>
         </div>
-        <div class="grid-flex-cell-1of4">
+      </div>
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell">
           <p>1/4</p>
         </div>
-        <div class="grid-flex-cell-1of4">
+        <div class="grid-flex-cell">
           <p>1/4</p>
         </div>
-        <div class="grid-flex-cell-1of4">
+        <div class="grid-flex-cell">
           <p>1/4</p>
         </div>
-        <div class="grid-flex-cell-1of4">
+        <div class="grid-flex-cell">
           <p>1/4</p>
         </div>
       </div>
@@ -260,91 +264,82 @@
         <div class="grid-flex-cell grid-flex-cell-1of4">
           <p>1/4</p>
         </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
       </div>
       <div class="grid-flex-container">
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
         <div class="grid-flex-cell">
           <p>auto</p>
         </div>
         <div class="grid-flex-cell grid-flex-cell-1of2">
           <p>1/2</p>
         </div>
+      </div>
+      <div class="grid-flex-container">
         <div class="grid-flex-cell">
           <p>auto</p>
         </div>
-      </div>
-      <div class="grid-flex-container">
         <div class="grid-flex-cell grid-flex-cell-1of3">
           <p>1/3</p>
         </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-      </div><pre><code class="lang-html">  &lt;div class=&quot;grid-flex-container&quot;&gt;
-    &lt;div class=&quot;grid-flex-cell-1of2&quot;&gt;
+      </div><pre><code class="lang-html">  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/2&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of2&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/2&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of3&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/3&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of3&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/3&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of3&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/3&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of4&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/4&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of4&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/4&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of4&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/4&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell-1of4&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;1/4&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;grid-flex-container&quot;&gt;
-    &lt;div class=&quot;grid-flex-cell&quot;&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;auto&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell grid-flex-cell-1of4&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell grid-flex-cell-1of4&#39;&gt;
       &lt;p&gt;1/4&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell&quot;&gt;
-      &lt;p&gt;auto&lt;/p&gt;
-    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;grid-flex-container&quot;&gt;
-    &lt;div class=&quot;grid-flex-cell&quot;&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;auto&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell&quot;&gt;
-      &lt;p&gt;auto&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell grid-flex-cell-1of2&quot;&gt;
+    &lt;div class=&#39;grid-flex-cell grid-flex-cell-1of2&#39;&gt;
       &lt;p&gt;1/2&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell&quot;&gt;
-      &lt;p&gt;auto&lt;/p&gt;
-    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;grid-flex-container&quot;&gt;
-    &lt;div class=&quot;grid-flex-cell grid-flex-cell-1of3&quot;&gt;
-      &lt;p&gt;1/3&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;grid-flex-cell&quot;&gt;
+
+  &lt;div class=&#39;grid-flex-container&#39;&gt;
+    &lt;div class=&#39;grid-flex-cell&#39;&gt;
       &lt;p&gt;auto&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;grid-flex-cell grid-flex-cell-1of3&#39;&gt;
+      &lt;p&gt;1/3&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 </code></pre>
