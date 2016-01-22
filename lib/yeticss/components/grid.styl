@@ -8,14 +8,14 @@
   margin: 0 auto
 
 .grid-flex-container
-  padding: 0
+  margin: "%s 0 %s %s" % ($space*-1) $space ($space*-1)
   list-style: none
   display: flex
   flex-flow: row wrap
   -webkit-flex-flow: row wrap
 
 [class^="grid-flex-cell"]
-  margin-bottom: $space
+  padding: $space 0 0 $space
 
 @media screen and (max-width: $breakpoint-mid-mobile)
 
@@ -29,10 +29,6 @@
 
   [class^="grid-flex-cell"]
     flex: 1
-    padding: $ui-padding-spaced 0
-
-  [class^="grid-flex-cell"]:not(:first-child)
-    margin-left: $space
 
   .grid-flex-cell-1of2,
   .grid-flex-cell-1of3,
@@ -43,7 +39,7 @@
     width: 50%
 
   .grid-flex-cell-1of3
-    width: ceil(100%/3)
+    width: "%s" % (100% / 3)
 
   .grid-flex-cell-1of4
     width: 25%
