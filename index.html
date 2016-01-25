@@ -224,7 +224,7 @@
 </code></pre>
       <p>Grid is built on top of <a href='http://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a>. Cells (<code>grid-flex-cell</code>) will have the width of <code>100%</code> below <code>481px</code> and automatically calculated width (depending on cell count) above that breakpoint. Grid must be placed within <code>div</code> with <code>container</code> class as described above.</p>
       <p><em>There are several different ways to implement the grid:</em></p>
-      <h4>Regular column widths, automatically-calculated.</h4>
+      <h4>Regular column widths, automatically-calculated</h4>
       <p>The default use of grid is to wrap each row in a separate container div. A row consists of a set of <code>.grid-flex-cell</code> divs wrapped in a <code>.grid-flex-container</code> div. For example, if you place 2 <code>.grid-flex-cell</code> divs within a <code>.grid-flex-container</code> div, it will automatically size 2 columns of equal width. This eliminates the need for any helper classes.</p>
       <div class="grid-flex-container">
         <div class="grid-flex-cell">
@@ -293,7 +293,7 @@
   &lt;/div&gt;
 </code></pre>
 
-      <h4>Multiple rows within a single container div.</h4>
+      <h4>Multiple rows within a single container div</h4>
       <p>If you'd like to place multiple rows within a single <code>.grid-flex-container</code> div, you will need to make use of helper classes which explicitly define the fractional width of each column. These helper classes are <code>.grid-flex-cell-1of2</code>, <code>.grid-flex-cell-1of3</code>, and <code>.grid-flex-cell-1of4</code>.</p>
       <div class="grid-flex-container">
         <div class="grid-flex-cell-1of2">
