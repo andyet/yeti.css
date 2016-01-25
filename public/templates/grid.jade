@@ -30,79 +30,7 @@ section
 
   p Grid is built on top of <a href='http://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a>. Cells (<code>grid-flex-cell</code>) will have the width of <code>100%</code> below <code>481px</code> and automatically calculated width (depending on cell count) above that breakpoint. Grid must be placed within <code>div</code> with <code>container</code> class as described above.
 
-  p <em>There are several different ways to implement the grid:</em>
-
-  h4 Regular column widths, automatically-calculated.
-
-  p The default use of grid is to wrap each row in a separate container div. A row consists of a set of <code>.grid-flex-cell</code> divs wrapped in a <code>.grid-flex-container</code> div. For example, if you place 2 <code>.grid-flex-cell</code> divs within a <code>.grid-flex-container</code> div, it will automatically size 2 columns of equal width. This eliminates the need for any helper classes.
-
-  .grid-flex-container
-
-    .grid-flex-cell
-      p auto
-    .grid-flex-cell
-      p auto
-  
-  .grid-flex-container
-
-    .grid-flex-cell
-      p auto
-    .grid-flex-cell
-      p auto
-    .grid-flex-cell
-      p auto
-  
-  .grid-flex-container
-
-    .grid-flex-cell
-      p auto
-    .grid-flex-cell
-      p auto
-    .grid-flex-cell
-      p auto
-    .grid-flex-cell
-      p auto
-
-  :markdown
-    ```html
-      <div class="grid-flex-container">
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-      </div>
-      <div class="grid-flex-container">
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-      </div>
-      <div class="grid-flex-container">
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-        <div class="grid-flex-cell">
-          <p>auto</p>
-        </div>
-      </div>
-    ```
-
-  h4 Multiple rows within a single container div.
-
-  p If you'd like to place multiple rows within a single <code>.grid-flex-container</code> div, you will need to make use of helper classes which explicitly define the fractional width of each column. These helper classes are <code>.grid-flex-cell-1of2</code>, <code>.grid-flex-cell-1of3</code>, and <code>.grid-flex-cell-1of4</code>.
+  p Instead of relying on calculation of widths depending on number of cells you can use helper fraction classes: <code>grid-flex-cell-1of4</code>, <code>grid-flex-cell-1of3</code>, <code>grid-flex-cell-1of2</code>. The width of other cells will be calculated automatically by the browser. 
 
   .grid-flex-container
 
@@ -126,43 +54,6 @@ section
       p 1/4
     .grid-flex-cell-1of4
       p 1/4
-
-  :markdown
-    ```html
-      <div class="grid-flex-container">
-        <div class="grid-flex-cell-1of2">
-          <p>1/2</p>
-        </div>
-        <div class="grid-flex-cell-1of2">
-          <p>1/2</p>
-        </div>
-        <div class="grid-flex-cell-1of3">
-          <p>1/3</p>
-        </div>
-        <div class="grid-flex-cell-1of3">
-          <p>1/3</p>
-        </div>
-        <div class="grid-flex-cell-1of3">
-          <p>1/3</p>
-        </div>
-        <div class="grid-flex-cell-1of4">
-          <p>1/4</p>
-        </div>
-        <div class="grid-flex-cell-1of4">
-          <p>1/4</p>
-        </div>
-        <div class="grid-flex-cell-1of4">
-          <p>1/4</p>
-        </div>
-        <div class="grid-flex-cell-1of4">
-          <p>1/4</p>
-        </div>
-      </div>
-    ```
-
-  h4 Irregular column widths
-
-  p The automatically-calculated column widths can be used in conjuction with the helper classes (<code>.grid-flex-cell-1of2</code>, <code>.grid-flex-cell-1of3</code>, and <code>.grid-flex-cell-1of4</code>) to enable a layout with irregular column widths.
 
   .grid-flex-container
 
@@ -193,6 +84,35 @@ section
 
   :markdown
     ```html
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell-1of2">
+          <p>1/2</p>
+        </div>
+        <div class="grid-flex-cell-1of2">
+          <p>1/2</p>
+        </div>
+        <div class="grid-flex-cell-1of3">
+          <p>1/3</p>
+        </div>
+        <div class="grid-flex-cell-1of3">
+          <p>1/3</p>
+        </div>
+        <div class="grid-flex-cell-1of3">
+          <p>1/3</p>
+        </div>
+        <div class="grid-flex-cell-1of4">
+          <p>1/4</p>
+        </div>
+        <div class="grid-flex-cell-1of4">
+          <p>1/4</p>
+        </div>
+        <div class="grid-flex-cell-1of4">
+          <p>1/4</p>
+        </div>
+        <div class="grid-flex-cell-1of4">
+          <p>1/4</p>
+        </div>
+      </div>
       <div class="grid-flex-container">
         <div class="grid-flex-cell">
           <p>auto</p>
