@@ -408,21 +408,24 @@ dl dd {
       flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
 }
-[class^="grid-flex-cell"] {
+[class^="grid-flex-cell"],
+[class*=" grid-flex-cell"] {
   padding: 30px 0 0 30px;
 }
 @media screen and (max-width: 600px) {
   .container {
     width: 90%;
   }
-  [class^="grid-flex-cell"] {
+  [class^="grid-flex-cell"],
+  [class*=" grid-flex-cell"] {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
 }
 @media screen and (min-width: 601px) {
-  [class^="grid-flex-cell"] {
+  [class^="grid-flex-cell"],
+  [class*=" grid-flex-cell"] {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1098,6 +1101,7 @@ form .message {
   border-radius: 3px;
   z-index: 20;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
@@ -1162,6 +1166,7 @@ form .message {
     left: 0;
     border-radius: 0;
     -webkit-transform: none;
+        -ms-transform: none;
             transform: none;
   }
 }
@@ -1242,7 +1247,8 @@ form .message {
 .pagination li:not(:last-child) {
   border-right: 1px solid #e6eaed;
 }
-.pagination em[class^='icon'] {
+.pagination em[class^='icon'],
+.pagination em[class*=' icon'] {
   top: 1px;
   position: relative;
 }
@@ -1663,6 +1669,7 @@ section:not(:last-child) {
   left: 50%;
   margin-left: -25%;
   -webkit-transform: none;
+      -ms-transform: none;
           transform: none;
 }
 .message,
@@ -1774,7 +1781,8 @@ section:not(:last-child) {
 .icon-sample {
   margin: 0 5px;
 }
-[class^="grid-flex-cell"] p {
+[class^="grid-flex-cell"] p,
+[class*=" grid-flex-cell"] p {
   border: 1px solid #e6eaed;
   border-radius: 3px;
   text-align: center;
