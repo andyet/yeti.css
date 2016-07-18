@@ -70,48 +70,41 @@ If you are compiling your Stylus with its command line interface, maybe directly
     @import 'yeticss/components/type'
     ````
 
-### Single page apps using moonboots
+### Single page apps using webpack
 
-The simplest way to include yeticss in a moonboots app is to use [stylizer](https://github.com/latentflip/stylizer);
+To add yeticss to a webpack application, simply `npm install yeticss --save-dev` and then add it to the stylus `use` list as supported by [stylus-loader](https://github.com/shama/stylus-loader#stylus-plugins).
 
-1. `npm install yeticss --save`
-2. Add 'yeticss' to the list of plugins in stylizer in your beforeCSS moonboots build step:
-
-    ```javascript
-    beforeBuildCSS: function (done) {
-        var plugins = ['yeticss'];
-
-        if (config.isDev) {
-            stylizer(stylesheetsDir + '/app.styl', stylesheetsDir + '/app.css', plugins, done);
-        }
-    },
-    ```
-
-3. Import yeticss or a submodule of yeticss in your app's .styl files:
-
-    ```stylus
-    @import 'yeticss'
-    //or
-    @import 'yeticss/components/type'
-    ```
-
-### Version Pinning
-
-It's __**strongly**__ recommended that you pin to a specific version of yeticss, so that updates to the styleguide don't break your site. To do that, reference a specific tagged release in your package.json by appending #<tagname> to the git url, e.g.:
+For example:
 
 ```javascript
-    //package.json
+// in webpack.config.js
 
-    {
-        //...
-        "dependencies": {
-            "yeticss": "git+ssh://git@github.com/andyet/yeticss#v0.1.0"
-        },
-        //...
-    }
+// import yeticss somewhere in the file
+var yeticss = require('yeticss');
+
+module.exports = {
+  //... other webpack config ...
+
+  module: {
+    loaders: [
+      // configure stylus loader however you prefer
+      { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' }
+    ]
+  },
+
+  // configure stylus loader to use the yeticss plugin
+  stylus: {
+    use: [yeticss()]
+  }
+};
+
 ```
 
-You can see the list of available releases at: [https://github.com/andyet/yeti.css/releases](https://github.com/andyet/yeti.css/releases).
+```css
+/* now in your app.styl you can: */
+@import 'yeticss'
+```
+
 
 ## Custom fonts
 yeti.css defines several custom fonts. Use Typography.com or Typekit to set up font serving accordingly or change the typeface variables [here](https://github.com/andyet/yeti.css/blob/gh-pages/lib/yeticss/globals/_variables.styl#L17-L22).
