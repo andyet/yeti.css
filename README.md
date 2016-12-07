@@ -72,6 +72,8 @@ If you are compiling your Stylus with its command line interface, maybe directly
 
 ### Single page apps using webpack
 
+> NOTE: if you are using webpack 2, check here for how to add stylus plugins with stylus-loader: https://github.com/shama/stylus-loader#webpack-2
+
 To add yeticss to a webpack application, simply `npm install yeticss --save-dev` and then add it to the stylus `use` list as supported by [stylus-loader](https://github.com/shama/stylus-loader#stylus-plugins).
 
 For example:
