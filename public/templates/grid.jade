@@ -42,7 +42,7 @@ section
       p auto
     .grid-flex-cell
       p auto
-  
+
   .grid-flex-container
 
     .grid-flex-cell
@@ -51,7 +51,7 @@ section
       p auto
     .grid-flex-cell
       p auto
-  
+
   .grid-flex-container
 
     .grid-flex-cell
@@ -224,6 +224,38 @@ section
         </div>
         <div class="grid-flex-cell">
           <p>auto</p>
+        </div>
+      </div>
+    ```
+
+  h4 Centering columns
+
+  p In cases where you are not using the full width of a column and would like to center the element inside of it use the helper class (<code>.grid-flex-cell-centered</code>).
+
+  .grid-flex-container
+
+    .grid-flex-cell-1of3.grid-flex-cell-centered
+      p 1/3, centered
+
+  .grid-flex-container
+    .grid-flex-cell.grid-flex-cell-1of3.grid-flex-cell-centered
+      p 1/3, centered
+    .grid-flex-cell.grid-flex-cell-1of3.grid-flex-cell-centered
+      p 1/3, centered
+
+  :markdown
+    ```html
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell grid-flex-cell-1of3 grid-flex-cell-centered">
+          <p>1/3, centered</p>
+        </div>
+      </div>
+      <div class="grid-flex-container">
+        <div class="grid-flex-cell grid-flex-cell-1of3 grid-flex-cell-centered">
+          <p>1/3, centered</p>
+        </div>
+        <div class="grid-flex-cell grid-flex-cell-1of3 grid-flex-cell-centered">
+          <p>1/3, centered</p>
         </div>
       </div>
     ```
