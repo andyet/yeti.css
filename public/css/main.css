@@ -401,7 +401,6 @@ dl dd {
 .grid-flex-container {
   margin: -30px 0 30px -30px;
   list-style: none;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -418,24 +417,21 @@ dl dd {
   }
   [class^="grid-flex-cell"],
   [class*=" grid-flex-cell"] {
-    -webkit-flex: 0 0 100%;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
   }
 }
 @media screen and (min-width: 601px) {
   [class^="grid-flex-cell"],
   [class*=" grid-flex-cell"] {
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
   .grid-flex-cell-1of2,
   .grid-flex-cell-1of3,
   .grid-flex-cell-1of4 {
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+        flex: none;
   }
   .grid-flex-cell-1of2 {
     width: 50%;
@@ -445,6 +441,13 @@ dl dd {
   }
   .grid-flex-cell-1of4 {
     width: 25%;
+  }
+  .grid-flex-cell-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid-flex-cell-centered :last-child {
+    float: none;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
@@ -1101,7 +1104,6 @@ form .message {
   border-radius: 3px;
   z-index: 20;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
@@ -1166,7 +1168,6 @@ form .message {
     left: 0;
     border-radius: 0;
     -webkit-transform: none;
-        -ms-transform: none;
             transform: none;
   }
 }
@@ -1669,7 +1670,6 @@ section:not(:last-child) {
   left: 50%;
   margin-left: -25%;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
 }
 .message,
