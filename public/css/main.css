@@ -1377,6 +1377,7 @@ form .message {
   }
   .top-nav .has-dropdown:hover .dropdown {
     display: block;
+    width: 100%;
   }
   .top-nav .dropdown {
     display: none;
