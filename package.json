@@ -21,7 +21,7 @@
     "building-static-server": "^3.0.0",
     "cssmin": "^0.4.3",
     "jade": "^1.11.0",
-    "marked": "^0.3.6"
+    "marked": "^0.3.19"
   },
   "dependencies": {
     "stylus": "^0.54.5"
