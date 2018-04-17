@@ -1,9 +1,10 @@
 section.buttons
 
   h2 Buttons
-  p Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants.
+  p Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants. These classes can be applied to either <code>button</code> or <code>a</code> tags.
 
   button(class='button') Button
+  a(href='#', class='button') Button (text link)
   button(class='button button-approve') Approval Button
   button(class='button button-warn') Warning Button
   button(class='button button-neutral') Neutral Button
@@ -16,7 +17,8 @@ section.buttons
 
   :markdown
     ```html
-      <button class='button'>Button</a>
+      <button class='button'>Button</button>
+      <a href="#" class="button">Button (text link)</a>
       <button class='button button-approve'>Approval Button</button>
       <button class='button button-warn'>Warning Button</button>
       <button class='button button-neutral'>Neutral Button</button>
