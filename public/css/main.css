@@ -442,6 +442,13 @@ dl dd {
   .grid-flex-cell-1of4 {
     width: 25%;
   }
+  .grid-flex-cell-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid-flex-cell-centered :last-child {
+    float: none;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
   .container {
@@ -621,9 +628,11 @@ select:focus:-moz-focusring {
 .button:hover {
   background-color: #009ed2;
 }
-.button:disabled,
-.button .button-disabled {
+.button:disabled {
   background-color: #74ddff;
+  cursor: not-allowed;
+}
+.button.button-disabled {
   cursor: not-allowed;
 }
 .button:focus {
@@ -634,7 +643,7 @@ select:focus:-moz-focusring {
   color: #fff;
 }
 .button-small {
-  padding: 3px 5px;
+  padding: 3px 10px;
   font-size: 12px;
 }
 .button-large {
@@ -768,10 +777,20 @@ select:focus:-moz-focusring {
   border-color: #ffc7d8;
   color: #ffc7d8;
 }
+.button-group {
+  font-size: 0;
+}
 .button-group .button {
+  font-size: 16px;
   border-radius: 0;
   margin-left: -1px;
   border: 1px solid #008dba;
+}
+.button-group .button.button-large {
+  font-size: 22px;
+}
+.button-group .button.button-small {
+  font-size: 12px;
 }
 .button-group .button:first-child,
 .button-group .button:first-child:only-child {
@@ -787,7 +806,9 @@ select:focus:-moz-focusring {
   border-radius: 0 3px 3px 0;
 }
 .button-group .button-neutral,
-.button-group .button-outlined {
+.button-group .button-outlined,
+.button-group .button-outlined-warn,
+.button-group .button-outlined-approve {
   border: 1px solid #b7c0c3;
 }
 @media screen and (max-width: 480px) {
@@ -1377,6 +1398,7 @@ form .message {
   }
   .top-nav .has-dropdown:hover .dropdown {
     display: block;
+    width: 100%;
   }
   .top-nav .dropdown {
     display: none;

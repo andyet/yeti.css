@@ -28,9 +28,11 @@
   &:hover
     background-color: darken($blue, 10%)
 
-  &:disabled,
-  .button-disabled
+  &:disabled
     background-color: $blue-light
+    cursor: not-allowed
+
+  &.button-disabled
     cursor: not-allowed
 
   &:focus
@@ -43,7 +45,7 @@
 //- Button Sizing
 
 .button-small
-  padding: ceil($ui-padding-narrow/2) $ui-padding-narrow
+  padding: ceil($ui-padding-narrow/2) $ui-padding-default
   font-size: $font-small
 
 .button-large
@@ -180,11 +182,19 @@
 //- Button Group
 
 .button-group
+  font-size: 0 //- Eliminates space between inline-block element
 
   .button
+    font-size: $font-base
     border-radius: 0
     margin-left: -1px
     border: 1px solid darken($blue, 20%)
+
+    &.button-large
+      font-size: $font-large
+
+    &.button-small
+      font-size: $font-small
 
     &:first-child,
     &:first-child:only-child
@@ -200,8 +210,11 @@
       border-radius: 0 3px 3px 0
 
   .button-neutral,
-  .button-outlined
+  .button-outlined,
+  .button-outlined-warn,
+  .button-outlined-approve
     border: 1px solid $gray-light
+
 
 @media screen and (max-width: $breakpoint-smartphone)
 

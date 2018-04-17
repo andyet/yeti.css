@@ -1,9 +1,10 @@
 section.buttons
 
   h2 Buttons
-  p Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants.
+  p Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants. These classes can be applied to either <code>button</code> or <code>a</code> tags.
 
   button(class='button') Button
+  a(href='#', class='button') Button (text link)
   button(class='button button-approve') Approval Button
   button(class='button button-warn') Warning Button
   button(class='button button-neutral') Neutral Button
@@ -16,30 +17,31 @@ section.buttons
 
   :markdown
     ```html
-      <a class='button'>Button</a>
-      <a class='button button-approve'>Approval Button</a>
-      <a class='button button-warn'>Warning Button</a>
-      <a class='button button-neutral'>Neutral Button</a>
-      <a class='button button-outlined-neutral'>Neutral Outlined Button</a>
-      <a class='button button-outlined-warn'>Warning Outlined Button</a>
-      <a class='button button-outlined-approval'>Approval Outlined Button</a>
-      <a class='button button-outlined'>Outlined Button</a>
-      <a class='button button-caution'>Caution Button</a>
-      <a class='button button-unstyled'>Unstyled Button</a>
+      <button class='button'>Button</button>
+      <a href="#" class="button">Button (text link)</a>
+      <button class='button button-approve'>Approval Button</button>
+      <button class='button button-warn'>Warning Button</button>
+      <button class='button button-neutral'>Neutral Button</button>
+      <button class='button button-outlined-neutral'>Neutral Outlined Button</button>
+      <button class='button button-outlined-warn'>Warning Outlined Button</button>
+      <button class='button button-outlined-approval'>Approval Outlined Button</button>
+      <button class='button button-outlined'>Outlined Button</button>
+      <button class='button button-caution'>Caution Button</button>
+      <button class='button button-unstyled'>Unstyled Button</button>
     ```
 
   h3 Button sizes
   p Buttons come in three different sizes&mdash;large, regular and small. Use <code>button-large</code>, no class and <code>button-small</code> classes respectively.
 
-  a(href='', class='button button-large') Large Button
-  a(href='', class='button') Regular Button
-  a(href='', class='button button-small') Small Button
+  button(class='button button-large') Large Button
+  button(class='button') Regular Button
+  button(class='button button-small') Small Button
 
   :markdown
     ```html
-      <a class='button button-large'>Large Button</a>
-      <a class='button'>Regular Button</a>
-      <a class='button button-small'>Small Button</a>
+      <button class='button button-large'>Large Button</button>
+      <button class='button'>Regular Button</button>
+      <button class='button button-small'>Small Button</button>
     ```
 
   h3 Disabled buttons
@@ -47,7 +49,7 @@ section.buttons
 
   button(class='button', disabled) Button
   button(class='button button-approve', disabled) Approval Button 
-  a(class='button button-warn button-disabled') Warning Button
+  a(href='#', class='button button-warn button-disabled') Warning Button (text link)
   button(class='button button-neutral', disabled) Neutral Button 
   button(class='button button-outlined', disabled) Outlined Button
   button(class='button button-outlined-neutral', disabled) Neutral Outlined Button
@@ -58,7 +60,7 @@ section.buttons
     ```html
       <button class='button' disabled>Button</button>
       <button class='button button-approve' disabled>Approval Button</button>
-      <a class='button button-warn button-disabled'>Warning Button</a>
+      <a href='#' class='button button-warn button-disabled'>Warning Button (text link)</a>
       <button class='button button-neutral' disabled>Neutral Button</button>
       <button class='button button-outlined' disabled>Outlined Button</button>
       <button class='button button-outlined-neutral' disabled>Neutral Outlined Button</button>
@@ -70,16 +72,37 @@ section.buttons
   p To create a button group place any number of button elements in <code>button-group</code> container.
 
   .button-group
-    a(href='', class='button') Button
-    a(href='', class='button') Button
-    a(href='', class='button') Button
+    button(class='button') Button
+    button(class='button') Button
+    button(class='button') Button
 
   .button-group
-    a(href='', class='button button-neutral') Button
-    a(href='', class='button button-neutral') Button
-    a(href='', class='button button-neutral') Button
+    button(class='button button-neutral') Button
+    button(class='button button-neutral') Button
+    button(class='button button-neutral') Button
 
   .button-group
-    a(href='', class='button button-outlined') Button
-    a(href='', class='button button-outlined') Button
-    a(href='', class='button button-outlined') Button
+    button(class='button button-outlined') Button
+    button(class='button button-outlined') Button
+    button(class='button button-outlined') Button
+    
+  :markdown
+    ```html
+      <div class="button-group">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+      </div>
+      
+      <div class="button-group">
+        <button class="button button-neutral">Button</button>
+        <button class="button button-neutral">Button</button>
+        <button class="button button-neutral">Button</button>
+      </div>
+      
+      <div class="button-group">
+        <button class="button button-outlined">Button</button>
+        <button class="button button-outlined">Button</button>
+        <button class="button button-outlined">Button</button>
+      </div>
+    ```
