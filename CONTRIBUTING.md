@@ -100,9 +100,9 @@ Releases should be tagged and published to npm to allow for version management, 
 
 ```
 npm version <major|minor|patch> # to create the release
-git push origin master          # to push the code to github
+git push origin                 # to push the code to github
 git push origin --tags          # to push the version tag to github
-npm publish                     # to publish the code to nlpfm
+npm publish                     # to publish the code to npm
 ```
 
 Which will increment the version number, update package.json, create a git tag, and push the tag to Github.
