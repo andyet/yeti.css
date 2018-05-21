@@ -2,23 +2,26 @@
 
 body
   border-style: solid
-  border-color: lighten($gray-lighter, 50%)
+  border-color: $gray-lighter
+
+h1, h2, h3, h4, h5, h6
+  font-weight: $font-weight-bold
 
 //- Code Highlighting
 
 pre
   color: black
-  background: lighten($gray-lighter, 60%)
+  background: lighten($gray-lighter, 50%)
 
 code
   color: black
-  background: lighten($gray-lighter, 60%)
+  background: lighten($gray-lighter, 50%)
 
 //- Header
 
 header
   padding-bottom: $ui-padding-extra-spaced
-  border-bottom: 1px solid lighten($gray-lighter, 50%)
+  border-bottom: 1px solid $gray-lighter
   
   h1
     margin-bottom: 0
@@ -29,11 +32,16 @@ header
   .button
     margin: $space 0
 
+//- Navigation
+
+.main-nav
+  text-align: center
+
 //- Footer
 
 footer[role='contentinfo']
   padding: $ui-padding-extra-spaced 0
-  border-top: 1px solid lighten($gray-lighter, 50%)
+  border-top: 1px solid $gray-lighter
   color: $gray
   text-align: center
 
@@ -58,7 +66,7 @@ section
   padding: $ui-padding-extra-spaced 0
 
   &:not(:last-child)
-    border-bottom: 1px solid lighten($gray-lighter, 50%)
+    border-bottom: 1px solid $gray-lighter
 
 //- Interface element samples
 

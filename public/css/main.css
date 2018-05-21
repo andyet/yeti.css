@@ -1623,19 +1623,27 @@ tr.table-cell-alert a:hover {
 }
 body {
   border-style: solid;
-  border-color: #f4f5f6;
+  border-color: #e9ecec;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
 }
 pre {
   color: #000;
-  background: #f6f7f8;
+  background: #f4f5f6;
 }
 code {
   color: #000;
-  background: #f6f7f8;
+  background: #f4f5f6;
 }
 header {
   padding-bottom: 30px;
-  border-bottom: 1px solid #f4f5f6;
+  border-bottom: 1px solid #e9ecec;
 }
 header h1 {
   margin-bottom: 0;
@@ -1646,9 +1654,12 @@ header p {
 header .button {
   margin: 30px 0;
 }
+.main-nav {
+  text-align: center;
+}
 footer[role='contentinfo'] {
   padding: 30px 0;
-  border-top: 1px solid #f4f5f6;
+  border-top: 1px solid #e9ecec;
   color: #848d90;
   text-align: center;
 }
@@ -1670,7 +1681,7 @@ section {
   padding: 30px 0;
 }
 section:not(:last-child) {
-  border-bottom: 1px solid #f4f5f6;
+  border-bottom: 1px solid #e9ecec;
 }
 .sample {
   border: 1px solid #e9ecec;

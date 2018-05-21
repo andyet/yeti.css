@@ -20,8 +20,27 @@
       <p>&yet's lightweight, modular pattern library written in Stylus.</p>
     </div>
   </header>
+  <nav role="navigation" class="top-nav top-nav-light cf main-nav">
+    <input id="menu-toggle" type="checkbox" class="menu-toggle">
+    <label for="menu-toggle">Menu</label>
+    <ul class="list-unstyled list-inline cf">
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#grid">Grid</a></li>
+      <li><a href="#buttons">Buttons</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#progress">Progress Bars</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#messages">Messages</a></li>
+      <li><a href="#navigation">Navigation</a></li>
+      <li><a href="#modals">Modals</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#logos">Logos</a></li>
+    </ul>
+  </nav>
   <div class="container">
-    <section>
+    <section id="typography">
       <h2>Typography</h2>
       <h3>Body copy</h3>
       <p>The default <code>font-size</code> is <strong>16px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs have a bottom margin of <code>30px</code> (the default spacing unit).</p><pre><code class="lang-html">  &lt;p&gt;...&lt;/p&gt;
@@ -211,7 +230,181 @@
 </code></pre>
 
     </section>
-    <section>
+    <section id="colors">
+      <h2>Colors</h2>
+      <p>Colors are available as variables and downloadable <a href='https://github.com/andyet/yeticss/blob/gh-pages/assets/swatches/andyet.aco'>Photoshop swatch</a>.</p>
+      <h3>Blues</h3>
+      <ul class="cf list-unstyled list-inline">
+        <li class="color blue1">
+          <p>$blue-saturated-darker</p>
+          <p>hsl(195, 100%, 5%)</p>
+          <p>rgb(0, 19, 26)</p>
+          <p>#00131a</p>
+        </li>
+        <li class="color blue2">
+          <p>$blue-saturated-dark</p>
+          <p>hsl(195, 100%, 10%)</p>
+          <p>rgb(0, 38, 51)</p>
+          <p>#002633</p>
+        </li>
+        <li class="color blue3">
+          <p>$blue-saturated</p>
+          <p>hsl(195, 100%, 14%)</p>
+          <p>rgb(0, 54, 71)</p>
+          <p>#003647</p>
+        </li>
+        <li class="color blue4">
+          <p>$blue-saturated-light</p>
+          <p>hsl(195,46%, 22%)</p>
+          <p>rgb(30, 69, 82)</p>
+          <p>#1e4552</p>
+        </li>
+        <li class="color blue5">
+          <p>$blue-saturated-lighter</p>
+          <p>hsl(195,46%, 42%)</p>
+          <p>rgb(58, 132, 156)</p>
+          <p>#3a849c</p>
+        </li>
+      </ul>
+      <ul class="cf list-unstyled list-inline">
+        <li class="color blue6">
+          <p>$blue</p>
+          <p>hsl(195, 100%, 46%)</p>
+          <p>rgb(0, 176, 235)</p>
+          <p>#00b0eb</p>
+        </li>
+        <li class="color blue7">
+          <p>$blue-light</p>
+          <p>hsl(195, 100%, 70%)</p>
+          <p>rgb(102, 217, 255)</p>
+          <p>#66d9ff</p>
+        </li>
+        <li class="color blue8">
+          <p>$blue-lighter</p>
+          <p>hsl(195, 100%, 95%)</p>
+          <p>rgb(230, 249, 255)</p>
+          <p>#e6f9ff</p>
+        </li>
+      </ul>
+      <h3>Monochromatic</h3>
+      <ul class="cf list-unstyled list-inline">
+        <li class="color gray1">
+          <p>$gray-darker</p>
+          <p>hsl(194, 7%, 16%)</p>
+          <p>rgb(38, 42, 44)</p>
+          <p>#262a2c</p>
+        </li>
+        <li class="color gray2">
+          <p>$gray-dark</p>
+          <p>hsl(194, 5%, 33%)</p>
+          <p>rgb(80, 86, 88)</p>
+          <p>#505658</p>
+        </li>
+        <li class="color gray3">
+          <p>$gray</p>
+          <p>hsl(194, 5%, 54%)</p>
+          <p>rgb(132, 141, 144)</p>
+          <p>#848d90</p>
+        </li>
+        <li class="color gray4">
+          <p>$gray-light</p>
+          <p>hsl(194, 9%, 74%)</p>
+          <p>rgb(183, 192, 195)</p>
+          <p>#b7c0c3</p>
+        </li>
+        <li class="color gray5">
+          <p>$gray-lighter</p>
+          <p>hsl(194,9%, 92%)</p>
+          <p>rgb(233, 236, 236)</p>
+          <p>#e9ecec</p>
+        </li>
+      </ul>
+      <h3>Pinks</h3>
+      <ul class="cf list-unstyled list-inline">
+        <li class="color pink1">
+          <p>$pink</p>
+          <p>hsl(326, 94%, 48%)</p>
+          <p>rgb(237, 7, 138)</p>
+          <p>#ed078a</p>
+        </li>
+        <li class="color pink2">
+          <p>$pink-light</p>
+          <p>hsl(344, 97%, 88%)</p>
+          <p>rgb(254, 195, 211)</p>
+          <p>#fec3d3</p>
+        </li>
+        <li class="color pink3">
+          <p>$pink-lighter</p>
+          <p>hsl(326, 94%, 96%)</p>
+          <p>rgb(254, 235, 246)</p>
+          <p>#feebf6</p>
+        </li>
+      </ul>
+      <h3>Reds</h3>
+      <ul class="cf list-unstyled list-inline">
+        <li class="color red1">
+          <p>$red</p>
+          <p>hsl(342, 100%, 45%)</p>
+          <p>rgb(230, 0, 69)</p>
+          <p>#e60045</p>
+        </li>
+        <li class="color red2">
+          <p>$red-light</p>
+          <p>hsl(342, 100%, 89%)</p>
+          <p>rgb(255, 199, 216)</p>
+          <p>#ffc7d8</p>
+        </li>
+        <li class="color red3">
+          <p>$red-lighter</p>
+          <p>hsl(342, 100%, 95%)</p>
+          <p>rgb(255, 230, 237)</p>
+          <p>#ffe6ed</p>
+        </li>
+      </ul>
+      <h3>Oranges</h3>
+      <ul class="cf list-unstyled list-inline">
+        <li class="color orange1">
+          <p>$orange</p>
+          <p>hsl(34, 98%, 48%)</p>
+          <p>rgb(242, 138, 2)</p>
+          <p>#f28a02</p>
+        </li>
+        <li class="color orange2">
+          <p>$orange-light</p>
+          <p>hsl(34, 98%, 74%)</p>
+          <p>rgb(254, 197, 124)</p>
+          <p>#fec57c</p>
+        </li>
+        <li class="color orange3">
+          <p>$orange-lighter</p>
+          <p>hsl(34, 98%, 92%)</p>
+          <p>rgb(255, 237, 215)</p>
+          <p>#ffedd7</p>
+        </li>
+      </ul>
+      <h3>Greens</h3>
+      <ul class="cf list-unstyled list-inline">
+        <li class="color green1">
+          <p>$green</p>
+          <p>hsl(142, 47%, 50%)</p>
+          <p>rgb(68, 187, 112)</p>
+          <p>#44bb70</p>
+        </li>
+        <li class="color green2">
+          <p>$green-light</p>
+          <p>hsl(142, 48%, 85%)</p>
+          <p>rgb(198, 235, 212)</p>
+          <p>#c6ebd4</p>
+        </li>
+        <li class="color green3">
+          <p>$green-lighter</p>
+          <p>hsl(142, 48%, 94%)</p>
+          <p>rgb(232, 247, 238)</p>
+          <p>#e8f7ee</p>
+        </li>
+      </ul>
+    </section>
+    <section id="grid">
       <h2>Grid</h2>
       <p>The starting point to maintaining the document flow is by wrapping the content in a container element that adjusts its width according to resolution:</p><pre><code>  &lt;div class=&#39;container&#39;&gt;
     &lt;h1&gt;My Website&lt;/h1&gt;
@@ -465,7 +658,7 @@
 </code></pre>
 
     </section>
-    <section class="buttons">
+    <section id="buttons" class="buttons">
       <h2>Buttons</h2>
       <p>Use <code>button</code> class for default button appearance with optional <code>button-primary</code> and <code>button-secondary</code> classes for customized color variants. These classes can be applied to either <code>button</code> or <code>a</code> tags.</p>
       <button class="button">Button</button><a href="#" class="button">Button (text link)</a>
@@ -553,7 +746,7 @@
 </code></pre>
 
     </section>
-    <section>
+    <section id="forms">
       <h2>Forms</h2>
       <form>
         <fieldset>
@@ -684,7 +877,7 @@
 </code></pre>
 
     </section>
-    <section>
+    <section id="progress">
       <h2>Progress Bars</h2>
       <p>Currently progress bars are built as <code>div</code> elements due to still incomplete implementation of <code>progress</code> element. Take note that progress meter is a dummy value that should be adjusted.</p>
       <h3>Large progress bar</h3>
@@ -726,7 +919,7 @@
 </code></pre>
 
     </section>
-    <section>
+    <section id="tables">
       <h2>Tables</h2>
       <p>When using tables remember about appropriate content grouping with <code>thead</code> and <code>tbody</code>. </p>
       <div class="table-responsive">
@@ -907,7 +1100,7 @@
         </table>
       </div>
     </section>
-    <section>
+    <section id="messages">
       <h2>Messages</h2>
       <p>There are four types of messages&mdash;default (no class), alert (<code>message-alert</code>), error (<code>message-error</code>) and success (<code>message-success</code>).</p>
       <div class="message">
@@ -995,7 +1188,7 @@
 </code></pre>
 
     </section>
-    <section>
+    <section id="navigation">
       <h2>Navigation</h2>
       <h3>Top bars</h3>
       <p>For navigation bars use <code>top-nav</code> class with desired color variation (<code>top-nav-light</code> or <code>top-nav-dark</code>).</p>
@@ -1196,7 +1389,7 @@
 </code></pre>
 
     </section>
-    <section>
+    <section id="modals">
       <h2>Modals</h2>
       <p>Create a basic modal by using <code>modal</code> class and trigger it in JavaScript. All modal types are responsive (not demonstrated in this demo).</p>
       <div class="modal-sample">
@@ -1241,7 +1434,7 @@
       <h3>Overlay</h3>
       <p>For semi-transparent overlay add <code>has-modal</code> class to the <code>body</code> element or a <code>div</code> with <code>overlay</code> class. Overlay appearance is pictured in modal examples above.</p>
     </section>
-    <section>
+    <section id="avatars">
       <h2>Avatars</h2>
       <p>Avatars come in three sizes&mdash;large (<code>100&times;100</code>) , medium (<code>50&times;50</code>) and small (<code>25&times;25</code>). Placeholders thanks to <a href='http://plaechold.it'>Placehold.it</a>.</p>
       <h3>Rounded avatars</h3>
@@ -1257,7 +1450,7 @@
 </code></pre>
 
     </section>
-    <section class="media">
+    <section id="media" class="media">
       <h2>Media</h2>
       <p>Media elements, such as pictures, videos or iframes have a maximum width of <code>100%</code> so they never overflow the parent container.</p>
       <h3>Images with captions</h3>
@@ -1287,7 +1480,7 @@
 </code></pre>
 
     </section>
-    <section>
+    <section id="code">
       <h2>Code</h2>
       <p>Yeti.css includes basic styles for including code snippets in both inline and block manner.</p>
       <p>This is an <code class='code-light'>light inline code</code> example. This an <code class='code-dark'>dark inline code</code> example.</p><pre><code class="lang-html">  &lt;p&gt;This is an &lt;code class=&#39;code-light&#39;&gt;light inline code&lt;/code&gt; example. This an &lt;code class=&#39;code-dark&#39;&gt;dark inline code&lt;/code&gt; example.
@@ -1301,181 +1494,7 @@
 
       <p>For light and dark themes for syntax coloring refer to <a href='https://github.com/thefoxis/andlight'>&light</a> repository.</p>
     </section>
-    <section>
-      <h2>Colors</h2>
-      <p>Colors are available as variables and downloadable <a href='https://github.com/andyet/yeticss/blob/gh-pages/assets/swatches/andyet.aco'>Photoshop swatch</a>.</p>
-      <h3>Blues</h3>
-      <ul class="cf list-unstyled list-inline">
-        <li class="color blue1">
-          <p>$blue-saturated-darker</p>
-          <p>hsl(195, 100%, 5%)</p>
-          <p>rgb(0, 19, 26)</p>
-          <p>#00131a</p>
-        </li>
-        <li class="color blue2">
-          <p>$blue-saturated-dark</p>
-          <p>hsl(195, 100%, 10%)</p>
-          <p>rgb(0, 38, 51)</p>
-          <p>#002633</p>
-        </li>
-        <li class="color blue3">
-          <p>$blue-saturated</p>
-          <p>hsl(195, 100%, 14%)</p>
-          <p>rgb(0, 54, 71)</p>
-          <p>#003647</p>
-        </li>
-        <li class="color blue4">
-          <p>$blue-saturated-light</p>
-          <p>hsl(195,46%, 22%)</p>
-          <p>rgb(30, 69, 82)</p>
-          <p>#1e4552</p>
-        </li>
-        <li class="color blue5">
-          <p>$blue-saturated-lighter</p>
-          <p>hsl(195,46%, 42%)</p>
-          <p>rgb(58, 132, 156)</p>
-          <p>#3a849c</p>
-        </li>
-      </ul>
-      <ul class="cf list-unstyled list-inline">
-        <li class="color blue6">
-          <p>$blue</p>
-          <p>hsl(195, 100%, 46%)</p>
-          <p>rgb(0, 176, 235)</p>
-          <p>#00b0eb</p>
-        </li>
-        <li class="color blue7">
-          <p>$blue-light</p>
-          <p>hsl(195, 100%, 70%)</p>
-          <p>rgb(102, 217, 255)</p>
-          <p>#66d9ff</p>
-        </li>
-        <li class="color blue8">
-          <p>$blue-lighter</p>
-          <p>hsl(195, 100%, 95%)</p>
-          <p>rgb(230, 249, 255)</p>
-          <p>#e6f9ff</p>
-        </li>
-      </ul>
-      <h3>Monochromatic</h3>
-      <ul class="cf list-unstyled list-inline">
-        <li class="color gray1">
-          <p>$gray-darker</p>
-          <p>hsl(194, 7%, 16%)</p>
-          <p>rgb(38, 42, 44)</p>
-          <p>#262a2c</p>
-        </li>
-        <li class="color gray2">
-          <p>$gray-dark</p>
-          <p>hsl(194, 5%, 33%)</p>
-          <p>rgb(80, 86, 88)</p>
-          <p>#505658</p>
-        </li>
-        <li class="color gray3">
-          <p>$gray</p>
-          <p>hsl(194, 5%, 54%)</p>
-          <p>rgb(132, 141, 144)</p>
-          <p>#848d90</p>
-        </li>
-        <li class="color gray4">
-          <p>$gray-light</p>
-          <p>hsl(194, 9%, 74%)</p>
-          <p>rgb(183, 192, 195)</p>
-          <p>#b7c0c3</p>
-        </li>
-        <li class="color gray5">
-          <p>$gray-lighter</p>
-          <p>hsl(194,9%, 92%)</p>
-          <p>rgb(233, 236, 236)</p>
-          <p>#e9ecec</p>
-        </li>
-      </ul>
-      <h3>Pinks</h3>
-      <ul class="cf list-unstyled list-inline">
-        <li class="color pink1">
-          <p>$pink</p>
-          <p>hsl(326, 94%, 48%)</p>
-          <p>rgb(237, 7, 138)</p>
-          <p>#ed078a</p>
-        </li>
-        <li class="color pink2">
-          <p>$pink-light</p>
-          <p>hsl(344, 97%, 88%)</p>
-          <p>rgb(254, 195, 211)</p>
-          <p>#fec3d3</p>
-        </li>
-        <li class="color pink3">
-          <p>$pink-lighter</p>
-          <p>hsl(326, 94%, 96%)</p>
-          <p>rgb(254, 235, 246)</p>
-          <p>#feebf6</p>
-        </li>
-      </ul>
-      <h3>Reds</h3>
-      <ul class="cf list-unstyled list-inline">
-        <li class="color red1">
-          <p>$red</p>
-          <p>hsl(342, 100%, 45%)</p>
-          <p>rgb(230, 0, 69)</p>
-          <p>#e60045</p>
-        </li>
-        <li class="color red2">
-          <p>$red-light</p>
-          <p>hsl(342, 100%, 89%)</p>
-          <p>rgb(255, 199, 216)</p>
-          <p>#ffc7d8</p>
-        </li>
-        <li class="color red3">
-          <p>$red-lighter</p>
-          <p>hsl(342, 100%, 95%)</p>
-          <p>rgb(255, 230, 237)</p>
-          <p>#ffe6ed</p>
-        </li>
-      </ul>
-      <h3>Oranges</h3>
-      <ul class="cf list-unstyled list-inline">
-        <li class="color orange1">
-          <p>$orange</p>
-          <p>hsl(34, 98%, 48%)</p>
-          <p>rgb(242, 138, 2)</p>
-          <p>#f28a02</p>
-        </li>
-        <li class="color orange2">
-          <p>$orange-light</p>
-          <p>hsl(34, 98%, 74%)</p>
-          <p>rgb(254, 197, 124)</p>
-          <p>#fec57c</p>
-        </li>
-        <li class="color orange3">
-          <p>$orange-lighter</p>
-          <p>hsl(34, 98%, 92%)</p>
-          <p>rgb(255, 237, 215)</p>
-          <p>#ffedd7</p>
-        </li>
-      </ul>
-      <h3>Greens</h3>
-      <ul class="cf list-unstyled list-inline">
-        <li class="color green1">
-          <p>$green</p>
-          <p>hsl(142, 47%, 50%)</p>
-          <p>rgb(68, 187, 112)</p>
-          <p>#44bb70</p>
-        </li>
-        <li class="color green2">
-          <p>$green-light</p>
-          <p>hsl(142, 48%, 85%)</p>
-          <p>rgb(198, 235, 212)</p>
-          <p>#c6ebd4</p>
-        </li>
-        <li class="color green3">
-          <p>$green-lighter</p>
-          <p>hsl(142, 48%, 94%)</p>
-          <p>rgb(232, 247, 238)</p>
-          <p>#e8f7ee</p>
-        </li>
-      </ul>
-    </section>
-    <section>
+    <section id="logos">
       <h2>Logotypes</h2>
       <p>For maximum flexibility and responsiveness usage of vector-based logos is advised.  All logos are available <a href='https://github.com/andyet/yeticss/tree/gh-pages/assets/logos'>here</a> in PNG and SVG format, colour and black and white versions.</p>
       <h3>Base64</h3>
