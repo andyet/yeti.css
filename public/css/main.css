@@ -1734,6 +1734,9 @@ section:not(:last-child) {
   color: #fff;
   text-align: center;
 }
+.color p {
+  margin: 0;
+}
 .blue1 {
   background-color: #00131a;
 }
