@@ -38,9 +38,20 @@ mark
 
 blockquote
   margin: $space 0
-  padding: 0 $ui-padding-spaced
+  padding-left: $ui-padding-extra-spaced
+  position: relative
   color: $gray
-  font: italic $font-base/1.55 Georgia, Times, serif
+  font-family: $font-proxima
+  font-size: inherit
+
+  &:before, &:after
+    content: ''
+    position: absolute 
+    top: 0
+    left: 0
+    width: 3px
+    height: 100%
+    background-color: $pink-light
 
   p:only-child,
   p:last-child
@@ -49,13 +60,22 @@ blockquote
   footer
     margin-top: $space*.5
     font-size: $font-base
-    color: lighten($gray, 20%)
 
     &:before
       content: '\2014 \00A0'
 
 .blockquote-centered
   text-align: center
+  padding: $ui-padding-extra-spaced*2 0
+
+  &:before, &:after
+    left: 40%
+    width: 20%
+    height: 3px
+
+  &:after
+    top: auto
+    bottom: 0
   
 .blockquote-medium
   font-size: $font-large

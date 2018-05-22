@@ -21,9 +21,43 @@ html
       h1 yeti.css
       p &yet's lightweight, modular pattern library written in Stylus.
 
+  nav(class='top-nav top-nav-light cf main-nav', role='navigation')
+
+    input(id='menu-toggle', class='menu-toggle', type='checkbox')
+    label(for='menu-toggle') Menu
+
+    ul.list-unstyled.list-inline.cf
+      li
+        a(href='#typography') Typography
+      li
+        a(href='#colors') Colors
+      li
+        a(href='#grid') Grid
+      li
+        a(href='#buttons') Buttons
+      li
+        a(href='#forms') Forms
+      li
+        a(href='#progress') Progress Bars
+      li
+        a(href='#tables') Tables
+      li
+        a(href='#messages') Messages
+      li
+        a(href='#navigation') Navigation
+      li
+        a(href='#modals') Modals
+      li
+        a(href='#media') Media
+      li
+        a(href='#code') Code
+      li
+        a(href='#logos') Logos
+
   .container
 
     include typography
+    include colors 
     include grid
     include buttons
     include forms
@@ -35,7 +69,6 @@ html
     include avatars
     include media
     include code
-    include colors 
     include logos  
 
   footer(role='contentinfo')
