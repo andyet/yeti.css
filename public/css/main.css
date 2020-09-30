@@ -212,9 +212,6 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-a:focus {
-  outline: none;
-}
 a:hover {
   color: #008dbc;
 }
@@ -668,9 +665,6 @@ select:focus:-moz-focusring {
 }
 .button.button-disabled {
   cursor: not-allowed;
-}
-.button:focus {
-  outline: none;
 }
 .button,
 .button:hover {
