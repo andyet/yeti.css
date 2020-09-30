@@ -396,8 +396,11 @@ ul li li ul li,
 ol li li ul li {
   list-style: square;
 }
-ul li {
+ul li,
+ol li {
   margin-bottom: 5px;
+}
+ul li {
   list-style: disc;
 }
 .list-unstyled {
