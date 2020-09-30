@@ -2,7 +2,7 @@ section#grid
 
   h2 Grid
 
-  p The starting point to maintaining the document flow is by wrapping the content in a container element that adjusts its width according to resolution:
+  p The starting point to maintaining the document flow is by wrapping the content in a container element that defaults to #[code max-width: 960px].
 
   :markdown
     ```
@@ -12,15 +12,10 @@ section#grid
       </div>
     ```
 
-  p The following container widths and breakpoints are defined in the <a href='https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L62-L75'>variables file</a>:
+  p The following responsive breakpoints are defined in the <a href='https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L62-L75'>variables file</a>:
 
   :markdown
     ```
-      $grid-width-full    ?= 100%
-      $grid-width-desktop ?= 70%
-      $grid-width-tablet  ?= 85%
-      $grid-width-mobile  ?= 90%
-
       $breakpoint-smartphone   ?= 480px
       $breakpoint-mid-mobile   ?= 600px
       $breakpoint-tablet       ?= 768px

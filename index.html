@@ -406,17 +406,12 @@
     </section>
     <section id="grid">
       <h2>Grid</h2>
-      <p>The starting point to maintaining the document flow is by wrapping the content in a container element that adjusts its width according to resolution:</p><pre><code>  &lt;div class=&#39;container&#39;&gt;
+      <p>The starting point to maintaining the document flow is by wrapping the content in a container element that defaults to <code>max-width: 960px</code>.</p><pre><code>  &lt;div class=&#39;container&#39;&gt;
     &lt;h1&gt;My Website&lt;/h1&gt;
     &lt;p&gt;My content.&lt;/p&gt;
   &lt;/div&gt;
 </code></pre>
-      <p>The following container widths and breakpoints are defined in the <a href='https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L62-L75'>variables file</a>:</p><pre><code>  $grid-width-full    ?= 100%
-  $grid-width-desktop ?= 70%
-  $grid-width-tablet  ?= 85%
-  $grid-width-mobile  ?= 90%
-
-  $breakpoint-smartphone   ?= 480px
+      <p>The following responsive breakpoints are defined in the <a href='https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L62-L75'>variables file</a>:</p><pre><code>  $breakpoint-smartphone   ?= 480px
   $breakpoint-mid-mobile   ?= 600px
   $breakpoint-tablet       ?= 768px
   $breakpoint-desktop      ?= 900px

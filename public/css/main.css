@@ -415,7 +415,10 @@ dl dd {
   margin: 0;
 }
 .container {
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .grid-flex-container {
   margin: -30px 0   30px -30px;
@@ -433,9 +436,6 @@ dl dd {
   padding: 30px 0 0 30px;
 }
 @media screen and (max-width: 600px) {
-  .container {
-    width: 90%;
-  }
   [class^="grid-flex-cell"],
   [class*=" grid-flex-cell"] {
     -webkit-box-flex: 0;
@@ -472,16 +472,6 @@ dl dd {
   }
   .grid-flex-cell-centered :last-child {
     float: none;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 900px) {
-  .container {
-    width: 85%;
-  }
-}
-@media screen and (min-width: 901px) {
-  .container {
-    width: 70%;
   }
 }
 select,
