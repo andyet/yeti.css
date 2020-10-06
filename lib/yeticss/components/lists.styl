@@ -10,7 +10,8 @@ ul, ol
 
   li > ul,
   li > ol
-    margin-top: $space
+    margin-top: $ui-padding-default
+    margin-bottom: $ui-padding-default
 
   li ul
     li
@@ -19,6 +20,10 @@ ul, ol
   li li ul
     li
       list-style: square
+
+  li
+    margin-bottom: ($ui-padding-default/2)
+
 ul
   li
     list-style: disc
@@ -27,6 +32,7 @@ ul
   padding-left: 0
 
   li
+    margin-bottom: 0
     list-style: none
 
 .list-inline
