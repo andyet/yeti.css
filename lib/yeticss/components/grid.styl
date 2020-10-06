@@ -5,7 +5,10 @@
 --------------------------------------------------------------------*/
 
 .container
+  width: 100%
+  max-width: 960px
   margin: 0 auto
+  padding: 0 $ui-padding-spaced
 
 .grid-flex-container
   margin: "%s 0 %s %s" % ($space*-1) $space ($space*-1)
@@ -18,9 +21,6 @@
   padding: $space 0 0 $space
 
 @media screen and (max-width: $breakpoint-mid-mobile)
-
-  .container
-    width: $grid-width-mobile
 
   [class^="grid-flex-cell"],[class*=" grid-flex-cell"]
     flex: 0 0 100%
@@ -51,13 +51,3 @@
 
     :last-child
       float: none
-
-@media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-desktop)
-
-  .container
-    width: $grid-width-tablet
-
-@media screen and (min-width: $breakpoint-desktop+1)
-
-  .container
-    width: $grid-width-desktop
